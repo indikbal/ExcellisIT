@@ -2,11 +2,13 @@ import React from "react";
 import Navbar from "../Navbar";
 import "./assets/Style.css";
 import BecomeAPartner from "./BecomeAPartner";
+import ContactSection from "./ContactSection";
 import FactsAndFigure from "./FactsAndFigure";
 import Herobaner from "./Herobaner";
 import HomeFeatureServices from "./HomeFeatureServices";
 import HomeServicesSec from "./HomeServicesSec";
 import IndustriesWeCovered from "./IndustriesWeCovered";
+import LocationOnMap from "./LocationOnMap";
 import OurBlog from "./OurBlog";
 import OurClients from "./OurClients";
 import ThreeScene from "./ThreeScene";
@@ -36,6 +38,8 @@ const Home = () => {
       <IndustriesWeCovered />
       <OurClients />
       <OurBlog />
+      <ContactSection />
+      <LocationOnMap />
     </div>
   );
 };

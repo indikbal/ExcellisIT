@@ -57,6 +57,32 @@ const OurClients = () => {
                   </marquee>
                 </div>
               </div>
+              {/* <div className="client_logo_new">
+                <div class="a-one animate">
+                  {" "}
+                  <img src={client1} />
+                </div>
+                <div class="a-two animate">
+                  {" "}
+                  <img src={client2} />
+                </div>
+                <div class="a-three animate">
+                  {" "}
+                  <img src={client3} />
+                </div>
+                <div class="a-four animate">
+                  {" "}
+                  <img src={client4} />
+                </div>
+                <div class="a-five animate">
+                  {" "}
+                  <img src={client5} />
+                </div>
+                <div class="a-six animate">
+                  {" "}
+                  <img src={client6} />
+                </div>
+              </div> */}
             </div>
           </div>
         </div>
