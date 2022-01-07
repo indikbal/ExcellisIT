@@ -19,8 +19,7 @@ const IndustriesWeCovered = () => {
     asNavFor: ".slider-nav",
   });
   $(".slider-nav").slick({
-    slidesToShow: 3,
-    slidesToScroll: 1,
+    slidesToShow: 4,
     asNavFor: ".slider-for",
     dots: false,
     focusOnSelect: false,
@@ -29,7 +28,26 @@ const IndustriesWeCovered = () => {
     speed: 2000,
     infinite: true,
     pauseOnHover: true,
+    centerMode:false,
   });
+  $(".slider").not('.slick-initialized').slick()
+
+  // var slideTimer;
+  // $('.slider-nav').on('mouseenter', '.slick-slide', function (e) {
+  //     var $currTarget = $(e.currentTarget);
+  //     $('.slider-nav .slick-slide').removeClass('slick-current');
+  //     $currTarget.addClass('slick-current');
+
+  //     slideTimer = setTimeout(function () {
+  //         var index = $('.slider-nav').find('.slick-current').data('slick-index');
+  //         var slickObj = $('.slider-for').slick('getSlick');
+  //         slickObj.slickGoTo(index);
+  //     }, 500);
+  // }).on('mouseleave', '.slick-slide', function (e) {
+  //     clearTimeout(slideTimer);
+  // }); 
+
+
 
   // var settings = {
   //   dots: false,
@@ -81,19 +99,19 @@ const IndustriesWeCovered = () => {
               <div className="indus_slider_wrapper">
                 <div className="slider-for">
                   <div className="industries_bg">
-                    <img src={industries1} />
+                    <img src={industries1} className="img-fluid" />
                   </div>
                   <div className="industries_bg">
-                    <img src={industries2} />
+                    <img src={industries2}  className="img-fluid"  />
                   </div>
                   <div className="industries_bg">
-                    <img src={industries3} />
+                    <img src={industries3}  className="img-fluid"  />
                   </div>
                   <div className="industries_bg">
-                    <img src={industries2} />
+                    <img src={industries2}  className="img-fluid"  />
                   </div>
                   <div className="industries_bg">
-                    <img src={industries1} />
+                    <img src={industries1}  className="img-fluid"  />
                   </div>
                 </div>
                 <div className="slider-nav">
