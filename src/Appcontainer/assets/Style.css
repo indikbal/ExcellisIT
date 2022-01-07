@@ -443,7 +443,9 @@ section.banner_content_section {
   background-color: #fff;
   position: relative;
 }
-
+.slider-track {
+  transition: all 1s cubic-bezier(0.7, 0, 0.3, 1);
+}
 .slick-arrow {
   background-color: grey;
   /* color: black; */
@@ -489,25 +491,51 @@ section.banner_content_section {
   padding: 40px;
   text-align: left;
   transition: ease-in all 0.5s;
+  height: 300px;
+  overflow: hidden;
+  transform: translate(0px, 180px);
 }
-.single_indus_content p{
-  display: none;
+.single_indus_content h4 {
+  margin-bottom: 15px;
 }
-.indus_slider_wrapper .slick-current .single_indus_content p{
-  display: block;
+.single_indus_content p {
+  opacity: 0;
+}
+.indus_slider_wrapper .slick-current .single_indus_content p {
+  opacity: 1;
+  transition: ease-in all 0.3s;
+}
+.indus_slider_wrapper .slick-current .single_indus_content {
+  transform: translate(0px, 0px);
+  transition: ease-in all 0.3s;
+}
+.indus_slider_wrapper
+  .slick-active
+  .single_industries:hover
+  .single_indus_content {
+  transform: translate(0px, 0px);
+  transition: ease-in all 0.3s;
+}
+.indus_slider_wrapper
+  .slick-active
+  .single_industries:hover
+  .single_indus_content
+  p {
+  opacity: 1;
+  transition: ease-in all 0.3s;
 }
 .indus_slider_wrapper .slick-current .single_industries::before {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.6) !important;
   z-index: 9;
   height: 100%;
   width: 100%;
   transition: ease-in all 1s;
 }
-.indus_slider_wrapper .single_industries::before {
+.indus_slider_wrapper .slick-active .single_industries::before {
   content: "";
   position: absolute;
   top: 0;
@@ -525,6 +553,10 @@ section.banner_content_section {
 .indus_slider_wrapper .slick-current .single_industries .single_indus_content {
   opacity: 1;
   transition: ease-in all 0.5s;
+}
+
+.slider-nav .slick-slide {
+  margin: 0 1px !important;
 }
 /* .indus_slider_wrapper .single_industries:hover .single_indus_content {
   opacity: 1;
@@ -565,7 +597,7 @@ section.banner_content_section {
 .indus_slider_wrapper .slider-for .slick-slide.slick-active .industries_bg img {
   opacity: 1;
 }
-.industries_bg img{
+.industries_bg img {
   width: 100%;
 }
 /*****************************industry end sheet*****************************/
@@ -797,7 +829,7 @@ section.banner_content_section {
   height: 100%;
   object-fit: cover;
 }
-.single_blog:hover .blog_img img{
+.single_blog:hover .blog_img img {
   transform: scale(1.1);
   transition: ease-in all 0.3s;
 }
@@ -806,7 +838,7 @@ section.banner_content_section {
   overflow: hidden;
   transition: ease-in all 0.3s;
 }
-.blog_img img{
+.blog_img img {
   transition: ease-in all 0.3s;
 }
 .single_devide_blog,
@@ -837,7 +869,8 @@ section.banner_content_section {
   color: #fff;
 }
 .single_blog.bg-white h4,
-.single_blog.bg-white p, .single_blog.bg-white a {
+.single_blog.bg-white p,
+.single_blog.bg-white a {
   color: var(--theme-dark1) !important;
 }
 .overlay_blog {
@@ -884,14 +917,13 @@ section.banner_content_section {
   width: 800px;
   background-color: #6fcbdd;
 }
-.background__blue, .background__red {
+.background__blue,
+.background__red {
   position: absolute;
   height: 10px;
-  opacity: .1;
-  -webkit-transform: rotate(
--18deg);
-  transform: rotate(
--18deg);
+  opacity: 0.1;
+  -webkit-transform: rotate(-18deg);
+  transform: rotate(-18deg);
 }
 .background__red {
   top: 170px;
@@ -899,12 +931,13 @@ section.banner_content_section {
   width: 1250px;
   background-color: #e11665;
 }
-.background__green, .background__yellow {
+.background__green,
+.background__yellow {
   position: absolute;
   top: -100px;
   width: 10px;
   height: 2100px;
-  opacity: .1;
+  opacity: 0.1;
   -webkit-transform: rotate(22deg);
   transform: rotate(22deg);
 }
@@ -1130,4 +1163,34 @@ section.banner_content_section {
   left: 230px;
   top: 295px;
   cursor: pointer;
+}
+
+.popover-header {
+  padding: 0.5rem 0.75rem;
+  margin-bottom: 0;
+  font-size: 1rem;
+  background-color: var(--theme-yellow2);
+  border-bottom: 1px solid var(--theme-yellow2);
+  color: #000000;
+  border-radius: 0px !important;
+}
+.popover-body {
+  padding: 0.5rem 0.75rem;
+  color: var(--text-white1);
+  background-color: var(--theme-dark2);
+}
+.popover .arrow::after {
+  border-top-color: var(--theme-dark1) !important;
+}
+
+@media screen and (min-width: 1400px) {
+  .become_img_sec {
+    position: absolute;
+    right: 27%;
+    width: 26%;
+    bottom: 16%;
+  }
+  .home_abt_sec {
+    padding: 100px 0;
+  }
 }

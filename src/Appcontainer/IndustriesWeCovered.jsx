@@ -19,18 +19,16 @@ const IndustriesWeCovered = () => {
     asNavFor: ".slider-nav",
   });
   $(".slider-nav").slick({
-    slidesToShow: 4,
+    slidesToShow: 3,
     asNavFor: ".slider-for",
     dots: false,
     focusOnSelect: false,
     arrows: true,
     autoplaySpeed: 4000,
-    speed: 2000,
+    speed: 1000,
     infinite: true,
     pauseOnHover: true,
-    centerMode:false,
   });
-  $(".slider").not('.slick-initialized').slick()
 
   // var slideTimer;
   // $('.slider-nav').on('mouseenter', '.slick-slide', function (e) {
@@ -45,9 +43,7 @@ const IndustriesWeCovered = () => {
   //     }, 500);
   // }).on('mouseleave', '.slick-slide', function (e) {
   //     clearTimeout(slideTimer);
-  // }); 
-
-
+  // });
 
   // var settings = {
   //   dots: false,
@@ -102,71 +98,127 @@ const IndustriesWeCovered = () => {
                     <img src={industries1} className="img-fluid" />
                   </div>
                   <div className="industries_bg">
-                    <img src={industries2}  className="img-fluid"  />
+                    <img src={industries2} className="img-fluid" />
                   </div>
                   <div className="industries_bg">
-                    <img src={industries3}  className="img-fluid"  />
+                    <img src={industries3} className="img-fluid" />
                   </div>
                   <div className="industries_bg">
-                    <img src={industries2}  className="img-fluid"  />
+                    <img src={industries2} className="img-fluid" />
                   </div>
                   <div className="industries_bg">
-                    <img src={industries1}  className="img-fluid"  />
+                    <img src={industries1} className="img-fluid" />
+                  </div>
+                  <div className="industries_bg">
+                    <img src={industries2} className="img-fluid" />
+                  </div>
+                  <div className="industries_bg">
+                    <img src={industries3} className="img-fluid" />
+                  </div>
+                  <div className="industries_bg">
+                    <img src={industries2} className="img-fluid" />
+                  </div>
+                  <div className="industries_bg">
+                    <img src={industries1} className="img-fluid" />
                   </div>
                 </div>
                 <div className="slider-nav">
                   <div className="single_industries">
                     <div className="single_indus_content">
-                      <h4>Agriculture</h4>
+                      <h4>Travel & Tourism</h4>
                       <p>
-                        Sports is a multibillion-dollar market and we know how
-                        to help you to develop platforms like sports web and
-                        mobile applications that can channelize revenue to your
-                        side.
+                        As an experienced travel & hospitality software
+                        development company, we always strives for developing
+                        next-gen and powerful software and mobile applications.
                       </p>
                     </div>
                   </div>
                   <div className="single_industries">
                     <div className="single_indus_content">
-                      <h4>Agriculture</h4>
+                      <h4>Banking & Finance</h4>
                       <p>
-                        Sports is a multibillion-dollar market and we know how
-                        to help you to develop platforms like sports web and
-                        mobile applications that can channelize revenue to your
-                        side.
+                        Excellis IT is a prominent banking & financial software
+                        development company that offers industry-leading
+                        software, mobile applications, portals, and solutions
+                        that are secure, fast, efficient, and easily scalable.
                       </p>
                     </div>
                   </div>
                   <div className="single_industries">
                     <div className="single_indus_content">
-                      <h4>Agriculture</h4>
+                      <h4>Real Estate & Property</h4>
                       <p>
-                        Sports is a multibillion-dollar market and we know how
-                        to help you to develop platforms like sports web and
-                        mobile applications that can channelize revenue to your
-                        side.
+                        while making real estate business more connected and
+                        easily reachable for maximum engagement, our versatile
+                        real estate developers offer businesses the most
+                        invincible real estate software and applications for web
+                        and smartphones.
                       </p>
                     </div>
                   </div>
                   <div className="single_industries">
                     <div className="single_indus_content">
-                      <h4>Agriculture</h4>
+                      <h4>Retail</h4>
                       <p>
-                        Sports is a multibillion-dollar market and we know how
-                        to help you to develop platforms like sports web and
-                        mobile applications that can channelize revenue to your
-                        side.
+                        Technology is the reason behind the catalytic growth of
+                        the retail and eCommerce industry. And we, at Excellis
+                        IT, design and develop web and mobile applications and
+                        solutions that foster user engagement and efficiency to
+                        boost business growth like never before.
                       </p>
                     </div>
                   </div>
                   <div className="single_industries">
                     <div className="single_indus_content">
-                      <h4>Agriculture</h4>
+                      <h4>Manufacturing</h4>
                       <p>
-                        Sports is a multibillion-dollar market and we know how
-                        to help you to develop platforms like sports web and
-                        mobile applications that can channelize revenue to your
-                        side.
+                        Excellis It provides wide range of Manufacturing IT
+                        Services that combat your production challenges while
+                        empowering your business to inspire innovation.
+                      </p>
+                    </div>
+                  </div>
+                  <div className="single_industries">
+                    <div className="single_indus_content">
+                      <h4>Energy</h4>
+                      <p>
+                        Excellis IT is a leading Hybrid IT solutions provider to
+                        power your business systems.
+                      </p>
+                    </div>
+                  </div>
+                  <div className="single_industries">
+                    <div className="single_indus_content">
+                      <h4>Media & Enrtainment</h4>
+                      <p>
+                        Excellis IT provides reliability at scale for content
+                        companies, build customer 360 platforms to offer
+                        personalized services, implement media supply chains in
+                        the cloud for agility and flexibility, and streamline
+                        media operations.
+                      </p>
+                    </div>
+                  </div>
+                  <div className="single_industries">
+                    <div className="single_indus_content">
+                      <h4>Telecom</h4>
+                      <p>
+                        Excellis IT helps you with the most innovative and
+                        efficient enterprise & business solutions that
+                        streamline business processes and minimize challenges in
+                        telecommunication market.
+                      </p>
+                    </div>
+                  </div>
+                  <div className="single_industries">
+                    <div className="single_indus_content">
+                      <h4>Food & Restaurant</h4>
+                      <p>
+                        Food and Beverages are not only a great part of our
+                        lives but they are a huge part of online business as
+                        well. For this mushrooming business, Excellis IT bring
+                        the most innovative and impressively smart web and
+                        mobile development solutions.
                       </p>
                     </div>
                   </div>

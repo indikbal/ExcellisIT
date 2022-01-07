@@ -23,9 +23,9 @@ const LocationOnMap = () => {
                   <div
                     className="map_location_pin"
                     data-toggle="popover"
-                    title="Popover title"
+                    title="India"
                     data-placement="top"
-                    data-content="And here's some amazing content. It's very engaging. Right?"
+                    data-content="51 DN block, Merlin Infinite, floor 9, Unit 907, Salt lake sector V, Kolkata 700091"
                   >
                     <span>India</span>
                   </div>
@@ -34,9 +34,9 @@ const LocationOnMap = () => {
                   <div
                     className="map_location_pin"
                     data-toggle="popover"
-                    title="Popover title"
+                    title="Dubai"
                     data-placement="top"
-                    data-content="And here's some amazing content. It's very engaging. Right?"
+                    data-content="Al Moosa Tower 2, Office #2001,20th Floor, Sheikh Zayed Rd, UAE"
                   >
                     <span>Dubai</span>
                   </div>
@@ -45,9 +45,9 @@ const LocationOnMap = () => {
                   <div
                     className="map_location_pin"
                     data-toggle="popover"
-                    title="Popover title"
+                    title="UK"
                     data-placement="top"
-                    data-content="And here's some amazing content. It's very engaging. Right?"
+                    data-content="109 Spilman Street, GRAIG UK, LL17 1XQ"
                   >
                     <span>UK</span>
                   </div>
@@ -56,9 +56,9 @@ const LocationOnMap = () => {
                   <div
                     className="map_location_pin"
                     data-toggle="popover"
-                    title="Popover title"
+                    title="Australia"
                     data-placement="top"
-                    data-content="And here's some amazing content. It's very engaging. Right?"
+                    data-content="109 Spilman Street, GRAIG UK, LL17 1XQ"
                   >
                     <span>Australia</span>
                   </div>
@@ -67,9 +67,9 @@ const LocationOnMap = () => {
                   <div
                     className="map_location_pin"
                     data-toggle="popover"
-                    title="Popover title"
+                    title="US"
                     data-placement="top"
-                    data-content="And here's some amazing content. It's very engaging. Right?"
+                    data-content="347 5th Ave #1402 New York NY10016"
                   >
                     <span>US</span>
                   </div>

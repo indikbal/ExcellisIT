@@ -9,7 +9,7 @@ const BecomeAPartner = () => {
       <section className="become_partner_sec">
         <div className="container-fluid pl-0">
           <div className="row">
-            <div className="col-lg-8 pr-0">
+            <div className="col-lg-7 col-md-8 pr-0">
               <div className="feature_item_box pl-170">
                 <div className="section_typing">
                   <Typed strings={["Our Featured Services"]} typeSpeed={150} />
