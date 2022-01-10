@@ -6,12 +6,12 @@ const ContactSection = () => {
   return (
     <div>
       <section class="footer_contact_form_sec" id="footer_form">
-      <div class="background">
-        <div class="background__blue"></div>
-        <div class="background__red"></div>
-        <div class="background__green"></div>
-        <div class="background__yellow"></div>
-        </div>
+        {/* <div class="background">
+          <div class="background__blue"></div>
+          <div class="background__red"></div>
+          <div class="background__green"></div>
+          <div class="background__yellow"></div>
+        </div> */}
         <div className="section_typing">
           <Typed strings={["Enquire us"]} typeSpeed={150} />
         </div>
