@@ -15,10 +15,16 @@ const BecomeAPartner = () => {
                   <Typed strings={["Our Featured Services"]} typeSpeed={150} />
                 </div>
                 <div className="become_content">
-                  <h4>Need A Reliable IT partner?</h4>
-                  <h5>Here we are!</h5>
-                  <h6>COLLABORATE TODAY</h6>
-                  <p>
+                  <h4 data-aos="fade-up" data-aos-duration="500">
+                    Need A Reliable IT partner?
+                  </h4>
+                  <h5 data-aos="fade-up" data-aos-duration="1000">
+                    Here we are!
+                  </h5>
+                  <h6 data-aos="fade-up" data-aos-duration="1500">
+                    COLLABORATE TODAY
+                  </h6>
+                  <p data-aos="fade-up" data-aos-duration="1500">
                     Excellis IT success is hardwired with its pursuit of sharing
                     the load for the long-term, here we believe in dividing your
                     load and collaborating with someone as amazing as you are
@@ -26,11 +32,21 @@ const BecomeAPartner = () => {
                     collaborate with you for landing support as well as the
                     success story.
                   </p>
-                  <button className="explore_btn">Explore More</button>
+                  <button
+                    data-aos="fade-up"
+                    data-aos-duration="1500"
+                    className="explore_btn"
+                  >
+                    Explore More
+                  </button>
                 </div>
               </div>
             </div>
-            <div className="become_img_sec">
+            <div
+              className="become_img_sec"
+              data-aos="fade-left"
+              data-aos-duration="1000"
+            >
               <img className="img-fluid" src={Becomeimg} />
             </div>
           </div>

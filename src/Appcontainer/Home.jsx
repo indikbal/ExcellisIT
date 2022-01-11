@@ -1,4 +1,5 @@
 import React from "react";
+import Footer from "../Footer";
 import Navbar from "../Navbar";
 import "./assets/Style.css";
 import BecomeAPartner from "./BecomeAPartner";
@@ -40,6 +41,7 @@ const Home = () => {
       <OurBlog />
       <ContactSection />
       <LocationOnMap />
+      <Footer />
     </div>
   );
 };

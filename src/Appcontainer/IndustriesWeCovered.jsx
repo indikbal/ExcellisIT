@@ -72,7 +72,7 @@ const IndustriesWeCovered = () => {
                 <Slider
                   asNavFor={nav1}
                   ref={slider2}
-                  slidesToShow={4}
+                  slidesToShow={3}
                   swipeToSlide={true}
                   focusOnSelect={true}
                   className="slider-nav"

@@ -14,10 +14,18 @@ const HomeFeatureServices = () => {
                   <Typed strings={["Our Featured Services"]} typeSpeed={150} />
                 </div>
                 <div className="featured_services_list">
-                  <li>IT Services</li>
-                  <li>BPO Services</li>
-                  <li>Marketing Services</li>
-                  <li>CAD Services</li>
+                  <li data-aos="fade-up" data-aos-duration="500">
+                    IT Services
+                  </li>
+                  <li data-aos="fade-up" data-aos-duration="1000">
+                    BPO Services
+                  </li>
+                  <li data-aos="fade-up" data-aos-duration="1000">
+                    Marketing Services
+                  </li>
+                  <li data-aos="fade-up" data-aos-duration="1500">
+                    CAD Services
+                  </li>
                 </div>
               </div>
             </div>
@@ -30,8 +38,10 @@ const HomeFeatureServices = () => {
             <div className="col-md-10 pl-0">
               <div className="abt_wrapper">
                 <div className="abt_inner">
-                  <h4>About Excellis</h4>
-                  <p>
+                  <h4 data-aos="fade-up" data-aos-duration="500">
+                    About Excellis
+                  </h4>
+                  <p data-aos="fade-up" data-aos-duration="1000">
                     Lorem Ipsum is simply dummy text of the printing and
                     typesetting industry. Lorem Ipsum has been the industry's
                     standard dummy text ever since the 1500s, when an unknown

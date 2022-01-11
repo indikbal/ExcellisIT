@@ -18,7 +18,7 @@ const LocationOnMap = () => {
                 <span>Serving Globally</span>
               </div>
               <div className="globe_wrapper">
-                <img className="img-fluid" src={wideGlobe} />
+                <img className="img-fluid wide_globe_img" src={wideGlobe} />
                 <div className="india_location">
                   <div
                     className="map_location_pin"

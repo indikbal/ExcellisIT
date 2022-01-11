@@ -12,12 +12,20 @@ const FactsAndFigure = () => {
         </div>
         <div className="container">
           <div className="row">
-            <div className="col-md-6">
+            <div
+              className="col-md-6"
+              data-aos="fade-up"
+              data-aos-duration="500"
+            >
               <div className="fact_figure_heading">
                 <h4>Clients Benefit from 6 yers of our Experience</h4>
               </div>
             </div>
-            <div className="col-md-2 pr-0 pr-xs-2 pl-xs-2 pl-0">
+            <div
+              className="col-md-2 pr-0 pr-xs-2 pl-xs-2 pl-0"
+              data-aos="fade-up"
+              data-aos-duration="500"
+            >
               <div className="fact_box">
                 <div className="fact_box_wrapper">
                   <h5>6 Years</h5>
@@ -25,7 +33,11 @@ const FactsAndFigure = () => {
                 </div>
               </div>
             </div>
-            <div className="col-md-2 pr-0 pr-xs-2 pl-xs-2 pl-0">
+            <div
+              className="col-md-2 pr-0 pr-xs-2 pl-xs-2 pl-0"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
               <div className="fact_box">
                 <div className="fact_box_wrapper">
                   <h5>56%</h5>
@@ -33,7 +45,11 @@ const FactsAndFigure = () => {
                 </div>
               </div>
             </div>
-            <div className="col-md-2 pr-0 pr-xs-2 pl-xs-2 pl-0 pr-0">
+            <div
+              className="col-md-2 pr-0 pr-xs-2 pl-xs-2 pl-0 pr-0"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
               <div className="fact_box">
                 <div className="fact_box_wrapper">
                   <h5>14</h5>
@@ -43,7 +59,11 @@ const FactsAndFigure = () => {
             </div>
           </div>
           <div className="row">
-            <div className="col-md-2 pr-xs-2 pl-xs-2 pl-0 pr-0">
+            <div
+              className="col-md-2 pr-xs-2 pl-xs-2 pl-0 pr-0"
+              data-aos="fade-up"
+              data-aos-duration="1500"
+            >
               <div className="fact_box fact_yellow_box">
                 <div className="fact_box_wrapper">
                   <h5>677</h5>
@@ -51,7 +71,11 @@ const FactsAndFigure = () => {
                 </div>
               </div>
             </div>
-            <div className="col-md-2 pr-xs-2 pl-xs-2 pl-0 pr-0">
+            <div
+              className="col-md-2 pr-xs-2 pl-xs-2 pl-0 pr-0"
+              data-aos="fade-right"
+              data-aos-duration="1500"
+            >
               <div className="fact_box height_double country_fact_box">
                 <div className="fact_box_wrapper">
                   <h5>Clients in 15 countries</h5>
@@ -62,20 +86,32 @@ const FactsAndFigure = () => {
             <div className="col-md-8 pr-xs-2 pl-xs-2 pl-0 pr-0">
               <div className="row">
                 <div className="col-md-6 pr-xs-2 pl-xs-2 pl-0 pr-0">
-                  <div className="fact_box iso_fact_box">
+                  <div
+                    className="fact_box iso_fact_box"
+                    data-aos="zoom-in"
+                    data-aos-duration="2000"
+                  >
                     <div className="fact_box_wrapper">
                       <h5>ISO 27001:2013</h5>
                       <p>certified</p>
                     </div>
                   </div>
-                  <div className="fact_box">
+                  <div
+                    className="fact_box"
+                    data-aos="fade-up"
+                    data-aos-duration="2000"
+                  >
                     <div className="fact_box_wrapper">
                       <h5>winner of Strategic Sourcing Awards 2021</h5>
                     </div>
                   </div>
                 </div>
                 <div className="col-md-6 pr-xs-2 pl-xs-2 pl-0 ">
-                  <div className="fact_box fact_black_box">
+                  <div
+                    className="fact_box fact_black_box"
+                    data-aos="fade-up"
+                    data-aos-duration="2000"
+                  >
                     <div className="fact_box_wrapper">
                       <h5>Net Promoter Score: 60</h5>
                       <p>
@@ -84,7 +120,11 @@ const FactsAndFigure = () => {
                       </p>
                     </div>
                   </div>
-                  <div className="fact_box">
+                  <div
+                    className="fact_box"
+                    data-aos="fade-up"
+                    data-aos-duration="2500"
+                  >
                     <div className="fact_box_wrapper">
                       <h5>16</h5>
                       <p>clients with us for over 5 years</p>

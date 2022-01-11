@@ -240,7 +240,7 @@ const ContactSection = () => {
               </div>
             </div>
           </div>
-          <div class="row mt-100">
+          {/* <div class="row mt-100">
             <div class="col-md-12">
               <div class="colorLine">
                 {" "}
@@ -253,7 +253,7 @@ const ContactSection = () => {
                 <span></span>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </section>
     </div>
