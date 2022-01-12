@@ -13,7 +13,13 @@ const HomeServicesSec = () => {
           <img src={arrow} />
         </div>
         <div className="section_typing">
-          <Typed strings={["Our Featured Services"]} typeSpeed={150} />
+          <div class="reveal-holder custom_aos" data-aos="reveal-item">
+            <div
+              class="reveal-block right custom_aos"
+              data-aos="reveal-right"
+            ></div>
+            <Typed strings={["Our Featured Services"]} typeSpeed={150} />
+          </div>
         </div>
         <div className="container-fluid">
           <div className="row">
@@ -38,7 +44,7 @@ const HomeServicesSec = () => {
                       aria-controls="v-pills-home"
                       aria-selected="true"
                     >
-                      IT Services
+                      <sup>01</sup>IT Services
                     </a>
                     <a
                       class=""
@@ -49,7 +55,7 @@ const HomeServicesSec = () => {
                       aria-controls="v-pills-profile"
                       aria-selected="false"
                     >
-                      Marketing Services
+                      <sup>02</sup>Marketing Services
                     </a>
                     <a
                       class=""
@@ -60,7 +66,7 @@ const HomeServicesSec = () => {
                       aria-controls="v-pills-messages"
                       aria-selected="false"
                     >
-                      BPO Services
+                      <sup>03</sup>BPO Services
                     </a>
                     <a
                       class=""
@@ -71,7 +77,7 @@ const HomeServicesSec = () => {
                       aria-controls="v-pills-settings"
                       aria-selected="false"
                     >
-                      CAD Services
+                      <sup>04</sup> CAD Services
                     </a>
                   </div>
                   <div

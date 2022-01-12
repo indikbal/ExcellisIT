@@ -1,5 +1,6 @@
 {
   "name": "excellis-app",
+  "homepage": "https://dev.excellisit.net/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -22,6 +23,7 @@
     "react-scripts": "^5.0.0",
     "react-slick": "^0.28.1",
     "react-spring": "^9.4.1",
+    "react-toggle-display": "^2.2.1",
     "react-typed": "^1.2.0",
     "slick-carousel": "^1.8.1",
     "three": "^0.129.0",

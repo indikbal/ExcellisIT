@@ -11,7 +11,16 @@ const HomeFeatureServices = () => {
             <div className="col-lg-7 col-md-8 pr-0">
               <div className="feature_item_box pl-170">
                 <div className="section_typing">
-                  <Typed strings={["Our Featured Services"]} typeSpeed={150} />
+                  <div class="reveal-holder custom_aos" data-aos="reveal-item">
+                    <div
+                      class="reveal-block right custom_aos"
+                      data-aos="reveal-right"
+                    ></div>
+                    <Typed
+                      strings={["Our Featured Services"]}
+                      typeSpeed={150}
+                    />
+                  </div>
                 </div>
                 <div className="featured_services_list">
                   <li data-aos="fade-up" data-aos-duration="500">
