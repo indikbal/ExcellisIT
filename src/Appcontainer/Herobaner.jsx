@@ -2,6 +2,7 @@ import React from "react";
 import "./assets/Style.css";
 import Typed from "react-typed";
 import review_img from "../img/banner_review_images.png";
+import big_logo from "../img/big-logo.png";
 
 const Herobaner = () => {
   return (
@@ -11,8 +12,9 @@ const Herobaner = () => {
           <div className="row">
             <div className="col-md-12">
               <div className="banner_content">
-                <h4>We are</h4>
-                <h1>Excellis</h1>
+                {/* <h4>We are</h4> */}
+                {/* <h1>Excellis</h1> */}
+                <img src={big_logo} className="big_logo" />
                 <div className="typing_sec mb-4">
                   <Typed
                     strings={[
