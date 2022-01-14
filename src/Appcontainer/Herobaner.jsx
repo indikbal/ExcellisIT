@@ -12,9 +12,9 @@ const Herobaner = () => {
           <div className="row">
             <div className="col-md-12">
               <div className="banner_content">
-                {/* <h4>We are</h4> */}
-                {/* <h1>Excellis</h1> */}
-                <img src={big_logo} className="big_logo" />
+                <h4>We are</h4>
+                <h1>Excellis</h1>
+                {/* <img src={big_logo} className="big_logo" /> */}
                 <div className="typing_sec mb-4">
                   <Typed
                     strings={[

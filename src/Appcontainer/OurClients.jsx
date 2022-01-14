@@ -17,7 +17,7 @@ const OurClients = () => {
         </div>
         <div className="container">
           <div className="row align-items-center">
-            <div className="col-md-6">
+            <div className="col-md-5">
               <div className="our_client_text_area">
                 <h4>Clients Benefit from 6 yers of our Experience</h4>
                 <p>
@@ -28,7 +28,7 @@ const OurClients = () => {
                 </p>
               </div>
             </div>
-            <div className="col-md-6">
+            <div className="col-md-7">
               <div className="client_logo_sec">
                 <div className="client_row1">
                   <marquee direction="up">
@@ -53,6 +53,19 @@ const OurClients = () => {
                     </div>
                     <div className="client_logo_wrapper">
                       <img src={client6} />
+                    </div>
+                  </marquee>
+                </div>
+                <div className="client_row1">
+                  <marquee direction="up">
+                    <div className="client_logo_wrapper">
+                      <img src={client1} />
+                    </div>
+                    <div className="client_logo_wrapper">
+                      <img src={client2} />
+                    </div>
+                    <div className="client_logo_wrapper">
+                      <img src={client3} />
                     </div>
                   </marquee>
                 </div>

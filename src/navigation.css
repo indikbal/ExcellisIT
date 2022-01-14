@@ -183,26 +183,26 @@ a:hover {
 }
 
 .menu__item--1 .menu__item-inner {
-  background: #15171b;
+  background: #2e2e2e;
 }
 .menu__item--1 {
   height: 100vh !important;
 }
 
 .menu__item--2 .menu__item-inner {
-  background: #1d2027;
+  background: #1e1d1d;
 }
 
 .menu__item--3 .menu__item-inner {
-  background: #0f1013;
+  background: #343233;
 }
 
 .menu__item--4 .menu__item-inner {
-  background: #1d2027;
+  background: #1e1d1d;
 }
 
 .menu__item--5 .menu__item-inner {
-  background: #0f1013;
+  background: #343233;
 }
 
 .label {

@@ -1,0 +1,81 @@
+:root {
+  --header-height: 4.5rem;
+  /*========== Colors ==========*/
+  --theme-yellow1: #dda032;
+  --theme-yellow2: #ffa000;
+  --theme-dark1: #343233;
+  --theme-dark2: #1e1d1d;
+  --gray-text: #858585;
+  --text-white1: #efdab9;
+  --body-font: "Roboto", sans-serif;
+  --heading-font: "Oswald", sans-serif;
+}
+
+.theme-light .hero_banner_sec {
+  background-color: #efdab9;
+}
+.theme-light .main_nav_sec ul li a {
+  color: var(--theme-dark2);
+}
+.theme-light #fixed {
+  background-color: rgb(255 255 255 / 78%);
+}
+
+.theme-light .home_abt_sec {
+  background-color: var(--text-white1);
+}
+.theme-light .abt_inner h4,
+.theme-light .abt_inner p,
+.theme-light .map_location_pin span {
+  color: var(--theme-dark2);
+}
+.theme-light .wide_globe_sec,
+.theme-light .fact_box {
+  background-color: #fff;
+}
+.theme-light .wide_globe_img {
+  opacity: 1;
+}
+.theme-light .typing_sec,
+.theme-light .fact_box p,
+.theme-light .fact_figure_heading h4,
+.theme-light .section_typing,
+.theme-light .banner_content h1,
+.theme-light .banner_content p,
+.theme-light .banner_content h4,
+.theme-light .mainmenu__item,
+.theme-light .sidemenu__item,
+.theme-light .menu_mail_sec h4,
+.theme-light .menu_address h4,
+.theme-light .menu_mail_sec li a,
+.theme-light .menu_address li a,
+.theme-light .label,
+.theme-light .footer-links a {
+  color: var(--theme-dark1);
+}
+.theme-light .menu_mail_sec li a,
+.theme-light .menu_address li a,
+.theme-light .mainmenu__item,
+.theme-light .sidemenu__item,
+.theme-light .footer-links a {
+  font-weight: 500;
+}
+.theme-light .grid .grid_item {
+  border-right: 1px solid rgb(86 86 86 / 20%);
+}
+.theme-light .menu__item--3 .menu__item-inner,
+.theme-light .menu__item--5 .menu__item-inner {
+  background-color: var(--text-white1);
+}
+.theme-light .menu__item--2 .menu__item-inner,
+.theme-light .menu__item--4 .menu__item-inner {
+  background-color: #fff;
+}
+
+.theme-light .menu__item--1 .menu__item-inner {
+  background: #d1d1d1;
+}
+
+.theme-light .footer_sec {
+  background-color: var(--text-white1);
+}

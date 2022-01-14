@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Footer from "../Footer";
 import Navbar from "../Navbar";
 import "./assets/Style.css";
@@ -13,10 +13,13 @@ import LocationOnMap from "./LocationOnMap";
 import OurBlog from "./OurBlog";
 import OurClients from "./OurClients";
 import ThreeScene from "./ThreeScene";
+import "../../src/lighttheme.css";
+
+// $(".bodyName").children("div").addClass("test");
 
 const Home = () => {
   return (
-    <div>
+    <div className="bodyName">
       <div className="hero_banner_sec">
         <ThreeScene />
       </div>

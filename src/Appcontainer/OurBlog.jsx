@@ -11,7 +11,6 @@ export class OurBlog extends React.Component {
       Users: [],
     };
   }
-
   getUsersData() {
     axios
       .get(`/admin/getBlogData/6`, {})
@@ -23,8 +22,8 @@ export class OurBlog extends React.Component {
             <div className="single_devide_blog single_blog">
               <div className="blog_content">
                 <h4>{u.Title}</h4>
-                <p>{u.Description}</p>
-                <a href="(u.link)" className="read_more">
+                {/* <p>{u.Description}</p> */}
+                <a href={"/blogdetails/" + u.link} className="read_more">
                   Read More
                 </a>
               </div>
@@ -46,27 +45,6 @@ export class OurBlog extends React.Component {
     this.getUsersData();
   }
 
-  // // function getBlogData() {
-  // //   fetch("/admin/getBlogData", function (data, status) {
-  // //     console.log(data);
-  // //     //return "Data: " + data;
-  // //     // var myObject = JSON.parse(data);
-  // //     // console.log(myObject);
-  // //     // for (var i = 0; i < 10; i++) {
-  // //     //   console.log(myObject);
-  // //     // }
-  // //   });
-
-  //   // fetch(`${this.domain}/api/debt/update/`, {
-  //   //   method: "GET",
-  //   //   headers: {
-  //   //     "Content-Type": "application/json",
-  //   //   },
-  //   //   // body: JSON.stringify({
-  //   //   //   user: this.props.id,
-  //   //   // }),
-  //   // });
-  // }
   render() {
     return (
       <div>

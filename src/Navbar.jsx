@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import ReactDOM from "react-dom";
 import logo from "../src/img/logo-white.png";
 import MainMenu from "./MainMenu";
+import Toggle from "./Toggle";
 
 const Navbar = () => {
   const [show, setShow] = React.useState();
@@ -120,8 +121,8 @@ const Navbar = () => {
                       </a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link " href="#">
-                        Career
+                      <a class="nav-link " href="blogdetails">
+                        blog
                       </a>
                     </li>
                     <li class="nav-item">
@@ -129,6 +130,7 @@ const Navbar = () => {
                         Contatc Us
                       </a>
                     </li>
+                    <Toggle />
                   </ul>
                 </div>
               </nav>

@@ -9,10 +9,16 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Home from "./Appcontainer/Home";
 import About from "./Aboutcontainer/About";
 import Error from "./Error";
+import BlogDetails from "./BlogDetails";
+import { keepTheme } from "./themes";
 
 function App() {
   AOS.init({
     duration: 1500,
+  });
+
+  useEffect(() => {
+    keepTheme();
   });
 
   return (
@@ -20,6 +26,7 @@ function App() {
       <Switch>
         <Route exact path="/" component={Home} />
         <Route path="/about" component={About} />
+        <Route path="/blogdetails/:Title" exact component={BlogDetails} />
         <Route component={Error} />
       </Switch>
     </div>
