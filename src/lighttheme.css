@@ -12,13 +12,14 @@
 }
 
 .theme-light .hero_banner_sec {
-  background-color: #efdab9;
+  background-color: #fff;
 }
 .theme-light .main_nav_sec ul li a {
   color: var(--theme-dark2);
 }
 .theme-light #fixed {
-  background-color: rgb(255 255 255 / 78%);
+  background-color: #fff;
+  box-shadow: 5px 6px 13px -6px rgb(0 0 0 / 22%);
 }
 
 .theme-light .home_abt_sec {

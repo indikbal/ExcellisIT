@@ -22,7 +22,7 @@ export class OurBlog extends React.Component {
             <div className="single_devide_blog single_blog">
               <div className="blog_content">
                 <h4>{u.Title}</h4>
-                {/* <p>{u.Description}</p> */}
+                <p>{u.Description}</p>
                 <a href={"/blogdetails/" + u.link} className="read_more">
                   Read More
                 </a>
@@ -53,7 +53,7 @@ export class OurBlog extends React.Component {
             <Typed strings={["Our Worldwide CLients"]} typeSpeed={150} />
           </div>
           <div className="container-fluid">
-            <div className="row">
+            <div className="row col_position">
               {this.state.blogs}
 
               {/* <div className="col-md-6 pl-sm-0 pl-3 pr-sm-0 pr-3">

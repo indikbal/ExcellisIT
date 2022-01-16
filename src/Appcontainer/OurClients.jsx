@@ -1,4 +1,5 @@
 import React from "react";
+import { useEffect, useState, useRef } from "react";
 import "./assets/Style.css";
 import Typed from "react-typed";
 import client1 from "../img/client1.png";
@@ -7,8 +8,41 @@ import client3 from "../img/client3.png";
 import client4 from "../img/client4.png";
 import client5 from "../img/client5.png";
 import client6 from "../img/client6.png";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const OurClients = () => {
+  const settings = {
+    dots: false,
+    infinite: true,
+    speed: 5000,
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    autoplay: true,
+    autoplaySpeed: 5000,
+    cssEase: "linear",
+  };
+  const settings2 = {
+    dots: false,
+    infinite: true,
+    speed: 6000,
+    slidesToShow: 3,
+    slidesToScroll: -3,
+    autoplay: true,
+    autoplaySpeed: 6000,
+    cssEase: "linear",
+  };
+  const settings3 = {
+    dots: false,
+    infinite: true,
+    speed: 8000,
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    autoplay: true,
+    autoplaySpeed: 8000,
+    cssEase: "linear",
+  };
   return (
     <div>
       <section className="our_clients_sec">
@@ -29,6 +63,75 @@ const OurClients = () => {
               </div>
             </div>
             <div className="col-md-7">
+              <div className="slider_row">
+                <Slider {...settings}>
+                  <div className="client_logo_wrapper">
+                    <img src={client1} className="img-fluid" />
+                  </div>
+                  <div className="client_logo_wrapper">
+                    <img src={client2} className="img-fluid" />
+                  </div>
+                  <div className="client_logo_wrapper">
+                    <img src={client3} className="img-fluid" />
+                  </div>
+                  <div className="client_logo_wrapper">
+                    <img src={client4} className="img-fluid" />
+                  </div>
+                  <div className="client_logo_wrapper">
+                    <img src={client5} className="img-fluid" />
+                  </div>
+                  <div className="client_logo_wrapper">
+                    <img src={client6} className="img-fluid" />
+                  </div>
+                </Slider>
+              </div>
+              <div className="slider_row">
+                <Slider {...settings2}>
+                  <div className="client_logo_wrapper">
+                    <img src={client1} className="img-fluid" />
+                  </div>
+                  <div className="client_logo_wrapper">
+                    <img src={client2} className="img-fluid" />
+                  </div>
+                  <div className="client_logo_wrapper">
+                    <img src={client3} className="img-fluid" />
+                  </div>
+                  <div className="client_logo_wrapper">
+                    <img src={client4} className="img-fluid" />
+                  </div>
+                  <div className="client_logo_wrapper">
+                    <img src={client5} className="img-fluid" />
+                  </div>
+                  <div className="client_logo_wrapper">
+                    <img src={client6} className="img-fluid" />
+                  </div>
+                </Slider>
+              </div>
+              <div className="slider_row">
+                <Slider {...settings3}>
+                  <div className="client_logo_wrapper">
+                    <img src={client1} className="img-fluid" />
+                  </div>
+                  <div className="client_logo_wrapper">
+                    <img src={client2} className="img-fluid" />
+                  </div>
+                  <div className="client_logo_wrapper">
+                    <img src={client3} className="img-fluid" />
+                  </div>
+                  <div className="client_logo_wrapper">
+                    <img src={client4} className="img-fluid" />
+                  </div>
+                  <div className="client_logo_wrapper">
+                    <img src={client5} className="img-fluid" />
+                  </div>
+                  <div className="client_logo_wrapper">
+                    <img src={client6} className="img-fluid" />
+                  </div>
+                </Slider>
+              </div>
+            </div>
+
+            {/* <div className="col-md-7">
               <div className="client_logo_sec">
                 <div className="client_row1">
                   <marquee direction="up">
@@ -70,33 +173,8 @@ const OurClients = () => {
                   </marquee>
                 </div>
               </div>
-              {/* <div className="client_logo_new">
-                <div class="a-one animate">
-                  {" "}
-                  <img src={client1} />
-                </div>
-                <div class="a-two animate">
-                  {" "}
-                  <img src={client2} />
-                </div>
-                <div class="a-three animate">
-                  {" "}
-                  <img src={client3} />
-                </div>
-                <div class="a-four animate">
-                  {" "}
-                  <img src={client4} />
-                </div>
-                <div class="a-five animate">
-                  {" "}
-                  <img src={client5} />
-                </div>
-                <div class="a-six animate">
-                  {" "}
-                  <img src={client6} />
-                </div>
-              </div> */}
-            </div>
+             
+            </div> */}
           </div>
         </div>
       </section>

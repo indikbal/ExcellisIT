@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import ReactDOM from "react-dom";
 import logo from "../src/img/logo-white.png";
+import icon from "../src/img/icon.png";
 import MainMenu from "./MainMenu";
 import Toggle from "./Toggle";
 
@@ -78,7 +79,10 @@ const Navbar = () => {
             <div className="col-md-12">
               <nav class="navbar navbar-expand-lg pr-0">
                 <div className="logo">
-                  <img src={logo} />
+                  <a class="" href="/">
+                    <img className="header_logo" src={logo} />
+                    <img className="header_icon" src={icon} />
+                  </a>
                 </div>
                 <button
                   class="navbar-toggler"
@@ -122,7 +126,7 @@ const Navbar = () => {
                     </li>
                     <li class="nav-item">
                       <a class="nav-link " href="blogdetails">
-                        blog
+                        Blog
                       </a>
                     </li>
                     <li class="nav-item">

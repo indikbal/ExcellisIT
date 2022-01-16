@@ -1,3 +1,15 @@
+:root {
+  --header-height: 4.5rem;
+  /*========== Colors ==========*/
+  --theme-yellow1: #dda032;
+  --theme-yellow2: #ffa000;
+  --theme-dark1: #343233;
+  --theme-dark2: #1e1d1d;
+  --gray-text: #858585;
+  --text-white1: #efdab9;
+  --body-font: "Roboto", sans-serif;
+  --heading-font: "Oswald", sans-serif;
+}
 .menu {
   position: fixed;
   top: 0;
@@ -311,7 +323,7 @@ a:hover {
 }
 
 .menu_social a {
-  color: #4d5465;
+  color: var(--text-white1);
   font-size: 21px;
   margin: 5px 0;
 }
