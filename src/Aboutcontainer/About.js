@@ -1,14 +1,9 @@
-import React from 'react';
-import Navbar from '../Navbar';
-import Innerbanner from '../Aboutcontainer/Innerbanner';
+import React from "react";
+import Navbar from "../Navbar";
+import Innerbanner from "../Aboutcontainer/Innerbanner";
 
-const About = () =>{
-    return(
-        <div>
-            <Navbar/>
-            <Innerbanner/>
-        </div>
-    )
-}
+const About = () => {
+  return <div>test</div>;
+};
 
 export default About;

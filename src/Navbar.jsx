@@ -115,7 +115,7 @@ const Navbar = () => {
                       </a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#">
+                      <a class="nav-link" href="OurServices">
                         Our Services
                       </a>
                     </li>
@@ -125,7 +125,7 @@ const Navbar = () => {
                       </a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link " href="blogdetails">
+                      <a class="nav-link " href="Ourblogs">
                         Blog
                       </a>
                     </li>

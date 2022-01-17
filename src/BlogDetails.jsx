@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import Innerbanner from "./Aboutcontainer/Innerbanner";
 import Navbar from "./Navbar";
 import axios from "axios";
 import { useParams } from "react-router-dom";
@@ -25,7 +24,6 @@ const BlogDetails = (data) => {
   return (
     <div>
       <Navbar />
-      <Innerbanner />
       <section className="single_blog_sec">
         {blogData ? (
           <div className="container">

@@ -11,6 +11,8 @@ import About from "./Aboutcontainer/About";
 import Error from "./Error";
 import BlogDetails from "./BlogDetails";
 import { keepTheme } from "./themes";
+import MainServices from "./Servicescontainer/MainServices";
+import BlogPage from "./BlogPage";
 
 function App() {
   AOS.init({
@@ -26,7 +28,9 @@ function App() {
       <Switch>
         <Route exact path="/" component={Home} />
         <Route path="/about" component={About} />
-        <Route path="/blogdetails/:Title" exact component={BlogDetails} />
+        <Route path="/OurServices" component={MainServices} />
+        <Route path="/Ourblogs" component={BlogPage} />
+        <Route path="/blogDetail/:Title" exact component={BlogDetails} />
         <Route component={Error} />
       </Switch>
     </div>
