@@ -2,6 +2,8 @@ import React from "react";
 import axios from "axios";
 import Navbar from "./Navbar";
 import "../src/Appcontainer/assets/Style.css";
+import InnerBanner from "./InnerBanner";
+import ThreeScene from "./Appcontainer/ThreeScene";
 
 export class BlogPage extends React.Component {
   constructor(props) {
@@ -49,6 +51,10 @@ export class BlogPage extends React.Component {
     return (
       <div>
         <Navbar />
+        <div className="hero_banner_sec">
+          <ThreeScene />
+        </div>
+        <InnerBanner />
         <section className="article_section">
           <div className="container-fluid">
             <div className="row col_position">{this.state.blogs}</div>
