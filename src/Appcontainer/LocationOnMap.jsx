@@ -1,6 +1,4 @@
 import React from "react";
-import "./assets/Style.css";
-import wideGlobe from "../img/wide_globe.png";
 import * as $ from "jquery";
 
 const LocationOnMap = () => {
@@ -18,7 +16,10 @@ const LocationOnMap = () => {
                 <span>Serving Globally</span>
               </div>
               <div className="globe_wrapper">
-                <img className="img-fluid wide_globe_img" src={wideGlobe} />
+                <img
+                  className="img-fluid wide_globe_img"
+                  src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/wide_globe.png?alt=media&token=5387d648-db52-4a39-841b-7c993cbd3ddb"
+                />
                 <div className="india_location">
                   <div
                     className="map_location_pin"

@@ -1,8 +1,6 @@
 import React from "react";
 import "./assets/Style.css";
 import Typed from "react-typed";
-import review_img from "../img/banner_review_images.png";
-import big_logo from "../img/big-logo.png";
 
 const Herobaner = () => {
   return (
@@ -27,7 +25,7 @@ const Herobaner = () => {
                   />
                 </div>
                 <div className="banner_review_img">
-                  <img src={review_img} />
+                  <img src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/banner_review_images.png?alt=media&token=074659d6-4a47-4f8f-b905-a7f70e872a87" />
                 </div>
               </div>
             </div>

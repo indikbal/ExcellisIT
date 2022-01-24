@@ -231,7 +231,7 @@ a:hover {
 
 .label--topleft {
   top: 2rem;
-  left: 2rem;
+  left: 1rem;
 }
 
 .label--vert,
@@ -274,7 +274,6 @@ a:hover {
 
 .sidemenu__item-inner {
   display: block;
-  transform: translate3d(0, 100%, 0);
 }
 
 .menu__item-inner:hover .menu__item-map {
@@ -334,6 +333,14 @@ a:hover {
   }
   .menu_wrapper {
     overflow: scroll;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .menu_address_sec {
+    bottom: 70px;
+  }
+  .mainmenu__item {
+    font-style: 30px;
   }
 }
 
@@ -398,7 +405,7 @@ a:hover {
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    padding-left: 100px;
+    padding-left: 80px;
   }
 
   .mainmenu {

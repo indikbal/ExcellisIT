@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Footer from "../Footer";
 import Navbar from "../Navbar";
-import "./assets/Style.css";
+import TestimonialSection from "../TestimonialSection";
 import BecomeAPartner from "./BecomeAPartner";
 import ContactSection from "./ContactSection";
 import FactsAndFigure from "./FactsAndFigure";
@@ -13,7 +13,6 @@ import LocationOnMap from "./LocationOnMap";
 import OurBlog from "./OurBlog";
 import OurClients from "./OurClients";
 import ThreeScene from "./ThreeScene";
-import "../../src/lighttheme.css";
 
 // $(".bodyName").children("div").addClass("test");
 
@@ -43,6 +42,7 @@ const Home = () => {
       <OurClients />
       <OurBlog />
       <ContactSection />
+      <TestimonialSection />
       <LocationOnMap />
       <Footer />
     </div>

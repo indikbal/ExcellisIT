@@ -2,10 +2,6 @@ import React, { useState, useEffect } from "react";
 import ThreeScene from "../Appcontainer/ThreeScene";
 import Navbar from "../Navbar";
 import "../Servicescontainer/services.css";
-import itimg from "../../src/img/web-mobile.png";
-import marketingimg from "../../src/img/digital-marketing.png";
-import bpoimg from "../../src/img/bpo-img.png";
-import cadimg from "../../src/img/cadimg.png";
 import { Animated } from "react-animated-css";
 
 const MainServices = () => {
@@ -86,7 +82,10 @@ const MainServices = () => {
                           </ul>
                         </div>
                         <div className="services_graphics_nav_sec">
-                          <img className="img-fluid" src={itimg} />
+                          <img
+                            className="img-fluid"
+                            src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/it-services.jpg?alt=media&token=07bdda06-d8e6-402b-8410-02daba2c7382"
+                          />
                         </div>
                       </div>
                     </Animated>
@@ -130,7 +129,10 @@ const MainServices = () => {
                           </ul>
                         </div>
                         <div className="services_graphics_nav_sec">
-                          <img className="img-fluid" src={marketingimg} />
+                          <img
+                            className="img-fluid"
+                            src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/marketing-services.jpg?alt=media&token=c9992bed-1126-46ab-812f-af0252ee19d7"
+                          />
                         </div>
                       </div>
                     </Animated>
@@ -176,7 +178,10 @@ const MainServices = () => {
                           </ul>
                         </div>
                         <div className="services_graphics_nav_sec">
-                          <img className="img-fluid" src={bpoimg} />
+                          <img
+                            className="img-fluid"
+                            src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/bpo-services.jpg?alt=media&token=edc2f9e7-ba2a-46fb-b7f0-eb0b575a068a"
+                          />
                         </div>
                       </div>
                     </Animated>
@@ -212,7 +217,10 @@ const MainServices = () => {
                           </ul>
                         </div>
                         <div className="services_graphics_nav_sec">
-                          <img className="img-fluid" src={cadimg} />
+                          <img
+                            className="img-fluid"
+                            src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/cad-services.jpg?alt=media&token=1abb673a-98ad-43ca-8977-2cf35277a111"
+                          />
                         </div>
                       </div>
                     </Animated>

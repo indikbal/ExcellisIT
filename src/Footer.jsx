@@ -1,6 +1,4 @@
 import React from "react";
-import Footer_logo from "../src/img/footer_logo.png";
-import Country from "../src/img/country.png";
 
 const Footer = () => {
   return (
@@ -18,13 +16,20 @@ const Footer = () => {
                   <div class="footer_ect_sec">
                     <ul>
                       <li>
-                        <img class="footer_logo" src={Footer_logo} alt="" />
+                        <img
+                          class="footer_logo"
+                          src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/footer_logo.png?alt=media&token=5c7ba5d3-c1fe-4361-adca-491394a29645"
+                          alt=""
+                        />
                       </li>
                       <li class="mt-3">
                         <p>
                           <b>Our clients in other countries:</b>
                         </p>
-                        <img src={Country} class="img-fluid" />
+                        <img
+                          src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/country.png?alt=media&token=58bc069a-d146-4450-ae65-bd6fca88b33a"
+                          class="img-fluid"
+                        />
                       </li>
                     </ul>
                   </div>
@@ -157,78 +162,6 @@ const Footer = () => {
                   </div>
                 </div>
               </div>
-              {/* <div class="row">
-              <section class="trial-block w-100 shadow3" id="ContactUs">
-                <div class="height450">
-                  <div class="social-overlap process-scetion mt100">
-                    <div class="container">
-                      <div class="row justify-content-center">
-                        <div class="col-md-12">
-                          <div class="social-bar">
-                            <div class="social-icons iconpad text-center">
-                              <a
-                                href="https://www.facebook.com/excellisIT/"
-                                target="_blank"
-                                class="slider-nav-item"
-                              >
-                                <i class="lab la-facebook-f"></i>
-                              </a>
-                              <a
-                                href="https://www.linkedin.com/company/excellisit"
-                                target="_blank"
-                                class="slider-nav-item"
-                              >
-                                <i class="lab la-linkedin-in"></i>
-                              </a>
-                              <a
-                                href="https://www.instagram.com/accounts/login/"
-                                target="_blank"
-                                class="slider-nav-item"
-                              >
-                                <i class="lab la-instagram"></i>
-                              </a>
-                              <a
-                                href="https://twitter.com/excellisIT"
-                                target="_blank"
-                                class="slider-nav-item"
-                              >
-                                <i class="lab la-twitter"></i>
-                              </a>
-                              <a
-                                href="https://www.excellisit.com/blog"
-                                target="_blank"
-                                class="slider-nav-item"
-                              >
-                                <i class="las la-rss"></i>
-                              </a>
-                              <a
-                                href="https://www.youtube.com/channel/UCoz841ao5Se30KyCld9YmpA"
-                                target="_blank"
-                                class="slider-nav-item"
-                              >
-                                <i class="lab la-youtube"></i>
-                              </a>
-                              <a
-                                href="https://join.skype.com/invite/UtNAdxIp1Dcs"
-                                class="slider-nav-item"
-                              >
-                                <i class="lab la-skype"></i>
-                              </a>
-                              <a
-                                href="https://wa.me/918617724646"
-                                class="behance slider-nav-item"
-                              >
-                                <i class="lab la-whatsapp"></i>
-                              </a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </section>
-            </div> */}
             </div>
             <div class="copyright_sec">
               <div class="container">

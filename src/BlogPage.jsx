@@ -1,7 +1,6 @@
 import React from "react";
 import axios from "axios";
 import Navbar from "./Navbar";
-import "../src/Appcontainer/assets/Style.css";
 import InnerBanner from "./InnerBanner";
 import ThreeScene from "./Appcontainer/ThreeScene";
 

@@ -4,7 +4,6 @@ import InnerBanner from "../InnerBanner";
 import Navbar from "../Navbar";
 import Footer from "../Footer";
 import "../../src/Aboutcontainer/about.css";
-import "../../src/Appcontainer/assets/Style.css";
 import ThreeScense from "../Appcontainer/ThreeScene";
 import gallery1 from "../../src/img/gallery/1.jpg";
 import gallery2 from "../../src/img/gallery/2.jpg";
@@ -12,15 +11,10 @@ import gallery3 from "../../src/img/gallery/3.jpg";
 import gallery4 from "../../src/img/gallery/4.jpg";
 import gallery5 from "../../src/img/gallery/5.jpg";
 import gallery6 from "../../src/img/gallery/6.jpg";
-import project1 from "../../src/img/industries1.jpg";
-import project2 from "../../src/img/industries2.jpg";
-import project3 from "../../src/img/industries2.jpg";
-import ab from "../../src/img/ab.jpg";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import arrow from "../img/arrow-right-solution.svg";
-import pic from "../../src/img/pic.png";
 
 function SampleNextArrow(props) {
   const { className, style, onClick } = props;
@@ -77,7 +71,7 @@ const About = () => {
           </div>
           <div class="locla_text">
             <div class="row">
-              <div class="col-xl-5 order-2 order-sm-1">
+              <div class="col-xl-5 order-2 order-sm-1" data-aos="fade-up">
                 <p>
                   We started like you did: a potent mixture of passion and work
                   ethic, combined with the insight to recognize a problem and
@@ -89,19 +83,37 @@ const About = () => {
                 </p>
               </div>
               <div class="col-xl-7 order-1 order-sm-2">
-                <img src={ab} alt="" class="img-fluid" />
+                <div class="reveal-holder custom_aos" data-aos="reveal-item">
+                  <div
+                    class="reveal-block right custom_aos"
+                    data-aos="reveal-right"
+                  ></div>
+                  <img
+                    src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/ab.jpg?alt=media&token=6cd9d869-32a9-4b1c-9296-c3efafb7edef"
+                    alt=""
+                    class="img-fluid"
+                  />
+                </div>
               </div>
             </div>
           </div>
           <div class="left_master">
             <div class="row">
               <div class="col-xl-7">
-                <h3>
-                  THERE WAS A SMARTER, BETTER WAY TO RUN A DESIGN AND
-                  DEVELOPMENT AGENCY. SO WE STARTED OUR OWN.
-                </h3>
+                <div className="left_master_title">
+                  <div class="reveal-holder custom_aos" data-aos="reveal-item">
+                    <div
+                      class="reveal-block right custom_aos"
+                      data-aos="reveal-right"
+                    ></div>
+                    <h3>
+                      THERE WAS A SMARTER, BETTER WAY TO RUN A DESIGN AND
+                      DEVELOPMENT AGENCY. SO WE STARTED OUR OWN.
+                    </h3>
+                  </div>
+                </div>
               </div>
-              <div class="col-xl-4">
+              <div class="col-xl-4" data-aos="fade-up">
                 <p>
                   160+ clients, millions of end-users, and thousands of designs
                   later, we’re an award-winning agency that’s worked with some
@@ -118,10 +130,20 @@ const About = () => {
             <div class="row">
               <div class="col-xl-7">
                 <div class="up_img">
-                  <img src={gallery1} alt="" class="img-fluid" />
+                  <div class="reveal-holder custom_aos" data-aos="reveal-item">
+                    <div
+                      class="reveal-block right custom_aos"
+                      data-aos="reveal-right"
+                    ></div>
+                    <img
+                      src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/1.jpg?alt=media&token=7cf960bf-ac3d-4c35-b02f-3a4ef52149f8"
+                      alt=""
+                      class="img-fluid"
+                    />
+                  </div>
                 </div>
               </div>
-              <div class="col-xl-5">
+              <div class="col-xl-5" data-aos="fade-down">
                 <p>
                   “The comments we receive about from our customers about how
                   beautiful the website is, how easy it is to use, and how
@@ -136,14 +158,14 @@ const About = () => {
             <div class="locla1">
               <h2>THE EXCELLIS STORY</h2>
             </div>
-            <p class="black_p">
+            <p class="black_p" data-aos="fade-up">
               Our process may be data-driven, but our projects are fueled by
               something much stronger: passion. We don’t clock in at 9 and clock
               out at 5 - we work around the clock.
             </p>
             <div class="locla_text">
               <div class="row">
-                <div class="col-xl-5">
+                <div class="col-xl-5" data-aos="fade-down">
                   <p>
                     We hail from different backgrounds, different lifestyles.
                     We’re home to a self-taught design guru and a fashionista
@@ -162,17 +184,21 @@ const About = () => {
                     We’re your partner.
                   </p>
                 </div>
-                <div class="col-xl-7">
+                <div class="col-xl-7" data-aos="fade-up">
                   <div class="img_c">
                     <div
-                      class="reveal-block right custom_aos"
-                      data-aos="reveal-right"
+                      class="reveal-holder custom_aos"
+                      data-aos="reveal-item"
                     >
                       <div
-                        class="reveal-holder custom_aos"
-                        data-aos="reveal-item"
+                        class="reveal-block right custom_aos"
+                        data-aos="reveal-right"
                       ></div>
-                      <img src={pic} className="" alt="" />
+                      <img
+                        src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/pic.jpg?alt=media&token=56ebdcb6-7ec5-4bb1-aedf-667afac01523"
+                        className=""
+                        alt=""
+                      />
                     </div>
                   </div>
                 </div>
@@ -197,137 +223,92 @@ const About = () => {
               <div class="row">
                 <div class="col-xl-3 col-6">
                   <div class="item_a">
-                    <div class="img-c">
-                      <img
-                        src="http://web.archive.org/web/20210812104420im_/https://mk0codal8u9q2enn1dd.kinstacdn.com/wp-content/uploads/2019/02/about-logo-01.svg"
-                        alt=""
-                      />
-                    </div>
                     <div class="title-inner">
-                      <img
-                        src="http://web.archive.org/web/20210812104420im_/https://mk0codal8u9q2enn1dd.kinstacdn.com/wp-content/uploads/2019/02/about-logo-big-01.svg"
-                        alt=""
-                      />
-                      <h3 class="txt-c">FULL TRANSPARENCY</h3>
+                      <div className="abt_we_icon">
+                        <i class="ph-eye"></i>
+                      </div>
+                      <h3 class="txt-c">
+                        FULL
+                        <br /> TRANSPARENCY
+                      </h3>
                     </div>
                   </div>
                 </div>
                 <div class="col-xl-3 col-6">
                   <div class="item_a">
-                    <div class="img-c">
-                      <img
-                        src="http://web.archive.org/web/20210812104420im_/https://mk0codal8u9q2enn1dd.kinstacdn.com/wp-content/uploads/2019/02/about-logo-01.svg"
-                        alt=""
-                      />
-                    </div>
                     <div class="title-inner">
-                      <img
-                        src="http://web.archive.org/web/20210812104420im_/https://mk0codal8u9q2enn1dd.kinstacdn.com/wp-content/uploads/2019/02/about-logo-big-01.svg"
-                        alt=""
-                      />
-                      <h3 class="txt-c">FULL TRANSPARENCY</h3>
+                      <div className="abt_we_icon">
+                        <i class="ph-trend-up"></i>
+                      </div>
+                      <h3 class="txt-c">REAL TIME PROJECT STATUS</h3>
                     </div>
                   </div>
                 </div>
                 <div class="col-xl-3 col-6">
                   <div class="item_a">
-                    <div class="img-c">
-                      <img
-                        src="http://web.archive.org/web/20210812104420im_/https://mk0codal8u9q2enn1dd.kinstacdn.com/wp-content/uploads/2019/02/about-logo-01.svg"
-                        alt=""
-                      />
-                    </div>
                     <div class="title-inner">
-                      <img
-                        src="http://web.archive.org/web/20210812104420im_/https://mk0codal8u9q2enn1dd.kinstacdn.com/wp-content/uploads/2019/02/about-logo-big-01.svg"
-                        alt=""
-                      />
-                      <h3 class="txt-c">FULL TRANSPARENCY</h3>
+                      <div className="abt_we_icon">
+                        <i class="ph-arrow-clockwise"></i>
+                      </div>
+                      <h3 class="txt-c">
+                        AGILE
+                        <br /> PROCESS
+                      </h3>
                     </div>
                   </div>
                 </div>
                 <div class="col-xl-3 col-6">
                   <div class="item_a">
-                    <div class="img-c">
-                      <img
-                        src="http://web.archive.org/web/20210812104420im_/https://mk0codal8u9q2enn1dd.kinstacdn.com/wp-content/uploads/2019/02/about-logo-01.svg"
-                        alt=""
-                      />
-                    </div>
                     <div class="title-inner">
-                      <img
-                        src="http://web.archive.org/web/20210812104420im_/https://mk0codal8u9q2enn1dd.kinstacdn.com/wp-content/uploads/2019/02/about-logo-big-01.svg"
-                        alt=""
-                      />
-                      <h3 class="txt-c">FULL TRANSPARENCY</h3>
+                      <div className="abt_we_icon">
+                        <i class="ph-thumbs-up"></i>
+                      </div>
+                      <h3 class="txt-c">
+                        TRUST <br />& RELIABILITY
+                      </h3>
                     </div>
                   </div>
                 </div>
                 <div class="col-xl-3 col-6">
                   <div class="item_a">
-                    <div class="img-c">
-                      <img
-                        src="http://web.archive.org/web/20210812104420im_/https://mk0codal8u9q2enn1dd.kinstacdn.com/wp-content/uploads/2019/02/about-logo-01.svg"
-                        alt=""
-                      />
-                    </div>
                     <div class="title-inner">
-                      <img
-                        src="http://web.archive.org/web/20210812104420im_/https://mk0codal8u9q2enn1dd.kinstacdn.com/wp-content/uploads/2019/02/about-logo-big-01.svg"
-                        alt=""
-                      />
-                      <h3 class="txt-c">FULL TRANSPARENCY</h3>
+                      <div className="abt_we_icon">
+                        <i class="ph-user-circle"></i>
+                      </div>
+                      <h3 class="txt-c">HEAVY INVOLVEMENT FROM OUR CLIENTS</h3>
                     </div>
                   </div>
                 </div>
                 <div class="col-xl-3 col-6">
                   <div class="item_a">
-                    <div class="img-c">
-                      <img
-                        src="http://web.archive.org/web/20210812104420im_/https://mk0codal8u9q2enn1dd.kinstacdn.com/wp-content/uploads/2019/02/about-logo-01.svg"
-                        alt=""
-                      />
-                    </div>
                     <div class="title-inner">
-                      <img
-                        src="http://web.archive.org/web/20210812104420im_/https://mk0codal8u9q2enn1dd.kinstacdn.com/wp-content/uploads/2019/02/about-logo-big-01.svg"
-                        alt=""
-                      />
-                      <h3 class="txt-c">FULL TRANSPARENCY</h3>
+                      <div className="abt_we_icon">
+                        <i class="ph-handshake"></i>
+                      </div>
+                      <h3 class="txt-c">ONSITE COLLABORATION</h3>
                     </div>
                   </div>
                 </div>
                 <div class="col-xl-3 col-6">
                   <div class="item_a">
-                    <div class="img-c">
-                      <img
-                        src="http://web.archive.org/web/20210812104420im_/https://mk0codal8u9q2enn1dd.kinstacdn.com/wp-content/uploads/2019/02/about-logo-01.svg"
-                        alt=""
-                      />
-                    </div>
                     <div class="title-inner">
-                      <img
-                        src="http://web.archive.org/web/20210812104420im_/https://mk0codal8u9q2enn1dd.kinstacdn.com/wp-content/uploads/2019/02/about-logo-big-01.svg"
-                        alt=""
-                      />
-                      <h3 class="txt-c">FULL TRANSPARENCY</h3>
+                      <div className="abt_we_icon">
+                        <i class="ph-users-three"></i>
+                      </div>
+                      <h3 class="txt-c">
+                        DEDICATED
+                        <br /> TEAMS
+                      </h3>
                     </div>
                   </div>
                 </div>
                 <div class="col-xl-3 col-6">
                   <div class="item_a">
-                    <div class="img-c">
-                      <img
-                        src="http://web.archive.org/web/20210812104420im_/https://mk0codal8u9q2enn1dd.kinstacdn.com/wp-content/uploads/2019/02/about-logo-01.svg"
-                        alt=""
-                      />
-                    </div>
                     <div class="title-inner">
-                      <img
-                        src="http://web.archive.org/web/20210812104420im_/https://mk0codal8u9q2enn1dd.kinstacdn.com/wp-content/uploads/2019/02/about-logo-big-01.svg"
-                        alt=""
-                      />
-                      <h3 class="txt-c">FULL TRANSPARENCY</h3>
+                      <div className="abt_we_icon">
+                        <i class="ph-lightbulb-filament"></i>
+                      </div>
+                      <h3 class="txt-c">INNOVATION & STRATEGY</h3>
                     </div>
                   </div>
                 </div>
@@ -351,66 +332,49 @@ const About = () => {
                       asNavFor={nav2}
                       ref={slider1}
                       fade={true}
-                      dots={false}
+                      dots={true}
                       slidesToShow={1}
                       slidesToScroll={1}
                       arrows={false}
                     >
                       <div className="single_project">
-                        <h2>Building Brands From The Ground Up</h2>
+                        <h2>Bill Experts</h2>
                         <p>
-                          Our mission is simple: Work with the best, design with
-                          a purpose, and engineer for a sustainable future.
+                          We brought forward the finesse in design expertise,
+                          worked with the client at each step and created a
+                          visually stunning website that had high definition
+                          images saying it all. Along with that we provided a
+                          site structure that feels lovely while being
+                          minimalist though also depicting all the information,
+                          and contact point of the users.
                         </p>
                         <a href="" class="view_all">
                           View All
                         </a>
                       </div>
                       <div className="single_project">
-                        <h2>Wielding Technology For Good</h2>
+                        <h2>Nadax Media</h2>
                         <p>
-                          Our mission is simple: Work with the best, design with
-                          a purpose, and engineer for a sustainable future.
+                          Crafted a WordPress website, wholesome in features and
+                          capabilities, helping to put each and every aspect of
+                          their service in a clear, concise and effective
+                          layout. The end result was a fast, easy-to-navigate
+                          and quick-response website.{" "}
                         </p>
                         <a href="" class="view_all">
                           View All
                         </a>
                       </div>
                       <div className="single_project">
-                        <h2>Being More Than An Agency</h2>
+                        <h2>Flightmantra</h2>
                         <p>
-                          Our mission is simple: Work with the best, design with
-                          a purpose, and engineer for a sustainable future.
-                        </p>
-                        <a href="" class="view_all">
-                          View All
-                        </a>
-                      </div>
-                      <div className="single_project">
-                        <h2>Building Brands From The Ground Up</h2>
-                        <p>
-                          Our mission is simple: Work with the best, design with
-                          a purpose, and engineer for a sustainable future.
-                        </p>
-                        <a href="" class="view_all">
-                          View All
-                        </a>
-                      </div>
-                      <div className="single_project">
-                        <h2>Wielding Technology For Good</h2>
-                        <p>
-                          Our mission is simple: Work with the best, design with
-                          a purpose, and engineer for a sustainable future.
-                        </p>
-                        <a href="" class="view_all">
-                          View All
-                        </a>
-                      </div>
-                      <div className="single_project">
-                        <h2>Being More Than An Agency</h2>
-                        <p>
-                          Our mission is simple: Work with the best, design with
-                          a purpose, and engineer for a sustainable future.
+                          We knew how to combine the design and technological
+                          aspect that delivers on the promise made to the
+                          client. We used the best of the technological stack,
+                          kept the right formulation for content and visual
+                          depiction and produced a website that is fast to load,
+                          provide easy information and have the users find all
+                          they are looking for while being fully engaged.
                         </p>
                         <a href="" class="view_all">
                           View All
@@ -438,42 +402,21 @@ const About = () => {
                   <div>
                     <div class="img_slick">
                       <div class="overlay_img">
-                        <img src="https://firebasestorage.googleapis.com/v0/b/excellis-it.appspot.com/o/industries1.jpg?alt=media&token=16ffe27e-93ec-4ad5-af35-54291abe7f30" />
+                        <img src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/billexperts.jpg?alt=media&token=7f3d4a1c-ab2c-4d3d-80ae-69f94ee94bc9" />
                       </div>
                     </div>
                   </div>
                   <div>
                     <div class="img_slick">
                       <div class="overlay_img">
-                        <img src={project2} />
+                        <img src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/nadaxmedia.jpg?alt=media&token=43d93499-7b60-460c-ad8d-4f83d66fc10f" />
                       </div>
                     </div>
                   </div>
                   <div>
                     <div class="img_slick">
                       <div class="overlay_img">
-                        <img src={project3} />
-                      </div>
-                    </div>
-                  </div>
-                  <div>
-                    <div class="img_slick">
-                      <div class="overlay_img">
-                        <img src={project1} />
-                      </div>
-                    </div>
-                  </div>
-                  <div>
-                    <div class="img_slick">
-                      <div class="overlay_img">
-                        <img src={project2} />
-                      </div>
-                    </div>
-                  </div>
-                  <div>
-                    <div class="img_slick">
-                      <div class="overlay_img">
-                        <img src={project3} />
+                        <img src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/flightmantra.jpg?alt=media&token=834f5ae8-fe4f-4f3b-b684-04db84b4dd01" />
                       </div>
                     </div>
                   </div>
@@ -486,14 +429,15 @@ const About = () => {
           <div class="title-c">
             <div class="left-block">
               <h2>
-                <span>meet our team</span>
+                <span>Meet our team</span>
               </h2>
             </div>
             <div class="right-block 1">
               <span
                 class="img-overlay"
                 style={{
-                  backgroundImage: "url(" + gallery1 + ")",
+                  backgroundImage:
+                    "url(https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/1.jpg?alt=media&token=7cf960bf-ac3d-4c35-b02f-3a4ef52149f8)",
                   backgroundSize: "cover",
                 }}
               >
@@ -505,7 +449,8 @@ const About = () => {
             <span
               class="img-overlay"
               style={{
-                backgroundImage: "url(" + gallery6 + ")",
+                backgroundImage:
+                  "url(https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/2.jpg?alt=media&token=f4ee1cf2-c847-4f7a-b32a-a7431195774e)",
                 backgroundSize: "cover",
               }}
             >
@@ -514,7 +459,8 @@ const About = () => {
             <span
               class="img-overlay"
               style={{
-                backgroundImage: "url(" + gallery2 + ")",
+                backgroundImage:
+                  "url(https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/3.jpg?alt=media&token=b925203e-40ac-4858-adcf-e0f75123417f)",
                 backgroundSize: "cover",
               }}
             >
@@ -523,7 +469,8 @@ const About = () => {
             <span
               class="img-overlay"
               style={{
-                backgroundImage: "url(" + gallery3 + ")",
+                backgroundImage:
+                  "url(https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/4.jpg?alt=media&token=1ffe24c8-cd77-4b41-a51c-c183000fa16e)",
                 backgroundSize: "cover",
               }}
             >
@@ -532,7 +479,8 @@ const About = () => {
             <span
               class="img-overlay"
               style={{
-                backgroundImage: "url(" + gallery4 + ")",
+                backgroundImage:
+                  "url(https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/5.jpg?alt=media&token=9767dbb9-1be4-43d5-9e8f-3ea1a112f9d0)",
                 backgroundSize: "cover",
               }}
             >

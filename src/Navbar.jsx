@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import ReactDOM from "react-dom";
 import logo from "../src/img/logo-white.png";
-import icon from "../src/img/icon.png";
 import MainMenu from "./MainMenu";
 import Toggle from "./Toggle";
 
@@ -80,8 +79,14 @@ const Navbar = () => {
               <nav class="navbar navbar-expand-lg pr-0">
                 <div className="logo">
                   <a class="" href="/">
-                    <img className="header_logo" src={logo} />
-                    <img className="header_icon" src={icon} />
+                    <img
+                      className="header_logo"
+                      src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/logo-white.png?alt=media&token=e6de3af9-13d4-4699-8b77-0b8b2445bc3e"
+                    />
+                    <img
+                      className="header_icon"
+                      src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/icon.png?alt=media&token=011a9301-ab67-4720-b403-7ffc908f4291"
+                    />
                   </a>
                 </div>
                 <button
@@ -116,12 +121,17 @@ const Navbar = () => {
                     </li>
                     <li class="nav-item">
                       <a class="nav-link" href="OurServices">
-                        Our Services
+                        Services
                       </a>
                     </li>
                     <li class="nav-item">
                       <a class="nav-link" href="#">
                         Partner With Us
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="process">
+                        Process
                       </a>
                     </li>
                     <li class="nav-item">
@@ -131,7 +141,7 @@ const Navbar = () => {
                     </li>
                     <li class="nav-item">
                       <a class="nav-link " href="#">
-                        Contatc Us
+                        Contact
                       </a>
                     </li>
                     <Toggle />

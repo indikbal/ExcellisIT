@@ -1,8 +1,6 @@
 import React from "react";
 import Typed from "react-typed";
 import arrow from "../../src/img/arrow-design.svg";
-import single_serv from "../../src/img/industries1.jpg";
-import servicesicon from "../../src/img/servicesicon.png";
 import { Animated } from "react-animated-css";
 
 const HomeServicesSec = () => {
@@ -145,7 +143,7 @@ const HomeServicesSec = () => {
                               >
                                 <div className="single_services d-flex p-0">
                                   <div className="singel_img_serv">
-                                    <img src={single_serv} />
+                                    <img src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/ui-ux.jpg?alt=media&token=0aaee418-aa51-4409-8df8-95a013231316" />
                                   </div>
                                   <div className="single_img_services">
                                     <div className="services_icon desigining_icon"></div>
@@ -233,141 +231,6 @@ const HomeServicesSec = () => {
                     >
                       <div id="" className="">
                         <div className="services_item">
-                          <h2>BPO Services</h2>
-                          <div className="services_change">
-                            <div className="services_row">
-                              <Animated
-                                animationIn="fadeInUp"
-                                animationOut="fadeOut"
-                                isVisible={true}
-                                animationInDelay={100}
-                              >
-                                <div className="single_services">
-                                  <h4>Search engine Marketing</h4>
-                                  <p>
-                                    Put your image before clients who are now
-                                    effectively looking on oogle, Bing, YouTube,
-                                    or other earch...
-                                  </p>
-                                  <a className="services_link" href="#">
-                                    <i class="ph-arrow-right"></i>
-                                  </a>
-                                </div>
-                              </Animated>
-                              <Animated
-                                animationIn="fadeInUp"
-                                animationOut="fadeOut"
-                                isVisible={true}
-                                animationInDelay={200}
-                              >
-                                <div className="single_services">
-                                  <h4>Search engine Marketing</h4>
-                                  <p>
-                                    Put your image before clients who are now
-                                    effectively looking on oogle, Bing, YouTube,
-                                    or other earch...
-                                  </p>
-                                  <a className="services_link" href="#">
-                                    <i class="ph-arrow-right"></i>
-                                  </a>
-                                </div>
-                              </Animated>
-                            </div>
-
-                            <div className="services_row">
-                              <Animated
-                                animationIn="fadeInUp"
-                                animationOut="fadeOut"
-                                isVisible={true}
-                                animationInDelay={300}
-                              >
-                                <div className="single_services d-flex p-0">
-                                  <div className="singel_img_serv">
-                                    <img src={single_serv} />
-                                  </div>
-                                  <div className="single_img_services">
-                                    <h4>Search engine Marketing</h4>
-                                    <p>
-                                      Put your image before clients who are now
-                                      effectively looking on oogle, Bing,
-                                      YouTube, or other earch...
-                                    </p>
-                                    <a className="services_link" href="#">
-                                      <i class="ph-arrow-right"></i>
-                                    </a>
-                                  </div>
-                                </div>
-                              </Animated>
-                            </div>
-                            <div className="services_row">
-                              <Animated
-                                animationIn="fadeInUp"
-                                animationOut="fadeOut"
-                                isVisible={true}
-                                animationInDelay={400}
-                              >
-                                <div className="single_services">
-                                  <h4>Search engine Marketing</h4>
-                                  <p>
-                                    Put your image before clients who are now
-                                    effectively looking on oogle, Bing, YouTube,
-                                    or other earch...
-                                  </p>
-                                  <a className="services_link" href="#">
-                                    <i class="ph-arrow-right"></i>
-                                  </a>
-                                </div>
-                              </Animated>
-                              <Animated
-                                animationIn="fadeInUp"
-                                animationOut="fadeOut"
-                                isVisible={true}
-                                animationInDelay={500}
-                              >
-                                <div className="single_services">
-                                  <h4>Search engine Marketing</h4>
-                                  <p>
-                                    Put your image before clients who are now
-                                    effectively looking on oogle, Bing, YouTube,
-                                    or other earch...
-                                  </p>
-                                  <a className="services_link" href="#">
-                                    <i class="ph-arrow-right"></i>
-                                  </a>
-                                </div>
-                              </Animated>
-                              <Animated
-                                animationIn="fadeInUp"
-                                animationOut="fadeOut"
-                                isVisible={true}
-                                animationInDelay={600}
-                              >
-                                <div className="single_services">
-                                  <h4>Search engine Marketing</h4>
-                                  <p>
-                                    Put your image before clients who are now
-                                    effectively looking on oogle, Bing, YouTube,
-                                    or other earch...
-                                  </p>
-                                  <a className="services_link" href="#">
-                                    <i class="ph-arrow-right"></i>
-                                  </a>
-                                </div>
-                              </Animated>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div
-                      class="tab-pane fade"
-                      id="v-pills-messages"
-                      role="tabpanel"
-                      aria-labelledby="v-pills-messages-tab"
-                    >
-                      .
-                      <div id="" className="">
-                        <div className="services_item">
                           <h2>Marketing Services</h2>
                           <div className="services_change">
                             <div className="services_row">
@@ -396,7 +259,7 @@ const HomeServicesSec = () => {
                                 animationInDelay={200}
                               >
                                 <div className="single_services">
-                                  <h4>Search engine Marketing</h4>
+                                  <h4>Social media marketing</h4>
                                   <p>
                                     Put your image before clients who are now
                                     effectively looking on oogle, Bing, YouTube,
@@ -417,10 +280,10 @@ const HomeServicesSec = () => {
                               >
                                 <div className="single_services d-flex p-0">
                                   <div className="singel_img_serv">
-                                    <img src={single_serv} />
+                                    <img src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/ppc.jpg?alt=media&token=176ccc3e-2828-4054-a1c7-d3dc9bda6cee" />
                                   </div>
                                   <div className="single_img_services">
-                                    <h4>Search engine Marketing</h4>
+                                    <h4>Pay per click</h4>
                                     <p>
                                       Put your image before clients who are now
                                       effectively looking on oogle, Bing,
@@ -441,7 +304,7 @@ const HomeServicesSec = () => {
                                 animationInDelay={400}
                               >
                                 <div className="single_services">
-                                  <h4>Search engine Marketing</h4>
+                                  <h4>Email marketing</h4>
                                   <p>
                                     Put your image before clients who are now
                                     effectively looking on oogle, Bing, YouTube,
@@ -459,7 +322,7 @@ const HomeServicesSec = () => {
                                 animationInDelay={500}
                               >
                                 <div className="single_services">
-                                  <h4>Search engine Marketing</h4>
+                                  <h4>Content marketing</h4>
                                   <p>
                                     Put your image before clients who are now
                                     effectively looking on oogle, Bing, YouTube,
@@ -477,7 +340,142 @@ const HomeServicesSec = () => {
                                 animationInDelay={600}
                               >
                                 <div className="single_services">
-                                  <h4>Search engine Marketing</h4>
+                                  <h4>Conversion rate optimisation</h4>
+                                  <p>
+                                    Put your image before clients who are now
+                                    effectively looking on oogle, Bing, YouTube,
+                                    or other earch...
+                                  </p>
+                                  <a className="services_link" href="#">
+                                    <i class="ph-arrow-right"></i>
+                                  </a>
+                                </div>
+                              </Animated>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="tab-pane fade"
+                      id="v-pills-messages"
+                      role="tabpanel"
+                      aria-labelledby="v-pills-messages-tab"
+                    >
+                      .
+                      <div id="" className="">
+                        <div className="services_item">
+                          <h2>BPO Services</h2>
+                          <div className="services_change">
+                            <div className="services_row">
+                              <Animated
+                                animationIn="fadeInUp"
+                                animationOut="fadeOut"
+                                isVisible={true}
+                                animationInDelay={100}
+                              >
+                                <div className="single_services">
+                                  <h4>Call Center Outsource</h4>
+                                  <p>
+                                    Put your image before clients who are now
+                                    effectively looking on oogle, Bing, YouTube,
+                                    or other earch...
+                                  </p>
+                                  <a className="services_link" href="#">
+                                    <i class="ph-arrow-right"></i>
+                                  </a>
+                                </div>
+                              </Animated>
+                              <Animated
+                                animationIn="fadeInUp"
+                                animationOut="fadeOut"
+                                isVisible={true}
+                                animationInDelay={200}
+                              >
+                                <div className="single_services">
+                                  <h4>back-office process</h4>
+                                  <p>
+                                    Put your image before clients who are now
+                                    effectively looking on oogle, Bing, YouTube,
+                                    or other earch...
+                                  </p>
+                                  <a className="services_link" href="#">
+                                    <i class="ph-arrow-right"></i>
+                                  </a>
+                                </div>
+                              </Animated>
+                            </div>
+
+                            <div className="services_row">
+                              <Animated
+                                animationIn="fadeInUp"
+                                animationOut="fadeOut"
+                                isVisible={true}
+                                animationInDelay={300}
+                              >
+                                <div className="single_services d-flex p-0">
+                                  <div className="singel_img_serv">
+                                    <img src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/ecommerce-outsourcing.jpg?alt=media&token=5f26ceb9-bad1-40ab-9b69-b1a9a8d9647d" />
+                                  </div>
+                                  <div className="single_img_services">
+                                    <h4>E-commerce outsourcing</h4>
+                                    <p>
+                                      Put your image before clients who are now
+                                      effectively looking on oogle, Bing,
+                                      YouTube, or other earch...
+                                    </p>
+                                    <a className="services_link" href="#">
+                                      <i class="ph-arrow-right"></i>
+                                    </a>
+                                  </div>
+                                </div>
+                              </Animated>
+                            </div>
+                            <div className="services_row">
+                              <Animated
+                                animationIn="fadeInUp"
+                                animationOut="fadeOut"
+                                isVisible={true}
+                                animationInDelay={400}
+                              >
+                                <div className="single_services">
+                                  <h4>professional services</h4>
+                                  <p>
+                                    Put your image before clients who are now
+                                    effectively looking on oogle, Bing, YouTube,
+                                    or other earch...
+                                  </p>
+                                  <a className="services_link" href="#">
+                                    <i class="ph-arrow-right"></i>
+                                  </a>
+                                </div>
+                              </Animated>
+                              <Animated
+                                animationIn="fadeInUp"
+                                animationOut="fadeOut"
+                                isVisible={true}
+                                animationInDelay={500}
+                              >
+                                <div className="single_services">
+                                  <h4>performance & compliance</h4>
+                                  <p>
+                                    Put your image before clients who are now
+                                    effectively looking on oogle, Bing, YouTube,
+                                    or other earch...
+                                  </p>
+                                  <a className="services_link" href="#">
+                                    <i class="ph-arrow-right"></i>
+                                  </a>
+                                </div>
+                              </Animated>
+                              <Animated
+                                animationIn="fadeInUp"
+                                animationOut="fadeOut"
+                                isVisible={true}
+                                animationInDelay={600}
+                              >
+                                <div className="single_services">
+                                  <h4>innovation at excellis</h4>
                                   <p>
                                     Put your image before clients who are now
                                     effectively looking on oogle, Bing, YouTube,
@@ -503,42 +501,63 @@ const HomeServicesSec = () => {
                         <div className="services_item">
                           <h2>CAD Services</h2>
                           <div className="services_change">
-                            <div className="services_row">
-                              <div className="single_services d-flex p-0">
-                                <div className="singel_img_serv">
-                                  <img src={single_serv} />
-                                </div>
-                                <div className="single_img_services">
-                                  <h4>Search engine Marketing</h4>
-                                  <p>
-                                    Put your image before clients who are now
-                                    effectively looking on oogle, Bing, YouTube,
-                                    or other earch...
-                                  </p>
-                                  <a className="services_link" href="#">
-                                    <i class="ph-arrow-right"></i>
-                                  </a>
-                                </div>
-                              </div>
-                            </div>
-                            <div className="services_row">
-                              <div className="single_services d-flex p-0">
-                                <div className="singel_img_serv">
-                                  <img src={single_serv} />
-                                </div>
-                                <div className="single_img_services">
-                                  <h4>Search engine Marketing</h4>
-                                  <p>
-                                    Put your image before clients who are now
-                                    effectively looking on oogle, Bing, YouTube,
-                                    or other earch...
-                                  </p>
-                                  <a className="services_link" href="#">
-                                    <i class="ph-arrow-right"></i>
-                                  </a>
+                            <Animated
+                              animationIn="fadeInUp"
+                              animationOut="fadeOut"
+                              isVisible={true}
+                              animationInDelay={100}
+                            >
+                              <div className="services_row">
+                                <div className="single_services d-flex p-0">
+                                  <div className="singel_img_serv">
+                                    <img src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/architechture.jpg?alt=media&token=fa2e35be-9234-47fb-8c47-ac13c3bad19d" />
+                                  </div>
+                                  <div className="single_img_services">
+                                    <h4>ARCHITECTURE</h4>
+                                    <p>
+                                      EXCELLIS IT with a team of skilled
+                                      architects has been offering a plethora of
+                                      Architectural BIM services including
+                                      conversion of design drawings to accurate
+                                      construction documents and 3D models with
+                                      parametric families.
+                                    </p>
+                                    <a className="services_link" href="#">
+                                      <i class="ph-arrow-right"></i>
+                                    </a>
+                                  </div>
                                 </div>
                               </div>
-                            </div>
+                            </Animated>
+                            <Animated
+                              animationIn="fadeInUp"
+                              animationOut="fadeOut"
+                              isVisible={true}
+                              animationInDelay={200}
+                            >
+                              <div className="services_row">
+                                <div className="single_services d-flex p-0">
+                                  <div className="singel_img_serv">
+                                    <img src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/mechanical.jpg?alt=media&token=298e7dde-8744-408f-9050-f112603cd8b6" />
+                                  </div>
+                                  <div className="single_img_services">
+                                    <h4>MECHANICAL</h4>
+                                    <p>
+                                      The team of highly experienced Mechanical
+                                      Modelers at EXCELLIS IT offers mechanical
+                                      engineers, product designers & developers
+                                      precise Mechanical 3D modeling services
+                                      that are aimed at improving productivity
+                                      and efficiency of the manufacturing
+                                      process.
+                                    </p>
+                                    <a className="services_link" href="#">
+                                      <i class="ph-arrow-right"></i>
+                                    </a>
+                                  </div>
+                                </div>
+                              </div>
+                            </Animated>
                           </div>
                         </div>
                       </div>

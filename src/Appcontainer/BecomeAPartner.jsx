@@ -1,7 +1,6 @@
 import React from "react";
 import "./assets/Style.css";
 import Typed from "react-typed";
-import Becomeimg from "../img/become-a-partner.jpg";
 
 const BecomeAPartner = () => {
   return (
@@ -47,7 +46,10 @@ const BecomeAPartner = () => {
               data-aos="fade-left"
               data-aos-duration="1000"
             >
-              <img className="img-fluid" src={Becomeimg} />
+              <img
+                className="img-fluid"
+                src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/become-a-partner.jpg?alt=media&token=74f77dfc-d9ee-4e05-b5a3-47fec1c4acd7"
+              />
             </div>
           </div>
         </div>

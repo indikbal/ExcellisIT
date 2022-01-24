@@ -90,7 +90,7 @@
 }
 
 .theme-light .footer_sec {
-  background-color: var(--text-white1);
+  background-color: #fff;
 }
 
 .theme-light .main_services_inner ul.nav li a.active {
@@ -99,6 +99,55 @@
 .theme-light .article_section {
   background-color: #f2f6f8;
 }
-.theme-light .article_single {
+.theme-light .article_single,
+.theme-light .main_services_content {
   background-color: #fff;
+}
+
+.theme-light .banner_img .about_text:before,
+.theme-light .text_left_img:before,
+.theme-light .text_left_img .radial-bg,
+.theme-light .locla1:before,
+.theme-light .title_c:before,
+.theme-light .six .top-block .left-block:before,
+.theme-light .six .bottom-block .slick-arrow,
+.theme-light .meet-our-team .title-c .left-block:before,
+.theme-light .view_all,
+.theme-light .banner_img .about_text .innerbanner_element {
+  background-color: var(--theme-yellow2);
+}
+.theme-light .text_about h2,
+.theme-light .text_about p,
+.theme-light .locla_text p,
+.theme-light .left_master p,
+.theme-light .text_left_img p,
+.theme-light .text_about span,
+.theme-light .text_left_img span,
+.theme-light .single_project p,
+.theme-light .top_progress_bar .progressbar li a,
+.theme-light .left_right_img_text .img-and-text .text-c p,
+.theme-light .left_right_img_text .img-and-text .step-num,
+.theme-light .main_services_content_inner p {
+  color: var(--theme-dark2);
+}
+
+.theme-light .locla_text:before,
+.theme-light .left_master:before,
+.theme-light .four,
+.theme-light .four:before,
+.theme-light .five:before,
+.theme-light .six:before,
+.theme-light .top_progress_bar,
+.theme-light .text-c {
+  background-color: #fff;
+}
+.theme-light .left_master h3,
+.theme-light .get-started {
+  background-color: var(--theme-yellow2);
+  color: var(--theme-dark2);
+}
+.theme-light .black_p,
+.theme-light .left_right_img_text .img-and-text h3,
+.theme-light .main_services_content_inner h4 {
+  color: var(--theme-yellow2);
 }

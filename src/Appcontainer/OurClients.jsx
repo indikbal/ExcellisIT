@@ -1,6 +1,4 @@
 import React from "react";
-import { useEffect, useState, useRef } from "react";
-import "./assets/Style.css";
 import Typed from "react-typed";
 import client1 from "../img/client1.png";
 import client2 from "../img/client2.png";
@@ -138,51 +136,6 @@ const OurClients = () => {
                 </div>
               </div>
             </div>
-
-            {/* <div className="col-md-7">
-              <div className="client_logo_sec">
-                <div className="client_row1">
-                  <marquee direction="up">
-                    <div className="client_logo_wrapper">
-                      <img src={client1} />
-                    </div>
-                    <div className="client_logo_wrapper">
-                      <img src={client2} />
-                    </div>
-                    <div className="client_logo_wrapper">
-                      <img src={client3} />
-                    </div>
-                  </marquee>
-                </div>
-                <div className="client_row2">
-                  <marquee direction="down">
-                    <div className="client_logo_wrapper">
-                      <img src={client4} />
-                    </div>
-                    <div className="client_logo_wrapper">
-                      <img src={client5} />
-                    </div>
-                    <div className="client_logo_wrapper">
-                      <img src={client6} />
-                    </div>
-                  </marquee>
-                </div>
-                <div className="client_row1">
-                  <marquee direction="up">
-                    <div className="client_logo_wrapper">
-                      <img src={client1} />
-                    </div>
-                    <div className="client_logo_wrapper">
-                      <img src={client2} />
-                    </div>
-                    <div className="client_logo_wrapper">
-                      <img src={client3} />
-                    </div>
-                  </marquee>
-                </div>
-              </div>
-             
-            </div> */}
           </div>
         </div>
       </section>

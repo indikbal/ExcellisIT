@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from "react";
+import "../src/Appcontainer/assets/Style.css";
+import "./lighttheme.css";
 import "./navigation.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
-import "line-awesome/dist/line-awesome/css/line-awesome.min.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
@@ -13,6 +14,7 @@ import BlogDetails from "./BlogDetails";
 import { keepTheme } from "./themes";
 import MainServices from "./Servicescontainer/MainServices";
 import BlogPage from "./BlogPage";
+import Process from "./Processcontainer/Process";
 
 function App() {
   AOS.init({
@@ -29,6 +31,7 @@ function App() {
         <Route exact path="/" component={Home} />
         <Route path="/about" component={About} />
         <Route path="/OurServices" component={MainServices} />
+        <Route path="/process" component={Process} />
         <Route path="/Ourblogs" component={BlogPage} />
         <Route path="/blogDetail/:Title" exact component={BlogDetails} />
         <Route component={Error} />
