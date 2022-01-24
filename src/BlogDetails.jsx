@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import Navbar from "./Navbar";
 import axios from "axios";
 import { useParams } from "react-router-dom";
+import Loader from "./Loader";
 // .get(`/admin/blogDetail/` + Title, {})
 
 const BlogDetails = (data) => {
@@ -23,6 +24,7 @@ const BlogDetails = (data) => {
 
   return (
     <div>
+      <Loader />
       <Navbar />
       <section className="single_blog_sec">
         {blogData ? (

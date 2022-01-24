@@ -15,6 +15,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import arrow from "../img/arrow-right-solution.svg";
+import Loader from "../Loader";
 
 function SampleNextArrow(props) {
   const { className, style, onClick } = props;
@@ -56,10 +57,9 @@ const About = () => {
 
   return (
     <div>
+      <Loader />
       <Navbar />
-      <div className="hero_banner_sec">
-        <ThreeScense />
-      </div>
+      <ThreeScense />
       <InnerBanner />
 
       <section class="banner_after">

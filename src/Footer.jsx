@@ -175,24 +175,16 @@ const Footer = () => {
                     <div class="copyright_menu">
                       <ul>
                         <li>
-                          <a href="https://www.excellisit.com/privacy-policy">
-                            Privacy Policy
-                          </a>
+                          <a href="PrivacyPolicy">Privacy Policy</a>
                         </li>
                         <li>
-                          <a href="https://www.excellisit.com/terms-and-condition">
-                            Term and Condition
-                          </a>
+                          <a href="TermConditions">Term and Condition</a>
                         </li>
                         <li>
-                          <a href="https://www.excellisit.com/about">
-                            About Excellis
-                          </a>
+                          <a href="about">About Excellis</a>
                         </li>
                         <li>
-                          <a href="https://www.excellisit.com/blog">
-                            Learning Center
-                          </a>
+                          <a href="Ourblogs">Learning Center</a>
                         </li>
                       </ul>
                     </div>

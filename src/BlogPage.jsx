@@ -3,6 +3,7 @@ import axios from "axios";
 import Navbar from "./Navbar";
 import InnerBanner from "./InnerBanner";
 import ThreeScene from "./Appcontainer/ThreeScene";
+import Loader from "./Loader";
 
 export class BlogPage extends React.Component {
   constructor(props) {
@@ -49,6 +50,7 @@ export class BlogPage extends React.Component {
   render() {
     return (
       <div>
+        <Loader />
         <Navbar />
         <div className="hero_banner_sec">
           <ThreeScene />

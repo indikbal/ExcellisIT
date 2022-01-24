@@ -1,11 +1,5 @@
 import React from "react";
 import Typed from "react-typed";
-import client1 from "../img/client1.png";
-import client2 from "../img/client2.png";
-import client3 from "../img/client3.png";
-import client4 from "../img/client4.png";
-import client5 from "../img/client5.png";
-import client6 from "../img/client6.png";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -71,66 +65,84 @@ const OurClients = () => {
                 <div className="slider_row mb-3">
                   <Slider {...settings}>
                     <div className="client_logo_wrapper">
-                      <img src={client1} className="img-fluid" />
+                      <img
+                        src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/client1.jpg?alt=media&token=b32ba5e7-8576-4fc9-9f5d-0df05ebee4b4"
+                        className="img-fluid"
+                      />
                     </div>
                     <div className="client_logo_wrapper">
-                      <img src={client2} className="img-fluid" />
+                      <img
+                        src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/client2.jpg?alt=media&token=cd6bb4bf-5224-496e-880c-dda3b7c049ce"
+                        className="img-fluid"
+                      />
                     </div>
                     <div className="client_logo_wrapper">
-                      <img src={client3} className="img-fluid" />
+                      <img
+                        src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/client3.jpg?alt=media&token=8a258126-c42b-4f37-a6c4-6513ad1326cf"
+                        className="img-fluid"
+                      />
                     </div>
                     <div className="client_logo_wrapper">
-                      <img src={client4} className="img-fluid" />
-                    </div>
-                    <div className="client_logo_wrapper">
-                      <img src={client5} className="img-fluid" />
-                    </div>
-                    <div className="client_logo_wrapper">
-                      <img src={client6} className="img-fluid" />
+                      <img
+                        src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/client4.jpg?alt=media&token=2617d480-c827-490d-8f63-f7f02247ca98"
+                        className="img-fluid"
+                      />
                     </div>
                   </Slider>
                 </div>
                 <div className="slider_row mb-3">
                   <Slider {...settings2}>
                     <div className="client_logo_wrapper">
-                      <img src={client1} className="img-fluid" />
+                      <img
+                        src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/client5.jpg?alt=media&token=1c840d85-09f0-464f-a082-3863ff8d83d3"
+                        className="img-fluid"
+                      />
                     </div>
                     <div className="client_logo_wrapper">
-                      <img src={client2} className="img-fluid" />
+                      <img
+                        src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/client6.jpg?alt=media&token=49f9c851-480f-4e38-9cd6-70d03fd365ef"
+                        className="img-fluid"
+                      />
                     </div>
                     <div className="client_logo_wrapper">
-                      <img src={client3} className="img-fluid" />
+                      <img
+                        src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/client7.jpg?alt=media&token=f1d849f4-e003-4da0-9021-ecad123a5690"
+                        className="img-fluid"
+                      />
                     </div>
                     <div className="client_logo_wrapper">
-                      <img src={client4} className="img-fluid" />
-                    </div>
-                    <div className="client_logo_wrapper">
-                      <img src={client5} className="img-fluid" />
-                    </div>
-                    <div className="client_logo_wrapper">
-                      <img src={client6} className="img-fluid" />
+                      <img
+                        src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/client8.jpg?alt=media&token=d3a2353a-f764-436e-bde1-771b9815aa4e"
+                        className="img-fluid"
+                      />
                     </div>
                   </Slider>
                 </div>
                 <div className="slider_row">
                   <Slider {...settings3}>
                     <div className="client_logo_wrapper">
-                      <img src={client1} className="img-fluid" />
+                      <img
+                        src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/client9.jpg?alt=media&token=a3055268-c9dc-4111-84b3-7734dc06d7df"
+                        className="img-fluid"
+                      />
                     </div>
                     <div className="client_logo_wrapper">
-                      <img src={client2} className="img-fluid" />
+                      <img
+                        src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/client10.jpg?alt=media&token=3b0049aa-f2f2-4c8e-84dd-05ef11ac6e0c"
+                        className="img-fluid"
+                      />
                     </div>
                     <div className="client_logo_wrapper">
-                      <img src={client3} className="img-fluid" />
+                      <img
+                        src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/client1.jpg?alt=media&token=b32ba5e7-8576-4fc9-9f5d-0df05ebee4b4"
+                        className="img-fluid"
+                      />
                     </div>
                     <div className="client_logo_wrapper">
-                      <img src={client4} className="img-fluid" />
-                    </div>
-                    <div className="client_logo_wrapper">
-                      <img src={client5} className="img-fluid" />
-                    </div>
-                    <div className="client_logo_wrapper">
-                      <img src={client6} className="img-fluid" />
+                      <img
+                        src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/client2.jpg?alt=media&token=cd6bb4bf-5224-496e-880c-dda3b7c049ce"
+                        className="img-fluid"
+                      />
                     </div>
                   </Slider>
                 </div>

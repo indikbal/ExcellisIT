@@ -6,6 +6,7 @@ import "../../src/Processcontainer/process.css";
 import "../../src/Appcontainer/assets/Style.css";
 import ThreeScene from "../Appcontainer/ThreeScene";
 import $ from "jquery";
+import Loader from "../Loader";
 
 const Process = () => {
   $(document).ready(function () {
@@ -44,6 +45,7 @@ const Process = () => {
 
   return (
     <div>
+      <Loader />
       <Navbar />
       <div className="hero_banner_sec">
         <ThreeScene />

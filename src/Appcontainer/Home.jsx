@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Footer from "../Footer";
+import Loader from "../Loader";
 import Navbar from "../Navbar";
 import TestimonialSection from "../TestimonialSection";
 import BecomeAPartner from "./BecomeAPartner";
@@ -19,6 +20,7 @@ import ThreeScene from "./ThreeScene";
 const Home = () => {
   return (
     <div className="bodyName">
+      <Loader />
       <div className="hero_banner_sec">
         <ThreeScene />
       </div>

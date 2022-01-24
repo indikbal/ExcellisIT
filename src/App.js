@@ -15,6 +15,9 @@ import { keepTheme } from "./themes";
 import MainServices from "./Servicescontainer/MainServices";
 import BlogPage from "./BlogPage";
 import Process from "./Processcontainer/Process";
+import PrivacyPolicy from "./Othercontainer/PrivacyPolicy";
+import TermConditions from "./Othercontainer/TermConditions";
+import ContactUs from "./Othercontainer/ContactUs";
 
 function App() {
   AOS.init({
@@ -34,6 +37,10 @@ function App() {
         <Route path="/process" component={Process} />
         <Route path="/Ourblogs" component={BlogPage} />
         <Route path="/blogDetail/:Title" exact component={BlogDetails} />
+        <Route path="/PrivacyPolicy" component={PrivacyPolicy} />
+        <Route path="/TermConditions" component={TermConditions} />
+        <Route path="/ContactUs" component={ContactUs} />
+
         <Route component={Error} />
       </Switch>
     </div>
