@@ -1,6 +1,5 @@
 import React from "react";
 import Typed from "react-typed";
-import arrow from "../../src/img/arrow-design.svg";
 import { Animated } from "react-animated-css";
 
 const HomeServicesSec = () => {
@@ -8,7 +7,7 @@ const HomeServicesSec = () => {
     <div>
       <section className="serices_section">
         <div className="arrow_div">
-          <img src={arrow} />
+          <img src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/arrow-design.svg?alt=media&token=2d324c90-5008-4ac7-b74d-562cc8fd83e8" />
         </div>
         <div className="section_typing">
           <div class="reveal-holder custom_aos" data-aos="reveal-item">

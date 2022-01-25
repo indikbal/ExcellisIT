@@ -18,6 +18,11 @@ import Process from "./Processcontainer/Process";
 import PrivacyPolicy from "./Othercontainer/PrivacyPolicy";
 import TermConditions from "./Othercontainer/TermConditions";
 import ContactUs from "./Othercontainer/ContactUs";
+import ItServices from "./ItServices/ItServices";
+import MobileApplication from "./ItServices/MobileApplication";
+import SoftwareDevelopment from "./ItServices/SoftwareDevelopment";
+import UiUxDesign from "./ItServices/UiUxDesign";
+import WebDevelopment from "./ItServices/WebDevelopment";
 
 function App() {
   AOS.init({
@@ -40,7 +45,11 @@ function App() {
         <Route path="/PrivacyPolicy" component={PrivacyPolicy} />
         <Route path="/TermConditions" component={TermConditions} />
         <Route path="/ContactUs" component={ContactUs} />
-
+        <Route path="/itServices" component={ItServices} />
+        <Route path="/mobileApplication" component={MobileApplication} />
+        <Route path="/softwareDevelopment" component={SoftwareDevelopment} />
+        <Route path="/UiUxDesign" component={UiUxDesign} />
+        <Route path="/WebDevelopment" component={WebDevelopment} />
         <Route component={Error} />
       </Switch>
     </div>

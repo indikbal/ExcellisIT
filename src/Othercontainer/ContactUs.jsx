@@ -4,6 +4,7 @@ import Footer from "../Footer";
 import InnerBanner from "../InnerBanner";
 import Loader from "../Loader";
 import Navbar from "../Navbar";
+import LocationOnMap from "../../src/Appcontainer/LocationOnMap";
 
 const ContactUs = () => {
   return (
@@ -23,33 +24,6 @@ const ContactUs = () => {
                   development <br />
                   We would be ..happy to help you..
                 </p>
-                <ul class="social_icon d-flex align-items-center mt-5">
-                  <li>
-                    <a href="#">
-                      <i class="lab la-facebook-f"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i class="lab la-linkedin-in"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i class="lab la-instagram"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i class="lab la-twitter"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i class="lab la-google-plus-g"></i>
-                    </a>
-                  </li>
-                </ul>
               </div>
             </div>
           </div>
@@ -102,7 +76,7 @@ const ContactUs = () => {
                       <div class="row">
                         <div class="col-sm-2">
                           <div class="icon-container">
-                            <i class="las la-headset"></i>
+                            <i class="ph-headset"></i>
                           </div>
                         </div>
                         <div class="col-sm-10">
@@ -166,12 +140,7 @@ const ContactUs = () => {
 
                 <div class="row">
                   <div class="col-md-4">
-                    <input
-                      type="submit"
-                      id="contactus_submit"
-                      class="banner_btn animate__slideInUp animate__animated"
-                      name="contactus_submit"
-                    />
+                    <button className="contact_from_submit">Submit</button>
                   </div>
                 </div>
               </div>
@@ -179,6 +148,7 @@ const ContactUs = () => {
           </div>
         </div>
       </section>
+      <LocationOnMap />
       <Footer />
     </div>
   );

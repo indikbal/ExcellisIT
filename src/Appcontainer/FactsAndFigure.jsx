@@ -1,7 +1,6 @@
 import React from "react";
 import "./assets/Style.css";
 import Typed from "react-typed";
-import globe from "../../src/img/globe.png";
 
 const FactsAndFigure = () => {
   return (
@@ -79,7 +78,7 @@ const FactsAndFigure = () => {
               <div className="fact_box height_double country_fact_box">
                 <div className="fact_box_wrapper">
                   <h5>Clients in 15 countries</h5>
-                  <img src={globe} />
+                  <img src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/globe.png?alt=media&token=7562e47e-c6e8-47a2-bc97-49d1afa53900" />
                 </div>
               </div>
             </div>

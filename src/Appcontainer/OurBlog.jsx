@@ -1,7 +1,6 @@
 import React from "react";
 import "./assets/Style.css";
 import Typed from "react-typed";
-import blog from "../img/become-a-partner.jpg";
 import axios from "axios";
 
 export class OurBlog extends React.Component {

@@ -699,7 +699,8 @@ section.banner_content_section {
   position: relative;
   z-index: 9;
   padding: 50px 0;
-  background: url(../../../src/img/dot_map_bg.png) #fff no-repeat center;
+  background: url(https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/dot_map_bg.png?alt=media&token=703a4105-746e-4956-965f-96c009c91c72)
+    #fff no-repeat center;
 }
 .client_logo_sec {
   display: flex;
@@ -893,7 +894,8 @@ section.banner_content_section {
   color: var(--theme-dark1) !important;
 }
 .overlay_blog {
-  background: url(../../img/become-a-partner.jpg) no-repeat center;
+  background: url(https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/become-a-partner.jpg?alt=media&token=74f77dfc-d9ee-4e05-b5a3-47fec1c4acd7)
+    no-repeat center;
   background-size: cover;
   position: relative;
 }

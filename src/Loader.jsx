@@ -47,6 +47,11 @@ const Loader = () => {
         <div class="loader__tile"></div>
         <div class="loader__tile"></div>
         <div class="loader__tile"></div>
+        <div class="loader__tile"></div>
+        <div class="loader__tile"></div>
+        <div class="loader__tile"></div>
+        <div class="loader__tile"></div>
+        <div class="loader__tile"></div>
       </div>
     </div>
   );

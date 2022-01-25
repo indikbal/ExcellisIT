@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import ReactDOM from "react-dom";
-import logo from "../src/img/logo-white.png";
 import MainMenu from "./MainMenu";
 import Toggle from "./Toggle";
 
@@ -140,7 +139,7 @@ const Navbar = () => {
                       </a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link " href="#">
+                      <a class="nav-link " href="ContactUs">
                         Contact
                       </a>
                     </li>

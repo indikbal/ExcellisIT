@@ -15,30 +15,18 @@ const MainMenu = () => {
             <div class="menu__item menu__item--3">
               <div class="menu__item-inner">
                 <div class="sidemenu">
-                  <a
-                    href="https://www.excellisit.com/mobile-application"
-                    class="sidemenu__item"
-                  >
+                  <a href="mobileApplication" class="sidemenu__item">
                     <span class="sidemenu__item-inner">Mobile Application</span>
                   </a>
-                  <a
-                    href="https://www.excellisit.com/software-development"
-                    class="sidemenu__item"
-                  >
+                  <a href="softwareDevelopment" class="sidemenu__item">
                     <span class="sidemenu__item-inner">
                       Software Development
                     </span>
                   </a>
-                  <a
-                    href="https://www.excellisit.com/ui-ux-design"
-                    class="sidemenu__item"
-                  >
+                  <a href="UiUxDesign" class="sidemenu__item">
                     <span class="sidemenu__item-inner">UI/UX Design</span>
                   </a>
-                  <a
-                    href="https://www.excellisit.com/web-development"
-                    class="sidemenu__item"
-                  >
+                  <a href="WebDevelopment" class="sidemenu__item">
                     <span class="sidemenu__item-inner">Web Development</span>
                   </a>
                   <a
@@ -128,10 +116,7 @@ const MainMenu = () => {
             <div class="menu__item menu__item--1">
               <div class="menu__item-inner">
                 <div class="mainmenu">
-                  <a
-                    href="https://www.excellisit.com/it-services"
-                    class="mainmenu__item"
-                  >
+                  <a href="itServices" class="mainmenu__item">
                     It Services
                   </a>
                   <a

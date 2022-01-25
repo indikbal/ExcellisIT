@@ -5,16 +5,9 @@ import Navbar from "../Navbar";
 import Footer from "../Footer";
 import "../../src/Aboutcontainer/about.css";
 import ThreeScense from "../Appcontainer/ThreeScene";
-import gallery1 from "../../src/img/gallery/1.jpg";
-import gallery2 from "../../src/img/gallery/2.jpg";
-import gallery3 from "../../src/img/gallery/3.jpg";
-import gallery4 from "../../src/img/gallery/4.jpg";
-import gallery5 from "../../src/img/gallery/5.jpg";
-import gallery6 from "../../src/img/gallery/6.jpg";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import arrow from "../img/arrow-right-solution.svg";
 import Loader from "../Loader";
 
 function SampleNextArrow(props) {
@@ -25,7 +18,7 @@ function SampleNextArrow(props) {
       style={{ ...style, display: "block" }}
       onClick={onClick}
     >
-      <img src={arrow} />
+      <img src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/arrow-design.svg?alt=media&token=2d324c90-5008-4ac7-b74d-562cc8fd83e8" />
     </div>
   );
 }
@@ -38,7 +31,10 @@ function SamplePrevArrow(props) {
       style={{ ...style, display: "block" }}
       onClick={onClick}
     >
-      <img src={arrow} style={{ transform: "rotate(180deg)" }} />
+      <img
+        src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/arrow-design.svg?alt=media&token=2d324c90-5008-4ac7-b74d-562cc8fd83e8"
+        style={{ transform: "rotate(180deg)" }}
+      />
     </div>
   );
 }
