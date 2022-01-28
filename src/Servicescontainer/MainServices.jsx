@@ -4,10 +4,17 @@ import Navbar from "../Navbar";
 import "../Servicescontainer/services.css";
 import { Animated } from "react-animated-css";
 import Loader from "../Loader";
+import { Helmet } from "react-helmet";
 
 const MainServices = () => {
   return (
     <div>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Sevices Landing</title>
+        <meta name="description" content="aboutpage" />
+        <meta name="keywords" content="about page" />
+      </Helmet>
       <Loader />
       <Navbar />
       <section className="main_servics_sec">
@@ -64,7 +71,9 @@ const MainServices = () => {
                           <div className="it_servies_list_item">
                             <ul>
                               <li>
-                                <a href="#">Mobile Application</a>
+                                <a href="mobileApplication">
+                                  Mobile Application
+                                </a>
                               </li>
                               <li>
                                 <a href="#">Software Development</a>

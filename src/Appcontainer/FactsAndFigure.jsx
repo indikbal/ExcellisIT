@@ -1,6 +1,10 @@
 import React from "react";
 import "./assets/Style.css";
 import Typed from "react-typed";
+const certificate =
+  "https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/high-quality.png?alt=media&token=3f389b90-844d-455f-bd60-042f10783b71";
+const globe =
+  "https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/globe.png?alt=media&token=7562e47e-c6e8-47a2-bc97-49d1afa53900";
 
 const FactsAndFigure = () => {
   return (
@@ -78,7 +82,7 @@ const FactsAndFigure = () => {
               <div className="fact_box height_double country_fact_box">
                 <div className="fact_box_wrapper">
                   <h5>Clients in 15 countries</h5>
-                  <img src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/globe.png?alt=media&token=7562e47e-c6e8-47a2-bc97-49d1afa53900" />
+                  <img src={globe} alt="globe icon" />
                 </div>
               </div>
             </div>
@@ -93,6 +97,11 @@ const FactsAndFigure = () => {
                     <div className="fact_box_wrapper">
                       <h5>ISO 27001:2013</h5>
                       <p>certified</p>
+                      <img
+                        className="certificate_icon"
+                        src={certificate}
+                        alt="certificate"
+                      />
                     </div>
                   </div>
                   <div

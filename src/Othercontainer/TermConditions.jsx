@@ -4,10 +4,17 @@ import Footer from "../Footer";
 import InnerBanner from "../InnerBanner";
 import Loader from "../Loader";
 import Navbar from "../Navbar";
+import { Helmet } from "react-helmet";
 
 const TermConditions = () => {
   return (
     <div>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Term and conditions</title>
+        <meta name="description" content="aboutpage" />
+        <meta name="keywords" content="about page" />
+      </Helmet>
       <Loader />
       <Navbar />
       <ThreeScene />

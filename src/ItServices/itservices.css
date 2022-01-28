@@ -570,6 +570,10 @@
     transform: rotate(270deg);
   }
 }
+.s-TechnologiesLogos {
+  background-color: var(--theme-dark1);
+  padding-top: 20px;
+}
 .s-TechnologiesLogos__Inner {
   position: relative;
   width: 100%;
@@ -710,4 +714,19 @@
   width: 4px;
   height: 25px;
   background-color: #ffa000;
+}
+
+.why_point ul li {
+  color: var(--text-white1);
+  line-height: 35px;
+  text-align: center;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+}
+.why_point ul {
+  margin-bottom: 0;
+}
+.why_point {
+  background-color: var(--theme-dark2);
+  padding: 20px;
 }

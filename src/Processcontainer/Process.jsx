@@ -7,6 +7,7 @@ import "../../src/Appcontainer/assets/Style.css";
 import ThreeScene from "../Appcontainer/ThreeScene";
 import $ from "jquery";
 import Loader from "../Loader";
+import { Helmet } from "react-helmet";
 
 const Process = () => {
   $(document).ready(function () {
@@ -45,6 +46,12 @@ const Process = () => {
 
   return (
     <div>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Process</title>
+        <meta name="description" content="aboutpage" />
+        <meta name="keywords" content="about page" />
+      </Helmet>
       <Loader />
       <Navbar />
       <div className="hero_banner_sec">

@@ -9,6 +9,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Loader from "../Loader";
+import { Helmet } from "react-helmet";
 
 function SampleNextArrow(props) {
   const { className, style, onClick } = props;
@@ -18,7 +19,7 @@ function SampleNextArrow(props) {
       style={{ ...style, display: "block" }}
       onClick={onClick}
     >
-      <img src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/arrow-design.svg?alt=media&token=2d324c90-5008-4ac7-b74d-562cc8fd83e8" />
+      <img src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/arrow-right-solution.svg?alt=media&token=0f33e4b8-e86d-4a67-ac07-ac443cd26962" />
     </div>
   );
 }
@@ -32,7 +33,7 @@ function SamplePrevArrow(props) {
       onClick={onClick}
     >
       <img
-        src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/arrow-design.svg?alt=media&token=2d324c90-5008-4ac7-b74d-562cc8fd83e8"
+        src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/arrow-right-solution.svg?alt=media&token=0f33e4b8-e86d-4a67-ac07-ac443cd26962"
         style={{ transform: "rotate(180deg)" }}
       />
     </div>
@@ -53,6 +54,12 @@ const About = () => {
 
   return (
     <div>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>About Us Page</title>
+        <meta name="description" content="aboutpage" />
+        <meta name="keywords" content="about page" />
+      </Helmet>
       <Loader />
       <Navbar />
       <ThreeScense />
