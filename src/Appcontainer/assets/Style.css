@@ -24,7 +24,7 @@ font-family: 'Roboto', sans-serif; */
 }
 .theme-yellow2 {
   background-color: var(--theme-yellow2) !important;
-}
+} 
 
 body {
   overflow-x: hidden;
