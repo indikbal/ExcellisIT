@@ -24,7 +24,7 @@ font-family: 'Roboto', sans-serif; */
 }
 .theme-yellow2 {
   background-color: var(--theme-yellow2) !important;
-} 
+}
 
 body {
   overflow-x: hidden;
@@ -71,6 +71,9 @@ ul {
 }
 #fixed .header_logo {
   display: none;
+}
+#fixed .navbar-nav {
+  opacity: 0;
 }
 #fixed {
   position: fixed;
@@ -155,9 +158,8 @@ ul {
   color: var(--text-white1);
 }
 .banner_content h1 {
-  font-size: 150px;
+  font-size: 200px;
   font-family: var(--heading-font);
-  text-transform: uppercase;
   font-weight: 600;
   letter-spacing: 10px;
 }
@@ -573,7 +575,7 @@ section.banner_content_section {
   padding: 40px;
   text-align: left;
   transition: ease-in all 0.5s;
-  height: 300px;
+  height: 350px;
   overflow: hidden;
   transform: translate(0px, 180px);
 }
@@ -670,7 +672,7 @@ section.banner_content_section {
   cursor: pointer;
 }
 .single_indus_content h4 {
-  font-size: 36px;
+  font-size: 25px;
   font-family: var(--heading-font);
 }
 .single_indus_content p {

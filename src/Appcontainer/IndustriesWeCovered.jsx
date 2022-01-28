@@ -20,6 +20,36 @@ const IndustriesWeCovered = () => {
     setNav2(slider2.current);
   }, []);
 
+  var settingnav = {
+    slidesToShow: 6,
+    responsive: [
+      {
+        breakpoint: 1400,
+        settings: {
+          slidesToShow: 4,
+        },
+      },
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
+  };
+
   return (
     <div>
       <section className="industries_slider_sec">
@@ -123,6 +153,7 @@ const IndustriesWeCovered = () => {
                   autoplaySpeed={5000}
                   speed={1000}
                   dots={false}
+                  {...settingnav}
                 >
                   <div className="single_industries">
                     <div className="single_indus_content">

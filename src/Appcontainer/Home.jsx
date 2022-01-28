@@ -24,22 +24,9 @@ const Home = () => {
       <Helmet>
         <meta charSet="utf-8" />
         <title>Home Page</title>
-        <link rel="canonical" href="http://mysite.com/example" />
       </Helmet>
       <Loader />
-      <div className="hero_banner_sec">
-        <ThreeScene />
-      </div>
-      <div className="grid">
-        <div className="row h-100 w-100 pr-0 mr-0 ml-0">
-          <div className="grid_item col-2 pl-0 pr-0"></div>
-          <div className="grid_item col-2 pl-0 pr-0"></div>
-          <div className="grid_item col-2 pl-0 pr-0"></div>
-          <div className="grid_item col-2 pl-0 pr-0"></div>
-          <div className="grid_item col-2 pl-0 pr-0"></div>
-          <div className="grid_item col-2 pl-0 pr-0"></div>
-        </div>
-      </div>
+      <ThreeScene />
       <Navbar />
       <Herobaner />
       <HomeFeatureServices />

@@ -4,9 +4,19 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
-
 ReactDOM.render(
   <BrowserRouter>
+    <div className="grid">
+      <div className="row h-100 w-100 pr-0 mr-0 ml-0">
+        <div className="grid_item col-2 pl-0 pr-0"></div>
+        <div className="grid_item col-2 pl-0 pr-0"></div>
+        <div className="grid_item col-2 pl-0 pr-0"></div>
+        <div className="grid_item col-2 pl-0 pr-0"></div>
+        <div className="grid_item col-2 pl-0 pr-0"></div>
+        <div className="grid_item col-2 pl-0 pr-0"></div>
+      </div>
+    </div>
+
     <App />
   </BrowserRouter>,
   document.getElementById("root")
