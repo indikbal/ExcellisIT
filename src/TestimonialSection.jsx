@@ -33,7 +33,6 @@ const TestimonialSection = () => {
                     culpa qui nisi rerum debitis modi.
                   </p>
                   <div class="testim-box-content">
-                    <img src="https://i.postimg.cc/rpRQv1sc/3.jpg" alt="" />
                     <h3>Mahmoud Mohamed</h3>
                     <p>FrontEnd Developer</p>
                   </div>
@@ -48,7 +47,6 @@ const TestimonialSection = () => {
                     culpa qui nisi rerum debitis modi.
                   </p>
                   <div class="testim-box-content">
-                    <img src="https://i.postimg.cc/rpRQv1sc/3.jpg" alt="" />
                     <h3>Mahmoud Mohamed</h3>
                     <p>FrontEnd Developer</p>
                   </div>
@@ -63,7 +61,6 @@ const TestimonialSection = () => {
                     culpa qui nisi rerum debitis modi.
                   </p>
                   <div class="testim-box-content">
-                    <img src="https://i.postimg.cc/rpRQv1sc/3.jpg" alt="" />
                     <h3>Mahmoud Mohamed</h3>
                     <p>FrontEnd Developer</p>
                   </div>
@@ -78,7 +75,6 @@ const TestimonialSection = () => {
                     culpa qui nisi rerum debitis modi.
                   </p>
                   <div class="testim-box-content">
-                    <img src="https://i.postimg.cc/rpRQv1sc/3.jpg" alt="" />
                     <h3>Mahmoud Mohamed</h3>
                     <p>FrontEnd Developer</p>
                   </div>
@@ -93,7 +89,6 @@ const TestimonialSection = () => {
                     culpa qui nisi rerum debitis modi.
                   </p>
                   <div class="testim-box-content">
-                    <img src="https://i.postimg.cc/rpRQv1sc/3.jpg" alt="" />
                     <h3>Mahmoud Mohamed</h3>
                     <p>FrontEnd Developer</p>
                   </div>
@@ -108,7 +103,6 @@ const TestimonialSection = () => {
                     culpa qui nisi rerum debitis modi.
                   </p>
                   <div class="testim-box-content">
-                    <img src="https://i.postimg.cc/rpRQv1sc/3.jpg" alt="" />
                     <h3>Mahmoud Mohamed</h3>
                     <p>FrontEnd Developer</p>
                   </div>
@@ -123,7 +117,6 @@ const TestimonialSection = () => {
                     culpa qui nisi rerum debitis modi.
                   </p>
                   <div class="testim-box-content">
-                    <img src="https://i.postimg.cc/rpRQv1sc/3.jpg" alt="" />
                     <h3>Mahmoud Mohamed</h3>
                     <p>FrontEnd Developer</p>
                   </div>

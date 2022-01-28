@@ -163,9 +163,9 @@ ul {
 }
 
 .typing_sec {
-  font-size: 30px;
+  font-size: 35px;
   color: #fff;
-  font-weight: 500;
+  font-weight: 200;
   font-family: var(--body-font);
 }
 .hero_banner_sec {
@@ -393,6 +393,12 @@ section.banner_content_section {
 .fact_figure_section {
   padding: 100px 0;
   position: relative;
+}
+.certificate_icon {
+  width: 180px;
+  position: absolute;
+  left: -40px;
+  top: -40px;
 }
 
 .fact_box {
@@ -1030,15 +1036,18 @@ section.banner_content_section {
 }
 
 .single_persion_con h4 {
-  font-size: 20px;
+  font-size: 25px;
   font-weight: 600;
-  font-family: "Poppins", sans-serif;
+  font-family: var(--heading-font);
+  color: var(--theme-yellow1);
+  letter-spacing: 1px;
 }
 
 .single_persion_con p {
   font-size: 13px;
   color: #777676;
-  font-family: "Poppins", sans-serif;
+  font-family: var(--body-font);
+  margin-bottom: 5px;
 }
 
 .single_persion_con ul li a {

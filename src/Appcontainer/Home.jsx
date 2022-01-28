@@ -14,12 +14,18 @@ import LocationOnMap from "./LocationOnMap";
 import OurBlog from "./OurBlog";
 import OurClients from "./OurClients";
 import ThreeScene from "./ThreeScene";
+import { Helmet } from "react-helmet";
 
 // $(".bodyName").children("div").addClass("test");
 
 const Home = () => {
   return (
     <div className="bodyName">
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Home Page</title>
+        <link rel="canonical" href="http://mysite.com/example" />
+      </Helmet>
       <Loader />
       <div className="hero_banner_sec">
         <ThreeScene />

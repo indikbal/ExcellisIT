@@ -5,33 +5,25 @@ import InnerBanner from "../InnerBanner";
 import Loader from "../Loader";
 import Navbar from "../Navbar";
 import LocationOnMap from "../../src/Appcontainer/LocationOnMap";
+import { Helmet } from "react-helmet";
 
 const ContactUs = () => {
   return (
     <div>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Contact Us Page</title>
+        <meta name="description" content="aboutpage" />
+        <meta name="keywords" content="about page" />
+      </Helmet>
       <Loader />
       <Navbar />
       <ThreeScene />
       <InnerBanner />
-      <section class="contact_us__heading_section">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-4">
-              <div class="contact_us___heading_title_wrapper">
-                <h4>Contact</h4>
-                <p>
-                  Talk to us about your requirements, be it consulting or
-                  development <br />
-                  We would be ..happy to help you..
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+
       <section class="contact_us__body_section">
         <div class="container">
-          <div class="row">
+          <div class="row align-items-center">
             <div class="col-md-4">
               <div class="contact_us__body_title_wrapper">
                 <h4>IT ALL STARTS WITH A CONVERSATION</h4>
