@@ -12,7 +12,6 @@
   --heading-font: "Oswald", sans-serif;
 }
 .main_servics_sec {
-  background-color: var(--theme-dark1);
   position: absolute;
   top: 0;
   height: 100vh;

@@ -1,5 +1,6 @@
 import React from "react";
 import { Animated } from "react-animated-css";
+import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
 
 const MainMenu = () => {
   return (
@@ -15,9 +16,14 @@ const MainMenu = () => {
             <div class="menu__item menu__item--3">
               <div class="menu__item-inner">
                 <div class="sidemenu">
-                  <a href="mobileApplication" class="sidemenu__item">
+                  <Link
+                    exact
+                    activeClassName="navbar__link--active"
+                    className=" sidemenu__item"
+                    to="mobileApplication"
+                  >
                     <span class="sidemenu__item-inner">Mobile Application</span>
-                  </a>
+                  </Link>
                   <a href="softwareDevelopment" class="sidemenu__item">
                     <span class="sidemenu__item-inner">
                       Software Development
@@ -230,40 +236,22 @@ const MainMenu = () => {
             <div class="menu__item menu__item--4">
               <div class="menu__item-inner">
                 <div class="sidemenu">
-                  <a
-                    href="https://www.excellisit.com/about"
-                    class="sidemenu__item"
-                  >
+                  <a href="about" class="sidemenu__item">
                     <span class="sidemenu__item-inner">About Us</span>
                   </a>
-                  <a
-                    href="https://www.excellisit.com/partner-with-us"
-                    class="sidemenu__item"
-                  >
+                  <a href="PartnerWithus" class="sidemenu__item">
                     <span class="sidemenu__item-inner">Partner With Us</span>
                   </a>
-                  <a
-                    href="https://www.excellisit.com/portfolio"
-                    class="sidemenu__item"
-                  >
+                  <a href="#" class="sidemenu__item">
                     <span class="sidemenu__item-inner">Our Portfolio</span>
                   </a>
-                  <a
-                    href="https://www.excellisit.com/career-opportunities"
-                    class="sidemenu__item"
-                  >
+                  <a href="#" class="sidemenu__item">
                     <span class="sidemenu__item-inner">Career</span>
                   </a>
-                  <a
-                    href="https://www.excellisit.com/blog"
-                    class="sidemenu__item"
-                  >
+                  <a href="Ourblogs" class="sidemenu__item">
                     <span class="sidemenu__item-inner">Blog</span>
                   </a>
-                  <a
-                    href="https://www.excellisit.com/contactus"
-                    class="sidemenu__item"
-                  >
+                  <a href="ContactUs" class="sidemenu__item">
                     <span class="sidemenu__item-inner">Contact Us</span>
                   </a>
                 </div>

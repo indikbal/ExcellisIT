@@ -4,10 +4,13 @@ import Loader from "../Loader";
 import Navbar from "../Navbar";
 import Footer from "../Footer";
 import InnerBanner from "../InnerBanner";
-import ThreeScene from "../Appcontainer/ThreeScene";
 import { Helmet } from "react-helmet";
 
 const MobileApplication = () => {
+  const title = "Mobile Application";
+  const description =
+    "“The people at Codal are what makes them really stand out. They were responsive, attentive, flexible and they sought to understand my business so they could plan ahead—beyond the development project.”";
+
   return (
     <div>
       <Helmet>
@@ -18,8 +21,7 @@ const MobileApplication = () => {
       </Helmet>
       <Loader />
       <Navbar />
-      <ThreeScene />
-      <InnerBanner />
+      <InnerBanner title={title} description={description} />
       <section class="inner_page_first">
         <div class="s-BannerServices bg_dark">
           <div class="l-ContentColumn container">

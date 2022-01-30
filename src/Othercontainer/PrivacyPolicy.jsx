@@ -1,5 +1,4 @@
 import React from "react";
-import ThreeScene from "../Appcontainer/ThreeScene";
 import Footer from "../Footer";
 import InnerBanner from "../InnerBanner";
 import Loader from "../Loader";
@@ -7,6 +6,10 @@ import Navbar from "../Navbar";
 import { Helmet } from "react-helmet";
 
 const PrivacyPolicy = () => {
+  const title = "Privacy Policy";
+  const description =
+    "“The people at Codal are what makes them really stand out. They were responsive, attentive, flexible and they sought to understand my business so they could plan ahead—beyond the development project.”";
+
   return (
     <div>
       <Helmet>
@@ -17,8 +20,7 @@ const PrivacyPolicy = () => {
       </Helmet>
       <Loader />
       <Navbar />
-      <ThreeScene />
-      <InnerBanner />
+      <InnerBanner title={title} description={description} />
       <section class="only_con_sec pt-5 pb-5">
         <div class="container">
           <div class="row">

@@ -1609,7 +1609,7 @@ footer#section10 .copyright p {
 .article_single {
   background-color: var(--theme-dark2);
   padding: 40px;
-  min-height: 500px;
+  min-height: 400px;
   margin-bottom: 30px;
 }
 .article_single h4 {

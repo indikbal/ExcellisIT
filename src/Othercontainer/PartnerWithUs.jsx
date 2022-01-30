@@ -3,13 +3,16 @@ import Loader from "../Loader";
 import Navbar from "../Navbar";
 import Footer from "../Footer";
 import InnerBanner from "../InnerBanner";
-import ThreeScene from "../Appcontainer/ThreeScene";
 import { Helmet } from "react-helmet";
 import ContactSection from "../Appcontainer/ContactSection";
 const partnerwith =
   "https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/partnerWithus.jpg?alt=media&token=0951591c-12a5-4761-9bae-c35e02d7cb66";
 
 const PartnerWithUs = () => {
+  const title = "Partner With Us";
+  const description =
+    "“The people at Codal are what makes them really stand out. They were responsive, attentive, flexible and they sought to understand my business so they could plan ahead—beyond the development project.”";
+
   return (
     <div>
       <Helmet>
@@ -20,8 +23,7 @@ const PartnerWithUs = () => {
       </Helmet>
       <Loader />
       <Navbar />
-      <ThreeScene />
-      <InnerBanner />
+      <InnerBanner title={title} description={description} />
       <div class="section partner_with_us">
         <div class="container">
           <div class="row">

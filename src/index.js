@@ -4,6 +4,7 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
+import ThreeScene from "./Appcontainer/ThreeScene";
 ReactDOM.render(
   <BrowserRouter>
     <div className="grid">
@@ -16,7 +17,7 @@ ReactDOM.render(
         <div className="grid_item col-2 pl-0 pr-0"></div>
       </div>
     </div>
-
+    <ThreeScene />
     <App />
   </BrowserRouter>,
   document.getElementById("root")

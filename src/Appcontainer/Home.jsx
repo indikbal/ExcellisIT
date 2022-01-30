@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import Footer from "../Footer";
-import Loader from "../Loader";
 import Navbar from "../Navbar";
 import TestimonialSection from "../TestimonialSection";
 import BecomeAPartner from "./BecomeAPartner";
@@ -13,8 +12,8 @@ import IndustriesWeCovered from "./IndustriesWeCovered";
 import LocationOnMap from "./LocationOnMap";
 import OurBlog from "./OurBlog";
 import OurClients from "./OurClients";
-import ThreeScene from "./ThreeScene";
 import { Helmet } from "react-helmet";
+import Loader from "../Loader";
 
 // $(".bodyName").children("div").addClass("test");
 
@@ -26,7 +25,6 @@ const Home = () => {
         <title>Home Page</title>
       </Helmet>
       <Loader />
-      <ThreeScene />
       <Navbar />
       <Herobaner />
       <HomeFeatureServices />

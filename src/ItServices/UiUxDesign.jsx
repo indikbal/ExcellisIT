@@ -8,6 +8,10 @@ import ThreeScene from "../Appcontainer/ThreeScene";
 import { Helmet } from "react-helmet";
 
 const UiUxDesign = () => {
+  const title = "UI UX Design";
+  const description =
+    "“The people at Codal are what makes them really stand out. They were responsive, attentive, flexible and they sought to understand my business so they could plan ahead—beyond the development project.”";
+
   return (
     <div>
       <Helmet>
@@ -19,7 +23,7 @@ const UiUxDesign = () => {
       <Loader />
       <Navbar />
       <ThreeScene />
-      <InnerBanner />
+      <InnerBanner title={title} description={description} />
       <section></section>
       <Footer />
     </div>

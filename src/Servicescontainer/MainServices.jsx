@@ -1,10 +1,9 @@
 import React, { useState, useEffect } from "react";
-import ThreeScene from "../Appcontainer/ThreeScene";
 import Navbar from "../Navbar";
 import "../Servicescontainer/services.css";
 import { Animated } from "react-animated-css";
-import Loader from "../Loader";
 import { Helmet } from "react-helmet";
+import Loader from "../Loader";
 
 const MainServices = () => {
   return (
@@ -18,7 +17,6 @@ const MainServices = () => {
       <Loader />
       <Navbar />
       <section className="main_servics_sec">
-        <ThreeScene />
         <div className="main_services_inner">
           <div className="container-fluid pl-0 pr-0">
             <div className="row">

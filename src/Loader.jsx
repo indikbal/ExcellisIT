@@ -9,13 +9,8 @@ const Loader = () => {
 
     setTimeout(function () {
       $(".loader--active2").removeClass("loader--active2");
-    }, 5000);
+    }, 1000);
   });
-  // $(document).ready(function () {
-  //   $(".loader--active2")
-  //     .removeClass("loader--active2")
-  //     .addClass("loader--active3");
-  // });
 
   return (
     <div>
@@ -29,16 +24,6 @@ const Loader = () => {
         <div class="loader__tile"></div>
         <div class="loader__tile"></div>
       </div>
-      {/* <div class="loader2 loader--active3">
-        <div class="loader__tile"></div>
-        <div class="loader__tile"></div>
-        <div class="loader__tile"></div>
-        <div class="loader__tile"></div>
-        <div class="loader__tile"></div>
-        <div class="loader__tile"></div>
-        <div class="loader__tile"></div>
-        <div class="loader__tile"></div>
-      </div> */}
     </div>
   );
 };

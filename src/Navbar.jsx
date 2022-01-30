@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import ReactDOM from "react-dom";
+import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
 import MainMenu from "./MainMenu";
 import Toggle from "./Toggle";
 
@@ -108,40 +109,75 @@ const Navbar = () => {
                   id="navbarNav"
                 >
                   <ul class="navbar-nav">
-                    <li class="nav-item active">
-                      <a class="nav-link" href="/">
-                        Home{" "}
-                      </a>
+                    <li class="nav-item">
+                      <Link
+                        exact
+                        activeClassName="navbar__link--active"
+                        className="nav-link"
+                        to="/"
+                      >
+                        Home
+                      </Link>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="about">
+                      <Link
+                        exact
+                        activeClassName="navbar__link--active"
+                        className="nav-link"
+                        to="about"
+                      >
                         About Us
-                      </a>
+                      </Link>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="OurServices">
+                      <Link
+                        exact
+                        activeClassName="navbar__link--active"
+                        className="nav-link"
+                        to="OurServices"
+                      >
                         Services
-                      </a>
+                      </Link>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="PartnerWithus">
+                      <Link
+                        exact
+                        activeClassName="navbar__link--active"
+                        className="nav-link"
+                        to="PartnerWithus"
+                      >
                         Partner With Us
-                      </a>
+                      </Link>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="process">
+                      <Link
+                        exact
+                        activeClassName="navbar__link--active"
+                        className="nav-link"
+                        to="process"
+                      >
                         Process
-                      </a>
+                      </Link>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link " href="Ourblogs">
+                      <Link
+                        exact
+                        activeClassName="navbar__link--active"
+                        className="nav-link"
+                        to="Ourblogs"
+                      >
                         Blog
-                      </a>
+                      </Link>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link " href="ContactUs">
+                      <Link
+                        exact
+                        activeClassName="navbar__link--active"
+                        className="nav-link"
+                        to="ContactUs"
+                      >
                         Contact
-                      </a>
+                      </Link>
                     </li>
                     <Toggle />
                   </ul>

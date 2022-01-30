@@ -3,13 +3,12 @@ import { useEffect, useState, useRef } from "react";
 import InnerBanner from "../InnerBanner";
 import Navbar from "../Navbar";
 import Footer from "../Footer";
-import "../../src/Aboutcontainer/about.css";
-import ThreeScense from "../Appcontainer/ThreeScene";
+import "./about.css";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Loader from "../Loader";
 import { Helmet } from "react-helmet";
+import Loader from "../Loader";
 
 function SampleNextArrow(props) {
   const { className, style, onClick } = props;
@@ -51,7 +50,9 @@ const About = () => {
     setNav1(slider1.current);
     setNav2(slider2.current);
   }, []);
-
+  const title = "About Us";
+  const description =
+    "“The people at Codal are what makes them really stand out. They were responsive, attentive, flexible and they sought to understand my business so they could plan ahead—beyond the development project.”";
   return (
     <div>
       <Helmet>
@@ -62,8 +63,7 @@ const About = () => {
       </Helmet>
       <Loader />
       <Navbar />
-      <ThreeScense />
-      <InnerBanner />
+      <InnerBanner title={title} description={description} />
 
       <section class="banner_after">
         <div class="container">

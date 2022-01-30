@@ -4,12 +4,15 @@ import Navbar from "../Navbar";
 import Footer from "../Footer";
 import "../../src/Processcontainer/process.css";
 import "../../src/Appcontainer/assets/Style.css";
-import ThreeScene from "../Appcontainer/ThreeScene";
 import $ from "jquery";
-import Loader from "../Loader";
 import { Helmet } from "react-helmet";
+import Loader from "../Loader";
 
 const Process = () => {
+  const title = "Process";
+  const description =
+    "“The people at Codal are what makes them really stand out. They were responsive, attentive, flexible and they sought to understand my business so they could plan ahead—beyond the development project.”";
+
   $(document).ready(function () {
     $("a[href*=#]").bind("click", function (e) {
       e.preventDefault(); // prevent hard jump, the default behavior
@@ -54,10 +57,7 @@ const Process = () => {
       </Helmet>
       <Loader />
       <Navbar />
-      <div className="hero_banner_sec">
-        <ThreeScene />
-      </div>
-      <InnerBanner />
+      <InnerBanner title={title} description={description} />
       <div className="process_section">
         <section class="top_progress_bar sticky d-none d-sm-block">
           <ul class="progressbar">
