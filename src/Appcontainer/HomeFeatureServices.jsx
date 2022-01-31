@@ -1,6 +1,7 @@
 import React from "react";
 import "./assets/Style.css";
 import Typed from "react-typed";
+import { Link } from "react-router-dom";
 
 const HomeFeatureServices = () => {
   return (
@@ -61,7 +62,9 @@ const HomeFeatureServices = () => {
                   </p>
                 </div>
                 <div className="abtn_read_more_btn">
-                  <button className="yellow_btn">Explore</button>
+                  <Link to="/about">
+                    <button className="yellow_btn">Explore</button>
+                  </Link>
                 </div>
               </div>
             </div>

@@ -3,9 +3,9 @@ import Navbar from "../Navbar";
 import "../Servicescontainer/services.css";
 import { Animated } from "react-animated-css";
 import { Helmet } from "react-helmet";
-import Loader from "../Loader";
+import { NavLink } from "react-router-dom";
 
-const MainServices = () => {
+const MainServices = ({ activeStatus }) => {
   return (
     <div>
       <Helmet>
@@ -14,8 +14,7 @@ const MainServices = () => {
         <meta name="description" content="aboutpage" />
         <meta name="keywords" content="about page" />
       </Helmet>
-      <Loader />
-      <Navbar />
+      <Navbar activeStatus="services" />
       <section className="main_servics_sec">
         <div className="main_services_inner">
           <div className="container-fluid pl-0 pr-0">
@@ -69,21 +68,27 @@ const MainServices = () => {
                           <div className="it_servies_list_item">
                             <ul>
                               <li>
-                                <a href="mobileApplication">
+                                <NavLink to="/mobileApplication">
                                   Mobile Application
-                                </a>
+                                </NavLink>
                               </li>
                               <li>
-                                <a href="#">Software Development</a>
+                                <NavLink to="/softwareDevelopment">
+                                  Software Development
+                                </NavLink>
                               </li>
                               <li>
-                                <a href="#">UI / UX Design</a>
+                                <NavLink to="/UiUxDesign">
+                                  UI / UX Design
+                                </NavLink>
                               </li>
                               <li>
-                                <a href="#">Web Developemnt</a>
+                                <NavLink to="/WebDevelopment">
+                                  Web Developemnt
+                                </NavLink>
                               </li>
                               <li>
-                                <a href="#">QA & Testing</a>
+                                <NavLink to="/UiUxDesign">QA & Testing</NavLink>
                               </li>
                               <li>
                                 <a href="#"></a>

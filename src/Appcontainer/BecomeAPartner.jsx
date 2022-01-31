@@ -1,6 +1,7 @@
 import React from "react";
 import "./assets/Style.css";
 import Typed from "react-typed";
+import { Link } from "react-router-dom";
 
 const BecomeAPartner = () => {
   return (
@@ -31,13 +32,15 @@ const BecomeAPartner = () => {
                     collaborate with you for landing support as well as the
                     success story.
                   </p>
-                  <button
-                    data-aos="fade-up"
-                    data-aos-duration="1500"
-                    className="explore_btn"
-                  >
-                    Explore More
-                  </button>
+                  <Link to="/PartnerWithus">
+                    <button
+                      data-aos="fade-up"
+                      data-aos-duration="1500"
+                      className="explore_btn"
+                    >
+                      Explore More
+                    </button>
+                  </Link>
                 </div>
               </div>
             </div>

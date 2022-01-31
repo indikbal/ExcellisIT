@@ -14,6 +14,7 @@
 .inner_page_first {
   width: 100%;
   position: relative;
+  margin-top: 50px;
 }
 .s-BannerServices {
   position: relative;
@@ -347,6 +348,11 @@
   transform: translateX(31%);
 }
 
+.s-InfoBoxesGrid__GridContainer {
+  display: flex;
+  justify-content: flex-end;
+}
+
 @media (min-width: 481px) {
   .row .columns.small-push-18 {
     right: auto;
@@ -571,7 +577,6 @@
   }
 }
 .s-TechnologiesLogos {
-  background-color: var(--theme-dark1);
   padding-top: 20px;
 }
 .s-TechnologiesLogos__Inner {
@@ -579,7 +584,8 @@
   width: 100%;
   border: 1px solid #ccc;
   background: #fff;
-  min-height: 265px;
+  min-height: 100px;
+  padding: 20px;
 }
 .s-TechnologiesLogos__GridWrapper .col {
   padding: 0;
@@ -598,6 +604,12 @@
   padding: 25px;
   color: var(--text-white1);
 }
+.s-TechnologiesLogos__Image img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
 .s-TechnologiesLogos .u-Scanlines {
   position: absolute;
   right: 0;
@@ -729,4 +741,9 @@
 .why_point {
   background-color: var(--theme-dark2);
   padding: 20px;
+}
+
+.section_technology {
+  background-color: #fff;
+  padding: 100px 0;
 }

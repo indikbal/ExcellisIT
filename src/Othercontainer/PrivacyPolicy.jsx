@@ -1,7 +1,6 @@
 import React from "react";
 import Footer from "../Footer";
 import InnerBanner from "../InnerBanner";
-import Loader from "../Loader";
 import Navbar from "../Navbar";
 import { Helmet } from "react-helmet";
 
@@ -18,7 +17,6 @@ const PrivacyPolicy = () => {
         <meta name="description" content="aboutpage" />
         <meta name="keywords" content="about page" />
       </Helmet>
-      <Loader />
       <Navbar />
       <InnerBanner title={title} description={description} />
       <section class="only_con_sec pt-5 pb-5">

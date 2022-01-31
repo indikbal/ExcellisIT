@@ -1,8 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 import { Animated } from "react-animated-css";
 import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
+import {
+  FaFacebook,
+  FaLinkedin,
+  FaInstagram,
+  FaTwitter,
+  FaYoutube,
+  FaSkype,
+  FaWhatsapp,
+} from "react-icons/fa";
 
 const MainMenu = () => {
+  const [isActive, setActive] = useState("false");
+  const handleToggle = () => {
+    setActive(!isActive);
+  };
   return (
     <div>
       <nav class="menu">
@@ -12,15 +25,15 @@ const MainMenu = () => {
             animationOut="fadeOut"
             isVisible={true}
             animationInDelay={100}
+            className={isActive ? "glowSec" : null}
           >
             <div class="menu__item menu__item--3">
               <div class="menu__item-inner">
                 <div class="sidemenu">
                   <Link
-                    exact
                     activeClassName="navbar__link--active"
                     className=" sidemenu__item"
-                    to="mobileApplication"
+                    to="/mobileApplication"
                   >
                     <span class="sidemenu__item-inner">Mobile Application</span>
                   </Link>
@@ -122,25 +135,16 @@ const MainMenu = () => {
             <div class="menu__item menu__item--1">
               <div class="menu__item-inner">
                 <div class="mainmenu">
-                  <a href="itServices" class="mainmenu__item">
+                  <a href="#" class="mainmenu__item" onClick={handleToggle}>
                     It Services
                   </a>
-                  <a
-                    href="https://www.excellisit.com/bpo"
-                    class="mainmenu__item"
-                  >
+                  <a href="#" onClick={handleToggle} class="mainmenu__item">
                     Bpo Services
                   </a>
-                  <a
-                    href="https://www.excellisit.com/digital-marketing"
-                    class="mainmenu__item"
-                  >
+                  <a href="" onClick={handleToggle} class="mainmenu__item">
                     Marketing Services
                   </a>
-                  <a
-                    href="https://www.excellisit.com/CAD-drawing-services"
-                    class="mainmenu__item"
-                  >
+                  <a href="" onClick={handleToggle} class="mainmenu__item">
                     Cad Services
                   </a>
                 </div>
@@ -194,34 +198,34 @@ const MainMenu = () => {
                     href="https://www.facebook.com/excellisIT/"
                     target="_blank"
                   >
-                    <i class="lab la-facebook-f"></i>
+                    <FaFacebook />
                   </a>
                   <a
                     href="https://www.linkedin.com/company/excellisit"
                     target="_blank"
                   >
-                    <i class="lab la-linkedin-in"></i>
+                    <FaLinkedin />
                   </a>
                   <a
                     href="https://www.instagram.com/accounts/login/"
                     target="_blank"
                   >
-                    <i class="lab la-instagram"></i>
+                    <FaInstagram />
                   </a>
                   <a href="https://twitter.com/excellisIT" target="_blank">
-                    <i class="lab la-twitter"></i>
+                    <FaTwitter />
                   </a>
                   <a
                     href="https://www.youtube.com/channel/UCoz841ao5Se30KyCld9YmpA"
                     target="_blank"
                   >
-                    <i class="lab la-youtube"></i>
+                    <FaYoutube />
                   </a>
                   <a href="https://join.skype.com/invite/UtNAdxIp1Dcs">
-                    <i class="lab la-skype"></i>
+                    <FaSkype />
                   </a>
                   <a href="https://wa.me/918617724646">
-                    <i class="lab la-whatsapp"></i>
+                    <FaWhatsapp />
                   </a>
                 </div>
               </div>
@@ -236,10 +240,10 @@ const MainMenu = () => {
             <div class="menu__item menu__item--4">
               <div class="menu__item-inner">
                 <div class="sidemenu">
-                  <a href="about" class="sidemenu__item">
+                  <a href="/about" class="sidemenu__item">
                     <span class="sidemenu__item-inner">About Us</span>
                   </a>
-                  <a href="PartnerWithus" class="sidemenu__item">
+                  <a href="/PartnerWithus" class="sidemenu__item">
                     <span class="sidemenu__item-inner">Partner With Us</span>
                   </a>
                   <a href="#" class="sidemenu__item">
@@ -248,10 +252,10 @@ const MainMenu = () => {
                   <a href="#" class="sidemenu__item">
                     <span class="sidemenu__item-inner">Career</span>
                   </a>
-                  <a href="Ourblogs" class="sidemenu__item">
+                  <a href="/Ourblogs" class="sidemenu__item">
                     <span class="sidemenu__item-inner">Blog</span>
                   </a>
-                  <a href="ContactUs" class="sidemenu__item">
+                  <a href="/ContactUs" class="sidemenu__item">
                     <span class="sidemenu__item-inner">Contact Us</span>
                   </a>
                 </div>

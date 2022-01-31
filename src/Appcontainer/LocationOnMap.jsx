@@ -13,7 +13,7 @@ const LocationOnMap = () => {
           <div className="row">
             <div className="col-md-12">
               <div class="contact_form_title text-center">
-                <span>Serving Globally</span>
+                <span>Where To Find Us</span>
               </div>
               <div className="globe_wrapper">
                 <img

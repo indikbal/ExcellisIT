@@ -8,7 +8,6 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Helmet } from "react-helmet";
-import Loader from "../Loader";
 
 function SampleNextArrow(props) {
   const { className, style, onClick } = props;
@@ -39,7 +38,7 @@ function SamplePrevArrow(props) {
   );
 }
 
-const About = () => {
+const About = ({ activeStatus }) => {
   const [nav1, setNav1] = useState();
   const [nav2, setNav2] = useState();
   const slider1 = useRef(null);
@@ -61,8 +60,7 @@ const About = () => {
         <meta name="description" content="aboutpage" />
         <meta name="keywords" content="about page" />
       </Helmet>
-      <Loader />
-      <Navbar />
+      <Navbar activeStatus="about" />
       <InnerBanner title={title} description={description} />
 
       <section class="banner_after">

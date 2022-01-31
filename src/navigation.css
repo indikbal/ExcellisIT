@@ -10,7 +10,10 @@
   --body-font: "Roboto", sans-serif;
   --heading-font: "Oswald", sans-serif;
 }
-
+.glowSec {
+  border: 2px solid #ffa000;
+  transition: ease-in all 0.3s;
+}
 .fixed .navbar-nav {
   opacity: 0;
 }
@@ -329,6 +332,9 @@ a:hover {
   color: var(--text-white1);
   font-size: 21px;
   margin: 5px 0;
+}
+.menu_social a:hover {
+  color: var(--theme-yellow2);
 }
 
 @media screen and (max-width: 991px) {

@@ -1,5 +1,4 @@
 import React from "react";
-import Loader from "../Loader";
 import Navbar from "../Navbar";
 import Footer from "../Footer";
 import InnerBanner from "../InnerBanner";
@@ -8,7 +7,7 @@ import ContactSection from "../Appcontainer/ContactSection";
 const partnerwith =
   "https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/partnerWithus.jpg?alt=media&token=0951591c-12a5-4761-9bae-c35e02d7cb66";
 
-const PartnerWithUs = () => {
+const PartnerWithUs = ({ activeStatus }) => {
   const title = "Partner With Us";
   const description =
     "“The people at Codal are what makes them really stand out. They were responsive, attentive, flexible and they sought to understand my business so they could plan ahead—beyond the development project.”";
@@ -21,8 +20,7 @@ const PartnerWithUs = () => {
         <meta name="description" content="aboutpage" />
         <meta name="keywords" content="about page" />
       </Helmet>
-      <Loader />
-      <Navbar />
+      <Navbar activeStatus="partner" />
       <InnerBanner title={title} description={description} />
       <div class="section partner_with_us">
         <div class="container">

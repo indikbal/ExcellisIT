@@ -3,8 +3,17 @@ import ReactDOM from "react-dom";
 import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
 import MainMenu from "./MainMenu";
 import Toggle from "./Toggle";
+import {
+  FaFacebook,
+  FaLinkedin,
+  FaInstagram,
+  FaTwitter,
+  FaYoutube,
+  FaSkype,
+  FaWhatsapp,
+} from "react-icons/fa";
 
-const Navbar = () => {
+const Navbar = ({ activeStatus }) => {
   const [show, setShow] = React.useState();
 
   const [scroll, setScroll] = useState(false);
@@ -14,41 +23,62 @@ const Navbar = () => {
     });
   }, []);
 
+  const indiamap =
+    "https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/india.png?alt=media&token=d7b93f62-5579-4bbe-834a-77ca052199a3";
+  const usamap =
+    "https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/united-states.png?alt=media&token=ceca221c-c79d-4b41-9f06-5fc33efc1e86";
+
+  const logo =
+    "https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/logo-white.png?alt=media&token=e6de3af9-13d4-4699-8b77-0b8b2445bc3e";
+  const logoicon =
+    "https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/icon.png?alt=media&token=011a9301-ab67-4720-b403-7ffc908f4291";
+
   return (
     <div>
+      <div className="top_social_medi">
+        <ul className="d-flex align-items-center justify-content-start mb-0">
+          <li>
+            <a href="https://www.facebook.com/excellisIT/">
+              <FaFacebook />
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com/excellisIT">
+              <FaTwitter />
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/accounts/login/">
+              <FaInstagram />
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/company/excellisit">
+              <FaLinkedin />
+            </a>
+          </li>
+          <li>
+            <a href="https://join.skype.com/invite/UtNAdxIp1Dcs">
+              <FaSkype />
+            </a>
+          </li>
+          <li>
+            <a href="https://wa.me/918617724646">
+              <FaWhatsapp />
+            </a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com/channel/UCoz841ao5Se30KyCld9YmpA">
+              <FaYoutube />
+            </a>
+          </li>
+        </ul>
+      </div>
       <section className="top_header_section pl-170 pr-170">
         <div className="container-fluid">
           <div className="row">
             <div className="col-md-4">
-              <div className="top_social_medi">
-                <ul className="d-flex align-items-center justify-content-start mb-0">
-                  <li>
-                    <a href="#">
-                      <i class="ph-facebook-logo"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i class="ph-twitter-logo"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i class="ph-instagram-logo"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i class="ph-linkedin-logo"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i class="ph-rss"></i>
-                    </a>
-                  </li>
-                </ul>
-              </div>
+              <div className="iso_sec">ISO 9001:2015 Certified</div>
             </div>
             <div className="col-md-8">
               <div className="top_right_content">
@@ -60,7 +90,20 @@ const Navbar = () => {
                   </li>
                   <li>
                     <a href="#">
-                      <i class="ph-phone"></i> (+91) 861 772 4646
+                      <img src={indiamap} className="mr-2" alt="india flag" />{" "}
+                      (+91) 861 772 4646
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img src={usamap} className="mr-2" alt="usa flag" /> (+91)
+                      861 772 4646
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="#" className="text-yellow2">
+                      <i class="ph-phone-call"></i> Book a Call
                     </a>
                   </li>
                 </ul>
@@ -78,16 +121,10 @@ const Navbar = () => {
             <div className="col-md-12">
               <nav class="navbar navbar-expand-lg pr-0">
                 <div className="logo">
-                  <a class="" href="/">
-                    <img
-                      className="header_logo"
-                      src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/logo-white.png?alt=media&token=e6de3af9-13d4-4699-8b77-0b8b2445bc3e"
-                    />
-                    <img
-                      className="header_icon"
-                      src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/icon.png?alt=media&token=011a9301-ab67-4720-b403-7ffc908f4291"
-                    />
-                  </a>
+                  <Link to="/">
+                    <img className="header_logo" src={logo} alt="" />
+                    <img className="header_icon" src={logoicon} alt="" />
+                  </Link>
                 </div>
                 <button
                   class="navbar-toggler"
@@ -109,73 +146,38 @@ const Navbar = () => {
                   id="navbarNav"
                 >
                   <ul class="navbar-nav">
-                    <li class="nav-item">
-                      <Link
-                        exact
-                        activeClassName="navbar__link--active"
-                        className="nav-link"
-                        to="/"
-                      >
+                    <li className={activeStatus == "home" ? "active" : ""}>
+                      <Link exact className="nav-link" to="/">
                         Home
                       </Link>
                     </li>
-                    <li class="nav-item">
-                      <Link
-                        exact
-                        activeClassName="navbar__link--active"
-                        className="nav-link"
-                        to="about"
-                      >
+                    <li className={activeStatus == "about" ? "active" : ""}>
+                      <Link exact className="nav-link" to="/about">
                         About Us
                       </Link>
                     </li>
-                    <li class="nav-item">
-                      <Link
-                        exact
-                        activeClassName="navbar__link--active"
-                        className="nav-link"
-                        to="OurServices"
-                      >
+                    <li className={activeStatus == "services" ? "active" : ""}>
+                      <Link exact className="nav-link" to="/OurServices">
                         Services
                       </Link>
                     </li>
-                    <li class="nav-item">
-                      <Link
-                        exact
-                        activeClassName="navbar__link--active"
-                        className="nav-link"
-                        to="PartnerWithus"
-                      >
+                    <li className={activeStatus == "partner" ? "active" : ""}>
+                      <Link exact className="nav-link" to="/PartnerWithus">
                         Partner With Us
                       </Link>
                     </li>
-                    <li class="nav-item">
-                      <Link
-                        exact
-                        activeClassName="navbar__link--active"
-                        className="nav-link"
-                        to="process"
-                      >
+                    <li className={activeStatus == "process" ? "active" : ""}>
+                      <Link exact className="nav-link" to="/process">
                         Process
                       </Link>
                     </li>
-                    <li class="nav-item">
-                      <Link
-                        exact
-                        activeClassName="navbar__link--active"
-                        className="nav-link"
-                        to="Ourblogs"
-                      >
+                    <li className={activeStatus == "blog" ? "active" : ""}>
+                      <Link exact className="nav-link" to="/Ourblogs">
                         Blog
                       </Link>
                     </li>
-                    <li class="nav-item">
-                      <Link
-                        exact
-                        activeClassName="navbar__link--active"
-                        className="nav-link"
-                        to="ContactUs"
-                      >
+                    <li className={activeStatus == "contact" ? "active" : ""}>
+                      <Link exact className="nav-link" to="/ContactUs">
                         Contact
                       </Link>
                     </li>

@@ -1,10 +1,10 @@
 import React from "react";
 import "./itservices.css";
-import Loader from "../Loader";
 import Navbar from "../Navbar";
 import Footer from "../Footer";
 import InnerBanner from "../InnerBanner";
 import { Helmet } from "react-helmet";
+import { NavLink } from "react-router-dom";
 
 const MobileApplication = () => {
   const title = "Mobile Application";
@@ -19,7 +19,6 @@ const MobileApplication = () => {
         <meta name="description" content="aboutpage" />
         <meta name="keywords" content="about page" />
       </Helmet>
-      <Loader />
       <Navbar />
       <InnerBanner title={title} description={description} />
       <section class="inner_page_first">
@@ -56,7 +55,16 @@ const MobileApplication = () => {
               <div class="col-md-7">
                 <div class="s-BannerServices__Image">
                   <div class="s-BannerServices__Image__Content">
-                    <img src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/mobile-application.jpg?alt=media&token=077572ec-50e3-4ee8-8476-461a6796c7ea" />
+                    <div
+                      class="reveal-holder custom_aos"
+                      data-aos="reveal-item"
+                    >
+                      <div
+                        class="reveal-block right custom_aos"
+                        data-aos="reveal-right"
+                      ></div>
+                      <img src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/mobile-application.jpg?alt=media&token=077572ec-50e3-4ee8-8476-461a6796c7ea" />
+                    </div>
                   </div>
                 </div>
               </div>
@@ -77,9 +85,15 @@ const MobileApplication = () => {
           <div class="row">
             <div class="col-md-4 main_heading dark_text pl-5">
               <h6>Facts &amp; Numbers</h6>
-              <h2 class="h2--WithLine">
-                Data <strong>transformed into knowledge</strong>
-              </h2>
+              <div class="reveal-holder custom_aos" data-aos="reveal-item">
+                <div
+                  class="reveal-block right custom_aos"
+                  data-aos="reveal-right"
+                ></div>
+                <h2 class="h2--WithLine">
+                  Data <strong>transformed into knowledge</strong>
+                </h2>
+              </div>
               <p>
                 We can design processes that
                 <strong> visualise data processing,</strong> design and create a
@@ -174,9 +188,15 @@ const MobileApplication = () => {
             <div class="columns s-TextBlock__Intro">
               <div class="main_heading white_text">
                 <h6>Benefits</h6>
-                <h2 class="h2--WithLine">
-                  What will you <strong>get</strong>?
-                </h2>
+                <div class="reveal-holder custom_aos" data-aos="reveal-item">
+                  <div
+                    class="reveal-block right custom_aos"
+                    data-aos="reveal-right"
+                  ></div>
+                  <h2 class="h2--WithLine">
+                    What will you <strong>get</strong>?
+                  </h2>
+                </div>
               </div>
             </div>
             <div class="s-TextBlock__Content">
@@ -244,10 +264,10 @@ const MobileApplication = () => {
             <div class="u-Center white_text">
               <p>Start your data transformation now.</p>
             </div>
-            <a href="" class="co-Button">
+            <NavLink to="/contactUs" className="co-Button">
               <span>Contact us</span>
               <i class="ph-arrow-right"></i>
-            </a>
+            </NavLink>
           </div>
         </div>
       </section>
@@ -255,17 +275,29 @@ const MobileApplication = () => {
         <div class="container">
           <div class="row l-ContentColumn">
             <div class="s-ImageText__ImageContainer col-md-7 order-1 order-sm-2">
-              <img
-                src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/data-science_what-will-you-get_1.png?alt=media&token=25411235-6c12-406c-9429-d6f0cf61cb6d"
-                alt=""
-                class="s-ImageText__Image"
-              />
+              <div class="reveal-holder custom_aos" data-aos="reveal-item">
+                <div
+                  class="reveal-block right custom_aos"
+                  data-aos="reveal-right"
+                ></div>
+                <img
+                  src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/data-science_what-will-you-get_1.png?alt=media&token=25411235-6c12-406c-9429-d6f0cf61cb6d"
+                  alt=""
+                  class="s-ImageText__Image"
+                />
+              </div>
             </div>
             <div class="s-ImageText__Text main_heading dark_text col-md-5 order-2 order-sm-1">
               <h6>Data Science</h6>
-              <h2 class="h2--WithLine">
-                We believe that <strong>proper data management</strong> means:
-              </h2>
+              <div class="reveal-holder custom_aos" data-aos="reveal-item">
+                <div
+                  class="reveal-block right custom_aos"
+                  data-aos="reveal-right"
+                ></div>
+                <h2 class="h2--WithLine">
+                  We believe that <strong>proper data management</strong> means:
+                </h2>
+              </div>
               <ul>
                 <li>Making smart business decisions</li>
                 <li>Solution optimisation</li>
@@ -284,9 +316,15 @@ const MobileApplication = () => {
           <div class="row l-ContentColumn">
             <div class="col-md-4 main_heading white_text">
               <h6>The process</h6>
-              <h2 class="h2--WithLine">
-                Steps in <strong>data processing</strong>
-              </h2>
+              <div class="reveal-holder custom_aos" data-aos="reveal-item">
+                <div
+                  class="reveal-block right custom_aos"
+                  data-aos="reveal-right"
+                ></div>
+                <h2 class="h2--WithLine">
+                  Steps in <strong>data processing</strong>
+                </h2>
+              </div>
               <p>
                 We are looking for the right place to store your data and the
                 best ways to use it, tailored to your needs and to the problem
@@ -365,17 +403,29 @@ const MobileApplication = () => {
         <div class="container">
           <div class="row l-ContentColumn">
             <div class="s-ImageText__ImageContainer col-md-8 order-1 order-sm-2">
-              <img
-                src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/data-science_what-will-you-get_1.png?alt=media&token=25411235-6c12-406c-9429-d6f0cf61cb6d"
-                alt=""
-                class="s-ImageText__Image"
-              />
+              <div class="reveal-holder custom_aos" data-aos="reveal-item">
+                <div
+                  class="reveal-block right custom_aos"
+                  data-aos="reveal-right"
+                ></div>
+                <img
+                  src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/data-science_what-will-you-get_1.png?alt=media&token=25411235-6c12-406c-9429-d6f0cf61cb6d"
+                  alt=""
+                  class="s-ImageText__Image"
+                />
+              </div>
             </div>
             <div class="s-ImageText__Text main_heading dark_text col-md-4 order-2 order-sm-1">
               <h6>Artificial Intelligence & Machine Learning</h6>
-              <h2 class="h2--WithLine">
-                Transform <strong>your ways of working</strong>
-              </h2>
+              <div class="reveal-holder custom_aos" data-aos="reveal-item">
+                <div
+                  class="reveal-block right custom_aos"
+                  data-aos="reveal-right"
+                ></div>
+                <h2 class="h2--WithLine">
+                  Transform <strong>your ways of working</strong>
+                </h2>
+              </div>
               <ul>
                 <li>Making smart business decisions</li>
                 <li>Solution optimisation</li>
@@ -394,13 +444,14 @@ const MobileApplication = () => {
           </div>
         </div>
       </section>
-      <section class="sec">
+      <section class="sec section_technology">
         <div class="s-TechnologiesLogos s-TechnologiesLogos--WithScanlines ">
-          <div class="container-fluid">
+          <div class="container">
             <div class="main_heading dark_text">
               <h6 class="s-TechnologiesLogos__Subtitle">
                 Technologies &amp; Tools
               </h6>
+
               <h2 class="h2 h2--WithLine">
                 Our solutions are based <br />
                 <strong>on the following technologies</strong>
@@ -408,120 +459,137 @@ const MobileApplication = () => {
             </div>
             <div class="s-TechnologiesLogos__GridWrapper">
               <div class="row">
-                <div class="col">
-                  <div class="s-TechnologiesLogos__Inner">
+                <div class="col-md-2 col">
+                  <div class="s-TechnologiesLogos__Inner" data-aos="fade-up">
                     <div class="s-TechnologiesLogos__Image">
                       <img
                         data-lazyloaded="1"
                         src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/technology%2Freact.png?alt=media&token=f55b9fea-0645-402f-a18c-2cef8b6e4e68"
-                        width="260"
-                        height="260"
+                        alt=""
                       />
                     </div>
                   </div>
                 </div>
-                <div class="col">
-                  <div class="s-TechnologiesLogos__Inner">
+                <div class="col-md-2 col">
+                  <div class="s-TechnologiesLogos__Inner" data-aos="fade-down">
                     <div class="s-TechnologiesLogos__Image">
                       <img
                         data-lazyloaded="1"
                         src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/technology%2Fangular.png?alt=media&token=415b1133-696c-4dbd-b53c-1c60138932dd"
-                        width="260"
-                        height="260"
+                        alt=""
                       />
                     </div>
                   </div>
                 </div>
-                <div class="col">
-                  <div class="s-TechnologiesLogos__Inner">
+                <div class="col-md-2 col">
+                  <div class="s-TechnologiesLogos__Inner" data-aos="fade-up">
                     <div class="s-TechnologiesLogos__Image">
                       <img
                         data-lazyloaded="1"
                         src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/technology%2Fasp.png?alt=media&token=97659b0f-b14c-4bc3-8357-9616b5aabb01"
-                        width="260"
-                        height="260"
+                        alt=""
                       />
                     </div>
                   </div>
                 </div>
-                <div class="col">
-                  <div class="s-TechnologiesLogos__Inner">
+                <div class="col-md-2 col">
+                  <div class="s-TechnologiesLogos__Inner" data-aos="fade-down">
                     <div class="s-TechnologiesLogos__Image">
                       <img
                         data-lazyloaded="1"
                         src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/technology%2Fmariadb.png?alt=media&token=6629dc12-f1ef-476e-aaaf-9fc6a82289a7"
-                        width="260"
-                        height="260"
+                        alt=""
                       />
                     </div>
                   </div>
                 </div>
-                <div class="col">
-                  <div class="s-TechnologiesLogos__Inner">
+                <div class="col-md-2 col">
+                  <div class="s-TechnologiesLogos__Inner" data-aos="fade-up">
                     <div class="s-TechnologiesLogos__Image">
                       <img
                         data-lazyloaded="1"
                         src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/technology%2Fflutter-logo.png?alt=media&token=415f19e2-4f74-48c1-a59c-53586030110d"
-                        width="260"
-                        height="260"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-2 col">
+                  <div class="s-TechnologiesLogos__Inner" data-aos="fade-down">
+                    <div class="s-TechnologiesLogos__Image">
+                      <img
+                        data-lazyloaded="1"
+                        src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/technology%2Fflutter-logo.png?alt=media&token=415f19e2-4f74-48c1-a59c-53586030110d"
+                        alt=""
                       />
                     </div>
                   </div>
                 </div>
               </div>
               <div class="row">
-                <div class="col">
-                  <div class="s-TechnologiesLogos__Inner">
+                <div class="col-md-2 col">
+                  <div class="s-TechnologiesLogos__Inner" data-aos="fade-up">
                     <div class="s-TechnologiesLogos__Image">
                       <img
                         data-lazyloaded="1"
                         src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/technology%2Foracel12c.png?alt=media&token=eb08f609-a2c3-4c63-a5bb-96fda1b25f91"
-                        width="260"
-                        height="260"
+                        alt=""
                       />
                     </div>
                   </div>
                 </div>
-                <div class="col">
-                  <div class="s-TechnologiesLogos__Inner">
+                <div class="col-md-2 col">
+                  <div class="s-TechnologiesLogos__Inner" data-aos="fade-down">
                     <div class="s-TechnologiesLogos__Image">
                       <img
                         data-lazyloaded="1"
                         src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/technology%2Fpostgresql.png?alt=media&token=a2312e6d-b33e-4df7-8b54-02ffd8f9ff85"
-                        width="260"
-                        height="260"
+                        alt=""
                       />
                     </div>
                   </div>
                 </div>
-                <div class="col">
-                  <div class="s-TechnologiesLogos__Inner">
+                <div class="col-md-2 col">
+                  <div class="s-TechnologiesLogos__Inner" data-aos="fade-up">
                     <div class="s-TechnologiesLogos__Image">
                       <img
                         data-lazyloaded="1"
                         src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/technology%2FJava.png?alt=media&token=57226ce3-176b-491c-a540-1101d44c47cf"
-                        width="260"
-                        height="260"
+                        alt=""
                       />
                     </div>
                   </div>
                 </div>
-                <div class="col">
-                  <div class="s-TechnologiesLogos__Inner">
+                <div class="col-md-2 col">
+                  <div class="s-TechnologiesLogos__Inner" data-aos="fade-down">
                     <div class="s-TechnologiesLogos__Image">
                       <img
                         data-lazyloaded="1"
                         src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/technology%2Fswift.png?alt=media&token=8bb91bf5-8689-4284-b618-02ff8eaf3b07"
-                        width="260"
-                        height="260"
+                        alt=""
                       />
                     </div>
                   </div>
                 </div>
-                <div class="col">
-                  <div class="s-TechnologiesLogos__Inner s-TechnologiesLogos__LogoTile--Brand">
+                <div class="col-md-2 col">
+                  <div class="s-TechnologiesLogos__Inner" data-aos="fade-down">
                     <div class="s-TechnologiesLogos__Image">
-                      <h2>...and many more!</h2>
+                      <img
+                        data-lazyloaded="1"
+                        src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/technology%2Fswift.png?alt=media&token=8bb91bf5-8689-4284-b618-02ff8eaf3b07"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-2 col">
+                  <div class="s-TechnologiesLogos__Inner" data-aos="fade-up">
+                    <div class="s-TechnologiesLogos__Image">
+                      <img
+                        data-lazyloaded="1"
+                        src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/technology%2Fswift.png?alt=media&token=8bb91bf5-8689-4284-b618-02ff8eaf3b07"
+                        alt=""
+                      />
                     </div>
                   </div>
                 </div>

@@ -1,6 +1,10 @@
 import React, { useState } from "react";
 
-const BlogContent = ({ description }) => {
+const BlogContent = ({
+  description,
+  SingleBlogDescription,
+  BlogDescriptionHome,
+}) => {
   let trimmedContent = description;
   if (description != undefined) {
     trimmedContent =
@@ -8,14 +12,33 @@ const BlogContent = ({ description }) => {
         ? description
         : description.slice(0, 350) + "...";
   }
-  console.log("conetne", trimmedContent);
+
+  let trimmedContent2 = BlogDescriptionHome;
+  if (BlogDescriptionHome != undefined) {
+    trimmedContent2 =
+      BlogDescriptionHome.length <= 350
+        ? BlogDescriptionHome
+        : BlogDescriptionHome.slice(0, 100) + "...";
+  }
+
+  // console.log("conetne", trimmedContent);
   return (
     <div>
-      <p
+      <div
         dangerouslySetInnerHTML={{
           __html: trimmedContent,
         }}
-      ></p>
+      ></div>
+      <div
+        dangerouslySetInnerHTML={{
+          __html: SingleBlogDescription,
+        }}
+      ></div>
+      <div
+        dangerouslySetInnerHTML={{
+          __html: trimmedContent2,
+        }}
+      ></div>
     </div>
   );
 };

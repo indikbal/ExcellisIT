@@ -2,6 +2,8 @@ import React from "react";
 import "./assets/Style.css";
 import Typed from "react-typed";
 import axios from "axios";
+import BlogContent from "../BlogContent";
+import { NavLink } from "react-router-dom";
 
 export class OurBlog extends React.Component {
   constructor(props) {
@@ -21,10 +23,11 @@ export class OurBlog extends React.Component {
             <div className="single_devide_blog single_blog">
               <div className="blog_content">
                 <h4>{u.Title}</h4>
-                <p>{u.Description}</p>
-                <a href={"/blogDetail/" + u.link} className="read_more">
+                <BlogContent BlogDescriptionHome={u.Description} />
+
+                <NavLink to={"/blogDetail/" + u.link} className="read_more">
                   Read More
-                </a>
+                </NavLink>
               </div>
               <div className="blog_img">
                 <img src={"http://localhost/admin/public/uploads/" + u.Image} />

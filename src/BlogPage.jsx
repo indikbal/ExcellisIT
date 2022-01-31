@@ -2,9 +2,8 @@ import React from "react";
 import axios from "axios";
 import Navbar from "./Navbar";
 import InnerBanner from "./InnerBanner";
-import ThreeScene from "./Appcontainer/ThreeScene";
-import Loader from "./Loader";
 import BlogContent from "./BlogContent";
+import { NavLink } from "react-router-dom";
 
 const title = "Our Blogs";
 const description =
@@ -24,18 +23,26 @@ export class BlogPage extends React.Component {
         const data = res.data;
         console.log(data);
         const blogs = data.map((u) => (
-          <div className="col-md-3 col-lg-4">
+          <div className="col-md-3 col-lg-4 col-xl-3">
             <div className="article_single">
               <span>{u.can}</span>
               <h4>
-                <a href="#">{u.Title}</a>
+                <NavLink to={"/blogDetail/" + u.link} className="">
+                  {u.Title}
+                </NavLink>
               </h4>
               <div className="date_article">{u.Date}</div>
               <div className="article_short_desc">
                 <BlogContent description={u.Description} />
-                <a href={"/blogDetail/" + u.link} className="article_read_more">
+                {/* <a href={"/blogDetail/" + u.link} className="article_read_more">
                   Read Full Article
-                </a>
+                </a> */}
+                <NavLink
+                  to={"/blogDetail/" + u.link}
+                  className="article_read_more"
+                >
+                  Read Full Article
+                </NavLink>
               </div>
             </div>
           </div>
@@ -52,11 +59,10 @@ export class BlogPage extends React.Component {
     this.getUsersData();
   }
 
-  render() {
+  render(activeStatus) {
     return (
       <div>
-        <Loader />
-        <Navbar />
+        <Navbar activeStatus="blog" />
         <InnerBanner title={title} description={description} />
         <section className="article_section">
           <div className="container-fluid">

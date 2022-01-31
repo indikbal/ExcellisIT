@@ -1,6 +1,5 @@
 import React from "react";
 import "./itservices.css";
-import Loader from "../Loader";
 import Navbar from "../Navbar";
 import Footer from "../Footer";
 import InnerBanner from "../InnerBanner";
@@ -20,7 +19,6 @@ const ItServices = () => {
         <meta name="description" content="aboutpage" />
         <meta name="keywords" content="about page" />
       </Helmet>
-      <Loader />
       <Navbar />
       <ThreeScene />
       <InnerBanner title={title} description={description} />

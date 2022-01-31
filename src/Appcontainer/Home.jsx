@@ -9,11 +9,11 @@ import Herobaner from "./Herobaner";
 import HomeFeatureServices from "./HomeFeatureServices";
 import HomeServicesSec from "./HomeServicesSec";
 import IndustriesWeCovered from "./IndustriesWeCovered";
-import LocationOnMap from "./LocationOnMap";
 import OurBlog from "./OurBlog";
 import OurClients from "./OurClients";
 import { Helmet } from "react-helmet";
 import Loader from "../Loader";
+import CompanyAddress from "../CompanyAddress";
 
 // $(".bodyName").children("div").addClass("test");
 
@@ -25,7 +25,7 @@ const Home = () => {
         <title>Home Page</title>
       </Helmet>
       <Loader />
-      <Navbar />
+      <Navbar activeStatus="home" />
       <Herobaner />
       <HomeFeatureServices />
       <HomeServicesSec />
@@ -33,10 +33,10 @@ const Home = () => {
       <BecomeAPartner />
       <IndustriesWeCovered />
       <OurClients />
+      <TestimonialSection />
       <OurBlog />
       <ContactSection />
-      <TestimonialSection />
-      <LocationOnMap />
+      <CompanyAddress />
       <Footer />
     </div>
   );
