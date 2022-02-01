@@ -25,7 +25,7 @@ const FactsAndFigure = () => {
               </div>
             </div>
             <div
-              className="col-md-2 pr-0 pr-xs-2 pl-xs-2 pl-0"
+              className="col-md-2 col-6 pr-0  pl-3 pl-sm-0 pr-sm-0"
               data-aos="fade-up"
               data-aos-duration="500"
             >
@@ -37,7 +37,7 @@ const FactsAndFigure = () => {
               </div>
             </div>
             <div
-              className="col-md-2 pr-0 pr-xs-2 pl-xs-2 pl-0"
+              className="col-md-2 pr-3  pl-0 col-6 pl-sm-0 pr-sm-0"
               data-aos="fade-up"
               data-aos-duration="1000"
             >
@@ -49,7 +49,7 @@ const FactsAndFigure = () => {
               </div>
             </div>
             <div
-              className="col-md-2 pr-0 pr-xs-2 pl-xs-2 pl-0 pr-0"
+              className="col-md-2  pl-3 pr-3 col-12 pl-sm-0 pr-sm-0"
               data-aos="fade-up"
               data-aos-duration="1000"
             >
@@ -63,7 +63,7 @@ const FactsAndFigure = () => {
           </div>
           <div className="row">
             <div
-              className="col-md-2 pr-xs-2 pl-xs-2 pl-0 pr-0"
+              className="col-md-2  pl-3 col-6 pr-0 pl-sm-0 pr-sm-0"
               data-aos="fade-up"
               data-aos-duration="1500"
             >
@@ -75,7 +75,7 @@ const FactsAndFigure = () => {
               </div>
             </div>
             <div
-              className="col-md-2 pr-xs-2 pl-xs-2 pl-0 pr-0"
+              className="col-md-2 pl-0 pr-3 col-6 pl-sm-0 pr-sm-0"
               data-aos="fade-right"
               data-aos-duration="1500"
             >
@@ -86,9 +86,9 @@ const FactsAndFigure = () => {
                 </div>
               </div>
             </div>
-            <div className="col-md-8 pr-xs-2 pl-xs-2 pl-0 pr-0">
+            <div className="col-md-8  pl-3 pr-3 pl-sm-0 pr-sm-0">
               <div className="row">
-                <div className="col-md-6 pr-xs-2 pl-xs-2 pl-0 pr-0">
+                <div className="col-md-6 pl-3 col-6 pr-0 pl-sm-0 pr-sm-0">
                   <div
                     className="fact_box iso_fact_box"
                     data-aos="zoom-in"
@@ -114,7 +114,7 @@ const FactsAndFigure = () => {
                     </div>
                   </div>
                 </div>
-                <div className="col-md-6 pr-xs-2 pl-xs-2 pl-0 ">
+                <div className="col-md-6 pl-0 col-6  pl-sm-0 ">
                   <div
                     className="fact_box fact_black_box"
                     data-aos="fade-up"

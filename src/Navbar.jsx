@@ -77,10 +77,10 @@ const Navbar = ({ activeStatus }) => {
       <section className="top_header_section pl-170 pr-170">
         <div className="container-fluid">
           <div className="row">
-            <div className="col-md-4">
+            <div className="col-md-4 col-7">
               <div className="iso_sec">ISO 9001:2015 Certified</div>
             </div>
-            <div className="col-md-8">
+            <div className="col-md-8 col-5">
               <div className="top_right_content">
                 <ul className="d-flex align-items-center justify-content-end mb-0">
                   <li>
@@ -109,6 +109,7 @@ const Navbar = ({ activeStatus }) => {
                 </ul>
               </div>
             </div>
+            <Toggle />
           </div>
         </div>
       </section>
@@ -126,17 +127,6 @@ const Navbar = ({ activeStatus }) => {
                     <img className="header_icon" src={logoicon} alt="" />
                   </Link>
                 </div>
-                <button
-                  class="navbar-toggler"
-                  type="button"
-                  data-toggle="collapse"
-                  data-target="#navbarNav"
-                  aria-controls="navbarNav"
-                  aria-expanded="false"
-                  aria-label="Toggle navigation"
-                >
-                  <span class="navbar-toggler-icon"></span>
-                </button>
                 <button className="menu_open" onClick={() => setShow(true)}>
                   <i class="ph-list"></i>
                 </button>
@@ -181,7 +171,6 @@ const Navbar = ({ activeStatus }) => {
                         Contact
                       </Link>
                     </li>
-                    <Toggle />
                   </ul>
                 </div>
               </nav>

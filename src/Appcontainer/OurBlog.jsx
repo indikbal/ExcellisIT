@@ -17,7 +17,7 @@ export class OurBlog extends React.Component {
       .get(`/admin/getBlogData/6`, {})
       .then((res) => {
         const data = res.data;
-        console.log(data);
+        //console.log(data);
         const blogs = data.map((u) => (
           <div className="col-md-6 pl-sm-0 pl-3 pr-sm-0 pr-3">
             <div className="single_devide_blog single_blog">

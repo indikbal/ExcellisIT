@@ -747,3 +747,12 @@
   background-color: #fff;
   padding: 100px 0;
 }
+
+@media (max-width: 768px) {
+  .s-BannerServices__Image__Content img {
+    width: 100%;
+  }
+  .s-TechnologiesLogos__Inner {
+    padding: 10px;
+  }
+}

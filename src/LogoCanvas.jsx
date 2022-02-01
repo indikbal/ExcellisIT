@@ -1,11 +1,12 @@
 import React from "react";
 import { Helmet } from "react-helmet";
 import logoicon from "../src/image/logo_icon.png";
+import logoicon2 from "../src/image/logo_icon2.png";
 
 function LogoCanvas() {
   return (
     <div>
-      <div className="icon_logo_animated">
+      <div className="icon_logo_animated for-desktop">
         <img
           id="logo1"
           class="next-particle"
@@ -22,6 +23,29 @@ function LogoCanvas() {
           data-gravity="0.07"
           data-noise="10"
           src={logoicon}
+          data-sca
+        />
+      </div>
+      <div
+        className="icon_logo_animated for-mobile"
+        style={{ display: "none" }}
+      >
+        <img
+          id="logo1"
+          class="next-particle"
+          data-init-position="random"
+          data-init-direction="left"
+          data-fade-position="left"
+          data-fade-direction="left"
+          data-particle-gap="1"
+          data-width="250"
+          data-height="100"
+          data-max-width="250"
+          data-max-height="100"
+          data-mouse-force="10"
+          data-gravity="0.05"
+          data-noise="10"
+          src={logoicon2}
           data-sca
         />
       </div>

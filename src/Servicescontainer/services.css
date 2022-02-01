@@ -209,3 +209,26 @@
     font-size: 60px;
   }
 }
+
+@media (max-width: 768px) {
+  .main_services_content_inner {
+    width: 90%;
+  }
+  .it_services_title,
+  .main_services_inner ul.nav li a i {
+    display: none;
+  }
+  .it_servies_list_item {
+    width: 100%;
+  }
+  .main_services_inner ul.nav li a {
+    height: 80px;
+    letter-spacing: 0px;
+  }
+  .main_services_content_inner p {
+    font-size: 16px;
+  }
+  .main_services_content_inner h4 {
+    font-size: 40px;
+  }
+}

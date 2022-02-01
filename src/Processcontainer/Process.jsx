@@ -46,6 +46,16 @@ const Process = (activeStatus) => {
     })
     .scroll();
 
+  const discover =
+    "https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/discover.jpg?alt=media&token=5ea9083d-d2c5-4c34-adb2-0bf26280e367";
+  const strategize =
+    "https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/strategize.jpg?alt=media&token=81e686fe-b64e-411f-b6e5-202b70514071";
+  const design =
+    "https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/design-process.jpg?alt=media&token=d19a5eda-c789-490d-ac1a-053b30296720";
+  const engineer =
+    "https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/engineer-process.jpg?alt=media&token=d58c3957-fb40-4777-8f12-87f113cb0ba0";
+  const amplify =
+    "https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/amplify-process.jpg?alt=media&token=fb41cd40-3b51-43ca-bf21-4a4ecf151241";
   return (
     <div>
       <Helmet>
@@ -97,7 +107,13 @@ const Process = (activeStatus) => {
               <h3>discover</h3>
             </div>
             <div class="img-c">
-              <img src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/discover.jpg?alt=media&token=5ea9083d-d2c5-4c34-adb2-0bf26280e367" />
+              <div class="reveal-holder custom_aos" data-aos="reveal-item">
+                <div
+                  class="reveal-block right custom_aos"
+                  data-aos="reveal-right"
+                ></div>
+                <img src={discover} alt="design image" />
+              </div>
             </div>
             <div class="text-c">
               <div class="d-none d-sm-block">
@@ -121,7 +137,13 @@ const Process = (activeStatus) => {
               <h3>STRATEGIZE</h3>
             </div>
             <div class="img-c  order-sm-2">
-              <img src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/strategize.jpg?alt=media&token=81e686fe-b64e-411f-b6e5-202b70514071" />
+              <div class="reveal-holder custom_aos" data-aos="reveal-item">
+                <div
+                  class="reveal-block right custom_aos"
+                  data-aos="reveal-right"
+                ></div>
+                <img src={strategize} alt="strategize image" />
+              </div>
             </div>
             <div class="text-c order-sm-1">
               <div class="d-none d-sm-block">
@@ -142,7 +164,13 @@ const Process = (activeStatus) => {
               <h3>DESIGN</h3>
             </div>
             <div class="img-c ">
-              <img src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/design-process.jpg?alt=media&token=d19a5eda-c789-490d-ac1a-053b30296720" />
+              <div class="reveal-holder custom_aos" data-aos="reveal-item">
+                <div
+                  class="reveal-block right custom_aos"
+                  data-aos="reveal-right"
+                ></div>
+                <img src={design} alt="strategize image" />
+              </div>
             </div>
             <div class="text-c">
               <div class="d-none d-sm-block">
@@ -165,7 +193,13 @@ const Process = (activeStatus) => {
               <h3>ENGINEER</h3>
             </div>
             <div class="img-c order-sm-2">
-              <img src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/engineer-process.jpg?alt=media&token=d58c3957-fb40-4777-8f12-87f113cb0ba0" />
+              <div class="reveal-holder custom_aos" data-aos="reveal-item">
+                <div
+                  class="reveal-block right custom_aos"
+                  data-aos="reveal-right"
+                ></div>
+                <img src={engineer} alt="strategize image" />
+              </div>
             </div>
             <div class="text-c order-sm-1">
               <div class="d-none d-sm-block">
@@ -190,7 +224,13 @@ const Process = (activeStatus) => {
               <h3>AMPLIFY</h3>
             </div>
             <div class="img-c ">
-              <img src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/amplify-process.jpg?alt=media&token=fb41cd40-3b51-43ca-bf21-4a4ecf151241" />
+              <div class="reveal-holder custom_aos" data-aos="reveal-item">
+                <div
+                  class="reveal-block right custom_aos"
+                  data-aos="reveal-right"
+                ></div>
+                <img src={amplify} alt="strategize image" />
+              </div>
             </div>
             <div class="text-c">
               <div class="d-none d-sm-block">

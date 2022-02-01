@@ -12,10 +12,6 @@ import {
 } from "react-icons/fa";
 
 const MainMenu = () => {
-  const [isActive, setActive] = useState("false");
-  const handleToggle = () => {
-    setActive(!isActive);
-  };
   return (
     <div>
       <nav class="menu">
@@ -25,7 +21,6 @@ const MainMenu = () => {
             animationOut="fadeOut"
             isVisible={true}
             animationInDelay={100}
-            className={isActive ? "glowSec" : null}
           >
             <div class="menu__item menu__item--3">
               <div class="menu__item-inner">
@@ -135,16 +130,16 @@ const MainMenu = () => {
             <div class="menu__item menu__item--1">
               <div class="menu__item-inner">
                 <div class="mainmenu">
-                  <a href="#" class="mainmenu__item" onClick={handleToggle}>
+                  <a href="#" class="mainmenu__item">
                     It Services
                   </a>
-                  <a href="#" onClick={handleToggle} class="mainmenu__item">
+                  <a href="#" class="mainmenu__item">
                     Bpo Services
                   </a>
-                  <a href="" onClick={handleToggle} class="mainmenu__item">
+                  <a href="" class="mainmenu__item">
                     Marketing Services
                   </a>
-                  <a href="" onClick={handleToggle} class="mainmenu__item">
+                  <a href="" class="mainmenu__item">
                     Cad Services
                   </a>
                 </div>

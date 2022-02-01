@@ -4,6 +4,7 @@ import Footer from "../Footer";
 import InnerBanner from "../InnerBanner";
 import { Helmet } from "react-helmet";
 import ContactSection from "../Appcontainer/ContactSection";
+import { Link } from "react-router-dom";
 const partnerwith =
   "https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/partnerWithus.jpg?alt=media&token=0951591c-12a5-4761-9bae-c35e02d7cb66";
 
@@ -66,9 +67,9 @@ const PartnerWithUs = ({ activeStatus }) => {
                     conversion time, technical assistant, expanded global reach
                     within an incubating environment.
                   </p>
-                  <a href="ContactUs" class="collaborate_button">
+                  <Link to="/ContactUs" class="collaborate_button">
                     Collaborate Now
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>

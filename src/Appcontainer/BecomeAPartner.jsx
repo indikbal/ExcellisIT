@@ -46,7 +46,7 @@ const BecomeAPartner = () => {
             </div>
             <div
               className="become_img_sec"
-              data-aos="fade-left"
+              data-aos="fade-up"
               data-aos-duration="1000"
             >
               <img

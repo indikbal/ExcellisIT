@@ -459,7 +459,7 @@ const MobileApplication = () => {
             </div>
             <div class="s-TechnologiesLogos__GridWrapper">
               <div class="row">
-                <div class="col-md-2 col">
+                <div class="col-md-2 col-4 col">
                   <div class="s-TechnologiesLogos__Inner" data-aos="fade-up">
                     <div class="s-TechnologiesLogos__Image">
                       <img
@@ -470,7 +470,7 @@ const MobileApplication = () => {
                     </div>
                   </div>
                 </div>
-                <div class="col-md-2 col">
+                <div class="col-md-2 col-4 col">
                   <div class="s-TechnologiesLogos__Inner" data-aos="fade-down">
                     <div class="s-TechnologiesLogos__Image">
                       <img
@@ -481,7 +481,7 @@ const MobileApplication = () => {
                     </div>
                   </div>
                 </div>
-                <div class="col-md-2 col">
+                <div class="col-md-2 col-4 col">
                   <div class="s-TechnologiesLogos__Inner" data-aos="fade-up">
                     <div class="s-TechnologiesLogos__Image">
                       <img
@@ -492,7 +492,7 @@ const MobileApplication = () => {
                     </div>
                   </div>
                 </div>
-                <div class="col-md-2 col">
+                <div class="col-md-2 col-4 col">
                   <div class="s-TechnologiesLogos__Inner" data-aos="fade-down">
                     <div class="s-TechnologiesLogos__Image">
                       <img
@@ -503,7 +503,7 @@ const MobileApplication = () => {
                     </div>
                   </div>
                 </div>
-                <div class="col-md-2 col">
+                <div class="col-md-2 col-4 col">
                   <div class="s-TechnologiesLogos__Inner" data-aos="fade-up">
                     <div class="s-TechnologiesLogos__Image">
                       <img
@@ -514,7 +514,7 @@ const MobileApplication = () => {
                     </div>
                   </div>
                 </div>
-                <div class="col-md-2 col">
+                <div class="col-md-2 col-4 col">
                   <div class="s-TechnologiesLogos__Inner" data-aos="fade-down">
                     <div class="s-TechnologiesLogos__Image">
                       <img
@@ -527,7 +527,7 @@ const MobileApplication = () => {
                 </div>
               </div>
               <div class="row">
-                <div class="col-md-2 col">
+                <div class="col-md-2 col-4 col">
                   <div class="s-TechnologiesLogos__Inner" data-aos="fade-up">
                     <div class="s-TechnologiesLogos__Image">
                       <img
@@ -538,7 +538,7 @@ const MobileApplication = () => {
                     </div>
                   </div>
                 </div>
-                <div class="col-md-2 col">
+                <div class="col-md-2 col-4 col">
                   <div class="s-TechnologiesLogos__Inner" data-aos="fade-down">
                     <div class="s-TechnologiesLogos__Image">
                       <img
@@ -549,7 +549,7 @@ const MobileApplication = () => {
                     </div>
                   </div>
                 </div>
-                <div class="col-md-2 col">
+                <div class="col-md-2 col-4 col">
                   <div class="s-TechnologiesLogos__Inner" data-aos="fade-up">
                     <div class="s-TechnologiesLogos__Image">
                       <img
@@ -560,7 +560,7 @@ const MobileApplication = () => {
                     </div>
                   </div>
                 </div>
-                <div class="col-md-2 col">
+                <div class="col-md-2 col-4 col">
                   <div class="s-TechnologiesLogos__Inner" data-aos="fade-down">
                     <div class="s-TechnologiesLogos__Image">
                       <img
@@ -571,7 +571,7 @@ const MobileApplication = () => {
                     </div>
                   </div>
                 </div>
-                <div class="col-md-2 col">
+                <div class="col-md-2 col-4 col">
                   <div class="s-TechnologiesLogos__Inner" data-aos="fade-down">
                     <div class="s-TechnologiesLogos__Image">
                       <img
@@ -582,7 +582,7 @@ const MobileApplication = () => {
                     </div>
                   </div>
                 </div>
-                <div class="col-md-2 col">
+                <div class="col-md-2 col-4 col">
                   <div class="s-TechnologiesLogos__Inner" data-aos="fade-up">
                     <div class="s-TechnologiesLogos__Image">
                       <img

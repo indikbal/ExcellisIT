@@ -5,6 +5,36 @@ import "slick-carousel/slick/slick-theme.css";
 import Typed from "react-typed";
 
 const TestimonialSection = () => {
+  var settingtestimonial = {
+    slidesToShow: 3,
+    responsive: [
+      {
+        breakpoint: 1400,
+        settings: {
+          slidesToShow: 3,
+        },
+      },
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
+  };
+
   return (
     <div>
       <div class="testim">
@@ -23,6 +53,7 @@ const TestimonialSection = () => {
               centerMode={false}
               infinite={false}
               pauseOnHover={true}
+              {...settingtestimonial}
             >
               <div class="testim-box">
                 <div className="testin_box_inner">
