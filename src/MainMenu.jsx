@@ -32,17 +32,30 @@ const MainMenu = () => {
                   >
                     <span class="sidemenu__item-inner">Mobile Application</span>
                   </Link>
-                  <a href="softwareDevelopment" class="sidemenu__item">
+                  <Link
+                    activeClassName="navbar__link--active"
+                    className=" sidemenu__item"
+                    to="/softwareDevelopment"
+                  >
                     <span class="sidemenu__item-inner">
                       Software Development
                     </span>
-                  </a>
-                  <a href="UiUxDesign" class="sidemenu__item">
+                  </Link>
+                  <Link
+                    activeClassName="navbar__link--active"
+                    className=" sidemenu__item"
+                    to="/UiUxDesign"
+                  >
                     <span class="sidemenu__item-inner">UI/UX Design</span>
-                  </a>
-                  <a href="WebDevelopment" class="sidemenu__item">
+                  </Link>
+                  <Link
+                    activeClassName="navbar__link--active"
+                    className=" sidemenu__item"
+                    to="/WebDevelopment"
+                  >
                     <span class="sidemenu__item-inner">Web Development</span>
-                  </a>
+                  </Link>
+
                   <a
                     href="https://www.excellisit.com/QA-testing"
                     class="sidemenu__item"

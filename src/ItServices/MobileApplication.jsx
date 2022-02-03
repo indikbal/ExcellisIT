@@ -6,10 +6,37 @@ import InnerBanner from "../InnerBanner";
 import { Helmet } from "react-helmet";
 import { NavLink } from "react-router-dom";
 
+const bootstrap =
+  "https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/technology%2FBootstrap.png?alt=media&token=c7d7a420-6618-480c-acb4-639820d666f9";
+const java =
+  "https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/technology%2FJava.png?alt=media&token=57226ce3-176b-491c-a540-1101d44c47cf";
+const ndk =
+  "https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/technology%2FNDK.png?alt=media&token=f4b6173a-e443-49cc-9762-9b6742b0eb76";
+const xd =
+  "https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/technology%2Fadobe-xd.png?alt=media&token=7a378aeb-be0a-4e56-807b-b380b8053710";
+const angular =
+  "https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/technology%2Fangular.png?alt=media&token=415b1133-696c-4dbd-b53c-1c60138932dd";
+const css3 =
+  "https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/technology%2Fcss3.png?alt=media&token=1f3c28c2-2139-435c-8aa2-7f7db7c6f55c";
+const figma =
+  "https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/technology%2Ffigma.png?alt=media&token=278ab062-d724-4fbe-acd3-b57cb8f854f5";
+const flutter =
+  "https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/technology%2Fflutter-logo.png?alt=media&token=415f19e2-4f74-48c1-a59c-53586030110d";
+const mongodb =
+  "https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/technology%2Fmongodb.png?alt=media&token=a6ee9efb-1a07-47c2-9d8a-5fd8ecf72734";
+const oracle =
+  "https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/technology%2Foracel12c.png?alt=media&token=eb08f609-a2c3-4c63-a5bb-96fda1b25f91";
+const react =
+  "https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/technology%2Freact.png?alt=media&token=f55b9fea-0645-402f-a18c-2cef8b6e4e68";
+const swift =
+  "https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/technology%2Fswift.png?alt=media&token=8bb91bf5-8689-4284-b618-02ff8eaf3b07";
+const html =
+  "https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/technology%2Fhtml-5.png?alt=media&token=41450ff8-8db6-41b9-a3af-1246352334e6";
+
 const MobileApplication = () => {
   const title = "Mobile Application";
   const description =
-    "“The people at Codal are what makes them really stand out. They were responsive, attentive, flexible and they sought to understand my business so they could plan ahead—beyond the development project.”";
+    "“Are you looking for a reputable android app development company or hybrid app development company? Do not stress out; Excellis IT is the mobile app development agency you can hire fot to-of-the-line mobile app development services.”";
 
   return (
     <div>
@@ -28,10 +55,10 @@ const MobileApplication = () => {
               <div class="col-md-5">
                 <div class="s-BannerServices__Content">
                   <h6 class="s-BannerServices__Subheader">
-                    Digital Innovation
+                    User-friendly websites
                   </h6>
                   <h1 class="BannerServices__Subheader h1--WithLine">
-                    <strong>Data Science</strong> &amp; Engineering
+                    Mobile-first and user-friendly websites
                   </h1>
                   <p>
                     Thanks to Data Science you can effectively process data,{" "}
@@ -83,7 +110,8 @@ const MobileApplication = () => {
       <section class="fact_no">
         <div class="container-fluid l-ContentColumn">
           <div class="row">
-            <div class="col-md-4 main_heading dark_text pl-5">
+            <div className="col-md-1"></div>
+            <div class="col-md-3 main_heading dark_text pl-5">
               <h6>Facts &amp; Numbers</h6>
               <div class="reveal-holder custom_aos" data-aos="reveal-item">
                 <div
@@ -462,11 +490,7 @@ const MobileApplication = () => {
                 <div class="col-md-2 col-4 col">
                   <div class="s-TechnologiesLogos__Inner" data-aos="fade-up">
                     <div class="s-TechnologiesLogos__Image">
-                      <img
-                        data-lazyloaded="1"
-                        src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/technology%2Freact.png?alt=media&token=f55b9fea-0645-402f-a18c-2cef8b6e4e68"
-                        alt=""
-                      />
+                      <img data-lazyloaded="1" src={react} alt="react logo" />
                     </div>
                   </div>
                 </div>
@@ -475,8 +499,8 @@ const MobileApplication = () => {
                     <div class="s-TechnologiesLogos__Image">
                       <img
                         data-lazyloaded="1"
-                        src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/technology%2Fangular.png?alt=media&token=415b1133-696c-4dbd-b53c-1c60138932dd"
-                        alt=""
+                        src={angular}
+                        alt="angular logo"
                       />
                     </div>
                   </div>
@@ -486,8 +510,8 @@ const MobileApplication = () => {
                     <div class="s-TechnologiesLogos__Image">
                       <img
                         data-lazyloaded="1"
-                        src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/technology%2Fasp.png?alt=media&token=97659b0f-b14c-4bc3-8357-9616b5aabb01"
-                        alt=""
+                        src={mongodb}
+                        alt=" mongodb logo"
                       />
                     </div>
                   </div>
@@ -497,8 +521,8 @@ const MobileApplication = () => {
                     <div class="s-TechnologiesLogos__Image">
                       <img
                         data-lazyloaded="1"
-                        src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/technology%2Fmariadb.png?alt=media&token=6629dc12-f1ef-476e-aaaf-9fc6a82289a7"
-                        alt=""
+                        src={bootstrap}
+                        alt=" bootstrap loog"
                       />
                     </div>
                   </div>
@@ -508,8 +532,8 @@ const MobileApplication = () => {
                     <div class="s-TechnologiesLogos__Image">
                       <img
                         data-lazyloaded="1"
-                        src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/technology%2Fflutter-logo.png?alt=media&token=415f19e2-4f74-48c1-a59c-53586030110d"
-                        alt=""
+                        src={flutter}
+                        alt=" flutter logo"
                       />
                     </div>
                   </div>
@@ -517,11 +541,7 @@ const MobileApplication = () => {
                 <div class="col-md-2 col-4 col">
                   <div class="s-TechnologiesLogos__Inner" data-aos="fade-down">
                     <div class="s-TechnologiesLogos__Image">
-                      <img
-                        data-lazyloaded="1"
-                        src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/technology%2Fflutter-logo.png?alt=media&token=415f19e2-4f74-48c1-a59c-53586030110d"
-                        alt=""
-                      />
+                      <img data-lazyloaded="1" src={xd} alt="xd logo" />
                     </div>
                   </div>
                 </div>
@@ -532,8 +552,8 @@ const MobileApplication = () => {
                     <div class="s-TechnologiesLogos__Image">
                       <img
                         data-lazyloaded="1"
-                        src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/technology%2Foracel12c.png?alt=media&token=eb08f609-a2c3-4c63-a5bb-96fda1b25f91"
-                        alt=""
+                        src={oracle}
+                        alt=" oracle logo"
                       />
                     </div>
                   </div>
@@ -541,55 +561,35 @@ const MobileApplication = () => {
                 <div class="col-md-2 col-4 col">
                   <div class="s-TechnologiesLogos__Inner" data-aos="fade-down">
                     <div class="s-TechnologiesLogos__Image">
-                      <img
-                        data-lazyloaded="1"
-                        src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/technology%2Fpostgresql.png?alt=media&token=a2312e6d-b33e-4df7-8b54-02ffd8f9ff85"
-                        alt=""
-                      />
+                      <img data-lazyloaded="1" src={html} alt=" html logo" />
                     </div>
                   </div>
                 </div>
                 <div class="col-md-2 col-4 col">
                   <div class="s-TechnologiesLogos__Inner" data-aos="fade-up">
                     <div class="s-TechnologiesLogos__Image">
-                      <img
-                        data-lazyloaded="1"
-                        src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/technology%2FJava.png?alt=media&token=57226ce3-176b-491c-a540-1101d44c47cf"
-                        alt=""
-                      />
+                      <img data-lazyloaded="1" src={java} alt="java logo" />
                     </div>
                   </div>
                 </div>
                 <div class="col-md-2 col-4 col">
                   <div class="s-TechnologiesLogos__Inner" data-aos="fade-down">
                     <div class="s-TechnologiesLogos__Image">
-                      <img
-                        data-lazyloaded="1"
-                        src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/technology%2Fswift.png?alt=media&token=8bb91bf5-8689-4284-b618-02ff8eaf3b07"
-                        alt=""
-                      />
+                      <img data-lazyloaded="1" src={swift} alt="swift logo" />
                     </div>
                   </div>
                 </div>
                 <div class="col-md-2 col-4 col">
                   <div class="s-TechnologiesLogos__Inner" data-aos="fade-down">
                     <div class="s-TechnologiesLogos__Image">
-                      <img
-                        data-lazyloaded="1"
-                        src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/technology%2Fswift.png?alt=media&token=8bb91bf5-8689-4284-b618-02ff8eaf3b07"
-                        alt=""
-                      />
+                      <img data-lazyloaded="1" src={css3} alt="css3 logo" />
                     </div>
                   </div>
                 </div>
                 <div class="col-md-2 col-4 col">
                   <div class="s-TechnologiesLogos__Inner" data-aos="fade-up">
                     <div class="s-TechnologiesLogos__Image">
-                      <img
-                        data-lazyloaded="1"
-                        src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/technology%2Fswift.png?alt=media&token=8bb91bf5-8689-4284-b618-02ff8eaf3b07"
-                        alt=""
-                      />
+                      <img data-lazyloaded="1" src={figma} alt="figma logo" />
                     </div>
                   </div>
                 </div>

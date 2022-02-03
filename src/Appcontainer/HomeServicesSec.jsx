@@ -20,8 +20,8 @@ const HomeServicesSec = () => {
         </div>
         <div className="container-fluid">
           <div className="row">
-            <div className="col-lg-2 col-xl-3"></div>
-            <div className="col-lg-10 col-xl-9">
+            <div className="col-lg-2 col-xl-2"></div>
+            <div className="col-lg-10 col-xl-10">
               <div className="services_wrapper">
                 <div className="services_inner">
                   <div

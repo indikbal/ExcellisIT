@@ -5,7 +5,7 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import ThreeScene from "./Appcontainer/ThreeScene";
-ReactDOM.render(
+ReactDOM.hydrate(
   <BrowserRouter>
     <div className="grid">
       <div className="row h-100 w-100 pr-0 mr-0 ml-0">

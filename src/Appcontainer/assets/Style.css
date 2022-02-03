@@ -344,7 +344,8 @@ section.banner_content_section {
   font-size: 35px;
   font-family: var(--heading-font);
   position: relative;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
 }
 .services_title_list a sup {
   position: absolute;
