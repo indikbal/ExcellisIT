@@ -1,6 +1,7 @@
 import React from "react";
 import Typed from "react-typed";
 import { Animated } from "react-animated-css";
+import { Link } from "react-router-dom";
 
 const HomeServicesSec = () => {
   return (
@@ -101,16 +102,16 @@ const HomeServicesSec = () => {
                                 animationInDelay={100}
                               >
                                 <div className="single_services">
-                                  <div className="services_icon development_icon"></div>
-                                  <h4>Web Development</h4>
-                                  <p>
-                                    Put your image before clients who are now
-                                    effectively looking on oogle, Bing, YouTube,
-                                    or other earch...
-                                  </p>
-                                  <a className="services_link" href="#">
-                                    <i class="ph-arrow-right"></i>
-                                  </a>
+                                  <Link to="/WebDevelopment" className="">
+                                    <div className="services_icon development_icon"></div>
+
+                                    <h4>Web Development</h4>
+                                    <p>
+                                      Put your image before clients who are now
+                                      effectively looking on oogle, Bing,
+                                      YouTube, or other earch...
+                                    </p>
+                                  </Link>
                                 </div>
                               </Animated>
                               <Animated
@@ -120,16 +121,15 @@ const HomeServicesSec = () => {
                                 animationInDelay={200}
                               >
                                 <div className="single_services">
-                                  <div className="services_icon desigining_icon"></div>
-                                  <h4>Web Designing</h4>
-                                  <p>
-                                    Put your image before clients who are now
-                                    effectively looking on oogle, Bing, YouTube,
-                                    or other earch...
-                                  </p>
-                                  <a className="services_link" href="#">
-                                    <i class="ph-arrow-right"></i>
-                                  </a>
+                                  <Link to="/UiUxDesign" className="">
+                                    <div className="services_icon desigining_icon"></div>
+                                    <h4>Web Designing</h4>
+                                    <p>
+                                      Put your image before clients who are now
+                                      effectively looking on oogle, Bing,
+                                      YouTube, or other earch...
+                                    </p>
+                                  </Link>
                                 </div>
                               </Animated>
                             </div>
@@ -140,23 +140,22 @@ const HomeServicesSec = () => {
                                 isVisible={true}
                                 animationInDelay={300}
                               >
-                                <div className="single_services d-flex p-0">
-                                  <div className="singel_img_serv">
-                                    <img src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/ui-ux.jpg?alt=media&token=0aaee418-aa51-4409-8df8-95a013231316" />
+                                <Link to="/UiUxDesign" className="">
+                                  <div className="single_services d-flex p-0">
+                                    <div className="singel_img_serv">
+                                      <img src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/ui-ux.jpg?alt=media&token=0aaee418-aa51-4409-8df8-95a013231316" />
+                                    </div>
+                                    <div className="single_img_services">
+                                      <div className="services_icon desigining_icon"></div>
+                                      <h4>UI/UX Design</h4>
+                                      <p>
+                                        Put your image before clients who are
+                                        now effectively looking on oogle, Bing,
+                                        YouTube, or other earch...
+                                      </p>
+                                    </div>
                                   </div>
-                                  <div className="single_img_services">
-                                    <div className="services_icon desigining_icon"></div>
-                                    <h4>UI/UX Design</h4>
-                                    <p>
-                                      Put your image before clients who are now
-                                      effectively looking on oogle, Bing,
-                                      YouTube, or other earch...
-                                    </p>
-                                    <a className="services_link" href="#">
-                                      <i class="ph-arrow-right"></i>
-                                    </a>
-                                  </div>
-                                </div>
+                                </Link>
                               </Animated>
                             </div>
                             <div className="services_row">

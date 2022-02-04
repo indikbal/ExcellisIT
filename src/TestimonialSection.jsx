@@ -3,6 +3,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Typed from "react-typed";
+import { Scrollbars } from "react-custom-scrollbars-2";
 
 const TestimonialSection = () => {
   var settingtestimonial = {
@@ -57,12 +58,20 @@ const TestimonialSection = () => {
             >
               <div class="testim-box">
                 <div className="testin_box_inner">
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Molestiae iure non reiciendis reprehenderit? Dicta eaque
-                    illo ut beatae alias quod, distinctio ad, asperiores vitae
-                    culpa qui nisi rerum debitis modi.
-                  </p>
+                  <Scrollbars style={{ height: 200 }}>
+                    <p>
+                      The team at EXCELLIS IT worked quickly to get our website
+                      online and provided a step-by-step guide to manage our
+                      expectations. They were easily contactable and were fast
+                      to make amendments ensuring our website was delivered on
+                      time and budget. The EXCELLIS team also helped us by
+                      providing valuable market insight to assist us in
+                      marketing our online services to the public. I would not
+                      hesitate to recommend EXCELLIS for anyone requiring
+                      assistance with building and marketing a corporate
+                      website.
+                    </p>
+                  </Scrollbars>
                   <div class="testim-box-content">
                     <h3>Mahmoud Mohamed</h3>
                     <p>FrontEnd Developer</p>
@@ -71,12 +80,14 @@ const TestimonialSection = () => {
               </div>
               <div class="testim-box">
                 <div className="testin_box_inner">
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Molestiae iure non reiciendis reprehenderit? Dicta eaque
-                    illo ut beatae alias quod, distinctio ad, asperiores vitae
-                    culpa qui nisi rerum debitis modi.
-                  </p>
+                  <Scrollbars style={{ height: 200 }}>
+                    <p>
+                      I have to thank you for your professional services in
+                      making my website come true. You’re very detailed &
+                      focused on making my site very informative & inspiring.
+                      Thank you again, EXCELLIS.
+                    </p>
+                  </Scrollbars>
                   <div class="testim-box-content">
                     <h3>Mahmoud Mohamed</h3>
                     <p>FrontEnd Developer</p>
@@ -85,12 +96,12 @@ const TestimonialSection = () => {
               </div>
               <div class="testim-box">
                 <div className="testin_box_inner">
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Molestiae iure non reiciendis reprehenderit? Dicta eaque
-                    illo ut beatae alias quod, distinctio ad, asperiores vitae
-                    culpa qui nisi rerum debitis modi.
-                  </p>
+                  <Scrollbars style={{ height: 200 }}>
+                    <p>
+                      EXCELLIS, thank you for all you have done for me and my
+                      business. You guys have been great to work with.
+                    </p>
+                  </Scrollbars>
                   <div class="testim-box-content">
                     <h3>Mahmoud Mohamed</h3>
                     <p>FrontEnd Developer</p>
@@ -99,12 +110,14 @@ const TestimonialSection = () => {
               </div>
               <div class="testim-box">
                 <div className="testin_box_inner">
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Molestiae iure non reiciendis reprehenderit? Dicta eaque
-                    illo ut beatae alias quod, distinctio ad, asperiores vitae
-                    culpa qui nisi rerum debitis modi.
-                  </p>
+                  <Scrollbars style={{ height: 200 }}>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Molestiae iure non reiciendis reprehenderit? Dicta eaque
+                      illo ut beatae alias quod, distinctio ad, asperiores vitae
+                      culpa qui nisi rerum debitis modi.
+                    </p>
+                  </Scrollbars>
                   <div class="testim-box-content">
                     <h3>Mahmoud Mohamed</h3>
                     <p>FrontEnd Developer</p>
@@ -113,12 +126,14 @@ const TestimonialSection = () => {
               </div>
               <div class="testim-box">
                 <div className="testin_box_inner">
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Molestiae iure non reiciendis reprehenderit? Dicta eaque
-                    illo ut beatae alias quod, distinctio ad, asperiores vitae
-                    culpa qui nisi rerum debitis modi.
-                  </p>
+                  <Scrollbars style={{ height: 200 }}>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Molestiae iure non reiciendis reprehenderit? Dicta eaque
+                      illo ut beatae alias quod, distinctio ad, asperiores vitae
+                      culpa qui nisi rerum debitis modi.
+                    </p>
+                  </Scrollbars>
                   <div class="testim-box-content">
                     <h3>Mahmoud Mohamed</h3>
                     <p>FrontEnd Developer</p>
@@ -127,12 +142,14 @@ const TestimonialSection = () => {
               </div>
               <div class="testim-box">
                 <div className="testin_box_inner">
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Molestiae iure non reiciendis reprehenderit? Dicta eaque
-                    illo ut beatae alias quod, distinctio ad, asperiores vitae
-                    culpa qui nisi rerum debitis modi.
-                  </p>
+                  <Scrollbars style={{ height: 200 }}>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Molestiae iure non reiciendis reprehenderit? Dicta eaque
+                      illo ut beatae alias quod, distinctio ad, asperiores vitae
+                      culpa qui nisi rerum debitis modi.
+                    </p>
+                  </Scrollbars>
                   <div class="testim-box-content">
                     <h3>Mahmoud Mohamed</h3>
                     <p>FrontEnd Developer</p>
@@ -141,12 +158,14 @@ const TestimonialSection = () => {
               </div>
               <div class="testim-box">
                 <div className="testin_box_inner">
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Molestiae iure non reiciendis reprehenderit? Dicta eaque
-                    illo ut beatae alias quod, distinctio ad, asperiores vitae
-                    culpa qui nisi rerum debitis modi.
-                  </p>
+                  <Scrollbars style={{ height: 200 }}>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Molestiae iure non reiciendis reprehenderit? Dicta eaque
+                      illo ut beatae alias quod, distinctio ad, asperiores vitae
+                      culpa qui nisi rerum debitis modi.
+                    </p>
+                  </Scrollbars>
                   <div class="testim-box-content">
                     <h3>Mahmoud Mohamed</h3>
                     <p>FrontEnd Developer</p>

@@ -348,11 +348,6 @@
   transform: translateX(31%);
 }
 
-.s-InfoBoxesGrid__GridContainer {
-  display: flex;
-  justify-content: flex-end;
-}
-
 @media (min-width: 481px) {
   .row .columns.small-push-18 {
     right: auto;

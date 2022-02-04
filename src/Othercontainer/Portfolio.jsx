@@ -58,12 +58,17 @@ const Portfolio = ({ activeStatus }) => {
                       <div className="portfolio_imgwrapper" data-aos="flip-up">
                         <div className="overflow_hidden">
                           <div className="portfolio_img_box">
-                            <div className="show_port_folio_img">
-                              <img
-                                src={feel}
-                                alt="flightmantra portfolio"
-                                className="img-fluid"
-                              />
+                            <div
+                              className="show_port_folio_img"
+                              oncontextmenu="return false;"
+                            >
+                              <iframe
+                                src="https://flightmantra.com/"
+                                title="description"
+                                width="100%"
+                                height="750px"
+                                oncontextmenu="return false;"
+                              ></iframe>
                             </div>
                           </div>
                         </div>

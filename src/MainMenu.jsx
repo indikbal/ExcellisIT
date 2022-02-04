@@ -248,24 +248,44 @@ const MainMenu = () => {
             <div class="menu__item menu__item--4">
               <div class="menu__item-inner">
                 <div class="sidemenu">
-                  <a href="/about" class="sidemenu__item">
+                  <Link
+                    activeClassName="navbar__link--active"
+                    className=" sidemenu__item"
+                    to="/about"
+                  >
                     <span class="sidemenu__item-inner">About Us</span>
-                  </a>
-                  <a href="/PartnerWithus" class="sidemenu__item">
+                  </Link>
+                  <Link
+                    activeClassName="navbar__link--active"
+                    className=" sidemenu__item"
+                    to="/PartnerWithus"
+                  >
                     <span class="sidemenu__item-inner">Partner With Us</span>
-                  </a>
-                  <a href="#" class="sidemenu__item">
+                  </Link>
+                  <Link
+                    activeClassName="navbar__link--active"
+                    className=" sidemenu__item"
+                    to="/Portfolio"
+                  >
                     <span class="sidemenu__item-inner">Our Portfolio</span>
-                  </a>
+                  </Link>
                   <a href="#" class="sidemenu__item">
                     <span class="sidemenu__item-inner">Career</span>
                   </a>
-                  <a href="/Ourblogs" class="sidemenu__item">
+                  <Link
+                    activeClassName="navbar__link--active"
+                    className=" sidemenu__item"
+                    to="/Ourblogs"
+                  >
                     <span class="sidemenu__item-inner">Blog</span>
-                  </a>
-                  <a href="/ContactUs" class="sidemenu__item">
+                  </Link>
+                  <Link
+                    activeClassName="navbar__link--active"
+                    className=" sidemenu__item"
+                    to="/ContactUs"
+                  >
                     <span class="sidemenu__item-inner">Contact Us</span>
-                  </a>
+                  </Link>
                 </div>
                 <p class="label label--topleft label--vert-mirror">Company</p>
               </div>
