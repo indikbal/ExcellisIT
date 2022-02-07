@@ -1,4 +1,6 @@
 import React from "react";
+import { FaArrowRight } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -41,35 +43,39 @@ const Footer = () => {
                       <div class="footer-links footer_menu d-flex">
                         <ul>
                           <li>
-                            <a href="https://www.excellisit.com/mobile-application">
-                              <i class="las la-arrow-right"></i>Mobile
-                              Application
-                            </a>
+                            <Link to="/mobileApplication">
+                              <FaArrowRight />
+                              Mobile Application
+                            </Link>
                           </li>
                           <li>
-                            <a href="https://www.excellisit.com/software-development">
-                              <i class="las la-arrow-right"></i>Software
-                              Development
-                            </a>
+                            <Link to="/softwareDevelopment">
+                              <FaArrowRight />
+                              Software Development
+                            </Link>
                           </li>
                           <li>
-                            <a href="https://www.excellisit.com/ui-ux-design">
-                              <i class="las la-arrow-right"></i>UI/UX Design
-                            </a>
+                            <Link to="/UiUxDesign">
+                              <FaArrowRight />
+                              UI/UX Design
+                            </Link>
                           </li>
                           <li>
-                            <a href="https://www.excellisit.com/web-development">
-                              <i class="las la-arrow-right"></i>Web Development
-                            </a>
+                            <Link to="/WebDevelopment">
+                              <FaArrowRight />
+                              Web Development
+                            </Link>
                           </li>
                           <li>
-                            <a href="https://www.excellisit.com/QA-testing">
-                              <i class="las la-arrow-right"></i>QA and Testing
-                            </a>
+                            <Link to="/QaAndTesting">
+                              <FaArrowRight />
+                              QA and Testing
+                            </Link>
                           </li>
                           <li>
                             <a href="https://www.excellisit.com/CAD-drawing-services">
-                              <i class="las la-arrow-right"></i>CAD Services
+                              <FaArrowRight />
+                              CAD Services
                             </a>
                           </li>
                         </ul>
@@ -81,38 +87,38 @@ const Footer = () => {
                         <ul>
                           <li>
                             <a href="https://www.excellisit.com/back-office-process-outsourcing-services">
-                              <i class="las la-arrow-right"></i>Back office
-                              process outsourcing
+                              <FaArrowRight />
+                              Back office process outsourcing
                             </a>
                           </li>
                           <li>
                             <a href="https://www.excellisit.com/call-center-outsourcing-service">
-                              <i class="las la-arrow-right"></i>Call center
-                              outsourcing{" "}
+                              <FaArrowRight />
+                              Call center outsourcing{" "}
                             </a>
                           </li>
                           <li>
                             <a href="https://www.excellisit.com/ecommerce-outsourcing-services">
-                              <i class="las la-arrow-right"></i>Ecommerce
-                              outsourcing
+                              <FaArrowRight />
+                              Ecommerce outsourcing
                             </a>
                           </li>
                           <li>
                             <a href="https://www.excellisit.com/performance-compliance-management">
-                              <i class="las la-arrow-right"></i>Performance
-                              &amp; Compliance
+                              <FaArrowRight />
+                              Performance &amp; Compliance
                             </a>
                           </li>
                           <li>
                             <a href="https://www.excellisit.com/professional-services">
-                              <i class="las la-arrow-right"></i>Profesional
-                              Services
+                              <FaArrowRight />
+                              Profesional Services
                             </a>
                           </li>
                           <li>
                             <a href="https://www.excellisit.com/innovation-at-excellis">
-                              <i class="las la-arrow-right"></i>Innovation at
-                              EXCELLIS
+                              <FaArrowRight />
+                              Innovation at EXCELLIS
                             </a>
                           </li>
                         </ul>
@@ -124,36 +130,38 @@ const Footer = () => {
                         <ul>
                           <li>
                             <a href="https://www.excellisit.com/search-engine-marketing">
-                              <i class="las la-arrow-right"></i>Search engine
-                              Marketing
+                              <FaArrowRight />
+                              Search engine Marketing
                             </a>
                           </li>
                           <li>
                             <a href="https://www.excellisit.com/social-media-marketing">
-                              <i class="las la-arrow-right"></i>Social media
-                              marketing
+                              <FaArrowRight />
+                              Social media marketing
                             </a>
                           </li>
                           <li>
                             <a href="https://www.excellisit.com/ppc">
-                              <i class="las la-arrow-right"></i>Pay per click
+                              <FaArrowRight />
+                              Pay per click
                             </a>
                           </li>
                           <li>
                             <a href="https://www.excellisit.com/email-marketing">
-                              <i class="las la-arrow-right"></i>Email Marketing
+                              <FaArrowRight />
+                              Email Marketing
                             </a>
                           </li>
                           <li>
                             <a href="https://www.excellisit.com/content-making">
-                              <i class="las la-arrow-right"></i>Content
-                              Marketing
+                              <FaArrowRight />
+                              Content Marketing
                             </a>
                           </li>
                           <li>
                             <a href="https://www.excellisit.com/google-my-business-optimization">
-                              <i class="las la-arrow-right"></i>Google my
-                              business optimization
+                              <FaArrowRight />
+                              Google my business optimization
                             </a>
                           </li>
                         </ul>
@@ -175,16 +183,16 @@ const Footer = () => {
                     <div class="copyright_menu">
                       <ul>
                         <li>
-                          <a href="PrivacyPolicy">Privacy Policy</a>
+                          <Link to="/PrivacyPolicy">Privacy Policy</Link>
                         </li>
                         <li>
-                          <a href="TermConditions">Term and Condition</a>
+                          <Link to="/TermConditions">Term and Condition</Link>
                         </li>
                         <li>
-                          <a href="about">About Excellis</a>
+                          <Link to="/about">About Excellis</Link>
                         </li>
                         <li>
-                          <a href="Ourblogs">Learning Center</a>
+                          <Link to="/Ourblogs">Learning Center</Link>
                         </li>
                       </ul>
                     </div>

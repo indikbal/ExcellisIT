@@ -4,6 +4,7 @@ import Navbar from "./Navbar";
 import InnerBanner from "./InnerBanner";
 import BlogContent from "./BlogContent";
 import { NavLink } from "react-router-dom";
+import Footer from "./Footer";
 
 const title = "Our Blogs";
 const description =
@@ -69,6 +70,7 @@ export class BlogPage extends React.Component {
             <div className="row col_position">{this.state.blogs}</div>
           </div>
         </section>
+        <Footer />
       </div>
     );
   }

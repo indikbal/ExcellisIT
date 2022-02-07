@@ -72,9 +72,8 @@ const TestimonialSection = () => {
                       website.
                     </p>
                   </Scrollbars>
-                  <div class="testim-box-content">
-                    <h3>Mahmoud Mohamed</h3>
-                    <p>FrontEnd Developer</p>
+                  <div class="testim-box-content mt-3">
+                    <h3>Shiv</h3>
                   </div>
                 </div>
               </div>
@@ -88,9 +87,8 @@ const TestimonialSection = () => {
                       Thank you again, EXCELLIS.
                     </p>
                   </Scrollbars>
-                  <div class="testim-box-content">
-                    <h3>Mahmoud Mohamed</h3>
-                    <p>FrontEnd Developer</p>
+                  <div class="testim-box-content mt-3">
+                    <h3>Carlos Garcia</h3>
                   </div>
                 </div>
               </div>
@@ -102,73 +100,8 @@ const TestimonialSection = () => {
                       business. You guys have been great to work with.
                     </p>
                   </Scrollbars>
-                  <div class="testim-box-content">
-                    <h3>Mahmoud Mohamed</h3>
-                    <p>FrontEnd Developer</p>
-                  </div>
-                </div>
-              </div>
-              <div class="testim-box">
-                <div className="testin_box_inner">
-                  <Scrollbars style={{ height: 200 }}>
-                    <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Molestiae iure non reiciendis reprehenderit? Dicta eaque
-                      illo ut beatae alias quod, distinctio ad, asperiores vitae
-                      culpa qui nisi rerum debitis modi.
-                    </p>
-                  </Scrollbars>
-                  <div class="testim-box-content">
-                    <h3>Mahmoud Mohamed</h3>
-                    <p>FrontEnd Developer</p>
-                  </div>
-                </div>
-              </div>
-              <div class="testim-box">
-                <div className="testin_box_inner">
-                  <Scrollbars style={{ height: 200 }}>
-                    <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Molestiae iure non reiciendis reprehenderit? Dicta eaque
-                      illo ut beatae alias quod, distinctio ad, asperiores vitae
-                      culpa qui nisi rerum debitis modi.
-                    </p>
-                  </Scrollbars>
-                  <div class="testim-box-content">
-                    <h3>Mahmoud Mohamed</h3>
-                    <p>FrontEnd Developer</p>
-                  </div>
-                </div>
-              </div>
-              <div class="testim-box">
-                <div className="testin_box_inner">
-                  <Scrollbars style={{ height: 200 }}>
-                    <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Molestiae iure non reiciendis reprehenderit? Dicta eaque
-                      illo ut beatae alias quod, distinctio ad, asperiores vitae
-                      culpa qui nisi rerum debitis modi.
-                    </p>
-                  </Scrollbars>
-                  <div class="testim-box-content">
-                    <h3>Mahmoud Mohamed</h3>
-                    <p>FrontEnd Developer</p>
-                  </div>
-                </div>
-              </div>
-              <div class="testim-box">
-                <div className="testin_box_inner">
-                  <Scrollbars style={{ height: 200 }}>
-                    <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Molestiae iure non reiciendis reprehenderit? Dicta eaque
-                      illo ut beatae alias quod, distinctio ad, asperiores vitae
-                      culpa qui nisi rerum debitis modi.
-                    </p>
-                  </Scrollbars>
-                  <div class="testim-box-content">
-                    <h3>Mahmoud Mohamed</h3>
-                    <p>FrontEnd Developer</p>
+                  <div class="testim-box-content mt-3">
+                    <h3>Fearn</h3>
                   </div>
                 </div>
               </div>

@@ -25,6 +25,8 @@ import UiUxDesign from "./ItServices/UiUxDesign";
 import WebDevelopment from "./ItServices/WebDevelopment";
 import PartnerWithUs from "./Othercontainer/PartnerWithUs";
 import Portfolio from "./Othercontainer/Portfolio";
+import QaAndTesting from "./ItServices/QaAndTesting";
+import BackOfficeProcessOutsourcing from "./BpoServices/BackOfficeProcessOutsourcing";
 
 function App() {
   AOS.init({
@@ -53,7 +55,12 @@ function App() {
         <Route path="/UiUxDesign" component={UiUxDesign} />
         <Route path="/WebDevelopment" component={WebDevelopment} />
         <Route path="/PartnerWithus" component={PartnerWithUs} />
+        <Route path="/QaAndTesting" component={QaAndTesting} />
         <Route path="/Portfolio" component={Portfolio} />
+        <Route
+          path="/BackofficeProcess"
+          component={BackOfficeProcessOutsourcing}
+        />
         <Route component={Error} />
       </Switch>
     </div>

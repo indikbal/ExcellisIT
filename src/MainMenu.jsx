@@ -56,12 +56,13 @@ const MainMenu = () => {
                     <span class="sidemenu__item-inner">Web Development</span>
                   </Link>
 
-                  <a
-                    href="https://www.excellisit.com/QA-testing"
-                    class="sidemenu__item"
+                  <Link
+                    activeClassName="navbar__link--active"
+                    className=" sidemenu__item"
+                    to="/QaAndTesting"
                   >
                     <span class="sidemenu__item-inner">QA and Testing</span>
-                  </a>
+                  </Link>
                 </div>
                 <p class="label label--topleft label--vert-mirror">
                   It Services
