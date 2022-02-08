@@ -51,7 +51,7 @@ const About = ({ activeStatus }) => {
   }, []);
   const title = "About Us";
   const description =
-    "“The people at Codal are what makes them really stand out. They were responsive, attentive, flexible and they sought to understand my business so they could plan ahead—beyond the development project.”";
+    "“EXCELLIS IT is one of the pioneers providing valued services which are capable of meeting industrial standards for various ventures. It is the perseverance and eagerness of our Mandarins which has made us one of the huge names in IT industry.”";
   return (
     <div>
       <Helmet>
@@ -74,13 +74,10 @@ const About = ({ activeStatus }) => {
             <div class="row">
               <div class="col-xl-5 order-2 order-sm-1" data-aos="fade-up">
                 <p>
-                  We started like you did: a potent mixture of passion and work
-                  ethic, combined with the insight to recognize a problem and
-                  envision a solution. In our case, we saw a lack of
-                  transparency and efficiency in digital agencies. Too many
-                  design and development companies slapped a shiny coat a paint
-                  on a poorly made product, then bailed, leaving their clients
-                  high and dry.
+                  Founded in the year 2010, EXCELLIS IT is operating with a
+                  growing list of satisfied clients spanning 32+ countries
+                  including India, UK, USA, Canada, Australia, Dubai, and entire
+                  Europe.
                 </p>
               </div>
               <div class="col-xl-7 order-1 order-sm-2">
@@ -108,19 +105,19 @@ const About = ({ activeStatus }) => {
                       data-aos="reveal-right"
                     ></div>
                     <h3>
-                      THERE WAS A SMARTER, BETTER WAY TO RUN A DESIGN AND
-                      DEVELOPMENT AGENCY. SO WE STARTED OUR OWN.
+                      EXCELLIS is a firm believer of great service climate which
+                      leads to excellent service quality.
                     </h3>
                   </div>
                 </div>
               </div>
               <div class="col-xl-4" data-aos="fade-up">
                 <p>
-                  160+ clients, millions of end-users, and thousands of designs
-                  later, we’re an award-winning agency that’s worked with some
-                  of the biggest brands around. But we haven’t forgotten why we
-                  started in the first place: to make the digital world a
-                  friendlier place.
+                  Excellence is the Way of Life at Excellis. We are among the
+                  best IT companies in India seeking to provide the best IT
+                  solutions to our clients as well as make progress toward
+                  continuous improvement. We face all the challenges that come
+                  our way in the pursuit of excellence.
                 </p>
               </div>
             </div>
@@ -160,29 +157,24 @@ const About = ({ activeStatus }) => {
               <h2>THE EXCELLIS STORY</h2>
             </div>
             <p class="black_p" data-aos="fade-up">
-              Our process may be data-driven, but our projects are fueled by
-              something much stronger: passion. We don’t clock in at 9 and clock
-              out at 5 - we work around the clock.
+              Throughout this 10 years journey, we have been challenged by the
+              evolution of technologies which we have overcome and reached here
+              today. Now we know that we have both the spirit and the strength
+              to go beyond our capabilities and serve our clients only the best.
             </p>
             <div class="locla_text">
               <div class="row">
                 <div class="col-xl-5" data-aos="fade-down">
                   <p>
-                    We hail from different backgrounds, different lifestyles.
-                    We’re home to a self-taught design guru and a fashionista
-                    turned software developer, and we’re pretty sure we’re the
-                    only company that employs both a former Army engineer and a
-                    viral video star. These are the threads that form the rich
-                    tapestry that is Codal. Here, everyone gets a seat at the
-                    table, which means everyone gets to share a lifetime of
-                    their experiences, their perspective, their story. Because
-                    while our business cards might say we’re designers,
-                    engineers, marketers, and developers, really we all have the
-                    same job title: storyteller. Every website we design, every
-                    app we build, and every solution we create bears our
-                    fingerprints. Our work tells our story. And we want to help
-                    you tell yours. Because we’re more than just an agency.
-                    We’re your partner.
+                    EXCELLIS IT is one of the leading service providers in the
+                    field of Information Technology that has been instrumental
+                    in catering tailored telemarketing outsourcing services
+                    along with expertise in software development and website
+                    designing, digital marketing and app development. Since its
+                    commencement, EXCELLIS IT has gained the status of being the
+                    best IT solutions company globally. Our wings are rapidly
+                    growing while its roots are extending and diversifying from
+                    off shores to complex IT solutions.
                   </p>
                 </div>
                 <div class="col-xl-7" data-aos="fade-up">
@@ -213,10 +205,14 @@ const About = ({ activeStatus }) => {
                 data-aos="reveal-item"
               ></div>
               <div class="title_c">
-                <h2>THE CODAL MISSION</h2>
+                <h2>
+                  WE PAVE THE ROAD FOR COLOSAL POSSIBILITIES FOR YOUR BUSINESS
+                </h2>
                 <p>
-                  Our mission is simple: Work with the best, design with a
-                  purpose, and engineer for a sustainable future.
+                  Our mission is to enhance business growth of our customers
+                  with creative design, development and deliver market defining,
+                  high quality solutions that create value as well as reliable
+                  competitive vantage to customers around the globe.
                 </p>
               </div>
             </div>

@@ -16,7 +16,7 @@ const HomeServicesSec = () => {
               class="reveal-block right custom_aos"
               data-aos="reveal-right"
             ></div>
-            <Typed strings={["Our Featured Services"]} typeSpeed={150} />
+            <Typed strings={["Services We Provide"]} typeSpeed={150} />
           </div>
         </div>
         <div className="container-fluid">
@@ -107,9 +107,12 @@ const HomeServicesSec = () => {
 
                                     <h4>Web Development</h4>
                                     <p>
-                                      Put your image before clients who are now
-                                      effectively looking on oogle, Bing,
-                                      YouTube, or other earch...
+                                      First impression is the last impression.
+                                      If you want your client’s website to be
+                                      also the one; you need the help of
+                                      experts. Excellis IT’s sole target is to
+                                      develop websites that are user friendly as
+                                      well as credible.
                                     </p>
                                   </Link>
                                 </div>
@@ -123,11 +126,11 @@ const HomeServicesSec = () => {
                                 <div className="single_services">
                                   <Link to="/UiUxDesign" className="">
                                     <div className="services_icon desigining_icon"></div>
-                                    <h4>Web Designing</h4>
+                                    <h4> UI/UX Design</h4>
                                     <p>
-                                      Put your image before clients who are now
-                                      effectively looking on oogle, Bing,
-                                      YouTube, or other earch...
+                                      Our skilled UI/UX designers are talented
+                                      weavers who create business-driven website
+                                      designs to meet client needs.
                                     </p>
                                   </Link>
                                 </div>
@@ -147,11 +150,14 @@ const HomeServicesSec = () => {
                                     </div>
                                     <div className="single_img_services">
                                       <div className="services_icon desigining_icon"></div>
-                                      <h4>UI/UX Design</h4>
+                                      <h4>Web Designing</h4>
                                       <p>
-                                        Put your image before clients who are
-                                        now effectively looking on oogle, Bing,
-                                        YouTube, or other earch...
+                                        While designing a website we keep in
+                                        mind that it accurately reflects your
+                                        brand as well as the content should be
+                                        crisp and to the point so that your
+                                        clientele gets to know all your best
+                                        points without any hassle.
                                       </p>
                                     </div>
                                   </div>
@@ -170,9 +176,10 @@ const HomeServicesSec = () => {
                                     <div className="services_icon desigining_icon"></div>
                                     <h4>Mobile Application</h4>
                                     <p>
-                                      Put your image before clients who are now
-                                      effectively looking on oogle, Bing,
-                                      YouTube, or other earch...
+                                      We have an experienced team with years of
+                                      experience under their belt to built
+                                      commercial and non-commercial mobile apps
+                                      in the given time frame.
                                     </p>
                                   </div>
                                 </Link>
@@ -188,9 +195,10 @@ const HomeServicesSec = () => {
                                     <div className="services_icon desigining_icon"></div>
                                     <h4>Software Development</h4>
                                     <p>
-                                      Put your image before clients who are now
-                                      effectively looking on oogle, Bing,
-                                      YouTube, or other earch...
+                                      EXCELLIS IT has an excellent software
+                                      development team who works towards
+                                      building innovative products that would
+                                      check all the boxes.
                                     </p>
                                   </div>
                                 </Link>
@@ -206,9 +214,11 @@ const HomeServicesSec = () => {
                                     <div className="services_icon desigining_icon"></div>
                                     <h4>QA & Testing</h4>
                                     <p>
-                                      Put your image before clients who are now
-                                      effectively looking on oogle, Bing,
-                                      YouTube, or other earch...
+                                      We aim to revolutionize the way businesses
+                                      interact with customers and streamline
+                                      interactions. We provide our customers
+                                      with a full cycle of chatbot`s development
+                                      leading to the chatbot`s success.
                                     </p>
                                   </div>
                                 </Link>
@@ -239,9 +249,11 @@ const HomeServicesSec = () => {
                                   <div className="single_services">
                                     <h4>Search engine Marketing</h4>
                                     <p>
-                                      Put your image before clients who are now
-                                      effectively looking on oogle, Bing,
-                                      YouTube, or other earch...
+                                      We help in putting your brand in front of
+                                      your client’s eyes with the help of SEM so
+                                      that your clients who are now effectively
+                                      looking on Google, Bing, YouTube, or other
+                                      search engines know your presence.
                                     </p>
                                   </div>
                                 </Link>
@@ -256,9 +268,9 @@ const HomeServicesSec = () => {
                                   <div className="single_services">
                                     <h4>Social media marketing</h4>
                                     <p>
-                                      Put your image before clients who are now
-                                      effectively looking on oogle, Bing,
-                                      YouTube, or other earch...
+                                      EXCELLIS IT, is a leading social media
+                                      management company that extends reliable
+                                      and comprehensive services to businesses.
                                     </p>
                                   </div>
                                 </Link>
@@ -279,9 +291,10 @@ const HomeServicesSec = () => {
                                     <div className="single_img_services">
                                       <h4>Pay per click</h4>
                                       <p>
-                                        Put your image before clients who are
-                                        now effectively looking on oogle, Bing,
-                                        YouTube, or other earch...
+                                        Excellis IT is one of the best digital
+                                        marketing company that uses PPC, or
+                                        pay-per-click advertising, to target
+                                        your most qualified audience.
                                       </p>
                                     </div>
                                   </div>
@@ -299,9 +312,10 @@ const HomeServicesSec = () => {
                                   <div className="single_services">
                                     <h4>Email marketing</h4>
                                     <p>
-                                      Put your image before clients who are now
-                                      effectively looking on oogle, Bing,
-                                      YouTube, or other earch...
+                                      EXCELLIS IT is among the trusted
+                                      Do-It-Yourself email marketing service
+                                      provider used by a number of businesses
+                                      when they need to send email campaigns.
                                     </p>
                                   </div>
                                 </Link>
@@ -316,9 +330,10 @@ const HomeServicesSec = () => {
                                   <div className="single_services">
                                     <h4>Content marketing</h4>
                                     <p>
-                                      Put your image before clients who are now
-                                      effectively looking on oogle, Bing,
-                                      YouTube, or other earch...
+                                      Excellis IT is the best digital marketing
+                                      company in India with the best content
+                                      marketing packages making content
+                                      marketing hassle-free.
                                     </p>
                                   </div>
                                 </Link>
@@ -333,9 +348,10 @@ const HomeServicesSec = () => {
                                   <div className="single_services">
                                     <h4>Conversion rate optimisation</h4>
                                     <p>
-                                      Put your image before clients who are now
-                                      effectively looking on oogle, Bing,
-                                      YouTube, or other earch...
+                                      Excellis IT is among the best IT solutions
+                                      company that helps you in converting your
+                                      traffic into paying customers, sales or
+                                      clients.
                                     </p>
                                   </div>
                                 </Link>
@@ -367,9 +383,10 @@ const HomeServicesSec = () => {
                                   <div className="single_services">
                                     <h4>Call Center Outsource</h4>
                                     <p>
-                                      Put your image before clients who are now
-                                      effectively looking on oogle, Bing,
-                                      YouTube, or other earch...
+                                      Looking for ways to give your business a
+                                      competitive edge? Our call centre
+                                      outsourcing services is a reliable
+                                      assistant for that matter.
                                     </p>
                                   </div>
                                 </Link>
@@ -384,9 +401,9 @@ const HomeServicesSec = () => {
                                   <div className="single_services">
                                     <h4>back-office process</h4>
                                     <p>
-                                      Put your image before clients who are now
-                                      effectively looking on oogle, Bing,
-                                      YouTube, or other earch...
+                                      Our back-office process outsourcing
+                                      services help the business to grow and
+                                      move on to a bigger and better venture.
                                     </p>
                                   </div>
                                 </Link>
@@ -408,9 +425,11 @@ const HomeServicesSec = () => {
                                     <div className="single_img_services">
                                       <h4>E-commerce outsourcing</h4>
                                       <p>
-                                        Put your image before clients who are
-                                        now effectively looking on oogle, Bing,
-                                        YouTube, or other earch...
+                                        Our E-commerce outsourcing services
+                                        assist you in managing your everyday
+                                        operations seamlessly sparing enough
+                                        time to focus on strategic business
+                                        plan.
                                       </p>
                                     </div>
                                   </div>
@@ -428,9 +447,10 @@ const HomeServicesSec = () => {
                                   <div className="single_services">
                                     <h4>professional services</h4>
                                     <p>
-                                      Put your image before clients who are now
-                                      effectively looking on oogle, Bing,
-                                      YouTube, or other earch...
+                                      EXCELLIS IT offers professional services
+                                      restructure that helps in providing wide
+                                      range of consulting services for more
+                                      sophisticated clients.
                                     </p>
                                   </div>
                                 </Link>
@@ -445,9 +465,11 @@ const HomeServicesSec = () => {
                                   <div className="single_services">
                                     <h4>performance & compliance</h4>
                                     <p>
-                                      Put your image before clients who are now
-                                      effectively looking on oogle, Bing,
-                                      YouTube, or other earch...
+                                      EXCELLIS IT provides performance and
+                                      compliance solution that measure your
+                                      business and legal compliance and value at
+                                      risk, while effectively meeting the
+                                      regulatory and business compliance norms.
                                     </p>
                                   </div>
                                 </Link>
@@ -462,9 +484,9 @@ const HomeServicesSec = () => {
                                   <div className="single_services">
                                     <h4>innovation at excellis</h4>
                                     <p>
-                                      Put your image before clients who are now
-                                      effectively looking on oogle, Bing,
-                                      YouTube, or other earch...
+                                      Excellis IT has innovative plans and ideas
+                                      that fit all of your company’s needs and
+                                      would help increase your business.
                                     </p>
                                   </div>
                                 </Link>
@@ -499,12 +521,12 @@ const HomeServicesSec = () => {
                                     <div className="single_img_services">
                                       <h4>ARCHITECTURE</h4>
                                       <p>
-                                        EXCELLIS IT with a team of skilled
-                                        architects has been offering a plethora
-                                        of Architectural BIM services including
-                                        conversion of design drawings to
-                                        accurate construction documents and 3D
-                                        models with parametric families.
+                                        EXCELLIS IT has a team of skilled
+                                        architects who offers a plethora of
+                                        Architectural BIM services which
+                                        includes conversion of design drawings
+                                        to accurate construction documents and
+                                        3D models with parametric families.
                                       </p>
                                     </div>
                                   </div>
@@ -526,13 +548,13 @@ const HomeServicesSec = () => {
                                     <div className="single_img_services">
                                       <h4>MECHANICAL</h4>
                                       <p>
-                                        The team of highly experienced
-                                        Mechanical Modelers at EXCELLIS IT
-                                        offers mechanical engineers, product
-                                        designers & developers precise
-                                        Mechanical 3D modeling services that are
-                                        aimed at improving productivity and
-                                        efficiency of the manufacturing process.
+                                        A team of highly experienced Mechanical
+                                        Modelers at EXCELLIS IT provides
+                                        mechanical engineers, product designers
+                                        & developers precise Mechanical 3D
+                                        modelling services which aims at
+                                        improving productivity and efficiency of
+                                        the manufacturing process.
                                       </p>
                                     </div>
                                   </div>

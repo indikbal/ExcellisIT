@@ -52,13 +52,15 @@ const HomeFeatureServices = () => {
                     About Excellis
                   </h4>
                   <p data-aos="fade-up" data-aos-duration="1000">
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's
-                    standard dummy text ever since the 1500s, when an unknown
-                    printer took a galley of type and scrambled it to make a
-                    type specimen book. It has survived not only five centuries,
-                    but also the leap into electronic typesetting, remaining
-                    essentially unchanged.
+                    EXCELLIS IT is one of the leading service providers in the
+                    field of Information Technology that has been instrumental
+                    in catering tailored telemarketing outsourcing services
+                    along with expertise in software development and website
+                    designing, digital marketing and app development. Since its
+                    commencement in the year 2010, EXCELLIS IT is operating with
+                    a growing list of satisfied clients spanning 32+ countries
+                    including India, UK, USA, Canada, Australia, Dubai, and
+                    entire Europe.
                   </p>
                 </div>
                 <div className="abtn_read_more_btn">

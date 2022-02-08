@@ -4,12 +4,17 @@ import Footer from "../Footer";
 import InnerBanner from "../InnerBanner";
 import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
+import { Swiper, SwiperSlide } from "swiper/react";
+import SwiperCore, { Navigation, Pagination, EffectCoverflow } from "swiper";
+
+SwiperCore.use([Navigation, Pagination, EffectCoverflow]);
 
 const Portfolio = ({ activeStatus }) => {
   const title = "Portfolio";
   const description =
     "“The people at Codal are what makes them really stand out. They were responsive, attentive, flexible and they sought to understand my business so they could plan ahead—beyond the development project.”";
-
+  const fmapp =
+    "https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/portfolio%2F5.png?alt=media&token=c79de80f-91e1-4976-96de-5438a3e75835";
   const atpata =
     "https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/portfolio%2FAtpata.jpg?alt=media&token=dfded930-0331-4b39-8c10-5bbba96de316";
   const bill_specialist =
@@ -22,8 +27,7 @@ const Portfolio = ({ activeStatus }) => {
     "https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/portfolio%2FFM_Holidays.jpg?alt=media&token=e4f9a957-13f1-43a9-959b-d7ac476a8cab";
   const fm_ostello =
     "https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/portfolio%2FFM_Ostello.jpg?alt=media&token=9dec33d6-cd7d-4c1e-94b1-04e16c8b793d";
-  const feel_fresh =
-    "https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/portfolio%2Ffeel_fresh.jpg?alt=media&token=39185e28-df63-4c2c-8a18-197acbf1dd3e";
+
   const lederfield =
     "https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/portfolio%2Fladerfield.jpg?alt=media&token=9a28cd72-94c6-4788-bebc-1566da33fb25";
 
@@ -66,10 +70,7 @@ const Portfolio = ({ activeStatus }) => {
                       <div className="portfolio_imgwrapper" data-aos="fade-up">
                         <div className="overflow_hidden">
                           <div className="portfolio_img_box">
-                            <div
-                              className="show_port_folio_img"
-                              oncontextmenu="return false;"
-                            >
+                            <div className="show_port_folio_img">
                               <img src={atpata} className="img-fluid" />
                             </div>
                           </div>
@@ -251,6 +252,68 @@ const Portfolio = ({ activeStatus }) => {
                       </div>
                     </div>
                   </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="mobile_app_portfolio">
+          <div className="container">
+            <div className="row">
+              <div className="col-md-12">
+                <div className="app_slider">
+                  <Swiper
+                    grabCursor="true"
+                    centeredSlides="true"
+                    spaceBetween={0}
+                    slidesPerView={4}
+                    loop="true"
+                    effect="coverflow"
+                    coverflowEffect={{
+                      rotate: 50,
+                      stretch: 0,
+                      depth: 100,
+                      modifier: 1,
+                      slideShadows: false,
+                    }}
+                    breakpoints={{
+                      700: {
+                        spaceBetween: 0,
+                        slidesPerView: 4,
+                      },
+                      500: {
+                        spaceBetween: 100,
+                        slidesPerView: 2,
+                      },
+                      411: {
+                        spaceBetween: 100,
+                        slidesPerView: 2,
+                      },
+                      300: {
+                        spaceBetween: 0,
+                        slidesPerView: 1,
+                      },
+                    }}
+                  >
+                    <SwiperSlide>
+                      <img src={fmapp} />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      <img src={fmapp} />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      <img src={fmapp} />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      <img src={fmapp} />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      <img src={fmapp} />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      <img src={fmapp} />
+                    </SwiperSlide>
+                  </Swiper>
                 </div>
               </div>
             </div>

@@ -48,7 +48,55 @@ li {
 .grid .grid_item {
   border-right: 1px solid rgba(239, 218, 185, 0.2);
   height: 100%;
+  height: 100vh;
 }
+.grid_item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -1px;
+  height: 200px;
+  width: 1px;
+  background-color: #fff;
+  animation-delay: 5s;
+  opacity: 0.5;
+}
+.grid .grid_item.grid1::before {
+  -webkit-animation: grid_move 5s infinite linear;
+  animation: grid_move 5s infinite linear;
+}
+.grid .grid_item.grid2::before {
+  -webkit-animation: grid_move 5s infinite linear;
+  animation: grid_move 5s infinite linear;
+}
+.grid .grid_item.grid3::before {
+  -webkit-animation: grid_move 6s infinite linear;
+  animation: grid_move 6s infinite linear;
+}
+.grid .grid_item.grid4::before {
+  -webkit-animation: grid_move 7s infinite linear;
+  animation: grid_move 7s infinite linear;
+}
+.grid .grid_item.grid5::before {
+  -webkit-animation: grid_move 5s infinite linear;
+  animation: grid_move 5s infinite linear;
+}
+.grid .grid_item.grid6::before {
+  animation-delay: 1s;
+  -webkit-animation: grid_move 6s infinite linear;
+  animation: grid_move 6s infinite linear;
+}
+
+@keyframes grid_move {
+  0% {
+    transform: translateY(0%);
+  }
+
+  100% {
+    transform: translateY(100vh);
+  }
+}
+
 .pl-170 {
   padding-left: 170px !important;
 }

@@ -9,12 +9,12 @@ ReactDOM.hydrate(
   <BrowserRouter>
     <div className="grid">
       <div className="row h-100 w-100 pr-0 mr-0 ml-0">
-        <div className="grid_item col-2 pl-0 pr-0"></div>
-        <div className="grid_item col-2 pl-0 pr-0"></div>
-        <div className="grid_item col-2 pl-0 pr-0"></div>
-        <div className="grid_item col-2 pl-0 pr-0"></div>
-        <div className="grid_item col-2 pl-0 pr-0"></div>
-        <div className="grid_item col-2 pl-0 pr-0"></div>
+        <div className="grid_item grid1 col-2 pl-0 pr-0"></div>
+        <div className="grid_item grid2 col-2 pl-0 pr-0"></div>
+        <div className="grid_item grid3 col-2 pl-0 pr-0"></div>
+        <div className="grid_item grid4 col-2 pl-0 pr-0"></div>
+        <div className="grid_item grid5 col-2 pl-0 pr-0"></div>
+        <div className="grid_item grid6 col-2 pl-0 pr-0"></div>
       </div>
     </div>
     <ThreeScene />

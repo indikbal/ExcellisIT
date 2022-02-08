@@ -25,12 +25,12 @@ const BecomeAPartner = () => {
                     COLLABORATE TODAY
                   </h6>
                   <p data-aos="fade-up" data-aos-duration="1500">
-                    Excellis IT success is hardwired with its pursuit of sharing
-                    the load for the long-term, here we believe in dividing your
-                    load and collaborating with someone as amazing as you are
-                    for a lifetime. Thus, here we share your load, dreams and
-                    collaborate with you for landing support as well as the
-                    success story.
+                    Partnering with EXCELLIS IT helps you in grabbing global
+                    opportunities as well as development support in establishing
+                    your brand. With our partnership you can leverage improved
+                    customer relations, reduced operational costs, faster
+                    conversion time, technical assistant, expanded global reach
+                    within an incubating environment.
                   </p>
                   <Link to="/PartnerWithus">
                     <button

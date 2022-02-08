@@ -78,12 +78,12 @@ const OurClients = () => {
           <div className="row align-items-center">
             <div className="col-md-5">
               <div className="our_client_text_area">
-                <h4>Clients Benefit from 6 yers of our Experience</h4>
+                <h4>Clients who benefited from our Experience</h4>
                 <p>
-                  Being a well-known web solutions company, it is undeniable
-                  fact that what we are today is because of the love,
-                  appreciation, and constant iteration brought in us by our
-                  cherished extended family- our clients.
+                  Being a well-known IT company in India, we cannot deny the
+                  fact that whatever we have achieved today is all because of
+                  the love, appreciation, and constant iteration brought in by
+                  our cherished extended family- our clients.
                 </p>
               </div>
             </div>

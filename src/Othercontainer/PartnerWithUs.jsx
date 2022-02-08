@@ -5,13 +5,23 @@ import InnerBanner from "../InnerBanner";
 import { Helmet } from "react-helmet";
 import ContactSection from "../Appcontainer/ContactSection";
 import { Link } from "react-router-dom";
+import $ from "jquery";
 const partnerwith =
   "https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/partnerWithus.jpg?alt=media&token=0951591c-12a5-4761-9bae-c35e02d7cb66";
 
 const PartnerWithUs = ({ activeStatus }) => {
   const title = "Partner With Us";
   const description =
-    "“The people at Codal are what makes them really stand out. They were responsive, attentive, flexible and they sought to understand my business so they could plan ahead—beyond the development project.”";
+    "“A partnership for better tomorrow is based upon great values. Partnering with us will help you in establishing your brand in the global market as well as improve customer relations and reduce operational costs.”";
+
+  const why1 =
+    "https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/discover.jpg?alt=media&token=5ea9083d-d2c5-4c34-adb2-0bf26280e367";
+  const why2 =
+    "https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/strategize.jpg?alt=media&token=81e686fe-b64e-411f-b6e5-202b70514071";
+  const why3 =
+    "https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/design-process.jpg?alt=media&token=d19a5eda-c789-490d-ac1a-053b30296720";
+  const why4 =
+    "https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/engineer-process.jpg?alt=media&token=d58c3957-fb40-4777-8f12-87f113cb0ba0";
 
   return (
     <div>
@@ -53,11 +63,10 @@ const PartnerWithUs = ({ activeStatus }) => {
                 >
                   <p>
                     Excellis IT success is hardwired with its pursuit of sharing
-                    the load for the long-term, here we believe in dividing your
-                    load and collaborating with someone as amazing as you are
-                    for a lifetime. Thus, here we share your load, dreams and
-                    collaborate with you for landing support as well as the
-                    success story.
+                    the load for a long-term, here we believe in sharing your
+                    load and collaborating with someone as amazing as you are.
+                    Thus, here we share your load, dreams and collaborate with
+                    you for landing support as well as the success story.
                   </p>
                   <p>
                     Partnering with EXCELLIS IT helps in grabbing global
@@ -77,163 +86,148 @@ const PartnerWithUs = ({ activeStatus }) => {
         </div>
       </div>
 
-      <section class="bpo_inner_how_it_works__section" id="why_partner">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12">
-              <div class="partner_withus_title text-center">
-                <h5>Why Partner With Excellis</h5>
+      <section className="why_partner_seection">
+        <div className="container">
+          <div className="row">
+            <div className="why_partner_title">
+              <h2>Why Partner with Excellis</h2>
+            </div>
+          </div>
+          <div className="row align-items-center">
+            <div className="col-md-6">
+              <div class="solutions-2-sing__sx pl-4">
+                <span className="leftno">1</span>
+                <div class="solutions-2-sing__circ">
+                  <div class="solutions-2-sing__circ-int">
+                    <div class="solutions-2-sing__circ1 rotating "></div>
+                    <div class="solutions-2-sing__circ2 rotating2"></div>
+                    <div class="solutions-2-sing__img ">
+                      <div
+                        style={{
+                          backgroundImage: `url(${why1})`,
+                          backgroundSize: "cover",
+                          backgroundPosition: "center",
+                        }}
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="col-md-6">
+              <div className="partner_single_why">
+                <h2>Business benefits</h2>
                 <p>
-                  The Excellis Partner Program is our way to achieve our mission
-                  of spreading our Excellis culture across the globe.
+                  EXCELLIS IT believes that a relationship becomes stronger with
+                  trust and transparency. Thus, staying accessible to our
+                  customers at each stage of their journey are the initial steps
+                  to building customer trust. This also provides them various
+                  business benefits like promotes growth, sustain support, saves
+                  cost as well as built long term partnership.
                 </p>
               </div>
             </div>
           </div>
-          <div class="row align-items-center">
-            <div class="col-md-12">
-              <div class="why_content">
-                <div
-                  class="row mt-5 mb-5"
-                  data-aos="fade-down"
-                  data-aos-duration="1500"
-                >
-                  <div class="col-md-4">
-                    <div
-                      class="reveal-holder custom_aos"
-                      data-aos="reveal-item"
-                    >
+          <div className="row align-items-center">
+            <div className="col-md-6">
+              <div className="partner_single_why">
+                <h2>Improve Customer Experience</h2>
+                <p>
+                  EXCELLIS IT helps their customers to get rid of their
+                  guesswork from all of their marketing activities; in return
+                  bringing value to customers as well as it further improves the
+                  customer experience. We believe in giving the best experience
+                  to our customers as for us each customer is our guest and we
+                  are their host. Improved customer experience also builds brand
+                  trust for customers.
+                </p>
+              </div>
+            </div>
+            <div className="col-md-6">
+              <div class="solutions-2-sing__sx pl-4">
+                <span className="rightno">2</span>
+                <div class="solutions-2-sing__circ">
+                  <div class="solutions-2-sing__circ-int">
+                    <div class="solutions-2-sing__circ1 rotating "></div>
+                    <div class="solutions-2-sing__circ2 rotating2"></div>
+                    <div class="solutions-2-sing__img ">
                       <div
-                        class="reveal-block right custom_aos"
-                        data-aos="reveal-right"
+                        style={{
+                          backgroundImage: `url(${why2})`,
+                          backgroundSize: "cover",
+                          backgroundPosition: "center",
+                        }}
                       ></div>
-
-                      <div class="why_point">
-                        <ul>
-                          <li class="theme_color">
-                            <i class="las la-check-square"></i>Leading IT
-                            service provider
-                          </li>
-                          <li>
-                            <i class="las la-check-square"></i>Regulatory
-                            licenses
-                          </li>
-                          <li>
-                            <i class="las la-check-square"></i>24x7 customer
-                            support
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-4">
-                    <div
-                      class="reveal-holder custom_aos"
-                      data-aos="reveal-item"
-                    >
-                      <div
-                        class="reveal-block right custom_aos"
-                        data-aos="reveal-right"
-                      ></div>
-                      <div class="why_point">
-                        <ul>
-                          <li>
-                            <i class="las la-check-square"></i>Low-cost project
-                            completions
-                          </li>
-                          <li>
-                            <i class="las la-check-square"></i>Flexible
-                            Investments
-                          </li>
-                          <li>
-                            <i class="las la-check-square"></i>Global payment
-                            methods
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-4">
-                    <div
-                      class="reveal-holder custom_aos"
-                      data-aos="reveal-item"
-                    >
-                      <div
-                        class="reveal-block right custom_aos"
-                        data-aos="reveal-right"
-                      ></div>
-                      <div class="why_point">
-                        <ul>
-                          <li>
-                            <i class="las la-check-square"></i>Digital marketing
-                          </li>
-                          <li>
-                            <i class="las la-check-square"></i>Global Branding
-                          </li>
-                          <li>
-                            <i class="las la-check-square"></i>3+ countries
-                          </li>
-                        </ul>
-                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="container">
-          <div class="how_its_work_precess">
-            <div class="row">
-              <div
-                class="col-md-12 step_round_circle"
-                data-aos="fade-up"
-                data-aos-duration="1000"
-              >
-                <div class="bpo_inner__how_it_works_card">
-                  <h2 class="card__number">01</h2>
-                  <div class="card__title_wrapper">
-                    <h5>Customer reachability</h5>
-                    <p>
-                      EXCELLIS IT believes that a relationship becomes strong
-                      only with trust and openness. Staying accessible with
-                      customer at each stage of their journey are the first
-                      steps to building customer trust.{" "}
-                    </p>
+          <div className="row align-items-center">
+            <div className="col-md-6">
+              <div class="solutions-2-sing__sx pl-4">
+                <span className="leftno">3</span>
+                <div class="solutions-2-sing__circ">
+                  <div class="solutions-2-sing__circ-int">
+                    <div class="solutions-2-sing__circ1 rotating "></div>
+                    <div class="solutions-2-sing__circ2 rotating2"></div>
+                    <div class="solutions-2-sing__img ">
+                      <div
+                        style={{
+                          backgroundImage: `url(${why3})`,
+                          backgroundSize: "cover",
+                          backgroundPosition: "center",
+                        }}
+                      ></div>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div
-                class="col-md-12 d-flex justify-content-end step_round_circle"
-                data-aos="fade-down"
-                data-aos-duration="1000"
-              >
-                <div class="bpo_inner__how_it_works_card">
-                  <h2 class="card__number">02</h2>
-                  <div class="card__title_wrapper">
-                    <h5>BRINGS VALUE TO CUSTOMERS</h5>
-                    <p>
-                      EXCELLIS IT not only help customers remove the guesswork
-                      from marketing activities, bring value to customers but
-                      also aid in further improving the customer experience.
-                    </p>
-                  </div>
-                </div>
+            </div>
+            <div className="col-md-6">
+              <div className="partner_single_why">
+                <h2>Minimum Cost Investment</h2>
+                <p>
+                  EXCELLIS IT is a firm believer of not entailing any additional
+                  expense to execute. We are always in the favour of low to no
+                  cost investment. Partnering with us means you invest minimum
+                  and get maximum benefits in return. We are one of the best IT
+                  company in India providing you the best solutions and
+                  experience in the sector.
+                </p>
               </div>
-              <div
-                class="col-md-12 step_round_circle "
-                data-aos="fade-down"
-                data-aos-duration="1000"
-              >
-                <div class="bpo_inner__how_it_works_card">
-                  <h2 class="card__number">03</h2>
-                  <div class="card__title_wrapper">
-                    <h5>Low to no cost Investment</h5>
-                    <p>
-                      EXCELLIS IT is a firm believer of not entailing any
-                      additional expense to execute. We are always in the favour
-                      of low to no cost investment.
-                    </p>
+            </div>
+          </div>
+          <div className="row align-items-center">
+            <div className="col-md-6">
+              <div className="partner_single_why">
+                <h2>Getting Maximum Support</h2>
+                <p>
+                  Partnership with EXCELLIS IT ensures that your associates get
+                  introduced to newer avenues as well as develop their business
+                  channels while gaining higher ROIs. Our partnership programs
+                  are completely business centric thus, we endeavour to thrive
+                  successfully and mutually along with our partners.
+                </p>
+              </div>
+            </div>
+            <div className="col-md-6">
+              <div class="solutions-2-sing__sx pl-4">
+                <span className="rightno">4</span>
+                <div class="solutions-2-sing__circ">
+                  <div class="solutions-2-sing__circ-int">
+                    <div class="solutions-2-sing__circ1 rotating "></div>
+                    <div class="solutions-2-sing__circ2 rotating2"></div>
+                    <div class="solutions-2-sing__img ">
+                      <div
+                        style={{
+                          backgroundImage: `url(${why3})`,
+                          backgroundSize: "cover",
+                          backgroundPosition: "center",
+                        }}
+                      ></div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -241,6 +235,7 @@ const PartnerWithUs = ({ activeStatus }) => {
           </div>
         </div>
       </section>
+
       <ContactSection />
       <Footer />
     </div>
