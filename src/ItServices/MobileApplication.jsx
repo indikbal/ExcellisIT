@@ -5,6 +5,8 @@ import Footer from "../Footer";
 import InnerBanner from "../InnerBanner";
 import { Helmet } from "react-helmet";
 import { NavLink } from "react-router-dom";
+import { Scrollbars } from "react-custom-scrollbars-2";
+import IndustriesWeCovered from "../Appcontainer/IndustriesWeCovered";
 
 const bootstrap =
   "https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/technology%2FBootstrap.png?alt=media&token=c7d7a420-6618-480c-acb4-639820d666f9";
@@ -51,9 +53,9 @@ const MobileApplication = () => {
       <section class="inner_page_first">
         <div class="s-BannerServices bg_dark">
           <div class="l-ContentColumn container">
-            <div class="row">
-              <div class="col-md-5">
-                <div class="s-BannerServices__Content">
+            <div class="row align-items-center">
+              <div class="col-md-6">
+                <div class="company_intro">
                   <h6 class="s-BannerServices__Subheader">
                     User-friendly websites
                   </h6>
@@ -75,24 +77,17 @@ const MobileApplication = () => {
                     </strong>
                   </p>
                 </div>
-                <div class="s-BannerServices__Image__Description">
-                  Photo: Our team members <strong>at work</strong>
-                </div>
               </div>
-              <div class="col-md-7">
-                <div class="s-BannerServices__Image">
-                  <div class="s-BannerServices__Image__Content">
-                    <div
-                      class="reveal-holder custom_aos"
-                      data-aos="reveal-item"
-                    >
-                      <div
-                        class="reveal-block right custom_aos"
-                        data-aos="reveal-right"
-                      ></div>
-                      <img src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/mobile-application.jpg?alt=media&token=077572ec-50e3-4ee8-8476-461a6796c7ea" />
-                    </div>
-                  </div>
+              <div class="col-md-6">
+                <div class="reveal-holder custom_aos" data-aos="reveal-item">
+                  <div
+                    class="reveal-block right custom_aos"
+                    data-aos="reveal-right"
+                  ></div>
+                  <img
+                    src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/mobile-application.jpg?alt=media&token=077572ec-50e3-4ee8-8476-461a6796c7ea"
+                    className="img-fluid"
+                  />
                 </div>
               </div>
             </div>
@@ -108,10 +103,9 @@ const MobileApplication = () => {
         </div>
       </section>
       <section class="fact_no">
-        <div class="container-fluid l-ContentColumn">
-          <div class="row">
-            <div className="col-md-1"></div>
-            <div class="col-md-3 main_heading dark_text pl-5">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-md-6 main_heading dark_text pr-3 pr-sm-5">
               <h6>Facts &amp; Numbers</h6>
               <div class="reveal-holder custom_aos" data-aos="reveal-item">
                 <div
@@ -135,71 +129,154 @@ const MobileApplication = () => {
                 decision-making processes in your organisation.
               </p>
             </div>
-            <div class="col-md-8 s-InfoBoxesGrid__GridContainer">
-              <div class="s-InfoBoxesGrid__Grid s-InfoBoxesGrid__Grid--Medium">
-                <div class="o-InfoBox">
-                  <div class="o-InfoBox__Content">
-                    <h2 class="o-InfoBox__Header">800</h2>
-                    <div class="o-InfoBox__Text">
-                      <p>people on board</p>
+
+            <div className="col-md-6">
+              <div className="why_hire_us_sec">
+                <div class="accordion" id="accordionExample">
+                  <div class="card">
+                    <div class="card-header" id="headingOne">
+                      <h5 class="mb-0">
+                        <button
+                          class="btn btn-link"
+                          type="button"
+                          data-toggle="collapse"
+                          data-target="#collapse1"
+                          aria-expanded="true"
+                          aria-controls="collapse1"
+                        >
+                          1. High-quality Output
+                        </button>
+                      </h5>
+                    </div>
+
+                    <div
+                      id="collapse1"
+                      class="collapse show"
+                      aria-labelledby="heading1"
+                      data-parent="#accordionExample"
+                    >
+                      <div class="card-body">
+                        Anim pariatur cliche reprehenderit, enim eiusmod high
+                        life accusamus terry richardson ad squid. 3 wolf moon
+                        officia aute, non cupidatat skateboard dolor brunch.
+                        Food truck quinoa nesciunt laborum eiusmod. Brunch 3
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div class="o-InfoBox bg">
-                  <div class="o-InfoBox__Content"></div>
-                </div>
-                <div class="o-InfoBox bg">
-                  <div class="o-InfoBox__Content"></div>
-                </div>
-                <div class="o-InfoBox">
-                  <div class="o-InfoBox__Content">
-                    <h2 class="o-InfoBox__Header">2-5 times</h2>
-                    <div class="o-InfoBox__Text">
-                      <p>
-                        the cost – the estimated ROI in the first year on most
-                        standard machine learning projects
-                      </p>
+                  <div class="card">
+                    <div class="card-header" id="headingTwo">
+                      <h5 class="mb-0">
+                        <button
+                          class="btn btn-link collapsed"
+                          type="button"
+                          data-toggle="collapse"
+                          data-target="#collapse2"
+                          aria-expanded="false"
+                          aria-controls="collapse2"
+                        >
+                          2. Cost-Savings
+                        </button>
+                      </h5>
+                    </div>
+                    <div
+                      id="collapse2"
+                      class="collapse"
+                      aria-labelledby="headingTwo"
+                      data-parent="#accordionExample"
+                    >
+                      <div class="card-body">
+                        Anim pariatur cliche reprehenderit, enim eiusmod high
+                        life accusamus terry richardson ad squid. 3 wolf moon
+                        officia aute, non cupidatat skateboard dolor brunch.
+                        Food truck quinoa nesciunt laborum eiusmod. Brunch 3
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div class="o-InfoBox">
-                  <div class="o-InfoBox__Content">
-                    <h2 class="o-InfoBox__Header">14 years</h2>
-                    <div class="o-InfoBox__Text">
-                      <p>of Microsoft Partnership</p>
+                  <div class="card">
+                    <div class="card-header" id="headingThree">
+                      <h5 class="mb-0">
+                        <button
+                          class="btn btn-link collapsed"
+                          type="button"
+                          data-toggle="collapse"
+                          data-target="#collapse3"
+                          aria-expanded="false"
+                          aria-controls="collapse3"
+                        >
+                          3. Finding the best web designers in India is easy
+                        </button>
+                      </h5>
+                    </div>
+                    <div
+                      id="collapse3"
+                      class="collapse"
+                      aria-labelledby="headingThree"
+                      data-parent="#accordionExample"
+                    >
+                      <div class="card-body">
+                        Anim pariatur cliche reprehenderit, enim eiusmod high
+                        life accusamus terry richardson ad squid. 3 wolf moon
+                        officia aute, non cupidatat skateboard dolor brunch.
+                        Food truck quinoa nesciunt laborum eiusmod. Brunch 3
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div class="o-InfoBox">
-                  <div class="o-InfoBox__Content">
-                    <h2 class="o-InfoBox__Header">40%</h2>
-                    <div class="o-InfoBox__Text">
-                      <p>team members with over 5 years of experience</p>
+                  <div class="card">
+                    <div class="card-header" id="headingThree">
+                      <h5 class="mb-0">
+                        <button
+                          class="btn btn-link collapsed"
+                          type="button"
+                          data-toggle="collapse"
+                          data-target="#collapse4"
+                          aria-expanded="false"
+                          aria-controls="collapse4"
+                        >
+                          4. Pay only for the hours you hire
+                        </button>
+                      </h5>
+                    </div>
+                    <div
+                      id="collapse4"
+                      class="collapse"
+                      aria-labelledby="headingThree"
+                      data-parent="#accordionExample"
+                    >
+                      <div class="card-body">
+                        Anim pariatur cliche reprehenderit, enim eiusmod high
+                        life accusamus terry richardson ad squid. 3 wolf moon
+                        officia aute, non cupidatat skateboard dolor brunch.
+                        Food truck quinoa nesciunt laborum eiusmod. Brunch 3
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div class="o-InfoBox">
-                  <div class="o-InfoBox__Content">
-                    <h2 class="o-InfoBox__Header">81%</h2>
-                    <div class="o-InfoBox__Text">
-                      <p>
-                        of respondents report their organisation is being
-                        impacted by AI technologies
-                      </p>
+                  <div class="card">
+                    <div class="card-header" id="headingThree">
+                      <h5 class="mb-0">
+                        <button
+                          class="btn btn-link collapsed"
+                          type="button"
+                          data-toggle="collapse"
+                          data-target="#collapse5"
+                          aria-expanded="false"
+                          aria-controls="collapse5"
+                        >
+                          5. A wide range of services
+                        </button>
+                      </h5>
                     </div>
-                  </div>
-                </div>
-                <div class="o-InfoBox">
-                  <div class="o-InfoBox__Icon">
-                    <div></div>
-                  </div>
-                  <div class="o-InfoBox__Content">
-                    <h2 class="o-InfoBox__Header">175 ZB</h2>
-                    <div class="o-InfoBox__Text">
-                      <p>
-                        the Global Datasphere will grow from 33 Zettabytes (ZB)
-                        in 2018 to 175 ZB by 2025
-                      </p>
+                    <div
+                      id="collapse5"
+                      class="collapse"
+                      aria-labelledby="headingThree"
+                      data-parent="#accordionExample"
+                    >
+                      <div class="card-body">
+                        Anim pariatur cliche reprehenderit, enim eiusmod high
+                        life accusamus terry richardson ad squid. 3 wolf moon
+                        officia aute, non cupidatat skateboard dolor brunch.
+                        Food truck quinoa nesciunt laborum eiusmod. Brunch 3
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -209,6 +286,219 @@ const MobileApplication = () => {
         </div>
         <div class="u-Scanlines"></div>
       </section>
+
+      <section class="common_cta_sec">
+        <div class="container">
+          <div class="s-CsCTA__Text text-center common_cta_inner">
+            <h2 class="u-Center h2--WideTitle">
+              Transform your data into valuable business insights
+            </h2>
+            <div class="u-Center white_text">
+              <p>Start your data transformation now.</p>
+            </div>
+            <NavLink to="/contactUs" className="co-Button">
+              <span>Contact us</span>
+              <i class="ph-arrow-right"></i>
+            </NavLink>
+          </div>
+        </div>
+      </section>
+
+      <section className="expertise_section">
+        <div className="container">
+          <div className="row mb-3">
+            <div className="col-md-12">
+              <div class="main_heading white_text">
+                <h6>Expertise</h6>
+                <div class="reveal-holder custom_aos" data-aos="reveal-item">
+                  <div
+                    class="reveal-block right custom_aos"
+                    data-aos="reveal-right"
+                  ></div>
+                  <h2 class="h2--WithLine">Our Expertise</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="row">
+            <div className="col-md-4">
+              <div className="single_expertise text-center">
+                <div className="expertise_icon_single">
+                  <img
+                    src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/computer.png?alt=media&token=5fe96fea-028d-4578-950f-0b1f8b222932"
+                    className="img-fluid"
+                    alt=""
+                  />
+                </div>
+                <h4>Custom Website Design</h4>
+                <Scrollbars
+                  style={{ height: 100 }}
+                  className="expertise_single_cont"
+                >
+                  <p>
+                    A custom Website Design India will look professional to any
+                    visitors to your website, leading to more conversions,
+                    making your business look more legitimate and credible. The
+                    credibility of a professional site can alleviate concerns
+                    customer may have about security, in particular if you are
+                    selling products from your site. A custom Website Design
+                    gives you an upper hand by catering more towards your
+                    audience and demographic. With a custom website design, you
+                    have the flexibility to customize the functionality and make
+                    changes to the sites as your business deems necessary.
+                  </p>
+                </Scrollbars>
+              </div>
+            </div>
+            <div className="col-md-4">
+              <div className="single_expertise text-center">
+                <div className="expertise_icon_single">
+                  <img
+                    src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/computer.png?alt=media&token=5fe96fea-028d-4578-950f-0b1f8b222932"
+                    className="img-fluid"
+                    alt=""
+                  />
+                </div>
+                <h4>Custom Website Design</h4>
+                <Scrollbars
+                  style={{ height: 100 }}
+                  className="expertise_single_cont"
+                >
+                  <p>
+                    A custom Website Design India will look professional to any
+                    visitors to your website, leading to more conversions,
+                    making your business look more legitimate and credible. The
+                    credibility of a professional site can alleviate concerns
+                    customer may have about security, in particular if you are
+                    selling products from your site. A custom Website Design
+                    gives you an upper hand by catering more towards your
+                    audience and demographic. With a custom website design, you
+                    have the flexibility to customize the functionality and make
+                    changes to the sites as your business deems necessary.
+                  </p>
+                </Scrollbars>
+              </div>
+            </div>
+            <div className="col-md-4">
+              <div className="single_expertise text-center">
+                <div className="expertise_icon_single">
+                  <img
+                    src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/computer.png?alt=media&token=5fe96fea-028d-4578-950f-0b1f8b222932"
+                    className="img-fluid"
+                    alt=""
+                  />
+                </div>
+                <h4>Custom Website Design</h4>
+                <Scrollbars
+                  style={{ height: 100 }}
+                  className="expertise_single_cont"
+                >
+                  <p>
+                    A custom Website Design India will look professional to any
+                    visitors to your website, leading to more conversions,
+                    making your business look more legitimate and credible. The
+                    credibility of a professional site can alleviate concerns
+                    customer may have about security, in particular if you are
+                    selling products from your site. A custom Website Design
+                    gives you an upper hand by catering more towards your
+                    audience and demographic. With a custom website design, you
+                    have the flexibility to customize the functionality and make
+                    changes to the sites as your business deems necessary.
+                  </p>
+                </Scrollbars>
+              </div>
+            </div>
+            <div className="col-md-4">
+              <div className="single_expertise text-center">
+                <div className="expertise_icon_single">
+                  <img
+                    src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/computer.png?alt=media&token=5fe96fea-028d-4578-950f-0b1f8b222932"
+                    className="img-fluid"
+                    alt=""
+                  />
+                </div>
+                <h4>Custom Website Design</h4>
+                <Scrollbars
+                  style={{ height: 100 }}
+                  className="expertise_single_cont"
+                >
+                  <p>
+                    A custom Website Design India will look professional to any
+                    visitors to your website, leading to more conversions,
+                    making your business look more legitimate and credible. The
+                    credibility of a professional site can alleviate concerns
+                    customer may have about security, in particular if you are
+                    selling products from your site. A custom Website Design
+                    gives you an upper hand by catering more towards your
+                    audience and demographic. With a custom website design, you
+                    have the flexibility to customize the functionality and make
+                    changes to the sites as your business deems necessary.
+                  </p>
+                </Scrollbars>
+              </div>
+            </div>
+            <div className="col-md-4">
+              <div className="single_expertise text-center">
+                <div className="expertise_icon_single">
+                  <img
+                    src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/computer.png?alt=media&token=5fe96fea-028d-4578-950f-0b1f8b222932"
+                    className="img-fluid"
+                    alt=""
+                  />
+                </div>
+                <h4>Custom Website Design</h4>
+                <Scrollbars
+                  style={{ height: 100 }}
+                  className="expertise_single_cont"
+                >
+                  <p>
+                    A custom Website Design India will look professional to any
+                    visitors to your website, leading to more conversions,
+                    making your business look more legitimate and credible. The
+                    credibility of a professional site can alleviate concerns
+                    customer may have about security, in particular if you are
+                    selling products from your site. A custom Website Design
+                    gives you an upper hand by catering more towards your
+                    audience and demographic. With a custom website design, you
+                    have the flexibility to customize the functionality and make
+                    changes to the sites as your business deems necessary.
+                  </p>
+                </Scrollbars>
+              </div>
+            </div>
+            <div className="col-md-4">
+              <div className="single_expertise text-center">
+                <div className="expertise_icon_single">
+                  <img
+                    src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/computer.png?alt=media&token=5fe96fea-028d-4578-950f-0b1f8b222932"
+                    className="img-fluid"
+                    alt=""
+                  />
+                </div>
+                <h4>Custom Website Design</h4>
+                <Scrollbars
+                  style={{ height: 100 }}
+                  className="expertise_single_cont"
+                >
+                  <p>
+                    A custom Website Design India will look professional to any
+                    visitors to your website, leading to more conversions,
+                    making your business look more legitimate and credible. The
+                    credibility of a professional site can alleviate concerns
+                    customer may have about security, in particular if you are
+                    selling products from your site. A custom Website Design
+                    gives you an upper hand by catering more towards your
+                    audience and demographic. With a custom website design, you
+                    have the flexibility to customize the functionality and make
+                    changes to the sites as your business deems necessary.
+                  </p>
+                </Scrollbars>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section class="s-TextBlock">
         <div class="container">
           <div class="row pa_100 t-Dark">
@@ -283,6 +573,7 @@ const MobileApplication = () => {
           </div>
         </div>
       </section>
+
       <section class="s-CsCTA t-LightText">
         <div class="container">
           <div class="s-CsCTA__Text text-center">

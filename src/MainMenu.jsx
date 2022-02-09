@@ -28,14 +28,14 @@ const MainMenu = () => {
                   <Link
                     activeClassName="navbar__link--active"
                     className=" sidemenu__item"
-                    to="/mobileApplication"
+                    to="/mobile-application"
                   >
                     <span class="sidemenu__item-inner">Mobile Application</span>
                   </Link>
                   <Link
                     activeClassName="navbar__link--active"
                     className=" sidemenu__item"
-                    to="/softwareDevelopment"
+                    to="/software-development"
                   >
                     <span class="sidemenu__item-inner">
                       Software Development
@@ -44,14 +44,14 @@ const MainMenu = () => {
                   <Link
                     activeClassName="navbar__link--active"
                     className=" sidemenu__item"
-                    to="/UiUxDesign"
+                    to="/ui-ux-design"
                   >
                     <span class="sidemenu__item-inner">UI/UX Design</span>
                   </Link>
                   <Link
                     activeClassName="navbar__link--active"
                     className=" sidemenu__item"
-                    to="/WebDevelopment"
+                    to="/web-development"
                   >
                     <span class="sidemenu__item-inner">Web Development</span>
                   </Link>
@@ -59,7 +59,7 @@ const MainMenu = () => {
                   <Link
                     activeClassName="navbar__link--active"
                     className=" sidemenu__item"
-                    to="/QaAndTesting"
+                    to="/QA-testing"
                   >
                     <span class="sidemenu__item-inner">QA and Testing</span>
                   </Link>
@@ -79,14 +79,15 @@ const MainMenu = () => {
             <div class="menu__item menu__item--2">
               <div class="menu__item-inner">
                 <div class="sidemenu">
-                  <a
-                    href="https://www.excellisit.com/back-office-process-outsourcing-services"
-                    class="sidemenu__item"
+                  <Link
+                    activeClassName="navbar__link--active"
+                    className=" sidemenu__item"
+                    to="/back-office-process-outsourcing-services"
                   >
                     <span class="sidemenu__item-inner">
                       Back office process outsourcing
                     </span>
-                  </a>
+                  </Link>
                   <a
                     href="https://www.excellisit.com/call-center-outsourcing-service"
                     class="sidemenu__item"

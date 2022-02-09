@@ -14,7 +14,7 @@ export class OurBlog extends React.Component {
   }
   getUsersData() {
     axios
-      .get(`/admin/getBlogData/6`, {})
+      .get(`/admin/getBlogData/4`, {})
       .then((res) => {
         const data = res.data;
         //console.log(data);
@@ -50,10 +50,10 @@ export class OurBlog extends React.Component {
   render() {
     return (
       <div>
-        <section className="our_blog_sec">
-          <div className="section_typing">
+        <section className="our_blog_sec pt-0">
+          {/* <div className="section_typing">
             <Typed strings={["Our Worldwide CLients"]} typeSpeed={150} />
-          </div>
+          </div> */}
           <div className="container-fluid">
             <div className="row col_position">{this.state.blogs}</div>
           </div>

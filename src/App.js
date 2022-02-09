@@ -46,19 +46,19 @@ function App() {
         <Route path="/process" component={Process} />
         <Route path="/Ourblogs" component={BlogPage} />
         <Route path="/blogDetail/:Title" exact component={BlogDetails} />
-        <Route path="/PrivacyPolicy" component={PrivacyPolicy} />
-        <Route path="/TermConditions" component={TermConditions} />
-        <Route path="/ContactUs" component={ContactUs} />
+        <Route path="/privacy-policy" component={PrivacyPolicy} />
+        <Route path="/terms-and-condition" component={TermConditions} />
+        <Route path="/contactus" component={ContactUs} />
         <Route path="/itServices" component={ItServices} />
-        <Route path="/mobileApplication" component={MobileApplication} />
-        <Route path="/softwareDevelopment" component={SoftwareDevelopment} />
-        <Route path="/UiUxDesign" component={UiUxDesign} />
-        <Route path="/WebDevelopment" component={WebDevelopment} />
-        <Route path="/PartnerWithus" component={PartnerWithUs} />
-        <Route path="/QaAndTesting" component={QaAndTesting} />
+        <Route path="/mobile-application" component={MobileApplication} />
+        <Route path="/software-development" component={SoftwareDevelopment} />
+        <Route path="/ui-ux-design" component={UiUxDesign} />
+        <Route path="/web-development" component={WebDevelopment} />
+        <Route path="/partner-with-us" component={PartnerWithUs} />
+        <Route path="/QA-testing" component={QaAndTesting} />
         <Route path="/Portfolio" component={Portfolio} />
         <Route
-          path="/BackofficeProcess"
+          path="/back-office-process-outsourcing-services"
           component={BackOfficeProcessOutsourcing}
         />
         <Route component={Error} />

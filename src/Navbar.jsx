@@ -152,7 +152,7 @@ const Navbar = ({ activeStatus }) => {
                       </Link>
                     </li>
                     <li className={activeStatus == "partner" ? "active" : ""}>
-                      <Link exact className="nav-link" to="/PartnerWithus">
+                      <Link exact className="nav-link" to="/partner-with-us">
                         Partner With Us
                       </Link>
                     </li>

@@ -1032,7 +1032,44 @@
 }
 
 /*********************************************************Portfolio design******************************************/
+.app_details h4 {
+  font-family: var(--heading-font);
+  color: var(--theme-yellow1);
+  margin-bottom: 15px;
+  font-size: 35px;
+}
 
+.app_favicon {
+  width: 90px;
+  margin: 10px auto;
+  border: 1px solid #ccc;
+  background-color: #f7f7f7;
+  border-radius: 15px;
+  height: 90px;
+  box-shadow: 5px 5px 15px #101010;
+}
+.app_favicon img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.app_details p {
+  color: var(--text-white1);
+  font-size: 18px;
+  font-family: var(--body-font);
+  letter-spacing: 0.5px;
+  font-weight: 300;
+}
+.swiper-button-next,
+.swiper-button-prev {
+  color: var(--text-white1);
+}
+.app_details {
+  margin-top: 30px;
+  background-color: var(--theme-dark1);
+  padding: 30px;
+}
 .portfolio_inner:before {
   content: "";
   position: absolute;

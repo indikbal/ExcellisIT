@@ -83,7 +83,7 @@
 }
 .s-BannerServices .u-Scanlines {
   position: absolute;
-  bottom: 0;
+  bottom: -50px;
   left: 0;
   width: 100%;
   height: 10vh;
@@ -750,4 +750,97 @@
   .s-TechnologiesLogos__Inner {
     padding: 10px;
   }
+}
+
+/***************************Why hire us**************************************************************/
+.why_hire_us_sec .card {
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 0px;
+}
+.why_hire_us_sec .card .card-header {
+  background-color: var(--theme-dark2);
+  border: none;
+  border-radius: 0px;
+  padding: 0;
+}
+.why_hire_us_sec .card .card-header h5 {
+  color: var(--theme-yellow1);
+}
+.why_hire_us_sec .card .card-header h5 button {
+  color: var(--theme-yellow1);
+  width: 100%;
+  text-align: left;
+  padding: 15px;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+.why_hire_us_sec .card .card-header h5 button:active {
+  text-decoration: none;
+}
+.why_hire_us_sec .card .card-header h5 button:focus {
+  box-shadow: none;
+  outline: none;
+}
+.why_hire_us_sec .card .card-body {
+  background-color: var(--theme-dark1);
+  border: 1px solid var(--theme-dark2);
+  color: var(--text-white1);
+}
+
+.company_intro p {
+  color: var(--text-white1);
+}
+.s-BannerServices {
+  padding: 100px 0;
+}
+.common_cta_inner {
+  background-color: var(--theme-yellow1);
+  padding: 70px 0 !important;
+  border-radius: 10px;
+}
+.common_cta_sec {
+  position: relative;
+  z-index: 9;
+}
+
+.expertise_section {
+  padding: 100px 0;
+  position: relative;
+  z-index: 9;
+}
+.single_expertise {
+  background-color: var(--theme-dark2);
+  padding: 30px;
+  margin-bottom: 30px;
+
+  transition: ease-in all 0.3s;
+}
+.single_expertise:hover {
+  border-radius: 0px 45px 0 0;
+  transition: ease-in all 0.3s;
+  box-shadow: 10px 12px 34px rgb(0 0 0 / 60%);
+}
+.single_expertise:hover img {
+  transform: rotate(-15deg);
+  transition: ease-in all 0.3s;
+}
+.single_expertise img {
+  transition: ease-in all 0.3s;
+}
+.single_expertise h4 {
+  color: var(--theme-yellow1);
+  margin-bottom: 20px;
+  font-family: var(--heading-font);
+}
+.single_expertise p {
+  color: var(--text-white1);
+  font-size: 15px;
+}
+.expertise_icon_single {
+  width: 25%;
+  margin: 0px auto;
+  margin-bottom: 15px;
+  transition: ease-in all 0.3s;
 }

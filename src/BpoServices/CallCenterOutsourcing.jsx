@@ -1,5 +1,4 @@
 import React from "react";
-import "./bposervices.css";
 import Navbar from "../Navbar";
 import Footer from "../Footer";
 import InnerBanner from "../InnerBanner";
