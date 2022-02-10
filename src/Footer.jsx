@@ -5,6 +5,32 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <div>
+      <section class="newsletter_sec">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-md-7">
+              <div class="newsletter_text">
+                <h4>
+                  Subscribe to <span>our newsletter</span>
+                </h4>
+                <p>
+                  Sign up to our newsletter and we’ll keep you up to date with
+                  the latest arrivals{" "}
+                </p>
+                <div class="subscribe_form">
+                  <input type="text" placeholder="Type your Email Address" />
+                  <button class="bubscribe_btn">Subscribe</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-5">
+              <div class="newsletter_image">
+                <img src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/newsletter.png?alt=media&token=0f69103b-41f3-4067-886f-1afd3189c9ae" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <div class="reveal-holder custom_aos" data-aos="reveal-item">
         <div
           class="reveal-block right custom_aos"

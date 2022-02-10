@@ -6,14 +6,18 @@ import InnerBanner from "../InnerBanner";
 import { Helmet } from "react-helmet";
 import { NavLink } from "react-router-dom";
 import { Scrollbars } from "react-custom-scrollbars-2";
-import IndustriesWeCovered from "../Appcontainer/IndustriesWeCovered";
+import { Swiper, SwiperSlide } from "swiper/react";
+import SwiperCore, { Navigation, Pagination, Autoplay } from "swiper";
+import OurClients from "../Appcontainer/OurClients";
+import OurBlogs from "../Appcontainer/OurBlog";
+import TestimonialSection from "../TestimonialSection";
 
+SwiperCore.use([Navigation, Pagination, Autoplay]);
 const bootstrap =
   "https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/technology%2FBootstrap.png?alt=media&token=c7d7a420-6618-480c-acb4-639820d666f9";
 const java =
   "https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/technology%2FJava.png?alt=media&token=57226ce3-176b-491c-a540-1101d44c47cf";
-const ndk =
-  "https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/technology%2FNDK.png?alt=media&token=f4b6173a-e443-49cc-9762-9b6742b0eb76";
+
 const xd =
   "https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/technology%2Fadobe-xd.png?alt=media&token=7a378aeb-be0a-4e56-807b-b380b8053710";
 const angular =
@@ -294,9 +298,13 @@ const MobileApplication = () => {
               Transform your data into valuable business insights
             </h2>
             <div class="u-Center white_text">
-              <p>Start your data transformation now.</p>
+              <p>
+                We will also work together with your domain experts and empower
+                them with technology to support their analysis procedures and
+                decision-making processes in your organisation.
+              </p>
             </div>
-            <NavLink to="/contactUs" className="co-Button">
+            <NavLink to="/contactUs" className="dark-btn2">
               <span>Contact us</span>
               <i class="ph-arrow-right"></i>
             </NavLink>
@@ -499,74 +507,352 @@ const MobileApplication = () => {
         </div>
       </section>
 
-      <section class="s-TextBlock">
-        <div class="container">
-          <div class="row pa_100 t-Dark">
-            <div class="s-TextBlock__BackgroundIcon"></div>
-            <div class="columns s-TextBlock__Intro">
+      <section className="inner_page_industries">
+        <div className="container">
+          <div className="row mb-3">
+            <div className="col-md-12">
               <div class="main_heading white_text">
-                <h6>Benefits</h6>
+                <h6>Industries</h6>
                 <div class="reveal-holder custom_aos" data-aos="reveal-item">
                   <div
                     class="reveal-block right custom_aos"
                     data-aos="reveal-right"
                   ></div>
-                  <h2 class="h2--WithLine">
-                    What will you <strong>get</strong>?
-                  </h2>
+                  <h2 class="h2--WithLine">Industries WE served</h2>
                 </div>
               </div>
             </div>
-            <div class="s-TextBlock__Content">
-              <div class="row">
-                <div class="col-md-6 o-Article">
-                  <ul>
-                    <li>
-                      <strong>Data transformed into knowledge</strong> that
-                      provides information in real-time and allows for making
-                      better decisions, meeting your timelines
-                    </li>
-                    <li>
-                      Design and implementation of data platforms together with{" "}
-                      <strong>
-                        advanced data processing, analysis and visualization
-                      </strong>
-                    </li>
-                    <li>
-                      Advice on what can be done using the data you provided,
-                      leading you towards the{" "}
-                      <strong>appropriate solution</strong>
-                    </li>
-                    <li>
-                      Comprehensive analytical models that{" "}
-                      <strong>facilitate decision making,</strong> understanding
-                      trends and finding unseen patterns
-                    </li>
-                  </ul>
+          </div>
+          <div className="row">
+            <div className="col-md-12">
+              <div className="inner_industries_inner">
+                <Swiper
+                  modules={[Navigation]}
+                  slidesPerView={4}
+                  spaceBetween={0}
+                  navigation
+                  autoplay={{ delay: 3000 }}
+                  className="mySwiper"
+                  breakpoints={{
+                    700: {
+                      spaceBetween: 0,
+                      slidesPerView: 4,
+                    },
+                    500: {
+                      spaceBetween: 100,
+                      slidesPerView: 2,
+                    },
+                    411: {
+                      spaceBetween: 100,
+                      slidesPerView: 2,
+                    },
+                    300: {
+                      spaceBetween: 0,
+                      slidesPerView: 1,
+                    },
+                  }}
+                >
+                  <SwiperSlide>
+                    <div className="inner_single_industries">
+                      <img
+                        src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/industries%2Fagriculture.jpg?alt=media&token=7bd6589c-bc10-41ca-8118-72b04ba4eaed"
+                        alt=""
+                        className="img-fluid"
+                      />
+                      <div className="inner_single_industries_cont">
+                        <h4>Agriculture</h4>
+                        <p>
+                          A custom Website Design India will look professional
+                          to any visitors to your website, leading to more
+                          conversions
+                        </p>
+                      </div>
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    {" "}
+                    <div className="inner_single_industries">
+                      <img
+                        src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/industries%2Fbanking.jpg?alt=media&token=31617527-b57e-4d92-9540-ad5a03a4b2f7"
+                        alt=""
+                        className="img-fluid"
+                      />
+                      <div className="inner_single_industries_cont">
+                        <h4>Banking</h4>
+                        <p>
+                          A custom Website Design India will look professional
+                          to any visitors to your website, leading to more
+                          conversions
+                        </p>
+                      </div>
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    {" "}
+                    <div className="inner_single_industries">
+                      <img
+                        src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/industries%2Fecommerce.jpg?alt=media&token=432f7c80-2e48-4776-b397-75e58aaca633"
+                        alt=""
+                        className="img-fluid"
+                      />
+                      <div className="inner_single_industries_cont">
+                        <h4>E-commerce</h4>
+                        <p>
+                          A custom Website Design India will look professional
+                          to any visitors to your website, leading to more
+                          conversions
+                        </p>
+                      </div>
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    {" "}
+                    <div className="inner_single_industries">
+                      <img
+                        src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/industries%2Feducation.jpg?alt=media&token=50c74e90-077f-4bb8-9800-f47d2e939a8e"
+                        alt=""
+                        className="img-fluid"
+                      />
+                      <div className="inner_single_industries_cont">
+                        <h4>Education</h4>
+                        <p>
+                          A custom Website Design India will look professional
+                          to any visitors to your website, leading to more
+                          conversions
+                        </p>
+                      </div>
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    {" "}
+                    <div className="inner_single_industries">
+                      <img
+                        src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/industries%2Fenergy.jpg?alt=media&token=d6e9327d-cf5a-4bad-8922-146d0316fafc"
+                        alt=""
+                        className="img-fluid"
+                      />
+                      <div className="inner_single_industries_cont">
+                        <h4>Energy</h4>
+                        <p>
+                          A custom Website Design India will look professional
+                          to any visitors to your website, leading to more
+                          conversions
+                        </p>
+                      </div>
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    {" "}
+                    <div className="inner_single_industries">
+                      <img
+                        src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/industries%2Ffood-resturent.jpg?alt=media&token=27c9bfa9-e3fa-4d04-b8ac-3bda56b6926d"
+                        alt=""
+                        className="img-fluid"
+                      />
+                      <div className="inner_single_industries_cont">
+                        <h4>Food & Resrurent</h4>
+                        <p>
+                          A custom Website Design India will look professional
+                          to any visitors to your website, leading to more
+                          conversions
+                        </p>
+                      </div>
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    {" "}
+                    <div className="inner_single_industries">
+                      <img
+                        src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/industries%2Flogistics.jpg?alt=media&token=8f039e42-a3cb-46e6-83c2-3d4835908c62"
+                        alt=""
+                        className="img-fluid"
+                      />
+                      <div className="inner_single_industries_cont">
+                        <h4>Logistic</h4>
+                        <p>
+                          A custom Website Design India will look professional
+                          to any visitors to your website, leading to more
+                          conversions
+                        </p>
+                      </div>
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    {" "}
+                    <div className="inner_single_industries">
+                      <img
+                        src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/industries%2Fmanufacture.jpg?alt=media&token=fdfca7c2-a9cb-4493-ba34-7e1936216675"
+                        alt=""
+                        className="img-fluid"
+                      />
+                      <div className="inner_single_industries_cont">
+                        <h4> Manufacture</h4>
+                        <p>
+                          A custom Website Design India will look professional
+                          to any visitors to your website, leading to more
+                          conversions
+                        </p>
+                      </div>
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    {" "}
+                    <div className="inner_single_industries">
+                      <img
+                        src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/industries%2Fmedia-entertainment.jpg?alt=media&token=19ea18ed-c6e1-4027-b40b-77f1af783358"
+                        alt=""
+                        className="img-fluid"
+                      />
+                      <div className="inner_single_industries_cont">
+                        <h4>Media & Entertainment</h4>
+                        <p>
+                          A custom Website Design India will look professional
+                          to any visitors to your website, leading to more
+                          conversions
+                        </p>
+                      </div>
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    {" "}
+                    <div className="inner_single_industries">
+                      <img
+                        src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/industries%2Freal-state.jpg?alt=media&token=32d06a45-6318-49b9-936c-4e817aaabf88"
+                        alt=""
+                        className="img-fluid"
+                      />
+                      <div className="inner_single_industries_cont">
+                        <h4>Real State</h4>
+                        <p>
+                          A custom Website Design India will look professional
+                          to any visitors to your website, leading to more
+                          conversions
+                        </p>
+                      </div>
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    {" "}
+                    <div className="inner_single_industries">
+                      <img
+                        src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/industries%2Fretail.jpg?alt=media&token=3d936774-05a1-4442-b72b-cd7f8b230030"
+                        alt=""
+                        className="img-fluid"
+                      />
+                      <div className="inner_single_industries_cont">
+                        <h4>Retail</h4>
+                        <p>
+                          A custom Website Design India will look professional
+                          to any visitors to your website, leading to more
+                          conversions
+                        </p>
+                      </div>
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    {" "}
+                    <div className="inner_single_industries">
+                      <img
+                        src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/industries%2Fsocial-network.jpg?alt=media&token=264215f6-fd0f-4a89-9d14-8d499ba255a8"
+                        alt=""
+                        className="img-fluid"
+                      />
+                      <div className="inner_single_industries_cont">
+                        <h4>Social Networks</h4>
+                        <p>
+                          A custom Website Design India will look professional
+                          to any visitors to your website, leading to more
+                          conversions
+                        </p>
+                      </div>
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    {" "}
+                    <div className="inner_single_industries">
+                      <img
+                        src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/industries%2Fsports-gaming.jpg?alt=media&token=f070189a-a11b-4e8e-8d71-a1c6ee80cd12"
+                        alt=""
+                        className="img-fluid"
+                      />
+                      <div className="inner_single_industries_cont">
+                        <h4>Sports & Gaming</h4>
+                        <p>
+                          A custom Website Design India will look professional
+                          to any visitors to your website, leading to more
+                          conversions
+                        </p>
+                      </div>
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    {" "}
+                    <div className="inner_single_industries">
+                      <img
+                        src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/industries%2Ftelecom.jpg?alt=media&token=f849fc3e-ff94-4aed-8b32-8f272be76ae9"
+                        alt=""
+                        className="img-fluid"
+                      />
+                      <div className="inner_single_industries_cont">
+                        <h4>Telecome</h4>
+                        <p>
+                          A custom Website Design India will look professional
+                          to any visitors to your website, leading to more
+                          conversions
+                        </p>
+                      </div>
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    {" "}
+                    <div className="inner_single_industries">
+                      <img
+                        src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/industries%2Ftour.jpg?alt=media&token=24ef4900-5db4-44cd-a440-04d01cf5c797"
+                        alt=""
+                        className="img-fluid"
+                      />
+                      <div className="inner_single_industries_cont">
+                        <h4>Tour & Travel</h4>
+                        <p>
+                          A custom Website Design India will look professional
+                          to any visitors to your website, leading to more
+                          conversions
+                        </p>
+                      </div>
+                    </div>
+                  </SwiperSlide>
+                </Swiper>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <OurClients />
+
+      <TestimonialSection />
+
+      <section className="cta2_section">
+        <div className="container">
+          <div className="row">
+            <div className="col-md-12">
+              <div className="cta2_inner d-block d-sm-flex align-items-center">
+                <div className="cta2_img_sec">
+                  <img
+                    src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/get_in_touch.jpg?alt=media&token=ee75d316-dacb-4289-ad29-58397cd83b83"
+                    alt=""
+                  />
                 </div>
-                <div class="col-md-6 o-Article">
-                  <ul>
-                    <li>
-                      Comprehensive IoT platforms – from collecting and
-                      organising the data from various devices, through
-                      processes engaging{" "}
-                      <strong>Artificial Intelligence algorithms</strong>, to
-                      adding customer and business value
-                    </li>
-                    <li>
-                      Continuous monitoring of the effectiveness of your
-                      activities as well as{" "}
-                      <strong>predictive maintenance</strong> and anomaly
-                      detection solutions thanks to Machine Learning models
-                    </li>
-                    <li>
-                      <strong>
-                        Segmentation, categorisation, recommendation
-                      </strong>{" "}
-                      and natural language processing problems solved by means
-                      of Artificial Intelligence application
-                    </li>
-                  </ul>
+                <div className="cta2_content_sec text-left">
+                  <h4>Transform your data into valuable business insights</h4>
+                  <p>
+                    We can design processes that visualise data processing,
+                    design and create a solution from scratch based on existing
+                    mathematical
+                  </p>
+                  <a href="#" className="light-btn">
+                    Get in Touch
+                  </a>
                 </div>
               </div>
             </div>
@@ -574,195 +860,178 @@ const MobileApplication = () => {
         </div>
       </section>
 
-      <section class="s-CsCTA t-LightText">
-        <div class="container">
-          <div class="s-CsCTA__Text text-center">
-            <h2 class="u-Center h2--WideTitle">
-              Transform your data into valuable business insights
-            </h2>
-            <div class="u-Center white_text">
-              <p>Start your data transformation now.</p>
-            </div>
-            <NavLink to="/contactUs" className="co-Button">
-              <span>Contact us</span>
-              <i class="ph-arrow-right"></i>
-            </NavLink>
-          </div>
-        </div>
-      </section>
-      <section class="s-ImageText s-ImageText--Reversed">
-        <div class="container">
-          <div class="row l-ContentColumn">
-            <div class="s-ImageText__ImageContainer col-md-7 order-1 order-sm-2">
-              <div class="reveal-holder custom_aos" data-aos="reveal-item">
-                <div
-                  class="reveal-block right custom_aos"
-                  data-aos="reveal-right"
-                ></div>
-                <img
-                  src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/data-science_what-will-you-get_1.png?alt=media&token=25411235-6c12-406c-9429-d6f0cf61cb6d"
-                  alt=""
-                  class="s-ImageText__Image"
-                />
+      <section className="common_faq_section">
+        <div className="container">
+          <div className="row">
+            <div className="col-md-6">
+              <div className="faq_title">
+                <h4>
+                  Frequently
+                  <br /> Asked Questions
+                </h4>
               </div>
-            </div>
-            <div class="s-ImageText__Text main_heading dark_text col-md-5 order-2 order-sm-1">
-              <h6>Data Science</h6>
-              <div class="reveal-holder custom_aos" data-aos="reveal-item">
-                <div
-                  class="reveal-block right custom_aos"
-                  data-aos="reveal-right"
-                ></div>
-                <h2 class="h2--WithLine">
-                  We believe that <strong>proper data management</strong> means:
-                </h2>
-              </div>
-              <ul>
-                <li>Making smart business decisions</li>
-                <li>Solution optimisation</li>
-                <li>Transformation of data into knowledge</li>
-                <li>Process Automation</li>
-                <li>Complex data analysis (predictive, nonlinear)</li>
-                <li>High-quality data visualisation</li>
-                <li>Secure data maintenance regardless of its source</li>
-              </ul>
             </div>
           </div>
-        </div>
-      </section>
-      <section class="s-IconsRoundDark t-Dark ">
-        <div class="container">
-          <div class="row l-ContentColumn">
-            <div class="col-md-4 main_heading white_text">
-              <h6>The process</h6>
-              <div class="reveal-holder custom_aos" data-aos="reveal-item">
-                <div
-                  class="reveal-block right custom_aos"
-                  data-aos="reveal-right"
-                ></div>
-                <h2 class="h2--WithLine">
-                  Steps in <strong>data processing</strong>
-                </h2>
+          <div className="row">
+            <div className="col-md-12">
+              <div className="faq_inner">
+                <div class="accordion" id="faqaccordian">
+                  <div class="card">
+                    <div class="card-header" id="headingOne">
+                      <h5 class="mb-0">
+                        <button
+                          class="btn btn-link"
+                          type="button"
+                          data-toggle="collapse"
+                          data-target="#faq1"
+                          aria-expanded="true"
+                          aria-controls="faq1"
+                        >
+                          <span>1.</span> High-quality Output
+                        </button>
+                      </h5>
+                    </div>
+
+                    <div
+                      id="faq1"
+                      class="collapse show"
+                      aria-labelledby="heading1"
+                      data-parent="#faqaccordian"
+                    >
+                      <div class="card-body">
+                        Anim pariatur cliche reprehenderit, enim eiusmod high
+                        life accusamus terry richardson ad squid. 3 wolf moon
+                        officia aute, non cupidatat skateboard dolor brunch.
+                        Food truck quinoa nesciunt laborum eiusmod. Brunch 3
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header" id="headingTwo">
+                      <h5 class="mb-0">
+                        <button
+                          class="btn btn-link collapsed"
+                          type="button"
+                          data-toggle="collapse"
+                          data-target="#faq2"
+                          aria-expanded="false"
+                          aria-controls="faq1"
+                        >
+                          <span>2.</span> Cost-Savings
+                        </button>
+                      </h5>
+                    </div>
+                    <div
+                      id="faq1"
+                      class="collapse"
+                      aria-labelledby="headingTwo"
+                      data-parent="#faqaccordian"
+                    >
+                      <div class="card-body">
+                        Anim pariatur cliche reprehenderit, enim eiusmod high
+                        life accusamus terry richardson ad squid. 3 wolf moon
+                        officia aute, non cupidatat skateboard dolor brunch.
+                        Food truck quinoa nesciunt laborum eiusmod. Brunch 3
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header" id="headingThree">
+                      <h5 class="mb-0">
+                        <button
+                          class="btn btn-link collapsed"
+                          type="button"
+                          data-toggle="collapse"
+                          data-target="#faq3"
+                          aria-expanded="false"
+                          aria-controls="faq3"
+                        >
+                          <span>3.</span> Finding the best web designers in
+                          India is easy
+                        </button>
+                      </h5>
+                    </div>
+                    <div
+                      id="faq3"
+                      class="collapse"
+                      aria-labelledby="headingThree"
+                      data-parent="#faqaccordian"
+                    >
+                      <div class="card-body">
+                        Anim pariatur cliche reprehenderit, enim eiusmod high
+                        life accusamus terry richardson ad squid. 3 wolf moon
+                        officia aute, non cupidatat skateboard dolor brunch.
+                        Food truck quinoa nesciunt laborum eiusmod. Brunch 3
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header" id="headingThree">
+                      <h5 class="mb-0">
+                        <button
+                          class="btn btn-link collapsed"
+                          type="button"
+                          data-toggle="collapse"
+                          data-target="#faq4"
+                          aria-expanded="false"
+                          aria-controls="faq4"
+                        >
+                          <span>4.</span> Pay only for the hours you hire
+                        </button>
+                      </h5>
+                    </div>
+                    <div
+                      id="faq4"
+                      class="collapse"
+                      aria-labelledby="headingThree"
+                      data-parent="#faqaccordian"
+                    >
+                      <div class="card-body">
+                        Anim pariatur cliche reprehenderit, enim eiusmod high
+                        life accusamus terry richardson ad squid. 3 wolf moon
+                        officia aute, non cupidatat skateboard dolor brunch.
+                        Food truck quinoa nesciunt laborum eiusmod. Brunch 3
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header" id="headingThree">
+                      <h5 class="mb-0">
+                        <button
+                          class="btn btn-link collapsed"
+                          type="button"
+                          data-toggle="collapse"
+                          data-target="#faq5"
+                          aria-expanded="false"
+                          aria-controls="faq5"
+                        >
+                          <span>5.</span>A wide range of services
+                        </button>
+                      </h5>
+                    </div>
+                    <div
+                      id="faq5"
+                      class="collapse"
+                      aria-labelledby="headingThree"
+                      data-parent="#faqaccordian"
+                    >
+                      <div class="card-body">
+                        Anim pariatur cliche reprehenderit, enim eiusmod high
+                        life accusamus terry richardson ad squid. 3 wolf moon
+                        officia aute, non cupidatat skateboard dolor brunch.
+                        Food truck quinoa nesciunt laborum eiusmod. Brunch 3
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <p>
-                We are looking for the right place to store your data and the
-                best ways to use it, tailored to your needs and to the problem
-                at hand. We also understand the{" "}
-                <strong>importance of scalability</strong> and will assure that
-                the application scales well, based on the specific set of data
-                and specific problem.
-              </p>
-            </div>
-            <div class="col-md-8 xsmall-24 large-18 xlarge-17 s-IconsRoundDark__Content s-IconsRoundDark__Content--WithText">
-              <p class="s-IconsRoundDark__TopText">
-                Start with the process orchestration in order to execute the
-                following steps:
-              </p>
-              <ul class="s-IconsRoundDark__Tabs">
-                <li class="s-IconsRoundDark__TabContainer s-IconsRoundDark__TabContainer--Five">
-                  <div class="s-IconsRoundDark__TabInner">
-                    <div class="s-IconsRoundDark__Circle">
-                      <i class="ph-article"></i>
-                    </div>
-                    <div class="s-IconsRoundDark__ConnectIcon">
-                      <i class="ph-arrow-right o-Icon--16"></i>
-                    </div>
-                  </div>
-                  <div class="s-IconsRoundDark__Title">Extract</div>
-                </li>
-                <li class="s-IconsRoundDark__TabContainer s-IconsRoundDark__TabContainer--Five">
-                  <div class="s-IconsRoundDark__TabInner">
-                    <div class="s-IconsRoundDark__Circle ">
-                      <i class="ph-scissors"></i>
-                    </div>
-                    <div class="s-IconsRoundDark__ConnectIcon">
-                      <i class="ph-arrow-right o-Icon--16"></i>
-                    </div>
-                  </div>
-                  <div class="s-IconsRoundDark__Title">Clean</div>
-                </li>
-                <li class="s-IconsRoundDark__TabContainer s-IconsRoundDark__TabContainer--Five">
-                  <div class="s-IconsRoundDark__TabInner">
-                    <div class="s-IconsRoundDark__Circle ">
-                      <i class="ph-hard-drives"></i>
-                    </div>
-                    <div class="s-IconsRoundDark__ConnectIcon">
-                      <i class="ph-arrow-right o-Icon--16"></i>
-                    </div>
-                  </div>
-                  <div class="s-IconsRoundDark__Title">Ingest</div>
-                </li>
-                <li class="s-IconsRoundDark__TabContainer s-IconsRoundDark__TabContainer--Five">
-                  <div class="s-IconsRoundDark__TabInner">
-                    <div class="s-IconsRoundDark__Circle ">
-                      <i class="ph-git-fork"></i>
-                    </div>
-                    <div class="s-IconsRoundDark__ConnectIcon">
-                      <i class="ph-arrow-right o-Icon--16"></i>
-                    </div>
-                  </div>
-                  <div class="s-IconsRoundDark__Title">
-                    Process (ML, Data Mining)
-                  </div>
-                </li>
-                <li class="s-IconsRoundDark__TabContainer s-IconsRoundDark__TabContainer--Five">
-                  <div class="s-IconsRoundDark__TabInner">
-                    <div class="s-IconsRoundDark__Circle ">
-                      <i class="ph-desktop"></i>
-                    </div>
-                  </div>
-                  <div class="s-IconsRoundDark__Title">Visualise</div>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="s-ImageText s-ImageText--Reversed">
-        <div class="container">
-          <div class="row l-ContentColumn">
-            <div class="s-ImageText__ImageContainer col-md-8 order-1 order-sm-2">
-              <div class="reveal-holder custom_aos" data-aos="reveal-item">
-                <div
-                  class="reveal-block right custom_aos"
-                  data-aos="reveal-right"
-                ></div>
-                <img
-                  src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/data-science_what-will-you-get_1.png?alt=media&token=25411235-6c12-406c-9429-d6f0cf61cb6d"
-                  alt=""
-                  class="s-ImageText__Image"
-                />
-              </div>
-            </div>
-            <div class="s-ImageText__Text main_heading dark_text col-md-4 order-2 order-sm-1">
-              <h6>Artificial Intelligence & Machine Learning</h6>
-              <div class="reveal-holder custom_aos" data-aos="reveal-item">
-                <div
-                  class="reveal-block right custom_aos"
-                  data-aos="reveal-right"
-                ></div>
-                <h2 class="h2--WithLine">
-                  Transform <strong>your ways of working</strong>
-                </h2>
-              </div>
-              <ul>
-                <li>Making smart business decisions</li>
-                <li>Solution optimisation</li>
-                <li>Transformation of data into knowledge</li>
-                <li>Process Automation</li>
-                <li>Complex data analysis (predictive, nonlinear)</li>
-                <li>High-quality data visualisation</li>
-                <li>Secure data maintenance regardless of its source</li>
-              </ul>
-              <p>
-                Benefit from over 20 years of our experience in{" "}
-                <strong>creating robust software</strong> with a dedicated team,
-                specialised in delivering solutions based on high-quality data.
-              </p>
             </div>
           </div>
         </div>
       </section>
+
+      <OurBlogs />
+
       <section class="sec section_technology">
         <div class="s-TechnologiesLogos s-TechnologiesLogos--WithScanlines ">
           <div class="container">
