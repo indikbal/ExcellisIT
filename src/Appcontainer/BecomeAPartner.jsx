@@ -11,26 +11,20 @@ const BecomeAPartner = () => {
           <div className="row">
             <div className="col-lg-7 col-md-8 pr-0">
               <div className="feature_item_box pl-170">
-                <div className="section_typing">
-                  <Typed strings={["Our Featured Services"]} typeSpeed={150} />
-                </div>
+                {/* <div className="section_typing">
+                  <Typed strings={["Partner With Us"]} typeSpeed={150} />
+                </div> */}
                 <div className="become_content">
                   <h4 data-aos="fade-up" data-aos-duration="500">
-                    Need A Reliable IT partner?
+                    Partner With Us
                   </h4>
-                  <h5 data-aos="fade-up" data-aos-duration="1000">
-                    Here we are!
-                  </h5>
-                  <h6 data-aos="fade-up" data-aos-duration="1500">
-                    COLLABORATE TODAY
-                  </h6>
                   <p data-aos="fade-up" data-aos-duration="1500">
-                    Partnering with EXCELLIS IT helps you in grabbing global
+                    Partnering with Excellis IT helps you in grabbing global
                     opportunities as well as development support in establishing
-                    your brand. With our partnership you can leverage improved
-                    customer relations, reduced operational costs, faster
-                    conversion time, technical assistant, expanded global reach
-                    within an incubating environment.
+                    your brand. By being our partner you can leverage on
+                    improved customer relations, reduced operational costs,
+                    faster conversion time, technical assistant, expanded global
+                    reach that too within an incubating environment.
                   </p>
                   <Link to="/PartnerWithus">
                     <button

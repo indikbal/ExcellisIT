@@ -11,7 +11,7 @@ const FactsAndFigure = () => {
     <div>
       <section className="fact_figure_section">
         <div className="section_typing">
-          <Typed strings={["Our Featured Services"]} typeSpeed={150} />
+          <Typed strings={["Us at a Glance"]} typeSpeed={150} />
         </div>
         <div className="container">
           <div className="row">
@@ -21,7 +21,7 @@ const FactsAndFigure = () => {
               data-aos-duration="500"
             >
               <div className="fact_figure_heading">
-                <h4>Clients Benefit from 6 yers of our Experience</h4>
+                <h4>Clients who benefited from us in the last 6 years</h4>
               </div>
             </div>
             <div

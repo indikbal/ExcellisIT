@@ -11,12 +11,10 @@ const Footer = () => {
             <div class="col-md-7">
               <div class="newsletter_text">
                 <h4>
+                  {" "}
                   Subscribe to <span>our newsletter</span>
                 </h4>
-                <p>
-                  Sign up to our newsletter and we’ll keep you up to date with
-                  the latest arrivals{" "}
-                </p>
+                <p>Sign up to our newsletter and we’ll keep you updated</p>
                 <div class="subscribe_form">
                   <input type="text" placeholder="Type your Email Address" />
                   <button class="bubscribe_btn">Subscribe</button>

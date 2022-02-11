@@ -52,9 +52,9 @@ export class OurBlog extends React.Component {
     return (
       <div>
         <section className="our_blog_sec pt-0">
-          {/* <div className="section_typing">
-            <Typed strings={["Our Worldwide CLients"]} typeSpeed={150} />
-          </div> */}
+          <div className="section_typing">
+            <Typed strings={["Our Latest Blog"]} typeSpeed={150} />
+          </div>
           <div className="container-fluid">
             <div className="row col_position">{this.state.blogs}</div>
           </div>

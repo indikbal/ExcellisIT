@@ -60,14 +60,14 @@ const TestimonialSection = () => {
                 <div className="testin_box_inner">
                   <Scrollbars style={{ height: 200 }}>
                     <p>
-                      The team at EXCELLIS IT worked quickly to get our website
-                      online and provided a step-by-step guide to manage our
-                      expectations. They were easily contactable and were fast
-                      to make amendments ensuring our website was delivered on
-                      time and budget. The EXCELLIS team also helped us by
-                      providing valuable market insight to assist us in
-                      marketing our online services to the public. I would not
-                      hesitate to recommend EXCELLIS for anyone requiring
+                      Excellis IT team quickly got our website online along with
+                      providing us step-by-step guide so that we could manage
+                      our expectations. They were easily contactable and were
+                      fast to make amendments ensuring our website was delivered
+                      on time and in our budget. The Excellis team also helped
+                      us by providing valuable market insight to assist us in
+                      marketing our online services to the public. I would
+                      certainly recommend Excellis to anyone who requires
                       assistance with building and marketing a corporate
                       website.
                     </p>
@@ -81,10 +81,10 @@ const TestimonialSection = () => {
                 <div className="testin_box_inner">
                   <Scrollbars style={{ height: 200 }}>
                     <p>
-                      I have to thank you for your professional services in
-                      making my website come true. You’re very detailed &
-                      focused on making my site very informative & inspiring.
-                      Thank you again, EXCELLIS.
+                      I thank the Excellis team for their professional services
+                      in making my website dream come true. You’re very detailed
+                      and focused on making my site very informative and
+                      inspiring. Thank you again, Excellis IT.
                     </p>
                   </Scrollbars>
                   <div class="testim-box-content mt-3">
@@ -96,8 +96,8 @@ const TestimonialSection = () => {
                 <div className="testin_box_inner">
                   <Scrollbars style={{ height: 200 }}>
                     <p>
-                      EXCELLIS, thank you for all you have done for me and my
-                      business. You guys have been great to work with.
+                      Thank you Excellis IT for your professional help. You guys
+                      have been great to work with.
                     </p>
                   </Scrollbars>
                   <div class="testim-box-content mt-3">

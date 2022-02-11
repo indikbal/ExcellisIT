@@ -57,7 +57,7 @@ const IndustriesWeCovered = () => {
           <div className="row">
             <div className="col-md-12 pl-0 pr-0">
               <div className="section_typing">
-                <Typed strings={["Our Featured Services"]} typeSpeed={150} />
+                <Typed strings={["Industries We Serve"]} typeSpeed={150} />
               </div>
 
               <div className="indus_slider_wrapper">
@@ -159,9 +159,9 @@ const IndustriesWeCovered = () => {
                     <div className="single_indus_content">
                       <h4>Travel & Tourism</h4>
                       <p>
-                        As an experienced travel & hospitality software
-                        development company, we always strives for developing
-                        next-gen and powerful software and mobile applications.
+                        We provide profit-driven IT solutions for hoteliers,
+                        travel agents/agencies, travel partners, hospitality
+                        providers, as well as airlines.
                       </p>
                     </div>
                   </div>
@@ -169,10 +169,9 @@ const IndustriesWeCovered = () => {
                     <div className="single_indus_content">
                       <h4>Banking & Finance</h4>
                       <p>
-                        Excellis IT is a prominent banking & financial software
-                        development company that offers industry-leading
-                        software, mobile applications, portals, and solutions
-                        that are secure, fast, efficient, and easily scalable.
+                        We combine top notch technological developments with
+                        applications to help businesses grow as well as adapt to
+                        this new digital business age.
                       </p>
                     </div>
                   </div>
@@ -180,11 +179,11 @@ const IndustriesWeCovered = () => {
                     <div className="single_indus_content">
                       <h4>Real Estate & Property</h4>
                       <p>
-                        while making real estate business more connected and
-                        easily reachable for maximum engagement, our versatile
-                        real estate developers offer businesses the most
-                        invincible real estate software and applications for web
-                        and smartphones.
+                        We help to transform Real Estate Industry with state of
+                        the art technology solutions which streamline real
+                        estate process and build a smarter collaboration
+                        technique between customers, agents, real estate
+                        companies as well as brokers.
                       </p>
                     </div>
                   </div>
@@ -192,11 +191,9 @@ const IndustriesWeCovered = () => {
                     <div className="single_indus_content">
                       <h4>Retail</h4>
                       <p>
-                        Technology is the reason behind the catalytic growth of
-                        the retail and eCommerce industry. And we, at Excellis
-                        IT, design and develop web and mobile applications and
-                        solutions that foster user engagement and efficiency to
-                        boost business growth like never before.
+                        We provide customized outcomes which are tailored for
+                        our customer based on a profound understanding of their
+                        needs and wants.
                       </p>
                     </div>
                   </div>
@@ -204,9 +201,9 @@ const IndustriesWeCovered = () => {
                     <div className="single_indus_content">
                       <h4>Manufacturing</h4>
                       <p>
-                        Excellis It provides wide range of Manufacturing IT
-                        Services that combat your production challenges while
-                        empowering your business to inspire innovation.
+                        We provide wide range of Manufacturing IT Services that
+                        combat your production challenges while empowering your
+                        business to inspire innovation.
                       </p>
                     </div>
                   </div>
@@ -214,8 +211,12 @@ const IndustriesWeCovered = () => {
                     <div className="single_indus_content">
                       <h4>Energy</h4>
                       <p>
-                        Excellis IT is a leading Hybrid IT solutions provider to
-                        power your business systems.
+                        {" "}
+                        We are a leading Hybrid IT solutions provider to power
+                        your business systems.Media and Entertainment – We
+                        design content-driven engaging, ready to publish, and
+                        engaging solutions allow our clients to convert their
+                        traffic into customers
                       </p>
                     </div>
                   </div>
@@ -235,9 +236,9 @@ const IndustriesWeCovered = () => {
                     <div className="single_indus_content">
                       <h4>Telecom</h4>
                       <p>
-                        Excellis IT helps you with the most innovative and
-                        efficient enterprise & business solutions that
-                        streamline business processes and minimize challenges in
+                        We help you with the most innovative and efficient
+                        enterprise and business solutions that streamline
+                        business processes and minimize challenges in
                         telecommunication market.
                       </p>
                     </div>
@@ -248,9 +249,9 @@ const IndustriesWeCovered = () => {
                       <p>
                         Food and Beverages are not only a great part of our
                         lives but they are a huge part of online business as
-                        well. For this mushrooming business, Excellis IT bring
-                        the most innovative and impressively smart web and
-                        mobile development solutions.
+                        well. For this mushrooming business, we provide the most
+                        innovative and impressive web and mobile development
+                        solutions.
                       </p>
                     </div>
                   </div>
@@ -258,10 +259,10 @@ const IndustriesWeCovered = () => {
                     <div className="single_indus_content">
                       <h4>Agriculture</h4>
                       <p>
-                        Excellis IT is a versatile agriculture software
-                        development company that has a wide range of tailor-made
-                        agriculture software to offer to the farmers that seek
-                        growth and maximum ROI.
+                        We are a versatile agriculture software development
+                        company with a wide range of tailored agriculture
+                        software for farmers who seek growth along with maximum
+                        ROI.
                       </p>
                     </div>
                   </div>
@@ -269,10 +270,10 @@ const IndustriesWeCovered = () => {
                     <div className="single_indus_content">
                       <h4>Sports & Gaming</h4>
                       <p>
-                        Sports is a multibillion-dollar market and we know how
-                        to help you to develop platforms like sports web and
-                        mobile applications that can channelize revenue to your
-                        side.
+                        Sports and gaming is already a multibillion-dollar
+                        market and we are here to channelize that revenue to
+                        your side by helping you develop sports and gaming
+                        websites and apps.
                       </p>
                     </div>
                   </div>

@@ -27,6 +27,7 @@ import PartnerWithUs from "./Othercontainer/PartnerWithUs";
 import Portfolio from "./Othercontainer/Portfolio";
 import QaAndTesting from "./ItServices/QaAndTesting";
 import BackOfficeProcessOutsourcing from "./BpoServices/BackOfficeProcessOutsourcing";
+import SearchEngineOptimization from "./MarketingServices/SearchEngineOptimization";
 
 function App() {
   AOS.init({
@@ -57,6 +58,10 @@ function App() {
         <Route path="/partner-with-us" component={PartnerWithUs} />
         <Route path="/QA-testing" component={QaAndTesting} />
         <Route path="/Portfolio" component={Portfolio} />
+        <Route
+          path="/search-engine-optimization"
+          component={SearchEngineOptimization}
+        />
         <Route
           path="/back-office-process-outsourcing-services"
           component={BackOfficeProcessOutsourcing}

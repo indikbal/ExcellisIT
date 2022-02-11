@@ -1,5 +1,5 @@
 import React from "react";
-import "./itservices.css";
+import "../ItServices/itservices.css";
 import Navbar from "../Navbar";
 import Footer from "../Footer";
 import InnerBanner from "../InnerBanner";
@@ -39,16 +39,16 @@ const swift =
 const html =
   "https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/technology%2Fhtml-5.png?alt=media&token=41450ff8-8db6-41b9-a3af-1246352334e6";
 
-const MobileApplication = () => {
-  const title = "Mobile Application";
+const SearchEngineOptimization = () => {
+  const title = "Search Engine Optimization";
   const description =
-    "“Are you looking for a reputable android app development company or hybrid app development company? Do not stress out; Excellis IT is the mobile app development agency you can hire fot to-of-the-line mobile app development services.”";
+    "“Best SEO service provider is here to help you with a complete digital transformation.”";
 
   return (
     <div>
       <Helmet>
         <meta charSet="utf-8" />
-        <title>Mobile Application</title>
+        <title>Search Engine Optimization</title>
         <meta name="description" content="aboutpage" />
         <meta name="keywords" content="about page" />
       </Helmet>
@@ -65,28 +65,37 @@ const MobileApplication = () => {
                     data-aos="fade-down"
                     data-aos-duration="1000"
                   >
-                    User-friendly websites
+                    SEO
                   </h6>
                   <h1
                     class="BannerServices__Subheader h1--WithLine"
                     data-aos="fade-down"
                     data-aos-duration="1500"
                   >
-                    Mobile-first and user-friendly websites
+                    Best SEO Service Provider – Excellis IT
                   </h1>
                   <p data-aos="fade-down" data-aos-duration="2000">
-                    Thanks to Data Science you can effectively process data,{" "}
-                    <strong>
-                      base new services and business decisions on knowledge
-                    </strong>{" "}
-                    and improve your day-to-day operations.
+                    Search Engine Optimization is an efficient digital marketing
+                    strategy that enhances the online presence of your business.
+                    SEO optimizes your website and takes it up on Google
+                    rankings so that your website becomes searchable in spite of
+                    huge competition. SEO is a sound digital strategy that
+                    endeavors to maximize sales along with, minimizing customer
+                    acquisition costs.
                   </p>
                   <p>
-                    You have the data and we will give you powerful solutions so
-                    you can use it.{" "}
-                    <strong>
-                      Let’s work together and make the most of it.
-                    </strong>
+                    As a leading SEO company in India, Excellis IT offers the
+                    best SEO services in Kolkata, India. Our affordable SEO
+                    services takes care of the most important aspects of your
+                    business. We are known for dealing with technical aspects
+                    like increasing visibility, site backlinking, website
+                    audits, optimizing content, keyword research, increasing
+                    page speed, mobile optimization, and link building. Our SEO
+                    experts boost your search rankings and make your website
+                    more visible. Excellis IT ensures that your website is among
+                    the links on the first page of Google search. We also make
+                    sure that it is prominently visible in searches by other
+                    search engines.
                   </p>
                 </div>
               </div>
@@ -127,19 +136,18 @@ const MobileApplication = () => {
                 data-aos="fade-down"
                 data-aos-duration="1500"
               >
-                Data <strong>transformed into knowledge</strong>
+                Why Hire SEO Experts from Excellis IT
               </h2>
               <p data-aos="fade-down" data-aos-duration="2000">
-                We can design processes that
-                <strong> visualise data processing,</strong> design and create a
-                solution from scratch based on{" "}
-                <strong>existing mathematical models</strong> and using
-                components to connect them with each other.
+                Experienced SEO professionals – Being among the best search
+                engine optimization company in Kolkata, India, Excellis IT has a
+                skilled team of SEO experts you can completely rely on.
               </p>
               <p>
-                We will also work together with your domain experts and empower
-                them with technology to support their analysis procedures and
-                decision-making processes in your organisation.
+                Assessable Results – We are a reputed SEO company in Kolkata,
+                creating SEO campaigns to generate assessable results for your
+                company, and we also inform you about your keyword ranking and
+                ROI.
               </p>
             </div>
 
@@ -157,7 +165,7 @@ const MobileApplication = () => {
                           aria-expanded="true"
                           aria-controls="collapse1"
                         >
-                          1. High-quality Output
+                          1. Experienced SEO professionals
                         </button>
                       </h5>
                     </div>
@@ -169,10 +177,9 @@ const MobileApplication = () => {
                       data-parent="#accordionExample"
                     >
                       <div class="card-body">
-                        Anim pariatur cliche reprehenderit, enim eiusmod high
-                        life accusamus terry richardson ad squid. 3 wolf moon
-                        officia aute, non cupidatat skateboard dolor brunch.
-                        Food truck quinoa nesciunt laborum eiusmod. Brunch 3
+                        Being among the best search engine optimization company
+                        in Kolkata, India, Excellis IT has a skilled team of SEO
+                        experts you can completely rely on.
                       </div>
                     </div>
                   </div>
@@ -187,7 +194,7 @@ const MobileApplication = () => {
                           aria-expanded="false"
                           aria-controls="collapse2"
                         >
-                          2. Cost-Savings
+                          2. Assessable Results
                         </button>
                       </h5>
                     </div>
@@ -198,10 +205,10 @@ const MobileApplication = () => {
                       data-parent="#accordionExample"
                     >
                       <div class="card-body">
-                        Anim pariatur cliche reprehenderit, enim eiusmod high
-                        life accusamus terry richardson ad squid. 3 wolf moon
-                        officia aute, non cupidatat skateboard dolor brunch.
-                        Food truck quinoa nesciunt laborum eiusmod. Brunch 3
+                        We are a reputed SEO company in Kolkata, creating SEO
+                        campaigns to generate assessable results for your
+                        company, and we also inform you about your keyword
+                        ranking and ROI.
                       </div>
                     </div>
                   </div>
@@ -216,7 +223,7 @@ const MobileApplication = () => {
                           aria-expanded="false"
                           aria-controls="collapse3"
                         >
-                          3. Finding the best web designers in India is easy
+                          3. Data-driven Strategies
                         </button>
                       </h5>
                     </div>
@@ -227,10 +234,9 @@ const MobileApplication = () => {
                       data-parent="#accordionExample"
                     >
                       <div class="card-body">
-                        Anim pariatur cliche reprehenderit, enim eiusmod high
-                        life accusamus terry richardson ad squid. 3 wolf moon
-                        officia aute, non cupidatat skateboard dolor brunch.
-                        Food truck quinoa nesciunt laborum eiusmod. Brunch 3
+                        We are an experienced SEO company, creating strategies
+                        that are based on genuine and authentic market
+                        demographics data to make sure you get the best results.
                       </div>
                     </div>
                   </div>
@@ -245,7 +251,7 @@ const MobileApplication = () => {
                           aria-expanded="false"
                           aria-controls="collapse4"
                         >
-                          4. Pay only for the hours you hire
+                          4. Reports
                         </button>
                       </h5>
                     </div>
@@ -256,10 +262,11 @@ const MobileApplication = () => {
                       data-parent="#accordionExample"
                     >
                       <div class="card-body">
-                        Anim pariatur cliche reprehenderit, enim eiusmod high
-                        life accusamus terry richardson ad squid. 3 wolf moon
-                        officia aute, non cupidatat skateboard dolor brunch.
-                        Food truck quinoa nesciunt laborum eiusmod. Brunch 3
+                        We are a trusted SEO company, and we send our clients
+                        weekly as well as monthly reports consisting of a
+                        detailed description of the SEO activities that we have
+                        implemented on their site so that even they can measure
+                        the results.
                       </div>
                     </div>
                   </div>
@@ -274,7 +281,7 @@ const MobileApplication = () => {
                           aria-expanded="false"
                           aria-controls="collapse5"
                         >
-                          5. A wide range of services
+                          5. Affordable SEO packages
                         </button>
                       </h5>
                     </div>
@@ -285,10 +292,65 @@ const MobileApplication = () => {
                       data-parent="#accordionExample"
                     >
                       <div class="card-body">
-                        Anim pariatur cliche reprehenderit, enim eiusmod high
-                        life accusamus terry richardson ad squid. 3 wolf moon
-                        officia aute, non cupidatat skateboard dolor brunch.
-                        Food truck quinoa nesciunt laborum eiusmod. Brunch 3
+                        Excellis IT provides the best as well as affordable SEO
+                        services in Kolkata, to both small and big businesses
+                        who can easily afford our packages and make the best out
+                        of them.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header" id="headingThree">
+                      <h5 class="mb-0">
+                        <button
+                          class="btn btn-link collapsed"
+                          type="button"
+                          data-toggle="collapse"
+                          data-target="#collapse6"
+                          aria-expanded="false"
+                          aria-controls="collapse6"
+                        >
+                          5.Experts of the field
+                        </button>
+                      </h5>
+                    </div>
+                    <div
+                      id="collapse6"
+                      class="collapse"
+                      aria-labelledby="headingThree"
+                      data-parent="#accordionExample"
+                    >
+                      <div class="card-body">
+                        We have a highly qualified as well as experienced team
+                        who know every aspect of SEO.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header" id="headingThree">
+                      <h5 class="mb-0">
+                        <button
+                          class="btn btn-link collapsed"
+                          type="button"
+                          data-toggle="collapse"
+                          data-target="#collapse7"
+                          aria-expanded="false"
+                          aria-controls="collapse7"
+                        >
+                          5.Transparency
+                        </button>
+                      </h5>
+                    </div>
+                    <div
+                      id="collapse7"
+                      class="collapse"
+                      aria-labelledby="headingThree"
+                      data-parent="#accordionExample"
+                    >
+                      <div class="card-body">
+                        We prefer keeping a long-lasting relation with our
+                        clients and that can only be possible with complete
+                        transparency as well as honest business practices.
                       </div>
                     </div>
                   </div>
@@ -304,23 +366,17 @@ const MobileApplication = () => {
         <div class="container">
           <div class="s-CsCTA__Text text-center common_cta_inner">
             <h2
-              class="u-Center h2--WideTitle"
+              class="u-Center h2--WideTitle mb-4"
               data-aos="fade-down"
               data-aos-duration="1000"
             >
-              Transform your data into valuable business insights
+              Do you want your website to rank no. 1 on Google?
             </h2>
             <div
               class="u-Center white_text"
               data-aos="fade-down"
               data-aos-duration="1000"
-            >
-              <p>
-                We will also work together with your domain experts and empower
-                them with technology to support their analysis procedures and
-                decision-making processes in your organisation.
-              </p>
-            </div>
+            ></div>
             <NavLink
               to="/contactUs"
               className="dark-btn2"
@@ -353,11 +409,7 @@ const MobileApplication = () => {
             </div>
           </div>
           <div className="row">
-            <div
-              className="col-md-4"
-              data-aos="fade-down"
-              data-aos-duration="1000"
-            >
+            <div className="col-md-4" data-aos="fade-down">
               <div className="single_expertise text-center">
                 <div className="expertise_icon_single">
                   <img
@@ -366,31 +418,22 @@ const MobileApplication = () => {
                     alt=""
                   />
                 </div>
-                <h4>Custom Website Design</h4>
+                <h4>International SEO</h4>
                 <Scrollbars
                   style={{ height: 100 }}
                   className="expertise_single_cont"
                 >
                   <p>
-                    A custom Website Design India will look professional to any
-                    visitors to your website, leading to more conversions,
-                    making your business look more legitimate and credible. The
-                    credibility of a professional site can alleviate concerns
-                    customer may have about security, in particular if you are
-                    selling products from your site. A custom Website Design
-                    gives you an upper hand by catering more towards your
-                    audience and demographic. With a custom website design, you
-                    have the flexibility to customize the functionality and make
-                    changes to the sites as your business deems necessary.
+                    International SEO optimizes your presence on your website on
+                    the SERPs when the users place search queries in various
+                    languages and countries. Geo-targeting and other tactics to
+                    optimize your site locally helps you to target customers all
+                    over the world.
                   </p>
                 </Scrollbars>
               </div>
             </div>
-            <div
-              className="col-md-4"
-              data-aos="fade-down"
-              data-aos-duration="1500"
-            >
+            <div className="col-md-4" data-aos="fade-down">
               <div className="single_expertise text-center">
                 <div className="expertise_icon_single">
                   <img
@@ -399,31 +442,21 @@ const MobileApplication = () => {
                     alt=""
                   />
                 </div>
-                <h4>Custom Website Design</h4>
+                <h4>Local SEO</h4>
                 <Scrollbars
                   style={{ height: 100 }}
                   className="expertise_single_cont"
                 >
                   <p>
-                    A custom Website Design India will look professional to any
-                    visitors to your website, leading to more conversions,
-                    making your business look more legitimate and credible. The
-                    credibility of a professional site can alleviate concerns
-                    customer may have about security, in particular if you are
-                    selling products from your site. A custom Website Design
-                    gives you an upper hand by catering more towards your
-                    audience and demographic. With a custom website design, you
-                    have the flexibility to customize the functionality and make
-                    changes to the sites as your business deems necessary.
+                    As the best SEO firm in Kolkata, India, Excellis IT with
+                    Local SEO optimizes the online presence of your business and
+                    drives traffic from the local relevant searches. This helps
+                    in gaining sales from local potential customers.
                   </p>
                 </Scrollbars>
               </div>
             </div>
-            <div
-              className="col-md-4"
-              data-aos="fade-down"
-              data-aos-duration="2000"
-            >
+            <div className="col-md-4" data-aos="fade-down">
               <div className="single_expertise text-center">
                 <div className="expertise_icon_single">
                   <img
@@ -432,31 +465,20 @@ const MobileApplication = () => {
                     alt=""
                   />
                 </div>
-                <h4>Custom Website Design</h4>
+                <h4>E-commerce SEO</h4>
                 <Scrollbars
                   style={{ height: 100 }}
                   className="expertise_single_cont"
                 >
                   <p>
-                    A custom Website Design India will look professional to any
-                    visitors to your website, leading to more conversions,
-                    making your business look more legitimate and credible. The
-                    credibility of a professional site can alleviate concerns
-                    customer may have about security, in particular if you are
-                    selling products from your site. A custom Website Design
-                    gives you an upper hand by catering more towards your
-                    audience and demographic. With a custom website design, you
-                    have the flexibility to customize the functionality and make
-                    changes to the sites as your business deems necessary.
+                    E-commerce SEO ensures that your product pages are among the
+                    top results on the SERPs which in turn helps in bringing you
+                    the desired traffic and sales.
                   </p>
                 </Scrollbars>
               </div>
             </div>
-            <div
-              className="col-md-4"
-              data-aos="fade-down"
-              data-aos-duration="2500"
-            >
+            <div className="col-md-4" data-aos="fade-down">
               <div className="single_expertise text-center">
                 <div className="expertise_icon_single">
                   <img
@@ -465,22 +487,193 @@ const MobileApplication = () => {
                     alt=""
                   />
                 </div>
-                <h4>Custom Website Design</h4>
+                <h4>Enterprise SEO</h4>
                 <Scrollbars
                   style={{ height: 100 }}
                   className="expertise_single_cont"
                 >
                   <p>
-                    A custom Website Design India will look professional to any
-                    visitors to your website, leading to more conversions,
-                    making your business look more legitimate and credible. The
-                    credibility of a professional site can alleviate concerns
-                    customer may have about security, in particular if you are
-                    selling products from your site. A custom Website Design
-                    gives you an upper hand by catering more towards your
-                    audience and demographic. With a custom website design, you
-                    have the flexibility to customize the functionality and make
-                    changes to the sites as your business deems necessary.
+                    Excellis IT offers a full-scale as well as broad approach to
+                    use the power of SEO for enterprise-scale businesses. We
+                    help you by creating high-end SEO strategies that improve
+                    revenue for your enterprises.
+                  </p>
+                </Scrollbars>
+              </div>
+            </div>
+            <div className="col-md-4" data-aos="fade-down">
+              <div className="single_expertise text-center">
+                <div className="expertise_icon_single">
+                  <img
+                    src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/computer.png?alt=media&token=5fe96fea-028d-4578-950f-0b1f8b222932"
+                    className="img-fluid"
+                    alt=""
+                  />
+                </div>
+                <h4>YouTube SEO</h4>
+                <Scrollbars
+                  style={{ height: 100 }}
+                  className="expertise_single_cont"
+                >
+                  <p>
+                    Excellis IT provides YouTube SEO services that optimize your
+                    channel, playlists, metadata, description, and also your
+                    video content.
+                  </p>
+                </Scrollbars>
+              </div>
+            </div>
+            <div className="col-md-4" data-aos="fade-down">
+              <div className="single_expertise text-center">
+                <div className="expertise_icon_single">
+                  <img
+                    src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/computer.png?alt=media&token=5fe96fea-028d-4578-950f-0b1f8b222932"
+                    className="img-fluid"
+                    alt=""
+                  />
+                </div>
+                <h4>Google Analytics</h4>
+                <Scrollbars
+                  style={{ height: 100 }}
+                  className="expertise_single_cont"
+                >
+                  <p>
+                    Excellis IT uses Google Analytics to track how many visitors
+                    your site gets over a specific period of time as well as
+                    which keywords bring in the best results.
+                  </p>
+                </Scrollbars>
+              </div>
+            </div>
+            <div className="col-md-4" data-aos="fade-down">
+              <div className="single_expertise text-center">
+                <div className="expertise_icon_single">
+                  <img
+                    src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/computer.png?alt=media&token=5fe96fea-028d-4578-950f-0b1f8b222932"
+                    className="img-fluid"
+                    alt=""
+                  />
+                </div>
+                <h4>High-Quality Link Building</h4>
+                <Scrollbars
+                  style={{ height: 100 }}
+                  className="expertise_single_cont"
+                >
+                  <p>
+                    Excellis IT puts in efforts to obtain the best hyperlinks
+                    from various other websites to your website. When other
+                    websites can easily link back to your website, Google
+                    considers your website worth ranking.
+                  </p>
+                </Scrollbars>
+              </div>
+            </div>
+            <div className="col-md-4" data-aos="fade-down">
+              <div className="single_expertise text-center">
+                <div className="expertise_icon_single">
+                  <img
+                    src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/computer.png?alt=media&token=5fe96fea-028d-4578-950f-0b1f8b222932"
+                    className="img-fluid"
+                    alt=""
+                  />
+                </div>
+                <h4>Competitor Analysis</h4>
+                <Scrollbars
+                  style={{ height: 100 }}
+                  className="expertise_single_cont"
+                >
+                  <p>
+                    Our experts study the competitive market and track the
+                    online activities to decide what would help your site stay
+                    ahead of the curve.
+                  </p>
+                </Scrollbars>
+              </div>
+            </div>
+            <div className="col-md-4" data-aos="fade-down">
+              <div className="single_expertise text-center">
+                <div className="expertise_icon_single">
+                  <img
+                    src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/computer.png?alt=media&token=5fe96fea-028d-4578-950f-0b1f8b222932"
+                    className="img-fluid"
+                    alt=""
+                  />
+                </div>
+                <h4>Reporting and Analysis</h4>
+                <Scrollbars
+                  style={{ height: 100 }}
+                  className="expertise_single_cont"
+                >
+                  <p>
+                    Our experts provide interpretable reports to their clients
+                    so that they can even know the benefits of the campaign.
+                  </p>
+                </Scrollbars>
+              </div>
+            </div>
+            <div className="col-md-4" data-aos="fade-down">
+              <div className="single_expertise text-center">
+                <div className="expertise_icon_single">
+                  <img
+                    src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/computer.png?alt=media&token=5fe96fea-028d-4578-950f-0b1f8b222932"
+                    className="img-fluid"
+                    alt=""
+                  />
+                </div>
+                <h4>SEO Tools and Software</h4>
+                <Scrollbars
+                  style={{ height: 100 }}
+                  className="expertise_single_cont"
+                >
+                  <p>
+                    Excellis IT uses new-age SEO tools and software to implement
+                    best SEO practices to make sure accurate campaigns and
+                    strategies are based on the best data collected with the
+                    help of such state-of-the-art SEO tools.
+                  </p>
+                </Scrollbars>
+              </div>
+            </div>
+            <div className="col-md-4" data-aos="fade-down">
+              <div className="single_expertise text-center">
+                <div className="expertise_icon_single">
+                  <img
+                    src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/computer.png?alt=media&token=5fe96fea-028d-4578-950f-0b1f8b222932"
+                    className="img-fluid"
+                    alt=""
+                  />
+                </div>
+                <h4>Mobile Optimization</h4>
+                <Scrollbars
+                  style={{ height: 100 }}
+                  className="expertise_single_cont"
+                >
+                  <p>
+                    We optimize your website in such a way that the target users
+                    can easily access the website from their mobile devices.
+                  </p>
+                </Scrollbars>
+              </div>
+            </div>
+            <div className="col-md-4" data-aos="fade-down">
+              <div className="single_expertise text-center">
+                <div className="expertise_icon_single">
+                  <img
+                    src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/computer.png?alt=media&token=5fe96fea-028d-4578-950f-0b1f8b222932"
+                    className="img-fluid"
+                    alt=""
+                  />
+                </div>
+                <h4>Voice Search</h4>
+                <Scrollbars
+                  style={{ height: 100 }}
+                  className="expertise_single_cont"
+                >
+                  <p>
+                    Excellis IT provides their clients with voice search
+                    optimization which ensures to optimize their web pages
+                    according to voice searches. This service takes into account
+                    the search terms the users use during their voice search.
                   </p>
                 </Scrollbars>
               </div>
@@ -498,55 +691,16 @@ const MobileApplication = () => {
                     alt=""
                   />
                 </div>
-                <h4>Custom Website Design</h4>
+                <h4>Featured Snippet Optimization</h4>
                 <Scrollbars
                   style={{ height: 100 }}
                   className="expertise_single_cont"
                 >
                   <p>
-                    A custom Website Design India will look professional to any
-                    visitors to your website, leading to more conversions,
-                    making your business look more legitimate and credible. The
-                    credibility of a professional site can alleviate concerns
-                    customer may have about security, in particular if you are
-                    selling products from your site. A custom Website Design
-                    gives you an upper hand by catering more towards your
-                    audience and demographic. With a custom website design, you
-                    have the flexibility to customize the functionality and make
-                    changes to the sites as your business deems necessary.
-                  </p>
-                </Scrollbars>
-              </div>
-            </div>
-            <div
-              className="col-md-4"
-              data-aos="fade-down"
-              data-aos-duration="3000"
-            >
-              <div className="single_expertise text-center">
-                <div className="expertise_icon_single">
-                  <img
-                    src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/computer.png?alt=media&token=5fe96fea-028d-4578-950f-0b1f8b222932"
-                    className="img-fluid"
-                    alt=""
-                  />
-                </div>
-                <h4>Custom Website Design</h4>
-                <Scrollbars
-                  style={{ height: 100 }}
-                  className="expertise_single_cont"
-                >
-                  <p>
-                    A custom Website Design India will look professional to any
-                    visitors to your website, leading to more conversions,
-                    making your business look more legitimate and credible. The
-                    credibility of a professional site can alleviate concerns
-                    customer may have about security, in particular if you are
-                    selling products from your site. A custom Website Design
-                    gives you an upper hand by catering more towards your
-                    audience and demographic. With a custom website design, you
-                    have the flexibility to customize the functionality and make
-                    changes to the sites as your business deems necessary.
+                    Our Search Engine Optimization experts and content writers
+                    curate content in a way that would increase its chances to
+                    appear as a featured snippet. A featured snippet, makes your
+                    website appear above the 1st ranking site on the SERPs.
                   </p>
                 </Scrollbars>
               </div>
@@ -1498,4 +1652,4 @@ const MobileApplication = () => {
   );
 };
 
-export default MobileApplication;
+export default SearchEngineOptimization;

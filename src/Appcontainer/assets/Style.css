@@ -31,6 +31,15 @@ font-family: 'Quicksand', sans-serif; */
 .text-yellow1 {
   color: var(--theme-yellow1);
 }
+.w-60 {
+  width: 60%;
+}
+.w-40 {
+  width: 40%;
+}
+.min-h-220 {
+  min-height: 220px !important;
+}
 
 .light-btn {
   background-color: var(--theme-yellow2);
@@ -337,7 +346,7 @@ section.banner_content_section {
 
 .feature_item_box {
   background-color: var(--theme-yellow1);
-  padding: 70px 100px;
+  padding: 170px 100px;
   position: relative;
 }
 .section_typing {
@@ -515,11 +524,6 @@ section.banner_content_section {
   font-weight: 500;
   color: var(--theme-dark2);
   font-size: 15px;
-  text-overflow: ellipsis;
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
 }
 .services_link {
   border: 1px solid var(--theme-yellow1);

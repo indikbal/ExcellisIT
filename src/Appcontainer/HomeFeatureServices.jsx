@@ -52,15 +52,19 @@ const HomeFeatureServices = () => {
                     About Excellis
                   </h4>
                   <p data-aos="fade-up" data-aos-duration="1000">
-                    EXCELLIS IT is one of the leading service providers in the
-                    field of Information Technology that has been instrumental
-                    in catering tailored telemarketing outsourcing services
-                    along with expertise in software development and website
-                    designing, digital marketing and app development. Since its
-                    commencement in the year 2010, EXCELLIS IT is operating with
-                    a growing list of satisfied clients spanning 32+ countries
-                    including India, UK, USA, Canada, Australia, Dubai, and
-                    entire Europe.
+                    Excellis IT started with the vision to craft 360 degree
+                    digital solutions using the best IT and marketing
+                    professionals along with creative storytelling to help you
+                    grow your business. Commenced in the year 2016, we are now
+                    among the best digital marketing company in Kolkata, India
+                    with a growing list of satisfied clients spanning in 32+
+                    countries which includes India, UK, USA, Canada, Australia,
+                    Dubai, and entire Europe. We are a team of skilled
+                    professionals who believe in serving their clients with the
+                    on top of trend digital transformation services in a number
+                    of fields. We cater tailored telemarketing outsourcing
+                    services along with expertise in software development and
+                    website designing, digital marketing and app development.
                   </p>
                 </div>
                 <div className="abtn_read_more_btn">

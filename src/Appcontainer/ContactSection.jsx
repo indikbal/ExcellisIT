@@ -13,7 +13,7 @@ const ContactSection = () => {
           <div class="background__yellow"></div>
         </div> */}
         <div className="section_typing">
-          <Typed strings={["Enquire us"]} typeSpeed={150} />
+          <Typed strings={["Let’s Connect"]} typeSpeed={150} />
         </div>
         <div class="container">
           <div class="row mb-5">

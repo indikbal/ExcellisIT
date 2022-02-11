@@ -72,7 +72,7 @@ const OurClients = () => {
     <div>
       <section className="our_clients_sec">
         <div className="section_typing">
-          <Typed strings={["Our Worldwide CLients"]} typeSpeed={150} />
+          <Typed strings={["With Love, from our Clients"]} typeSpeed={150} />
         </div>
         <div className="container">
           <div className="row align-items-center">
