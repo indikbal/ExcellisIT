@@ -43,8 +43,8 @@ const FactsAndFigure = () => {
             >
               <div className="fact_box">
                 <div className="fact_box_wrapper">
-                  <h5>56%</h5>
-                  <p>revenue from clients with us for +3 years</p>
+                  <h5>92%</h5>
+                  <p> Client Satisfaction Rate</p>
                 </div>
               </div>
             </div>
@@ -55,8 +55,8 @@ const FactsAndFigure = () => {
             >
               <div className="fact_box">
                 <div className="fact_box_wrapper">
-                  <h5>14</h5>
-                  <p>years of Microsoft partnership</p>
+                  <h5>100+</h5>
+                  <p> In-House Talent</p>
                 </div>
               </div>
             </div>
@@ -69,8 +69,8 @@ const FactsAndFigure = () => {
             >
               <div className="fact_box fact_yellow_box">
                 <div className="fact_box_wrapper">
-                  <h5>677</h5>
-                  <p>BSc, MSc and PhD graduates</p>
+                  <h5>600+</h5>
+                  <p> Projects Completed</p>
                 </div>
               </div>
             </div>
@@ -81,7 +81,7 @@ const FactsAndFigure = () => {
             >
               <div className="fact_box height_double country_fact_box">
                 <div className="fact_box_wrapper">
-                  <h5>Clients in 15 countries</h5>
+                  <h5>15+ Country Served </h5>
                   <img src={globe} alt="globe icon" />
                 </div>
               </div>
@@ -95,7 +95,7 @@ const FactsAndFigure = () => {
                     data-aos-duration="2000"
                   >
                     <div className="fact_box_wrapper">
-                      <h5>ISO 27001:2013</h5>
+                      <h5>ISO 27001:2013 </h5>
                       <p>certified</p>
                       <img
                         className="certificate_icon"
@@ -110,7 +110,10 @@ const FactsAndFigure = () => {
                     data-aos-duration="2000"
                   >
                     <div className="fact_box_wrapper">
-                      <h5>winner of Strategic Sourcing Awards 2021</h5>
+                      <h5>
+                        12+ Industry Prestigious Awards for Excellence and
+                        Innovation.
+                      </h5>
                     </div>
                   </div>
                 </div>
@@ -121,11 +124,8 @@ const FactsAndFigure = () => {
                     data-aos-duration="2000"
                   >
                     <div className="fact_box_wrapper">
-                      <h5>Net Promoter Score: 60</h5>
-                      <p>
-                        on a scale from -100 to +100, a result deemed excellent
-                        for the IT sector
-                      </p>
+                      <h5>5+ </h5>
+                      <p>Years of Awardable Experience</p>
                     </div>
                   </div>
                   <div

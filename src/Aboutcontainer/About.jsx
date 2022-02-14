@@ -51,7 +51,7 @@ const About = ({ activeStatus }) => {
   }, []);
   const title = "About Us";
   const description =
-    "“EXCELLIS IT is one of the pioneers providing valued services which are capable of meeting industrial standards for various ventures. It is the perseverance and eagerness of our Mandarins which has made us one of the huge names in IT industry.”";
+    "“Excellis IT is one of the leading 360 degree IT Solutions Company that effectively meets the industrial standards for various ventures. It is the perseverance and eagerness of our Mandarins that has made us one of the huge names in IT industry.”";
   return (
     <div>
       <Helmet>
@@ -74,10 +74,21 @@ const About = ({ activeStatus }) => {
             <div class="row">
               <div class="col-xl-5 order-2 order-sm-1" data-aos="fade-up">
                 <p>
-                  Founded in the year 2010, EXCELLIS IT is operating with a
-                  growing list of satisfied clients spanning 32+ countries
-                  including India, UK, USA, Canada, Australia, Dubai, and entire
-                  Europe.
+                  Excellis IT is building a skilled team in IT support, customer
+                  support, digital marketing, and back-office services for
+                  modern companies.
+                </p>
+                <p>
+                  Founded in the year 2016, Excellis IT has to date delivered
+                  600+ projects has a team of 100+ innovators, 500+ satisfied
+                  clients, spanning 32+ countries including India, UK, USA,
+                  Canada, Australia, Dubai, and entire Europe. And has served
+                  25+ industries.
+                </p>
+                <p>
+                  With experience of over 5 years, Excellis IT has become the
+                  leading service provider in the field of information
+                  technology.{" "}
                 </p>
               </div>
               <div class="col-xl-7 order-1 order-sm-2">
@@ -105,8 +116,8 @@ const About = ({ activeStatus }) => {
                       data-aos="reveal-right"
                     ></div>
                     <h3>
-                      EXCELLIS is a firm believer of great service climate which
-                      leads to excellent service quality.
+                      Excellis IT believes in a great service climate leading to
+                      excellent service quality.
                     </h3>
                   </div>
                 </div>
@@ -114,10 +125,10 @@ const About = ({ activeStatus }) => {
               <div class="col-xl-4" data-aos="fade-up">
                 <p>
                   Excellence is the Way of Life at Excellis. We are among the
-                  best IT companies in India seeking to provide the best IT
-                  solutions to our clients as well as make progress toward
-                  continuous improvement. We face all the challenges that come
-                  our way in the pursuit of excellence.
+                  best IT companies in Kolkata, India seeking to provide the
+                  best IT solutions to our clients as well as making progress
+                  toward continuous improvement. We face all the challenges that
+                  come our way in the pursuit of excellence.
                 </p>
               </div>
             </div>
@@ -143,12 +154,12 @@ const About = ({ activeStatus }) => {
               </div>
               <div class="col-xl-5" data-aos="fade-down">
                 <p>
-                  “The comments we receive about from our customers about how
-                  beautiful the website is, how easy it is to use, and how
-                  elegantly it flows, I think that speaks to the quality of work
-                  that Codal does.”
+                  “Throughout this 5 years journey, we have been challenged by
+                  the evolution of technologies that we have overcome and
+                  reached here today. Now we know that we have both the spirit
+                  and the strength to go beyond our capabilities and provide our
+                  clients only the best.”
                 </p>
-                <span>James Langer Founder & CEO, Joriki</span>
               </div>
             </div>
           </div>
@@ -157,24 +168,27 @@ const About = ({ activeStatus }) => {
               <h2>THE EXCELLIS STORY</h2>
             </div>
             <p class="black_p" data-aos="fade-up">
-              Throughout this 10 years journey, we have been challenged by the
-              evolution of technologies which we have overcome and reached here
-              today. Now we know that we have both the spirit and the strength
-              to go beyond our capabilities and serve our clients only the best.
+              We cover the road for immense possibilities for your business. The
+              services that we provide are driven by a passion for delivering
+              the best.
             </p>
             <div class="locla_text">
               <div class="row">
                 <div class="col-xl-5" data-aos="fade-down">
                   <p>
-                    EXCELLIS IT is one of the leading service providers in the
-                    field of Information Technology that has been instrumental
-                    in catering tailored telemarketing outsourcing services
-                    along with expertise in software development and website
-                    designing, digital marketing and app development. Since its
-                    commencement, EXCELLIS IT has gained the status of being the
-                    best IT solutions company globally. Our wings are rapidly
-                    growing while its roots are extending and diversifying from
-                    off shores to complex IT solutions.
+                    Excellis IT is one of the leading service providers in the
+                    Information Technology industry; they have catered to
+                    tailored telemarketing outsourcing services along with
+                    proficiency in software development and website designing,
+                    app development as well as digital marketing. Since the
+                    company started, it has gained the status of being the best
+                    IT solutions company globally. Our wings are rapidly growing
+                    while its roots are extending and diversifying from
+                    off-shores to complex IT solutions. We have gained deep
+                    industry experience and technical capabilities which allows
+                    us to provide a complete digital transformation. Our work
+                    tells our story. And help you tell yours. Because we’re more
+                    than just an agency. We’re your partner.
                   </p>
                 </div>
                 <div class="col-xl-7" data-aos="fade-up">
@@ -205,13 +219,11 @@ const About = ({ activeStatus }) => {
                 data-aos="reveal-item"
               ></div>
               <div class="title_c">
-                <h2>
-                  WE PAVE THE ROAD FOR COLOSAL POSSIBILITIES FOR YOUR BUSINESS
-                </h2>
+                <h2>Our Mission</h2>
                 <p>
-                  Our mission is to enhance business growth of our customers
-                  with creative design, development and deliver market defining,
-                  high quality solutions that create value as well as reliable
+                  Our mission is to enhance the business growth of our customers
+                  with creative design, development and deliver market-defining,
+                  high-quality solutions that create value as well as a reliable
                   competitive vantage to customers around the globe.
                 </p>
               </div>
@@ -337,13 +349,12 @@ const About = ({ activeStatus }) => {
                       <div className="single_project">
                         <h2>Bill Experts</h2>
                         <p>
-                          We brought forward the finesse in design expertise,
-                          worked with the client at each step and created a
-                          visually stunning website that had high definition
-                          images saying it all. Along with that we provided a
-                          site structure that feels lovely while being
-                          minimalist though also depicting all the information,
-                          and contact point of the users.
+                          We bought forward the finesse in design expertise,
+                          worked with the client on each step, and created a
+                          visually stunning website with HD images that says it
+                          all. Along with that, we provide a minimalist site
+                          structure, that has all the information as well as the
+                          contact points for all users.
                         </p>
                         <a href="" class="view_all">
                           View All
@@ -352,11 +363,11 @@ const About = ({ activeStatus }) => {
                       <div className="single_project">
                         <h2>Nadax Media</h2>
                         <p>
-                          Crafted a WordPress website, wholesome in features and
-                          capabilities, helping to put each and every aspect of
-                          their service in a clear, concise and effective
-                          layout. The end result was a fast, easy-to-navigate
-                          and quick-response website.{" "}
+                          Crafted on WordPress, with several state-of-the-art
+                          features that would include every aspect of their
+                          service in a clear, conscious, and effective layout.
+                          The result was a fast, easy to navigate, and quick
+                          responsive website.
                         </p>
                         <a href="" class="view_all">
                           View All
@@ -365,13 +376,15 @@ const About = ({ activeStatus }) => {
                       <div className="single_project">
                         <h2>Flightmantra</h2>
                         <p>
-                          We knew how to combine the design and technological
-                          aspect that delivers on the promise made to the
-                          client. We used the best of the technological stack,
-                          kept the right formulation for content and visual
-                          depiction and produced a website that is fast to load,
-                          provide easy information and have the users find all
-                          they are looking for while being fully engaged.
+                          We combined the design along with the technological
+                          aspect so that we could deliver on the promise we made
+                          to the client. We used the best technology, kept the
+                          correct as well as useful content along with visual
+                          depiction that in return built a website that was fast
+                          to load, provide easy-to-read information, and are
+                          user-friendly. The website also has all the
+                          information that they are looking for and also being
+                          fully engaged.
                         </p>
                         <a href="" class="view_all">
                           View All

@@ -11,7 +11,10 @@ import SwiperCore, { Navigation, Pagination, Autoplay } from "swiper";
 import OurClients from "../Appcontainer/OurClients";
 import OurBlogs from "../Appcontainer/OurBlog";
 import TestimonialSection from "../TestimonialSection";
-
+import { Animated } from "react-animated-css";
+import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
+const cta_bg =
+  "https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/digital-marketing%2Fcta_img.jpg?alt=media&token=80dff7e9-4f79-4258-ae00-734d63a84110";
 SwiperCore.use([Navigation, Pagination, Autoplay]);
 const bootstrap =
   "https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/technology%2FBootstrap.png?alt=media&token=c7d7a420-6618-480c-acb4-639820d666f9";
@@ -59,22 +62,16 @@ const SearchEngineOptimization = () => {
           <div class="l-ContentColumn container">
             <div class="row align-items-center">
               <div class="col-md-6">
-                <div class="company_intro">
-                  <h6
-                    class="s-BannerServices__Subheader"
-                    data-aos="fade-down"
-                    data-aos-duration="1000"
-                  >
-                    SEO
-                  </h6>
-                  <h1
-                    class="BannerServices__Subheader h1--WithLine"
-                    data-aos="fade-down"
-                    data-aos-duration="1500"
-                  >
+                <div
+                  class="company_intro"
+                  data-aos="fade-down"
+                  data-aos-duration="1500"
+                >
+                  <h6>Search Engine Optimization</h6>
+                  <h1 class="BannerServices__Subheader">
                     Best SEO Service Provider – Excellis IT
                   </h1>
-                  <p data-aos="fade-down" data-aos-duration="2000">
+                  <p>
                     Search Engine Optimization is an efficient digital marketing
                     strategy that enhances the online presence of your business.
                     SEO optimizes your website and takes it up on Google
@@ -106,7 +103,8 @@ const SearchEngineOptimization = () => {
                     data-aos="reveal-right"
                   ></div>
                   <img
-                    src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/mobile-application.jpg?alt=media&token=077572ec-50e3-4ee8-8476-461a6796c7ea"
+                    src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/digital-marketing%2Fsearch-engine-optimization.jpg?alt=media&token=515093e5-4ed3-484b-810f-931ea91fc030"
+                    alt="Sear engine optimization"
                     className="img-fluid"
                   />
                 </div>
@@ -123,237 +121,488 @@ const SearchEngineOptimization = () => {
           </div>
         </div>
       </section>
-      <section class="fact_no">
+
+      <section className="all_services_sec pb-0">
+        <div className="container-fluid">
+          <div className="row align-items-center">
+            <div className="col-md-5">
+              <div className="all_services_title">
+                <h2>Best SEO Services Provided by Excellis IT</h2>
+              </div>
+            </div>
+            <div className="col-md-7">
+              <div className="all_services_item_sec">
+                <Scrollbars style={{ height: "70vh" }} className="" autoHide>
+                  <div className="row">
+                    <div className="col-md-6">
+                      <div className="single_inner_services">
+                        <h4>On-Page SEO Services </h4>
+                        <Scrollbars style={{ height: 100 }}>
+                          <p>
+                            Excellis IT is best in on-page SEO methods. We
+                            understand that to make your website more attractive
+                            and readable you require content pings along with
+                            search engine algorithms. Our experts would help you
+                            optimize the content and pictures, would make sure
+                            that your site is fast, mobile-friendly, and makes
+                            sure that the material is of the best quality as
+                            well as provides excellent external links to attract
+                            more traffic.{" "}
+                          </p>
+                        </Scrollbars>
+                      </div>
+                    </div>
+                    <div className="col-md-6">
+                      <div className="single_inner_services">
+                        <h4>Off-Page SEO Services </h4>
+                        <Scrollbars style={{ height: 100 }}>
+                          <p>
+                            Excellis IT knows that off-Page SEO is more than
+                            link building and website design. We promote your
+                            website through ethical as well as effective methods
+                            which would increase organic traffic and help to get
+                            the top Google search ranking. Our experts conduct
+                            social media marketing along with social bookmarking
+                            campaigns which would help you in lead generation,
+                            as well as improve the perception of your website.
+                          </p>
+                        </Scrollbars>
+                      </div>
+                    </div>
+                    <div className="col-md-6">
+                      <div className="single_inner_services">
+                        <h4>Technical SEO Services </h4>
+                        <Scrollbars style={{ height: 100 }}>
+                          <p>
+                            Our Technical SEO experts, work diligently on
+                            improving the technical elements of your website
+                            which would help Google bots crawl your website in a
+                            better way as a result it would improve your site
+                            rankings.
+                          </p>
+                        </Scrollbars>
+                      </div>
+                    </div>
+                    <div className="col-md-6">
+                      <div className="single_inner_services">
+                        <h4>Keywords Research </h4>
+                        <Scrollbars style={{ height: 100 }}>
+                          <p>
+                            Using proper keywords makes your Search Engine
+                            Optimization campaign successful as keywords propels
+                            your search ranking. Our team of experts uses
+                            assorted online tools to research trending keywords
+                            that would take your website to the top of the
+                            search engine.
+                          </p>
+                        </Scrollbars>
+                      </div>
+                    </div>
+                    <div className="col-md-6">
+                      <div className="single_inner_services">
+                        <h4>Competitive Analysis </h4>
+                        <Scrollbars style={{ height: 100 }}>
+                          <p>
+                            Competitive analysis understands the strengths and
+                            weaknesses of your online competitors and uses them
+                            as opportunities. Our digital marketing experts
+                            conduct a deep analysis of keywords being used by
+                            competitors and help you choose the best ones so
+                            that you can stay ahead.
+                          </p>
+                        </Scrollbars>
+                      </div>
+                    </div>
+                    <div className="col-md-6">
+                      <div className="single_inner_services">
+                        <h4>Website Audit and Optimization </h4>
+                        <Scrollbars style={{ height: 100 }}>
+                          <p>
+                            SEO audits and optimization is important to maintain
+                            the online rankings of your website. We help you to
+                            identify all the imperfections that would lower the
+                            rankings of your websites. We also bring together
+                            strategies of link building, SEO tagging as well as
+                            content optimization to yield online success for
+                            your website.
+                          </p>
+                        </Scrollbars>
+                      </div>
+                    </div>
+                    <div className="col-md-6">
+                      <div className="single_inner_services">
+                        <h4>Analytics Research</h4>
+                        <Scrollbars style={{ height: 100 }}>
+                          <p>
+                            Search Engine Optimization services in Kolkata,
+                            India not only bring traffic to your website but
+                            also incorporate analysis too. Our Google Analytics
+                            expertise enables the study of all the essential
+                            metrics that would be needed for searches, visitors,
+                            and trends. Based on the precise analytics research,
+                            we help you create and implement effective digital
+                            strategies that would in turn increase traffic and
+                            conversions.
+                          </p>
+                        </Scrollbars>
+                      </div>
+                    </div>
+                    <div className="col-md-6">
+                      <div className="single_inner_services">
+                        <h4>Traffic Generation</h4>
+                        <Scrollbars style={{ height: 100 }}>
+                          <p>
+                            Our Search Engine Optimization experts have the
+                            skill to merge different marketing tools to generate
+                            higher traffic for your website which includes
+                            social media, PR and branding, mobile SEO,
+                            multimedia SEO as well as local and international
+                            search optimization.
+                          </p>
+                        </Scrollbars>
+                      </div>
+                    </div>
+                    <div className="col-md-6">
+                      <div className="single_inner_services">
+                        <h4>Content Marketing</h4>
+                        <Scrollbars style={{ height: 100 }}>
+                          <p>
+                            We at Excellis IT, deliver end-to-end services,
+                            starting from serving excellent content to
+                            optimizing it moving on to marketing it. We have
+                            in-house professional content writers who consult
+                            with our SEO experts and deliver rich content that
+                            would boost your rankings and be engaging for your
+                            customers at the same time.
+                          </p>
+                        </Scrollbars>
+                      </div>
+                    </div>
+                    <div className="col-md-6">
+                      <div className="single_inner_services">
+                        <h4>Reporting</h4>
+                        <Scrollbars style={{ height: 100 }}>
+                          <p>
+                            Good Search Engine Optimization practices contain
+                            reporting too. Our SEO experts provide interpretable
+                            reports to their clients so that they can even know
+                            the benefits of the campaign.
+                          </p>
+                        </Scrollbars>
+                      </div>
+                    </div>
+                  </div>
+                </Scrollbars>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="cta2_section cta_block_bg">
+        <div className="container">
+          <div className="row">
+            <div className="col-md-12">
+              <div
+                className="cta2_inner d-block d-sm-flex align-items-center"
+                style={{ backgroundImage: `url(${cta_bg})` }}
+              >
+                <div className="cta2_content_sec text-left">
+                  <h4 className="mb-4">
+                    Get your page optimized by the best SEO service provider.
+                  </h4>
+                  <Link className=" light-btn" to="/ContactUs">
+                    Contact Us
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="fact_no why_hire_sec">
         <div class="container">
           <div class="row align-items-center">
-            <div class="col-md-6 main_heading dark_text pr-3 pr-sm-5">
-              <h6 data-aos="fade-down" data-aos-duration="1000">
-                Facts &amp; Numbers
-              </h6>
-
-              <h2
-                class="h2--WithLine"
-                data-aos="fade-down"
-                data-aos-duration="1500"
-              >
-                Why Hire SEO Experts from Excellis IT
-              </h2>
-              <p data-aos="fade-down" data-aos-duration="2000">
-                Experienced SEO professionals – Being among the best search
-                engine optimization company in Kolkata, India, Excellis IT has a
-                skilled team of SEO experts you can completely rely on.
-              </p>
-              <p>
-                Assessable Results – We are a reputed SEO company in Kolkata,
-                creating SEO campaigns to generate assessable results for your
-                company, and we also inform you about your keyword ranking and
-                ROI.
-              </p>
+            <div class="col-md-12 ">
+              <div className="big_title">
+                <h2 data-aos="fade-down" data-aos-duration="1500">
+                  <span>Why Hire </span> SEO Experts from Excellis IT
+                </h2>
+              </div>
             </div>
 
-            <div className="col-md-6">
-              <div className="why_hire_us_sec">
-                <div class="accordion" id="accordionExample">
-                  <div class="card">
-                    <div class="card-header" id="headingOne">
-                      <h5 class="mb-0">
-                        <button
-                          class="btn btn-link"
-                          type="button"
-                          data-toggle="collapse"
-                          data-target="#collapse1"
-                          aria-expanded="true"
-                          aria-controls="collapse1"
-                        >
-                          1. Experienced SEO professionals
-                        </button>
-                      </h5>
-                    </div>
+            <div className="col-md-12">
+              <ul
+                class="nav nav-pills mb-3 why_pill_tab"
+                id="pills-tab"
+                role="tablist"
+              >
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    id="pills-why1-tab"
+                    data-toggle="pill"
+                    href="#pills-why1"
+                    role="tab"
+                    aria-controls="pills-why1"
+                    aria-selected="true"
+                  >
+                    <img
+                      src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/digital-marketing%2Fexperience.png?alt=media&token=9713b80a-d008-4073-bea3-c2c2a1c04ccb"
+                      alt=""
+                    />
+                    Experienced
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    id="pills-why2-tab"
+                    data-toggle="pill"
+                    href="#pills-why2"
+                    role="tab"
+                    aria-controls="pills-why2"
+                    aria-selected="false"
+                  >
+                    <img
+                      src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/digital-marketing%2FAssessableResults.png?alt=media&token=6354087b-41da-481c-ac13-e7fa24fdd80a"
+                      alt=""
+                    />
+                    Assessable
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    id="pills-why3-tab"
+                    data-toggle="pill"
+                    href="#pills-why3"
+                    role="tab"
+                    aria-controls="pills-why3"
+                    aria-selected="false"
+                  >
+                    <img
+                      src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/digital-marketing%2Fidea.png?alt=media&token=944eb2a5-fcc5-46fa-bcd2-cf145bc86bd3"
+                      alt=""
+                    />
+                    Strategies
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    id="pills-why4-tab"
+                    data-toggle="pill"
+                    href="#pills-why4"
+                    role="tab"
+                    aria-controls="pills-why4"
+                    aria-selected="false"
+                  >
+                    <img
+                      src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/digital-marketing%2Freport.png?alt=media&token=98081286-1f75-48af-a528-48cfe6e1bf29"
+                      alt=""
+                    />
+                    Reports
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    id="pills-why5-tab"
+                    data-toggle="pill"
+                    href="#pills-why5"
+                    role="tab"
+                    aria-controls="pills-why5"
+                    aria-selected="false"
+                  >
+                    <img
+                      src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/digital-marketing%2Fsave-money.png?alt=media&token=54fd85ab-1b2d-4776-b87a-f1e81f8617f2"
+                      alt=""
+                    />
+                    Affradable
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    id="pills-why6-tab"
+                    data-toggle="pill"
+                    href="#pills-why6"
+                    role="tab"
+                    aria-controls="pills-why6"
+                    aria-selected="false"
+                  >
+                    <img
+                      src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/digital-marketing%2Fexpert.png?alt=media&token=5c87f4ea-1c49-485b-89dd-feb005a4a6ae"
+                      alt=""
+                    />
+                    Experts
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    id="pills-why7-tab"
+                    data-toggle="pill"
+                    href="#pills-why7"
+                    role="tab"
+                    aria-controls="pills-why7"
+                    aria-selected="false"
+                  >
+                    <img
+                      src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/digital-marketing%2Ftransparency.png?alt=media&token=efac0773-ae7e-4658-8a38-3b8f38722375"
+                      alt=""
+                    />
+                    Transparency
+                  </a>
+                </li>
+              </ul>
+              <div
+                class="tab-content why_pill_tab_content"
+                id="pills-tabContent"
+              >
+                <div
+                  class="tab-pane fade show active"
+                  id="pills-why1"
+                  role="tabpanel"
+                  aria-labelledby="pills-why1-tab"
+                >
+                  <Animated
+                    animationIn="fadeInUp"
+                    animationOut="fadeOut"
+                    isVisible={true}
+                    animationInDelay={10}
+                  >
+                    <h4>Experienced SEO professionals </h4>
+                    <p>
+                      Being among the best search engine optimization company in
+                      Kolkata, India, Excellis IT has a skilled team of SEO
+                      experts you can completely rely on.
+                    </p>
+                  </Animated>
+                </div>
 
-                    <div
-                      id="collapse1"
-                      class="collapse show"
-                      aria-labelledby="heading1"
-                      data-parent="#accordionExample"
-                    >
-                      <div class="card-body">
-                        Being among the best search engine optimization company
-                        in Kolkata, India, Excellis IT has a skilled team of SEO
-                        experts you can completely rely on.
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card">
-                    <div class="card-header" id="headingTwo">
-                      <h5 class="mb-0">
-                        <button
-                          class="btn btn-link collapsed"
-                          type="button"
-                          data-toggle="collapse"
-                          data-target="#collapse2"
-                          aria-expanded="false"
-                          aria-controls="collapse2"
-                        >
-                          2. Assessable Results
-                        </button>
-                      </h5>
-                    </div>
-                    <div
-                      id="collapse2"
-                      class="collapse"
-                      aria-labelledby="headingTwo"
-                      data-parent="#accordionExample"
-                    >
-                      <div class="card-body">
-                        We are a reputed SEO company in Kolkata, creating SEO
-                        campaigns to generate assessable results for your
-                        company, and we also inform you about your keyword
-                        ranking and ROI.
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card">
-                    <div class="card-header" id="headingThree">
-                      <h5 class="mb-0">
-                        <button
-                          class="btn btn-link collapsed"
-                          type="button"
-                          data-toggle="collapse"
-                          data-target="#collapse3"
-                          aria-expanded="false"
-                          aria-controls="collapse3"
-                        >
-                          3. Data-driven Strategies
-                        </button>
-                      </h5>
-                    </div>
-                    <div
-                      id="collapse3"
-                      class="collapse"
-                      aria-labelledby="headingThree"
-                      data-parent="#accordionExample"
-                    >
-                      <div class="card-body">
-                        We are an experienced SEO company, creating strategies
-                        that are based on genuine and authentic market
-                        demographics data to make sure you get the best results.
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card">
-                    <div class="card-header" id="headingThree">
-                      <h5 class="mb-0">
-                        <button
-                          class="btn btn-link collapsed"
-                          type="button"
-                          data-toggle="collapse"
-                          data-target="#collapse4"
-                          aria-expanded="false"
-                          aria-controls="collapse4"
-                        >
-                          4. Reports
-                        </button>
-                      </h5>
-                    </div>
-                    <div
-                      id="collapse4"
-                      class="collapse"
-                      aria-labelledby="headingThree"
-                      data-parent="#accordionExample"
-                    >
-                      <div class="card-body">
-                        We are a trusted SEO company, and we send our clients
-                        weekly as well as monthly reports consisting of a
-                        detailed description of the SEO activities that we have
-                        implemented on their site so that even they can measure
-                        the results.
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card">
-                    <div class="card-header" id="headingThree">
-                      <h5 class="mb-0">
-                        <button
-                          class="btn btn-link collapsed"
-                          type="button"
-                          data-toggle="collapse"
-                          data-target="#collapse5"
-                          aria-expanded="false"
-                          aria-controls="collapse5"
-                        >
-                          5. Affordable SEO packages
-                        </button>
-                      </h5>
-                    </div>
-                    <div
-                      id="collapse5"
-                      class="collapse"
-                      aria-labelledby="headingThree"
-                      data-parent="#accordionExample"
-                    >
-                      <div class="card-body">
-                        Excellis IT provides the best as well as affordable SEO
-                        services in Kolkata, to both small and big businesses
-                        who can easily afford our packages and make the best out
-                        of them.
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card">
-                    <div class="card-header" id="headingThree">
-                      <h5 class="mb-0">
-                        <button
-                          class="btn btn-link collapsed"
-                          type="button"
-                          data-toggle="collapse"
-                          data-target="#collapse6"
-                          aria-expanded="false"
-                          aria-controls="collapse6"
-                        >
-                          5.Experts of the field
-                        </button>
-                      </h5>
-                    </div>
-                    <div
-                      id="collapse6"
-                      class="collapse"
-                      aria-labelledby="headingThree"
-                      data-parent="#accordionExample"
-                    >
-                      <div class="card-body">
-                        We have a highly qualified as well as experienced team
-                        who know every aspect of SEO.
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card">
-                    <div class="card-header" id="headingThree">
-                      <h5 class="mb-0">
-                        <button
-                          class="btn btn-link collapsed"
-                          type="button"
-                          data-toggle="collapse"
-                          data-target="#collapse7"
-                          aria-expanded="false"
-                          aria-controls="collapse7"
-                        >
-                          5.Transparency
-                        </button>
-                      </h5>
-                    </div>
-                    <div
-                      id="collapse7"
-                      class="collapse"
-                      aria-labelledby="headingThree"
-                      data-parent="#accordionExample"
-                    >
-                      <div class="card-body">
-                        We prefer keeping a long-lasting relation with our
-                        clients and that can only be possible with complete
-                        transparency as well as honest business practices.
-                      </div>
-                    </div>
-                  </div>
+                <div
+                  class="tab-pane fade"
+                  id="pills-why2"
+                  role="tabpanel"
+                  aria-labelledby="pills-why2-tab"
+                >
+                  <Animated
+                    animationIn="fadeInUp"
+                    animationOut="fadeOut"
+                    isVisible={true}
+                    animationInDelay={10}
+                  >
+                    <h4>Assessable Results </h4>
+                    <p>
+                      We are a reputed SEO company in Kolkata, creating SEO
+                      campaigns to generate assessable results for your company,
+                      and we also inform you about your keyword ranking and ROI.
+                    </p>
+                  </Animated>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="pills-why3"
+                  role="tabpanel"
+                  aria-labelledby="pills-why3-tab"
+                >
+                  <Animated
+                    animationIn="fadeInUp"
+                    animationOut="fadeOut"
+                    isVisible={true}
+                    animationInDelay={10}
+                  >
+                    <h4>Data-driven Strategies </h4>
+                    <p>
+                      We are an experienced SEO company, creating strategies
+                      that are based on genuine and authentic market
+                      demographics data to make sure you get the best results.
+                    </p>
+                  </Animated>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="pills-why4"
+                  role="tabpanel"
+                  aria-labelledby="pills-why4-tab"
+                >
+                  <Animated
+                    animationIn="fadeInUp"
+                    animationOut="fadeOut"
+                    isVisible={true}
+                    animationInDelay={10}
+                  >
+                    <h4>Reports </h4>
+                    <p>
+                      We are a trusted SEO company, and we send our clients
+                      weekly as well as monthly reports consisting of a detailed
+                      description of the SEO activities that we have implemented
+                      on their site so that even they can measure the results.
+                    </p>
+                  </Animated>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="pills-why5"
+                  role="tabpanel"
+                  aria-labelledby="pills-why5-tab"
+                >
+                  <Animated
+                    animationIn="fadeInUp"
+                    animationOut="fadeOut"
+                    isVisible={true}
+                    animationInDelay={10}
+                  >
+                    <h4>Affordable SEO packages </h4>
+                    <p>
+                      Excellis IT provides the best as well as affordable SEO
+                      services in Kolkata, to both small and big businesses who
+                      can easily afford our packages and make the best out of
+                      them.
+                    </p>
+                  </Animated>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="pills-why6"
+                  role="tabpanel"
+                  aria-labelledby="pills-why6-tab"
+                >
+                  <Animated
+                    animationIn="fadeInUp"
+                    animationOut="fadeOut"
+                    isVisible={true}
+                    animationInDelay={10}
+                  >
+                    <h4>Experts of the field </h4>
+                    <p>
+                      We have a highly qualified as well as experienced team who
+                      know every aspect of SEO.
+                    </p>
+                  </Animated>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="pills-why7"
+                  role="tabpanel"
+                  aria-labelledby="pills-why7-tab"
+                >
+                  <Animated
+                    animationIn="fadeInUp"
+                    animationOut="fadeOut"
+                    isVisible={true}
+                    animationInDelay={10}
+                  >
+                    <h4>Transparency </h4>
+                    <p>
+                      We prefer keeping a long-lasting relation with our clients
+                      and that can only be possible with complete transparency
+                      as well as honest business practices.
+                    </p>
+                  </Animated>
                 </div>
               </div>
             </div>
@@ -362,36 +611,8 @@ const SearchEngineOptimization = () => {
         <div class="u-Scanlines"></div>
       </section>
 
-      <section class="common_cta_sec">
-        <div class="container">
-          <div class="s-CsCTA__Text text-center common_cta_inner">
-            <h2
-              class="u-Center h2--WideTitle mb-4"
-              data-aos="fade-down"
-              data-aos-duration="1000"
-            >
-              Do you want your website to rank no. 1 on Google?
-            </h2>
-            <div
-              class="u-Center white_text"
-              data-aos="fade-down"
-              data-aos-duration="1000"
-            ></div>
-            <NavLink
-              to="/contactUs"
-              className="dark-btn2"
-              data-aos="fade-down"
-              data-aos-duration="1000"
-            >
-              <span>Contact us</span>
-              <i class="ph-arrow-right"></i>
-            </NavLink>
-          </div>
-        </div>
-      </section>
-
-      <section className="expertise_section">
-        <div className="container">
+      <section className="expertise_section pl-170">
+        <div className="container-fluid">
           <div className="row mb-3">
             <div className="col-md-12">
               <div class="main_heading white_text">
@@ -409,301 +630,332 @@ const SearchEngineOptimization = () => {
             </div>
           </div>
           <div className="row">
-            <div className="col-md-4" data-aos="fade-down">
-              <div className="single_expertise text-center">
-                <div className="expertise_icon_single">
-                  <img
-                    src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/computer.png?alt=media&token=5fe96fea-028d-4578-950f-0b1f8b222932"
-                    className="img-fluid"
-                    alt=""
-                  />
-                </div>
-                <h4>International SEO</h4>
-                <Scrollbars
-                  style={{ height: 100 }}
-                  className="expertise_single_cont"
-                >
-                  <p>
-                    International SEO optimizes your presence on your website on
-                    the SERPs when the users place search queries in various
-                    languages and countries. Geo-targeting and other tactics to
-                    optimize your site locally helps you to target customers all
-                    over the world.
-                  </p>
-                </Scrollbars>
-              </div>
-            </div>
-            <div className="col-md-4" data-aos="fade-down">
-              <div className="single_expertise text-center">
-                <div className="expertise_icon_single">
-                  <img
-                    src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/computer.png?alt=media&token=5fe96fea-028d-4578-950f-0b1f8b222932"
-                    className="img-fluid"
-                    alt=""
-                  />
-                </div>
-                <h4>Local SEO</h4>
-                <Scrollbars
-                  style={{ height: 100 }}
-                  className="expertise_single_cont"
-                >
-                  <p>
-                    As the best SEO firm in Kolkata, India, Excellis IT with
-                    Local SEO optimizes the online presence of your business and
-                    drives traffic from the local relevant searches. This helps
-                    in gaining sales from local potential customers.
-                  </p>
-                </Scrollbars>
-              </div>
-            </div>
-            <div className="col-md-4" data-aos="fade-down">
-              <div className="single_expertise text-center">
-                <div className="expertise_icon_single">
-                  <img
-                    src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/computer.png?alt=media&token=5fe96fea-028d-4578-950f-0b1f8b222932"
-                    className="img-fluid"
-                    alt=""
-                  />
-                </div>
-                <h4>E-commerce SEO</h4>
-                <Scrollbars
-                  style={{ height: 100 }}
-                  className="expertise_single_cont"
-                >
-                  <p>
-                    E-commerce SEO ensures that your product pages are among the
-                    top results on the SERPs which in turn helps in bringing you
-                    the desired traffic and sales.
-                  </p>
-                </Scrollbars>
-              </div>
-            </div>
-            <div className="col-md-4" data-aos="fade-down">
-              <div className="single_expertise text-center">
-                <div className="expertise_icon_single">
-                  <img
-                    src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/computer.png?alt=media&token=5fe96fea-028d-4578-950f-0b1f8b222932"
-                    className="img-fluid"
-                    alt=""
-                  />
-                </div>
-                <h4>Enterprise SEO</h4>
-                <Scrollbars
-                  style={{ height: 100 }}
-                  className="expertise_single_cont"
-                >
-                  <p>
-                    Excellis IT offers a full-scale as well as broad approach to
-                    use the power of SEO for enterprise-scale businesses. We
-                    help you by creating high-end SEO strategies that improve
-                    revenue for your enterprises.
-                  </p>
-                </Scrollbars>
-              </div>
-            </div>
-            <div className="col-md-4" data-aos="fade-down">
-              <div className="single_expertise text-center">
-                <div className="expertise_icon_single">
-                  <img
-                    src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/computer.png?alt=media&token=5fe96fea-028d-4578-950f-0b1f8b222932"
-                    className="img-fluid"
-                    alt=""
-                  />
-                </div>
-                <h4>YouTube SEO</h4>
-                <Scrollbars
-                  style={{ height: 100 }}
-                  className="expertise_single_cont"
-                >
-                  <p>
-                    Excellis IT provides YouTube SEO services that optimize your
-                    channel, playlists, metadata, description, and also your
-                    video content.
-                  </p>
-                </Scrollbars>
-              </div>
-            </div>
-            <div className="col-md-4" data-aos="fade-down">
-              <div className="single_expertise text-center">
-                <div className="expertise_icon_single">
-                  <img
-                    src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/computer.png?alt=media&token=5fe96fea-028d-4578-950f-0b1f8b222932"
-                    className="img-fluid"
-                    alt=""
-                  />
-                </div>
-                <h4>Google Analytics</h4>
-                <Scrollbars
-                  style={{ height: 100 }}
-                  className="expertise_single_cont"
-                >
-                  <p>
-                    Excellis IT uses Google Analytics to track how many visitors
-                    your site gets over a specific period of time as well as
-                    which keywords bring in the best results.
-                  </p>
-                </Scrollbars>
-              </div>
-            </div>
-            <div className="col-md-4" data-aos="fade-down">
-              <div className="single_expertise text-center">
-                <div className="expertise_icon_single">
-                  <img
-                    src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/computer.png?alt=media&token=5fe96fea-028d-4578-950f-0b1f8b222932"
-                    className="img-fluid"
-                    alt=""
-                  />
-                </div>
-                <h4>High-Quality Link Building</h4>
-                <Scrollbars
-                  style={{ height: 100 }}
-                  className="expertise_single_cont"
-                >
-                  <p>
-                    Excellis IT puts in efforts to obtain the best hyperlinks
-                    from various other websites to your website. When other
-                    websites can easily link back to your website, Google
-                    considers your website worth ranking.
-                  </p>
-                </Scrollbars>
-              </div>
-            </div>
-            <div className="col-md-4" data-aos="fade-down">
-              <div className="single_expertise text-center">
-                <div className="expertise_icon_single">
-                  <img
-                    src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/computer.png?alt=media&token=5fe96fea-028d-4578-950f-0b1f8b222932"
-                    className="img-fluid"
-                    alt=""
-                  />
-                </div>
-                <h4>Competitor Analysis</h4>
-                <Scrollbars
-                  style={{ height: 100 }}
-                  className="expertise_single_cont"
-                >
-                  <p>
-                    Our experts study the competitive market and track the
-                    online activities to decide what would help your site stay
-                    ahead of the curve.
-                  </p>
-                </Scrollbars>
-              </div>
-            </div>
-            <div className="col-md-4" data-aos="fade-down">
-              <div className="single_expertise text-center">
-                <div className="expertise_icon_single">
-                  <img
-                    src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/computer.png?alt=media&token=5fe96fea-028d-4578-950f-0b1f8b222932"
-                    className="img-fluid"
-                    alt=""
-                  />
-                </div>
-                <h4>Reporting and Analysis</h4>
-                <Scrollbars
-                  style={{ height: 100 }}
-                  className="expertise_single_cont"
-                >
-                  <p>
-                    Our experts provide interpretable reports to their clients
-                    so that they can even know the benefits of the campaign.
-                  </p>
-                </Scrollbars>
-              </div>
-            </div>
-            <div className="col-md-4" data-aos="fade-down">
-              <div className="single_expertise text-center">
-                <div className="expertise_icon_single">
-                  <img
-                    src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/computer.png?alt=media&token=5fe96fea-028d-4578-950f-0b1f8b222932"
-                    className="img-fluid"
-                    alt=""
-                  />
-                </div>
-                <h4>SEO Tools and Software</h4>
-                <Scrollbars
-                  style={{ height: 100 }}
-                  className="expertise_single_cont"
-                >
-                  <p>
-                    Excellis IT uses new-age SEO tools and software to implement
-                    best SEO practices to make sure accurate campaigns and
-                    strategies are based on the best data collected with the
-                    help of such state-of-the-art SEO tools.
-                  </p>
-                </Scrollbars>
-              </div>
-            </div>
-            <div className="col-md-4" data-aos="fade-down">
-              <div className="single_expertise text-center">
-                <div className="expertise_icon_single">
-                  <img
-                    src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/computer.png?alt=media&token=5fe96fea-028d-4578-950f-0b1f8b222932"
-                    className="img-fluid"
-                    alt=""
-                  />
-                </div>
-                <h4>Mobile Optimization</h4>
-                <Scrollbars
-                  style={{ height: 100 }}
-                  className="expertise_single_cont"
-                >
-                  <p>
-                    We optimize your website in such a way that the target users
-                    can easily access the website from their mobile devices.
-                  </p>
-                </Scrollbars>
-              </div>
-            </div>
-            <div className="col-md-4" data-aos="fade-down">
-              <div className="single_expertise text-center">
-                <div className="expertise_icon_single">
-                  <img
-                    src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/computer.png?alt=media&token=5fe96fea-028d-4578-950f-0b1f8b222932"
-                    className="img-fluid"
-                    alt=""
-                  />
-                </div>
-                <h4>Voice Search</h4>
-                <Scrollbars
-                  style={{ height: 100 }}
-                  className="expertise_single_cont"
-                >
-                  <p>
-                    Excellis IT provides their clients with voice search
-                    optimization which ensures to optimize their web pages
-                    according to voice searches. This service takes into account
-                    the search terms the users use during their voice search.
-                  </p>
-                </Scrollbars>
-              </div>
-            </div>
-            <div
-              className="col-md-4"
-              data-aos="fade-down"
-              data-aos-duration="3000"
-            >
-              <div className="single_expertise text-center">
-                <div className="expertise_icon_single">
-                  <img
-                    src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/computer.png?alt=media&token=5fe96fea-028d-4578-950f-0b1f8b222932"
-                    className="img-fluid"
-                    alt=""
-                  />
-                </div>
-                <h4>Featured Snippet Optimization</h4>
-                <Scrollbars
-                  style={{ height: 100 }}
-                  className="expertise_single_cont"
-                >
-                  <p>
-                    Our Search Engine Optimization experts and content writers
-                    curate content in a way that would increase its chances to
-                    appear as a featured snippet. A featured snippet, makes your
-                    website appear above the 1st ranking site on the SERPs.
-                  </p>
-                </Scrollbars>
-              </div>
+            <div className="col-md-12">
+              <Swiper
+                modules={[Navigation]}
+                slidesPerView={4}
+                spaceBetween={30}
+                navigation
+                autoplay={{ delay: 3000 }}
+                className=""
+                breakpoints={{
+                  700: {
+                    spaceBetween: 30,
+                    slidesPerView: 4,
+                  },
+                  500: {
+                    spaceBetween: 100,
+                    slidesPerView: 2,
+                  },
+                  411: {
+                    spaceBetween: 100,
+                    slidesPerView: 2,
+                  },
+                  300: {
+                    spaceBetween: 0,
+                    slidesPerView: 1,
+                  },
+                }}
+              >
+                <SwiperSlide>
+                  <div className="single_expertise text-center">
+                    <div className="expertise_icon_single">
+                      <img
+                        src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/computer.png?alt=media&token=5fe96fea-028d-4578-950f-0b1f8b222932"
+                        className="img-fluid"
+                        alt=""
+                      />
+                    </div>
+                    <h4>International SEO</h4>
+                    <Scrollbars
+                      style={{ height: 150 }}
+                      className="expertise_single_cont"
+                    >
+                      <p>
+                        International SEO optimizes your presence on your
+                        website on the SERPs when the users place search queries
+                        in various languages and countries. Geo-targeting and
+                        other tactics to optimize your site locally helps you to
+                        target customers all over the world.
+                      </p>
+                    </Scrollbars>
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <div className="single_expertise text-center">
+                    <div className="expertise_icon_single">
+                      <img
+                        src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/computer.png?alt=media&token=5fe96fea-028d-4578-950f-0b1f8b222932"
+                        className="img-fluid"
+                        alt=""
+                      />
+                    </div>
+                    <h4>Local SEO</h4>
+                    <Scrollbars
+                      style={{ height: 150 }}
+                      className="expertise_single_cont"
+                    >
+                      <p>
+                        As the best SEO firm in Kolkata, India, Excellis IT with
+                        Local SEO optimizes the online presence of your business
+                        and drives traffic from the local relevant searches.
+                        This helps in gaining sales from local potential
+                        customers.
+                      </p>
+                    </Scrollbars>
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <div className="single_expertise text-center">
+                    <div className="expertise_icon_single">
+                      <img
+                        src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/computer.png?alt=media&token=5fe96fea-028d-4578-950f-0b1f8b222932"
+                        className="img-fluid"
+                        alt=""
+                      />
+                    </div>
+                    <h4>E-commerce SEO</h4>
+                    <Scrollbars
+                      style={{ height: 150 }}
+                      className="expertise_single_cont"
+                    >
+                      <p>
+                        E-commerce SEO ensures that your product pages are among
+                        the top results on the SERPs which in turn helps in
+                        bringing you the desired traffic and sales.
+                      </p>
+                    </Scrollbars>
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <div className="single_expertise text-center">
+                    <div className="expertise_icon_single">
+                      <img
+                        src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/computer.png?alt=media&token=5fe96fea-028d-4578-950f-0b1f8b222932"
+                        className="img-fluid"
+                        alt=""
+                      />
+                    </div>
+                    <h4>Enterprise SEO</h4>
+                    <Scrollbars
+                      style={{ height: 150 }}
+                      className="expertise_single_cont"
+                    >
+                      <p>
+                        Excellis IT offers a full-scale as well as broad
+                        approach to use the power of SEO for enterprise-scale
+                        businesses. We help you by creating high-end SEO
+                        strategies that improve revenue for your enterprises.
+                      </p>
+                    </Scrollbars>
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <div className="single_expertise text-center">
+                    <div className="expertise_icon_single">
+                      <img
+                        src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/computer.png?alt=media&token=5fe96fea-028d-4578-950f-0b1f8b222932"
+                        className="img-fluid"
+                        alt=""
+                      />
+                    </div>
+                    <h4>YouTube SEO</h4>
+                    <Scrollbars
+                      style={{ height: 150 }}
+                      className="expertise_single_cont"
+                    >
+                      <p>
+                        Excellis IT provides YouTube SEO services that optimize
+                        your channel, playlists, metadata, description, and also
+                        your video content.
+                      </p>
+                    </Scrollbars>
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <div className="single_expertise text-center">
+                    <div className="expertise_icon_single">
+                      <img
+                        src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/computer.png?alt=media&token=5fe96fea-028d-4578-950f-0b1f8b222932"
+                        className="img-fluid"
+                        alt=""
+                      />
+                    </div>
+                    <h4>Google Analytics</h4>
+                    <Scrollbars
+                      style={{ height: 150 }}
+                      className="expertise_single_cont"
+                    >
+                      <p>
+                        Excellis IT uses Google Analytics to track how many
+                        visitors your site gets over a specific period of time
+                        as well as which keywords bring in the best results.
+                      </p>
+                    </Scrollbars>
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <div className="single_expertise text-center">
+                    <div className="expertise_icon_single">
+                      <img
+                        src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/computer.png?alt=media&token=5fe96fea-028d-4578-950f-0b1f8b222932"
+                        className="img-fluid"
+                        alt=""
+                      />
+                    </div>
+                    <h4>High-Quality Link Building</h4>
+                    <Scrollbars
+                      style={{ height: 150 }}
+                      className="expertise_single_cont"
+                    >
+                      <p>
+                        Excellis IT puts in efforts to obtain the best
+                        hyperlinks from various other websites to your website.
+                        When other websites can easily link back to your
+                        website, Google considers your website worth ranking.
+                      </p>
+                    </Scrollbars>
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <div className="single_expertise text-center">
+                    <div className="expertise_icon_single">
+                      <img
+                        src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/computer.png?alt=media&token=5fe96fea-028d-4578-950f-0b1f8b222932"
+                        className="img-fluid"
+                        alt=""
+                      />
+                    </div>
+                    <h4>Competitor Analysis</h4>
+                    <Scrollbars
+                      style={{ height: 150 }}
+                      className="expertise_single_cont"
+                    >
+                      <p>
+                        Our experts study the competitive market and track the
+                        online activities to decide what would help your site
+                        stay ahead of the curve.
+                      </p>
+                    </Scrollbars>
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <div className="single_expertise text-center">
+                    <div className="expertise_icon_single">
+                      <img
+                        src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/computer.png?alt=media&token=5fe96fea-028d-4578-950f-0b1f8b222932"
+                        className="img-fluid"
+                        alt=""
+                      />
+                    </div>
+                    <h4>Reporting and Analysis</h4>
+                    <Scrollbars
+                      style={{ height: 150 }}
+                      className="expertise_single_cont"
+                    >
+                      <p>
+                        Our experts provide interpretable reports to their
+                        clients so that they can even know the benefits of the
+                        campaign.
+                      </p>
+                    </Scrollbars>
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <div className="single_expertise text-center">
+                    <div className="expertise_icon_single">
+                      <img
+                        src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/computer.png?alt=media&token=5fe96fea-028d-4578-950f-0b1f8b222932"
+                        className="img-fluid"
+                        alt=""
+                      />
+                    </div>
+                    <h4>SEO Tools and Software</h4>
+                    <Scrollbars
+                      style={{ height: 150 }}
+                      className="expertise_single_cont"
+                    >
+                      <p>
+                        Excellis IT uses new-age SEO tools and software to
+                        implement best SEO practices to make sure accurate
+                        campaigns and strategies are based on the best data
+                        collected with the help of such state-of-the-art SEO
+                        tools.
+                      </p>
+                    </Scrollbars>
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <div className="single_expertise text-center">
+                    <div className="expertise_icon_single">
+                      <img
+                        src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/computer.png?alt=media&token=5fe96fea-028d-4578-950f-0b1f8b222932"
+                        className="img-fluid"
+                        alt=""
+                      />
+                    </div>
+                    <h4>Mobile Optimization</h4>
+                    <Scrollbars
+                      style={{ height: 150 }}
+                      className="expertise_single_cont"
+                    >
+                      <p>
+                        We optimize your website in such a way that the target
+                        users can easily access the website from their mobile
+                        devices.
+                      </p>
+                    </Scrollbars>
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <div className="single_expertise text-center">
+                    <div className="expertise_icon_single">
+                      <img
+                        src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/computer.png?alt=media&token=5fe96fea-028d-4578-950f-0b1f8b222932"
+                        className="img-fluid"
+                        alt=""
+                      />
+                    </div>
+                    <h4>Voice Search</h4>
+                    <Scrollbars
+                      style={{ height: 150 }}
+                      className="expertise_single_cont"
+                    >
+                      <p>
+                        Excellis IT provides their clients with voice search
+                        optimization which ensures to optimize their web pages
+                        according to voice searches. This service takes into
+                        account the search terms the users use during their
+                        voice search.
+                      </p>
+                    </Scrollbars>
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <div className="single_expertise text-center">
+                    <div className="expertise_icon_single">
+                      <img
+                        src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/computer.png?alt=media&token=5fe96fea-028d-4578-950f-0b1f8b222932"
+                        className="img-fluid"
+                        alt=""
+                      />
+                    </div>
+                    <h4>Featured Snippet Optimization</h4>
+                    <Scrollbars
+                      style={{ height: 150 }}
+                      className="expertise_single_cont"
+                    >
+                      <p>
+                        Our Search Engine Optimization experts and content
+                        writers curate content in a way that would increase its
+                        chances to appear as a featured snippet. A featured
+                        snippet, makes your website appear above the 1st ranking
+                        site on the SERPs.
+                      </p>
+                    </Scrollbars>
+                  </div>
+                </SwiperSlide>
+              </Swiper>
             </div>
           </div>
         </div>
@@ -1318,31 +1570,135 @@ const SearchEngineOptimization = () => {
         </div>
       </section>
       <TestimonialSection />
-      <OurClients />
 
-      <section className="cta2_section">
+      <section className="inner_page_client_section">
         <div className="container">
           <div className="row">
             <div className="col-md-12">
-              <div className="cta2_inner d-block d-sm-flex align-items-center">
-                <div className="cta2_img_sec">
-                  <img
-                    src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/get_in_touch.jpg?alt=media&token=ee75d316-dacb-4289-ad29-58397cd83b83"
-                    alt=""
-                  />
-                </div>
-                <div className="cta2_content_sec text-left">
-                  <h4>Transform your data into valuable business insights</h4>
-                  <p>
-                    We can design processes that visualise data processing,
-                    design and create a solution from scratch based on existing
-                    mathematical
-                  </p>
-                  <a href="#" className="light-btn">
-                    Get in Touch
-                  </a>
-                </div>
+              <div className="big_title">
+                <h2 data-aos="fade-down" data-aos-duration="1500">
+                  <span>Our CLients</span>
+                </h2>
               </div>
+            </div>
+          </div>
+          <div className="row">
+            <div className="col-md-12">
+              <Swiper
+                modules={[Navigation]}
+                slidesPerView={5}
+                spaceBetween={15}
+                navigation
+                autoplay={{ delay: 3000 }}
+                className="myclient"
+                breakpoints={{
+                  700: {
+                    spaceBetween: 15,
+                    slidesPerView: 5,
+                  },
+                  500: {
+                    spaceBetween: 100,
+                    slidesPerView: 2,
+                  },
+                  411: {
+                    spaceBetween: 100,
+                    slidesPerView: 2,
+                  },
+                  300: {
+                    spaceBetween: 0,
+                    slidesPerView: 1,
+                  },
+                }}
+              >
+                <SwiperSlide>
+                  <div className="single_inner_client">
+                    <img
+                      src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/clients%2Fclient1.jpg?alt=media&token=b9bc7aa2-29b6-48eb-94ef-842493f92fed"
+                      alt=""
+                    />
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <div className="single_inner_client">
+                    <img
+                      src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/clients%2Fclient2.jpg?alt=media&token=c9b685ed-6fee-45c4-90c0-c7f4dcbf0725"
+                      alt=""
+                    />
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <div className="single_inner_client">
+                    <img
+                      src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/clients%2Fclient4.jpg?alt=media&token=f43626ae-3a1e-4cfd-8624-6f11f925b9e3"
+                      alt=""
+                    />
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <div className="single_inner_client">
+                    <img
+                      src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/clients%2Fclient5.jpg?alt=media&token=42cf4061-500a-4c1f-95ae-0985589898f2"
+                      alt=""
+                    />
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <div className="single_inner_client">
+                    <img
+                      src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/clients%2Fclient6.jpg?alt=media&token=108ba7f0-a3e4-42d9-89b4-e8360fe50cfb"
+                      alt=""
+                    />
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <div className="single_inner_client">
+                    <img
+                      src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/clients%2Fclient7.jpg?alt=media&token=20e52744-0b35-4426-9973-c4afe7426967"
+                      alt=""
+                    />
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <div className="single_inner_client">
+                    <img
+                      src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/clients%2Fclient8.jpg?alt=media&token=38c47c8b-8c77-4feb-a1a9-d16585527e52"
+                      alt=""
+                    />
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <div className="single_inner_client">
+                    <img
+                      src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/clients%2Fclient9.jpg?alt=media&token=8476acd8-eeb2-40d3-bcd4-d78aea646fdb"
+                      alt=""
+                    />
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <div className="single_inner_client">
+                    <img
+                      src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/clients%2Fclient10.jpg?alt=media&token=66186813-b268-49a9-9a24-1920851bee68"
+                      alt=""
+                    />
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <div className="single_inner_client">
+                    <img
+                      src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/clients%2Fclient11.jpg?alt=media&token=fba28597-59d6-4911-9bd7-f8f2a6cb0892"
+                      alt=""
+                    />
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <div className="single_inner_client">
+                    <img
+                      src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/clients%2Fclient12.jpg?alt=media&token=e06ae285-084b-4fea-86ef-cd4f8891e5e5"
+                      alt=""
+                    />
+                  </div>
+                </SwiperSlide>
+              </Swiper>
             </div>
           </div>
         </div>
@@ -1519,6 +1875,28 @@ const SearchEngineOptimization = () => {
       </section>
 
       <OurBlogs />
+      <section className="cta2_section cta_block_bg">
+        <div className="container">
+          <div className="row">
+            <div className="col-md-12">
+              <div
+                className="cta2_inner d-block d-sm-flex align-items-center"
+                style={{ backgroundImage: `url(${cta_bg})` }}
+              >
+                <div className="cta2_content_sec text-center w-100">
+                  <h4 className="mb-4">
+                    Sort out your digital marketing needs with the best SEO
+                    provider in town.{" "}
+                  </h4>
+                  <Link className=" light-btn" to="/ContactUs">
+                    Contact Us
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <section class="sec section_technology">
         <div class="s-TechnologiesLogos s-TechnologiesLogos--WithScanlines ">

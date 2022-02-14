@@ -302,14 +302,15 @@ const MainMenu = () => {
             <div class="menu__item menu__item--5">
               <div class="menu__item-inner">
                 <div class="sidemenu">
-                  <a
-                    href="https://www.excellisit.com/search-engine-marketing"
-                    class="sidemenu__item"
+                  <Link
+                    activeClassName="navbar__link--active"
+                    className=" sidemenu__item"
+                    to="/search-engine-optimization"
                   >
                     <span class="sidemenu__item-inner">
                       Search engine Marketing
                     </span>
-                  </a>
+                  </Link>
                   <a
                     href="https://www.excellisit.com/social-media-marketing"
                     class="sidemenu__item"
