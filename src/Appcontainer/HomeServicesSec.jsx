@@ -2,12 +2,14 @@ import React from "react";
 import Typed from "react-typed";
 import { Animated } from "react-animated-css";
 import { Link } from "react-router-dom";
+import { Swiper, SwiperSlide } from "swiper/react";
+import SwiperCore, { Navigation, EffectCards, Autoplay } from "swiper";
 import { Scrollbars } from "react-custom-scrollbars-2";
 
 const HomeServicesSec = () => {
   return (
     <div>
-      <section className="serices_section">
+      <section className="serices_section d-none d-sm-block">
         <div className="arrow_div">
           <img src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/arrow-design.svg?alt=media&token=2d324c90-5008-4ac7-b74d-562cc8fd83e8" />
         </div>
@@ -773,6 +775,494 @@ const HomeServicesSec = () => {
                     </div>
                   </div>
                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="res_tab_sec d-block d-sm-none">
+        <div class="container">
+          <div class="res_tab">
+            <div class="overflow_tab">
+              <ul class="nav nav-tabs" role="tablist">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    data-toggle="tab"
+                    href="#tabs-1"
+                    role="tab"
+                  >
+                    <sup>01</sup> IT Services
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    data-toggle="tab"
+                    href="#tabs-2"
+                    role="tab"
+                  >
+                    <sup>02</sup> Marketing Services
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    data-toggle="tab"
+                    href="#tabs-3"
+                    role="tab"
+                  >
+                    <sup>03</sup> BPO Services
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    data-toggle="tab"
+                    href="#tabs-4"
+                    role="tab"
+                  >
+                    <sup>04</sup> CAD Services
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="tab-content">
+              <div class="tab-pane active" id="tabs-1" role="tabpanel">
+                <Swiper
+                  modules={[EffectCards]}
+                  effect="cards"
+                  grabCursor={true}
+                >
+                  <SwiperSlide>
+                    <div class="swiper-slide-item">
+                      <div class="res_single_services">
+                        <div class="img_icon_ser">
+                          <img src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/digital-icon%2Fweb_development.png?alt=media&token=7d76f2a0-07a6-4f52-bfcd-6093c1cd90df" />
+                        </div>
+                        <h4>Web Development</h4>
+                        <p>
+                          <Scrollbars style={{ height: 170 }}>
+                            First impression is the last impression. If you want
+                            your client’s website to be also the one; you need
+                            the help of experts. Excellis IT’s sole target is to
+                            develop websites that are user friendly as well as
+                            credible.
+                          </Scrollbars>
+                        </p>
+                        <a href="">Explore More...</a>
+                      </div>
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <div class="swiper-slide-item">
+                      <div class="res_single_services">
+                        <div class="img_icon_ser">
+                          <img src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/digital-icon%2Fweb_design.png?alt=media&token=cf97ed0f-ef1d-45f4-899b-80222e87ebb4" />
+                        </div>
+                        <h4>Web Designing</h4>
+                        <p>
+                          <Scrollbars style={{ height: 170 }}>
+                            While designing a website we keep in mind that it
+                            accurately reflects your brand as well as the
+                            content should be crisp and to the point so that
+                            your clientele gets to know all your best points
+                            without any hassle.
+                          </Scrollbars>
+                        </p>
+                        <a href="">Explore More...</a>
+                      </div>
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <div class="swiper-slide-item">
+                      <div class="res_single_services">
+                        <div class="img_icon_ser">
+                          <img src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/digital-icon%2Fui_ux.png?alt=media&token=52b10214-2eba-4c93-829f-cfbcf6861266" />
+                        </div>
+                        <h4>UI / UX Design</h4>
+                        <p>
+                          <Scrollbars style={{ height: 170 }}>
+                            Our skilled UI/UX designers are talented weavers who
+                            create business-driven website as well as mobile app
+                            designs to meet client needs. At Excellis IT our
+                            main goal is to develop a user centric web and
+                            mobile app design that would provide the user best
+                            in class user experience.
+                          </Scrollbars>
+                        </p>
+                        <a href="">Explore More...</a>
+                      </div>
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <div class="swiper-slide-item">
+                      <div class="res_single_services">
+                        <div class="img_icon_ser">
+                          <img src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/digital-icon%2Fmobile_app.png?alt=media&token=2b539898-a284-4a55-a22e-14145175060f" />
+                        </div>
+                        <h4>Mobile Application</h4>
+                        <p>
+                          <Scrollbars style={{ height: 170 }}>
+                            Every website these days is mobile friendly- thus,
+                            you require a good mobile app developer offering
+                            services like cross-platform mobile app development,
+                            android app development and IOS app development so
+                            that one does not lose out on customers. Excellis IT
+                            is among the{" "}
+                            <b>
+                              top mobile app development companies in Kolkata,
+                              India
+                            </b>{" "}
+                            offering mobile app development services which is
+                            affordable. We create user-friendly mobile apps to
+                            increase your customer engagement as well as
+                            conversion online.
+                          </Scrollbars>
+                        </p>
+                        <a href="">Explore More...</a>
+                      </div>
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <div class="swiper-slide-item">
+                      <div class="res_single_services">
+                        <div class="img_icon_ser">
+                          <img src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/digital-icon%2Fsoftware_deve.png?alt=media&token=b6cfb897-2a23-4620-99e0-0cecfcef7328" />
+                        </div>
+                        <h4>Software Development</h4>
+                        <p>
+                          <Scrollbars style={{ height: 170 }}>
+                            Excellis IT has an excellent software development
+                            team who works towards building innovative products
+                            that would check all the boxes.
+                          </Scrollbars>
+                        </p>
+                        <a href="">Explore More...</a>
+                      </div>
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <div class="swiper-slide-item">
+                      <div class="res_single_services">
+                        <div class="img_icon_ser">
+                          <img src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/digital-icon%2Fqa_testing.png?alt=media&token=c71a8419-5a56-48ed-814a-02965886836b" />
+                        </div>
+                        <h4>QA And Testing</h4>
+                        <p>
+                          <Scrollbars style={{ height: 170 }}>
+                            As a well-known <b>Software development Company</b>{" "}
+                            Our QA and Testing services are designed in a way
+                            that would prevent issues in your software product
+                            or service as well as make sure that your user has a
+                            great experience with the software.
+                          </Scrollbars>
+                        </p>
+                        <a href="">Explore More...</a>
+                      </div>
+                    </div>
+                  </SwiperSlide>
+                </Swiper>
+              </div>
+              <div class="tab-pane" id="tabs-2" role="tabpanel">
+                <Swiper
+                  modules={[EffectCards]}
+                  effect="cards"
+                  grabCursor={true}
+                >
+                  <SwiperSlide>
+                    <div class="swiper-slide-item">
+                      <div class="res_single_services">
+                        <div class="img_icon_ser">
+                          <img src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/digital-icon%2Fseo_seo.png?alt=media&token=a88e1d2b-c0c4-42b6-a5fd-71c1f8f6c9dd" />
+                        </div>
+                        <h4>Search Engine Optimization</h4>
+                        <p>
+                          <Scrollbars style={{ height: 170 }}>
+                            Excellis IT is an renowned{" "}
+                            <b>digital marketing agency</b> that offers the{" "}
+                            <b>best SEO services in India.</b> We deal with the
+                            technical aspects like increasing visibility, site
+                            back linking, website audits, optimizing content,
+                            keyword research, increasing page speed, mobile
+                            optimization and link building. We are experts in
+                            Search Engine Optimization thus, we help you to
+                            boost your search rankings and become more visible.
+                          </Scrollbars>
+                        </p>
+                        <a href="">Explore More...</a>
+                      </div>
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <div class="swiper-slide-item">
+                      <div class="res_single_services">
+                        <div class="img_icon_ser">
+                          <img src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/digital-icon%2Fsocial_media.png?alt=media&token=04ce90c9-43a3-429a-a585-cb01a9f38782" />
+                        </div>
+                        <h4>Social Media Marketing</h4>
+                        <p>
+                          <Scrollbars style={{ height: 170 }}>
+                            Excellis IT, is a leading social media marketing and
+                            optimization company that extends reliable and
+                            comprehensive services to businesses.
+                          </Scrollbars>
+                        </p>
+                        <a href="">Explore More...</a>
+                      </div>
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <div class="swiper-slide-item">
+                      <div class="res_single_services">
+                        <div class="img_icon_ser">
+                          <img src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/digital-icon%2Fppc.png?alt=media&token=33d4844a-e5f1-43d1-8577-b182fa471423" />
+                        </div>
+                        <h4>Pay Per Click</h4>
+                        <p>
+                          <Scrollbars style={{ height: 170 }}>
+                            Excellis IT is one of the best digital marketing
+                            company that uses PPC (Pay-Per-Click) advertising,
+                            to target your audience.
+                          </Scrollbars>
+                        </p>
+                        <a href="">Explore More...</a>
+                      </div>
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <div class="swiper-slide-item">
+                      <div class="res_single_services">
+                        <div class="img_icon_ser">
+                          <img src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/digital-icon%2Femail_marketing.png?alt=media&token=3da6486f-656f-48c7-aebf-b3666b9b8494" />
+                        </div>
+                        <h4>Email Marketing</h4>
+                        <p>
+                          <Scrollbars style={{ height: 170 }}>
+                            Excellis IT is among the trusted Do-It-Yourself
+                            email marketing service provider used by a number of
+                            businesses when they need to send email campaigns.
+                          </Scrollbars>
+                        </p>
+                        <a href="">Explore More...</a>
+                      </div>
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <div class="swiper-slide-item">
+                      <div class="res_single_services">
+                        <div class="img_icon_ser">
+                          <img src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/digital-icon%2Fcontent_mar.png?alt=media&token=a4f5641c-bc50-4a27-a276-b2b42df53b3b" />
+                        </div>
+                        <h4>Content Marketing</h4>
+                        <p>
+                          <Scrollbars style={{ height: 170 }}>
+                            Excellis IT is the{" "}
+                            <b>
+                              best digital marketing company in Kolkata, India.
+                            </b>{" "}
+                            Thus, our Content Marketing experts closely works
+                            with marketing team and build content stream based
+                            on your Brand Identity and Positioning.
+                          </Scrollbars>
+                        </p>
+                        <a href="">Explore More...</a>
+                      </div>
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <div class="swiper-slide-item">
+                      <div class="res_single_services">
+                        <div class="img_icon_ser">
+                          <img src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/digital-icon%2Fcon_ra_op.png?alt=media&token=dab9e32f-cf56-418e-bd43-2e2efdb62172" />
+                        </div>
+                        <h4>Conversion Rate Optimisation</h4>
+                        <p>
+                          <Scrollbars style={{ height: 170 }}>
+                            Excellis IT is among the{" "}
+                            <b>
+                              best digital marketing company in Kolkata, India.
+                            </b>{" "}
+                            We help in the process of increasing the percentage
+                            of conversions from your website or mobile app.
+                            Thus, conversion rate conveys the number of people
+                            who engaged with your desired action.
+                          </Scrollbars>
+                        </p>
+                        <a href="">Explore More...</a>
+                      </div>
+                    </div>
+                  </SwiperSlide>
+                </Swiper>
+              </div>
+              <div class="tab-pane" id="tabs-3" role="tabpanel">
+                <Swiper
+                  modules={[EffectCards]}
+                  effect="cards"
+                  grabCursor={true}
+                >
+                  <SwiperSlide>
+                    <div class="swiper-slide-item">
+                      <div class="res_single_services">
+                        <div class="img_icon_ser">
+                          <img src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/digital-icon%2Fcall_center.png?alt=media&token=5320c58a-4a37-466e-9676-26e4590618ac" />
+                        </div>
+                        <h4>Call Center Outsource Services</h4>
+                        <p>
+                          <Scrollbars style={{ height: 170 }}>
+                            If you are looking for ways to boost your business
+                            and give it that competitive edge? Our call centre
+                            outsourcing services would definitely assist you in
+                            that matter.
+                          </Scrollbars>
+                        </p>
+                        <a href="">Explore More...</a>
+                      </div>
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <div class="swiper-slide-item">
+                      <div class="res_single_services">
+                        <div class="img_icon_ser">
+                          <img src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/digital-icon%2Fback_office.png?alt=media&token=f4e10419-d189-4982-a359-b4c871361947" />
+                        </div>
+                        <h4>Back-Office Process Outsourcing Services</h4>
+                        <p>
+                          <Scrollbars style={{ height: 170 }}>
+                            Our back-office process outsourcing services help
+                            the business to grow and move on to a bigger and
+                            better venture.
+                          </Scrollbars>
+                        </p>
+                        <a href="">Explore More...</a>
+                      </div>
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <div class="swiper-slide-item">
+                      <div class="res_single_services">
+                        <div class="img_icon_ser">
+                          <img src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/digital-icon%2Fecommrce_o.png?alt=media&token=3a4f23b6-bafd-46c7-a7b8-1f0e9e917872" />
+                        </div>
+                        <h4>E-Commerce Outsourcing Services</h4>
+                        <p>
+                          <Scrollbars style={{ height: 170 }}>
+                            Our E-commerce outsourcing services assist you in
+                            managing your everyday operations seamlessly sparing
+                            enough time to focus on strategic business plan.
+                          </Scrollbars>
+                        </p>
+                        <a href="">Explore More...</a>
+                      </div>
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <div class="swiper-slide-item">
+                      <div class="res_single_services">
+                        <div class="img_icon_ser">
+                          <img src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/digital-icon%2Fprofessional.png?alt=media&token=884a546d-dbac-47ef-9194-e0b0fc6f053b" />
+                        </div>
+                        <h4>Professional Services</h4>
+                        <p>
+                          <Scrollbars style={{ height: 170 }}>
+                            Excellis IT offers professional services restructure
+                            that helps in providing wide range of consulting
+                            services for more sophisticated clients.
+                          </Scrollbars>
+                        </p>
+                        <a href="">Explore More...</a>
+                      </div>
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <div class="swiper-slide-item">
+                      <div class="res_single_services">
+                        <div class="img_icon_ser">
+                          <img src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/digital-icon%2Fperformance_complin.png?alt=media&token=467fd902-f8a6-420b-8195-42077e46abee" />
+                        </div>
+                        <h4>Performance & Compliance Management</h4>
+                        <p>
+                          <Scrollbars style={{ height: 170 }}>
+                            Excellis IT provides performance and compliance
+                            solution that measure your business and legal
+                            compliance and value at risk, while effectively
+                            meeting the regulatory and business compliance
+                            norms.
+                          </Scrollbars>
+                        </p>
+                        <a href="">Explore More...</a>
+                      </div>
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <div class="swiper-slide-item">
+                      <div class="res_single_services">
+                        <div class="img_icon_ser">
+                          <img src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/digital-icon%2Finnovation_ex.png?alt=media&token=b1a02885-6188-449e-945a-0328100b9a52" />
+                        </div>
+                        <h4>Innovation at Excellis It</h4>
+                        <p>
+                          <Scrollbars style={{ height: 170 }}>
+                            Excellis IT has innovative plans and ideas that fit
+                            all of your company’s needs and would help increase
+                            your business.
+                          </Scrollbars>
+                        </p>
+                        <a href="">Explore More...</a>
+                      </div>
+                    </div>
+                  </SwiperSlide>
+                </Swiper>
+              </div>
+              <div class="tab-pane" id="tabs-4" role="tabpanel">
+                <Swiper
+                  modules={[EffectCards]}
+                  effect="cards"
+                  grabCursor={true}
+                >
+                  <SwiperSlide>
+                    <div class="swiper-slide-item">
+                      <div class="res_single_services">
+                        <div class="img_icon_ser">
+                          <img src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/digital-icon%2Farchtecture.png?alt=media&token=2f6a964c-1481-4151-854b-c383ec1482e3" />
+                        </div>
+                        <h4>Architecture</h4>
+                        <p>
+                          <Scrollbars style={{ height: 170 }}>
+                            Excellis IT has a team of skilled architects who
+                            offers a plethora of Architectural BIM services
+                            which includes conversion of design drawings to
+                            accurate construction documents and 3D models with
+                            parametric families.
+                          </Scrollbars>
+                        </p>
+                        <a href="">Explore More...</a>
+                      </div>
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <div class="swiper-slide-item">
+                      <div class="res_single_services">
+                        <div class="img_icon_ser">
+                          <img src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/digital-icon%2Fmechanical.png?alt=media&token=eecc11ed-4701-494c-adf8-be146e2197cc" />
+                        </div>
+                        <h4>Mechanical</h4>
+                        <p>
+                          <Scrollbars style={{ height: 170 }}>
+                            A team of highly experienced Mechanical Modelers at
+                            Excellis IT provides mechanical engineers, product
+                            designers & developers precise Mechanical 3D
+                            modelling services which aims at improving
+                            productivity and efficiency of the manufacturing
+                            process.
+                          </Scrollbars>
+                        </p>
+                        <a href="">Explore More...</a>
+                      </div>
+                    </div>
+                  </SwiperSlide>
+                </Swiper>
               </div>
             </div>
           </div>

@@ -1271,7 +1271,7 @@
 .why_pill_tab li a.active {
   background-color: var(--theme-dark2) !important;
 }
-.why_pill_tab_content {
+.wht_tab_inner {
   padding: 25px;
   background-color: #2e2e2e;
   border: 1px solid var(--text-white1);

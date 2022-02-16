@@ -4,11 +4,9 @@ import Navbar from "../Navbar";
 import Footer from "../Footer";
 import InnerBanner from "../InnerBanner";
 import { Helmet } from "react-helmet";
-import { NavLink } from "react-router-dom";
 import { Scrollbars } from "react-custom-scrollbars-2";
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { Navigation, Pagination, Autoplay } from "swiper";
-import OurClients from "../Appcontainer/OurClients";
 import OurBlogs from "../Appcontainer/OurBlog";
 import TestimonialSection from "../TestimonialSection";
 import { Animated } from "react-animated-css";
@@ -473,6 +471,7 @@ const SearchEngineOptimization = () => {
                     animationOut="fadeOut"
                     isVisible={true}
                     animationInDelay={10}
+                    className="wht_tab_inner"
                   >
                     <h4>Experienced SEO professionals </h4>
                     <p>
@@ -494,6 +493,7 @@ const SearchEngineOptimization = () => {
                     animationOut="fadeOut"
                     isVisible={true}
                     animationInDelay={10}
+                    className="wht_tab_inner"
                   >
                     <h4>Assessable Results </h4>
                     <p>
@@ -514,6 +514,7 @@ const SearchEngineOptimization = () => {
                     animationOut="fadeOut"
                     isVisible={true}
                     animationInDelay={10}
+                    className="wht_tab_inner"
                   >
                     <h4>Data-driven Strategies </h4>
                     <p>
@@ -534,6 +535,7 @@ const SearchEngineOptimization = () => {
                     animationOut="fadeOut"
                     isVisible={true}
                     animationInDelay={10}
+                    className="wht_tab_inner"
                   >
                     <h4>Reports </h4>
                     <p>
@@ -555,6 +557,7 @@ const SearchEngineOptimization = () => {
                     animationOut="fadeOut"
                     isVisible={true}
                     animationInDelay={10}
+                    className="wht_tab_inner"
                   >
                     <h4>Affordable SEO packages </h4>
                     <p>
@@ -576,6 +579,7 @@ const SearchEngineOptimization = () => {
                     animationOut="fadeOut"
                     isVisible={true}
                     animationInDelay={10}
+                    className="wht_tab_inner"
                   >
                     <h4>Experts of the field </h4>
                     <p>
