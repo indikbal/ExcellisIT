@@ -1195,6 +1195,7 @@ span.portfolio_surname {
 }
 .newsletter_sec {
   padding: 50px 0 50px 0;
+  position: relative;
 }
 
 .newsletter_text h4 {

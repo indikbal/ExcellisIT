@@ -151,3 +151,35 @@
 .theme-light .main_services_content_inner h4 {
   color: var(--theme-yellow2);
 }
+.theme-light .s-BannerServices {
+  background-color: #f1f1f1;
+}
+.theme-light .company_intro p {
+  color: var(--theme-dark1);
+}
+.theme-light .all_services_item_sec {
+  background-color: #fff;
+}
+.theme-light .single_inner_services {
+  background-color: #f1f1f1;
+}
+.theme-light .single_inner_services p {
+  color: var(--theme-dark1);
+}
+.theme-light .why_hire_sec {
+  background-color: #f1f1f1;
+}
+.theme-light .big_title h2 span,
+.theme-light .big_title h2,
+.theme-light .newsletter_text h4,
+.theme-light .newsletter_text h4 span {
+  color: var(--theme-dark2);
+}
+.theme-light .inner_page_industries,
+.theme-light .testim::before,
+.theme-light .newsletter_sec {
+  background-color: #f1f1f1;
+}
+.theme-light .inner_page_client_section {
+  background-color: #fff;
+}
