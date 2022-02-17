@@ -140,6 +140,18 @@ const IndustriesWeCovered = () => {
                       className="img-fluid"
                     />
                   </div>
+                  <div className="industries_bg">
+                    <img
+                      src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/education.jpg?alt=media&token=033d4eed-6066-4b21-874e-9d1eef44d549"
+                      className="img-fluid"
+                    />
+                  </div>
+                  <div className="industries_bg">
+                    <img
+                      src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/ecommerce.jpg?alt=media&token=b396e262-f2a5-498c-9c7f-24793187d9c4"
+                      className="img-fluid"
+                    />
+                  </div>
                 </Slider>
                 <Slider
                   asNavFor={nav1}
@@ -285,6 +297,25 @@ const IndustriesWeCovered = () => {
                         solutions provide advanced automation, analytical, and
                         management solutions that make swarming and fast-paced
                         business of logistic a smart and growing business.
+                      </p>
+                    </div>
+                  </div>
+                  <div className="single_industries">
+                    <div className="single_indus_content">
+                      <h4>Education </h4>
+                      <p>
+                        We make education interactive as well as simple with the
+                        power of technology and help of user friendly website
+                        and apps.
+                      </p>
+                    </div>
+                  </div>
+                  <div className="single_industries">
+                    <div className="single_indus_content">
+                      <h4>E-commerce </h4>
+                      <p>
+                        We help you grow your business and reach a wider
+                        audience with E-commerce website and app development.
                       </p>
                     </div>
                   </div>

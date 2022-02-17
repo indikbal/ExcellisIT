@@ -32,6 +32,7 @@ import SearchEngineOptimization from "./MarketingServices/SearchEngineOptimizati
 function App() {
   AOS.init({
     duration: 1500,
+    once: "true",
   });
 
   useEffect(() => {

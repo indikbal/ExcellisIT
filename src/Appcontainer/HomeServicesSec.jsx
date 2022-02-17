@@ -174,7 +174,7 @@ const HomeServicesSec = () => {
                                 <Link to="/UiUxDesign" className="">
                                   <div className="single_services d-flex p-0 min-h-220">
                                     <div className="singel_img_serv">
-                                      <img src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/ui-ux.jpg?alt=media&token=0aaee418-aa51-4409-8df8-95a013231316" />
+                                      <img src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/web-design.jpg?alt=media&token=44917a2f-e71e-4236-a8b9-c235182dcef3" />
                                     </div>
                                     <div className="single_img_services">
                                       <div className="services_icon desigining_icon"></div>
@@ -356,7 +356,7 @@ const HomeServicesSec = () => {
                               >
                                 <div className="single_services d-flex p-0">
                                   <div className="singel_img_serv">
-                                    <img src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/ui-ux.jpg?alt=media&token=0aaee418-aa51-4409-8df8-95a013231316" />
+                                    <img src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/social-media-marketing.jpg?alt=media&token=9c32ded7-059d-44d1-bbdc-2317ae1c63e5" />
                                   </div>
                                   <div className="single_img_services">
                                     <div className="services_icon desigining_icon"></div>
@@ -389,7 +389,7 @@ const HomeServicesSec = () => {
                                 <Link to="/UiUxDesign" className="">
                                   <div className="single_services d-flex p-0 min-h-220">
                                     <div className="singel_img_serv">
-                                      <img src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/ui-ux.jpg?alt=media&token=0aaee418-aa51-4409-8df8-95a013231316" />
+                                      <img src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/cro.jpg?alt=media&token=82186b79-0044-49e1-8b54-2c9771751b49" />
                                     </div>
                                     <div className="single_img_services">
                                       <div className="services_icon desigining_icon"></div>
@@ -483,7 +483,7 @@ const HomeServicesSec = () => {
                                 <Link to="/QaAndTesting" className="">
                                   <div className="single_services">
                                     <div className="services_icon desigining_icon"></div>
-                                    <h4>Social Media Marketing</h4>
+                                    <h4>Email Marketing</h4>
                                     <p>
                                       <Scrollbars
                                         style={{ height: 70 }}
@@ -491,10 +491,10 @@ const HomeServicesSec = () => {
                                         autoHideTimeout={1000}
                                         autoHideDuration={200}
                                       >
-                                        Excellis IT, is a leading social media
-                                        marketing and optimization company that
-                                        extends reliable and comprehensive
-                                        services to businesses.
+                                        Excellis IT is among the trusted
+                                        Do-It-Yourself email marketing service
+                                        provider used by a number of businesses
+                                        when they need to send email campaigns.
                                       </Scrollbars>
                                     </p>
                                   </div>
@@ -555,13 +555,11 @@ const HomeServicesSec = () => {
                               >
                                 <div className="single_services d-flex p-0">
                                   <div className="singel_img_serv">
-                                    <img src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/ui-ux.jpg?alt=media&token=0aaee418-aa51-4409-8df8-95a013231316" />
+                                    <img src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/Back-Office-Process-Outsourcing.jpg?alt=media&token=2d82bf42-75ed-4bd2-a767-5c80f6ceb30d" />
                                   </div>
                                   <div className="single_img_services">
                                     <div className="services_icon desigining_icon"></div>
-                                    <h4>
-                                      Back-Office Process Outsourcing Services
-                                    </h4>
+                                    <h4>Back-Office Process Outsourcing</h4>
                                     <p>
                                       <Scrollbars
                                         style={{ height: 70 }}
@@ -589,7 +587,7 @@ const HomeServicesSec = () => {
                                 <Link to="/UiUxDesign" className="">
                                   <div className="single_services d-flex p-0 min-h-220">
                                     <div className="singel_img_serv">
-                                      <img src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/ui-ux.jpg?alt=media&token=0aaee418-aa51-4409-8df8-95a013231316" />
+                                      <img src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/Performance-%26-Compliance-Management.jpg?alt=media&token=415d8bc5-dd4c-4b4e-ab86-19293db903d9" />
                                     </div>
                                     <div className="single_img_services">
                                       <div className="services_icon desigining_icon"></div>

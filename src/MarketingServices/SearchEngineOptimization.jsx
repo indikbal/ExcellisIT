@@ -11,6 +11,8 @@ import OurBlogs from "../Appcontainer/OurBlog";
 import TestimonialSection from "../TestimonialSection";
 import { Animated } from "react-animated-css";
 import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
+import $ from "jquery";
+import { FaUserLock } from "react-icons/fa";
 const cta_bg =
   "https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/digital-marketing%2Fcta_img.jpg?alt=media&token=80dff7e9-4f79-4258-ae00-734d63a84110";
 SwiperCore.use([Navigation, Pagination, Autoplay]);
@@ -44,6 +46,78 @@ const SearchEngineOptimization = () => {
   const title = "Search Engine Optimization";
   const description =
     "“Best SEO service provider is here to help you with a complete digital transformation.”";
+
+  var maxData = 3;
+  let i = 2;
+
+  $(document).ready(function () {
+    var radius = 200;
+    var fields = $(".itemDot");
+    var container = $(".dotCircle");
+    var width = container.width();
+    radius = width / 2.5;
+
+    var height = container.height();
+    var angle = 0,
+      step = (2 * Math.PI) / fields.length;
+    fields.each(function () {
+      var x = Math.round(
+        width / 2 + radius * Math.cos(angle) - $(this).width() / 2
+      );
+      var y = Math.round(
+        height / 2 + radius * Math.sin(angle) - $(this).height() / 2
+      );
+      if (window.console) {
+        console.log($(this).text(), x, y);
+      }
+
+      $(this).css({
+        left: x + "px",
+        top: y + "px",
+      });
+      angle += step;
+    });
+
+    $(".itemDot").click(function () {
+      var dataTab = $(this).data("tab");
+      $(".itemDot").removeClass("active");
+      $(this).addClass("active");
+      $(".CirItem").removeClass("active");
+      $(".CirItem" + dataTab).addClass("active");
+      i = dataTab;
+
+      $(".dotCircle").css({
+        transform: "rotate(" + (360 - (i - 1) * 36) + "deg)",
+        transition: "2s",
+      });
+      $(".itemDot").css({
+        transform: "rotate(" + (i - 1) * 36 + "deg)",
+        transition: "1s",
+      });
+    });
+
+    setInterval(function () {
+      var dataTab = $(".itemDot.active").data("tab");
+      if (dataTab > maxData || i > maxData) {
+        dataTab = 1;
+        i = 1;
+      }
+      $(".itemDot").removeClass("active");
+      $('[data-tab="' + i + '"]').addClass("active");
+      $(".CirItem").removeClass("active");
+      $(".CirItem" + i).addClass("active");
+      i++;
+
+      $(".dotCircle").css({
+        transform: "rotate(" + (360 - (i - 2) * 36) + "deg)",
+        transition: "2s",
+      });
+      $(".itemDot").css({
+        transform: "rotate(" + (i - 2) * 36 + "deg)",
+        transition: "1s",
+      });
+    }, 5000);
+  });
 
   return (
     <div>
@@ -1573,6 +1647,142 @@ const SearchEngineOptimization = () => {
           </div>
         </div>
       </section>
+
+      <section class="iq-features">
+        <div class="container">
+          <div className="row mb-3">
+            <div className="col-md-12">
+              <div
+                class="main_heading white_text"
+                data-aos="fade-down"
+                data-aos-duration="1000"
+              >
+                <h6>Benefits</h6>
+                <h2 class="h2--WithLine">
+                  Benefits of Hiring SEO Service Provider
+                </h2>
+              </div>
+            </div>
+          </div>
+          <div class="row align-items-center">
+            <div class="col-lg-8 col-md-12">
+              <div class="holderCircle">
+                <div class="round"></div>
+                <div class="dotCircle">
+                  <span class="itemDot active itemDot1" data-tab="1">
+                    <i class="fa-solid fa-eye"></i>
+                    <span class="forActive"></span>
+                  </span>
+                  <span class="itemDot itemDot2" data-tab="2">
+                    <i class="fa-solid fa-filter-circle-dollar"></i>
+                    <span class="forActive"></span>
+                  </span>
+                  <span class="itemDot itemDot3" data-tab="3">
+                    <i class="fa-solid fa-hourglass-empty"></i>
+                    <span class="forActive"></span>
+                  </span>
+                  <span class="itemDot itemDot4" data-tab="4">
+                    <i class="fa-solid fa-award"></i>
+                    <span class="forActive"></span>
+                  </span>
+                  <span class="itemDot itemDot5" data-tab="5">
+                    <i class="fa-solid fa-bullhorn"></i>
+                    <span class="forActive"></span>
+                  </span>
+                  <span class="itemDot itemDot6" data-tab="6">
+                    <FaUserLock />
+                    <span class="forActive"></span>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-12">
+              <div class="contentCircle">
+                <div class="CirItem title-box active CirItem1">
+                  <h2 class="title">
+                    <span>Better Visibility </span>
+                  </h2>
+                  <p>
+                    SEO is an organic way that would help you rank better as
+                    well as establish a domain authority over your competitors.
+                    Better visibility also means you can convert potential
+                    buyers into customers.
+                  </p>
+                  <i class="fa fa-clock-o"></i>
+                </div>
+
+                <div class="CirItem title-box CirItem2">
+                  <h2 class="title">
+                    <span>High conversion leads </span>
+                  </h2>
+                  <p>
+                    If you use the correct SEO strategy then you can attract
+                    more clients or customers to your website. These potential
+                    customers are called leads and you must continue to get
+                    higher leads to thrive in online business.
+                  </p>
+                  <i class="fa fa-comments"></i>
+                </div>
+
+                <div class="CirItem title-box CirItem3">
+                  <h2 class="title">
+                    <span>It saves time </span>
+                  </h2>
+                  <p>
+                    Search Engine Optimization is a constant process that
+                    requires hours of research, optimization, as well as upkeep.
+                    Thus, outsourcing your SEO to an agency gets you the best
+                    team to work on it and in return frees you up to focus on
+                    other business-related tasks.
+                  </p>
+                  <i class="fa fa-user"></i>
+                </div>
+                <div class="CirItem title-box CirItem4">
+                  <h2 class="title">
+                    <span>Experienced professionals </span>
+                  </h2>
+                  <p>
+                    Outsourcing to the best SEO Agencies in Kolkata, India gets
+                    you experienced professionals who have worked with many
+                    clients and industries with a solid understanding of the
+                    strategies that work best. They’ve already been through many
+                    years of trial and error thus, they’re ahead of the curve on
+                    what drives best results.
+                  </p>
+                  <i class="fa fa-user"></i>
+                </div>
+                <div class="CirItem title-box CirItem5">
+                  <h2 class="title">
+                    <span>Knows the trends </span>
+                  </h2>
+                  <p>
+                    SEO trends are changing every day thus, you have to research
+                    on the same every now and then to stay on top of the trends.
+                    This is time-consuming and many companies do not have that
+                    luxury thus, hiring an SEO service provider keeps your
+                    website on top of the trends.
+                  </p>
+                  <i class="fa fa-user"></i>
+                </div>
+                <div class="CirItem title-box CirItem6">
+                  <h2 class="title">
+                    <span>Safety for your business </span>
+                  </h2>
+                  <p>
+                    SEO is a risky business and if you do not know what you’re
+                    doing, you might open the doors for search penalties, spam,
+                    and hacking. This is why you should hire an SEO agency as
+                    they know what to look out for and how to avoid any negative
+                    repercussions keeping your website and rankings safe.
+                  </p>
+                  <i class="fa fa-user"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <TestimonialSection />
 
       <section className="inner_page_client_section">
