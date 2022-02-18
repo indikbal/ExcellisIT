@@ -1168,6 +1168,43 @@ span.portfolio_surname {
   overflow-y: scroll;
   margin-right: -15px;
 }
+.sticky_portfolio_menu {
+  position: sticky;
+  bottom: 0px;
+}
+.sticky_portfolio_menu {
+  width: 100%;
+  margin: 0px auto;
+  background-color: var(--theme-dark2);
+  padding: 10px;
+  z-index: 999;
+  border-radius: 5px;
+}
+.sticky_portfolio_menu ul li a {
+  color: var(--text-white1);
+  font-size: 20px;
+  cursor: pointer;
+  padding: 5px;
+  display: inline-block;
+  width: 100%;
+  font-family: var(--heading-font);
+  border-radius: 0;
+}
+.sticky_portfolio_menu ul li a.active {
+  background-color: var(--theme-yellow2);
+  color: var(--theme-dark2);
+}
+
+.sticky_portfolio_menu ul li {
+  width: 33%;
+  text-align: center;
+}
+.sticky_portfolio_menu ul {
+  justify-content: space-between;
+  margin-bottom: 0;
+  border: 1px solid #343233;
+  padding: 0;
+}
 
 /******************Newslatter*****************************/
 

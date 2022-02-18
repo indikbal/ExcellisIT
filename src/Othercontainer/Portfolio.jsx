@@ -3,13 +3,22 @@ import Navbar from "../Navbar";
 import Footer from "../Footer";
 import InnerBanner from "../InnerBanner";
 import { Helmet } from "react-helmet";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { Navigation, Pagination, EffectCoverflow } from "swiper";
+import {
+  Link,
+  DirectLink,
+  Element,
+  Events,
+  animateScroll as scroll,
+  scrollSpy,
+  scroller,
+} from "react-scroll";
 
 SwiperCore.use([Navigation, Pagination, EffectCoverflow]);
 
-const Portfolio = ({ activeStatus }) => {
+const Portfolio = ({}) => {
   const title = "Portfolio";
   const description =
     "“The people at Codal are what makes them really stand out. They were responsive, attentive, flexible and they sought to understand my business so they could plan ahead—beyond the development project.”";
@@ -67,339 +76,403 @@ const Portfolio = ({ activeStatus }) => {
       </Helmet>
       <Navbar activeStatus="partner" />
       <InnerBanner title={title} description={description} />
-      <section className="portfolio_sec">
-        <div className="container-fluid">
-          <div className="row">
-            <div className="col-md-12">
-              <div className="portfolio_inner pr-170 pl-5">
-                <div className="single_portfolio">
-                  <div className="row align-items-center">
-                    <div className="col-md-4 pr-0">
-                      <div className="portfolio_desc">
-                        <h6>DESIGNING & DEVELOPMENT</h6>
-                        <h4>Atpata</h4>
-                        <p>
-                          We knew how to combine the design and technological
-                          aspect that delivers on the promise made to the
-                          client. We used the best of the technological stack,
-                          kept the right formulation for content and visual
-                          depiction and produced a website that is fast to load,
-                          provide easy information and have the users find all
-                          they are looking for while being fully engaged.
-                        </p>
-                        <a href="#" className="visit_portfolio">
-                          Visit Link
-                        </a>
-                      </div>
-                    </div>
-                    <div className="col-md-8">
-                      <div className="portfolio_imgwrapper" data-aos="fade-up">
-                        <div className="overflow_hidden">
-                          <div className="portfolio_img_box">
-                            <div className="show_port_folio_img">
-                              <img src={atpata} className="img-fluid" />
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="single_portfolio">
-                  <div className="row align-items-center">
-                    <div className="col-md-4 pr-0">
-                      <div className="portfolio_desc">
-                        <h6>DESIGNING & DEVELOPMENT</h6>
-                        <h4>Country Land Australia</h4>
-                        <p>
-                          We knew how to combine the design and technological
-                          aspect that delivers on the promise made to the
-                          client. We used the best of the technological stack,
-                          kept the right formulation for content and visual
-                          depiction and produced a website that is fast to load,
-                          provide easy information and have the users find all
-                          they are looking for while being fully engaged.
-                        </p>
-                        <a href="#" className="visit_portfolio">
-                          Visit Link
-                        </a>
-                      </div>
-                    </div>
-                    <div className="col-md-8">
-                      <div className="portfolio_imgwrapper" data-aos="fade-up">
-                        <div className="overflow_hidden">
-                          <div className="portfolio_img_box">
-                            <div className="show_port_folio_img">
-                              <img
-                                src={country_land_aus}
-                                className="img-fluid"
-                              />
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="single_portfolio">
-                  <div className="row align-items-center">
-                    <div className="col-md-4 pr-0">
-                      <div className="portfolio_desc">
-                        <h6>DESIGNING & DEVELOPMENT</h6>
-                        <h4>FMOstello</h4>
-                        <p>
-                          We knew how to combine the design and technological
-                          aspect that delivers on the promise made to the
-                          client. We used the best of the technological stack,
-                          kept the right formulation for content and visual
-                          depiction and produced a website that is fast to load,
-                          provide easy information and have the users find all
-                          they are looking for while being fully engaged.
-                        </p>
-                        <a href="#" className="visit_portfolio">
-                          Visit Link
-                        </a>
-                      </div>
-                    </div>
-                    <div className="col-md-8">
-                      <div className="portfolio_imgwrapper" data-aos="fade-up">
-                        <div className="overflow_hidden">
-                          <div className="portfolio_img_box">
-                            <div className="show_port_folio_img">
-                              <img src={fm_ostello} className="img-fluid" />
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="single_portfolio">
-                  <div className="row align-items-center">
-                    <div className="col-md-4 pr-0">
-                      <div className="portfolio_desc">
-                        <h6>DESIGNING & DEVELOPMENT</h6>
-                        <h4>Excellis Reality</h4>
-                        <p>
-                          We knew how to combine the design and technological
-                          aspect that delivers on the promise made to the
-                          client. We used the best of the technological stack,
-                          kept the right formulation for content and visual
-                          depiction and produced a website that is fast to load,
-                          provide easy information and have the users find all
-                          they are looking for while being fully engaged.
-                        </p>
-                        <a href="#" className="visit_portfolio">
-                          Visit Link
-                        </a>
-                      </div>
-                    </div>
-                    <div className="col-md-8">
-                      <div className="portfolio_imgwrapper" data-aos="fade-up">
-                        <div className="overflow_hidden">
-                          <div className="portfolio_img_box">
-                            <div className="show_port_folio_img">
-                              <img
-                                src={excellis_reality}
-                                className="img-fluid"
-                              />
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="single_portfolio">
-                  <div className="row align-items-center">
-                    <div className="col-md-4 pr-0">
-                      <div className="portfolio_desc">
-                        <h6>DESIGNING & DEVELOPMENT</h6>
-                        <h4>Laderfield</h4>
-                        <p>
-                          We knew how to combine the design and technological
-                          aspect that delivers on the promise made to the
-                          client. We used the best of the technological stack,
-                          kept the right formulation for content and visual
-                          depiction and produced a website that is fast to load,
-                          provide easy information and have the users find all
-                          they are looking for while being fully engaged.
-                        </p>
-                        <a href="#" className="visit_portfolio">
-                          Visit Link
-                        </a>
-                      </div>
-                    </div>
-                    <div className="col-md-8">
-                      <div className="portfolio_imgwrapper" data-aos="fade-up">
-                        <div className="overflow_hidden">
-                          <div className="portfolio_img_box">
-                            <div className="show_port_folio_img">
-                              <img src={lederfield} className="img-fluid" />
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="mobile_app_portfolio">
-          <div className="container">
-            <div className="row mb-5">
-              <div className="col-md-12">
-                <div className="app_slider">
-                  <Swiper
-                    modules={[Navigation]}
-                    grabCursor="true"
-                    centeredSlides="true"
-                    spaceBetween={0}
-                    slidesPerView={4}
-                    navigation
-                    loop="true"
-                    effect="coverflow"
-                    coverflowEffect={{
-                      rotate: 50,
-                      stretch: 0,
-                      depth: 100,
-                      modifier: 1,
-                      slideShadows: false,
-                    }}
-                    breakpoints={{
-                      700: {
-                        spaceBetween: 0,
-                        slidesPerView: 4,
-                      },
-                      500: {
-                        spaceBetween: 100,
-                        slidesPerView: 2,
-                      },
-                      411: {
-                        spaceBetween: 100,
-                        slidesPerView: 2,
-                      },
-                      300: {
-                        spaceBetween: 0,
-                        slidesPerView: 1,
-                      },
-                    }}
-                  >
-                    <SwiperSlide>
-                      <img src={fmapp1} />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                      <img src={fmapp2} />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                      <img src={fmapp3} />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                      <img src={fmapp4} />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                      <img src={fmapp5} />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                      <img src={fmapp6} />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                      <img src={fmapp7} />
-                    </SwiperSlide>
-                  </Swiper>
-                  <div className="app_details text-center">
-                    <div className="app_favicon">
-                      <img src={fmfavicon} alt="" />
-                    </div>
-                    <h4>Flight Mantra</h4>
-                    <p>
-                      The LuxLighting app allows you to control your LED lights
-                      from your phone. You can create custom themes or have the
-                      lights sync with the music playing around you.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
+      <section className="portfolio_sec" id="">
+        <Element name="web_port" className="element">
+          <div className="container-fluid">
             <div className="row">
               <div className="col-md-12">
-                <div className="app_slider">
-                  <Swiper
-                    modules={[Navigation]}
-                    grabCursor="true"
-                    centeredSlides="true"
-                    spaceBetween={0}
-                    slidesPerView={4}
-                    navigation
-                    loop="true"
-                    effect="coverflow"
-                    coverflowEffect={{
-                      rotate: 50,
-                      stretch: 0,
-                      depth: 100,
-                      modifier: 1,
-                      slideShadows: false,
-                    }}
-                    breakpoints={{
-                      700: {
-                        spaceBetween: 0,
-                        slidesPerView: 4,
-                      },
-                      500: {
-                        spaceBetween: 100,
-                        slidesPerView: 2,
-                      },
-                      411: {
-                        spaceBetween: 100,
-                        slidesPerView: 2,
-                      },
-                      300: {
-                        spaceBetween: 0,
-                        slidesPerView: 1,
-                      },
-                    }}
-                  >
-                    <SwiperSlide>
-                      <img src={switcherapp1} />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                      <img src={switcherapp2} />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                      <img src={switcherapp3} />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                      <img src={switcherapp4} />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                      <img src={switcherapp5} />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                      <img src={switcherapp6} />
-                    </SwiperSlide>
-                  </Swiper>
-                  <div className="app_details text-center">
-                    <div className="app_favicon">
-                      <img src={switcherfavicon} alt="" />
+                <div className="portfolio_inner pr-170 pl-5">
+                  <div className="single_portfolio">
+                    <div className="row align-items-center">
+                      <div className="col-md-4 pr-0">
+                        <div className="portfolio_desc">
+                          <h6>DESIGNING & DEVELOPMENT</h6>
+                          <h4>Atpata</h4>
+                          <p>
+                            We knew how to combine the design and technological
+                            aspect that delivers on the promise made to the
+                            client. We used the best of the technological stack,
+                            kept the right formulation for content and visual
+                            depiction and produced a website that is fast to
+                            load, provide easy information and have the users
+                            find all they are looking for while being fully
+                            engaged.
+                          </p>
+                          <a href="#" className="visit_portfolio">
+                            Visit Link
+                          </a>
+                        </div>
+                      </div>
+                      <div className="col-md-8">
+                        <div
+                          className="portfolio_imgwrapper"
+                          data-aos="fade-up"
+                        >
+                          <div className="overflow_hidden">
+                            <div className="portfolio_img_box">
+                              <div className="show_port_folio_img">
+                                <img src={atpata} className="img-fluid" />
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
-                    <h4>Switcher</h4>
-                    <p>
-                      The LuxLighting app allows you to control your LED lights
-                      from your phone. You can create custom themes or have the
-                      lights sync with the music playing around you.
-                    </p>
+                  </div>
+
+                  <div className="single_portfolio">
+                    <div className="row align-items-center">
+                      <div className="col-md-4 pr-0">
+                        <div className="portfolio_desc">
+                          <h6>DESIGNING & DEVELOPMENT</h6>
+                          <h4>Country Land Australia</h4>
+                          <p>
+                            We knew how to combine the design and technological
+                            aspect that delivers on the promise made to the
+                            client. We used the best of the technological stack,
+                            kept the right formulation for content and visual
+                            depiction and produced a website that is fast to
+                            load, provide easy information and have the users
+                            find all they are looking for while being fully
+                            engaged.
+                          </p>
+                          <a href="#" className="visit_portfolio">
+                            Visit Link
+                          </a>
+                        </div>
+                      </div>
+                      <div className="col-md-8">
+                        <div
+                          className="portfolio_imgwrapper"
+                          data-aos="fade-up"
+                        >
+                          <div className="overflow_hidden">
+                            <div className="portfolio_img_box">
+                              <div className="show_port_folio_img">
+                                <img
+                                  src={country_land_aus}
+                                  className="img-fluid"
+                                />
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="single_portfolio">
+                    <div className="row align-items-center">
+                      <div className="col-md-4 pr-0">
+                        <div className="portfolio_desc">
+                          <h6>DESIGNING & DEVELOPMENT</h6>
+                          <h4>FMOstello</h4>
+                          <p>
+                            We knew how to combine the design and technological
+                            aspect that delivers on the promise made to the
+                            client. We used the best of the technological stack,
+                            kept the right formulation for content and visual
+                            depiction and produced a website that is fast to
+                            load, provide easy information and have the users
+                            find all they are looking for while being fully
+                            engaged.
+                          </p>
+                          <a href="#" className="visit_portfolio">
+                            Visit Link
+                          </a>
+                        </div>
+                      </div>
+                      <div className="col-md-8">
+                        <div
+                          className="portfolio_imgwrapper"
+                          data-aos="fade-up"
+                        >
+                          <div className="overflow_hidden">
+                            <div className="portfolio_img_box">
+                              <div className="show_port_folio_img">
+                                <img src={fm_ostello} className="img-fluid" />
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="single_portfolio">
+                    <div className="row align-items-center">
+                      <div className="col-md-4 pr-0">
+                        <div className="portfolio_desc">
+                          <h6>DESIGNING & DEVELOPMENT</h6>
+                          <h4>Excellis Reality</h4>
+                          <p>
+                            We knew how to combine the design and technological
+                            aspect that delivers on the promise made to the
+                            client. We used the best of the technological stack,
+                            kept the right formulation for content and visual
+                            depiction and produced a website that is fast to
+                            load, provide easy information and have the users
+                            find all they are looking for while being fully
+                            engaged.
+                          </p>
+                          <a href="#" className="visit_portfolio">
+                            Visit Link
+                          </a>
+                        </div>
+                      </div>
+                      <div className="col-md-8">
+                        <div
+                          className="portfolio_imgwrapper"
+                          data-aos="fade-up"
+                        >
+                          <div className="overflow_hidden">
+                            <div className="portfolio_img_box">
+                              <div className="show_port_folio_img">
+                                <img
+                                  src={excellis_reality}
+                                  className="img-fluid"
+                                />
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="single_portfolio">
+                    <div className="row align-items-center">
+                      <div className="col-md-4 pr-0">
+                        <div className="portfolio_desc">
+                          <h6>DESIGNING & DEVELOPMENT</h6>
+                          <h4>Laderfield</h4>
+                          <p>
+                            We knew how to combine the design and technological
+                            aspect that delivers on the promise made to the
+                            client. We used the best of the technological stack,
+                            kept the right formulation for content and visual
+                            depiction and produced a website that is fast to
+                            load, provide easy information and have the users
+                            find all they are looking for while being fully
+                            engaged.
+                          </p>
+                          <a href="#" className="visit_portfolio">
+                            Visit Link
+                          </a>
+                        </div>
+                      </div>
+                      <div className="col-md-8">
+                        <div
+                          className="portfolio_imgwrapper"
+                          data-aos="fade-up"
+                        >
+                          <div className="overflow_hidden">
+                            <div className="portfolio_img_box">
+                              <div className="show_port_folio_img">
+                                <img src={lederfield} className="img-fluid" />
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
+        </Element>
+        <Element name="mobile_port" className="element">
+          <div className="mobile_app_portfolio">
+            <div className="container">
+              <div className="row mb-5">
+                <div className="col-md-12">
+                  <div className="app_slider">
+                    <Swiper
+                      modules={[Navigation]}
+                      grabCursor="true"
+                      centeredSlides="true"
+                      spaceBetween={0}
+                      slidesPerView={4}
+                      navigation
+                      loop="true"
+                      effect="coverflow"
+                      coverflowEffect={{
+                        rotate: 50,
+                        stretch: 0,
+                        depth: 100,
+                        modifier: 1,
+                        slideShadows: false,
+                      }}
+                      breakpoints={{
+                        700: {
+                          spaceBetween: 0,
+                          slidesPerView: 4,
+                        },
+                        500: {
+                          spaceBetween: 100,
+                          slidesPerView: 2,
+                        },
+                        411: {
+                          spaceBetween: 100,
+                          slidesPerView: 2,
+                        },
+                        300: {
+                          spaceBetween: 0,
+                          slidesPerView: 1,
+                        },
+                      }}
+                    >
+                      <SwiperSlide>
+                        <img src={fmapp1} />
+                      </SwiperSlide>
+                      <SwiperSlide>
+                        <img src={fmapp2} />
+                      </SwiperSlide>
+                      <SwiperSlide>
+                        <img src={fmapp3} />
+                      </SwiperSlide>
+                      <SwiperSlide>
+                        <img src={fmapp4} />
+                      </SwiperSlide>
+                      <SwiperSlide>
+                        <img src={fmapp5} />
+                      </SwiperSlide>
+                      <SwiperSlide>
+                        <img src={fmapp6} />
+                      </SwiperSlide>
+                      <SwiperSlide>
+                        <img src={fmapp7} />
+                      </SwiperSlide>
+                    </Swiper>
+                    <div className="app_details text-center">
+                      <div className="app_favicon">
+                        <img src={fmfavicon} alt="" />
+                      </div>
+                      <h4>Flight Mantra</h4>
+                      <p>
+                        The LuxLighting app allows you to control your LED
+                        lights from your phone. You can create custom themes or
+                        have the lights sync with the music playing around you.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="row">
+                <div className="col-md-12">
+                  <div className="app_slider">
+                    <Swiper
+                      modules={[Navigation]}
+                      grabCursor="true"
+                      centeredSlides="true"
+                      spaceBetween={0}
+                      slidesPerView={4}
+                      navigation
+                      loop="true"
+                      effect="coverflow"
+                      coverflowEffect={{
+                        rotate: 50,
+                        stretch: 0,
+                        depth: 100,
+                        modifier: 1,
+                        slideShadows: false,
+                      }}
+                      breakpoints={{
+                        700: {
+                          spaceBetween: 0,
+                          slidesPerView: 4,
+                        },
+                        500: {
+                          spaceBetween: 100,
+                          slidesPerView: 2,
+                        },
+                        411: {
+                          spaceBetween: 100,
+                          slidesPerView: 2,
+                        },
+                        300: {
+                          spaceBetween: 0,
+                          slidesPerView: 1,
+                        },
+                      }}
+                    >
+                      <SwiperSlide>
+                        <img src={switcherapp1} />
+                      </SwiperSlide>
+                      <SwiperSlide>
+                        <img src={switcherapp2} />
+                      </SwiperSlide>
+                      <SwiperSlide>
+                        <img src={switcherapp3} />
+                      </SwiperSlide>
+                      <SwiperSlide>
+                        <img src={switcherapp4} />
+                      </SwiperSlide>
+                      <SwiperSlide>
+                        <img src={switcherapp5} />
+                      </SwiperSlide>
+                      <SwiperSlide>
+                        <img src={switcherapp6} />
+                      </SwiperSlide>
+                    </Swiper>
+                    <div className="app_details text-center">
+                      <div className="app_favicon">
+                        <img src={switcherfavicon} alt="" />
+                      </div>
+                      <h4>Switcher</h4>
+                      <p>
+                        The LuxLighting app allows you to control your LED
+                        lights from your phone. You can create custom themes or
+                        have the lights sync with the music playing around you.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </Element>
       </section>
+      <div class="sticky_portfolio_menu">
+        <ul className="d-flex align-items-center">
+          <li>
+            <Link
+              activeClass="active"
+              className="web_port"
+              to="web_port"
+              spy={true}
+              smooth={true}
+              duration={500}
+            >
+              Web Design
+            </Link>
+          </li>
+          <li>
+            <Link
+              activeClass="active"
+              className="mobile_port"
+              to="mobile_port"
+              spy={true}
+              smooth={true}
+              duration={500}
+            >
+              Mobile App
+            </Link>
+          </li>
+          <li>
+            <Link
+              activeClass="active"
+              className="logo_port"
+              to="logo_port"
+              spy={true}
+              smooth={true}
+              duration={500}
+            >
+              Logo
+            </Link>
+          </li>
+        </ul>
+      </div>
       <Footer />
     </div>
   );

@@ -12,9 +12,21 @@ import TestimonialSection from "../TestimonialSection";
 import { Animated } from "react-animated-css";
 import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
 import $ from "jquery";
-import { FaUserLock } from "react-icons/fa";
+import {
+  FaUserLock,
+  FaRegEye,
+  FaFilter,
+  FaHourglassEnd,
+  FaAward,
+  FaBullhorn,
+} from "react-icons/fa";
 const cta_bg =
   "https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/digital-marketing%2Fcta_img.jpg?alt=media&token=80dff7e9-4f79-4258-ae00-734d63a84110";
+
+const cta_bg2 =
+  "https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/cta_img2.jpg?alt=media&token=1fd153c0-9a1f-484a-9c12-e881ddd9d198";
+const cta_bg3 =
+  "https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/cta_img3.jpg?alt=media&token=ad3e770b-a126-4e64-b1c2-ab61338fcc0e";
 SwiperCore.use([Navigation, Pagination, Autoplay]);
 const bootstrap =
   "https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/technology%2FBootstrap.png?alt=media&token=c7d7a420-6618-480c-acb4-639820d666f9";
@@ -116,7 +128,7 @@ const SearchEngineOptimization = () => {
         transform: "rotate(" + (i - 2) * 36 + "deg)",
         transition: "1s",
       });
-    }, 5000);
+    }, 10000000);
   });
 
   return (
@@ -381,7 +393,7 @@ const SearchEngineOptimization = () => {
               >
                 <div className="cta2_content_sec text-left">
                   <h4 className="mb-4">
-                    Get your page optimized by the best SEO service provider.
+                    Do you want your website to rank no. 1 on Google?
                   </h4>
                   <Link className=" light-btn" to="/ContactUs">
                     Contact Us
@@ -673,6 +685,7 @@ const SearchEngineOptimization = () => {
                     animationOut="fadeOut"
                     isVisible={true}
                     animationInDelay={10}
+                    className="wht_tab_inner"
                   >
                     <h4>Transparency </h4>
                     <p>
@@ -739,7 +752,7 @@ const SearchEngineOptimization = () => {
                   <div className="single_expertise text-center">
                     <div className="expertise_icon_single">
                       <img
-                        src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/computer.png?alt=media&token=5fe96fea-028d-4578-950f-0b1f8b222932"
+                        src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/digital-marketing%2Fexpertise%2Finternational.png?alt=media&token=a0be277d-cbee-40d4-8dca-95fe50a452b9"
                         className="img-fluid"
                         alt=""
                       />
@@ -763,7 +776,7 @@ const SearchEngineOptimization = () => {
                   <div className="single_expertise text-center">
                     <div className="expertise_icon_single">
                       <img
-                        src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/computer.png?alt=media&token=5fe96fea-028d-4578-950f-0b1f8b222932"
+                        src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/digital-marketing%2Fexpertise%2Fsearch-engine-optimization.png?alt=media&token=f131e9b9-490d-4f96-b575-ab94272b24a3"
                         className="img-fluid"
                         alt=""
                       />
@@ -787,7 +800,7 @@ const SearchEngineOptimization = () => {
                   <div className="single_expertise text-center">
                     <div className="expertise_icon_single">
                       <img
-                        src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/computer.png?alt=media&token=5fe96fea-028d-4578-950f-0b1f8b222932"
+                        src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/digital-marketing%2Fexpertise%2Fecommerce.png?alt=media&token=705436e9-00d9-4d12-b3bf-1d195951f314"
                         className="img-fluid"
                         alt=""
                       />
@@ -832,7 +845,7 @@ const SearchEngineOptimization = () => {
                   <div className="single_expertise text-center">
                     <div className="expertise_icon_single">
                       <img
-                        src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/computer.png?alt=media&token=5fe96fea-028d-4578-950f-0b1f8b222932"
+                        src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/digital-marketing%2Fexpertise%2Fyoutube.png?alt=media&token=d586f867-cf6f-4b1f-9df3-92c2486fb3c8"
                         className="img-fluid"
                         alt=""
                       />
@@ -854,7 +867,7 @@ const SearchEngineOptimization = () => {
                   <div className="single_expertise text-center">
                     <div className="expertise_icon_single">
                       <img
-                        src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/computer.png?alt=media&token=5fe96fea-028d-4578-950f-0b1f8b222932"
+                        src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/digital-marketing%2Fexpertise%2Fgoogle-analytics.png?alt=media&token=9f9d60a6-fc56-4e9d-b4ec-f3cf8bae2706"
                         className="img-fluid"
                         alt=""
                       />
@@ -876,7 +889,7 @@ const SearchEngineOptimization = () => {
                   <div className="single_expertise text-center">
                     <div className="expertise_icon_single">
                       <img
-                        src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/computer.png?alt=media&token=5fe96fea-028d-4578-950f-0b1f8b222932"
+                        src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/digital-marketing%2Fexpertise%2Flink-building.png?alt=media&token=0b946a36-8cbe-43e2-8240-438bf6531586"
                         className="img-fluid"
                         alt=""
                       />
@@ -899,7 +912,7 @@ const SearchEngineOptimization = () => {
                   <div className="single_expertise text-center">
                     <div className="expertise_icon_single">
                       <img
-                        src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/computer.png?alt=media&token=5fe96fea-028d-4578-950f-0b1f8b222932"
+                        src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/digital-marketing%2Fexpertise%2Fcompetitor.png?alt=media&token=66a294e2-b9b6-4322-823c-0104865b28d7"
                         className="img-fluid"
                         alt=""
                       />
@@ -921,7 +934,7 @@ const SearchEngineOptimization = () => {
                   <div className="single_expertise text-center">
                     <div className="expertise_icon_single">
                       <img
-                        src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/computer.png?alt=media&token=5fe96fea-028d-4578-950f-0b1f8b222932"
+                        src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/digital-marketing%2Fexpertise%2Fmonitor.png?alt=media&token=dc342cef-0262-4746-bfb7-2942d0d638e6"
                         className="img-fluid"
                         alt=""
                       />
@@ -943,7 +956,7 @@ const SearchEngineOptimization = () => {
                   <div className="single_expertise text-center">
                     <div className="expertise_icon_single">
                       <img
-                        src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/computer.png?alt=media&token=5fe96fea-028d-4578-950f-0b1f8b222932"
+                        src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/digital-marketing%2Fexpertise%2Fsettings-seo.png?alt=media&token=6a76e932-64e4-4d95-9f38-da1c9a04d983"
                         className="img-fluid"
                         alt=""
                       />
@@ -967,7 +980,7 @@ const SearchEngineOptimization = () => {
                   <div className="single_expertise text-center">
                     <div className="expertise_icon_single">
                       <img
-                        src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/computer.png?alt=media&token=5fe96fea-028d-4578-950f-0b1f8b222932"
+                        src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/digital-marketing%2Fexpertise%2Foptimization.png?alt=media&token=b5b2438b-a36b-4cb7-9b26-896e9be06942"
                         className="img-fluid"
                         alt=""
                       />
@@ -989,7 +1002,7 @@ const SearchEngineOptimization = () => {
                   <div className="single_expertise text-center">
                     <div className="expertise_icon_single">
                       <img
-                        src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/computer.png?alt=media&token=5fe96fea-028d-4578-950f-0b1f8b222932"
+                        src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/digital-marketing%2Fexpertise%2Fvoice-search.png?alt=media&token=77f36357-f3bb-4781-a201-5a8ee3b8c0f3"
                         className="img-fluid"
                         alt=""
                       />
@@ -1013,7 +1026,7 @@ const SearchEngineOptimization = () => {
                   <div className="single_expertise text-center">
                     <div className="expertise_icon_single">
                       <img
-                        src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/computer.png?alt=media&token=5fe96fea-028d-4578-950f-0b1f8b222932"
+                        src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/digital-marketing%2Fexpertise%2Fsettings.png?alt=media&token=95665084-cd06-4cf5-85ab-eee26e2f8cc6"
                         className="img-fluid"
                         alt=""
                       />
@@ -1665,28 +1678,32 @@ const SearchEngineOptimization = () => {
             </div>
           </div>
           <div class="row align-items-center">
-            <div class="col-lg-8 col-md-12">
+            <div class="col-lg-7 col-md-12">
               <div class="holderCircle">
                 <div class="round"></div>
-                <div class="dotCircle">
+                <div
+                  class="dotCircle"
+                  data-aos="fade-down"
+                  data-aos-duration="1500"
+                >
                   <span class="itemDot active itemDot1" data-tab="1">
-                    <i class="fa-solid fa-eye"></i>
+                    <FaRegEye />
                     <span class="forActive"></span>
                   </span>
                   <span class="itemDot itemDot2" data-tab="2">
-                    <i class="fa-solid fa-filter-circle-dollar"></i>
+                    <FaFilter />
                     <span class="forActive"></span>
                   </span>
                   <span class="itemDot itemDot3" data-tab="3">
-                    <i class="fa-solid fa-hourglass-empty"></i>
+                    <FaHourglassEnd />
                     <span class="forActive"></span>
                   </span>
                   <span class="itemDot itemDot4" data-tab="4">
-                    <i class="fa-solid fa-award"></i>
+                    <FaAward />
                     <span class="forActive"></span>
                   </span>
                   <span class="itemDot itemDot5" data-tab="5">
-                    <i class="fa-solid fa-bullhorn"></i>
+                    <FaBullhorn />
                     <span class="forActive"></span>
                   </span>
                   <span class="itemDot itemDot6" data-tab="6">
@@ -1694,9 +1711,18 @@ const SearchEngineOptimization = () => {
                     <span class="forActive"></span>
                   </span>
                 </div>
+                <div className="benefit_title_sec">
+                  <h4 data-aos="zoom-in" data-aos-duration="2500">
+                    Benefit
+                  </h4>
+                </div>
               </div>
             </div>
-            <div class="col-lg-4 col-md-12">
+            <div
+              class="col-lg-5 col-md-12"
+              data-aos="fade-down"
+              data-aos-duration="1500"
+            >
               <div class="contentCircle">
                 <div class="CirItem title-box active CirItem1">
                   <h2 class="title">
@@ -1783,7 +1809,31 @@ const SearchEngineOptimization = () => {
         </div>
       </section>
 
-      <TestimonialSection />
+      <section className="cta2_section cta_block_bg">
+        <div className="container">
+          <div className="row">
+            <div className="col-md-12">
+              <div
+                className="cta2_inner d-block d-sm-flex align-items-center"
+                style={{ backgroundImage: `url(${cta_bg2})` }}
+              >
+                <div className="cta2_content_sec text-left">
+                  <h4 className="mb-4">
+                    Get your page optimized by the best SEO service provider.
+                  </h4>
+                  <Link className=" light-btn" to="/ContactUs">
+                    Contact Us
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="inner_testimonial_Sec">
+        <TestimonialSection />
+      </section>
 
       <section className="inner_page_client_section">
         <div className="container">
@@ -1920,7 +1970,7 @@ const SearchEngineOptimization = () => {
 
       <section className="common_faq_section">
         <div className="container">
-          <div className="row">
+          <div className="row mb-5">
             <div className="col-md-6">
               <div className="faq_title">
                 <h4>
@@ -1945,7 +1995,7 @@ const SearchEngineOptimization = () => {
                           aria-expanded="true"
                           aria-controls="faq1"
                         >
-                          <span>1.</span> High-quality Output
+                          <span>1.</span> What are SEO services?
                         </button>
                       </h5>
                     </div>
@@ -1957,10 +2007,9 @@ const SearchEngineOptimization = () => {
                       data-parent="#faqaccordian"
                     >
                       <div class="card-body">
-                        Anim pariatur cliche reprehenderit, enim eiusmod high
-                        life accusamus terry richardson ad squid. 3 wolf moon
-                        officia aute, non cupidatat skateboard dolor brunch.
-                        Food truck quinoa nesciunt laborum eiusmod. Brunch 3
+                        Answer: SEO or search engine optimization is a marketing
+                        technique that helps you to push your site ranking on
+                        search engines like Google, Bing, Yahoo, etc.
                       </div>
                     </div>
                   </div>
@@ -1975,7 +2024,7 @@ const SearchEngineOptimization = () => {
                           aria-expanded="false"
                           aria-controls="faq2"
                         >
-                          <span>2.</span> Cost-Savings
+                          <span>2.</span> Why is SEO needed?
                         </button>
                       </h5>
                     </div>
@@ -1986,10 +2035,9 @@ const SearchEngineOptimization = () => {
                       data-parent="#faqaccordian"
                     >
                       <div class="card-body">
-                        Anim pariatur cliche reprehenderit, enim eiusmod high
-                        life accusamus terry richardson ad squid. 3 wolf moon
-                        officia aute, non cupidatat skateboard dolor brunch.
-                        Food truck quinoa nesciunt laborum eiusmod. Brunch 3
+                        Answer: The digital market is very competitive and to
+                        maintain the presence of your business online you need
+                        SEO.
                       </div>
                     </div>
                   </div>
@@ -2004,8 +2052,7 @@ const SearchEngineOptimization = () => {
                           aria-expanded="false"
                           aria-controls="faq3"
                         >
-                          <span>3.</span> Finding the best web designers in
-                          India is easy
+                          <span>3.</span> How does it work?
                         </button>
                       </h5>
                     </div>
@@ -2016,10 +2063,11 @@ const SearchEngineOptimization = () => {
                       data-parent="#faqaccordian"
                     >
                       <div class="card-body">
-                        Anim pariatur cliche reprehenderit, enim eiusmod high
-                        life accusamus terry richardson ad squid. 3 wolf moon
-                        officia aute, non cupidatat skateboard dolor brunch.
-                        Food truck quinoa nesciunt laborum eiusmod. Brunch 3
+                        Answer: SEO makes certain changes to your website to
+                        improve your online presence so that you can easily
+                        reach out to your target audience. They also use
+                        accurate keywords to optimize your content so that your
+                        audience can be converted to buyers.
                       </div>
                     </div>
                   </div>
@@ -2034,7 +2082,8 @@ const SearchEngineOptimization = () => {
                           aria-expanded="false"
                           aria-controls="faq4"
                         >
-                          <span>4.</span> Pay only for the hours you hire
+                          <span>4.</span> Step by step process of SEO for a
+                          website?
                         </button>
                       </h5>
                     </div>
@@ -2045,10 +2094,13 @@ const SearchEngineOptimization = () => {
                       data-parent="#faqaccordian"
                     >
                       <div class="card-body">
-                        Anim pariatur cliche reprehenderit, enim eiusmod high
-                        life accusamus terry richardson ad squid. 3 wolf moon
-                        officia aute, non cupidatat skateboard dolor brunch.
-                        Food truck quinoa nesciunt laborum eiusmod. Brunch 3
+                        The SEO process can be divided into 4 steps:
+                        <ul>
+                          <li>Target market analysis</li>
+                          <li>Keyword research and development</li>
+                          <li>Content optimization</li>
+                          <li> Constant testing and measuring</li>
+                        </ul>
                       </div>
                     </div>
                   </div>
@@ -2063,7 +2115,7 @@ const SearchEngineOptimization = () => {
                           aria-expanded="false"
                           aria-controls="faq5"
                         >
-                          <span>5.</span>A wide range of services
+                          <span>5.</span>What is an SEO audit?
                         </button>
                       </h5>
                     </div>
@@ -2074,10 +2126,99 @@ const SearchEngineOptimization = () => {
                       data-parent="#faqaccordian"
                     >
                       <div class="card-body">
-                        Anim pariatur cliche reprehenderit, enim eiusmod high
-                        life accusamus terry richardson ad squid. 3 wolf moon
-                        officia aute, non cupidatat skateboard dolor brunch.
-                        Food truck quinoa nesciunt laborum eiusmod. Brunch 3
+                        Answer: SEO audit is done to analyze and check the
+                        problems in a website so that they can be fixed to make
+                        the website more accessible.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header" id="headingThree">
+                      <h5 class="mb-0">
+                        <button
+                          class="btn collapsed"
+                          type="button"
+                          data-toggle="collapse"
+                          data-target="#faq6"
+                          aria-expanded="false"
+                          aria-controls="faq6"
+                        >
+                          <span>6.</span>What is SEO blogging?
+                        </button>
+                      </h5>
+                    </div>
+                    <div
+                      id="faq6"
+                      class="collapse"
+                      aria-labelledby="headingThree"
+                      data-parent="#faqaccordian"
+                    >
+                      <div class="card-body">
+                        Answer: SEO blogging starts with keyword research and
+                        the use of the best keywords while writing an authentic
+                        plagiarism-free blog focusing on those keywords but at
+                        the same time keeping the keyword flow natural.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header" id="headingThree">
+                      <h5 class="mb-0">
+                        <button
+                          class="btn collapsed"
+                          type="button"
+                          data-toggle="collapse"
+                          data-target="#faq7"
+                          aria-expanded="false"
+                          aria-controls="faq7"
+                        >
+                          <span>7.</span> What is SEO content?
+                        </button>
+                      </h5>
+                    </div>
+                    <div
+                      id="faq7"
+                      class="collapse"
+                      aria-labelledby="headingThree"
+                      data-parent="#faqaccordian"
+                    >
+                      <div class="card-body">
+                        Answer: SEO content is all about creating content for
+                        various websites by following the SEO guidelines.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header" id="headingThree">
+                      <h5 class="mb-0">
+                        <button
+                          class="btn collapsed"
+                          type="button"
+                          data-toggle="collapse"
+                          data-target="#faq7"
+                          aria-expanded="false"
+                          aria-controls="faq7"
+                        >
+                          <span>8.</span> How do you do SEO for E-commerce?
+                        </button>
+                      </h5>
+                    </div>
+                    <div
+                      id="faq7"
+                      class="collapse"
+                      aria-labelledby="headingThree"
+                      data-parent="#faqaccordian"
+                    >
+                      <div class="card-body">
+                        SEO for E-commerce consists of:
+                        <ul>
+                          <li>Keyword research</li>
+                          <li> Developing site architecture</li>
+                          <li> Optimizing On-Page SEO</li>
+                          <li>Local SEO to drive local traffic</li>
+                          <li>Content marketing</li>
+                          <li> Link building</li>
+                        </ul>
                       </div>
                     </div>
                   </div>
@@ -2089,13 +2230,13 @@ const SearchEngineOptimization = () => {
       </section>
 
       <OurBlogs />
-      <section className="cta2_section cta_block_bg">
+      <section className="cta2_section pb-0">
         <div className="container">
           <div className="row">
             <div className="col-md-12">
               <div
                 className="cta2_inner d-block d-sm-flex align-items-center"
-                style={{ backgroundImage: `url(${cta_bg})` }}
+                style={{ backgroundImage: `url(${cta_bg3})` }}
               >
                 <div className="cta2_content_sec text-center w-100">
                   <h4 className="mb-4">
