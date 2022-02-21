@@ -1,9 +1,12 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect } from "react";
 import "./assets/Style.css";
 import { db } from "../firebase";
 import ReCAPTCHA from "react-google-recaptcha";
-const SITE_KEY = "6LeHDpEeAAAAAJV8xlc3Ox1rznuH8zBp-USMGBeA";
-const ContactForm = (isValid, errorMessage) => {
+const handleOnChange = (value) => {
+  this.handleOnChange = this.handleOnChange.bind(this);
+  console.log("Captcha value:", value);
+};
+const ContactForm = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [cnumber, SetCnumber] = useState("");
@@ -11,12 +14,10 @@ const ContactForm = (isValid, errorMessage) => {
   const [message, setMessage] = useState("");
   const [interest, setInterest] = useState("");
   const [hereus, setHereus] = useState("");
-  const [recaptchaValue, setrecaptchaValue] = useState("true");
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    let recaptchaValue = recaptchaReference.current.getValue();
-    console.log("recaptchaValue", recaptchaValue); //prompts the value
+
     db.collection("Home Contacts")
       .add({
         name: name,
@@ -26,7 +27,6 @@ const ContactForm = (isValid, errorMessage) => {
         message: message,
         interest: interest,
         hereus: hereus,
-        recaptchaValue: recaptchaValue,
       })
       .then(() => {
         alert("message has been submited  ");
@@ -42,16 +42,13 @@ const ContactForm = (isValid, errorMessage) => {
     setMessage("");
     setInterest("");
     setHereus("");
-    setrecaptchaValue("");
   };
+
+  // this.handleOnChange = this.handleOnChange.bind(this);
 
   // const onfilechange = (e) => {
   //   console.log(e.target.files[0]);
   // };
-
-  const recaptchaReference = useRef(null);
-
-  const handleChange = async () => {};
 
   return (
     <div>
@@ -173,15 +170,10 @@ const ContactForm = (isValid, errorMessage) => {
             </div>
           </div>
         </div> */}
-        <label>
-          <ReCAPTCHA
-            sitekey={SITE_KEY}
-            ref={recaptchaReference}
-            onChange={handleChange}
-          />
-        </label>
-        {!isValid && <small>{errorMessage}</small>}
-
+        <ReCAPTCHA
+          sitekey="6LeHDpEeAAAAAJV8xlc3Ox1rznuH8zBp-USMGBeA"
+          onChange={this.handleOnChange}
+        />
         <div class="row">
           <div class="col-md-4">
             <button type="submit" className="enquire_btn">

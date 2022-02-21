@@ -308,7 +308,7 @@ const MainMenu = () => {
                     to="/search-engine-optimization"
                   >
                     <span class="sidemenu__item-inner">
-                      Search engine Marketing
+                      Search engine Optimization
                     </span>
                   </Link>
                   <a
