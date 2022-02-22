@@ -1213,7 +1213,7 @@ span.portfolio_surname {
   color: var(--white);
   right: 8px;
   border: none;
-  padding: 18px 40px;
+  padding: 10px 40px;
   font-size: 18px;
   letter-spacing: 1px;
   position: absolute;
@@ -1252,7 +1252,7 @@ span.portfolio_surname {
 .subscribe_form {
   margin: 0px auto;
   background-color: var(--white);
-  height: 80px;
+  height: 65px;
   box-shadow: 4px 6px 24px var(--theme-dark2);
   margin-top: 40px;
   position: relative;
@@ -1260,7 +1260,7 @@ span.portfolio_surname {
 }
 
 .subscribe_form input {
-  height: 80px;
+  height: 65px;
   width: 80%;
   border: none;
   padding: 15px;

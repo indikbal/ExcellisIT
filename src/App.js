@@ -28,6 +28,7 @@ import Portfolio from "./Othercontainer/Portfolio";
 import QaAndTesting from "./ItServices/QaAndTesting";
 import BackOfficeProcessOutsourcing from "./BpoServices/BackOfficeProcessOutsourcing";
 import SearchEngineOptimization from "./MarketingServices/SearchEngineOptimization";
+import SocialMediaMarketing from "./MarketingServices/SocialMediaMarketing";
 
 function App() {
   AOS.init({
@@ -62,6 +63,10 @@ function App() {
         <Route
           path="/search-engine-optimization"
           component={SearchEngineOptimization}
+        />
+        <Route
+          path="/social-media-marketing"
+          component={SocialMediaMarketing}
         />
         <Route
           path="/back-office-process-outsourcing-services"

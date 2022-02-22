@@ -1,6 +1,7 @@
 import React from "react";
 import { FaArrowRight } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import SubscribeForm from "./SubscribeForm";
 
 const Footer = () => {
   return (
@@ -15,10 +16,7 @@ const Footer = () => {
                   Subscribe to <span>our newsletter</span>
                 </h4>
                 <p>Sign up to our newsletter and we’ll keep you updated</p>
-                <div class="subscribe_form">
-                  <input type="text" placeholder="Type your Email Address" />
-                  <button class="bubscribe_btn">Subscribe</button>
-                </div>
+                <SubscribeForm />
               </div>
             </div>
             <div class="col-md-5">

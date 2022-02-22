@@ -311,14 +311,15 @@ const MainMenu = () => {
                       Search engine Optimization
                     </span>
                   </Link>
-                  <a
-                    href="https://www.excellisit.com/social-media-marketing"
-                    class="sidemenu__item"
+                  <Link
+                    activeClassName="navbar__link--active"
+                    className=" sidemenu__item"
+                    to="/social-media-marketing"
                   >
                     <span class="sidemenu__item-inner">
                       Social media marketing
                     </span>
-                  </a>
+                  </Link>
                   <a
                     href="https://www.excellisit.com/ppc"
                     class="sidemenu__item"
