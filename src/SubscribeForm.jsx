@@ -25,7 +25,7 @@ const SubscribeForm = () => {
       <form method="POST" onSubmit={handleSubmit}>
         <div class="subscribe_form">
           <input
-            type="text"
+            type="email"
             placeholder="Type your Email Address"
             onChange={(e) => setEmail(e.target.value)}
           />

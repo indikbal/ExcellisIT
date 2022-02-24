@@ -1233,16 +1233,17 @@ span.portfolio_surname {
 .newsletter_sec {
   padding: 50px 0 50px 0;
   position: relative;
+  background-color: #fff;
 }
 
 .newsletter_text h4 {
-  color: var(--text-white1);
+  color: var(--theme-yellow1);
   font-size: 50px;
   font-weight: 100;
   font-family: var(--heading-font);
 }
 .newsletter_text p {
-  color: var(--text-white1);
+  color: var(--theme-dark1);
 }
 
 .newsletter_text h4 span {
@@ -1253,7 +1254,7 @@ span.portfolio_surname {
   margin: 0px auto;
   background-color: var(--white);
   height: 65px;
-  box-shadow: 4px 6px 24px var(--theme-dark2);
+  box-shadow: 4px 6px 24px rgb(30 29 29 / 16%);
   margin-top: 40px;
   position: relative;
   display: flex;

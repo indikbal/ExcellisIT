@@ -84,18 +84,18 @@ const Navbar = ({ activeStatus }) => {
               <div className="top_right_content">
                 <ul className="d-flex align-items-center justify-content-end mb-0">
                   <li>
-                    <a href="#">
+                    <a href="mailto:info@excellisit.com">
                       <i class="ph-envelope-simple"></i> info@excellisit.com
                     </a>
                   </li>
                   <li>
-                    <a href="#">
+                    <a href="tel:+918617724646">
                       <img src={indiamap} className="mr-2" alt="india flag" />{" "}
                       (+91) 861 772 4646
                     </a>
                   </li>
                   <li>
-                    <a href="#">
+                    <a href="tel:+918617724646">
                       <img src={usamap} className="mr-2" alt="usa flag" /> (+91)
                       861 772 4646
                     </a>

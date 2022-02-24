@@ -320,12 +320,13 @@ const MainMenu = () => {
                       Social media marketing
                     </span>
                   </Link>
-                  <a
-                    href="https://www.excellisit.com/ppc"
-                    class="sidemenu__item"
+                  <Link
+                    activeClassName="navbar__link--active"
+                    className=" sidemenu__item"
+                    to="/pay-per-click"
                   >
                     <span class="sidemenu__item-inner">Pay per click</span>
-                  </a>
+                  </Link>
                   <a
                     href="https://www.excellisit.com/email-marketing"
                     class="sidemenu__item"

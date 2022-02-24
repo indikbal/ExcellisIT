@@ -179,7 +179,7 @@ const TechnologyWeUse = () => {
                           <div class="s-TechnologiesLogos__Image">
                             <img
                               data-lazyloaded="1"
-                              src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/technology%2Freact.png?alt=media&token=f5327023-6388-4837-8f14-fd4e7dc6bbed"
+                              src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/technology%2Freact.png?alt=media&token=9ebfa272-773e-4edc-90b4-9e7351f004b3"
                               alt="React logo"
                             />
                           </div>
@@ -198,7 +198,7 @@ const TechnologyWeUse = () => {
                               alt="Vue logo"
                             />
                           </div>
-                          <div>Vue</div>
+                          <h4>Vue</h4>
                         </div>
                       </div>
                       <div class="col-md-2 col-4 col">
@@ -353,7 +353,113 @@ const TechnologyWeUse = () => {
                     role="tabpanel"
                     aria-labelledby="pills-database-tab"
                   >
-                    ...
+                    <div class="row">
+                      <div class="col-md-2 col-4 col">
+                        <div
+                          class="s-TechnologiesLogos__Inner"
+                          data-aos="fade-up"
+                        >
+                          <div class="s-TechnologiesLogos__Image">
+                            <img
+                              data-lazyloaded="1"
+                              src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/technology%2Fandroid.png?alt=media&token=ba8c4ef2-3133-4484-8647-44a7d7f8562a"
+                              alt=" android logo"
+                            />
+                          </div>
+                          <h4>Android</h4>
+                        </div>
+                      </div>
+                      <div class="col-md-2 col-4 col">
+                        <div
+                          class="s-TechnologiesLogos__Inner"
+                          data-aos="fade-down"
+                        >
+                          <div class="s-TechnologiesLogos__Image">
+                            <img
+                              data-lazyloaded="1"
+                              src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/technology%2Fapple.png?alt=media&token=00f51f85-0889-471e-9872-d795ff0eca38"
+                              alt=" Apple logo"
+                            />
+                          </div>
+                          <h4>iOS</h4>
+                        </div>
+                      </div>
+                      <div class="col-md-2 col-4 col">
+                        <div
+                          class="s-TechnologiesLogos__Inner"
+                          data-aos="fade-up"
+                        >
+                          <div class="s-TechnologiesLogos__Image">
+                            <img
+                              data-lazyloaded="1"
+                              src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/technology%2Fflutter.png?alt=media&token=c1b36d1a-c7d9-4775-b2a8-237a45ea4ad7"
+                              alt="flutter logo"
+                            />
+                          </div>
+                          <h4>Flutter</h4>
+                        </div>
+                      </div>
+                      <div class="col-md-2 col-4 col">
+                        <div
+                          class="s-TechnologiesLogos__Inner"
+                          data-aos="fade-down"
+                        >
+                          <div class="s-TechnologiesLogos__Image">
+                            <img
+                              data-lazyloaded="1"
+                              src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/technology%2Fionic.png?alt=media&token=7b6b48bf-7550-4e97-9375-fb369b424dad"
+                              alt="ionic logo"
+                            />
+                          </div>
+                          <h4>ionic</h4>
+                        </div>
+                      </div>
+                      <div class="col-md-2 col-4 col">
+                        <div
+                          class="s-TechnologiesLogos__Inner"
+                          data-aos="fade-down"
+                        >
+                          <div class="s-TechnologiesLogos__Image">
+                            <img
+                              data-lazyloaded="1"
+                              src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/technology%2Fnode-js.png?alt=media&token=4e580735-a635-4350-a753-f1d3b1860019"
+                              alt="Node logo"
+                            />
+                          </div>
+                          <h4>Node js</h4>
+                        </div>
+                      </div>
+                      <div class="col-md-2 col-4 col">
+                        <div
+                          class="s-TechnologiesLogos__Inner"
+                          data-aos="fade-up"
+                        >
+                          <div class="s-TechnologiesLogos__Image">
+                            <img
+                              data-lazyloaded="1"
+                              src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/technology%2Freact.png?alt=media&token=9ebfa272-773e-4edc-90b4-9e7351f004b3"
+                              alt="react logo"
+                            />
+                          </div>
+                          <h4>React</h4>
+                        </div>
+                      </div>
+                      <div class="col-md-2 col-4 col">
+                        <div
+                          class="s-TechnologiesLogos__Inner"
+                          data-aos="fade-up"
+                        >
+                          <div class="s-TechnologiesLogos__Image">
+                            <img
+                              data-lazyloaded="1"
+                              src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/technology%2Fswift.png?alt=media&token=23d19c4d-6b90-4581-9e17-778720f34808"
+                              alt="Swift logo"
+                            />
+                          </div>
+                          <h4>Swift</h4>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                   <div
                     class="tab-pane fade"
@@ -361,7 +467,38 @@ const TechnologyWeUse = () => {
                     role="tabpanel"
                     aria-labelledby="pills-testing-tab"
                   >
-                    ...
+                    <div class="row">
+                      <div class="col-md-2 col-4 col">
+                        <div
+                          class="s-TechnologiesLogos__Inner"
+                          data-aos="fade-up"
+                        >
+                          <div class="s-TechnologiesLogos__Image">
+                            <img
+                              data-lazyloaded="1"
+                              src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/technology%2Fmobile-testing.png?alt=media&token=6039257f-c00d-4a94-a6bb-6d3dd871e03d"
+                              alt=" Mobile Testing logo"
+                            />
+                          </div>
+                          <h4>Mobile Testing</h4>
+                        </div>
+                      </div>
+                      <div class="col-md-2 col-4 col">
+                        <div
+                          class="s-TechnologiesLogos__Inner"
+                          data-aos="fade-up"
+                        >
+                          <div class="s-TechnologiesLogos__Image">
+                            <img
+                              data-lazyloaded="1"
+                              src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/technology%2Fanalytics.png?alt=media&token=dbbbad17-6cef-42bf-8755-383aecac69be"
+                              alt=" Manual Testing logo"
+                            />
+                          </div>
+                          <h4>Manual Testing</h4>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>

@@ -11,7 +11,7 @@ import OurBlogs from "../Appcontainer/OurBlog";
 import TestimonialSection from "../TestimonialSection";
 import { Animated } from "react-animated-css";
 import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
-import $ from "jquery";
+
 import {
   FaUserLock,
   FaRegEye,
@@ -35,85 +35,12 @@ const SocialMediaMarketing = () => {
   const description =
     "“Harness the power of Social media and boost your business with the help of innovative Social media marketing strategies.”";
 
-  var maxData = 3;
-  let i = 2;
-
-  $(document).ready(function () {
-    var radius = 200;
-    var fields = $(".itemDot");
-    var container = $(".dotCircle");
-    var width = container.width();
-    radius = width / 2.5;
-
-    var height = container.height();
-    var angle = 0,
-      step = (2 * Math.PI) / fields.length;
-    fields.each(function () {
-      var x = Math.round(
-        width / 2 + radius * Math.cos(angle) - $(this).width() / 2
-      );
-      var y = Math.round(
-        height / 2 + radius * Math.sin(angle) - $(this).height() / 2
-      );
-      if (window.console) {
-        console.log($(this).text(), x, y);
-      }
-
-      $(this).css({
-        left: x + "px",
-        top: y + "px",
-      });
-      angle += step;
-    });
-
-    $(".itemDot").click(function () {
-      var dataTab = $(this).data("tab");
-      $(".itemDot").removeClass("active");
-      $(this).addClass("active");
-      $(".CirItem").removeClass("active");
-      $(".CirItem" + dataTab).addClass("active");
-      i = dataTab;
-
-      $(".dotCircle").css({
-        transform: "rotate(" + (360 - (i - 1) * 36) + "deg)",
-        transition: "2s",
-      });
-      $(".itemDot").css({
-        transform: "rotate(" + (i - 1) * 36 + "deg)",
-        transition: "1s",
-      });
-    });
-
-    setInterval(function () {
-      var dataTab = $(".itemDot.active").data("tab");
-      if (dataTab > maxData || i > maxData) {
-        dataTab = 1;
-        i = 1;
-      }
-      $(".itemDot").removeClass("active");
-      $('[data-tab="' + i + '"]').addClass("active");
-      $(".CirItem").removeClass("active");
-      $(".CirItem" + i).addClass("active");
-      i++;
-
-      $(".dotCircle").css({
-        transform: "rotate(" + (360 - (i - 2) * 36) + "deg)",
-        transition: "2s",
-      });
-      $(".itemDot").css({
-        transform: "rotate(" + (i - 2) * 36 + "deg)",
-        transition: "1s",
-      });
-    }, 10000000);
-  });
-
   return (
     <div>
       <Helmet>
         <meta charSet="utf-8" />
         <title>Social Media Marketing</title>
         <meta name="description" content="aboutpage" />
-        <meta name="keywords" content="about page" />
       </Helmet>
       <Navbar />
       <InnerBanner title={title} description={description} />
@@ -1316,7 +1243,7 @@ const SocialMediaMarketing = () => {
                 </div>
                 <div className="benefit_title_sec">
                   <h4 data-aos="zoom-in" data-aos-duration="2500">
-                  Benefits
+                    Benefits
                   </h4>
                 </div>
               </div>
@@ -1575,6 +1502,32 @@ const SocialMediaMarketing = () => {
         </div>
       </section>
 
+      <section className="cta2_section pb-0 pt-0">
+        <div className="container">
+          <div className="row">
+            <div className="col-md-12">
+              <div
+                className="cta2_inner d-block d-sm-flex align-items-center"
+                style={{ backgroundImage: `url(${cta_bg3})` }}
+              >
+                <div className="cta2_content_sec text-center w-100">
+                  <h4 className="mb-4">
+                    Know about the complete spectrum of SMM services provided by
+                    us?
+                  </h4>
+                  <Link className=" light-btn" to="/ContactUs">
+                    Contact Us
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <TechnologyWeUse />
+      <OurBlogs />
+
       <section className="common_faq_section">
         <div className="container">
           <div className="row mb-5">
@@ -1786,32 +1739,6 @@ const SocialMediaMarketing = () => {
         </div>
       </section>
 
-      <OurBlogs />
-      <section className="cta2_section pb-0">
-        <div className="container">
-          <div className="row">
-            <div className="col-md-12">
-              <div
-                className="cta2_inner d-block d-sm-flex align-items-center"
-                style={{ backgroundImage: `url(${cta_bg3})` }}
-              >
-                <div className="cta2_content_sec text-center w-100">
-                  <h4 className="mb-4">
-                    Know about the complete spectrum of SMM services provided by
-                    us?
-                  </h4>
-                  <Link className=" light-btn" to="/ContactUs">
-                    Contact Us
-                  </Link>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-        
-        <TechnologyWeUse/>
-      
       <Footer />
     </div>
   );

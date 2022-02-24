@@ -577,13 +577,14 @@
 }
 .s-TechnologiesLogos__Image {
   padding: 30px;
-  height: 120px;
-  width: 120px;
+  height: 100px;
+  width: 100px;
   margin: 0px auto;
   margin-bottom: 10px;
   border-radius: 80px;
   border: 1px solid #ccc;
   background-color: #fff;
+  box-shadow: 20px 21px 54px rgb(0 0 0 / 11%);
 }
 .s-TechnologiesLogos__Image img {
   height: 100%;

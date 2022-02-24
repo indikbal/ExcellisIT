@@ -2129,8 +2129,8 @@ input[type="checkbox"]:checked::before {
     padding: 70px 160px;
   }
   .services_title_list a {
-    font-size: 55px;
-    line-height: 150px;
+    font-size: 45px;
+    line-height: 110px;
   }
 }
 

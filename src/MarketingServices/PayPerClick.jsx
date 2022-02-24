@@ -13,10 +13,9 @@ import { Animated } from "react-animated-css";
 import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
 import "../benefitscript.js";
 import {
-  FaUserLock,
   FaRegEye,
-  FaFilter,
-  FaHourglassEnd,
+  FaUsers,
+  FaUserCheck,
   FaAward,
   FaBullhorn,
 } from "react-icons/fa";
@@ -30,18 +29,17 @@ const cta_bg3 =
   "https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/cta_img3.jpg?alt=media&token=ad3e770b-a126-4e64-b1c2-ab61338fcc0e";
 SwiperCore.use([Navigation, Pagination, Autoplay]);
 
-const SearchEngineOptimization = () => {
-  const title = "Search Engine Optimization";
+const PayPerClick = () => {
+  const title = "Pay Per Click";
   const description =
-    "“Best SEO service provider is here to help you with a complete digital transformation.”";
+    "“Increase relevant traffic to your website with the help of our pay-per-click management services. Grow your business & push your brand towards the top of Google search engine with paid search engine advertising.”";
 
   return (
     <div>
       <Helmet>
         <meta charSet="utf-8" />
-        <title>Search Engine Optimization</title>
+        <title>Pay Per Click</title>
         <meta name="description" content="aboutpage" />
-        <meta name="keywords" content="about page" />
       </Helmet>
       <Navbar />
       <InnerBanner title={title} description={description} />
@@ -55,32 +53,36 @@ const SearchEngineOptimization = () => {
                   data-aos="fade-down"
                   data-aos-duration="1500"
                 >
-                  <h6>Search Engine Optimization</h6>
                   <h1 class="BannerServices__Subheader">
-                    Best SEO Service Provider – Excellis IT
+                    Grow your business with PPC Management Services
                   </h1>
                   <p>
-                    Search Engine Optimization is an efficient digital marketing
-                    strategy that enhances the online presence of your business.
-                    SEO optimizes your website and takes it up on Google
-                    rankings so that your website becomes searchable in spite of
-                    huge competition. SEO is a sound digital strategy that
-                    endeavors to maximize sales along with, minimizing customer
-                    acquisition costs.
+                    PPC or Pay Per Click is among the most effective types of
+                    online marketing to bring instant traffic and expedite
+                    business outreach to its customers. A PPC campaign is
+                    designed in a way that would drive targeted traffic to the
+                    business website and increase the conversion rates for
+                    higher revenues. This is a paid form of online advertising
+                    that delivers faster results in comparison to SEO and social
+                    media marketing. However, one requires a complete
+                    understanding of the PPC concept to craft the best PPC
+                    campaign which starts from choosing the right keywords to
+                    placing them at the right places, as well as designing
+                    convincing landing pages.
                   </p>
                   <p>
-                    As a leading SEO company in India, Excellis IT offers the
-                    best SEO services in Kolkata, India. Our affordable SEO
-                    services takes care of the most important aspects of your
-                    business. We are known for dealing with technical aspects
-                    like increasing visibility, site backlinking, website
-                    audits, optimizing content, keyword research, increasing
-                    page speed, mobile optimization, and link building. Our SEO
-                    experts boost your search rankings and make your website
-                    more visible. Excellis IT ensures that your website is among
-                    the links on the first page of Google search. We also make
-                    sure that it is prominently visible in searches by other
-                    search engines.
+                    Excellis IT being among the best PPC company in India
+                    delivers custom PPC campaigns to help you increase both
+                    conversions and revenue for your company with our
+                    pay-per-click management services in Kolkata. We have a
+                    profoundly gifted Pay Per Click Management Planner and are
+                    offering result-oriented PPC Management Services to our
+                    esteemed clients. We are focused on accomplishing a faster
+                    conversion rate and ROI (Return On Investment) for each
+                    click on your ads designated on specific keywords. For this,
+                    we set up the best PPC campaigns for our client's site and
+                    promote their advertisements at the top situation in the
+                    rundown of Google search.
                   </p>
                 </div>
               </div>
@@ -91,7 +93,7 @@ const SearchEngineOptimization = () => {
                     data-aos="reveal-right"
                   ></div>
                   <img
-                    src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/digital-marketing%2Fsearch-engine-optimization.jpg?alt=media&token=515093e5-4ed3-484b-810f-931ea91fc030"
+                    src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/digital-marketing%2Fsmm%2Fsocial-media-marketing.jpg?alt=media&token=30d10037-9b6e-4698-b4c1-256bd5042e00"
                     alt="Sear engine optimization"
                     className="img-fluid"
                   />
@@ -115,7 +117,7 @@ const SearchEngineOptimization = () => {
           <div className="row align-items-center">
             <div className="col-md-5">
               <div className="all_services_title">
-                <h2>Best SEO Services Provided by Excellis IT</h2>
+                <h2>Services We Offer</h2>
               </div>
             </div>
             <div className="col-md-7">
@@ -124,157 +126,129 @@ const SearchEngineOptimization = () => {
                   <div className="row">
                     <div className="col-md-6">
                       <div className="single_inner_services">
-                        <h4>On-Page SEO Services </h4>
+                        <h4>Analysis & Strategy </h4>
                         <Scrollbars style={{ height: 100 }}>
                           <p>
-                            Excellis IT is best in on-page SEO methods. We
-                            understand that to make your website more attractive
-                            and readable you require content pings along with
-                            search engine algorithms. Our experts would help you
-                            optimize the content and pictures, would make sure
-                            that your site is fast, mobile-friendly, and makes
-                            sure that the material is of the best quality as
-                            well as provides excellent external links to attract
-                            more traffic.{" "}
+                            We at Excellis IT perform a thorough analysis of
+                            your website, the competition, as well as the market
+                            to frame a PPC strategy that works. Our experts also
+                            make sure to carry out an in-depth study of factors
+                            like the business goals, user metrics, as well as
+                            competitor strategy. We also analyze all the key
+                            parameters such as cost per click, cost per
+                            acquisition, conversion rate optimization, and
+                            revenue to create a campaign specific to our
+                            client’s requirements.
                           </p>
                         </Scrollbars>
                       </div>
                     </div>
                     <div className="col-md-6">
                       <div className="single_inner_services">
-                        <h4>Off-Page SEO Services </h4>
+                        <h4>Keyword targeting </h4>
                         <Scrollbars style={{ height: 100 }}>
                           <p>
-                            Excellis IT knows that off-Page SEO is more than
-                            link building and website design. We promote your
-                            website through ethical as well as effective methods
-                            which would increase organic traffic and help to get
-                            the top Google search ranking. Our experts conduct
-                            social media marketing along with social bookmarking
-                            campaigns which would help you in lead generation,
-                            as well as improve the perception of your website.
+                            Choosing the right keywords are important for any
+                            PPC ad campaign to succeed. Being a PPC ads Agency
+                            in Kolkata, India, we carry out thorough keyword
+                            research and then pick the best ones that would
+                            drive traffic to our client’s business.
                           </p>
                         </Scrollbars>
                       </div>
                     </div>
                     <div className="col-md-6">
                       <div className="single_inner_services">
-                        <h4>Technical SEO Services </h4>
+                        <h4>Strategic Keyword Recommendation </h4>
                         <Scrollbars style={{ height: 100 }}>
                           <p>
-                            Our Technical SEO experts, work diligently on
-                            improving the technical elements of your website
-                            which would help Google bots crawl your website in a
-                            better way as a result it would improve your site
-                            rankings.
+                            Our PPC experts’ use professional tools to do an
+                            extensive keyword analysis for your business,
+                            identifying these keywords will grow your business.
                           </p>
                         </Scrollbars>
                       </div>
                     </div>
                     <div className="col-md-6">
                       <div className="single_inner_services">
-                        <h4>Keywords Research </h4>
+                        <h4>Landing page design </h4>
                         <Scrollbars style={{ height: 100 }}>
                           <p>
-                            Using proper keywords makes your Search Engine
-                            Optimization campaign successful as keywords propels
-                            your search ranking. Our team of experts uses
-                            assorted online tools to research trending keywords
-                            that would take your website to the top of the
-                            search engine.
+                            At Excellis IT, we design landing pages specific to
+                            our client’s brand so that the design drives users
+                            to convert into customers. Our PPC Services also
+                            include constant A/B testing, tracking and analysis,
+                            and CRM tagging.
                           </p>
                         </Scrollbars>
                       </div>
                     </div>
                     <div className="col-md-6">
                       <div className="single_inner_services">
-                        <h4>Competitive Analysis </h4>
+                        <h4>Launching campaign </h4>
                         <Scrollbars style={{ height: 100 }}>
                           <p>
-                            Competitive analysis understands the strengths and
-                            weaknesses of your online competitors and uses them
-                            as opportunities. Our digital marketing experts
-                            conduct a deep analysis of keywords being used by
-                            competitors and help you choose the best ones so
-                            that you can stay ahead.
+                            After ascertaining the targeted keywords and
+                            designing of the landing page the campaign is all
+                            set to be launched. We also design the best bid
+                            strategy to bid on the best keywords so that we can
+                            get your business on the top.
                           </p>
                         </Scrollbars>
                       </div>
                     </div>
                     <div className="col-md-6">
                       <div className="single_inner_services">
-                        <h4>Website Audit and Optimization </h4>
+                        <h4>Audit & analysis </h4>
                         <Scrollbars style={{ height: 100 }}>
                           <p>
-                            SEO audits and optimization is important to maintain
-                            the online rankings of your website. We help you to
-                            identify all the imperfections that would lower the
-                            rankings of your websites. We also bring together
-                            strategies of link building, SEO tagging as well as
-                            content optimization to yield online success for
-                            your website.
+                            Every PPC campaign requires constant management with
+                            keyword audit as well as analysis. We regularly
+                            optimize and manage your PPC campaign as it is a
+                            part of our PPC management services.
                           </p>
                         </Scrollbars>
                       </div>
                     </div>
                     <div className="col-md-6">
                       <div className="single_inner_services">
-                        <h4>Analytics Research</h4>
+                        <h4>Bid Management </h4>
                         <Scrollbars style={{ height: 100 }}>
                           <p>
-                            Search Engine Optimization services in Kolkata,
-                            India not only bring traffic to your website but
-                            also incorporate analysis too. Our Google Analytics
-                            expertise enables the study of all the essential
-                            metrics that would be needed for searches, visitors,
-                            and trends. Based on the precise analytics research,
-                            we help you create and implement effective digital
-                            strategies that would in turn increase traffic and
-                            conversions.
+                            Our PPC experts will bid only on keywords that are
+                            likely to give you great ROI. Bids are monitored
+                            closely with an emphasis on keywords that are
+                            targeted yet are least competitive.
                           </p>
                         </Scrollbars>
                       </div>
                     </div>
                     <div className="col-md-6">
                       <div className="single_inner_services">
-                        <h4>Traffic Generation</h4>
+                        <h4>ROI tracking </h4>
                         <Scrollbars style={{ height: 100 }}>
                           <p>
-                            Our Search Engine Optimization experts have the
-                            skill to merge different marketing tools to generate
-                            higher traffic for your website which includes
-                            social media, PR and branding, mobile SEO,
-                            multimedia SEO as well as local and international
-                            search optimization.
+                            When you spend on any digital marketing campaign,
+                            especially PPC you as a business owner, want to know
+                            what results you would be getting from investing in
+                            your PPC ads. Our experts use cutting-edge
+                            analytical tools that provide accurate ROI-tracking
+                            services.
                           </p>
                         </Scrollbars>
                       </div>
                     </div>
                     <div className="col-md-6">
                       <div className="single_inner_services">
-                        <h4>Content Marketing</h4>
+                        <h4>Performance Reporting </h4>
                         <Scrollbars style={{ height: 100 }}>
                           <p>
-                            We at Excellis IT, deliver end-to-end services,
-                            starting from serving excellent content to
-                            optimizing it moving on to marketing it. We have
-                            in-house professional content writers who consult
-                            with our SEO experts and deliver rich content that
-                            would boost your rankings and be engaging for your
-                            customers at the same time.
-                          </p>
-                        </Scrollbars>
-                      </div>
-                    </div>
-                    <div className="col-md-6">
-                      <div className="single_inner_services">
-                        <h4>Reporting</h4>
-                        <Scrollbars style={{ height: 100 }}>
-                          <p>
-                            Good Search Engine Optimization practices contain
-                            reporting too. Our SEO experts provide interpretable
-                            reports to their clients so that they can even know
-                            the benefits of the campaign.
+                            We document and share regular performance report
+                            with our clients, as a part of our PPC management.
+                            ROI is examined closely and tweaks are made in the
+                            campaign as per the trends in the report.
+                            Performance data for every keywords can be checked
+                            by the clients which includes click-through.
                           </p>
                         </Scrollbars>
                       </div>
@@ -297,7 +271,8 @@ const SearchEngineOptimization = () => {
               >
                 <div className="cta2_content_sec text-left">
                   <h4 className="mb-4">
-                    Do you want your website to rank no. 1 on Google?
+                    Gets the most out of your campaigns, by taking every detail
+                    into consideration with PPC Management Services.
                   </h4>
                   <Link className=" light-btn" to="/ContactUs">
                     Contact Us
@@ -315,7 +290,7 @@ const SearchEngineOptimization = () => {
             <div class="col-md-12 ">
               <div className="big_title">
                 <h2 data-aos="fade-down" data-aos-duration="1500">
-                  <span>Why Hire </span> SEO Experts from Excellis IT
+                  <span>Why Hire </span> PPC service provided from Excellis IT
                 </h2>
               </div>
             </div>
@@ -340,7 +315,7 @@ const SearchEngineOptimization = () => {
                       src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/digital-marketing%2Fexperience.png?alt=media&token=9713b80a-d008-4073-bea3-c2c2a1c04ccb"
                       alt=""
                     />
-                    Experienced
+                    End-To-End
                   </a>
                 </li>
                 <li class="nav-item">
@@ -357,7 +332,7 @@ const SearchEngineOptimization = () => {
                       src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/digital-marketing%2FAssessableResults.png?alt=media&token=6354087b-41da-481c-ac13-e7fa24fdd80a"
                       alt=""
                     />
-                    Assessable
+                    Focused
                   </a>
                 </li>
                 <li class="nav-item">
@@ -374,7 +349,7 @@ const SearchEngineOptimization = () => {
                       src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/digital-marketing%2Fidea.png?alt=media&token=944eb2a5-fcc5-46fa-bcd2-cf145bc86bd3"
                       alt=""
                     />
-                    Strategies
+                    Research
                   </a>
                 </li>
                 <li class="nav-item">
@@ -391,7 +366,7 @@ const SearchEngineOptimization = () => {
                       src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/digital-marketing%2Freport.png?alt=media&token=98081286-1f75-48af-a528-48cfe6e1bf29"
                       alt=""
                     />
-                    Reports
+                    Reporting
                   </a>
                 </li>
                 <li class="nav-item">
@@ -408,41 +383,7 @@ const SearchEngineOptimization = () => {
                       src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/digital-marketing%2Fsave-money.png?alt=media&token=54fd85ab-1b2d-4776-b87a-f1e81f8617f2"
                       alt=""
                     />
-                    Affradable
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a
-                    class="nav-link"
-                    id="pills-why6-tab"
-                    data-toggle="pill"
-                    href="#pills-why6"
-                    role="tab"
-                    aria-controls="pills-why6"
-                    aria-selected="false"
-                  >
-                    <img
-                      src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/digital-marketing%2Fexpert.png?alt=media&token=5c87f4ea-1c49-485b-89dd-feb005a4a6ae"
-                      alt=""
-                    />
-                    Experts
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a
-                    class="nav-link"
-                    id="pills-why7-tab"
-                    data-toggle="pill"
-                    href="#pills-why7"
-                    role="tab"
-                    aria-controls="pills-why7"
-                    aria-selected="false"
-                  >
-                    <img
-                      src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/digital-marketing%2Ftransparency.png?alt=media&token=efac0773-ae7e-4658-8a38-3b8f38722375"
-                      alt=""
-                    />
-                    Transparency
+                    Support
                   </a>
                 </li>
               </ul>
@@ -463,11 +404,11 @@ const SearchEngineOptimization = () => {
                     animationInDelay={10}
                     className="wht_tab_inner"
                   >
-                    <h4>Experienced SEO professionals </h4>
+                    <h4>End-To-End PPC </h4>
                     <p>
-                      Being among the best search engine optimization company in
-                      Kolkata, India, Excellis IT has a skilled team of SEO
-                      experts you can completely rely on.
+                      From restarting your PPC endeavors to designing new
+                      campaigns from start to finish, we provide you with
+                      end-to-end PPC service.
                     </p>
                   </Animated>
                 </div>
@@ -485,11 +426,11 @@ const SearchEngineOptimization = () => {
                     animationInDelay={10}
                     className="wht_tab_inner"
                   >
-                    <h4>Assessable Results </h4>
+                    <h4>Customer Focused Company</h4>
                     <p>
-                      We are a reputed SEO company in Kolkata, creating SEO
-                      campaigns to generate assessable results for your company,
-                      and we also inform you about your keyword ranking and ROI.
+                      We make sure to discuss all your marketing priorities as
+                      well as business objectives to make sure that the PPC
+                      campaign conveys the voice of your brand.
                     </p>
                   </Animated>
                 </div>
@@ -506,11 +447,12 @@ const SearchEngineOptimization = () => {
                     animationInDelay={10}
                     className="wht_tab_inner"
                   >
-                    <h4>Data-driven Strategies </h4>
+                    <h4>Research-Based PPC Initiatives</h4>
                     <p>
-                      We are an experienced SEO company, creating strategies
-                      that are based on genuine and authentic market
-                      demographics data to make sure you get the best results.
+                      Our experts conduct a deep research before they suggest
+                      you a PPC plan. They take into consideration the market,
+                      your competitors as well as the budget that you want to
+                      invest.
                     </p>
                   </Animated>
                 </div>
@@ -527,12 +469,11 @@ const SearchEngineOptimization = () => {
                     animationInDelay={10}
                     className="wht_tab_inner"
                   >
-                    <h4>Reports </h4>
+                    <h4>Continuous Reporting</h4>
                     <p>
-                      We are a trusted SEO company, and we send our clients
-                      weekly as well as monthly reports consisting of a detailed
-                      description of the SEO activities that we have implemented
-                      on their site so that even they can measure the results.
+                      Our team values transparent communication. Thus, we
+                      provide regular reports via innumerable communication
+                      channels so that you are up to date.
                     </p>
                   </Animated>
                 </div>
@@ -549,53 +490,12 @@ const SearchEngineOptimization = () => {
                     animationInDelay={10}
                     className="wht_tab_inner"
                   >
-                    <h4>Affordable SEO packages </h4>
+                    <h4>Post Service Support </h4>
                     <p>
-                      Excellis IT provides the best as well as affordable SEO
-                      services in Kolkata, to both small and big businesses who
-                      can easily afford our packages and make the best out of
-                      them.
-                    </p>
-                  </Animated>
-                </div>
-                <div
-                  class="tab-pane fade"
-                  id="pills-why6"
-                  role="tabpanel"
-                  aria-labelledby="pills-why6-tab"
-                >
-                  <Animated
-                    animationIn="fadeInUp"
-                    animationOut="fadeOut"
-                    isVisible={true}
-                    animationInDelay={10}
-                    className="wht_tab_inner"
-                  >
-                    <h4>Experts of the field </h4>
-                    <p>
-                      We have a highly qualified as well as experienced team who
-                      know every aspect of SEO.
-                    </p>
-                  </Animated>
-                </div>
-                <div
-                  class="tab-pane fade"
-                  id="pills-why7"
-                  role="tabpanel"
-                  aria-labelledby="pills-why7-tab"
-                >
-                  <Animated
-                    animationIn="fadeInUp"
-                    animationOut="fadeOut"
-                    isVisible={true}
-                    animationInDelay={10}
-                    className="wht_tab_inner"
-                  >
-                    <h4>Transparency </h4>
-                    <p>
-                      We prefer keeping a long-lasting relation with our clients
-                      and that can only be possible with complete transparency
-                      as well as honest business practices.
+                      We do not blackout once your campaign is done we keep on
+                      tracking the campaign to make sure that you the value of
+                      your money. Thus, providing you post-service support as
+                      well.
                     </p>
                   </Animated>
                 </div>
@@ -656,22 +556,21 @@ const SearchEngineOptimization = () => {
                   <div className="single_expertise text-center">
                     <div className="expertise_icon_single">
                       <img
-                        src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/digital-marketing%2Fexpertise%2Finternational.png?alt=media&token=a0be277d-cbee-40d4-8dca-95fe50a452b9"
+                        src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/digital-marketing%2Fsmm%2Ffacebook-page.png?alt=media&token=a9e8076b-6b59-4483-a850-c3bfadb0520b"
                         className="img-fluid"
                         alt=""
                       />
                     </div>
-                    <h4>International SEO</h4>
+                    <h4>Bidding Strategy</h4>
                     <Scrollbars
                       style={{ height: 150 }}
                       className="expertise_single_cont"
                     >
                       <p>
-                        International SEO optimizes your presence on your
-                        website on the SERPs when the users place search queries
-                        in various languages and countries. Geo-targeting and
-                        other tactics to optimize your site locally helps you to
-                        target customers all over the world.
+                        Our PPC services aim to put your brand at the top of
+                        search results on Google. Our paid search experts
+                        diligently work on PPC bidding strategies so that your
+                        rankings could improve along with impression share.
                       </p>
                     </Scrollbars>
                   </div>
@@ -680,22 +579,20 @@ const SearchEngineOptimization = () => {
                   <div className="single_expertise text-center">
                     <div className="expertise_icon_single">
                       <img
-                        src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/digital-marketing%2Fexpertise%2Fsearch-engine-optimization.png?alt=media&token=f131e9b9-490d-4f96-b575-ab94272b24a3"
+                        src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/digital-marketing%2Fsmm%2Ftwitter-page.png?alt=media&token=457317b5-9f48-4e23-bb03-918627265ce8"
                         className="img-fluid"
                         alt=""
                       />
                     </div>
-                    <h4>Local SEO</h4>
+                    <h4>Display Advertising</h4>
                     <Scrollbars
                       style={{ height: 150 }}
                       className="expertise_single_cont"
                     >
                       <p>
-                        As the best SEO firm in Kolkata, India, Excellis IT with
-                        Local SEO optimizes the online presence of your business
-                        and drives traffic from the local relevant searches.
-                        This helps in gaining sales from local potential
-                        customers.
+                        With visually appealing display ads we help our clients
+                        to target new consumers as well as stay on your existing
+                        audience’s radar.
                       </p>
                     </Scrollbars>
                   </div>
@@ -704,20 +601,22 @@ const SearchEngineOptimization = () => {
                   <div className="single_expertise text-center">
                     <div className="expertise_icon_single">
                       <img
-                        src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/digital-marketing%2Fexpertise%2Fecommerce.png?alt=media&token=705436e9-00d9-4d12-b3bf-1d195951f314"
+                        src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/digital-marketing%2Fsmm%2Flinkedin-page.png?alt=media&token=90f00ec5-e110-45d1-a426-cb245027fc73"
                         className="img-fluid"
                         alt=""
                       />
                     </div>
-                    <h4>E-commerce SEO</h4>
+                    <h4>Google Shopping Ads</h4>
                     <Scrollbars
                       style={{ height: 150 }}
                       className="expertise_single_cont"
                     >
                       <p>
-                        E-commerce SEO ensures that your product pages are among
-                        the top results on the SERPs which in turn helps in
-                        bringing you the desired traffic and sales.
+                        Excellis IT is known for providing the best Search
+                        Engine Marketing Services in Kolkata, India. Along with
+                        it we also offer Google Shopping Ads that would help you
+                        to grab a position among the organic search results on
+                        Google.
                       </p>
                     </Scrollbars>
                   </div>
@@ -726,21 +625,20 @@ const SearchEngineOptimization = () => {
                   <div className="single_expertise text-center">
                     <div className="expertise_icon_single">
                       <img
-                        src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/computer.png?alt=media&token=5fe96fea-028d-4578-950f-0b1f8b222932"
+                        src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/digital-marketing%2Fsmm%2Fpinterest-marketing.png?alt=media&token=3b392249-d4f9-40c2-8c98-35850f5f93c3"
                         className="img-fluid"
                         alt=""
                       />
                     </div>
-                    <h4>Enterprise SEO</h4>
+                    <h4>Remarketing</h4>
                     <Scrollbars
                       style={{ height: 150 }}
                       className="expertise_single_cont"
                     >
                       <p>
-                        Excellis IT offers a full-scale as well as broad
-                        approach to use the power of SEO for enterprise-scale
-                        businesses. We help you by creating high-end SEO
-                        strategies that improve revenue for your enterprises.
+                        The best way to get your brand to rank on the Google
+                        search engine is by remarketing which is to serve the
+                        ads to the audience who already trust your brand.
                       </p>
                     </Scrollbars>
                   </div>
@@ -749,20 +647,24 @@ const SearchEngineOptimization = () => {
                   <div className="single_expertise text-center">
                     <div className="expertise_icon_single">
                       <img
-                        src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/digital-marketing%2Fexpertise%2Fyoutube.png?alt=media&token=d586f867-cf6f-4b1f-9df3-92c2486fb3c8"
+                        src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/digital-marketing%2Fsmm%2Finstagram-marketing.png?alt=media&token=79b8228d-d7dc-4742-80c1-73f1aa431301"
                         className="img-fluid"
                         alt=""
                       />
                     </div>
-                    <h4>YouTube SEO</h4>
+                    <h4>Mobile Advertising</h4>
                     <Scrollbars
                       style={{ height: 150 }}
                       className="expertise_single_cont"
                     >
                       <p>
-                        Excellis IT provides YouTube SEO services that optimize
-                        your channel, playlists, metadata, description, and also
-                        your video content.
+                        As we are among the Best PPC Advertising Company in
+                        Kolkata, India, we provide useful mobile advertising
+                        services for your businesses. Mobile advertising is very
+                        useful as you can easily reach out to the correct
+                        audience at the right time, along with providing
+                        convenience to users so that they can know your business
+                        offerings on the go.
                       </p>
                     </Scrollbars>
                   </div>
@@ -771,20 +673,21 @@ const SearchEngineOptimization = () => {
                   <div className="single_expertise text-center">
                     <div className="expertise_icon_single">
                       <img
-                        src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/digital-marketing%2Fexpertise%2Fgoogle-analytics.png?alt=media&token=9f9d60a6-fc56-4e9d-b4ec-f3cf8bae2706"
+                        src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/digital-marketing%2Fsmm%2Fsocial-ads.png?alt=media&token=d68a8980-38ce-4d84-a123-4e0bebd60a01"
                         className="img-fluid"
                         alt=""
                       />
                     </div>
-                    <h4>Google Analytics</h4>
+                    <h4>PPC Copywriting </h4>
                     <Scrollbars
                       style={{ height: 150 }}
                       className="expertise_single_cont"
                     >
                       <p>
-                        Excellis IT uses Google Analytics to track how many
-                        visitors your site gets over a specific period of time
-                        as well as which keywords bring in the best results.
+                        In any PPC campaign, a compelling title and description
+                        are likely to get you more clicks as an effective
+                        keyword. Our in-house content team curates ad copies
+                        that are catchy and effective.
                       </p>
                     </Scrollbars>
                   </div>
@@ -793,21 +696,21 @@ const SearchEngineOptimization = () => {
                   <div className="single_expertise text-center">
                     <div className="expertise_icon_single">
                       <img
-                        src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/digital-marketing%2Fexpertise%2Flink-building.png?alt=media&token=0b946a36-8cbe-43e2-8240-438bf6531586"
+                        src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/digital-marketing%2Fsmm%2Fsocial-ads.png?alt=media&token=d68a8980-38ce-4d84-a123-4e0bebd60a01"
                         className="img-fluid"
                         alt=""
                       />
                     </div>
-                    <h4>High-Quality Link Building</h4>
+                    <h4>Conversion Rate Optimization </h4>
                     <Scrollbars
                       style={{ height: 150 }}
                       className="expertise_single_cont"
                     >
                       <p>
-                        Excellis IT puts in efforts to obtain the best
-                        hyperlinks from various other websites to your website.
-                        When other websites can easily link back to your
-                        website, Google considers your website worth ranking.
+                        Our PPC management services are inclusive of substantial
+                        PPC ads, best and custom landing page design reviews, as
+                        well as user-friendly lead generation forms that would
+                        result in improving your conversion rate.
                       </p>
                     </Scrollbars>
                   </div>
@@ -816,20 +719,21 @@ const SearchEngineOptimization = () => {
                   <div className="single_expertise text-center">
                     <div className="expertise_icon_single">
                       <img
-                        src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/digital-marketing%2Fexpertise%2Fcompetitor.png?alt=media&token=66a294e2-b9b6-4322-823c-0104865b28d7"
+                        src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/digital-marketing%2Fsmm%2Fsocial-ads.png?alt=media&token=d68a8980-38ce-4d84-a123-4e0bebd60a01"
                         className="img-fluid"
                         alt=""
                       />
                     </div>
-                    <h4>Competitor Analysis</h4>
+                    <h4>A/B Testing </h4>
                     <Scrollbars
                       style={{ height: 150 }}
                       className="expertise_single_cont"
                     >
                       <p>
-                        Our experts study the competitive market and track the
-                        online activities to decide what would help your site
-                        stay ahead of the curve.
+                        Our in-house team of PPC experts makes use of the best
+                        tools to test the performance between 2 landing pages
+                        and a PPC ad campaign and optimize them accordingly to
+                        get better returns.
                       </p>
                     </Scrollbars>
                   </div>
@@ -838,114 +742,25 @@ const SearchEngineOptimization = () => {
                   <div className="single_expertise text-center">
                     <div className="expertise_icon_single">
                       <img
-                        src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/digital-marketing%2Fexpertise%2Fmonitor.png?alt=media&token=dc342cef-0262-4746-bfb7-2942d0d638e6"
+                        src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/digital-marketing%2Fsmm%2Fsocial-ads.png?alt=media&token=d68a8980-38ce-4d84-a123-4e0bebd60a01"
                         className="img-fluid"
                         alt=""
                       />
                     </div>
-                    <h4>Reporting and Analysis</h4>
+                    <h4>Social Media Advertising</h4>
                     <Scrollbars
                       style={{ height: 150 }}
                       className="expertise_single_cont"
                     >
                       <p>
-                        Our experts provide interpretable reports to their
-                        clients so that they can even know the benefits of the
-                        campaign.
-                      </p>
-                    </Scrollbars>
-                  </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <div className="single_expertise text-center">
-                    <div className="expertise_icon_single">
-                      <img
-                        src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/digital-marketing%2Fexpertise%2Fsettings-seo.png?alt=media&token=6a76e932-64e4-4d95-9f38-da1c9a04d983"
-                        className="img-fluid"
-                        alt=""
-                      />
-                    </div>
-                    <h4>SEO Tools and Software</h4>
-                    <Scrollbars
-                      style={{ height: 150 }}
-                      className="expertise_single_cont"
-                    >
-                      <p>
-                        Excellis IT uses new-age SEO tools and software to
-                        implement best SEO practices to make sure accurate
-                        campaigns and strategies are based on the best data
-                        collected with the help of such state-of-the-art SEO
-                        tools.
-                      </p>
-                    </Scrollbars>
-                  </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <div className="single_expertise text-center">
-                    <div className="expertise_icon_single">
-                      <img
-                        src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/digital-marketing%2Fexpertise%2Foptimization.png?alt=media&token=b5b2438b-a36b-4cb7-9b26-896e9be06942"
-                        className="img-fluid"
-                        alt=""
-                      />
-                    </div>
-                    <h4>Mobile Optimization</h4>
-                    <Scrollbars
-                      style={{ height: 150 }}
-                      className="expertise_single_cont"
-                    >
-                      <p>
-                        We optimize your website in such a way that the target
-                        users can easily access the website from their mobile
-                        devices.
-                      </p>
-                    </Scrollbars>
-                  </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <div className="single_expertise text-center">
-                    <div className="expertise_icon_single">
-                      <img
-                        src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/digital-marketing%2Fexpertise%2Fvoice-search.png?alt=media&token=77f36357-f3bb-4781-a201-5a8ee3b8c0f3"
-                        className="img-fluid"
-                        alt=""
-                      />
-                    </div>
-                    <h4>Voice Search</h4>
-                    <Scrollbars
-                      style={{ height: 150 }}
-                      className="expertise_single_cont"
-                    >
-                      <p>
-                        Excellis IT provides their clients with voice search
-                        optimization which ensures to optimize their web pages
-                        according to voice searches. This service takes into
-                        account the search terms the users use during their
-                        voice search.
-                      </p>
-                    </Scrollbars>
-                  </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <div className="single_expertise text-center">
-                    <div className="expertise_icon_single">
-                      <img
-                        src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/digital-marketing%2Fexpertise%2Fsettings.png?alt=media&token=95665084-cd06-4cf5-85ab-eee26e2f8cc6"
-                        className="img-fluid"
-                        alt=""
-                      />
-                    </div>
-                    <h4>Featured Snippet Optimization</h4>
-                    <Scrollbars
-                      style={{ height: 150 }}
-                      className="expertise_single_cont"
-                    >
-                      <p>
-                        Our Search Engine Optimization experts and content
-                        writers curate content in a way that would increase its
-                        chances to appear as a featured snippet. A featured
-                        snippet, makes your website appear above the 1st ranking
-                        site on the SERPs.
+                        Social Media Advertising, also known as Social Media
+                        Targeting, helps you reach your target audiences through
+                        social media platforms. As one of the Best Search Engine
+                        Marketing Company in Kolkata, India, we help you in
+                        creating meaningful as well as effective advertisements
+                        which are based on your customer interactions on social
+                        media platforms. This significantly increases
+                        conversions and sales.
                       </p>
                     </Scrollbars>
                   </div>
@@ -982,7 +797,7 @@ const SearchEngineOptimization = () => {
                   slidesPerView={4}
                   spaceBetween={0}
                   navigation
-                  autoplay={{ delay: 3000 }}
+                  autoplay={{ delay: 300000 }}
                   className="mySwiper"
                   breakpoints={{
                     700: {
@@ -1004,59 +819,6 @@ const SearchEngineOptimization = () => {
                   }}
                 >
                   <SwiperSlide>
-                    <div className="inner_single_industries">
-                      <img
-                        src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/industries%2Fagriculture.jpg?alt=media&token=7bd6589c-bc10-41ca-8118-72b04ba4eaed"
-                        alt=""
-                        className="img-fluid"
-                      />
-                      <div className="inner_single_industries_cont">
-                        <h4>Agriculture</h4>
-                        <p>
-                          A custom Website Design India will look professional
-                          to any visitors to your website, leading to more
-                          conversions
-                        </p>
-                      </div>
-                    </div>
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    {" "}
-                    <div className="inner_single_industries">
-                      <img
-                        src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/industries%2Fbanking.jpg?alt=media&token=31617527-b57e-4d92-9540-ad5a03a4b2f7"
-                        alt=""
-                        className="img-fluid"
-                      />
-                      <div className="inner_single_industries_cont">
-                        <h4>Banking</h4>
-                        <p>
-                          A custom Website Design India will look professional
-                          to any visitors to your website, leading to more
-                          conversions
-                        </p>
-                      </div>
-                    </div>
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    {" "}
-                    <div className="inner_single_industries">
-                      <img
-                        src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/industries%2Fecommerce.jpg?alt=media&token=432f7c80-2e48-4776-b397-75e58aaca633"
-                        alt=""
-                        className="img-fluid"
-                      />
-                      <div className="inner_single_industries_cont">
-                        <h4>E-commerce</h4>
-                        <p>
-                          A custom Website Design India will look professional
-                          to any visitors to your website, leading to more
-                          conversions
-                        </p>
-                      </div>
-                    </div>
-                  </SwiperSlide>
-                  <SwiperSlide>
                     {" "}
                     <div className="inner_single_industries">
                       <img
@@ -1067,9 +829,8 @@ const SearchEngineOptimization = () => {
                       <div className="inner_single_industries_cont">
                         <h4>Education</h4>
                         <p>
-                          A custom Website Design India will look professional
-                          to any visitors to your website, leading to more
-                          conversions
+                          We help the education sector to gain relevance on the
+                          digital platform with the help of best PPC practices.
                         </p>
                       </div>
                     </div>
@@ -1078,52 +839,16 @@ const SearchEngineOptimization = () => {
                     {" "}
                     <div className="inner_single_industries">
                       <img
-                        src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/industries%2Fenergy.jpg?alt=media&token=d6e9327d-cf5a-4bad-8922-146d0316fafc"
+                        src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/industries%2Fhealthcare.jpg?alt=media&token=d826e1e0-a94b-4941-80a8-3422d5bf6dde"
                         alt=""
                         className="img-fluid"
                       />
                       <div className="inner_single_industries_cont">
-                        <h4>Energy</h4>
+                        <h4>Healthcare </h4>
                         <p>
-                          A custom Website Design India will look professional
-                          to any visitors to your website, leading to more
-                          conversions
-                        </p>
-                      </div>
-                    </div>
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    {" "}
-                    <div className="inner_single_industries">
-                      <img
-                        src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/industries%2Ffood-resturent.jpg?alt=media&token=27c9bfa9-e3fa-4d04-b8ac-3bda56b6926d"
-                        alt=""
-                        className="img-fluid"
-                      />
-                      <div className="inner_single_industries_cont">
-                        <h4>Food & Resrurent</h4>
-                        <p>
-                          A custom Website Design India will look professional
-                          to any visitors to your website, leading to more
-                          conversions
-                        </p>
-                      </div>
-                    </div>
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    {" "}
-                    <div className="inner_single_industries">
-                      <img
-                        src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/industries%2Flogistics.jpg?alt=media&token=8f039e42-a3cb-46e6-83c2-3d4835908c62"
-                        alt=""
-                        className="img-fluid"
-                      />
-                      <div className="inner_single_industries_cont">
-                        <h4>Logistic</h4>
-                        <p>
-                          A custom Website Design India will look professional
-                          to any visitors to your website, leading to more
-                          conversions
+                          Our up-to-date, authoritative landing pages, local SEO
+                          practices, and targeted PPC ad campaigns helps
+                          healthcare brands to spread awareness.
                         </p>
                       </div>
                     </div>
@@ -1139,27 +864,8 @@ const SearchEngineOptimization = () => {
                       <div className="inner_single_industries_cont">
                         <h4> Manufacture</h4>
                         <p>
-                          A custom Website Design India will look professional
-                          to any visitors to your website, leading to more
-                          conversions
-                        </p>
-                      </div>
-                    </div>
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    {" "}
-                    <div className="inner_single_industries">
-                      <img
-                        src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/industries%2Fmedia-entertainment.jpg?alt=media&token=19ea18ed-c6e1-4027-b40b-77f1af783358"
-                        alt=""
-                        className="img-fluid"
-                      />
-                      <div className="inner_single_industries_cont">
-                        <h4>Media & Entertainment</h4>
-                        <p>
-                          A custom Website Design India will look professional
-                          to any visitors to your website, leading to more
-                          conversions
+                          Our social media service can help the manufacturing
+                          industry to build trust as well as gain an audience.
                         </p>
                       </div>
                     </div>
@@ -1175,81 +881,10 @@ const SearchEngineOptimization = () => {
                       <div className="inner_single_industries_cont">
                         <h4>Real State</h4>
                         <p>
-                          A custom Website Design India will look professional
-                          to any visitors to your website, leading to more
-                          conversions
-                        </p>
-                      </div>
-                    </div>
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    {" "}
-                    <div className="inner_single_industries">
-                      <img
-                        src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/industries%2Fretail.jpg?alt=media&token=3d936774-05a1-4442-b72b-cd7f8b230030"
-                        alt=""
-                        className="img-fluid"
-                      />
-                      <div className="inner_single_industries_cont">
-                        <h4>Retail</h4>
-                        <p>
-                          A custom Website Design India will look professional
-                          to any visitors to your website, leading to more
-                          conversions
-                        </p>
-                      </div>
-                    </div>
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    {" "}
-                    <div className="inner_single_industries">
-                      <img
-                        src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/industries%2Fsocial-network.jpg?alt=media&token=264215f6-fd0f-4a89-9d14-8d499ba255a8"
-                        alt=""
-                        className="img-fluid"
-                      />
-                      <div className="inner_single_industries_cont">
-                        <h4>Social Networks</h4>
-                        <p>
-                          A custom Website Design India will look professional
-                          to any visitors to your website, leading to more
-                          conversions
-                        </p>
-                      </div>
-                    </div>
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    {" "}
-                    <div className="inner_single_industries">
-                      <img
-                        src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/industries%2Fsports-gaming.jpg?alt=media&token=f070189a-a11b-4e8e-8d71-a1c6ee80cd12"
-                        alt=""
-                        className="img-fluid"
-                      />
-                      <div className="inner_single_industries_cont">
-                        <h4>Sports & Gaming</h4>
-                        <p>
-                          A custom Website Design India will look professional
-                          to any visitors to your website, leading to more
-                          conversions
-                        </p>
-                      </div>
-                    </div>
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    {" "}
-                    <div className="inner_single_industries">
-                      <img
-                        src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/industries%2Ftelecom.jpg?alt=media&token=f849fc3e-ff94-4aed-8b32-8f272be76ae9"
-                        alt=""
-                        className="img-fluid"
-                      />
-                      <div className="inner_single_industries_cont">
-                        <h4>Telecome</h4>
-                        <p>
-                          A custom Website Design India will look professional
-                          to any visitors to your website, leading to more
-                          conversions
+                          We help the real estate by reaching out to their
+                          target audience with our paid search marketing
+                          services which in return boost your search engine
+                          ranking and sales.
                         </p>
                       </div>
                     </div>
@@ -1265,9 +900,64 @@ const SearchEngineOptimization = () => {
                       <div className="inner_single_industries_cont">
                         <h4>Tour & Travel</h4>
                         <p>
-                          A custom Website Design India will look professional
-                          to any visitors to your website, leading to more
-                          conversions
+                          Appropriate advertising along with attractive and
+                          engaging social media presence ensures the success of
+                          your business in the travel & tourism industry.
+                        </p>
+                      </div>
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    {" "}
+                    <div className="inner_single_industries">
+                      <img
+                        src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/industries%2Fmedia-entertainment.jpg?alt=media&token=19ea18ed-c6e1-4027-b40b-77f1af783358"
+                        alt=""
+                        className="img-fluid"
+                      />
+                      <div className="inner_single_industries_cont">
+                        <h4>Lifestyle </h4>
+                        <p>
+                          We help to increase brand effectiveness with our
+                          various PPC services like keyword optimization,
+                          AdWords management, social media ads, etc. being the
+                          best PPC management company in Kolkata, India.
+                        </p>
+                      </div>
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    {" "}
+                    <div className="inner_single_industries">
+                      <img
+                        src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/industries%2Fmedia-entertainment.jpg?alt=media&token=19ea18ed-c6e1-4027-b40b-77f1af783358"
+                        alt=""
+                        className="img-fluid"
+                      />
+                      <div className="inner_single_industries_cont">
+                        <h4>Ecommerce And Retail </h4>
+                        <p>
+                          With the help of e-commerce PPC we boost your online
+                          retail presence, drive sales as well as resolve
+                          shopping cart abandonment issues.
+                        </p>
+                      </div>
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    {" "}
+                    <div className="inner_single_industries">
+                      <img
+                        src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/industries%2Fmedia-entertainment.jpg?alt=media&token=19ea18ed-c6e1-4027-b40b-77f1af783358"
+                        alt=""
+                        className="img-fluid"
+                      />
+                      <div className="inner_single_industries_cont">
+                        <h4>Finance </h4>
+                        <p>
+                          With our cost-effective and creative PPC campaigns we
+                          attract visitors which improves website traffic, leads
+                          and sales.
                         </p>
                       </div>
                     </div>
@@ -1336,7 +1026,7 @@ const SearchEngineOptimization = () => {
                         />
                       </div>
                       <div class="prosses_text">
-                        <h3>Requirement Gathering</h3>
+                        <h3>Define Performance Goals </h3>
                         <p>
                           <Scrollbars
                             style={{ height: 100 }}
@@ -1344,11 +1034,11 @@ const SearchEngineOptimization = () => {
                             autoHideTimeout={1000}
                             autoHideDuration={200}
                           >
-                            We start with a thorough discussion with our clients
-                            so that we understand their business offerings,
-                            business requirements, target audience, audience
-                            demographics, market competition, and industry
-                            trends.
+                            Throughout our initial review, we define goals and
+                            then craft a clear plan. By analyzing cost per
+                            click, conversion rate, cost per acquisition, and
+                            revenue, we make sure that our services provide the
+                            necessary value.
                           </Scrollbars>
                         </p>
                       </div>
@@ -1372,7 +1062,7 @@ const SearchEngineOptimization = () => {
                         />
                       </div>
                       <div class="prosses_text">
-                        <h3>Strategy & Planning</h3>
+                        <h3>Implement Tracking</h3>
                         <p>
                           <Scrollbars
                             style={{ height: 100 }}
@@ -1380,13 +1070,10 @@ const SearchEngineOptimization = () => {
                             autoHideTimeout={1000}
                             autoHideDuration={200}
                           >
-                            After gaining an in-depth understanding of our
-                            client's business requirements, we start with a
-                            monthly plan as well as a yearly strategy for their
-                            SEO campaign. The plans and strategies are created
-                            as per the goals you are willing to accomplish with
-                            your online marketing and Search Engine Optimization
-                            strategy.
+                            We have a team of Google AdWords and Google
+                            Analytics certified members who can implement basic
+                            as well as advanced tracking options for all
+                            clients.
                           </Scrollbars>
                         </p>
                       </div>
@@ -1410,7 +1097,7 @@ const SearchEngineOptimization = () => {
                         />
                       </div>
                       <div class="prosses_text">
-                        <h3>Keyword Research</h3>
+                        <h3>Build Keywords & Targeting</h3>
                         <p>
                           <Scrollbars
                             style={{ height: 100 }}
@@ -1418,11 +1105,9 @@ const SearchEngineOptimization = () => {
                             autoHideTimeout={1000}
                             autoHideDuration={200}
                           >
-                            With the use of accurate keywords, you can make your
-                            Search Engine Optimization campaign successful as
-                            well as rank on SERPs. Our team uses the best online
-                            tools to research trending keywords to rank your
-                            website on the top of the search engine.
+                            In this step, we start building keywords and
+                            targeting them so that our clients get the value of
+                            their money.
                           </Scrollbars>
                         </p>
                       </div>
@@ -1443,7 +1128,7 @@ const SearchEngineOptimization = () => {
                         />
                       </div>
                       <div class="prosses_text">
-                        <h3>Website Amendments</h3>
+                        <h3>Develop Ad Copy & Creative</h3>
                         <p>
                           <Scrollbars
                             style={{ height: 100 }}
@@ -1451,10 +1136,10 @@ const SearchEngineOptimization = () => {
                             autoHideTimeout={1000}
                             autoHideDuration={200}
                           >
-                            Our SEO experts then analyze the technicalities and
-                            make the website in such a way that they meet the
-                            essential technical standard for their Search Engine
-                            Optimization campaign and bring in desired results.
+                            You are as good as your copy as well as your
+                            creative that is why Excellis IT has a team of
+                            experts with in-depth knowledge on the same. We also
+                            make sure that the copy we provide is best-in-class.
                           </Scrollbars>
                         </p>
                       </div>
@@ -1475,7 +1160,7 @@ const SearchEngineOptimization = () => {
                         />
                       </div>
                       <div class="prosses_text">
-                        <h3>Link Building</h3>
+                        <h3>Optimize Landing Pages</h3>
                         <p>
                           <Scrollbars
                             style={{ height: 100 }}
@@ -1483,9 +1168,10 @@ const SearchEngineOptimization = () => {
                             autoHideTimeout={1000}
                             autoHideDuration={200}
                           >
-                            Then we focus on off-page optimization activities as
-                            well as link building. We also initiate quality link
-                            building so that the site ranks higher.
+                            As one of the best search engine marketing company
+                            in Kolkata, India, we use a unique and tested CRO
+                            methodology that gives the best conversion rates for
+                            your landing pages.
                           </Scrollbars>
                         </p>
                       </div>
@@ -1506,7 +1192,9 @@ const SearchEngineOptimization = () => {
                         />
                       </div>
                       <div class="prosses_text">
-                        <h3>Content Creation & Update</h3>
+                        <h3>
+                          Create Bidding Strategy, Monitor, Report & Refine
+                        </h3>
                         <p>
                           <Scrollbars
                             style={{ height: 100 }}
@@ -1514,47 +1202,16 @@ const SearchEngineOptimization = () => {
                             autoHideTimeout={1000}
                             autoHideDuration={200}
                           >
-                            Our content writers then curate content and the SEO
-                            experts post them on various platforms. Our content
-                            is fresh and unique so that it improves your site
-                            rankings.
+                            Getting the right bid is very important. This is the
+                            reason we use advanced software as well as our
+                            insight to make sure that you are not overpaying.
+                            Once we are all set we monitor, report, and refine
+                            our strategy regularly.
                           </Scrollbars>
                         </p>
                       </div>
                       <div class="procc_img">
                         <img src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/digital-marketing%2Fcontent-creation-bg.jpg?alt=media&token=72f9a8e1-d7fc-4649-897c-4c46c1c82d13" />
-                      </div>
-                    </div>
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <div class="width_100">
-                      <div class="swiper_heding">
-                        <div className="step__count">7</div>
-                      </div>
-                      <div className="process__icon">
-                        <img
-                          src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/digital-marketing%2Fregular-reporting.png?alt=media&token=0b91355e-a32a-496a-80e8-7a23b694b885"
-                          alt="Requirement Gathering icon"
-                        />
-                      </div>
-                      <div class="prosses_text">
-                        <h3>Regular Reporting</h3>
-                        <p>
-                          <Scrollbars
-                            style={{ height: 100 }}
-                            autoHide
-                            autoHideTimeout={1000}
-                            autoHideDuration={200}
-                          >
-                            Good SEO practices contain reporting too. Our Search
-                            Engine Optimization experts provide interpretable
-                            reports to their clients so that they can even know
-                            the benefits of the campaign.
-                          </Scrollbars>
-                        </p>
-                      </div>
-                      <div class="procc_img">
-                        <img src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/digital-marketing%2Fregular-reporting-bg.jpg?alt=media&token=cdad0edd-c40b-44f6-a29e-6b6223a403c1" />
                       </div>
                     </div>
                   </SwiperSlide>
@@ -1576,7 +1233,7 @@ const SearchEngineOptimization = () => {
               >
                 <h6>Benefits</h6>
                 <h2 class="h2--WithLine">
-                  Benefits of Hiring SEO Service Provider
+                  Benefits of Hiring Social Media Marketing Services
                 </h2>
               </div>
             </div>
@@ -1595,11 +1252,11 @@ const SearchEngineOptimization = () => {
                     <span class="forActive"></span>
                   </span>
                   <span class="itemDot itemDot2" data-tab="2">
-                    <FaFilter />
+                    <FaUsers />
                     <span class="forActive"></span>
                   </span>
                   <span class="itemDot itemDot3" data-tab="3">
-                    <FaHourglassEnd />
+                    <FaUserCheck />
                     <span class="forActive"></span>
                   </span>
                   <span class="itemDot itemDot4" data-tab="4">
@@ -1610,14 +1267,10 @@ const SearchEngineOptimization = () => {
                     <FaBullhorn />
                     <span class="forActive"></span>
                   </span>
-                  <span class="itemDot itemDot6" data-tab="6">
-                    <FaUserLock />
-                    <span class="forActive"></span>
-                  </span>
                 </div>
                 <div className="benefit_title_sec">
                   <h4 data-aos="zoom-in" data-aos-duration="2500">
-                    Benefit
+                    Benefits
                   </h4>
                 </div>
               </div>
@@ -1630,80 +1283,64 @@ const SearchEngineOptimization = () => {
               <div class="contentCircle">
                 <div class="CirItem title-box active CirItem1">
                   <h2 class="title">
-                    <span>Better Visibility </span>
+                    <span>Save Time</span>
                   </h2>
                   <p>
-                    SEO is an organic way that would help you rank better as
-                    well as establish a domain authority over your competitors.
-                    Better visibility also means you can convert potential
-                    buyers into customers.
+                    PPC is a time taking process as you need to constantly
+                    update keywords and ads. This is why you need to hire a PPC
+                    agency that would help you in monitoring and optimizing the
+                    campaign.
                   </p>
                   <i class="fa fa-clock-o"></i>
                 </div>
 
                 <div class="CirItem title-box CirItem2">
                   <h2 class="title">
-                    <span>High conversion leads </span>
+                    <span>Keyword research is complicated</span>
                   </h2>
                   <p>
-                    If you use the correct SEO strategy then you can attract
-                    more clients or customers to your website. These potential
-                    customers are called leads and you must continue to get
-                    higher leads to thrive in online business.
+                    Keyword research is an important part of PPC ad campaigns,
+                    thus, you need experts to go through the process. This is
+                    why you need a PPC ads agency in Kolkata, India to help you
+                    with the best keywords so that you get the value of your
+                    money.
                   </p>
                   <i class="fa fa-comments"></i>
                 </div>
 
                 <div class="CirItem title-box CirItem3">
                   <h2 class="title">
-                    <span>It saves time </span>
+                    <span>Professional Experience</span>
                   </h2>
                   <p>
-                    Search Engine Optimization is a constant process that
-                    requires hours of research, optimization, as well as upkeep.
-                    Thus, outsourcing your SEO to an agency gets you the best
-                    team to work on it and in return frees you up to focus on
-                    other business-related tasks.
+                    Excellis IT has a team of experts who specialize in PPC
+                    campaign management and they can give you the best solution
+                    for your business.
                   </p>
                   <i class="fa fa-user"></i>
                 </div>
                 <div class="CirItem title-box CirItem4">
                   <h2 class="title">
-                    <span>Experienced professionals </span>
+                    <span>Gain agile and accurate results</span>
                   </h2>
                   <p>
-                    Outsourcing to the best SEO Agencies in Kolkata, India gets
-                    you experienced professionals who have worked with many
-                    clients and industries with a solid understanding of the
-                    strategies that work best. They’ve already been through many
-                    years of trial and error thus, they’re ahead of the curve on
-                    what drives best results.
+                    A professional team of experts has experience in dealing
+                    with multiple campaigns. They are reliable as well as agile
+                    with technological knowledge and has the access to all the
+                    essential resources. Thus, making it easier for them to
+                    handle complex campaigns within the given deadlines.
                   </p>
                   <i class="fa fa-user"></i>
                 </div>
                 <div class="CirItem title-box CirItem5">
                   <h2 class="title">
-                    <span>Knows the trends </span>
+                    <span>Budget management requires commitment. </span>
                   </h2>
                   <p>
-                    SEO trends are changing every day thus, you have to research
-                    on the same every now and then to stay on top of the trends.
-                    This is time-consuming and many companies do not have that
-                    luxury thus, hiring an SEO service provider keeps your
-                    website on top of the trends.
-                  </p>
-                  <i class="fa fa-user"></i>
-                </div>
-                <div class="CirItem title-box CirItem6">
-                  <h2 class="title">
-                    <span>Safety for your business </span>
-                  </h2>
-                  <p>
-                    SEO is a risky business and if you do not know what you’re
-                    doing, you might open the doors for search penalties, spam,
-                    and hacking. This is why you should hire an SEO agency as
-                    they know what to look out for and how to avoid any negative
-                    repercussions keeping your website and rankings safe.
+                    Making mistakes can surpass your budget easily and keyword
+                    bid amount also rises thus, to stay within the allocated
+                    budget you must hire the best PPC management company in
+                    Kolkata, India.
                   </p>
                   <i class="fa fa-user"></i>
                 </div>
@@ -1722,9 +1359,7 @@ const SearchEngineOptimization = () => {
                 style={{ backgroundImage: `url(${cta_bg2})` }}
               >
                 <div className="cta2_content_sec text-left">
-                  <h4 className="mb-4">
-                    Get your page optimized by the best SEO service provider.
-                  </h4>
+                  <h4 className="mb-4">Want to get a high ROI?</h4>
                   <Link className=" light-btn" to="/ContactUs">
                     Contact Us
                   </Link>
@@ -1872,6 +1507,31 @@ const SearchEngineOptimization = () => {
         </div>
       </section>
 
+      <section className="cta2_section pb-0 pt-0">
+        <div className="container">
+          <div className="row">
+            <div className="col-md-12">
+              <div
+                className="cta2_inner d-block d-sm-flex align-items-center"
+                style={{ backgroundImage: `url(${cta_bg3})` }}
+              >
+                <div className="cta2_content_sec text-center w-100">
+                  <h4 className="mb-4">
+                    Grow your business with PPC campaign management
+                  </h4>
+                  <Link className=" light-btn" to="/ContactUs">
+                    Contact Us
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <TechnologyWeUse />
+      <OurBlogs />
+
       <section className="common_faq_section">
         <div className="container">
           <div className="row mb-5">
@@ -1899,7 +1559,7 @@ const SearchEngineOptimization = () => {
                           aria-expanded="true"
                           aria-controls="faq1"
                         >
-                          <span>1.</span> What are SEO services?
+                          <span>1.</span> Is PPC appropriate for my business?
                         </button>
                       </h5>
                     </div>
@@ -1911,9 +1571,9 @@ const SearchEngineOptimization = () => {
                       data-parent="#faqaccordian"
                     >
                       <div class="card-body">
-                        Answer: SEO or search engine optimization is a marketing
-                        technique that helps you to push your site ranking on
-                        search engines like Google, Bing, Yahoo, etc.
+                        Provided the PPC campaign has been done properly and all
+                        the parameters of the business have been met it can be
+                        perfect for any sort of business.
                       </div>
                     </div>
                   </div>
@@ -1928,7 +1588,8 @@ const SearchEngineOptimization = () => {
                           aria-expanded="false"
                           aria-controls="faq2"
                         >
-                          <span>2.</span> Why is SEO needed?
+                          <span>2.</span> Why should I pay for search engine
+                          advertising?
                         </button>
                       </h5>
                     </div>
@@ -1939,9 +1600,10 @@ const SearchEngineOptimization = () => {
                       data-parent="#faqaccordian"
                     >
                       <div class="card-body">
-                        Answer: The digital market is very competitive and to
-                        maintain the presence of your business online you need
-                        SEO.
+                        Search Engine Advertising or SEM helps your business to
+                        appear on the top of the search engine and this is the
+                        reason why a business should pay for it as it would
+                        attract your target audience.
                       </div>
                     </div>
                   </div>
@@ -1956,7 +1618,7 @@ const SearchEngineOptimization = () => {
                           aria-expanded="false"
                           aria-controls="faq3"
                         >
-                          <span>3.</span> How does it work?
+                          <span>3.</span> Where will my PPC ads appear?
                         </button>
                       </h5>
                     </div>
@@ -1967,11 +1629,11 @@ const SearchEngineOptimization = () => {
                       data-parent="#faqaccordian"
                     >
                       <div class="card-body">
-                        Answer: SEO makes certain changes to your website to
-                        improve your online presence so that you can easily
-                        reach out to your target audience. They also use
-                        accurate keywords to optimize your content so that your
-                        audience can be converted to buyers.
+                        There are many kinds of PPC ads like search, display,
+                        social media advertising, remarketing, Google Shopping,
+                        and mobile ads. They can appear in the SERPs, follow you
+                        on social media, websites that you browse, or apps that
+                        you use.
                       </div>
                     </div>
                   </div>
@@ -1986,8 +1648,7 @@ const SearchEngineOptimization = () => {
                           aria-expanded="false"
                           aria-controls="faq4"
                         >
-                          <span>4.</span> Step by step process of SEO for a
-                          website?
+                          <span>4.</span> Why am I not seeing my PPC ads?
                         </button>
                       </h5>
                     </div>
@@ -1998,13 +1659,10 @@ const SearchEngineOptimization = () => {
                       data-parent="#faqaccordian"
                     >
                       <div class="card-body">
-                        The SEO process can be divided into 4 steps:
-                        <ul>
-                          <li>Target market analysis</li>
-                          <li>Keyword research and development</li>
-                          <li>Content optimization</li>
-                          <li> Constant testing and measuring</li>
-                        </ul>
+                        There are several reasons for your PPC ads do not show
+                        up – you might be excluded from the target set, the ads
+                        might have been disapproved or you might have exhausted
+                        the campaign budget.
                       </div>
                     </div>
                   </div>
@@ -2019,7 +1677,7 @@ const SearchEngineOptimization = () => {
                           aria-expanded="false"
                           aria-controls="faq5"
                         >
-                          <span>5.</span>What is an SEO audit?
+                          <span>5.</span>Why is my cost-per-click increasing?
                         </button>
                       </h5>
                     </div>
@@ -2030,99 +1688,11 @@ const SearchEngineOptimization = () => {
                       data-parent="#faqaccordian"
                     >
                       <div class="card-body">
-                        Answer: SEO audit is done to analyze and check the
-                        problems in a website so that they can be fixed to make
-                        the website more accessible.
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card">
-                    <div class="card-header" id="headingThree">
-                      <h5 class="mb-0">
-                        <button
-                          class="btn collapsed"
-                          type="button"
-                          data-toggle="collapse"
-                          data-target="#faq6"
-                          aria-expanded="false"
-                          aria-controls="faq6"
-                        >
-                          <span>6.</span>What is SEO blogging?
-                        </button>
-                      </h5>
-                    </div>
-                    <div
-                      id="faq6"
-                      class="collapse"
-                      aria-labelledby="headingThree"
-                      data-parent="#faqaccordian"
-                    >
-                      <div class="card-body">
-                        Answer: SEO blogging starts with keyword research and
-                        the use of the best keywords while writing an authentic
-                        plagiarism-free blog focusing on those keywords but at
-                        the same time keeping the keyword flow natural.
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card">
-                    <div class="card-header" id="headingThree">
-                      <h5 class="mb-0">
-                        <button
-                          class="btn collapsed"
-                          type="button"
-                          data-toggle="collapse"
-                          data-target="#faq7"
-                          aria-expanded="false"
-                          aria-controls="faq7"
-                        >
-                          <span>7.</span> What is SEO content?
-                        </button>
-                      </h5>
-                    </div>
-                    <div
-                      id="faq7"
-                      class="collapse"
-                      aria-labelledby="headingThree"
-                      data-parent="#faqaccordian"
-                    >
-                      <div class="card-body">
-                        Answer: SEO content is all about creating content for
-                        various websites by following the SEO guidelines.
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card">
-                    <div class="card-header" id="headingThree">
-                      <h5 class="mb-0">
-                        <button
-                          class="btn collapsed"
-                          type="button"
-                          data-toggle="collapse"
-                          data-target="#faq7"
-                          aria-expanded="false"
-                          aria-controls="faq7"
-                        >
-                          <span>8.</span> How do you do SEO for E-commerce?
-                        </button>
-                      </h5>
-                    </div>
-                    <div
-                      id="faq7"
-                      class="collapse"
-                      aria-labelledby="headingThree"
-                      data-parent="#faqaccordian"
-                    >
-                      <div class="card-body">
-                        SEO for E-commerce consists of:
-                        <ul>
-                          <li>Keyword research</li>
-                          <li> Developing site architecture</li>
-                          <li> Optimizing On-Page SEO</li>
-                          <li>Local SEO to drive local traffic</li>
-                          <li>Content marketing</li>
-                          <li> Link building</li>
-                        </ul>
+                        Cost-per-click or CPC tends to rise when the competition
+                        increases for ad space. Within Adwords, there are
+                        several advertisers found in the auctions insights
+                        report. CPC tends to rise when there are too many
+                        advertisers competing for the same keywords.
                       </div>
                     </div>
                   </div>
@@ -2133,34 +1703,9 @@ const SearchEngineOptimization = () => {
         </div>
       </section>
 
-      <OurBlogs />
-      <section className="cta2_section pb-0">
-        <div className="container">
-          <div className="row">
-            <div className="col-md-12">
-              <div
-                className="cta2_inner d-block d-sm-flex align-items-center"
-                style={{ backgroundImage: `url(${cta_bg3})` }}
-              >
-                <div className="cta2_content_sec text-center w-100">
-                  <h4 className="mb-4">
-                    Sort out your digital marketing needs with the best SEO
-                    provider in town.{" "}
-                  </h4>
-                  <Link className=" light-btn" to="/ContactUs">
-                    Contact Us
-                  </Link>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <TechnologyWeUse />
       <Footer />
     </div>
   );
 };
 
-export default SearchEngineOptimization;
+export default PayPerClick;

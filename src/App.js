@@ -29,6 +29,7 @@ import QaAndTesting from "./ItServices/QaAndTesting";
 import BackOfficeProcessOutsourcing from "./BpoServices/BackOfficeProcessOutsourcing";
 import SearchEngineOptimization from "./MarketingServices/SearchEngineOptimization";
 import SocialMediaMarketing from "./MarketingServices/SocialMediaMarketing";
+import PayPerClick from "./MarketingServices/PayPerClick";
 
 function App() {
   AOS.init({
@@ -68,6 +69,7 @@ function App() {
           path="/social-media-marketing"
           component={SocialMediaMarketing}
         />
+        <Route path="/pay-per-click" component={PayPerClick} />
         <Route
           path="/back-office-process-outsourcing-services"
           component={BackOfficeProcessOutsourcing}
