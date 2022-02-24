@@ -24,9 +24,9 @@ const Navbar = ({ activeStatus }) => {
   }, []);
 
   const indiamap =
-    "https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/india.png?alt=media&token=d7b93f62-5579-4bbe-834a-77ca052199a3";
+    "https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/india.png?alt=media&token=a7594991-9855-4e67-a094-a20b095aaf58";
   const usamap =
-    "https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/united-states.png?alt=media&token=ceca221c-c79d-4b41-9f06-5fc33efc1e86";
+    "https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/united-states.png?alt=media&token=0a2e6299-5598-42fe-8ee9-f15e4a920825";
 
   const logo =
     "https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/logo-white.png?alt=media&token=e6de3af9-13d4-4699-8b77-0b8b2445bc3e";

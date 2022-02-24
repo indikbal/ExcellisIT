@@ -15,11 +15,12 @@ import $ from "jquery";
 import {
   FaUserLock,
   FaRegEye,
-  FaFilter,
-  FaHourglassEnd,
+  FaUsers,
+  FaUserCheck,
   FaAward,
   FaBullhorn,
 } from "react-icons/fa";
+import TechnologyWeUse from "../TechnologyWeUse";
 const cta_bg =
   "https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/digital-marketing%2Fcta_img.jpg?alt=media&token=80dff7e9-4f79-4258-ae00-734d63a84110";
 
@@ -28,31 +29,6 @@ const cta_bg2 =
 const cta_bg3 =
   "https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/cta_img3.jpg?alt=media&token=ad3e770b-a126-4e64-b1c2-ab61338fcc0e";
 SwiperCore.use([Navigation, Pagination, Autoplay]);
-const bootstrap =
-  "https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/technology%2FBootstrap.png?alt=media&token=c7d7a420-6618-480c-acb4-639820d666f9";
-const java =
-  "https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/technology%2FJava.png?alt=media&token=57226ce3-176b-491c-a540-1101d44c47cf";
-
-const xd =
-  "https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/technology%2Fadobe-xd.png?alt=media&token=7a378aeb-be0a-4e56-807b-b380b8053710";
-const angular =
-  "https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/technology%2Fangular.png?alt=media&token=415b1133-696c-4dbd-b53c-1c60138932dd";
-const css3 =
-  "https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/technology%2Fcss3.png?alt=media&token=1f3c28c2-2139-435c-8aa2-7f7db7c6f55c";
-const figma =
-  "https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/technology%2Ffigma.png?alt=media&token=278ab062-d724-4fbe-acd3-b57cb8f854f5";
-const flutter =
-  "https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/technology%2Fflutter-logo.png?alt=media&token=415f19e2-4f74-48c1-a59c-53586030110d";
-const mongodb =
-  "https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/technology%2Fmongodb.png?alt=media&token=a6ee9efb-1a07-47c2-9d8a-5fd8ecf72734";
-const oracle =
-  "https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/technology%2Foracel12c.png?alt=media&token=eb08f609-a2c3-4c63-a5bb-96fda1b25f91";
-const react =
-  "https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/technology%2Freact.png?alt=media&token=f55b9fea-0645-402f-a18c-2cef8b6e4e68";
-const swift =
-  "https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/technology%2Fswift.png?alt=media&token=8bb91bf5-8689-4284-b618-02ff8eaf3b07";
-const html =
-  "https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/technology%2Fhtml-5.png?alt=media&token=41450ff8-8db6-41b9-a3af-1246352334e6";
 
 const SocialMediaMarketing = () => {
   const title = "Social Media Marketing";
@@ -191,7 +167,7 @@ const SocialMediaMarketing = () => {
                     data-aos="reveal-right"
                   ></div>
                   <img
-                    src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/digital-marketing%2Fsearch-engine-optimization.jpg?alt=media&token=515093e5-4ed3-484b-810f-931ea91fc030"
+                    src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/digital-marketing%2Fsmm%2Fsocial-media-marketing.jpg?alt=media&token=30d10037-9b6e-4698-b4c1-256bd5042e00"
                     alt="Sear engine optimization"
                     className="img-fluid"
                   />
@@ -643,7 +619,7 @@ const SocialMediaMarketing = () => {
                   <div className="single_expertise text-center">
                     <div className="expertise_icon_single">
                       <img
-                        src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/digital-marketing%2Fexpertise%2Finternational.png?alt=media&token=a0be277d-cbee-40d4-8dca-95fe50a452b9"
+                        src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/digital-marketing%2Fsmm%2Ffacebook-page.png?alt=media&token=a9e8076b-6b59-4483-a850-c3bfadb0520b"
                         className="img-fluid"
                         alt=""
                       />
@@ -669,7 +645,7 @@ const SocialMediaMarketing = () => {
                   <div className="single_expertise text-center">
                     <div className="expertise_icon_single">
                       <img
-                        src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/digital-marketing%2Fexpertise%2Fsearch-engine-optimization.png?alt=media&token=f131e9b9-490d-4f96-b575-ab94272b24a3"
+                        src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/digital-marketing%2Fsmm%2Ftwitter-page.png?alt=media&token=457317b5-9f48-4e23-bb03-918627265ce8"
                         className="img-fluid"
                         alt=""
                       />
@@ -696,7 +672,7 @@ const SocialMediaMarketing = () => {
                   <div className="single_expertise text-center">
                     <div className="expertise_icon_single">
                       <img
-                        src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/digital-marketing%2Fexpertise%2Fecommerce.png?alt=media&token=705436e9-00d9-4d12-b3bf-1d195951f314"
+                        src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/digital-marketing%2Fsmm%2Flinkedin-page.png?alt=media&token=90f00ec5-e110-45d1-a426-cb245027fc73"
                         className="img-fluid"
                         alt=""
                       />
@@ -723,7 +699,7 @@ const SocialMediaMarketing = () => {
                   <div className="single_expertise text-center">
                     <div className="expertise_icon_single">
                       <img
-                        src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/computer.png?alt=media&token=5fe96fea-028d-4578-950f-0b1f8b222932"
+                        src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/digital-marketing%2Fsmm%2Fpinterest-marketing.png?alt=media&token=3b392249-d4f9-40c2-8c98-35850f5f93c3"
                         className="img-fluid"
                         alt=""
                       />
@@ -749,7 +725,7 @@ const SocialMediaMarketing = () => {
                   <div className="single_expertise text-center">
                     <div className="expertise_icon_single">
                       <img
-                        src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/digital-marketing%2Fexpertise%2Fyoutube.png?alt=media&token=d586f867-cf6f-4b1f-9df3-92c2486fb3c8"
+                        src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/digital-marketing%2Fsmm%2Finstagram-marketing.png?alt=media&token=79b8228d-d7dc-4742-80c1-73f1aa431301"
                         className="img-fluid"
                         alt=""
                       />
@@ -776,7 +752,7 @@ const SocialMediaMarketing = () => {
                   <div className="single_expertise text-center">
                     <div className="expertise_icon_single">
                       <img
-                        src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/digital-marketing%2Fexpertise%2Fgoogle-analytics.png?alt=media&token=9f9d60a6-fc56-4e9d-b4ec-f3cf8bae2706"
+                        src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/digital-marketing%2Fsmm%2Fsocial-ads.png?alt=media&token=d68a8980-38ce-4d84-a123-4e0bebd60a01"
                         className="img-fluid"
                         alt=""
                       />
@@ -828,7 +804,7 @@ const SocialMediaMarketing = () => {
                   slidesPerView={4}
                   spaceBetween={0}
                   navigation
-                  autoplay={{ delay: 3000 }}
+                  autoplay={{ delay: 300000 }}
                   className="mySwiper"
                   breakpoints={{
                     700: {
@@ -870,7 +846,7 @@ const SocialMediaMarketing = () => {
                     {" "}
                     <div className="inner_single_industries">
                       <img
-                        src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/industries%2Feducation.jpg?alt=media&token=50c74e90-077f-4bb8-9800-f47d2e939a8e"
+                        src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/industries%2Fhealthcare.jpg?alt=media&token=d826e1e0-a94b-4941-80a8-3422d5bf6dde"
                         alt=""
                         className="img-fluid"
                       />
@@ -1318,11 +1294,11 @@ const SocialMediaMarketing = () => {
                     <span class="forActive"></span>
                   </span>
                   <span class="itemDot itemDot2" data-tab="2">
-                    <FaFilter />
+                    <FaUsers />
                     <span class="forActive"></span>
                   </span>
                   <span class="itemDot itemDot3" data-tab="3">
-                    <FaHourglassEnd />
+                    <FaUserCheck />
                     <span class="forActive"></span>
                   </span>
                   <span class="itemDot itemDot4" data-tab="4">
@@ -1340,7 +1316,7 @@ const SocialMediaMarketing = () => {
                 </div>
                 <div className="benefit_title_sec">
                   <h4 data-aos="zoom-in" data-aos-duration="2500">
-                    Benefit
+                  Benefits
                   </h4>
                 </div>
               </div>
@@ -1383,7 +1359,7 @@ const SocialMediaMarketing = () => {
 
                 <div class="CirItem title-box CirItem3">
                   <h2 class="title">
-                    <span>Customer Accusation </span>
+                    <span>Gaining More Customers </span>
                   </h2>
                   <p>
                     SMM and SMO services in Kolkata, India help more people to
@@ -1833,134 +1809,9 @@ const SocialMediaMarketing = () => {
           </div>
         </div>
       </section>
-
-      <section class="sec section_technology">
-        <div class="s-TechnologiesLogos s-TechnologiesLogos--WithScanlines ">
-          <div class="container">
-            <div class="main_heading dark_text">
-              <h6 class="s-TechnologiesLogos__Subtitle">
-                Technologies &amp; Tools
-              </h6>
-
-              <h2 class="h2 h2--WithLine">
-                Our solutions are based <br />
-                <strong>on the following technologies</strong>
-              </h2>
-            </div>
-            <div class="s-TechnologiesLogos__GridWrapper">
-              <div class="row">
-                <div class="col-md-2 col-4 col">
-                  <div class="s-TechnologiesLogos__Inner" data-aos="fade-up">
-                    <div class="s-TechnologiesLogos__Image">
-                      <img data-lazyloaded="1" src={react} alt="react logo" />
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-2 col-4 col">
-                  <div class="s-TechnologiesLogos__Inner" data-aos="fade-down">
-                    <div class="s-TechnologiesLogos__Image">
-                      <img
-                        data-lazyloaded="1"
-                        src={angular}
-                        alt="angular logo"
-                      />
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-2 col-4 col">
-                  <div class="s-TechnologiesLogos__Inner" data-aos="fade-up">
-                    <div class="s-TechnologiesLogos__Image">
-                      <img
-                        data-lazyloaded="1"
-                        src={mongodb}
-                        alt=" mongodb logo"
-                      />
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-2 col-4 col">
-                  <div class="s-TechnologiesLogos__Inner" data-aos="fade-down">
-                    <div class="s-TechnologiesLogos__Image">
-                      <img
-                        data-lazyloaded="1"
-                        src={bootstrap}
-                        alt=" bootstrap loog"
-                      />
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-2 col-4 col">
-                  <div class="s-TechnologiesLogos__Inner" data-aos="fade-up">
-                    <div class="s-TechnologiesLogos__Image">
-                      <img
-                        data-lazyloaded="1"
-                        src={flutter}
-                        alt=" flutter logo"
-                      />
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-2 col-4 col">
-                  <div class="s-TechnologiesLogos__Inner" data-aos="fade-down">
-                    <div class="s-TechnologiesLogos__Image">
-                      <img data-lazyloaded="1" src={xd} alt="xd logo" />
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-md-2 col-4 col">
-                  <div class="s-TechnologiesLogos__Inner" data-aos="fade-up">
-                    <div class="s-TechnologiesLogos__Image">
-                      <img
-                        data-lazyloaded="1"
-                        src={oracle}
-                        alt=" oracle logo"
-                      />
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-2 col-4 col">
-                  <div class="s-TechnologiesLogos__Inner" data-aos="fade-down">
-                    <div class="s-TechnologiesLogos__Image">
-                      <img data-lazyloaded="1" src={html} alt=" html logo" />
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-2 col-4 col">
-                  <div class="s-TechnologiesLogos__Inner" data-aos="fade-up">
-                    <div class="s-TechnologiesLogos__Image">
-                      <img data-lazyloaded="1" src={java} alt="java logo" />
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-2 col-4 col">
-                  <div class="s-TechnologiesLogos__Inner" data-aos="fade-down">
-                    <div class="s-TechnologiesLogos__Image">
-                      <img data-lazyloaded="1" src={swift} alt="swift logo" />
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-2 col-4 col">
-                  <div class="s-TechnologiesLogos__Inner" data-aos="fade-down">
-                    <div class="s-TechnologiesLogos__Image">
-                      <img data-lazyloaded="1" src={css3} alt="css3 logo" />
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-2 col-4 col">
-                  <div class="s-TechnologiesLogos__Inner" data-aos="fade-up">
-                    <div class="s-TechnologiesLogos__Image">
-                      <img data-lazyloaded="1" src={figma} alt="figma logo" />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="u-Scanlines"></div>
-          </div>
-        </div>
-      </section>
+        
+        <TechnologyWeUse/>
+      
       <Footer />
     </div>
   );
