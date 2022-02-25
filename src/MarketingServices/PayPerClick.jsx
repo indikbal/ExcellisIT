@@ -11,7 +11,7 @@ import OurBlogs from "../Appcontainer/OurBlog";
 import TestimonialSection from "../TestimonialSection";
 import { Animated } from "react-animated-css";
 import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
-import "../benefitscript.js";
+import $ from "jquery";
 import {
   FaRegEye,
   FaUsers,
@@ -33,6 +33,78 @@ const PayPerClick = () => {
   const title = "Pay Per Click";
   const description =
     "“Increase relevant traffic to your website with the help of our pay-per-click management services. Grow your business & push your brand towards the top of Google search engine with paid search engine advertising.”";
+
+  var maxData = 3;
+  let i = 2;
+
+  $(document).ready(function () {
+    var radius = 200;
+    var fields = $(".itemDot");
+    var container = $(".dotCircle");
+    var width = container.width();
+    radius = width / 2.5;
+
+    var height = container.height();
+    var angle = 0,
+      step = (2 * Math.PI) / fields.length;
+    fields.each(function () {
+      var x = Math.round(
+        width / 2 + radius * Math.cos(angle) - $(this).width() / 2
+      );
+      var y = Math.round(
+        height / 2 + radius * Math.sin(angle) - $(this).height() / 2
+      );
+      if (window.console) {
+        console.log($(this).text(), x, y);
+      }
+
+      $(this).css({
+        left: x + "px",
+        top: y + "px",
+      });
+      angle += step;
+    });
+
+    $(".itemDot").click(function () {
+      var dataTab = $(this).data("tab");
+      $(".itemDot").removeClass("active");
+      $(this).addClass("active");
+      $(".CirItem").removeClass("active");
+      $(".CirItem" + dataTab).addClass("active");
+      i = dataTab;
+
+      $(".dotCircle").css({
+        transform: "rotate(" + (360 - (i - 1) * 36) + "deg)",
+        transition: "2s",
+      });
+      $(".itemDot").css({
+        transform: "rotate(" + (i - 1) * 36 + "deg)",
+        transition: "1s",
+      });
+    });
+
+    setInterval(function () {
+      var dataTab = $(".itemDot.active").data("tab");
+      if (dataTab > maxData || i > maxData) {
+        dataTab = 1;
+        i = 1;
+      }
+      $(".itemDot").removeClass("active");
+      $('[data-tab="' + i + '"]').addClass("active");
+      $(".CirItem").removeClass("active");
+      $(".CirItem" + i).addClass("active");
+      i++;
+
+      $(".dotCircle").css({
+        transform: "rotate(" + (360 - (i - 2) * 36) + "deg)",
+        transition: "2s",
+      });
+      $(".itemDot").css({
+        transform: "rotate(" + (i - 2) * 36 + "deg)",
+        transition: "1s",
+      });
+    }, 10000000);
+  });
 
   return (
     <div>

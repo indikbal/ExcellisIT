@@ -327,18 +327,20 @@ const MainMenu = () => {
                   >
                     <span class="sidemenu__item-inner">Pay per click</span>
                   </Link>
-                  <a
-                    href="https://www.excellisit.com/email-marketing"
-                    class="sidemenu__item"
+                  <Link
+                    activeClassName="navbar__link--active"
+                    className=" sidemenu__item"
+                    to="/email-marketing"
                   >
                     <span class="sidemenu__item-inner">Email Marketing</span>
-                  </a>
-                  <a
-                    href="https://www.excellisit.com/content-making"
-                    class="sidemenu__item"
+                  </Link>
+                  <Link
+                    activeClassName="navbar__link--active"
+                    className=" sidemenu__item"
+                    to="/content-marketing"
                   >
                     <span class="sidemenu__item-inner">Content Marketing</span>
-                  </a>
+                  </Link>
                   <a
                     href="https://www.excellisit.com/google-my-business-optimization"
                     class="sidemenu__item"

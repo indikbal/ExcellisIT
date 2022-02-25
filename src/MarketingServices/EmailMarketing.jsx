@@ -13,7 +13,6 @@ import { Animated } from "react-animated-css";
 import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
 import $ from "jquery";
 import {
-  FaUserLock,
   FaRegEye,
   FaUsers,
   FaUserCheck,
@@ -21,6 +20,7 @@ import {
   FaBullhorn,
 } from "react-icons/fa";
 import TechnologyWeUse from "../TechnologyWeUse";
+import ClientSecInner from "../ClientSecInner";
 const cta_bg =
   "https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/digital-marketing%2Fcta_img.jpg?alt=media&token=80dff7e9-4f79-4258-ae00-734d63a84110";
 
@@ -30,10 +30,10 @@ const cta_bg3 =
   "https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/cta_img3.jpg?alt=media&token=ad3e770b-a126-4e64-b1c2-ab61338fcc0e";
 SwiperCore.use([Navigation, Pagination, Autoplay]);
 
-const SocialMediaMarketing = () => {
-  const title = "Social Media Marketing";
+const EmailMarketing = () => {
+  const title = "Email Marketing";
   const description =
-    "“Harness the power of Social media and boost your business with the help of innovative Social media marketing strategies.”";
+    "Let your audience know about you through email campaigns.”";
 
   var maxData = 3;
   let i = 2;
@@ -111,7 +111,7 @@ const SocialMediaMarketing = () => {
     <div>
       <Helmet>
         <meta charSet="utf-8" />
-        <title>Social Media Marketing</title>
+        <title>Pay Per Click</title>
         <meta name="description" content="aboutpage" />
       </Helmet>
       <Navbar />
@@ -126,36 +126,37 @@ const SocialMediaMarketing = () => {
                   data-aos="fade-down"
                   data-aos-duration="1500"
                 >
-                  <h6>Search Engine Optimization</h6>
                   <h1 class="BannerServices__Subheader">
-                    Every click counts – Social Media Marketing
+                    Grow your business with PPC Management Services
                   </h1>
                   <p>
-                    In this fast-changing digital world, social media has become
-                    one of the most influential marketing channels; most
-                    businesses have already realized the need of having a strong
-                    social presence on various SNS. Social media marketing
-                    harnesses the power of social networks to increase
-                    engagement, boost sales, as well as build your brand. It
-                    empowers your business to take advantage of the popularity
-                    of social media platforms like Facebook, Twitter, Instagram,
-                    YouTube, and others. By using engaging content across these
-                    channels, the businesses generate interest for their
-                    products and services as well as engage their customers. In
-                    short, social media marketing service strengthens your brand
-                    as well as build customer trust and loyalty.
+                    Despite the fact that SEO and SEM have become the most
+                    important components of a digital strategy, sending direct
+                    mail to clients remains the most effective approach to
+                    engage with them. As a result, email marketing services in
+                    Kolkata, India are still a critical component of every
+                    company's internet marketing strategy. These emails could be
+                    about promotional commercials, new product releases, special
+                    discounts, and other topics. An agency can market its
+                    products as well as develop its customer base by sending
+                    tailored or group emails to existing and new consumers. An
+                    affordable email marketing services can provide a company
+                    with a plethora of chances and help it establish itself as a
+                    brand.
                   </p>
                   <p>
-                    Excellis IT is one of the leading social media marketing
-                    companies in Kolkata, India that encompasses reliable as
-                    well as comprehensive services for your business across
-                    diverse industry verticals. Our expert digital marketers
-                    craft rich as well as targeted content that would engage
-                    potential shoppers and influence their purchase decisions.
-                    At the same time, they also work on building as well as
-                    establishing their brand reputation across different social
-                    channels. We ensure that your business creates an online
-                    buzz and explores new territories for unparalleled growth.
+                    Excellis IT is a well-known digital marketing agency that
+                    provides a variety of services, including email marketing
+                    and advertising. We ensure that the emails we create are
+                    capable of engaging customers and encouraging them to finish
+                    the conversion because we are a goal-focused agency. We
+                    assist companies in carving out a niche online by developing
+                    email campaigns that strengthen their client relationships.
+                    Our campaigns are built to ensure that the right material is
+                    delivered to the right customer at the right time, resulting
+                    in a great experience. Take advantage of our experienced
+                    email marketing services to shorten your sales cycle and
+                    strengthen your customer relationships.
                   </p>
                 </div>
               </div>
@@ -199,115 +200,90 @@ const SocialMediaMarketing = () => {
                   <div className="row">
                     <div className="col-md-6">
                       <div className="single_inner_services">
-                        <h4>Social Media Strategy</h4>
+                        <h4>Audience Research </h4>
                         <Scrollbars style={{ height: 100 }}>
                           <p>
-                            We provide a result-driven strategy so that your
-                            social media marketing plan is a success. This
-                            starts with understanding your business as well as
-                            its goals so that we could curate a solution that
-                            would be perfect for your brand.
+                            The foundation of any effective marketing is having
+                            relevant information about the target audience. You
+                            may learn about the preferences, expectations, and
+                            attitudes of your mail recipients by conducting
+                            audience research. To gather all of the information
+                            needed for the study, we construct relevant email
+                            registration forms. Simultaneously, we ensure that
+                            no excessive requests are made, as this may turn the
+                            user away.
                           </p>
                         </Scrollbars>
                       </div>
                     </div>
                     <div className="col-md-6">
                       <div className="single_inner_services">
-                        <h4>Content Marketing</h4>
+                        <h4>Design Campaign </h4>
                         <Scrollbars style={{ height: 100 }}>
                           <p>
-                            The tonality of your content reflects the tonality
-                            of your brand thus, the content that goes out on
-                            your social pages must be sound and unique as well
-                            as engaging. We also realize its significance and
-                            thus, create content that would engage your
-                            customers with your business and strengthen your
-                            brand.
+                            The campaign's success is assured by a consistent
+                            and compelling email design. Our professionals build
+                            custom campaigns that capture the attention of the
+                            receivers using their unrivaled skills and
+                            experience. We create compelling and meaningful CTAs
+                            that compel recipients to take the requested action.
+                            We design emails that meet your goals, whether
+                            you're trying to reach out to new people or
+                            retargeting old ones.
                           </p>
                         </Scrollbars>
                       </div>
                     </div>
                     <div className="col-md-6">
                       <div className="single_inner_services">
-                        <h4>Social Media Management</h4>
+                        <h4>Email Optimization</h4>
                         <Scrollbars style={{ height: 100 }}>
                           <p>
-                            Social media management is an important aspect of
-                            SMM. Excellis IT is one of the leading Social media
-                            marketing agency in Kolkata, India, gives your
-                            business an influential online presence across
-                            platforms like Facebook, Linkedin, Instagram,
-                            Twitter and many more. We also schedule brand
-                            messages along with promoting content for ideal
-                            engagement with our target audience and also
-                            coordinate social alliances so that you could reach
-                            out to your new audience.
+                            It is not enough to create interesting emails; they
+                            must be optimized to provide an exceptional user
+                            experience. We use sophisticated technologies like
+                            user history, analytics, and segmentation to
+                            guarantee that the right messages are sent to the
+                            right people at the right time. To improve
+                            click-through and open rates, our campaigns are
+                            subjected to extensive A/B testing. We make emails
+                            that are precisely targeted for your target audience
+                            by using email best practices.
                           </p>
                         </Scrollbars>
                       </div>
                     </div>
                     <div className="col-md-6">
                       <div className="single_inner_services">
-                        <h4>Promotions And Contests</h4>
+                        <h4>Automated marketing </h4>
                         <Scrollbars style={{ height: 100 }}>
                           <p>
-                            If you wish to get instant audience engagements to
-                            your social channels then targeted promotions and
-                            contests can help you to infuse new life in your
-                            campaign. Excellis IT designs as well as implements
-                            innovative ideas for promotions, contests, coupons
-                            for new customers, etc. Such promotional ideas
-                            benefit you with high engagement as well as sales
-                            that boost the popularity of your brand.
+                            Marketing automation is an important part of an
+                            email campaign since it allows a company to build
+                            strong relationships with its clients. To send
+                            emails to the correct customers at the right time,
+                            we use sophisticated automation software.
+                            Personalized greetings, product recommendations,
+                            cart abandonment reminders, membership renewal
+                            reminders, and other topics may be addressed in the
+                            automated letters.
                           </p>
                         </Scrollbars>
                       </div>
                     </div>
                     <div className="col-md-6">
                       <div className="single_inner_services">
-                        <h4>Monitoring And Reporting</h4>
+                        <h4>Reporting & Analysis</h4>
                         <Scrollbars style={{ height: 100 }}>
                           <p>
-                            Social media marketing agency doesn’t only design
-                            and implement marketing plans. They also monitor the
-                            efficacy of the implemented plan. Our experts at
-                            Excellis IT keep an eye on the performance of the
-                            strategy that they had applied. We also provide
-                            reports to our clients so that they can also see and
-                            evaluate the value they are getting from our
-                            services.
-                          </p>
-                        </Scrollbars>
-                      </div>
-                    </div>
-                    <div className="col-md-6">
-                      <div className="single_inner_services">
-                        <h4>Consulting</h4>
-                        <Scrollbars style={{ height: 100 }}>
-                          <p>
-                            Apart from all the traditional SMM plans we also
-                            provide consultancy services to our clients. We have
-                            a team of experts who would provide you with the
-                            best consultancy so that you can avail the benefits
-                            of the strategy and make it better.
-                          </p>
-                        </Scrollbars>
-                      </div>
-                    </div>
-                    <div className="col-md-6">
-                      <div className="single_inner_services">
-                        <h4>Influencer Marketing</h4>
-                        <Scrollbars style={{ height: 100 }}>
-                          <p>
-                            In recent times Influencer Marketing is the most
-                            effective marketing tool for businesses. Social
-                            Media influencers have a pool of loyal followers who
-                            trust their reviews. This can be very beneficial for
-                            businesses as they can easily leverage the power of
-                            these influencer marketers to promote their business
-                            offerings. As a social media marketing agency, we
-                            offer the best influencer marketing services for
-                            your business.
+                            A campaign's performance must be assessed on a
+                            regular basis in order to determine the value it
+                            provides. At Excellis IT, we meticulously examine
+                            campaign results in order to understand everything
+                            there is to know about user analytics. Our experts
+                            also provide their expertise in the form of reports
+                            on the campaign's performance as well as
+                            recommendations for improvements.
                           </p>
                         </Scrollbars>
                       </div>
@@ -330,7 +306,8 @@ const SocialMediaMarketing = () => {
               >
                 <div className="cta2_content_sec text-left">
                   <h4 className="mb-4">
-                    WE OFFER THE BEST SMM SERVICES TO TAKE YOUR BUSINESS AHEAD
+                    Gets the most out of your campaigns, by taking every detail
+                    into consideration with PPC Management Services.
                   </h4>
                   <Link className=" light-btn" to="/ContactUs">
                     Contact Us
@@ -348,7 +325,7 @@ const SocialMediaMarketing = () => {
             <div class="col-md-12 ">
               <div className="big_title">
                 <h2 data-aos="fade-down" data-aos-duration="1500">
-                  <span>Why Hire </span> SMO Experts from Excellis IT
+                  <span>Why Hire </span> PPC service provided from Excellis IT
                 </h2>
               </div>
             </div>
@@ -373,7 +350,7 @@ const SocialMediaMarketing = () => {
                       src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/digital-marketing%2Fexperience.png?alt=media&token=9713b80a-d008-4073-bea3-c2c2a1c04ccb"
                       alt=""
                     />
-                    Experienced
+                    Delivery
                   </a>
                 </li>
                 <li class="nav-item">
@@ -390,7 +367,7 @@ const SocialMediaMarketing = () => {
                       src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/digital-marketing%2FAssessableResults.png?alt=media&token=6354087b-41da-481c-ac13-e7fa24fdd80a"
                       alt=""
                     />
-                    Measurable
+                    Reporting & Tracking
                   </a>
                 </li>
                 <li class="nav-item">
@@ -407,7 +384,7 @@ const SocialMediaMarketing = () => {
                       src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/digital-marketing%2Fidea.png?alt=media&token=944eb2a5-fcc5-46fa-bcd2-cf145bc86bd3"
                       alt=""
                     />
-                    Strategies
+                    Setup is quick
                   </a>
                 </li>
                 <li class="nav-item">
@@ -424,7 +401,7 @@ const SocialMediaMarketing = () => {
                       src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/digital-marketing%2Freport.png?alt=media&token=98081286-1f75-48af-a528-48cfe6e1bf29"
                       alt=""
                     />
-                    Unique Designs
+                    Mailing Lists Unlimited
                   </a>
                 </li>
                 <li class="nav-item">
@@ -438,10 +415,27 @@ const SocialMediaMarketing = () => {
                     aria-selected="false"
                   >
                     <img
+                      src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/digital-marketing%2Freport.png?alt=media&token=98081286-1f75-48af-a528-48cfe6e1bf29"
+                      alt=""
+                    />
+                    High-speed
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    id="pills-why6-tab"
+                    data-toggle="pill"
+                    href="#pills-why6"
+                    role="tab"
+                    aria-controls="pills-why6"
+                    aria-selected="false"
+                  >
+                    <img
                       src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/digital-marketing%2Fsave-money.png?alt=media&token=54fd85ab-1b2d-4776-b87a-f1e81f8617f2"
                       alt=""
                     />
-                    Affradable
+                    Support
                   </a>
                 </li>
               </ul>
@@ -462,12 +456,11 @@ const SocialMediaMarketing = () => {
                     animationInDelay={10}
                     className="wht_tab_inner"
                   >
-                    <h4>Experienced Team </h4>
+                    <h4>Delivery of Emails </h4>
                     <p>
-                      Being the best SMO company in Kolkata, India; we have a
-                      team of skilled enthusiasts, experts as well as leaders
-                      within the digital industry who strongly believe in
-                      delivering timely results.
+                      Every time you send a campaign, we use cloud data centre
+                      architecture to ensure that every subscriber receives it
+                      in their inbox.
                     </p>
                   </Animated>
                 </div>
@@ -485,13 +478,10 @@ const SocialMediaMarketing = () => {
                     animationInDelay={10}
                     className="wht_tab_inner"
                   >
-                    <h4>Measurable Results </h4>
+                    <h4>Reporting & Tracking</h4>
                     <p>
-                      We create campaigns with measurable results. We inform you
-                      about your social media analytics in detail by showing you
-                      which content is being preferred by your audience as well
-                      as which social media platform is generating more traffic
-                      to your website.
+                      With a dedicated panel, you can track real-time data on
+                      your email bounces, email clicks, and unsubscribes.
                     </p>
                   </Animated>
                 </div>
@@ -508,13 +498,11 @@ const SocialMediaMarketing = () => {
                     animationInDelay={10}
                     className="wht_tab_inner"
                   >
-                    <h4>Data-driven Strategies </h4>
+                    <h4>Setup is quick and seamless.</h4>
                     <p>
-                      Our SMO and SMM teams create techniques and campaigns that
-                      depend on market information and analytic data. This
-                      guarantees precise strategies and easy execution. We
-                      assist you by reaching out to the perfect individuals
-                      through the ideal platform at the right platform.
+                      We have a thorough set of APIs and documentation so you
+                      can spend less time adding email and more time creating
+                      your campaign.
                     </p>
                   </Animated>
                 </div>
@@ -531,13 +519,11 @@ const SocialMediaMarketing = () => {
                     animationInDelay={10}
                     className="wht_tab_inner"
                   >
-                    <h4>Unique Designs </h4>
+                    <h4>Mailing Lists Unlimited</h4>
                     <p>
-                      We not only create effective and engaging content but also
-                      design eye-catching social media posts which would trigger
-                      the interest of your audience. We also help you redirect
-                      your audience to your website by putting a call to action
-                      button at the right place.
+                      Bulk The number of recipients per email is not limited by
+                      the sender. It's a huge benefit because you may be sending
+                      to hundreds of thousands of prospects and consumers.
                     </p>
                   </Animated>
                 </div>
@@ -554,10 +540,31 @@ const SocialMediaMarketing = () => {
                     animationInDelay={10}
                     className="wht_tab_inner"
                   >
-                    <h4>Affordable SMO packages </h4>
+                    <h4>High-speed data transmission</h4>
                     <p>
-                      Excellis IT provides you with the best social media
-                      services in India at a very affordable rate.
+                      Your emails will be sent swiftly using our SMTP server, or
+                      you can add as many SMTP servers as you want for even
+                      faster delivery.
+                    </p>
+                  </Animated>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="pills-why6"
+                  role="tabpanel"
+                  aria-labelledby="pills-why6-tab"
+                >
+                  <Animated
+                    animationIn="fadeInUp"
+                    animationOut="fadeOut"
+                    isVisible={true}
+                    animationInDelay={10}
+                    className="wht_tab_inner"
+                  >
+                    <h4>Customer Support</h4>
+                    <p>
+                      We offer support through phone and email 24/7. Any issue
+                      can be resolved quickly by our professional support team.
                     </p>
                   </Animated>
                 </div>
@@ -623,19 +630,14 @@ const SocialMediaMarketing = () => {
                         alt=""
                       />
                     </div>
-                    <h4>Facebook Page and Profile Management</h4>
+                    <h4>Email Marketing Campaigns</h4>
                     <Scrollbars
                       style={{ height: 150 }}
                       className="expertise_single_cont"
                     >
                       <p>
-                        Facebook is the most used social media platform with a
-                        huge as well as diverse audience- along with a customer
-                        base. Today every business has its own Facebook pages so
-                        that it could strengthen its social media presence.
-                        Excellis IT is a social media optimization company in
-                        Kolkata, India that would help you by managing your
-                        Facebook page and profile efficiently.
+                        Email marketing is direct emails sent to your target
+                        audience that speaks about your brand and your services.
                       </p>
                     </Scrollbars>
                   </div>
@@ -649,20 +651,16 @@ const SocialMediaMarketing = () => {
                         alt=""
                       />
                     </div>
-                    <h4>Twitter Page and profile Management</h4>
+                    <h4>Customer Database Generation</h4>
                     <Scrollbars
                       style={{ height: 150 }}
                       className="expertise_single_cont"
                     >
                       <p>
-                        Recently Twitter has become an influential platform for
-                        businesses as well as business owners to attract an
-                        audience as well as create an influence by actively
-                        posting and with interaction. As a next-gen social media
-                        advertising company in Kolkata, India, Excellis IT
-                        provides effective Twitter Page & Account Management
-                        services that would help your brand create an influence
-                        on your audience.
+                        We generate the database for our clients as per their
+                        need and then analyze each data. This database is
+                        sometimes generated through clients’ paid and organic
+                        campaigns.
                       </p>
                     </Scrollbars>
                   </div>
@@ -676,20 +674,16 @@ const SocialMediaMarketing = () => {
                         alt=""
                       />
                     </div>
-                    <h4>LinkedIn Page and profile Management</h4>
+                    <h4>Customer Relationship Management</h4>
                     <Scrollbars
                       style={{ height: 150 }}
                       className="expertise_single_cont"
                     >
                       <p>
-                        LinkedIn, is a platform for enterprises, brands, job
-                        aspirants, employers, and professionals well, it's all
-                        about business. LinkedIn allows businesses to come in
-                        contact with job aspirants and brand influencers.
-                        Excellis IT is among the best SMO company in Kolkata,
-                        India which has the best team of social media marketers
-                        who provides the best LinkedIn Page and profile
-                        Management Services.
+                        Customer relationship management is a solution that
+                        provides businesses with the products and services that
+                        their customers would require for better customer
+                        service.
                       </p>
                     </Scrollbars>
                   </div>
@@ -703,19 +697,17 @@ const SocialMediaMarketing = () => {
                         alt=""
                       />
                     </div>
-                    <h4>Pinterest Marketing</h4>
+                    <h4>Interest-Based Email Targeting</h4>
                     <Scrollbars
                       style={{ height: 150 }}
                       className="expertise_single_cont"
                     >
                       <p>
-                        Pinterest has recently gained a huge amount of
-                        popularity as it is an image posting platform, it is a
-                        very beneficial platform for product base businesses as
-                        they can post their offering on this platform to gain
-                        traction. As one of the popular social media marketing
-                        companies in Kolkata, we offer the best Pinterest
-                        Marketing services for your business.
+                        Being the leading email marketing agency in Kolkata,
+                        India we have specific target audience for each client
+                        and through our thorough research we find out the likes
+                        and dislikes of our clients and then target our email
+                        marketing strategy accordingly.
                       </p>
                     </Scrollbars>
                   </div>
@@ -729,20 +721,16 @@ const SocialMediaMarketing = () => {
                         alt=""
                       />
                     </div>
-                    <h4>Instagram Marketing</h4>
+                    <h4>Analyze and mine data</h4>
                     <Scrollbars
                       style={{ height: 150 }}
                       className="expertise_single_cont"
                     >
                       <p>
-                        In recent times, Instagram has surpassed Twitter and
-                        Facebook's popularity quotient. Influencers, youngsters,
-                        as well as celebrities are active on Instagram, and
-                        businesses are also diving in to get on to this market.
-                        With the help of Instagram their stories, reels, IGTV
-                        videos, and feed posts, Excellis IT provides an
-                        effective Instagram Marketing campaign to our clients to
-                        boost sales.
+                        Data mining is the process of analyzing data from
+                        various angles and distilling it into valuable
+                        information — knowledge that can be utilized to enhance
+                        income, reduce costs, or do both.
                       </p>
                     </Scrollbars>
                   </div>
@@ -756,17 +744,92 @@ const SocialMediaMarketing = () => {
                         alt=""
                       />
                     </div>
-                    <h4>Paid Social Ads </h4>
+                    <h4>Email Programs with Interactivity </h4>
                     <Scrollbars
                       style={{ height: 150 }}
                       className="expertise_single_cont"
                     >
                       <p>
-                        Paid social media advertising varies from traditional
-                        outbound advertising. We help you to find, target, and
-                        reach your audience with ease. Each ad that we design
-                        facilitates the goals of your business, such as brand
-                        awareness, lead generation, website traffic, and more.
+                        By refining your email marketing program, we expect to
+                        attract new customers and convert more sales. We can
+                        tailor a program to match your individual needs because
+                        our services are technology-agnostic.
+                      </p>
+                    </Scrollbars>
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <div className="single_expertise text-center">
+                    <div className="expertise_icon_single">
+                      <img
+                        src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/digital-marketing%2Fsmm%2Fsocial-ads.png?alt=media&token=d68a8980-38ce-4d84-a123-4e0bebd60a01"
+                        className="img-fluid"
+                        alt=""
+                      />
+                    </div>
+                    <h4>Getting Emails and Getting Leads</h4>
+                    <Scrollbars
+                      style={{ height: 150 }}
+                      className="expertise_single_cont"
+                    >
+                      <p>
+                        The Acquisition and Lead Generation Expert Group is
+                        dedicated to learning about and discussing how new
+                        technologies, content, and new media are influencing how
+                        data-driven marketers find new customers, interact with
+                        them, and convert them.
+                      </p>
+                    </Scrollbars>
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <div className="single_expertise text-center">
+                    <div className="expertise_icon_single">
+                      <img
+                        src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/digital-marketing%2Fsmm%2Fsocial-ads.png?alt=media&token=d68a8980-38ce-4d84-a123-4e0bebd60a01"
+                        className="img-fluid"
+                        alt=""
+                      />
+                    </div>
+                    <h4>Direct Marketing</h4>
+                    <Scrollbars
+                      style={{ height: 150 }}
+                      className="expertise_single_cont"
+                    >
+                      <p>
+                        Data, accountability, and the client are highlighted in
+                        direct marketing campaigns. As a result, in addition to
+                        real communication, any successful Direct Marketing
+                        campaign must include the formation of actionable
+                        segments, pre- and post-campaign analytics, and results
+                        monitoring.
+                      </p>
+                    </Scrollbars>
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <div className="single_expertise text-center">
+                    <div className="expertise_icon_single">
+                      <img
+                        src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/digital-marketing%2Fsmm%2Fsocial-ads.png?alt=media&token=d68a8980-38ce-4d84-a123-4e0bebd60a01"
+                        className="img-fluid"
+                        alt=""
+                      />
+                    </div>
+                    <h4>Multivariate testing and campaign optimization</h4>
+                    <Scrollbars
+                      style={{ height: 150 }}
+                      className="expertise_single_cont"
+                    >
+                      <p>
+                        These options control how the optimizer sets bids and
+                        spends your campaign's monthly budget in a way that best
+                        matches your business goals and values after you've
+                        turned on campaign optimization. Multivariate testing
+                        allows marketers to test an endless number of different
+                        combinations of elements on a web page and determine the
+                        impact of those changes on the conversion rate of the
+                        site.
                       </p>
                     </Scrollbars>
                   </div>
@@ -828,23 +891,6 @@ const SocialMediaMarketing = () => {
                     {" "}
                     <div className="inner_single_industries">
                       <img
-                        src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/industries%2Feducation.jpg?alt=media&token=50c74e90-077f-4bb8-9800-f47d2e939a8e"
-                        alt=""
-                        className="img-fluid"
-                      />
-                      <div className="inner_single_industries_cont">
-                        <h4>Education</h4>
-                        <p>
-                          We help the education sector develop its outreach with
-                          our cutting-edge SMM services.
-                        </p>
-                      </div>
-                    </div>
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    {" "}
-                    <div className="inner_single_industries">
-                      <img
                         src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/industries%2Fhealthcare.jpg?alt=media&token=d826e1e0-a94b-4941-80a8-3422d5bf6dde"
                         alt=""
                         className="img-fluid"
@@ -852,27 +898,9 @@ const SocialMediaMarketing = () => {
                       <div className="inner_single_industries_cont">
                         <h4>Healthcare </h4>
                         <p>
-                          We help the Healthcare sector with strategized SMM to
-                          spread awareness.
-                        </p>
-                      </div>
-                    </div>
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    {" "}
-                    <div className="inner_single_industries">
-                      <img
-                        src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/industries%2Ffood-resturent.jpg?alt=media&token=27c9bfa9-e3fa-4d04-b8ac-3bda56b6926d"
-                        alt=""
-                        className="img-fluid"
-                      />
-                      <div className="inner_single_industries_cont">
-                        <h4>Food & Resrurent</h4>
-                        <p>
-                          Food and restaurant business owners benefit from our
-                          SMM services in Kolkata, India as we can help them to
-                          direct their audience to their website from their
-                          social sites.
+                          Healthcare industry drives traffic to their sites with
+                          the help of email marketing by pushing educational
+                          content to the audience base.
                         </p>
                       </div>
                     </div>
@@ -888,26 +916,9 @@ const SocialMediaMarketing = () => {
                       <div className="inner_single_industries_cont">
                         <h4> Manufacture</h4>
                         <p>
-                          Our social media service can help the manufacturing
-                          industry to build trust as well as gain an audience.
-                        </p>
-                      </div>
-                    </div>
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    {" "}
-                    <div className="inner_single_industries">
-                      <img
-                        src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/industries%2Freal-state.jpg?alt=media&token=32d06a45-6318-49b9-936c-4e817aaabf88"
-                        alt=""
-                        className="img-fluid"
-                      />
-                      <div className="inner_single_industries_cont">
-                        <h4>Real State</h4>
-                        <p>
-                          Engaging social media posts gets more traffic to your
-                          website and we can help with that which in turn will
-                          help you build connections in real estate.
+                          Manufacturing sector uses email marketing as a form of
+                          PR tactics to announce their new product launch and
+                          gain the attention of their audience.
                         </p>
                       </div>
                     </div>
@@ -923,9 +934,10 @@ const SocialMediaMarketing = () => {
                       <div className="inner_single_industries_cont">
                         <h4>Tour & Travel</h4>
                         <p>
-                          Appropriate advertising along with attractive and
-                          engaging social media presence ensures the success of
-                          your business in the travel & tourism industry.
+                          Travel and hospitality sector has gained many
+                          customers via email marketing after the pandemic scare
+                          became low. During the pandemic as well email
+                          marketing came in handy to push important
                         </p>
                       </div>
                     </div>
@@ -939,11 +951,30 @@ const SocialMediaMarketing = () => {
                         className="img-fluid"
                       />
                       <div className="inner_single_industries_cont">
-                        <h4>Entertainment </h4>
+                        <h4>Ecommerce And Retail </h4>
                         <p>
-                          The entertainment world is all about visual appeal
-                          thus we provide you with the best social media designs
-                          to keep you ahead of the curve.
+                          Retail gains a lot from email marketing as sending out
+                          email blasts about upcoming products to your target
+                          audience gets you to notice as well as website
+                          traffic.
+                        </p>
+                      </div>
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    {" "}
+                    <div className="inner_single_industries">
+                      <img
+                        src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/industries%2Fmedia-entertainment.jpg?alt=media&token=19ea18ed-c6e1-4027-b40b-77f1af783358"
+                        alt=""
+                        className="img-fluid"
+                      />
+                      <div className="inner_single_industries_cont">
+                        <h4>Finance </h4>
+                        <p>
+                          Pushing targeted emails on time gives the financial
+                          sector the necessary push that it needs to gain the
+                          attention of its target audience.
                         </p>
                       </div>
                     </div>
@@ -1012,7 +1043,7 @@ const SocialMediaMarketing = () => {
                         />
                       </div>
                       <div class="prosses_text">
-                        <h3>Audit Your Current Social Presence </h3>
+                        <h3>Define your audience </h3>
                         <p>
                           <Scrollbars
                             style={{ height: 100 }}
@@ -1020,26 +1051,10 @@ const SocialMediaMarketing = () => {
                             autoHideTimeout={1000}
                             autoHideDuration={200}
                           >
-                            Before strategizing where you are headed, you should
-                            pause and take look at where your page is at the
-                            moment. Here are a few things you should consider
-                            before auditing:
-                            <ul>
-                              <li>• The networks you are currently on</li>
-                              <li>
-                                • If your networks are optimized (photo and
-                                cover images, bio, URL, etc.)
-                              </li>
-                              <li>
-                                • The networks that are bringing you more
-                                traffic
-                              </li>
-                              <li>
-                                {" "}
-                                • Whether your profile stands out to your
-                                competitors' profile
-                              </li>
-                            </ul>
+                            Only relevant email is an effective one. The first
+                            step for email marketing is to know your buyer’s
+                            persona so that you can tailor-make the email
+                            marketing campaign to meet your audience’s needs.
                           </Scrollbars>
                         </p>
                       </div>
@@ -1063,7 +1078,7 @@ const SocialMediaMarketing = () => {
                         />
                       </div>
                       <div class="prosses_text">
-                        <h3>Identify Your Ideal Customer </h3>
+                        <h3>Establish your goals </h3>
                         <p>
                           <Scrollbars
                             style={{ height: 100 }}
@@ -1071,11 +1086,10 @@ const SocialMediaMarketing = () => {
                             autoHideTimeout={1000}
                             autoHideDuration={200}
                           >
-                            It is very ideal to be specific about your target
-                            audience. As even the best marketing strategies fail
-                            if applied to the wrong target audience. Thus,
-                            knowing your audience is very crucial and then you
-                            can make your social media strategy accordingly.
+                            Before starting any email marketing campaign it is
+                            essential to do research and know the average email
+                            stats so that you can use them as the benchmark for
+                            your goals.
                           </Scrollbars>
                         </p>
                       </div>
@@ -1099,7 +1113,7 @@ const SocialMediaMarketing = () => {
                         />
                       </div>
                       <div class="prosses_text">
-                        <h3>Create A Social Media Mission Statement</h3>
+                        <h3>Ways for people to sign up </h3>
                         <p>
                           <Scrollbars
                             style={{ height: 100 }}
@@ -1107,12 +1121,11 @@ const SocialMediaMarketing = () => {
                             autoHideTimeout={1000}
                             autoHideDuration={200}
                           >
-                            A social media mission statement would drive your
-                            future actions. Thus, make sure that you know what
-                            your mission statement should be as that would
-                            reflect your brand identity. While choosing a
-                            statement make sure you keep in mind your target
-                            audience.
+                            For your email marketing to work you need people to
+                            send emails to. This is why you need an email list.
+                            You need to build this list by using ways like
+                            newsletters so that your target audience can receive
+                            your mail.
                           </Scrollbars>
                         </p>
                       </div>
@@ -1133,7 +1146,7 @@ const SocialMediaMarketing = () => {
                         />
                       </div>
                       <div class="prosses_text">
-                        <h3>Your Key Success Metrics</h3>
+                        <h3>Choose email campaign type </h3>
                         <p>
                           <Scrollbars
                             style={{ height: 100 }}
@@ -1141,17 +1154,12 @@ const SocialMediaMarketing = () => {
                             autoHideTimeout={1000}
                             autoHideDuration={200}
                           >
-                            You should always keep a check if your social media
-                            strategy is working or not as there is no use in
-                            spending money if the plan does not improve your
-                            bottom line.
-                            <p>Here are a few metrics we consider measuring:</p>
-                            <li>• Conversion Rate</li>
-                            <li>• Time Spent on Website</li>
-                            <li>• Reach</li>
-                            <li>• Brand Mentions</li>
-                            <li>• Sentiment</li>
-                            <li>• Total Shares</li>
+                            There is different type of email marketing campaigns
+                            like weekly newsletter, new product announcement
+                            mail, or new blog online announcement. Choosing the
+                            right one depends on your target audience as every
+                            audience have a different preference thus the type
+                            of email campaign mainly depends on that.
                           </Scrollbars>
                         </p>
                       </div>
@@ -1172,7 +1180,7 @@ const SocialMediaMarketing = () => {
                         />
                       </div>
                       <div class="prosses_text">
-                        <h3>Create and Curate Engaging Content</h3>
+                        <h3>Make a schedule </h3>
                         <p>
                           <Scrollbars
                             style={{ height: 100 }}
@@ -1180,10 +1188,10 @@ const SocialMediaMarketing = () => {
                             autoHideTimeout={1000}
                             autoHideDuration={200}
                           >
-                            Our in-house content writers then start creating
-                            content that would be posted on various social media
-                            platforms. We create unique and engaging content
-                            that would improve brand visibility.
+                            Once you know how to contact your list you can
+                            inform your audience so that they know what to
+                            expect so that you can maintain a consistent
+                            schedule to build trust and stay in the spotlight.
                           </Scrollbars>
                         </p>
                       </div>
@@ -1204,7 +1212,7 @@ const SocialMediaMarketing = () => {
                         />
                       </div>
                       <div class="prosses_text">
-                        <h3>Social Media Management Tool</h3>
+                        <h3>Measure your results</h3>
                         <p>
                           <Scrollbars
                             style={{ height: 100 }}
@@ -1212,47 +1220,15 @@ const SocialMediaMarketing = () => {
                             autoHideTimeout={1000}
                             autoHideDuration={200}
                           >
-                            Invest in social media management tools and leverage
-                            the benefit of the tools to boost your productivity.
-                            Having a social media management tool also allows
-                            you to scale your efforts on social media with ease.
+                            Excellis IT is one of the best email marketing
+                            agencies in Kolkata, India we measure each result so
+                            that we can make appropriate changes to the email
+                            marketing campaign to meet the goals of our clients.
                           </Scrollbars>
                         </p>
                       </div>
                       <div class="procc_img">
                         <img src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/digital-marketing%2Fcontent-creation-bg.jpg?alt=media&token=72f9a8e1-d7fc-4649-897c-4c46c1c82d13" />
-                      </div>
-                    </div>
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <div class="width_100">
-                      <div class="swiper_heding">
-                        <div className="step__count">7</div>
-                      </div>
-                      <div className="process__icon">
-                        <img
-                          src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/digital-marketing%2Fregular-reporting.png?alt=media&token=0b91355e-a32a-496a-80e8-7a23b694b885"
-                          alt="Requirement Gathering icon"
-                        />
-                      </div>
-                      <div class="prosses_text">
-                        <h3>Track, Analyse, Optimize</h3>
-                        <p>
-                          <Scrollbars
-                            style={{ height: 100 }}
-                            autoHide
-                            autoHideTimeout={1000}
-                            autoHideDuration={200}
-                          >
-                            Social media success runs on trial and error. So
-                            this is one of the most crucial steps in the process
-                            as you need to track and analyze your results daily
-                            and make changes accordingly.
-                          </Scrollbars>
-                        </p>
-                      </div>
-                      <div class="procc_img">
-                        <img src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/digital-marketing%2Fregular-reporting-bg.jpg?alt=media&token=cdad0edd-c40b-44f6-a29e-6b6223a403c1" />
                       </div>
                     </div>
                   </SwiperSlide>
@@ -1308,10 +1284,6 @@ const SocialMediaMarketing = () => {
                     <FaBullhorn />
                     <span class="forActive"></span>
                   </span>
-                  <span class="itemDot itemDot6" data-tab="6">
-                    <FaUserLock />
-                    <span class="forActive"></span>
-                  </span>
                 </div>
                 <div className="benefit_title_sec">
                   <h4 data-aos="zoom-in" data-aos-duration="2500">
@@ -1328,83 +1300,66 @@ const SocialMediaMarketing = () => {
               <div class="contentCircle">
                 <div class="CirItem title-box active CirItem1">
                   <h2 class="title">
-                    <span>Increase brand visibility </span>
+                    <span>Manage Leads</span>
                   </h2>
                   <p>
-                    Social Media Marketing helps in improving your brand
-                    visibility by using different social media platforms like
-                    Facebook, Twitter, Instagram, and others. Social media
-                    platforms give your brand access to the digital space so
-                    that you can build your brand's visibility to gain an
-                    audience.
+                    A successful email marketing agency's primary goal is to
+                    achieve this. It develops unique techniques to assist your
+                    company in managing a diverse set of leads. Our
+                    professionals can assist you in sending promotional emails
+                    to potential clients. These emails are intended to generate
+                    new leads.
                   </p>
                   <i class="fa fa-clock-o"></i>
                 </div>
 
                 <div class="CirItem title-box CirItem2">
                   <h2 class="title">
-                    <span>More followers </span>
+                    <span>Getting in Touch With Your Audience</span>
                   </h2>
                   <p>
-                    When your followers start to grow online there is an
-                    increase in word of mouth and referrals. Our social media
-                    marketing services in Kolkata, India would help you grow
-                    your followers as well as ensure that your followers would
-                    match the demographics, interests, and behaviors of your
-                    target audience.
+                    You'll need to communicate with the audience that has agreed
+                    to receive your emails for a large portion of your email
+                    marketing campaign. You may effortlessly communicate with
+                    and send emails to those subscribers. It also helps you
+                    ensure that each email you send is delivered to people who
+                    are interested in receiving your material.
                   </p>
                   <i class="fa fa-comments"></i>
                 </div>
 
                 <div class="CirItem title-box CirItem3">
                   <h2 class="title">
-                    <span>Gaining More Customers </span>
+                    <span>Easy Bulk Communication</span>
                   </h2>
                   <p>
-                    SMM and SMO services in Kolkata, India help more people to
-                    know about your brand and what it offers. This in turn helps
-                    you to gain more customers and drive more sales. Sharable
-                    content is also useful as they increase post engagement and
-                    opens your brand to a larger customer pool.
+                    We being an email marketing company in Kolkata, India,
+                    provide you Bulk Email Marketing Services that give your
+                    business leverage. This makes it easier for you to send
+                    promotional messages to a large number of contacts at the
+                    same time.
                   </p>
                   <i class="fa fa-user"></i>
                 </div>
                 <div class="CirItem title-box CirItem4">
                   <h2 class="title">
-                    <span>Increase conversion and sales </span>
+                    <span>Faster Impact</span>
                   </h2>
                   <p>
-                    Increasing your website traffic influences leads and sales.
-                    Thus, we pair this service with our affordable social media
-                    services in Kolkata, India, which focuses on developing
-                    social media advertising campaigns to drive more traffic to
-                    your website.
+                    Email marketing always brings faster impact than traditional
+                    marketing. Email marketing services for business helps you
+                    to obtain the anticipated outcome by sending emails to your
+                    target audience.
                   </p>
                   <i class="fa fa-user"></i>
                 </div>
                 <div class="CirItem title-box CirItem5">
                   <h2 class="title">
-                    <span>Tell your brand story </span>
+                    <span>Global Reach</span>
                   </h2>
                   <p>
-                    Social Media platforms can be used as a storytelling
-                    platform for your brand where you can tell your brand story
-                    in a way that your target audience can relate to your brand
-                    and feel a sense of attachment. This increases website
-                    traffic and posts engagement.
-                  </p>
-                  <i class="fa fa-user"></i>
-                </div>
-                <div class="CirItem title-box CirItem6">
-                  <h2 class="title">
-                    <span>Build Relationships </span>
-                  </h2>
-                  <p>
-                    We help you build a strong and long relationship with your
-                    customer through engaging with your target audience. We also
-                    help you increase your engagement through interesting
-                    content on your social media posts which will, in turn, help
-                    you build a strong connection with your audience.
+                    With email marketing, you can target a worldwide audience
+                    and send emails to anyone anywhere and at any time.
                   </p>
                   <i class="fa fa-user"></i>
                 </div>
@@ -1423,10 +1378,7 @@ const SocialMediaMarketing = () => {
                 style={{ backgroundImage: `url(${cta_bg2})` }}
               >
                 <div className="cta2_content_sec text-left">
-                  <h4 className="mb-4">
-                    Want to expand your online reach with social media
-                    marketing?
-                  </h4>
+                  <h4 className="mb-4">Want to get a high ROI?</h4>
                   <Link className=" light-btn" to="/ContactUs">
                     Contact Us
                   </Link>
@@ -1441,138 +1393,7 @@ const SocialMediaMarketing = () => {
         <TestimonialSection />
       </section>
 
-      <section className="inner_page_client_section">
-        <div className="container">
-          <div className="row">
-            <div className="col-md-12">
-              <div className="big_title">
-                <h2 data-aos="fade-down" data-aos-duration="1500">
-                  <span>Our CLients</span>
-                </h2>
-              </div>
-            </div>
-          </div>
-          <div className="row">
-            <div className="col-md-12">
-              <Swiper
-                modules={[Navigation]}
-                slidesPerView={5}
-                spaceBetween={15}
-                navigation
-                autoplay={{ delay: 3000 }}
-                className="myclient"
-                breakpoints={{
-                  700: {
-                    spaceBetween: 15,
-                    slidesPerView: 5,
-                  },
-                  500: {
-                    spaceBetween: 100,
-                    slidesPerView: 2,
-                  },
-                  411: {
-                    spaceBetween: 100,
-                    slidesPerView: 2,
-                  },
-                  300: {
-                    spaceBetween: 0,
-                    slidesPerView: 1,
-                  },
-                }}
-              >
-                <SwiperSlide>
-                  <div className="single_inner_client">
-                    <img
-                      src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/clients%2Fclient1.jpg?alt=media&token=b9bc7aa2-29b6-48eb-94ef-842493f92fed"
-                      alt=""
-                    />
-                  </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <div className="single_inner_client">
-                    <img
-                      src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/clients%2Fclient2.jpg?alt=media&token=c9b685ed-6fee-45c4-90c0-c7f4dcbf0725"
-                      alt=""
-                    />
-                  </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <div className="single_inner_client">
-                    <img
-                      src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/clients%2Fclient4.jpg?alt=media&token=f43626ae-3a1e-4cfd-8624-6f11f925b9e3"
-                      alt=""
-                    />
-                  </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <div className="single_inner_client">
-                    <img
-                      src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/clients%2Fclient5.jpg?alt=media&token=42cf4061-500a-4c1f-95ae-0985589898f2"
-                      alt=""
-                    />
-                  </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <div className="single_inner_client">
-                    <img
-                      src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/clients%2Fclient6.jpg?alt=media&token=108ba7f0-a3e4-42d9-89b4-e8360fe50cfb"
-                      alt=""
-                    />
-                  </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <div className="single_inner_client">
-                    <img
-                      src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/clients%2Fclient7.jpg?alt=media&token=20e52744-0b35-4426-9973-c4afe7426967"
-                      alt=""
-                    />
-                  </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <div className="single_inner_client">
-                    <img
-                      src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/clients%2Fclient8.jpg?alt=media&token=38c47c8b-8c77-4feb-a1a9-d16585527e52"
-                      alt=""
-                    />
-                  </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <div className="single_inner_client">
-                    <img
-                      src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/clients%2Fclient9.jpg?alt=media&token=8476acd8-eeb2-40d3-bcd4-d78aea646fdb"
-                      alt=""
-                    />
-                  </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <div className="single_inner_client">
-                    <img
-                      src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/clients%2Fclient10.jpg?alt=media&token=66186813-b268-49a9-9a24-1920851bee68"
-                      alt=""
-                    />
-                  </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <div className="single_inner_client">
-                    <img
-                      src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/clients%2Fclient11.jpg?alt=media&token=fba28597-59d6-4911-9bd7-f8f2a6cb0892"
-                      alt=""
-                    />
-                  </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <div className="single_inner_client">
-                    <img
-                      src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/clients%2Fclient12.jpg?alt=media&token=e06ae285-084b-4fea-86ef-cd4f8891e5e5"
-                      alt=""
-                    />
-                  </div>
-                </SwiperSlide>
-              </Swiper>
-            </div>
-          </div>
-        </div>
-      </section>
+      <ClientSecInner />
 
       <section className="cta2_section pb-0 pt-0">
         <div className="container">
@@ -1584,8 +1405,7 @@ const SocialMediaMarketing = () => {
               >
                 <div className="cta2_content_sec text-center w-100">
                   <h4 className="mb-4">
-                    Know about the complete spectrum of SMM services provided by
-                    us?
+                    Grow your business with PPC campaign management
                   </h4>
                   <Link className=" light-btn" to="/ContactUs">
                     Contact Us
@@ -1627,8 +1447,7 @@ const SocialMediaMarketing = () => {
                           aria-expanded="true"
                           aria-controls="faq1"
                         >
-                          <span>1.</span> Why your brand needs social media
-                          marketing?
+                          <span>1.</span> How to design an attractive email?
                         </button>
                       </h5>
                     </div>
@@ -1640,12 +1459,11 @@ const SocialMediaMarketing = () => {
                       data-parent="#faqaccordian"
                     >
                       <div class="card-body">
-                        Answer: Social media has become an integral part of our
-                        lives. So, today it is very important for the business
-                        to also be active on social media so that they can boost
-                        their social presence as well as engage and interact
-                        with their target audience to convert them into
-                        customers.
+                        To design an attractive email you should use catchy
+                        images, animated GIFs as well as calls to actions to get
+                        the attention of your audience. You should not use too
+                        many font types, font colors, as well as font sizes, the
+                        mail should have good readability.
                       </div>
                     </div>
                   </div>
@@ -1660,7 +1478,8 @@ const SocialMediaMarketing = () => {
                           aria-expanded="false"
                           aria-controls="faq2"
                         >
-                          <span>2.</span> How helpful is social media?
+                          <span>2.</span> Which email marketing strategy would
+                          be perfect for my business?
                         </button>
                       </h5>
                     </div>
@@ -1671,9 +1490,9 @@ const SocialMediaMarketing = () => {
                       data-parent="#faqaccordian"
                     >
                       <div class="card-body">
-                        Answer:Social media helps businesses to find customers
-                        from their target audience pool as well as drives
-                        traffic to the business's website.
+                        Once you hire an email marketing service our team will
+                        do thorough research and let you know the best email
+                        marketing strategy for your business.
                       </div>
                     </div>
                   </div>
@@ -1688,8 +1507,8 @@ const SocialMediaMarketing = () => {
                           aria-expanded="false"
                           aria-controls="faq3"
                         >
-                          <span>3.</span> What should you see while selecting
-                          social media marketing services?
+                          <span>3.</span> Will sales increase with email
+                          marketing service?
                         </button>
                       </h5>
                     </div>
@@ -1700,18 +1519,9 @@ const SocialMediaMarketing = () => {
                       data-parent="#faqaccordian"
                     >
                       <div class="card-body">
-                        Answer: The questions you should consider while
-                        selecting the best social media marketing services:
-                        <ul>
-                          <li>
-                            • Does the company gel with the vibe of your brand?
-                          </li>
-                          <li>• Is the company ethical?</li>
-                          <li>
-                            • Is the company good at its job and provides the
-                            best services?
-                          </li>
-                        </ul>
+                        Email marketing campaigns hike sales, provided you
+                        inspire the audience to click on your email and move to
+                        your website.
                       </div>
                     </div>
                   </div>
@@ -1726,8 +1536,8 @@ const SocialMediaMarketing = () => {
                           aria-expanded="false"
                           aria-controls="faq4"
                         >
-                          <span>4.</span> How is social media useful for
-                          start-ups?
+                          <span>4.</span> How to grow email subscribers’ list?
+                          Should one buy an email list or build it themselves?
                         </button>
                       </h5>
                     </div>
@@ -1738,8 +1548,11 @@ const SocialMediaMarketing = () => {
                       data-parent="#faqaccordian"
                     >
                       <div class="card-body">
-                        A start-up needs an audience and customers thus, social
-                        media is the perfect platform to provide you both.
+                        Buying an email list is not at all a good idea as the
+                        list may not be as per your target audience thus the
+                        strategy might turn out to be a complete bust. So, you
+                        should build your subscriber list so that you can target
+                        the audience as per your preference.
                       </div>
                     </div>
                   </div>
@@ -1754,7 +1567,8 @@ const SocialMediaMarketing = () => {
                           aria-expanded="false"
                           aria-controls="faq5"
                         >
-                          <span>5.</span>What are SMM services?
+                          <span>5.</span>What should be the frequency of sending
+                          emails?
                         </button>
                       </h5>
                     </div>
@@ -1765,42 +1579,9 @@ const SocialMediaMarketing = () => {
                       data-parent="#faqaccordian"
                     >
                       <div class="card-body">
-                        Answer: Social media management services use social
-                        media platforms to build brand awareness generate leads
-                        and sales. Social media management services provide
-                        brands with digital marketing solutions.
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card">
-                    <div class="card-header" id="headingThree">
-                      <h5 class="mb-0">
-                        <button
-                          class="btn collapsed"
-                          type="button"
-                          data-toggle="collapse"
-                          data-target="#faq6"
-                          aria-expanded="false"
-                          aria-controls="faq6"
-                        >
-                          <span>6.</span>How much one should spend on social
-                          media marketing?
-                        </button>
-                      </h5>
-                    </div>
-                    <div
-                      id="faq6"
-                      class="collapse"
-                      aria-labelledby="headingThree"
-                      data-parent="#faqaccordian"
-                    >
-                      <div class="card-body">
-                        Answer: Spending on social media marketing is different
-                        for different businesses. Some have a huge budget so
-                        they spend more while some have limited budget and
-                        spending within that is also possible. But social media
-                        platforms do have limitations and you should always
-                        check that along with your budget then make the plan.
+                        It’s ideal if you send 3-4 mails a month as that would
+                        create consistency in your audience’s mind and would not
+                        create a nuisance at the same time.
                       </div>
                     </div>
                   </div>
@@ -1816,4 +1597,4 @@ const SocialMediaMarketing = () => {
   );
 };
 
-export default SocialMediaMarketing;
+export default EmailMarketing;

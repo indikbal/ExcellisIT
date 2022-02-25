@@ -30,6 +30,8 @@ import BackOfficeProcessOutsourcing from "./BpoServices/BackOfficeProcessOutsour
 import SearchEngineOptimization from "./MarketingServices/SearchEngineOptimization";
 import SocialMediaMarketing from "./MarketingServices/SocialMediaMarketing";
 import PayPerClick from "./MarketingServices/PayPerClick";
+import EmailMarketing from "./MarketingServices/EmailMarketing";
+import ContentMarketing from "./MarketingServices/ContentMarketing";
 
 function App() {
   AOS.init({
@@ -74,6 +76,8 @@ function App() {
           path="/back-office-process-outsourcing-services"
           component={BackOfficeProcessOutsourcing}
         />
+        <Route path="/email-marketing" component={EmailMarketing} />
+        <Route path="/content-marketing" component={ContentMarketing} />
         <Route component={Error} />
       </Switch>
     </div>
