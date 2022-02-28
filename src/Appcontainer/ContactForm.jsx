@@ -1,9 +1,11 @@
 import React, { useState, useEffect, useRef } from "react";
 import "./assets/Style.css";
-import { db } from "../firebase";
+import { db, storage } from "../firebase";
 import ReCAPTCHA from "react-google-recaptcha";
+import { ref, uploadBytesResumable } from "firebase/storage";
 const SITE_KEY = "6LeHDpEeAAAAAJV8xlc3Ox1rznuH8zBp-USMGBeA";
-const ContactForm = (isValid, errorMessage) => {
+
+function ContactForm() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [cnumber, SetCnumber] = useState("");
@@ -45,9 +47,16 @@ const ContactForm = (isValid, errorMessage) => {
     setrecaptchaValue("");
   };
 
-  // const onfilechange = (e) => {
-  //   console.log(e.target.files[0]);
-  // };
+  const onfilechange = (e) => {
+    console.log(e.target.files[0]);
+    const file = e.target.files[0];
+  };
+
+  const uoloadFiles = (file) => {
+    if (!file) return;
+    const storageRef = ref(storage, `/files/${file.name}`);
+    const uploadTask = uploadBytesResumable(storageRef, file);
+  };
 
   const recaptchaReference = useRef(null);
 
@@ -165,14 +174,14 @@ const ContactForm = (isValid, errorMessage) => {
             </div>
           </div>
         </div>
-        {/* <div class="row">
+        <div class="row">
           <div class="col-md-12">
             <div class="con_foo_input_wrapper">
               <label>Attach files</label>
               <input class="file_type" type="file" onChange={onfilechange} />
             </div>
           </div>
-        </div> */}
+        </div>
         <label>
           <ReCAPTCHA
             sitekey={SITE_KEY}
@@ -180,7 +189,6 @@ const ContactForm = (isValid, errorMessage) => {
             onChange={handleChange}
           />
         </label>
-        {!isValid && <small>{errorMessage}</small>}
 
         <div class="row">
           <div class="col-md-4">
@@ -192,5 +200,5 @@ const ContactForm = (isValid, errorMessage) => {
       </form>
     </div>
   );
-};
+}
 export default ContactForm;

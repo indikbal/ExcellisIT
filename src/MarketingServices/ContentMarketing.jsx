@@ -126,9 +126,7 @@ const ContentMarketing = () => {
                   data-aos="fade-down"
                   data-aos-duration="1500"
                 >
-                  <h1 class="BannerServices__Subheader">
-                    Best Content marketing Company - Excellis IT
-                  </h1>
+                  <h1 class="BannerServices__Subheader">Content Marketing</h1>
                   <p>
                     It’s very important to create a personal profile with your
                     content creation which would bring more value to your
@@ -138,6 +136,7 @@ const ContentMarketing = () => {
                     things that they are interested in.
                   </p>
                   <p>
+                    {" "}
                     With this point in mind, you should also make sure that you
                     personalize and target your posts after analyzing the
                     audience insights so that you can increase your reach and
@@ -161,7 +160,7 @@ const ContentMarketing = () => {
                   ></div>
                   <img
                     src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/digital-marketing%2Fsmm%2Fsocial-media-marketing.jpg?alt=media&token=30d10037-9b6e-4698-b4c1-256bd5042e00"
-                    alt="Sear engine optimization"
+                    alt="Content Marketing"
                     className="img-fluid"
                   />
                 </div>

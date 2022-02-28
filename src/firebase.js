@@ -1,6 +1,7 @@
 // import firebase from "firebase";
 import firebase from "firebase/compat/app";
 import "firebase/compat/firestore";
+import { getStorage } from "firebase/storage";
 
 var firebaseApp = firebase.initializeApp({
   // Your firebase credentials
@@ -15,4 +16,5 @@ var firebaseApp = firebase.initializeApp({
 
 var db = firebaseApp.firestore();
 
+export const storage = getStorage;
 export { db };
