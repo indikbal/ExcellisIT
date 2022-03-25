@@ -26,7 +26,7 @@ const BecomeAPartner = () => {
                     faster conversion time, technical assistant, expanded global
                     reach that too within an incubating environment.
                   </p>
-                  <Link to="/PartnerWithus">
+                  <Link to="/partner-with-us">
                     <button
                       data-aos="fade-up"
                       data-aos-duration="1500"

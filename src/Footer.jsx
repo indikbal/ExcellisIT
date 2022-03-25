@@ -65,31 +65,31 @@ const Footer = () => {
                       <div class="footer-links footer_menu d-flex">
                         <ul>
                           <li>
-                            <Link to="/mobileApplication">
+                            <Link to="/mobile-application">
                               <FaArrowRight />
                               Mobile Application
                             </Link>
                           </li>
                           <li>
-                            <Link to="/softwareDevelopment">
+                            <Link to="/software-development">
                               <FaArrowRight />
                               Software Development
                             </Link>
                           </li>
                           <li>
-                            <Link to="/UiUxDesign">
+                            <Link to="/ui-ux-design">
                               <FaArrowRight />
                               UI/UX Design
                             </Link>
                           </li>
                           <li>
-                            <Link to="/WebDevelopment">
+                            <Link to="/web-development">
                               <FaArrowRight />
                               Web Development
                             </Link>
                           </li>
                           <li>
-                            <Link to="/QaAndTesting">
+                            <Link to="/QA-testing">
                               <FaArrowRight />
                               QA and Testing
                             </Link>
@@ -151,37 +151,37 @@ const Footer = () => {
                       <div class="footer-links footer_menu d-flex">
                         <ul>
                           <li>
-                            <a href="https://www.excellisit.com/search-engine-marketing">
+                            <a href="/search-engine-optimization">
                               <FaArrowRight />
                               Search engine Marketing
                             </a>
                           </li>
                           <li>
-                            <a href="https://www.excellisit.com/social-media-marketing">
+                            <a href="/social-media-marketing">
                               <FaArrowRight />
                               Social media marketing
                             </a>
                           </li>
                           <li>
-                            <a href="https://www.excellisit.com/ppc">
+                            <a href="/pay-per-click">
                               <FaArrowRight />
                               Pay per click
                             </a>
                           </li>
                           <li>
-                            <a href="https://www.excellisit.com/email-marketing">
+                            <a href="/email-marketing">
                               <FaArrowRight />
                               Email Marketing
                             </a>
                           </li>
                           <li>
-                            <a href="https://www.excellisit.com/content-making">
+                            <a href="/content-marketing">
                               <FaArrowRight />
                               Content Marketing
                             </a>
                           </li>
                           <li>
-                            <a href="https://www.excellisit.com/google-my-business-optimization">
+                            <a href="/google-my-business-optimization">
                               <FaArrowRight />
                               Google my business optimization
                             </a>
@@ -213,9 +213,9 @@ const Footer = () => {
                         <li>
                           <Link to="/about">About Excellis</Link>
                         </li>
-                        <li>
+                        {/* <li>
                           <Link to="/Ourblogs">Learning Center</Link>
-                        </li>
+                        </li> */}
                       </ul>
                     </div>
                   </div>

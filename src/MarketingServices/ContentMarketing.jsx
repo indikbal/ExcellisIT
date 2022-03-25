@@ -313,7 +313,7 @@ const ContentMarketing = () => {
             <div class="col-md-12 ">
               <div className="big_title">
                 <h2 data-aos="fade-down" data-aos-duration="1500">
-                  <span>Why Hire </span> PPC service provided from Excellis IT
+                  <span>Why Hire </span> Content Marketer from us
                 </h2>
               </div>
             </div>

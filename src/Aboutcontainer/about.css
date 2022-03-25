@@ -710,7 +710,7 @@ p {
     right: 38vw;
   }
   .text_about h2 {
-    font-size: 18px;
+    font-size: 25px !important;
   }
   .text_about p {
     font-size: 14px;

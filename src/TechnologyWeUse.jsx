@@ -81,7 +81,7 @@ const TechnologyWeUse = () => {
                     aria-labelledby="pills-frontend-tab"
                   >
                     <div class="row">
-                      <div class="col-md-2 col-4 col">
+                      <div class="col-md-2 col-6 col">
                         <div
                           class="s-TechnologiesLogos__Inner"
                           data-aos="fade-up"
@@ -96,7 +96,7 @@ const TechnologyWeUse = () => {
                           <h4>Angular</h4>
                         </div>
                       </div>
-                      <div class="col-md-2 col-4 col">
+                      <div class="col-md-2 col-6 col">
                         <div
                           class="s-TechnologiesLogos__Inner"
                           data-aos="fade-down"
@@ -111,7 +111,7 @@ const TechnologyWeUse = () => {
                           <h4>Bootstrap</h4>
                         </div>
                       </div>
-                      <div class="col-md-2 col-4 col">
+                      <div class="col-md-2 col-6 col">
                         <div
                           class="s-TechnologiesLogos__Inner"
                           data-aos="fade-up"
@@ -126,7 +126,7 @@ const TechnologyWeUse = () => {
                           <h4>Figma</h4>
                         </div>
                       </div>
-                      <div class="col-md-2 col-4 col">
+                      <div class="col-md-2 col-6 col">
                         <div
                           class="s-TechnologiesLogos__Inner"
                           data-aos="fade-down"
@@ -141,7 +141,7 @@ const TechnologyWeUse = () => {
                           <h4>HTML 5</h4>
                         </div>
                       </div>
-                      <div class="col-md-2 col-4 col">
+                      <div class="col-md-2 col-6 col">
                         <div
                           class="s-TechnologiesLogos__Inner"
                           data-aos="fade-up"
@@ -156,7 +156,7 @@ const TechnologyWeUse = () => {
                           <h4>Javascript</h4>
                         </div>
                       </div>
-                      <div class="col-md-2 col-4 col">
+                      <div class="col-md-2 col-6 col">
                         <div
                           class="s-TechnologiesLogos__Inner"
                           data-aos="fade-down"
@@ -171,7 +171,7 @@ const TechnologyWeUse = () => {
                           <h4>Photoshop</h4>
                         </div>
                       </div>
-                      <div class="col-md-2 col-4 col">
+                      <div class="col-md-2 col-6 col">
                         <div
                           class="s-TechnologiesLogos__Inner"
                           data-aos="fade-down"
@@ -186,7 +186,7 @@ const TechnologyWeUse = () => {
                           <h4>React</h4>
                         </div>
                       </div>
-                      <div class="col-md-2 col-4 col">
+                      <div class="col-md-2 col-6 col">
                         <div
                           class="s-TechnologiesLogos__Inner"
                           data-aos="fade-down"
@@ -201,7 +201,7 @@ const TechnologyWeUse = () => {
                           <h4>Vue</h4>
                         </div>
                       </div>
-                      <div class="col-md-2 col-4 col">
+                      <div class="col-md-2 col-6 col">
                         <div
                           class="s-TechnologiesLogos__Inner"
                           data-aos="fade-down"
@@ -225,7 +225,7 @@ const TechnologyWeUse = () => {
                     aria-labelledby="pills-backend-tab"
                   >
                     <div class="row">
-                      <div class="col-md-2 col-4 col">
+                      <div class="col-md-2 col-6 col">
                         <div
                           class="s-TechnologiesLogos__Inner"
                           data-aos="fade-up"
@@ -240,7 +240,7 @@ const TechnologyWeUse = () => {
                           <h4>php</h4>
                         </div>
                       </div>
-                      <div class="col-md-2 col-4 col">
+                      <div class="col-md-2 col-6 col">
                         <div
                           class="s-TechnologiesLogos__Inner"
                           data-aos="fade-down"
@@ -255,7 +255,7 @@ const TechnologyWeUse = () => {
                           <h4>Woocommerce</h4>
                         </div>
                       </div>
-                      <div class="col-md-2 col-4 col">
+                      <div class="col-md-2 col-6 col">
                         <div
                           class="s-TechnologiesLogos__Inner"
                           data-aos="fade-up"
@@ -270,7 +270,7 @@ const TechnologyWeUse = () => {
                           <h4>Drupal</h4>
                         </div>
                       </div>
-                      <div class="col-md-2 col-4 col">
+                      <div class="col-md-2 col-6 col">
                         <div
                           class="s-TechnologiesLogos__Inner"
                           data-aos="fade-down"
@@ -285,7 +285,7 @@ const TechnologyWeUse = () => {
                           <h4>Wordpress</h4>
                         </div>
                       </div>
-                      <div class="col-md-2 col-4 col">
+                      <div class="col-md-2 col-6 col">
                         <div
                           class="s-TechnologiesLogos__Inner"
                           data-aos="fade-down"
@@ -300,7 +300,7 @@ const TechnologyWeUse = () => {
                           <h4>Codeignitor</h4>
                         </div>
                       </div>
-                      <div class="col-md-2 col-4 col">
+                      <div class="col-md-2 col-6 col">
                         <div
                           class="s-TechnologiesLogos__Inner"
                           data-aos="fade-up"
@@ -315,7 +315,7 @@ const TechnologyWeUse = () => {
                           <h4>Shopify</h4>
                         </div>
                       </div>
-                      <div class="col-md-2 col-4 col">
+                      <div class="col-md-2 col-6 col">
                         <div
                           class="s-TechnologiesLogos__Inner"
                           data-aos="fade-up"
@@ -330,7 +330,7 @@ const TechnologyWeUse = () => {
                           <h4>.net</h4>
                         </div>
                       </div>
-                      <div class="col-md-2 col-4 col">
+                      <div class="col-md-2 col-6 col">
                         <div
                           class="s-TechnologiesLogos__Inner"
                           data-aos="fade-up"
@@ -354,7 +354,7 @@ const TechnologyWeUse = () => {
                     aria-labelledby="pills-database-tab"
                   >
                     <div class="row">
-                      <div class="col-md-2 col-4 col">
+                      <div class="col-md-2 col-6 col">
                         <div
                           class="s-TechnologiesLogos__Inner"
                           data-aos="fade-up"
@@ -369,7 +369,7 @@ const TechnologyWeUse = () => {
                           <h4>Android</h4>
                         </div>
                       </div>
-                      <div class="col-md-2 col-4 col">
+                      <div class="col-md-2 col-6 col">
                         <div
                           class="s-TechnologiesLogos__Inner"
                           data-aos="fade-down"
@@ -384,7 +384,7 @@ const TechnologyWeUse = () => {
                           <h4>iOS</h4>
                         </div>
                       </div>
-                      <div class="col-md-2 col-4 col">
+                      <div class="col-md-2 col-6 col">
                         <div
                           class="s-TechnologiesLogos__Inner"
                           data-aos="fade-up"
@@ -399,7 +399,7 @@ const TechnologyWeUse = () => {
                           <h4>Flutter</h4>
                         </div>
                       </div>
-                      <div class="col-md-2 col-4 col">
+                      <div class="col-md-2 col-6 col">
                         <div
                           class="s-TechnologiesLogos__Inner"
                           data-aos="fade-down"
@@ -414,7 +414,7 @@ const TechnologyWeUse = () => {
                           <h4>ionic</h4>
                         </div>
                       </div>
-                      <div class="col-md-2 col-4 col">
+                      <div class="col-md-2 col-6 col">
                         <div
                           class="s-TechnologiesLogos__Inner"
                           data-aos="fade-down"
@@ -429,7 +429,7 @@ const TechnologyWeUse = () => {
                           <h4>Node js</h4>
                         </div>
                       </div>
-                      <div class="col-md-2 col-4 col">
+                      <div class="col-md-2 col-6 col">
                         <div
                           class="s-TechnologiesLogos__Inner"
                           data-aos="fade-up"
@@ -444,7 +444,7 @@ const TechnologyWeUse = () => {
                           <h4>React</h4>
                         </div>
                       </div>
-                      <div class="col-md-2 col-4 col">
+                      <div class="col-md-2 col-6 col">
                         <div
                           class="s-TechnologiesLogos__Inner"
                           data-aos="fade-up"
@@ -468,7 +468,7 @@ const TechnologyWeUse = () => {
                     aria-labelledby="pills-testing-tab"
                   >
                     <div class="row">
-                      <div class="col-md-2 col-4 col">
+                      <div class="col-md-2 col-6 col">
                         <div
                           class="s-TechnologiesLogos__Inner"
                           data-aos="fade-up"
@@ -483,7 +483,7 @@ const TechnologyWeUse = () => {
                           <h4>Mobile Testing</h4>
                         </div>
                       </div>
-                      <div class="col-md-2 col-4 col">
+                      <div class="col-md-2 col-6 col">
                         <div
                           class="s-TechnologiesLogos__Inner"
                           data-aos="fade-up"

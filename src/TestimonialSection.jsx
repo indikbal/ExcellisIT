@@ -39,9 +39,9 @@ const TestimonialSection = () => {
   return (
     <div>
       <div class="testim">
-        <div className="section_typing">
+        {/* <div className="section_typing">
           <Typed strings={["Many Love with our clients"]} typeSpeed={150} />
-        </div>
+        </div> */}
         <div class="container">
           <div class="testim-content">
             <Slider

@@ -32,6 +32,10 @@ import SocialMediaMarketing from "./MarketingServices/SocialMediaMarketing";
 import PayPerClick from "./MarketingServices/PayPerClick";
 import EmailMarketing from "./MarketingServices/EmailMarketing";
 import ContentMarketing from "./MarketingServices/ContentMarketing";
+import GoogleMyBusiness from "./MarketingServices/GoogleMyBusiness";
+
+import CareerPage from "./CareerPage";
+import JobRole from "./JobRole";
 
 function App() {
   AOS.init({
@@ -78,6 +82,12 @@ function App() {
         />
         <Route path="/email-marketing" component={EmailMarketing} />
         <Route path="/content-marketing" component={ContentMarketing} />
+        <Route path="/career" component={CareerPage} />
+        <Route
+          path="/google-my-business-optimization"
+          component={GoogleMyBusiness}
+        />
+        <Route path="/JobRole" component={JobRole} />
         <Route component={Error} />
       </Switch>
     </div>

@@ -101,15 +101,15 @@ const Navbar = ({ activeStatus }) => {
                     </a>
                   </li>
 
-                  <li>
+                  {/* <li>
                     <a href="#" className="text-yellow2">
                       <i class="ph-phone-call"></i> Book a Call
                     </a>
-                  </li>
+                  </li> */}
                 </ul>
               </div>
             </div>
-            <Toggle />
+            {/* <Toggle /> */}
           </div>
         </div>
       </section>
@@ -161,11 +161,11 @@ const Navbar = ({ activeStatus }) => {
                         Process
                       </Link>
                     </li>
-                    <li className={activeStatus == "blog" ? "active" : ""}>
+                    {/* <li className={activeStatus == "blog" ? "active" : ""}>
                       <Link exact className="nav-link" to="/Ourblogs">
                         Blog
                       </Link>
-                    </li>
+                    </li> */}
                     <li className={activeStatus == "contact" ? "active" : ""}>
                       <Link exact className="nav-link" to="/ContactUs">
                         Contact

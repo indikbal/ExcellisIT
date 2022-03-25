@@ -24,7 +24,7 @@ const Home = () => {
         <meta charSet="utf-8" />
         <title>Home Page</title>
       </Helmet>
-      <Loader />
+      {/* <Loader /> */}
       <Navbar activeStatus="home" />
       <Herobaner />
       <HomeFeatureServices />

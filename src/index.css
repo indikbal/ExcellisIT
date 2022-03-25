@@ -1276,6 +1276,240 @@ span.portfolio_surname {
   object-fit: contain;
 }
 
+/* -------------------------------- */
+/* -----Career Opportunities------ */
+/* ------------------------------- */
+
+.career_opportunities__section {
+  padding: 100px 0px;
+  background-color: #f7f9fe;
+}
+
+.careers_opportunities__title_wrapper * {
+  font-family: "Poppins";
+  text-align: center;
+}
+.careers_opportunities__title_wrapper h4 {
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  color: #1f1f1f;
+}
+.careers_opportunities__title_wrapper p {
+  margin-bottom: 5px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #1f1f1f;
+}
+.nav-pills a.nav-link.tab__button {
+  width: 140px;
+  height: 100px;
+  background-color: #ffffff;
+  color: #1f1f1f;
+  box-shadow: 0 0px 15px 0 rgba(0, 0, 0, 0.05);
+  margin: 5px;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 400;
+  transition: all 0.2s ease-out;
+}
+.nav-pills a.nav-link.tab__button i {
+  display: block;
+  margin: 0px auto 5px;
+  font-size: 40px;
+  text-align: center;
+  transition: all 0.2s ease-out;
+  color: #ccc;
+}
+.nav-pills a.nav-link.tab__button:hover {
+  transform: scale(1.08);
+}
+.nav-pills a.nav-link.tab__button:hover,
+.nav-pills a.nav-link.tab__button:hover i {
+  color: #e85616;
+}
+.nav-pills a.nav-link.tab__button.active {
+  background: linear-gradient(to bottom, #dd100e, #ea6117);
+  color: #ffffff;
+}
+.nav-pills a.nav-link.tab__button.active i {
+  color: #ffffff;
+}
+.single_job_card {
+  padding: 30px;
+  box-shadow: 6px 6px 15px rgb(0 0 0 / 15%);
+  background-color: #fff;
+  background-color: rgb(52 50 51 / 95%);
+  position: relative;
+  border: 1px solid var(--theme-yellow1);
+  z-index: 99;
+}
+.pane__title_wrapper h4 {
+  font-size: 30px;
+  font-family: "Poppins";
+  color: var(--theme-yellow1);
+  font-weight: 600;
+}
+.job__description_abstract h5 {
+  font-family: "Poppins";
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--text-white1);
+  margin-bottom: 12px;
+}
+.job__description_abstract h5 span {
+  font-weight: 600;
+}
+
+.pane__links {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.pane__links .viewDetails {
+  color: var(--theme-yellow2);
+  font-size: 18px;
+  font-family: "Poppins";
+  text-align: right;
+  background-color: var(--theme-dark2) !important;
+}
+.pane__links a {
+  cursor: pointer;
+  background-color: var(--theme-yellow1);
+  padding: 10px 40px;
+}
+.carre_oper_sec {
+  padding: 100px 0;
+}
+/* --------------------------- */
+/* -----Apply Now Modal ----- */
+/* ------------------------- */
+
+.modal__button {
+  color: #ffffff !important;
+}
+.apply_now__title {
+  font-family: "Poppins";
+  font-size: 24px;
+  font-weight: 500;
+  color: #1f1f1f;
+}
+.apply_now__title .job__role {
+  padding-left: 10px;
+  margin-left: 10px;
+  color: #e85616;
+  font-weight: 600;
+  border-left: 2px solid #e85616;
+}
+.privacy_policy__title_wrapper * {
+  font-family: "Poppins";
+  margin-bottom: 20px;
+}
+.privacy_policy__title_wrapper h5 {
+  font-size: 16px;
+  color: #1f1f1f;
+}
+.privacy_policy__title_wrapper p {
+  font-size: 12px;
+  color: #969ca2;
+}
+
+/* ------------------- */
+/* ------Job Role---- */
+/* ------------------- */
+
+.job_role__section {
+  padding: 100px 0px;
+}
+.job_description__title_wrapper {
+  margin: 20px 0px;
+}
+.job_description__title_wrapper h4 {
+  font-family: "Poppins";
+  font-size: 26px;
+  color: #1f1f1f;
+}
+.job_description__title_wrapper h4 .role {
+  color: #e85616;
+}
+.job__description {
+  margin-top: 20px;
+  padding: 30px;
+  background-color: #f3f3f3;
+}
+.job__description h4 {
+  font-size: 22px;
+  font-family: "Poppins";
+  margin-bottom: 30px;
+  font-weight: 600;
+}
+.job__description h5 span {
+  display: block;
+  margin-top: 16px;
+}
+
+.requirements__container h4,
+.abilities__container h4 {
+  font-family: "Poppins";
+  margin-bottom: 30px;
+  font-size: 22px;
+  font-weight: 600;
+}
+.job_role__list {
+  margin-top: 40px;
+}
+.job_role__list li {
+  list-style-type: disc;
+  font-size: 16px;
+  font-weight: 400;
+  color: #3a3a3a;
+  margin-bottom: 6px;
+  margin-left: 20px;
+}
+.related_job__cards h4 {
+  text-align: center;
+  font-family: "Poppins";
+  margin-bottom: 30px;
+  font-size: 22px;
+  font-weight: 600;
+  margin: 40px 0px 20px;
+}
+.related_job__card {
+  margin-top: 10px;
+  padding: 15px;
+  border: 1px solid rgba(232, 85, 22, 0.377);
+  border-radius: 5px;
+  background-color: #ffffff;
+}
+
+.related_job__card * {
+  font-family: "Poppins";
+}
+.related_job__card a {
+  text-decoration: none;
+  color: #e85616;
+  font-size: 16px;
+  font-weight: 500;
+}
+.related_job__card p {
+  text-decoration: none;
+  color: #1f1f1f;
+  font-size: 13px;
+  font-weight: 400;
+  margin-bottom: 0px;
+  margin-top: 10px;
+}
+.related_job__card h6 {
+  text-decoration: none;
+  color: #1f1f1f;
+  font-size: 13px;
+  font-weight: 300;
+  margin-bottom: 0px;
+  margin-top: 10px;
+}
+
 @media screen and (max-width: 768px) {
   .bpo_inner__how_it_works_card {
     margin-top: 50px;

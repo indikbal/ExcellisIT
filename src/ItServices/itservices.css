@@ -1616,4 +1616,7 @@
   .banner_img {
     padding-top: 49.7vw !important;
   }
+  .cta2_inner .cta2_content_sec h4 {
+    font-size: 20px;
+  }
 }

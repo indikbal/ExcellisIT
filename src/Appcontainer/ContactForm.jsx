@@ -50,6 +50,7 @@ function ContactForm() {
   const onfilechange = (e) => {
     console.log(e.target.files[0]);
     const file = e.target.files[0];
+    uoloadFiles(file);
   };
 
   const uoloadFiles = (file) => {

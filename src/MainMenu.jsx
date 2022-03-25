@@ -145,18 +145,10 @@ const MainMenu = () => {
             <div class="menu__item menu__item--1">
               <div class="menu__item-inner">
                 <div class="mainmenu">
-                  <a href="#" class="mainmenu__item">
-                    It Services
-                  </a>
-                  <a href="#" class="mainmenu__item">
-                    Bpo Services
-                  </a>
-                  <a href="" class="mainmenu__item">
-                    Marketing Services
-                  </a>
-                  <a href="" class="mainmenu__item">
-                    Cad Services
-                  </a>
+                  <a class="mainmenu__item">It Services</a>
+                  <a class="mainmenu__item">Bpo Services</a>
+                  <a class="mainmenu__item">Marketing Services</a>
+                  <a class="mainmenu__item">Cad Services</a>
                 </div>
                 <p class="label label--topleft label--vert-mirror">
                   Services We Offered
@@ -197,7 +189,7 @@ const MainMenu = () => {
                 </div>
                 <div class="profile_download_link">
                   <a
-                    href="https://www.excellisit.com/img/Excellis_profile.pdf"
+                    href="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/Excellis_profile.pdf?alt=media&token=dede50a8-61f0-4de5-9a8c-5b8c82a1c3ef"
                     target="_blank"
                   >
                     <i class="las la-download"></i> Company Profile
@@ -260,7 +252,7 @@ const MainMenu = () => {
                   <Link
                     activeClassName="navbar__link--active"
                     className=" sidemenu__item"
-                    to="/PartnerWithus"
+                    to="/partner-with-us"
                   >
                     <span class="sidemenu__item-inner">Partner With Us</span>
                   </Link>
@@ -271,16 +263,21 @@ const MainMenu = () => {
                   >
                     <span class="sidemenu__item-inner">Our Portfolio</span>
                   </Link>
-                  <a href="#" class="sidemenu__item">
-                    <span class="sidemenu__item-inner">Career</span>
-                  </a>
+
                   <Link
+                    activeClassName="navbar__link--active"
+                    className=" sidemenu__item"
+                    to="/career"
+                  >
+                    <span class="sidemenu__item-inner">Career</span>
+                  </Link>
+                  {/* <Link
                     activeClassName="navbar__link--active"
                     className=" sidemenu__item"
                     to="/Ourblogs"
                   >
                     <span class="sidemenu__item-inner">Blog</span>
-                  </Link>
+                  </Link> */}
                   <Link
                     activeClassName="navbar__link--active"
                     className=" sidemenu__item"
@@ -341,14 +338,16 @@ const MainMenu = () => {
                   >
                     <span class="sidemenu__item-inner">Content Marketing</span>
                   </Link>
-                  <a
-                    href="https://www.excellisit.com/google-my-business-optimization"
-                    class="sidemenu__item"
+
+                  <Link
+                    activeClassName="navbar__link--active"
+                    className=" sidemenu__item"
+                    to="/google-my-business-optimization"
                   >
                     <span class="sidemenu__item-inner">
                       Google my business optimization
                     </span>
-                  </a>
+                  </Link>
                 </div>
                 <p class="label label--topleft label--vert-mirror">
                   Marketing Services

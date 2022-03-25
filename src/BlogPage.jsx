@@ -19,7 +19,7 @@ export class BlogPage extends React.Component {
   }
   getUsersData() {
     axios
-      .get(`/admin/getBlogData`, {})
+      .get(`https://jsonplaceholder.typicode.com/todos/1`, {})
       .then((res) => {
         const data = res.data;
         console.log(data);

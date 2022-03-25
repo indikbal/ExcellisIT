@@ -7,7 +7,6 @@ import { Helmet } from "react-helmet";
 import { Scrollbars } from "react-custom-scrollbars-2";
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { Navigation, Pagination, Autoplay } from "swiper";
-import OurBlogs from "../Appcontainer/OurBlog";
 import TestimonialSection from "../TestimonialSection";
 import { Animated } from "react-animated-css";
 import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
@@ -1944,6 +1943,31 @@ const SearchEngineOptimization = () => {
         </div>
       </section>
 
+      <section className="cta2_section pb-0">
+        <div className="container">
+          <div className="row">
+            <div className="col-md-12">
+              <div
+                className="cta2_inner d-block d-sm-flex align-items-center"
+                style={{ backgroundImage: `url(${cta_bg3})` }}
+              >
+                <div className="cta2_content_sec text-center w-100">
+                  <h4 className="mb-4">
+                    Sort out your digital marketing needs with the best SEO
+                    provider in town.{" "}
+                  </h4>
+                  <Link className=" light-btn" to="/ContactUs">
+                    Contact Us
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <TechnologyWeUse />
+
       <section className="common_faq_section">
         <div className="container">
           <div className="row mb-5">
@@ -2204,32 +2228,6 @@ const SearchEngineOptimization = () => {
           </div>
         </div>
       </section>
-
-      <OurBlogs />
-      <section className="cta2_section pb-0">
-        <div className="container">
-          <div className="row">
-            <div className="col-md-12">
-              <div
-                className="cta2_inner d-block d-sm-flex align-items-center"
-                style={{ backgroundImage: `url(${cta_bg3})` }}
-              >
-                <div className="cta2_content_sec text-center w-100">
-                  <h4 className="mb-4">
-                    Sort out your digital marketing needs with the best SEO
-                    provider in town.{" "}
-                  </h4>
-                  <Link className=" light-btn" to="/ContactUs">
-                    Contact Us
-                  </Link>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <TechnologyWeUse />
       <Footer />
     </div>
   );

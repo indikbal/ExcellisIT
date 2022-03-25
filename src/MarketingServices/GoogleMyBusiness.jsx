@@ -7,13 +7,11 @@ import { Helmet } from "react-helmet";
 import { Scrollbars } from "react-custom-scrollbars-2";
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { Navigation, Pagination, Autoplay } from "swiper";
-import OurBlogs from "../Appcontainer/OurBlog";
 import TestimonialSection from "../TestimonialSection";
 import { Animated } from "react-animated-css";
 import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
 import $ from "jquery";
 import {
-  FaUserLock,
   FaRegEye,
   FaUsers,
   FaUserCheck,
@@ -21,6 +19,7 @@ import {
   FaBullhorn,
 } from "react-icons/fa";
 import TechnologyWeUse from "../TechnologyWeUse";
+import ClientSecInner from "../ClientSecInner";
 const cta_bg =
   "https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/digital-marketing%2Fcta_img.jpg?alt=media&token=80dff7e9-4f79-4258-ae00-734d63a84110";
 
@@ -30,10 +29,10 @@ const cta_bg3 =
   "https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/cta_img3.jpg?alt=media&token=ad3e770b-a126-4e64-b1c2-ab61338fcc0e";
 SwiperCore.use([Navigation, Pagination, Autoplay]);
 
-const SocialMediaMarketing = () => {
-  const title = "Social Media Marketing";
+const GoogleMyBusiness = () => {
+  const title = "Google My Business";
   const description =
-    "“Harness the power of Social media and boost your business with the help of innovative Social media marketing strategies.”";
+    "Be the hero in your locality with your business with the help of Google my Business services from Excellis IT.";
 
   var maxData = 3;
   let i = 2;
@@ -111,8 +110,8 @@ const SocialMediaMarketing = () => {
     <div>
       <Helmet>
         <meta charSet="utf-8" />
-        <title>Social Media Marketing</title>
-        <meta name="description" content="aboutpage" />
+        <title>GMB</title>
+        <meta name="description" content="gmb page" />
       </Helmet>
       <Navbar />
       <InnerBanner title={title} description={description} />
@@ -126,36 +125,39 @@ const SocialMediaMarketing = () => {
                   data-aos="fade-down"
                   data-aos-duration="1500"
                 >
-                  <h6>Search Engine Optimization</h6>
                   <h1 class="BannerServices__Subheader">
-                    Every click counts – Social Media Marketing
+                    Be found on Google - GMB
                   </h1>
                   <p>
-                    In this fast-changing digital world, social media has become
-                    one of the most influential marketing channels; most
-                    businesses have already realized the need of having a strong
-                    social presence on various SNS. Social media marketing
-                    harnesses the power of social networks to increase
-                    engagement, boost sales, as well as build your brand. It
-                    empowers your business to take advantage of the popularity
-                    of social media platforms like Facebook, Twitter, Instagram,
-                    YouTube, and others. By using engaging content across these
-                    channels, the businesses generate interest for their
-                    products and services as well as engage their customers. In
-                    short, social media marketing service strengthens your brand
-                    as well as build customer trust and loyalty.
+                    Google My Business is a free and simple service that allows
+                    businesses to manage their hours of operation, maps,
+                    photographs, and other information on Google Search and
+                    Google Maps. In a small, medium, and large businesses,
+                    Google My Business is useful.{" "}
                   </p>
                   <p>
-                    Excellis IT is one of the leading social media marketing
-                    companies in Kolkata, India that encompasses reliable as
-                    well as comprehensive services for your business across
-                    diverse industry verticals. Our expert digital marketers
-                    craft rich as well as targeted content that would engage
-                    potential shoppers and influence their purchase decisions.
-                    At the same time, they also work on building as well as
-                    establishing their brand reputation across different social
-                    channels. We ensure that your business creates an online
-                    buzz and explores new territories for unparalleled growth.
+                    GMB with vital information on local businesses that
+                    customers want to know. Before the organic results, it will
+                    deliver the best result. Business Name, Business Type,
+                    Address, Hours of Operation, Phone Number, Link to Website,
+                    Images, Link to Google Maps, Reviews, Popular Visitor Times,
+                    Related Searches, and More are all displayed on the
+                    knowledge card.
+                  </p>
+                  <p>
+                    It takes a lot of effort to optimize and manage local
+                    listings for various places. To do so, you'll need to
+                    recruit highly experienced personnel from a reputable
+                    organization. Excellis IT is there to guide, support, and
+                    aid you if you're seeking a reputable digital marketing
+                    agency.
+                  </p>
+                  <p>
+                    Excellis IT is well-known for providing the most effective
+                    and competent Google Places SEO services in Kolkata, India.
+                    We also put in the extra effort to classify our clients'
+                    best company category, which best meets their demands, and
+                    generate a relevant listing as a result.
                   </p>
                 </div>
               </div>
@@ -199,115 +201,77 @@ const SocialMediaMarketing = () => {
                   <div className="row">
                     <div className="col-md-6">
                       <div className="single_inner_services">
-                        <h4>Social Media Strategy</h4>
+                        <h4>Identifying keywords</h4>
                         <Scrollbars style={{ height: 100 }}>
                           <p>
-                            We provide a result-driven strategy so that your
-                            social media marketing plan is a success. This
-                            starts with understanding your business as well as
-                            its goals so that we could curate a solution that
-                            would be perfect for your brand.
+                            We help you with the keywords that you would target
+                            against your mapping list so that your business
+                            ranks better on Google my business. (GMB)
                           </p>
                         </Scrollbars>
                       </div>
                     </div>
                     <div className="col-md-6">
                       <div className="single_inner_services">
-                        <h4>Content Marketing</h4>
+                        <h4>Mapping out targeted area</h4>
                         <Scrollbars style={{ height: 100 }}>
                           <p>
-                            The tonality of your content reflects the tonality
-                            of your brand thus, the content that goes out on
-                            your social pages must be sound and unique as well
-                            as engaging. We also realize its significance and
-                            thus, create content that would engage your
-                            customers with your business and strengthen your
-                            brand.
+                            Before starting with GMB we map out the targeted
+                            area where our client works or where the client’s
+                            business is located.
                           </p>
                         </Scrollbars>
                       </div>
                     </div>
                     <div className="col-md-6">
                       <div className="single_inner_services">
-                        <h4>Social Media Management</h4>
+                        <h4>Optimization of your GMB profilen</h4>
                         <Scrollbars style={{ height: 100 }}>
                           <p>
-                            Social media management is an important aspect of
-                            SMM. Excellis IT is one of the leading Social media
-                            marketing agency in Kolkata, India, gives your
-                            business an influential online presence across
-                            platforms like Facebook, Linkedin, Instagram,
-                            Twitter and many more. We also schedule brand
-                            messages along with promoting content for ideal
-                            engagement with our target audience and also
-                            coordinate social alliances so that you could reach
-                            out to your new audience.
+                            Being a google local listing expert in Kolkata,
+                            India, we provide complete optimization for our
+                            client’s GMB profiles so that they can rank higher
+                            on the google search engine.
                           </p>
                         </Scrollbars>
                       </div>
                     </div>
                     <div className="col-md-6">
                       <div className="single_inner_services">
-                        <h4>Promotions And Contests</h4>
+                        <h4>Perform Geo-Fencing</h4>
                         <Scrollbars style={{ height: 100 }}>
                           <p>
-                            If you wish to get instant audience engagements to
-                            your social channels then targeted promotions and
-                            contests can help you to infuse new life in your
-                            campaign. Excellis IT designs as well as implements
-                            innovative ideas for promotions, contests, coupons
-                            for new customers, etc. Such promotional ideas
-                            benefit you with high engagement as well as sales
-                            that boost the popularity of your brand.
+                            Optimizing your business in your local area is also
+                            necessary this is the reason why geo-fencing is
+                            required.
                           </p>
                         </Scrollbars>
                       </div>
                     </div>
                     <div className="col-md-6">
                       <div className="single_inner_services">
-                        <h4>Monitoring And Reporting</h4>
+                        <h4>Add Images to Your Business</h4>
                         <Scrollbars style={{ height: 100 }}>
                           <p>
-                            Social media marketing agency doesn’t only design
-                            and implement marketing plans. They also monitor the
-                            efficacy of the implemented plan. Our experts at
-                            Excellis IT keep an eye on the performance of the
-                            strategy that they had applied. We also provide
-                            reports to our clients so that they can also see and
-                            evaluate the value they are getting from our
-                            services.
+                            Pictures attract customers and help in optimization
+                            as well. This is why we must add good and optimized
+                            images of your business on your GMB so that it ranks
+                            higher on search engines.
                           </p>
                         </Scrollbars>
                       </div>
                     </div>
                     <div className="col-md-6">
                       <div className="single_inner_services">
-                        <h4>Consulting</h4>
+                        <h4>Perform link building for GMB</h4>
                         <Scrollbars style={{ height: 100 }}>
                           <p>
-                            Apart from all the traditional SMM plans we also
-                            provide consultancy services to our clients. We have
-                            a team of experts who would provide you with the
-                            best consultancy so that you can avail the benefits
-                            of the strategy and make it better.
-                          </p>
-                        </Scrollbars>
-                      </div>
-                    </div>
-                    <div className="col-md-6">
-                      <div className="single_inner_services">
-                        <h4>Influencer Marketing</h4>
-                        <Scrollbars style={{ height: 100 }}>
-                          <p>
-                            In recent times Influencer Marketing is the most
-                            effective marketing tool for businesses. Social
-                            Media influencers have a pool of loyal followers who
-                            trust their reviews. This can be very beneficial for
-                            businesses as they can easily leverage the power of
-                            these influencer marketers to promote their business
-                            offerings. As a social media marketing agency, we
-                            offer the best influencer marketing services for
-                            your business.
+                            Excellis IT puts in efforts to obtain the best
+                            hyperlinks from your GMB to another website. When
+                            other websites can easily link back to your GMB
+                            listing, Google considers your GMB worth ranking. We
+                            can also use the embedded code from the GMB to build
+                            links by pasting it on some of the best websites.
                           </p>
                         </Scrollbars>
                       </div>
@@ -330,7 +294,8 @@ const SocialMediaMarketing = () => {
               >
                 <div className="cta2_content_sec text-left">
                   <h4 className="mb-4">
-                    WE OFFER THE BEST SMM SERVICES TO TAKE YOUR BUSINESS AHEAD
+                    Gets the most out of your campaigns, by taking every detail
+                    into consideration with PPC Management Services.
                   </h4>
                   <Link className=" light-btn" to="/ContactUs">
                     Contact Us
@@ -348,7 +313,7 @@ const SocialMediaMarketing = () => {
             <div class="col-md-12 ">
               <div className="big_title">
                 <h2 data-aos="fade-down" data-aos-duration="1500">
-                  <span>Why Hire </span> SMO Experts from Excellis IT
+                  <span>Why Hire </span> GMB services from us
                 </h2>
               </div>
             </div>
@@ -373,7 +338,7 @@ const SocialMediaMarketing = () => {
                       src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/digital-marketing%2Fexperience.png?alt=media&token=9713b80a-d008-4073-bea3-c2c2a1c04ccb"
                       alt=""
                     />
-                    Experienced
+                    Experience
                   </a>
                 </li>
                 <li class="nav-item">
@@ -390,7 +355,7 @@ const SocialMediaMarketing = () => {
                       src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/digital-marketing%2FAssessableResults.png?alt=media&token=6354087b-41da-481c-ac13-e7fa24fdd80a"
                       alt=""
                     />
-                    Measurable
+                    Good Outcomes
                   </a>
                 </li>
                 <li class="nav-item">
@@ -407,7 +372,7 @@ const SocialMediaMarketing = () => {
                       src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/digital-marketing%2Fidea.png?alt=media&token=944eb2a5-fcc5-46fa-bcd2-cf145bc86bd3"
                       alt=""
                     />
-                    Strategies
+                    Cost-Effective
                   </a>
                 </li>
                 <li class="nav-item">
@@ -424,7 +389,7 @@ const SocialMediaMarketing = () => {
                       src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/digital-marketing%2Freport.png?alt=media&token=98081286-1f75-48af-a528-48cfe6e1bf29"
                       alt=""
                     />
-                    Unique Designs
+                    The Service is guaranteed.
                   </a>
                 </li>
                 <li class="nav-item">
@@ -438,10 +403,10 @@ const SocialMediaMarketing = () => {
                     aria-selected="false"
                   >
                     <img
-                      src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/digital-marketing%2Fsave-money.png?alt=media&token=54fd85ab-1b2d-4776-b87a-f1e81f8617f2"
+                      src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/digital-marketing%2Freport.png?alt=media&token=98081286-1f75-48af-a528-48cfe6e1bf29"
                       alt=""
                     />
-                    Affradable
+                    Availability 24 hours a day, 7 days
                   </a>
                 </li>
               </ul>
@@ -462,12 +427,12 @@ const SocialMediaMarketing = () => {
                     animationInDelay={10}
                     className="wht_tab_inner"
                   >
-                    <h4>Experienced Team </h4>
+                    <h4>Experience</h4>
                     <p>
-                      Being the best SMO company in Kolkata, India; we have a
-                      team of skilled enthusiasts, experts as well as leaders
-                      within the digital industry who strongly believe in
-                      delivering timely results.
+                      Our knowledgeable staff will make sure that your customers
+                      have no trouble finding you online. We guarantee that when
+                      people search for the items and services you're selling;
+                      you'll be on the first page of results.
                     </p>
                   </Animated>
                 </div>
@@ -485,13 +450,11 @@ const SocialMediaMarketing = () => {
                     animationInDelay={10}
                     className="wht_tab_inner"
                   >
-                    <h4>Measurable Results </h4>
+                    <h4>Good Outcomes</h4>
                     <p>
-                      We create campaigns with measurable results. We inform you
-                      about your social media analytics in detail by showing you
-                      which content is being preferred by your audience as well
-                      as which social media platform is generating more traffic
-                      to your website.
+                      We are well known for providing high-quality Google Local
+                      Optimization Services in Kolkata, India as a leading
+                      full-stack development and digital marketing firm.
                     </p>
                   </Animated>
                 </div>
@@ -508,13 +471,15 @@ const SocialMediaMarketing = () => {
                     animationInDelay={10}
                     className="wht_tab_inner"
                   >
-                    <h4>Data-driven Strategies </h4>
+                    <h4>Cost-Effective</h4>
                     <p>
-                      Our SMO and SMM teams create techniques and campaigns that
-                      depend on market information and analytic data. This
-                      guarantees precise strategies and easy execution. We
-                      assist you by reaching out to the perfect individuals
-                      through the ideal platform at the right platform.
+                      We also provide a low-cost local Google My Business
+                      Optimization service in Kolkata, India to help your
+                      business generate more leads and sell more products. The
+                      packages are tailored to the clients' specific needs and
+                      desires. As a result, our company's major goal is to offer
+                      top-notch Google my business optimization services at a
+                      reasonable cost.
                     </p>
                   </Animated>
                 </div>
@@ -531,13 +496,14 @@ const SocialMediaMarketing = () => {
                     animationInDelay={10}
                     className="wht_tab_inner"
                   >
-                    <h4>Unique Designs </h4>
+                    <h4>The Service is guaranteed.</h4>
                     <p>
-                      We not only create effective and engaging content but also
-                      design eye-catching social media posts which would trigger
-                      the interest of your audience. We also help you redirect
-                      your audience to your website by putting a call to action
-                      button at the right place.
+                      Our Google Local Listing Expert in Kolkata, India assures
+                      you to increase your company's visibility and place it on
+                      the first page of Google. As a result, you do not need to
+                      spend time or be concerned about your company's rating
+                      because Excellis IT's team members are always willing to
+                      assist you.
                     </p>
                   </Animated>
                 </div>
@@ -554,10 +520,11 @@ const SocialMediaMarketing = () => {
                     animationInDelay={10}
                     className="wht_tab_inner"
                   >
-                    <h4>Affordable SMO packages </h4>
+                    <h4>Availability 24 hours a day, 7 days</h4>
                     <p>
-                      Excellis IT provides you with the best social media
-                      services in India at a very affordable rate.
+                      Excellis IT, the leading business in Kolkata for Google
+                      Map Business Listing service, is always ready to assist
+                      its clients professionally and effectively.
                     </p>
                   </Animated>
                 </div>
@@ -616,157 +583,128 @@ const SocialMediaMarketing = () => {
               >
                 <SwiperSlide>
                   <div className="single_expertise text-center">
-                    <div className="expertise_icon_single">
-                      <img
-                        src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/digital-marketing%2Fsmm%2Ffacebook-page.png?alt=media&token=a9e8076b-6b59-4483-a850-c3bfadb0520b"
-                        className="img-fluid"
-                        alt=""
-                      />
-                    </div>
-                    <h4>Facebook Page and Profile Management</h4>
+                    <h4>Local Marketing Consultation</h4>
                     <Scrollbars
-                      style={{ height: 150 }}
+                      style={{ height: 100 }}
                       className="expertise_single_cont"
                     >
                       <p>
-                        Facebook is the most used social media platform with a
-                        huge as well as diverse audience- along with a customer
-                        base. Today every business has its own Facebook pages so
-                        that it could strengthen its social media presence.
-                        Excellis IT is a social media optimization company in
-                        Kolkata, India that would help you by managing your
-                        Facebook page and profile efficiently.
+                        Excellis IT is a Google my business optimization company
+                        in Kolkata, India thus, we help you with local marketing
+                        consultation by solving all the problems that you are
+                        facing with your google my business listing.
                       </p>
                     </Scrollbars>
                   </div>
                 </SwiperSlide>
                 <SwiperSlide>
                   <div className="single_expertise text-center">
-                    <div className="expertise_icon_single">
-                      <img
-                        src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/digital-marketing%2Fsmm%2Ftwitter-page.png?alt=media&token=457317b5-9f48-4e23-bb03-918627265ce8"
-                        className="img-fluid"
-                        alt=""
-                      />
-                    </div>
-                    <h4>Twitter Page and profile Management</h4>
+                    <h4>Google My Business Monitoring</h4>
                     <Scrollbars
-                      style={{ height: 150 }}
+                      style={{ height: 100 }}
                       className="expertise_single_cont"
                     >
                       <p>
-                        Recently Twitter has become an influential platform for
-                        businesses as well as business owners to attract an
-                        audience as well as create an influence by actively
-                        posting and with interaction. As a next-gen social media
-                        advertising company in Kolkata, India, Excellis IT
-                        provides effective Twitter Page & Account Management
-                        services that would help your brand create an influence
-                        on your audience.
+                        If your GMB is not ranking then you must check google my
+                        business insight to know what is wrong. We help you
+                        monitor your GMB listing in Kolkata, India, and keep
+                        track and make changes accordingly.
                       </p>
                     </Scrollbars>
                   </div>
                 </SwiperSlide>
                 <SwiperSlide>
                   <div className="single_expertise text-center">
-                    <div className="expertise_icon_single">
-                      <img
-                        src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/digital-marketing%2Fsmm%2Flinkedin-page.png?alt=media&token=90f00ec5-e110-45d1-a426-cb245027fc73"
-                        className="img-fluid"
-                        alt=""
-                      />
-                    </div>
-                    <h4>LinkedIn Page and profile Management</h4>
+                    <h4>Google My Business Optimized Listing</h4>
                     <Scrollbars
-                      style={{ height: 150 }}
+                      style={{ height: 100 }}
                       className="expertise_single_cont"
                     >
                       <p>
-                        LinkedIn, is a platform for enterprises, brands, job
-                        aspirants, employers, and professionals well, it's all
-                        about business. LinkedIn allows businesses to come in
-                        contact with job aspirants and brand influencers.
-                        Excellis IT is among the best SMO company in Kolkata,
-                        India which has the best team of social media marketers
-                        who provides the best LinkedIn Page and profile
-                        Management Services.
+                        To optimize your GMB you need to start with completing
+                        your GMB profile with the correct description and images
+                        so that you can optimize your GMB listing and rank it on
+                        search engines.
                       </p>
                     </Scrollbars>
                   </div>
                 </SwiperSlide>
                 <SwiperSlide>
                   <div className="single_expertise text-center">
-                    <div className="expertise_icon_single">
-                      <img
-                        src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/digital-marketing%2Fsmm%2Fpinterest-marketing.png?alt=media&token=3b392249-d4f9-40c2-8c98-35850f5f93c3"
-                        className="img-fluid"
-                        alt=""
-                      />
-                    </div>
-                    <h4>Pinterest Marketing</h4>
+                    <h4>Yahoo Local and Bing</h4>
                     <Scrollbars
-                      style={{ height: 150 }}
+                      style={{ height: 100 }}
                       className="expertise_single_cont"
                     >
                       <p>
-                        Pinterest has recently gained a huge amount of
-                        popularity as it is an image posting platform, it is a
-                        very beneficial platform for product base businesses as
-                        they can post their offering on this platform to gain
-                        traction. As one of the popular social media marketing
-                        companies in Kolkata, we offer the best Pinterest
-                        Marketing services for your business.
+                        Ranking your GMB only on google is not enough as there
+                        are people who search on yahoo and Bing as well so you
+                        must rank your business on these sites as well.
                       </p>
                     </Scrollbars>
                   </div>
                 </SwiperSlide>
                 <SwiperSlide>
                   <div className="single_expertise text-center">
-                    <div className="expertise_icon_single">
-                      <img
-                        src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/digital-marketing%2Fsmm%2Finstagram-marketing.png?alt=media&token=79b8228d-d7dc-4742-80c1-73f1aa431301"
-                        className="img-fluid"
-                        alt=""
-                      />
-                    </div>
-                    <h4>Instagram Marketing</h4>
+                    <h4>Apple Maps Listing</h4>
                     <Scrollbars
-                      style={{ height: 150 }}
+                      style={{ height: 100 }}
                       className="expertise_single_cont"
                     >
                       <p>
-                        In recent times, Instagram has surpassed Twitter and
-                        Facebook's popularity quotient. Influencers, youngsters,
-                        as well as celebrities are active on Instagram, and
-                        businesses are also diving in to get on to this market.
-                        With the help of Instagram their stories, reels, IGTV
-                        videos, and feed posts, Excellis IT provides an
-                        effective Instagram Marketing campaign to our clients to
-                        boost sales.
+                        With iOS devices gaining popularity it is important to
+                        get your business on Apple maps listing so that if your
+                        audience search on their iOS device then the 1st result
+                        they see is usually from apple listing thus, getting
+                        your business on Apple listing is essential.
                       </p>
                     </Scrollbars>
                   </div>
                 </SwiperSlide>
                 <SwiperSlide>
                   <div className="single_expertise text-center">
-                    <div className="expertise_icon_single">
-                      <img
-                        src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/digital-marketing%2Fsmm%2Fsocial-ads.png?alt=media&token=d68a8980-38ce-4d84-a123-4e0bebd60a01"
-                        className="img-fluid"
-                        alt=""
-                      />
-                    </div>
-                    <h4>Paid Social Ads </h4>
+                    <h4>Content Creation & Posting </h4>
                     <Scrollbars
-                      style={{ height: 150 }}
+                      style={{ height: 100 }}
                       className="expertise_single_cont"
                     >
                       <p>
-                        Paid social media advertising varies from traditional
-                        outbound advertising. We help you to find, target, and
-                        reach your audience with ease. Each ad that we design
-                        facilitates the goals of your business, such as brand
-                        awareness, lead generation, website traffic, and more.
+                        We help you create GMB posts to engage your audience and
+                        redirect them to your website as well as increase your
+                        GMB ranking.
+                      </p>
+                    </Scrollbars>
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <div className="single_expertise text-center">
+                    <h4>Client Reviews Gathering</h4>
+                    <Scrollbars
+                      style={{ height: 100 }}
+                      className="expertise_single_cont"
+                    >
+                      <p>
+                        Being a digital marketing company Excellis IT, helps
+                        their clients in gaining organic reviews by gathering
+                        reviews through paid review collection or review
+                        exchange.
+                      </p>
+                    </Scrollbars>
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <div className="single_expertise text-center">
+                    <h4>GMB Keyword optimization</h4>
+                    <Scrollbars
+                      style={{ height: 100 }}
+                      className="expertise_single_cont"
+                    >
+                      <p>
+                        Using proper keywords for your GMB helps your business
+                        rank higher on google search ranking. We have a team of
+                        experts who uses the best optimization tactics so that
+                        your Google map business listing in Kolkata, India gets
+                        to the top of the search engine.
                       </p>
                     </Scrollbars>
                   </div>
@@ -828,23 +766,6 @@ const SocialMediaMarketing = () => {
                     {" "}
                     <div className="inner_single_industries">
                       <img
-                        src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/industries%2Feducation.jpg?alt=media&token=50c74e90-077f-4bb8-9800-f47d2e939a8e"
-                        alt=""
-                        className="img-fluid"
-                      />
-                      <div className="inner_single_industries_cont">
-                        <h4>Education</h4>
-                        <p>
-                          We help the education sector develop its outreach with
-                          our cutting-edge SMM services.
-                        </p>
-                      </div>
-                    </div>
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    {" "}
-                    <div className="inner_single_industries">
-                      <img
                         src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/industries%2Fhealthcare.jpg?alt=media&token=d826e1e0-a94b-4941-80a8-3422d5bf6dde"
                         alt=""
                         className="img-fluid"
@@ -852,27 +773,10 @@ const SocialMediaMarketing = () => {
                       <div className="inner_single_industries_cont">
                         <h4>Healthcare </h4>
                         <p>
-                          We help the Healthcare sector with strategized SMM to
-                          spread awareness.
-                        </p>
-                      </div>
-                    </div>
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    {" "}
-                    <div className="inner_single_industries">
-                      <img
-                        src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/industries%2Ffood-resturent.jpg?alt=media&token=27c9bfa9-e3fa-4d04-b8ac-3bda56b6926d"
-                        alt=""
-                        className="img-fluid"
-                      />
-                      <div className="inner_single_industries_cont">
-                        <h4>Food & Resrurent</h4>
-                        <p>
-                          Food and restaurant business owners benefit from our
-                          SMM services in Kolkata, India as we can help them to
-                          direct their audience to their website from their
-                          social sites.
+                          There are many healthcare centers in a particular area
+                          but sometimes you do not know their locations thus,
+                          GMB listing helps give you that presence as well as
+                          client base.
                         </p>
                       </div>
                     </div>
@@ -888,26 +792,9 @@ const SocialMediaMarketing = () => {
                       <div className="inner_single_industries_cont">
                         <h4> Manufacture</h4>
                         <p>
-                          Our social media service can help the manufacturing
-                          industry to build trust as well as gain an audience.
-                        </p>
-                      </div>
-                    </div>
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    {" "}
-                    <div className="inner_single_industries">
-                      <img
-                        src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/industries%2Freal-state.jpg?alt=media&token=32d06a45-6318-49b9-936c-4e817aaabf88"
-                        alt=""
-                        className="img-fluid"
-                      />
-                      <div className="inner_single_industries_cont">
-                        <h4>Real State</h4>
-                        <p>
-                          Engaging social media posts gets more traffic to your
-                          website and we can help with that which in turn will
-                          help you build connections in real estate.
+                          Manufacturing sector uses email marketing as a form of
+                          PR tactics to announce their new product launch and
+                          gain the attention of their audience.
                         </p>
                       </div>
                     </div>
@@ -923,9 +810,10 @@ const SocialMediaMarketing = () => {
                       <div className="inner_single_industries_cont">
                         <h4>Tour & Travel</h4>
                         <p>
-                          Appropriate advertising along with attractive and
-                          engaging social media presence ensures the success of
-                          your business in the travel & tourism industry.
+                          GMB listing helps travel agents to gain a presence in
+                          their locality, improve inquiry calls, increase
+                          organic reviews and optimize local listing to rank
+                          your business in number 1.
                         </p>
                       </div>
                     </div>
@@ -939,11 +827,30 @@ const SocialMediaMarketing = () => {
                         className="img-fluid"
                       />
                       <div className="inner_single_industries_cont">
-                        <h4>Entertainment </h4>
+                        <h4>Ecommerce And Retail </h4>
                         <p>
-                          The entertainment world is all about visual appeal
-                          thus we provide you with the best social media designs
-                          to keep you ahead of the curve.
+                          Retail gains a lot from email marketing as sending out
+                          email blasts about upcoming products to your target
+                          audience gets you to notice as well as website
+                          traffic.
+                        </p>
+                      </div>
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    {" "}
+                    <div className="inner_single_industries">
+                      <img
+                        src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/industries%2Fmedia-entertainment.jpg?alt=media&token=19ea18ed-c6e1-4027-b40b-77f1af783358"
+                        alt=""
+                        className="img-fluid"
+                      />
+                      <div className="inner_single_industries_cont">
+                        <h4>Finance </h4>
+                        <p>
+                          Pushing targeted emails on time gives the financial
+                          sector the necessary push that it needs to gain the
+                          attention of its target audience.
                         </p>
                       </div>
                     </div>
@@ -1012,7 +919,7 @@ const SocialMediaMarketing = () => {
                         />
                       </div>
                       <div class="prosses_text">
-                        <h3>Audit Your Current Social Presence </h3>
+                        <h3>Tell Us About Your Location </h3>
                         <p>
                           <Scrollbars
                             style={{ height: 100 }}
@@ -1020,26 +927,10 @@ const SocialMediaMarketing = () => {
                             autoHideTimeout={1000}
                             autoHideDuration={200}
                           >
-                            Before strategizing where you are headed, you should
-                            pause and take look at where your page is at the
-                            moment. Here are a few things you should consider
-                            before auditing:
-                            <ul>
-                              <li>• The networks you are currently on</li>
-                              <li>
-                                • If your networks are optimized (photo and
-                                cover images, bio, URL, etc.)
-                              </li>
-                              <li>
-                                • The networks that are bringing you more
-                                traffic
-                              </li>
-                              <li>
-                                {" "}
-                                • Whether your profile stands out to your
-                                competitors' profile
-                              </li>
-                            </ul>
+                            Using our simple Google My Business Optimization
+                            Service form, we'll collect all of the information
+                            we need about your company's location to thoroughly
+                            optimize your profile.
                           </Scrollbars>
                         </p>
                       </div>
@@ -1063,7 +954,7 @@ const SocialMediaMarketing = () => {
                         />
                       </div>
                       <div class="prosses_text">
-                        <h3>Identify Your Ideal Customer </h3>
+                        <h3>Auditing Your Listing</h3>
                         <p>
                           <Scrollbars
                             style={{ height: 100 }}
@@ -1071,11 +962,11 @@ const SocialMediaMarketing = () => {
                             autoHideTimeout={1000}
                             autoHideDuration={200}
                           >
-                            It is very ideal to be specific about your target
-                            audience. As even the best marketing strategies fail
-                            if applied to the wrong target audience. Thus,
-                            knowing your audience is very crucial and then you
-                            can make your social media strategy accordingly.
+                            Being google my business service provider in
+                            Kolkata, India we help you to audit your listing.
+                            After the audit, we would provide a detailed
+                            checklist that would show exactly where your GMB
+                            listing stands.
                           </Scrollbars>
                         </p>
                       </div>
@@ -1099,7 +990,7 @@ const SocialMediaMarketing = () => {
                         />
                       </div>
                       <div class="prosses_text">
-                        <h3>Create A Social Media Mission Statement</h3>
+                        <h3>Creating Action Plan</h3>
                         <p>
                           <Scrollbars
                             style={{ height: 100 }}
@@ -1107,12 +998,12 @@ const SocialMediaMarketing = () => {
                             autoHideTimeout={1000}
                             autoHideDuration={200}
                           >
-                            A social media mission statement would drive your
-                            future actions. Thus, make sure that you know what
-                            your mission statement should be as that would
-                            reflect your brand identity. While choosing a
-                            statement make sure you keep in mind your target
-                            audience.
+                            Following the audit, your account manager will
+                            produce a personalized action plan outlining how we
+                            will improve the optimization of your listing. With
+                            this, we move on to the next phase, improving your
+                            Google My Business listing, once you've reviewed and
+                            approved.
                           </Scrollbars>
                         </p>
                       </div>
@@ -1133,7 +1024,9 @@ const SocialMediaMarketing = () => {
                         />
                       </div>
                       <div class="prosses_text">
-                        <h3>Your Key Success Metrics</h3>
+                        <h3>
+                          Enhance and Optimize Google My Business Listing{" "}
+                        </h3>
                         <p>
                           <Scrollbars
                             style={{ height: 100 }}
@@ -1141,17 +1034,12 @@ const SocialMediaMarketing = () => {
                             autoHideTimeout={1000}
                             autoHideDuration={200}
                           >
-                            You should always keep a check if your social media
-                            strategy is working or not as there is no use in
-                            spending money if the plan does not improve your
-                            bottom line.
-                            <p>Here are a few metrics we consider measuring:</p>
-                            <li>• Conversion Rate</li>
-                            <li>• Time Spent on Website</li>
-                            <li>• Reach</li>
-                            <li>• Brand Mentions</li>
-                            <li>• Sentiment</li>
-                            <li>• Total Shares</li>
+                            Your account manager will work with you to perform
+                            the necessary modifications and updates to
+                            completely optimize your Google My Business listing
+                            once we've completed the action plan. When they're
+                            finished, they'll update the checklist for your
+                            listing to reflect the work they've done.
                           </Scrollbars>
                         </p>
                       </div>
@@ -1172,7 +1060,9 @@ const SocialMediaMarketing = () => {
                         />
                       </div>
                       <div class="prosses_text">
-                        <h3>Create and Curate Engaging Content</h3>
+                        <h3>
+                          Higher Rankings, More Traffic, Calls, and Revenue
+                        </h3>
                         <p>
                           <Scrollbars
                             style={{ height: 100 }}
@@ -1180,79 +1070,16 @@ const SocialMediaMarketing = () => {
                             autoHideTimeout={1000}
                             autoHideDuration={200}
                           >
-                            Our in-house content writers then start creating
-                            content that would be posted on various social media
-                            platforms. We create unique and engaging content
-                            that would improve brand visibility.
+                            After you've improved your Google My Business page,
+                            you should start seeing more results within 30 to 90
+                            days after completing the project, you will have
+                            enough time to prepare for that additional job
+                            that'll be coming your way.
                           </Scrollbars>
                         </p>
                       </div>
                       <div class="procc_img">
                         <img src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/digital-marketing%2Flink-building-bg.jpg?alt=media&token=f2e9a022-4da3-49f1-a6c4-a380dce3e953" />
-                      </div>
-                    </div>
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <div class="width_100">
-                      <div class="swiper_heding">
-                        <div className="step__count">6</div>
-                      </div>
-                      <div className="process__icon">
-                        <img
-                          src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/digital-marketing%2Fcontent-creation.png?alt=media&token=af22f339-cf2c-45b1-90b6-a03921c7fc42"
-                          alt="Requirement Gathering icon"
-                        />
-                      </div>
-                      <div class="prosses_text">
-                        <h3>Social Media Management Tool</h3>
-                        <p>
-                          <Scrollbars
-                            style={{ height: 100 }}
-                            autoHide
-                            autoHideTimeout={1000}
-                            autoHideDuration={200}
-                          >
-                            Invest in social media management tools and leverage
-                            the benefit of the tools to boost your productivity.
-                            Having a social media management tool also allows
-                            you to scale your efforts on social media with ease.
-                          </Scrollbars>
-                        </p>
-                      </div>
-                      <div class="procc_img">
-                        <img src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/digital-marketing%2Fcontent-creation-bg.jpg?alt=media&token=72f9a8e1-d7fc-4649-897c-4c46c1c82d13" />
-                      </div>
-                    </div>
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <div class="width_100">
-                      <div class="swiper_heding">
-                        <div className="step__count">7</div>
-                      </div>
-                      <div className="process__icon">
-                        <img
-                          src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/digital-marketing%2Fregular-reporting.png?alt=media&token=0b91355e-a32a-496a-80e8-7a23b694b885"
-                          alt="Requirement Gathering icon"
-                        />
-                      </div>
-                      <div class="prosses_text">
-                        <h3>Track, Analyse, Optimize</h3>
-                        <p>
-                          <Scrollbars
-                            style={{ height: 100 }}
-                            autoHide
-                            autoHideTimeout={1000}
-                            autoHideDuration={200}
-                          >
-                            Social media success runs on trial and error. So
-                            this is one of the most crucial steps in the process
-                            as you need to track and analyze your results daily
-                            and make changes accordingly.
-                          </Scrollbars>
-                        </p>
-                      </div>
-                      <div class="procc_img">
-                        <img src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/digital-marketing%2Fregular-reporting-bg.jpg?alt=media&token=cdad0edd-c40b-44f6-a29e-6b6223a403c1" />
                       </div>
                     </div>
                   </SwiperSlide>
@@ -1308,10 +1135,6 @@ const SocialMediaMarketing = () => {
                     <FaBullhorn />
                     <span class="forActive"></span>
                   </span>
-                  <span class="itemDot itemDot6" data-tab="6">
-                    <FaUserLock />
-                    <span class="forActive"></span>
-                  </span>
                 </div>
                 <div className="benefit_title_sec">
                   <h4 data-aos="zoom-in" data-aos-duration="2500">
@@ -1328,83 +1151,67 @@ const SocialMediaMarketing = () => {
               <div class="contentCircle">
                 <div class="CirItem title-box active CirItem1">
                   <h2 class="title">
-                    <span>Increase brand visibility </span>
+                    <span>Improve local rankings</span>
                   </h2>
                   <p>
-                    Social Media Marketing helps in improving your brand
-                    visibility by using different social media platforms like
-                    Facebook, Twitter, Instagram, and others. Social media
-                    platforms give your brand access to the digital space so
-                    that you can build your brand's visibility to gain an
-                    audience.
+                    Did you realize that your Google My Business engagement
+                    signals, such as reviews and Google's Q&A, have a direct
+                    impact on your online reputation, local rankings, and sales
+                    volume? With the appropriate method, your local rankings
+                    will rise!
                   </p>
                   <i class="fa fa-clock-o"></i>
                 </div>
 
                 <div class="CirItem title-box CirItem2">
                   <h2 class="title">
-                    <span>More followers </span>
+                    <span>Protect your brand reputation.</span>
                   </h2>
                   <p>
-                    When your followers start to grow online there is an
-                    increase in word of mouth and referrals. Our social media
-                    marketing services in Kolkata, India would help you grow
-                    your followers as well as ensure that your followers would
-                    match the demographics, interests, and behaviors of your
-                    target audience.
+                    Don't squander your time responding to reviews and dealing
+                    with comments. Allow us to handle it for you. Through the
+                    implementation of a customized, on-brand reply plan,
+                    Excellis IT will manage your brand reputation, deepen
+                    customer connections, and reduce buyer's remorse.
                   </p>
                   <i class="fa fa-comments"></i>
                 </div>
 
                 <div class="CirItem title-box CirItem3">
                   <h2 class="title">
-                    <span>Gaining More Customers </span>
+                    <span>Engage your audience</span>
                   </h2>
                   <p>
-                    SMM and SMO services in Kolkata, India help more people to
-                    know about your brand and what it offers. This in turn helps
-                    you to gain more customers and drive more sales. Sharable
-                    content is also useful as they increase post engagement and
-                    opens your brand to a larger customer pool.
+                    Do you want to reach out to more people? We'll promote your
+                    company by sharing special offers, blogs, products, and
+                    images. Consistent posts that engage with customers can help
+                    you get the most out of your Google My Business listing.
                   </p>
                   <i class="fa fa-user"></i>
                 </div>
                 <div class="CirItem title-box CirItem4">
                   <h2 class="title">
-                    <span>Increase conversion and sales </span>
+                    <span>Optimization by experts</span>
                   </h2>
                   <p>
-                    Increasing your website traffic influences leads and sales.
-                    Thus, we pair this service with our affordable social media
-                    services in Kolkata, India, which focuses on developing
-                    social media advertising campaigns to drive more traffic to
-                    your website.
+                    Because your listing isn't optimized right now, you're
+                    missing out on leads. By utilizing GMB features and properly
+                    personalizing your listing, we will provide your
+                    organization with a competitive advantage. Partner with
+                    Excellis IT to outperform local competitors, spend less time
+                    on marketing, and attract paying customers.
                   </p>
                   <i class="fa fa-user"></i>
                 </div>
                 <div class="CirItem title-box CirItem5">
                   <h2 class="title">
-                    <span>Tell your brand story </span>
+                    <span>Services and products</span>
                   </h2>
                   <p>
-                    Social Media platforms can be used as a storytelling
-                    platform for your brand where you can tell your brand story
-                    in a way that your target audience can relate to your brand
-                    and feel a sense of attachment. This increases website
-                    traffic and posts engagement.
-                  </p>
-                  <i class="fa fa-user"></i>
-                </div>
-                <div class="CirItem title-box CirItem6">
-                  <h2 class="title">
-                    <span>Build Relationships </span>
-                  </h2>
-                  <p>
-                    We help you build a strong and long relationship with your
-                    customer through engaging with your target audience. We also
-                    help you increase your engagement through interesting
-                    content on your social media posts which will, in turn, help
-                    you build a strong connection with your audience.
+                    Put your Google My Business account to good use! Increase
+                    conversions by highlighting products and services in your
+                    listing. Increase your customer base and profits while
+                    staying ahead of the competition.
                   </p>
                   <i class="fa fa-user"></i>
                 </div>
@@ -1423,10 +1230,7 @@ const SocialMediaMarketing = () => {
                 style={{ backgroundImage: `url(${cta_bg2})` }}
               >
                 <div className="cta2_content_sec text-left">
-                  <h4 className="mb-4">
-                    Want to expand your online reach with social media
-                    marketing?
-                  </h4>
+                  <h4 className="mb-4">Want to get a high ROI?</h4>
                   <Link className=" light-btn" to="/ContactUs">
                     Contact Us
                   </Link>
@@ -1441,138 +1245,7 @@ const SocialMediaMarketing = () => {
         <TestimonialSection />
       </section>
 
-      <section className="inner_page_client_section">
-        <div className="container">
-          <div className="row">
-            <div className="col-md-12">
-              <div className="big_title">
-                <h2 data-aos="fade-down" data-aos-duration="1500">
-                  <span>Our CLients</span>
-                </h2>
-              </div>
-            </div>
-          </div>
-          <div className="row">
-            <div className="col-md-12">
-              <Swiper
-                modules={[Navigation]}
-                slidesPerView={5}
-                spaceBetween={15}
-                navigation
-                autoplay={{ delay: 3000 }}
-                className="myclient"
-                breakpoints={{
-                  700: {
-                    spaceBetween: 15,
-                    slidesPerView: 5,
-                  },
-                  500: {
-                    spaceBetween: 100,
-                    slidesPerView: 2,
-                  },
-                  411: {
-                    spaceBetween: 100,
-                    slidesPerView: 2,
-                  },
-                  300: {
-                    spaceBetween: 0,
-                    slidesPerView: 1,
-                  },
-                }}
-              >
-                <SwiperSlide>
-                  <div className="single_inner_client">
-                    <img
-                      src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/clients%2Fclient1.jpg?alt=media&token=b9bc7aa2-29b6-48eb-94ef-842493f92fed"
-                      alt=""
-                    />
-                  </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <div className="single_inner_client">
-                    <img
-                      src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/clients%2Fclient2.jpg?alt=media&token=c9b685ed-6fee-45c4-90c0-c7f4dcbf0725"
-                      alt=""
-                    />
-                  </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <div className="single_inner_client">
-                    <img
-                      src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/clients%2Fclient4.jpg?alt=media&token=f43626ae-3a1e-4cfd-8624-6f11f925b9e3"
-                      alt=""
-                    />
-                  </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <div className="single_inner_client">
-                    <img
-                      src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/clients%2Fclient5.jpg?alt=media&token=42cf4061-500a-4c1f-95ae-0985589898f2"
-                      alt=""
-                    />
-                  </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <div className="single_inner_client">
-                    <img
-                      src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/clients%2Fclient6.jpg?alt=media&token=108ba7f0-a3e4-42d9-89b4-e8360fe50cfb"
-                      alt=""
-                    />
-                  </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <div className="single_inner_client">
-                    <img
-                      src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/clients%2Fclient7.jpg?alt=media&token=20e52744-0b35-4426-9973-c4afe7426967"
-                      alt=""
-                    />
-                  </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <div className="single_inner_client">
-                    <img
-                      src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/clients%2Fclient8.jpg?alt=media&token=38c47c8b-8c77-4feb-a1a9-d16585527e52"
-                      alt=""
-                    />
-                  </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <div className="single_inner_client">
-                    <img
-                      src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/clients%2Fclient9.jpg?alt=media&token=8476acd8-eeb2-40d3-bcd4-d78aea646fdb"
-                      alt=""
-                    />
-                  </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <div className="single_inner_client">
-                    <img
-                      src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/clients%2Fclient10.jpg?alt=media&token=66186813-b268-49a9-9a24-1920851bee68"
-                      alt=""
-                    />
-                  </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <div className="single_inner_client">
-                    <img
-                      src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/clients%2Fclient11.jpg?alt=media&token=fba28597-59d6-4911-9bd7-f8f2a6cb0892"
-                      alt=""
-                    />
-                  </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <div className="single_inner_client">
-                    <img
-                      src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/clients%2Fclient12.jpg?alt=media&token=e06ae285-084b-4fea-86ef-cd4f8891e5e5"
-                      alt=""
-                    />
-                  </div>
-                </SwiperSlide>
-              </Swiper>
-            </div>
-          </div>
-        </div>
-      </section>
+      <ClientSecInner />
 
       <section className="cta2_section pb-0 pt-0">
         <div className="container">
@@ -1584,8 +1257,7 @@ const SocialMediaMarketing = () => {
               >
                 <div className="cta2_content_sec text-center w-100">
                   <h4 className="mb-4">
-                    Know about the complete spectrum of SMM services provided by
-                    us?
+                    Grow your business with PPC campaign management
                   </h4>
                   <Link className=" light-btn" to="/ContactUs">
                     Contact Us
@@ -1626,8 +1298,8 @@ const SocialMediaMarketing = () => {
                           aria-expanded="true"
                           aria-controls="faq1"
                         >
-                          <span>1.</span> Why your brand needs social media
-                          marketing?
+                          <span>1.</span> How long does it take to list ones’
+                          business on GMB?
                         </button>
                       </h5>
                     </div>
@@ -1639,12 +1311,8 @@ const SocialMediaMarketing = () => {
                       data-parent="#faqaccordian"
                     >
                       <div class="card-body">
-                        Answer: Social media has become an integral part of our
-                        lives. So, today it is very important for the business
-                        to also be active on social media so that they can boost
-                        their social presence as well as engage and interact
-                        with their target audience to convert them into
-                        customers.
+                        To list a business on GMB takes 15-30 days but we try
+                        our best to get it done in the shortest time possible.
                       </div>
                     </div>
                   </div>
@@ -1659,7 +1327,8 @@ const SocialMediaMarketing = () => {
                           aria-expanded="false"
                           aria-controls="faq2"
                         >
-                          <span>2.</span> How helpful is social media?
+                          <span>2.</span> Do you need a website for the GMB
+                          listing?
                         </button>
                       </h5>
                     </div>
@@ -1670,9 +1339,8 @@ const SocialMediaMarketing = () => {
                       data-parent="#faqaccordian"
                     >
                       <div class="card-body">
-                        Answer:Social media helps businesses to find customers
-                        from their target audience pool as well as drives
-                        traffic to the business's website.
+                        No, you do not need a website for GMB. Your listing
+                        itself will act as a mini-website for your business.
                       </div>
                     </div>
                   </div>
@@ -1687,8 +1355,7 @@ const SocialMediaMarketing = () => {
                           aria-expanded="false"
                           aria-controls="faq3"
                         >
-                          <span>3.</span> What should you see while selecting
-                          social media marketing services?
+                          <span>3.</span> What is GMBO?
                         </button>
                       </h5>
                     </div>
@@ -1699,18 +1366,10 @@ const SocialMediaMarketing = () => {
                       data-parent="#faqaccordian"
                     >
                       <div class="card-body">
-                        Answer: The questions you should consider while
-                        selecting the best social media marketing services:
-                        <ul>
-                          <li>
-                            • Does the company gel with the vibe of your brand?
-                          </li>
-                          <li>• Is the company ethical?</li>
-                          <li>
-                            • Is the company good at its job and provides the
-                            best services?
-                          </li>
-                        </ul>
+                        Google My Business Optimization (GMBO) is a way to
+                        optimize your Google My Business account so that your
+                        business’s visibility, as well as your organic search
+                        results, improve.
                       </div>
                     </div>
                   </div>
@@ -1725,8 +1384,8 @@ const SocialMediaMarketing = () => {
                           aria-expanded="false"
                           aria-controls="faq4"
                         >
-                          <span>4.</span> How is social media useful for
-                          start-ups?
+                          <span>4.</span> What is the optimal size for GMB
+                          photos?
                         </button>
                       </h5>
                     </div>
@@ -1737,8 +1396,9 @@ const SocialMediaMarketing = () => {
                       data-parent="#faqaccordian"
                     >
                       <div class="card-body">
-                        A start-up needs an audience and customers thus, social
-                        media is the perfect platform to provide you both.
+                        There is no optimal size for GMB photos as it depends on
+                        factors that include your industry as well as the target
+                        audience.
                       </div>
                     </div>
                   </div>
@@ -1753,7 +1413,8 @@ const SocialMediaMarketing = () => {
                           aria-expanded="false"
                           aria-controls="faq5"
                         >
-                          <span>5.</span>What are SMM services?
+                          <span>5.</span>How often one should post on their GMB
+                          account?
                         </button>
                       </h5>
                     </div>
@@ -1764,10 +1425,9 @@ const SocialMediaMarketing = () => {
                       data-parent="#faqaccordian"
                     >
                       <div class="card-body">
-                        Answer: Social media management services use social
-                        media platforms to build brand awareness generate leads
-                        and sales. Social media management services provide
-                        brands with digital marketing solutions.
+                        Several things come into account while deciding this
+                        which include the size of your business, surrounding
+                        competition, and the type of posts.
                       </div>
                     </div>
                   </div>
@@ -1782,8 +1442,8 @@ const SocialMediaMarketing = () => {
                           aria-expanded="false"
                           aria-controls="faq6"
                         >
-                          <span>6.</span>How much one should spend on social
-                          media marketing?
+                          <span>5.</span>What’s the best way to rank any generic
+                          search term?
                         </button>
                       </h5>
                     </div>
@@ -1794,12 +1454,9 @@ const SocialMediaMarketing = () => {
                       data-parent="#faqaccordian"
                     >
                       <div class="card-body">
-                        Answer: Spending on social media marketing is different
-                        for different businesses. Some have a huge budget so
-                        they spend more while some have limited budget and
-                        spending within that is also possible. But social media
-                        platforms do have limitations and you should always
-                        check that along with your budget then make the plan.
+                        It is not always easy to rank generic terms but if your
+                        industry falls under a specific sector then you can
+                        target related keywords to increase visibility.
                       </div>
                     </div>
                   </div>
@@ -1815,4 +1472,4 @@ const SocialMediaMarketing = () => {
   );
 };
 
-export default SocialMediaMarketing;
+export default GoogleMyBusiness;

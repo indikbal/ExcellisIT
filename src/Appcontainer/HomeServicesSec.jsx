@@ -828,11 +828,7 @@ const HomeServicesSec = () => {
             </div>
             <div class="tab-content">
               <div class="tab-pane active" id="tabs-1" role="tabpanel">
-                <Swiper
-                  modules={[EffectCards]}
-                  effect="cards"
-                  grabCursor={true}
-                >
+                <Swiper modules={[]} grabCursor={true} dot>
                   <SwiperSlide>
                     <div class="swiper-slide-item">
                       <div class="res_single_services">
