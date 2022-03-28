@@ -88,46 +88,51 @@ const MainMenu = () => {
                       Back office process outsourcing
                     </span>
                   </Link>
-                  <a
-                    href="https://www.excellisit.com/call-center-outsourcing-service"
-                    class="sidemenu__item"
+                  <Link
+                    activeClassName="navbar__link--active"
+                    className=" sidemenu__item"
+                    to="/call-center-outsourcing-service"
                   >
                     <span class="sidemenu__item-inner">
-                      Call center outsourcing{" "}
+                      Call center outsourcing
                     </span>
-                  </a>
-                  <a
-                    href="https://www.excellisit.com/ecommerce-outsourcing-services"
-                    class="sidemenu__item"
+                  </Link>
+                  <Link
+                    activeClassName="navbar__link--active"
+                    className=" sidemenu__item"
+                    to="/ecommerce-outsourcing-services"
                   >
                     <span class="sidemenu__item-inner">
                       Ecommerce outsourcing
                     </span>
-                  </a>
-                  <a
-                    href="https://www.excellisit.com/performance-compliance-management"
-                    class="sidemenu__item"
+                  </Link>
+                  <Link
+                    activeClassName="navbar__link--active"
+                    className=" sidemenu__item"
+                    to="/performance-compliance-management"
                   >
                     <span class="sidemenu__item-inner">
                       Performance &amp; Compliance management
                     </span>
-                  </a>
-                  <a
-                    href="https://www.excellisit.com/professional-services"
-                    class="sidemenu__item"
+                  </Link>
+                  <Link
+                    activeClassName="navbar__link--active"
+                    className=" sidemenu__item"
+                    to="/professional-services"
                   >
                     <span class="sidemenu__item-inner">
                       Profesional Services
                     </span>
-                  </a>
-                  <a
+                  </Link>
+
+                  {/* <a
                     href="https://www.excellisit.com/innovation-at-excellis"
                     class="sidemenu__item"
                   >
                     <span class="sidemenu__item-inner">
                       Innovation at EXCELLIS
                     </span>
-                  </a>
+                  </a> */}
                 </div>
                 <p class="label label--topleft label--vert-mirror">
                   Bpo Services
@@ -142,7 +147,7 @@ const MainMenu = () => {
             isVisible={true}
             animationInDelay={100}
           >
-            <div class="menu__item menu__item--1">
+            <div class="menu__item menu__item--1 d-none d-sm-block">
               <div class="menu__item-inner">
                 <div class="mainmenu">
                   <a class="mainmenu__item">It Services</a>
@@ -153,7 +158,7 @@ const MainMenu = () => {
                 <p class="label label--topleft label--vert-mirror">
                   Services We Offered
                 </p>
-                <div class="menu_address_sec d-flex align-items-center">
+                <div class="menu_address_sec d-none d-sm-flex align-items-center">
                   <div class="menu_mail_sec">
                     <h4>Quick Contact</h4>
                     <li>
@@ -181,7 +186,7 @@ const MainMenu = () => {
                     </ul>
                   </div>
                 </div>
-                <div class="menu_certifi_img">
+                <div class="menu_certifi_img d-none d-sm-block">
                   <img
                     src="https://www.excellisit.com/img/iso-nascom-msme.jpg"
                     class="img-fluid"

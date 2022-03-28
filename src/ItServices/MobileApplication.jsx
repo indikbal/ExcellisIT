@@ -109,9 +109,25 @@ const MobileApplication = () => {
   return (
     <div>
       <Helmet>
-        <meta charSet="utf-8" />
-        <title>Mobile Application</title>
-        <meta name="description" content="mobile page" />
+        <title>
+          Mobile App Developers, App Development Company in Kolkata, India:
+          Excellis IT
+        </title>
+        <meta
+          name="title"
+          content="Mobile App Developers, App Development Company in Kolkata, India: Excellis IT"
+        />
+        <meta
+          name="description"
+          content="Excellis IT is an award-winning mobile app development company and agency in Kolkata, India. Hire mobile app developers to build android, iOS, and cross-platform apps for mobile devices. "
+        />
+        <meta name="robots" content="index, follow" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="language" content="English" />
+        <link
+          rel="canonical"
+          href="https://www.excellisit.com/mobile-app-development/"
+        />
       </Helmet>
       <Navbar />
       <InnerBanner title={title} description={description} />

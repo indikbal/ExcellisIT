@@ -932,7 +932,7 @@
 .inner_single_industries_cont h4 {
   margin-bottom: 25px;
   font-family: var(--heading-font);
-  font-size: 30px;
+  font-size: 18px;
 }
 .inner_single_industries p {
   font-size: 15px;
@@ -1280,6 +1280,11 @@
   background-color: var(--theme-dark2);
   margin-bottom: 30px;
 }
+.single_inner_services ul li {
+  color: var(--text-white1);
+  padding-left: 10px;
+  list-style: disc !important;
+}
 .single_inner_services h4 {
   color: var(--theme-yellow1);
   font-weight: 500;
@@ -1543,6 +1548,20 @@
 
 /********************************Responsive**************************/
 @media (max-width: 768px) {
+  .swiper-button-next:after,
+  .swiper-button-prev:after {
+    font-size: 20px;
+  }
+  .swiper-button-prev,
+  .swiper-rtl .swiper-button-next {
+    left: 40%;
+    top: 90%;
+  }
+  .swiper-button-next,
+  .swiper-rtl .swiper-button-prev {
+    right: 40%;
+    top: 90%;
+  }
   .banner_img .about_text .innerbanner_element {
     right: calc(50vw - 100px);
     width: 100vw;
@@ -1572,13 +1591,13 @@
     font-size: 40px;
   }
   .round {
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
     left: 0;
   }
   .holderCircle {
-    width: 320px;
-    height: 320px;
+    width: 270px;
+    height: 270px;
     margin: 0px auto;
   }
   .holderCircle::after {
@@ -1599,11 +1618,12 @@
     font-size: 50px;
   }
   .dotCircle .itemDot {
-    height: 50px;
-    width: 50px;
-    font-size: 25px;
+    height: 40px;
+    width: 40px;
+    font-size: 20px;
     border-radius: 10px;
   }
+
   .contentCircle {
     height: 350px;
   }
@@ -1618,5 +1638,174 @@
   }
   .cta2_inner .cta2_content_sec h4 {
     font-size: 20px;
+  }
+}
+@media screen and (max-width: 559px) {
+  .top_header_section {
+    display: none;
+  }
+  .main_nav_sec {
+    top: 0;
+  }
+  .sidemenu__item-inner {
+    font-size: 12px;
+  }
+  .sidemenu {
+    padding: 36px 0;
+  }
+  .CirItem.active {
+    width: 90%;
+  }
+  .contentCircle {
+    height: 450px !important;
+    text-align: center !important;
+  }
+  .benefit_title_sec h4 {
+    font-size: 30px;
+  }
+  .title-box span {
+    font-size: 30px;
+  }
+  .cta2_section {
+    padding: 20px 0;
+  }
+  .testim,
+  .inner_page_client_section,
+  .common_faq_section,
+  .process_sec {
+    padding: 60px 0;
+  }
+  .big_title h2 span {
+    font-size: 45px;
+  }
+  .technology_new_tab ul li {
+    margin-right: 2.5%;
+    width: 45%;
+  }
+  .technology_new_tab ul li a {
+    padding: 15px 11px 11px;
+    font-size: 15px;
+    margin-bottom: 30px;
+  }
+  .technology_new_tab ul li a svg {
+    font-size: 25px;
+  }
+  .technology_new_tab ul {
+    margin-bottom: 20px !important;
+    margin-top: 40px;
+    padding-bottom: 10px;
+    padding-top: 40px;
+    padding-left: 20px;
+  }
+  .technology_new_tab .tab-content {
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .s-TechnologiesLogos__Image {
+    padding: 20px;
+    height: 80px;
+    width: 80px;
+  }
+  .s-TechnologiesLogos__Inner {
+    margin-bottom: 10px;
+  }
+  .faq_title h4 {
+    font-size: 30px;
+  }
+  .faq_inner {
+    padding: 10px;
+  }
+  .faq_inner .card .card-header h5 button {
+    font-size: 18px;
+  }
+  .faq_inner .card .card-body {
+    font-size: 15px;
+  }
+  .why_pill_tab {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: inherit;
+    overflow-y: scroll;
+  }
+  .why_pill_tab li a img {
+    width: 30px;
+  }
+  .why_pill_tab li a {
+    font-size: 14px;
+  }
+  .big_title {
+    margin-bottom: 20px;
+  }
+  .big_title h2 {
+    font-size: 20px;
+  }
+  .single_inner_services {
+    padding: 25px;
+  }
+  .BannerServices__Subheader {
+    font-size: 30px !important;
+  }
+  .main_heading h2,
+  .main_heading .h2,
+  .main_heading .s-ScopeBoxes__Box--IconRight h3 {
+    font-size: 30px !important;
+  }
+  .title-box p {
+    font-size: 15px;
+    line-height: 28px;
+  }
+  .inner_single_industries_cont {
+    height: 100%;
+    bottom: 0;
+    padding-top: 20%;
+  }
+  .banner_img .about_text .innerbanner_element {
+    min-height: 240px;
+  }
+  .locla_text p {
+    padding-left: 20px;
+  }
+  .four:before {
+    right: 0;
+    width: 100vh;
+  }
+  .item_a {
+    padding: 15px;
+  }
+  .abt_we_icon {
+    width: 40px;
+  }
+  .meet-our-team .title-c .left-block h2 {
+    font-size: 30px;
+  }
+  .overflow_hidden {
+    margin-left: 0;
+    height: 350px;
+  }
+  .app_details {
+    padding: 10px;
+  }
+  .sticky_portfolio_menu ul li a {
+    font-size: 15px;
+  }
+  .wide_globe_sec,
+  .solutions-2-sing__sx span.rightno,
+  .solutions-2-sing__sx span.leftno {
+    display: none;
+  }
+  .solutions-2-sing__sx {
+    margin-bottom: 30px;
+  }
+  .partner_single_why {
+    text-align: center;
+  }
+  .inner_page_industries {
+    padding: 40px 0;
+  }
+  .process_sec .main_heding_top h3 {
+    font-size: 40px;
   }
 }

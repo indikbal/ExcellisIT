@@ -1,97 +1,176 @@
 import React from "react";
+import "../ItServices/itservices.css";
 import Navbar from "../Navbar";
 import Footer from "../Footer";
 import InnerBanner from "../InnerBanner";
-import ThreeScene from "../Appcontainer/ThreeScene";
 import { Helmet } from "react-helmet";
-import { NavLink } from "react-router-dom";
+import { Scrollbars } from "react-custom-scrollbars-2";
+import { Swiper, SwiperSlide } from "swiper/react";
+import SwiperCore, { Navigation, Pagination, Autoplay } from "swiper";
+import OurBlogs from "../Appcontainer/OurBlog";
+import TestimonialSection from "../TestimonialSection";
+import { Animated } from "react-animated-css";
+import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
+import $ from "jquery";
+import {
+  RiNumber1,
+  RiNumber2,
+  RiNumber3,
+  RiNumber4,
+  RiNumber5,
+  RiNumber6,
+} from "react-icons/ri";
+import TechnologyWeUse from "../TechnologyWeUse";
+import ClientSecInner from "../ClientSecInner";
+const cta_bg =
+  "https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/digital-marketing%2Fcta_img.jpg?alt=media&token=80dff7e9-4f79-4258-ae00-734d63a84110";
+
+const cta_bg2 =
+  "https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/cta_img2.jpg?alt=media&token=1fd153c0-9a1f-484a-9c12-e881ddd9d198";
+const cta_bg3 =
+  "https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/cta_img3.jpg?alt=media&token=ad3e770b-a126-4e64-b1c2-ab61338fcc0e";
+SwiperCore.use([Navigation, Pagination, Autoplay]);
 
 const EcommerceOutsourcing = () => {
-  const title = "QA and Testing";
+  const title = "eCommerce outsourcing";
   const description =
-    "“The people at Codal are what makes them really stand out. They were responsive, attentive, flexible and they sought to understand my business so they could plan ahead—beyond the development project.”";
-  const bootstrap =
-    "https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/technology%2FBootstrap.png?alt=media&token=c7d7a420-6618-480c-acb4-639820d666f9";
-  const java =
-    "https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/technology%2FJava.png?alt=media&token=57226ce3-176b-491c-a540-1101d44c47cf";
-  const ndk =
-    "https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/technology%2FNDK.png?alt=media&token=f4b6173a-e443-49cc-9762-9b6742b0eb76";
-  const xd =
-    "https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/technology%2Fadobe-xd.png?alt=media&token=7a378aeb-be0a-4e56-807b-b380b8053710";
-  const angular =
-    "https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/technology%2Fangular.png?alt=media&token=415b1133-696c-4dbd-b53c-1c60138932dd";
-  const css3 =
-    "https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/technology%2Fcss3.png?alt=media&token=1f3c28c2-2139-435c-8aa2-7f7db7c6f55c";
-  const figma =
-    "https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/technology%2Ffigma.png?alt=media&token=278ab062-d724-4fbe-acd3-b57cb8f854f5";
-  const flutter =
-    "https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/technology%2Fflutter.png?alt=media&token=c1b36d1a-c7d9-4775-b2a8-237a45ea4ad7";
-  const mongodb =
-    "https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/technology%2Fmongodb.png?alt=media&token=a6ee9efb-1a07-47c2-9d8a-5fd8ecf72734";
-  const oracle =
-    "https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/technology%2Foracel12c.png?alt=media&token=eb08f609-a2c3-4c63-a5bb-96fda1b25f91";
-  const react =
-    "https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/technology%2Freact.png?alt=media&token=f55b9fea-0645-402f-a18c-2cef8b6e4e68";
-  const swift =
-    "https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/technology%2Fswift.png?alt=media&token=8bb91bf5-8689-4284-b618-02ff8eaf3b07";
-  const html =
-    "https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/technology%2Fhtml-5.png?alt=media&token=41450ff8-8db6-41b9-a3af-1246352334e6";
+    "Your eCommerce company ideas will be brought to life by us. Our talented programmers have collaborated with businesses across the world. ";
+
+  var maxData = 3;
+  let i = 2;
+
+  $(document).ready(function () {
+    var radius = 200;
+    var fields = $(".itemDot");
+    var container = $(".dotCircle");
+    var width = container.width();
+    radius = width / 2.5;
+
+    var height = container.height();
+    var angle = 0,
+      step = (2 * Math.PI) / fields.length;
+    fields.each(function () {
+      var x = Math.round(
+        width / 2 + radius * Math.cos(angle) - $(this).width() / 2
+      );
+      var y = Math.round(
+        height / 2 + radius * Math.sin(angle) - $(this).height() / 2
+      );
+      if (window.console) {
+        console.log($(this).text(), x, y);
+      }
+
+      $(this).css({
+        left: x + "px",
+        top: y + "px",
+      });
+      angle += step;
+    });
+
+    $(".itemDot").click(function () {
+      var dataTab = $(this).data("tab");
+      $(".itemDot").removeClass("active");
+      $(this).addClass("active");
+      $(".CirItem").removeClass("active");
+      $(".CirItem" + dataTab).addClass("active");
+      i = dataTab;
+
+      $(".dotCircle").css({
+        transform: "rotate(" + (360 - (i - 1) * 36) + "deg)",
+        transition: "2s",
+      });
+      $(".itemDot").css({
+        transform: "rotate(" + (i - 1) * 36 + "deg)",
+        transition: "1s",
+      });
+    });
+
+    setInterval(function () {
+      var dataTab = $(".itemDot.active").data("tab");
+      if (dataTab > maxData || i > maxData) {
+        dataTab = 1;
+        i = 1;
+      }
+      $(".itemDot").removeClass("active");
+      $('[data-tab="' + i + '"]').addClass("active");
+      $(".CirItem").removeClass("active");
+      $(".CirItem" + i).addClass("active");
+      i++;
+
+      $(".dotCircle").css({
+        transform: "rotate(" + (360 - (i - 2) * 36) + "deg)",
+        transition: "2s",
+      });
+      $(".itemDot").css({
+        transform: "rotate(" + (i - 2) * 36 + "deg)",
+        transition: "1s",
+      });
+    }, 10000000);
+  });
 
   return (
     <div>
       <Helmet>
-        <meta charSet="utf-8" />
-        <title>Web Developemnt</title>
-        <meta name="description" content="aboutpage" />
-        <meta name="keywords" content="about page" />
+        <title>
+          Best Customized E-commerce Outsourcing Services in Kolkata, India -
+          Excellis IT
+        </title>
+        <meta
+          name="description"
+          content="Excellis IT provides full and customized E-commerce outsourcing services for top e-commerce companies in India, UK, USA, UAE. We are specialized in customer service, order processing, product management, etc. "
+        />
+        <meta name="robots" content="index, follow" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="language" content="English" />
+        <link
+          rel="canonical"
+          href="https://www.excellisit.com/ecommerce-outsourcing-services/"
+        />
       </Helmet>
       <Navbar />
       <InnerBanner title={title} description={description} />
       <section class="inner_page_first">
         <div class="s-BannerServices bg_dark">
           <div class="l-ContentColumn container">
-            <div class="row">
-              <div class="col-md-5">
-                <div class="s-BannerServices__Content">
-                  <h6 class="s-BannerServices__Subheader">
-                    User-friendly websites
-                  </h6>
-                  <h1 class="BannerServices__Subheader h1--WithLine">
-                    Mobile-first and user-friendly websites
+            <div class="row align-items-center">
+              <div class="col-md-6">
+                <div
+                  class="company_intro"
+                  data-aos="fade-down"
+                  data-aos-duration="1500"
+                >
+                  <h1 class="BannerServices__Subheader">
+                    Best eCommerce outsourcing services – Excellis IT
                   </h1>
                   <p>
-                    Thanks to Data Science you can effectively process data,{" "}
-                    <strong>
-                      base new services and business decisions on knowledge
-                    </strong>{" "}
-                    and improve your day-to-day operations.
+                    Our e-commerce outsourcing services in Kolkata, India can
+                    help you run a more efficient e-commerce firm. Our services
+                    may help you smoothly manage your day-to-day operations,
+                    allowing you to focus on your long-term company strategy.
+                    Excellis IT has successfully offered e-commerce support
+                    services to a variety of online businesses all around the
+                    world throughout the years.
                   </p>
                   <p>
-                    You have the data and we will give you powerful solutions so
-                    you can use it.{" "}
-                    <strong>
-                      Let’s work together and make the most of it.
-                    </strong>
+                    We manage product data for all e-commerce enterprises, from
+                    low quantities to huge volumes. All our services are
+                    tailored to your needs. Our scalable and adaptable services
+                    assist you in meeting changing market needs, such as
+                    increasing product quantities.
                   </p>
                 </div>
-                <div class="s-BannerServices__Image__Description">
-                  Photo: Our team members <strong>at work</strong>
-                </div>
               </div>
-              <div class="col-md-7">
-                <div class="s-BannerServices__Image">
-                  <div class="s-BannerServices__Image__Content">
-                    <div
-                      class="reveal-holder custom_aos"
-                      data-aos="reveal-item"
-                    >
-                      <div
-                        class="reveal-block right custom_aos"
-                        data-aos="reveal-right"
-                      ></div>
-                      <img src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/mobile-application.jpg?alt=media&token=077572ec-50e3-4ee8-8476-461a6796c7ea" />
-                    </div>
-                  </div>
+              <div class="col-md-6">
+                <div class="reveal-holder custom_aos" data-aos="reveal-item">
+                  <div
+                    class="reveal-block right custom_aos"
+                    data-aos="reveal-right"
+                  ></div>
+                  <img
+                    src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/digital-marketing%2Fsmm%2Fsocial-media-marketing.jpg?alt=media&token=30d10037-9b6e-4698-b4c1-256bd5042e00"
+                    alt="Content Marketing"
+                    className="img-fluid"
+                  />
                 </div>
               </div>
             </div>
@@ -106,101 +185,413 @@ const EcommerceOutsourcing = () => {
           </div>
         </div>
       </section>
-      <section class="fact_no">
-        <div class="container-fluid l-ContentColumn">
-          <div class="row">
-            <div className="col-md-1"></div>
-            <div class="col-md-3 main_heading dark_text pl-5">
-              <h6>Facts &amp; Numbers</h6>
-              <div class="reveal-holder custom_aos" data-aos="reveal-item">
-                <div
-                  class="reveal-block right custom_aos"
-                  data-aos="reveal-right"
-                ></div>
-                <h2 class="h2--WithLine">
-                  Data <strong>transformed into knowledge</strong>
+
+      <section className="all_services_sec pb-0">
+        <div className="container-fluid">
+          <div className="row align-items-center">
+            <div className="col-md-5">
+              <div className="all_services_title">
+                <h2>Services We Offer</h2>
+              </div>
+            </div>
+            <div className="col-md-7">
+              <div className="all_services_item_sec">
+                <Scrollbars style={{ height: "70vh" }} className="" autoHide>
+                  <div className="row">
+                    <div className="col-md-6">
+                      <div className="single_inner_services">
+                        <h4>Telemarketing </h4>
+                        <Scrollbars style={{ height: 100 }}>
+                          <p>
+                            We can help you advertise your brand directly to
+                            your target audience over the phone or via various
+                            other methods because we are an experienced
+                            eCommerce contact center.
+                          </p>
+                        </Scrollbars>
+                      </div>
+                    </div>
+                    <div className="col-md-6">
+                      <div className="single_inner_services">
+                        <h4>Cross-selling and up-selling</h4>
+                        <Scrollbars style={{ height: 100 }}>
+                          <p>
+                            Cross-selling and up-selling are two strategies that
+                            our eCommerce call center employees may use to help
+                            you increase your income.
+                          </p>
+                        </Scrollbars>
+                      </div>
+                    </div>
+                    <div className="col-md-6">
+                      <div className="single_inner_services">
+                        <h4>Promotions</h4>
+                        <Scrollbars style={{ height: 100 }}>
+                          <p>
+                            Based on our three-decade experience as a top
+                            eCommerce call center outsourcing provider in
+                            Kolkata, India, we can assist all your promotion and
+                            marketing initiatives in many languages.
+                          </p>
+                        </Scrollbars>
+                      </div>
+                    </div>
+                    <div className="col-md-6">
+                      <div className="single_inner_services">
+                        <h4>Refunds and Return</h4>
+                        <Scrollbars style={{ height: 100 }}>
+                          <p>
+                            We can handle any return and refund requests from
+                            your clients because of the volume at which we
+                            operate. To provide a great client experience, we
+                            can swiftly handle all requests.
+                          </p>
+                        </Scrollbars>
+                      </div>
+                    </div>
+                    <div className="col-md-6">
+                      <div className="single_inner_services">
+                        <h4>Obtaining Leads</h4>
+                        <Scrollbars style={{ height: 100 }}>
+                          <p>
+                            Our multi-channel lead generation techniques may
+                            assist you in generating conversion-ready leads and
+                            increasing sales and income.
+                          </p>
+                        </Scrollbars>
+                      </div>
+                    </div>
+                    <div className="col-md-6">
+                      <div className="single_inner_services">
+                        <h4>Support for Pre-Sale</h4>
+                        <Scrollbars style={{ height: 100 }}>
+                          <p>
+                            Our eCommerce call center specialists are adept at
+                            offering high-quality pre-sales assistance via
+                            different communication channels.
+                          </p>
+                        </Scrollbars>
+                      </div>
+                    </div>
+                    <div className="col-md-6">
+                      <div className="single_inner_services">
+                        <h4>Taking Care of Issues</h4>
+                        <Scrollbars style={{ height: 100 }}>
+                          <p>
+                            We can manage all your client complaints and give
+                            correct answers to improve brand loyalty and
+                            reputation as a famous call center for eCommerce
+                            business with over 30 years of expertise.
+                          </p>
+                        </Scrollbars>
+                      </div>
+                    </div>
+                    <div className="col-md-6">
+                      <div className="single_inner_services">
+                        <h4>Service to Clients</h4>
+                        <Scrollbars style={{ height: 100 }}>
+                          <p>
+                            With our multichannel and multilingual capabilities,
+                            our inbound eCommerce customer service can assist
+                            you in streamlining your customer care offering.
+                          </p>
+                        </Scrollbars>
+                      </div>
+                    </div>
+                  </div>
+                </Scrollbars>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="cta2_section cta_block_bg">
+        <div className="container">
+          <div className="row">
+            <div className="col-md-12">
+              <div
+                className="cta2_inner d-block d-sm-flex align-items-center"
+                style={{ backgroundImage: `url(${cta_bg})` }}
+              >
+                <div className="cta2_content_sec text-left">
+                  <h4 className="mb-4">
+                    Gets the most out of your campaigns, by taking every detail
+                    into consideration with PPC Management Services.
+                  </h4>
+                  <Link className=" light-btn" to="/ContactUs">
+                    Contact Us
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="fact_no why_hire_sec">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-md-12 ">
+              <div className="big_title">
+                <h2 data-aos="fade-down" data-aos-duration="1500">
+                  <span>Why Hire </span> Ecommerce Outsourcing from Us
                 </h2>
               </div>
-              <p>
-                We can design processes that
-                <strong> visualise data processing,</strong> design and create a
-                solution from scratch based on{" "}
-                <strong>existing mathematical models</strong> and using
-                components to connect them with each other.
-              </p>
-              <p>
-                We will also work together with your domain experts and empower
-                them with technology to support their analysis procedures and
-                decision-making processes in your organisation.
-              </p>
             </div>
-            <div class="col-md-8 s-InfoBoxesGrid__GridContainer">
-              <div class="s-InfoBoxesGrid__Grid s-InfoBoxesGrid__Grid--Medium">
-                <div class="o-InfoBox">
-                  <div class="o-InfoBox__Content">
-                    <h2 class="o-InfoBox__Header">800</h2>
-                    <div class="o-InfoBox__Text">
-                      <p>people on board</p>
-                    </div>
-                  </div>
+
+            <div className="col-md-12">
+              <ul
+                class="nav nav-pills mb-3 why_pill_tab"
+                id="pills-tab"
+                role="tablist"
+              >
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    id="pills-why1-tab"
+                    data-toggle="pill"
+                    href="#pills-why1"
+                    role="tab"
+                    aria-controls="pills-why1"
+                    aria-selected="true"
+                  >
+                    <img
+                      src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/digital-marketing%2Fexperience.png?alt=media&token=9713b80a-d008-4073-bea3-c2c2a1c04ccb"
+                      alt=""
+                    />
+                    Latest Technology and Tools
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    id="pills-why2-tab"
+                    data-toggle="pill"
+                    href="#pills-why2"
+                    role="tab"
+                    aria-controls="pills-why2"
+                    aria-selected="false"
+                  >
+                    <img
+                      src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/digital-marketing%2FAssessableResults.png?alt=media&token=6354087b-41da-481c-ac13-e7fa24fdd80a"
+                      alt=""
+                    />
+                    Dedicated Team
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    id="pills-why3-tab"
+                    data-toggle="pill"
+                    href="#pills-why3"
+                    role="tab"
+                    aria-controls="pills-why3"
+                    aria-selected="false"
+                  >
+                    <img
+                      src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/digital-marketing%2Fidea.png?alt=media&token=944eb2a5-fcc5-46fa-bcd2-cf145bc86bd3"
+                      alt=""
+                    />
+                    Responsive Implementation Client Service
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    id="pills-why4-tab"
+                    data-toggle="pill"
+                    href="#pills-why4"
+                    role="tab"
+                    aria-controls="pills-why4"
+                    aria-selected="false"
+                  >
+                    <img
+                      src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/digital-marketing%2Freport.png?alt=media&token=98081286-1f75-48af-a528-48cfe6e1bf29"
+                      alt=""
+                    />
+                    Client Service
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    id="pills-why5-tab"
+                    data-toggle="pill"
+                    href="#pills-why5"
+                    role="tab"
+                    aria-controls="pills-why5"
+                    aria-selected="false"
+                  >
+                    <img
+                      src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/digital-marketing%2Freport.png?alt=media&token=98081286-1f75-48af-a528-48cfe6e1bf29"
+                      alt=""
+                    />
+                    High Scalability
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    id="pills-why6-tab"
+                    data-toggle="pill"
+                    href="#pills-why6"
+                    role="tab"
+                    aria-controls="pills-why6"
+                    aria-selected="false"
+                  >
+                    <img
+                      src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/digital-marketing%2Freport.png?alt=media&token=98081286-1f75-48af-a528-48cfe6e1bf29"
+                      alt=""
+                    />
+                    Improved Customer Satisfaction
+                  </a>
+                </li>
+              </ul>
+              <div
+                class="tab-content why_pill_tab_content"
+                id="pills-tabContent"
+              >
+                <div
+                  class="tab-pane fade show active"
+                  id="pills-why1"
+                  role="tabpanel"
+                  aria-labelledby="pills-why1-tab"
+                >
+                  <Animated
+                    animationIn="fadeInUp"
+                    animationOut="fadeOut"
+                    isVisible={true}
+                    animationInDelay={10}
+                    className="wht_tab_inner"
+                  >
+                    <h4>Latest Technology and Tools</h4>
+                    <p>
+                      We employ the most up-to-date equipment, the most powerful
+                      and automated software, and innovative technology at our
+                      call centers. These new tools and technology do not
+                      overwork our customer service representatives.
+                    </p>
+                  </Animated>
                 </div>
-                <div class="o-InfoBox bg">
-                  <div class="o-InfoBox__Content"></div>
+
+                <div
+                  class="tab-pane fade"
+                  id="pills-why2"
+                  role="tabpanel"
+                  aria-labelledby="pills-why2-tab"
+                >
+                  <Animated
+                    animationIn="fadeInUp"
+                    animationOut="fadeOut"
+                    isVisible={true}
+                    animationInDelay={10}
+                    className="wht_tab_inner"
+                  >
+                    <h4>Dedicated Team</h4>
+                    <p>
+                      Our customer service professionals and executives have
+                      worked in the e-commerce and contact center industries for
+                      many years. We have staff located worldwide to assist us
+                      in meeting the needs of our clients across all time zones.
+                    </p>
+                  </Animated>
                 </div>
-                <div class="o-InfoBox bg">
-                  <div class="o-InfoBox__Content"></div>
+                <div
+                  class="tab-pane fade"
+                  id="pills-why3"
+                  role="tabpanel"
+                  aria-labelledby="pills-why3-tab"
+                >
+                  <Animated
+                    animationIn="fadeInUp"
+                    animationOut="fadeOut"
+                    isVisible={true}
+                    animationInDelay={10}
+                    className="wht_tab_inner"
+                  >
+                    <h4>Responsive Implementation</h4>
+                    <p>
+                      We may work with you to improve your customer service or
+                      give you round-the-clock assistance, especially during the
+                      holidays. We can assist you with establishing an
+                      e-commerce customer care contact center in the most
+                      effective manner possible, with the least amount of delay
+                      and loss of revenue.
+                    </p>
+                  </Animated>
                 </div>
-                <div class="o-InfoBox">
-                  <div class="o-InfoBox__Content">
-                    <h2 class="o-InfoBox__Header">2-5 times</h2>
-                    <div class="o-InfoBox__Text">
-                      <p>
-                        the cost – the estimated ROI in the first year on most
-                        standard machine learning projects
-                      </p>
-                    </div>
-                  </div>
+                <div
+                  class="tab-pane fade"
+                  id="pills-why4"
+                  role="tabpanel"
+                  aria-labelledby="pills-why4-tab"
+                >
+                  <Animated
+                    animationIn="fadeInUp"
+                    animationOut="fadeOut"
+                    isVisible={true}
+                    animationInDelay={10}
+                    className="wht_tab_inner"
+                  >
+                    <h4>Client Service</h4>
+                    <p>
+                      We cover all time zones and deliver outstanding customer
+                      care as one of the leading e-commerce call center service
+                      providers. From technical assistance to data input and
+                      end-to-end e-commerce, our customer service team is ready
+                      24x7 days a week to meet all your client's demands. We
+                      offer you an exceptional consumer experience whether your
+                      online business is open 24 hours a day, on holidays, or in
+                      numerous time zones.
+                    </p>
+                  </Animated>
                 </div>
-                <div class="o-InfoBox">
-                  <div class="o-InfoBox__Content">
-                    <h2 class="o-InfoBox__Header">14 years</h2>
-                    <div class="o-InfoBox__Text">
-                      <p>of Microsoft Partnership</p>
-                    </div>
-                  </div>
+                <div
+                  class="tab-pane fade"
+                  id="pills-why5"
+                  role="tabpanel"
+                  aria-labelledby="pills-why5-tab"
+                >
+                  <Animated
+                    animationIn="fadeInUp"
+                    animationOut="fadeOut"
+                    isVisible={true}
+                    animationInDelay={10}
+                    className="wht_tab_inner"
+                  >
+                    <h4>High Scalability</h4>
+                    <p>
+                      Our eCommerce call center can handle many calls at the
+                      same time. We are always willing to scale up or down to
+                      fit our clients' demands. We also can manage huge call
+                      volumes.
+                    </p>
+                  </Animated>
                 </div>
-                <div class="o-InfoBox">
-                  <div class="o-InfoBox__Content">
-                    <h2 class="o-InfoBox__Header">40%</h2>
-                    <div class="o-InfoBox__Text">
-                      <p>team members with over 5 years of experience</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="o-InfoBox">
-                  <div class="o-InfoBox__Content">
-                    <h2 class="o-InfoBox__Header">81%</h2>
-                    <div class="o-InfoBox__Text">
-                      <p>
-                        of respondents report their organisation is being
-                        impacted by AI technologies
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="o-InfoBox">
-                  <div class="o-InfoBox__Icon">
-                    <div></div>
-                  </div>
-                  <div class="o-InfoBox__Content">
-                    <h2 class="o-InfoBox__Header">175 ZB</h2>
-                    <div class="o-InfoBox__Text">
-                      <p>
-                        the Global Datasphere will grow from 33 Zettabytes (ZB)
-                        in 2018 to 175 ZB by 2025
-                      </p>
-                    </div>
-                  </div>
+                <div
+                  class="tab-pane fade"
+                  id="pills-why6"
+                  role="tabpanel"
+                  aria-labelledby="pills-why6-tab"
+                >
+                  <Animated
+                    animationIn="fadeInUp"
+                    animationOut="fadeOut"
+                    isVisible={true}
+                    animationInDelay={10}
+                    className="wht_tab_inner"
+                  >
+                    <h4>Improved Customer Satisfaction</h4>
+                    <p>
+                      We can assure client satisfaction with our eCommerce call
+                      center services and take the required steps to maintain
+                      upgrading your offerings. We give each client the finest
+                      service possible and swiftly respond to all their
+                      problems, earning their confidence.
+                    </p>
+                  </Animated>
                 </div>
               </div>
             </div>
@@ -208,396 +599,841 @@ const EcommerceOutsourcing = () => {
         </div>
         <div class="u-Scanlines"></div>
       </section>
-      <section class="s-TextBlock">
-        <div class="container">
-          <div class="row pa_100 t-Dark">
-            <div class="s-TextBlock__BackgroundIcon"></div>
-            <div class="columns s-TextBlock__Intro">
-              <div class="main_heading white_text">
-                <h6>Benefits</h6>
-                <div class="reveal-holder custom_aos" data-aos="reveal-item">
-                  <div
-                    class="reveal-block right custom_aos"
-                    data-aos="reveal-right"
-                  ></div>
-                  <h2 class="h2--WithLine">
-                    What will you <strong>get</strong>?
-                  </h2>
-                </div>
-              </div>
-            </div>
-            <div class="s-TextBlock__Content">
-              <div class="row">
-                <div class="col-md-6 o-Article">
-                  <ul>
-                    <li>
-                      <strong>Data transformed into knowledge</strong> that
-                      provides information in real-time and allows for making
-                      better decisions, meeting your timelines
-                    </li>
-                    <li>
-                      Design and implementation of data platforms together with{" "}
-                      <strong>
-                        advanced data processing, analysis and visualization
-                      </strong>
-                    </li>
-                    <li>
-                      Advice on what can be done using the data you provided,
-                      leading you towards the{" "}
-                      <strong>appropriate solution</strong>
-                    </li>
-                    <li>
-                      Comprehensive analytical models that{" "}
-                      <strong>facilitate decision making,</strong> understanding
-                      trends and finding unseen patterns
-                    </li>
-                  </ul>
-                </div>
-                <div class="col-md-6 o-Article">
-                  <ul>
-                    <li>
-                      Comprehensive IoT platforms – from collecting and
-                      organising the data from various devices, through
-                      processes engaging{" "}
-                      <strong>Artificial Intelligence algorithms</strong>, to
-                      adding customer and business value
-                    </li>
-                    <li>
-                      Continuous monitoring of the effectiveness of your
-                      activities as well as{" "}
-                      <strong>predictive maintenance</strong> and anomaly
-                      detection solutions thanks to Machine Learning models
-                    </li>
-                    <li>
-                      <strong>
-                        Segmentation, categorisation, recommendation
-                      </strong>{" "}
-                      and natural language processing problems solved by means
-                      of Artificial Intelligence application
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="s-CsCTA t-LightText">
-        <div class="container">
-          <div class="s-CsCTA__Text text-center">
-            <h2 class="u-Center h2--WideTitle">
-              Transform your data into valuable business insights
-            </h2>
-            <div class="u-Center white_text">
-              <p>Start your data transformation now.</p>
-            </div>
-            <NavLink to="/contactUs" className="co-Button">
-              <span>Contact us</span>
-              <i class="ph-arrow-right"></i>
-            </NavLink>
-          </div>
-        </div>
-      </section>
-      <section class="s-ImageText s-ImageText--Reversed">
-        <div class="container">
-          <div class="row l-ContentColumn">
-            <div class="s-ImageText__ImageContainer col-md-7 order-1 order-sm-2">
-              <div class="reveal-holder custom_aos" data-aos="reveal-item">
-                <div
-                  class="reveal-block right custom_aos"
-                  data-aos="reveal-right"
-                ></div>
-                <img
-                  src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/data-science_what-will-you-get_1.png?alt=media&token=25411235-6c12-406c-9429-d6f0cf61cb6d"
-                  alt=""
-                  class="s-ImageText__Image"
-                />
-              </div>
-            </div>
-            <div class="s-ImageText__Text main_heading dark_text col-md-5 order-2 order-sm-1">
-              <h6>Data Science</h6>
-              <div class="reveal-holder custom_aos" data-aos="reveal-item">
-                <div
-                  class="reveal-block right custom_aos"
-                  data-aos="reveal-right"
-                ></div>
-                <h2 class="h2--WithLine">
-                  We believe that <strong>proper data management</strong> means:
-                </h2>
-              </div>
-              <ul>
-                <li>Making smart business decisions</li>
-                <li>Solution optimisation</li>
-                <li>Transformation of data into knowledge</li>
-                <li>Process Automation</li>
-                <li>Complex data analysis (predictive, nonlinear)</li>
-                <li>High-quality data visualisation</li>
-                <li>Secure data maintenance regardless of its source</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="s-IconsRoundDark t-Dark ">
-        <div class="container">
-          <div class="row l-ContentColumn">
-            <div class="col-md-4 main_heading white_text">
-              <h6>The process</h6>
-              <div class="reveal-holder custom_aos" data-aos="reveal-item">
-                <div
-                  class="reveal-block right custom_aos"
-                  data-aos="reveal-right"
-                ></div>
-                <h2 class="h2--WithLine">
-                  Steps in <strong>data processing</strong>
-                </h2>
-              </div>
-              <p>
-                We are looking for the right place to store your data and the
-                best ways to use it, tailored to your needs and to the problem
-                at hand. We also understand the{" "}
-                <strong>importance of scalability</strong> and will assure that
-                the application scales well, based on the specific set of data
-                and specific problem.
-              </p>
-            </div>
-            <div class="col-md-8 xsmall-24 large-18 xlarge-17 s-IconsRoundDark__Content s-IconsRoundDark__Content--WithText">
-              <p class="s-IconsRoundDark__TopText">
-                Start with the process orchestration in order to execute the
-                following steps:
-              </p>
-              <ul class="s-IconsRoundDark__Tabs">
-                <li class="s-IconsRoundDark__TabContainer s-IconsRoundDark__TabContainer--Five">
-                  <div class="s-IconsRoundDark__TabInner">
-                    <div class="s-IconsRoundDark__Circle">
-                      <i class="ph-article"></i>
-                    </div>
-                    <div class="s-IconsRoundDark__ConnectIcon">
-                      <i class="ph-arrow-right o-Icon--16"></i>
-                    </div>
-                  </div>
-                  <div class="s-IconsRoundDark__Title">Extract</div>
-                </li>
-                <li class="s-IconsRoundDark__TabContainer s-IconsRoundDark__TabContainer--Five">
-                  <div class="s-IconsRoundDark__TabInner">
-                    <div class="s-IconsRoundDark__Circle ">
-                      <i class="ph-scissors"></i>
-                    </div>
-                    <div class="s-IconsRoundDark__ConnectIcon">
-                      <i class="ph-arrow-right o-Icon--16"></i>
-                    </div>
-                  </div>
-                  <div class="s-IconsRoundDark__Title">Clean</div>
-                </li>
-                <li class="s-IconsRoundDark__TabContainer s-IconsRoundDark__TabContainer--Five">
-                  <div class="s-IconsRoundDark__TabInner">
-                    <div class="s-IconsRoundDark__Circle ">
-                      <i class="ph-hard-drives"></i>
-                    </div>
-                    <div class="s-IconsRoundDark__ConnectIcon">
-                      <i class="ph-arrow-right o-Icon--16"></i>
-                    </div>
-                  </div>
-                  <div class="s-IconsRoundDark__Title">Ingest</div>
-                </li>
-                <li class="s-IconsRoundDark__TabContainer s-IconsRoundDark__TabContainer--Five">
-                  <div class="s-IconsRoundDark__TabInner">
-                    <div class="s-IconsRoundDark__Circle ">
-                      <i class="ph-git-fork"></i>
-                    </div>
-                    <div class="s-IconsRoundDark__ConnectIcon">
-                      <i class="ph-arrow-right o-Icon--16"></i>
-                    </div>
-                  </div>
-                  <div class="s-IconsRoundDark__Title">
-                    Process (ML, Data Mining)
-                  </div>
-                </li>
-                <li class="s-IconsRoundDark__TabContainer s-IconsRoundDark__TabContainer--Five">
-                  <div class="s-IconsRoundDark__TabInner">
-                    <div class="s-IconsRoundDark__Circle ">
-                      <i class="ph-desktop"></i>
-                    </div>
-                  </div>
-                  <div class="s-IconsRoundDark__Title">Visualise</div>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="s-ImageText s-ImageText--Reversed">
-        <div class="container">
-          <div class="row l-ContentColumn">
-            <div class="s-ImageText__ImageContainer col-md-8 order-1 order-sm-2">
-              <div class="reveal-holder custom_aos" data-aos="reveal-item">
-                <div
-                  class="reveal-block right custom_aos"
-                  data-aos="reveal-right"
-                ></div>
-                <img
-                  src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/data-science_what-will-you-get_1.png?alt=media&token=25411235-6c12-406c-9429-d6f0cf61cb6d"
-                  alt=""
-                  class="s-ImageText__Image"
-                />
-              </div>
-            </div>
-            <div class="s-ImageText__Text main_heading dark_text col-md-4 order-2 order-sm-1">
-              <h6>Artificial Intelligence & Machine Learning</h6>
-              <div class="reveal-holder custom_aos" data-aos="reveal-item">
-                <div
-                  class="reveal-block right custom_aos"
-                  data-aos="reveal-right"
-                ></div>
-                <h2 class="h2--WithLine">
-                  Transform <strong>your ways of working</strong>
-                </h2>
-              </div>
-              <ul>
-                <li>Making smart business decisions</li>
-                <li>Solution optimisation</li>
-                <li>Transformation of data into knowledge</li>
-                <li>Process Automation</li>
-                <li>Complex data analysis (predictive, nonlinear)</li>
-                <li>High-quality data visualisation</li>
-                <li>Secure data maintenance regardless of its source</li>
-              </ul>
-              <p>
-                Benefit from over 20 years of our experience in{" "}
-                <strong>creating robust software</strong> with a dedicated team,
-                specialised in delivering solutions based on high-quality data.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="sec section_technology">
-        <div class="s-TechnologiesLogos s-TechnologiesLogos--WithScanlines ">
-          <div class="container">
-            <div class="main_heading dark_text">
-              <h6 class="s-TechnologiesLogos__Subtitle">
-                Technologies &amp; Tools
-              </h6>
 
-              <h2 class="h2 h2--WithLine">
-                Our solutions are based <br />
-                <strong>on the following technologies</strong>
-              </h2>
-            </div>
-            <div class="s-TechnologiesLogos__GridWrapper">
-              <div class="row">
-                <div class="col-md-2 col-4 col">
-                  <div class="s-TechnologiesLogos__Inner" data-aos="fade-up">
-                    <div class="s-TechnologiesLogos__Image">
-                      <img data-lazyloaded="1" src={react} alt="react logo" />
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-2 col-4 col">
-                  <div class="s-TechnologiesLogos__Inner" data-aos="fade-down">
-                    <div class="s-TechnologiesLogos__Image">
-                      <img
-                        data-lazyloaded="1"
-                        src={angular}
-                        alt="angular logo"
-                      />
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-2 col-4 col">
-                  <div class="s-TechnologiesLogos__Inner" data-aos="fade-up">
-                    <div class="s-TechnologiesLogos__Image">
-                      <img
-                        data-lazyloaded="1"
-                        src={mongodb}
-                        alt=" mongodb logo"
-                      />
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-2 col-4 col">
-                  <div class="s-TechnologiesLogos__Inner" data-aos="fade-down">
-                    <div class="s-TechnologiesLogos__Image">
-                      <img
-                        data-lazyloaded="1"
-                        src={bootstrap}
-                        alt=" bootstrap loog"
-                      />
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-2 col-4 col">
-                  <div class="s-TechnologiesLogos__Inner" data-aos="fade-up">
-                    <div class="s-TechnologiesLogos__Image">
-                      <img
-                        data-lazyloaded="1"
-                        src={flutter}
-                        alt=" flutter logo"
-                      />
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-2 col-4 col">
-                  <div class="s-TechnologiesLogos__Inner" data-aos="fade-down">
-                    <div class="s-TechnologiesLogos__Image">
-                      <img data-lazyloaded="1" src={xd} alt="xd logo" />
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-md-2 col-4 col">
-                  <div class="s-TechnologiesLogos__Inner" data-aos="fade-up">
-                    <div class="s-TechnologiesLogos__Image">
-                      <img
-                        data-lazyloaded="1"
-                        src={oracle}
-                        alt=" oracle logo"
-                      />
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-2 col-4 col">
-                  <div class="s-TechnologiesLogos__Inner" data-aos="fade-down">
-                    <div class="s-TechnologiesLogos__Image">
-                      <img data-lazyloaded="1" src={html} alt=" html logo" />
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-2 col-4 col">
-                  <div class="s-TechnologiesLogos__Inner" data-aos="fade-up">
-                    <div class="s-TechnologiesLogos__Image">
-                      <img data-lazyloaded="1" src={java} alt="java logo" />
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-2 col-4 col">
-                  <div class="s-TechnologiesLogos__Inner" data-aos="fade-down">
-                    <div class="s-TechnologiesLogos__Image">
-                      <img data-lazyloaded="1" src={swift} alt="swift logo" />
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-2 col-4 col">
-                  <div class="s-TechnologiesLogos__Inner" data-aos="fade-down">
-                    <div class="s-TechnologiesLogos__Image">
-                      <img data-lazyloaded="1" src={css3} alt="css3 logo" />
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-2 col-4 col">
-                  <div class="s-TechnologiesLogos__Inner" data-aos="fade-up">
-                    <div class="s-TechnologiesLogos__Image">
-                      <img data-lazyloaded="1" src={figma} alt="figma logo" />
-                    </div>
-                  </div>
-                </div>
+      <section className="expertise_section pl-170">
+        <div className="container-fluid">
+          <div className="row mb-3">
+            <div className="col-md-12">
+              <div class="main_heading white_text">
+                <h6 data-aos="fade-down" data-aos-duration="1000">
+                  Expertise
+                </h6>
+                <h2
+                  class="h2--WithLine"
+                  data-aos="fade-down"
+                  data-aos-duration="1000"
+                >
+                  Our Expertise
+                </h2>
               </div>
             </div>
-            <div class="u-Scanlines"></div>
+          </div>
+          <div className="row">
+            <div className="col-md-12">
+              <Swiper
+                modules={[Navigation]}
+                slidesPerView={4}
+                spaceBetween={30}
+                navigation
+                autoplay={{ delay: 3000 }}
+                className=""
+                breakpoints={{
+                  700: {
+                    spaceBetween: 30,
+                    slidesPerView: 4,
+                  },
+                  500: {
+                    spaceBetween: 100,
+                    slidesPerView: 2,
+                  },
+                  411: {
+                    spaceBetween: 100,
+                    slidesPerView: 2,
+                  },
+                  300: {
+                    spaceBetween: 0,
+                    slidesPerView: 1,
+                  },
+                }}
+              >
+                <SwiperSlide>
+                  <div className="single_expertise text-center">
+                    <div className="expertise_icon_single">
+                      <img
+                        src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/digital-marketing%2Fsmm%2Ffacebook-page.png?alt=media&token=a9e8076b-6b59-4483-a850-c3bfadb0520b"
+                        className="img-fluid"
+                        alt=""
+                      />
+                    </div>
+                    <h4>Billing Functions Support</h4>
+                    <Scrollbars
+                      style={{ height: 150 }}
+                      className="expertise_single_cont"
+                    >
+                      <p>
+                        Our billing experts are skilled at streamlining and
+                        simplifying the billing process for you. To avoid
+                        billing problems and inconsistencies, we employ
+                        automated and automated billing software.
+                      </p>
+                    </Scrollbars>
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <div className="single_expertise text-center">
+                    <div className="expertise_icon_single">
+                      <img
+                        src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/digital-marketing%2Fsmm%2Ftwitter-page.png?alt=media&token=457317b5-9f48-4e23-bb03-918627265ce8"
+                        className="img-fluid"
+                        alt=""
+                      />
+                    </div>
+                    <h4>Accounts Administration</h4>
+                    <Scrollbars
+                      style={{ height: 150 }}
+                      className="expertise_single_cont"
+                    >
+                      <p>
+                        Allow our experts to handle account administration if
+                        your accounts need to be properly maintained or if clean
+                        audits are required. Our staff sorts out any
+                        inconsistencies and flags the ones that need to be
+                        addressed.
+                      </p>
+                    </Scrollbars>
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <div className="single_expertise text-center">
+                    <div className="expertise_icon_single">
+                      <img
+                        src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/digital-marketing%2Fsmm%2Flinkedin-page.png?alt=media&token=90f00ec5-e110-45d1-a426-cb245027fc73"
+                        className="img-fluid"
+                        alt=""
+                      />
+                    </div>
+                    <h4>Invoice Inquiries</h4>
+                    <Scrollbars
+                      style={{ height: 150 }}
+                      className="expertise_single_cont"
+                    >
+                      <p>
+                        Professionals with tasks in processing invoice requests
+                        make up part of our e-commerce customer service team.
+                      </p>
+                    </Scrollbars>
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <div className="single_expertise text-center">
+                    <div className="expertise_icon_single">
+                      <img
+                        src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/digital-marketing%2Fsmm%2Fpinterest-marketing.png?alt=media&token=3b392249-d4f9-40c2-8c98-35850f5f93c3"
+                        className="img-fluid"
+                        alt=""
+                      />
+                    </div>
+                    <h4>Live chat support</h4>
+                    <Scrollbars
+                      style={{ height: 150 }}
+                      className="expertise_single_cont"
+                    >
+                      <p>
+                        Our customer service professionals use Live Chat support
+                        software to provide real-time customer service for your
+                        online store. SMS, chat, and emails are included in our
+                        multichannel live chat support system.
+                      </p>
+                    </Scrollbars>
+                  </div>
+                </SwiperSlide>
+              </Swiper>
+            </div>
           </div>
         </div>
       </section>
+
+      {/* <section className="inner_page_industries">
+        <div className="container">
+          <div className="row mb-3">
+            <div className="col-md-12">
+              <div
+                class="main_heading white_text"
+                data-aos="fade-down"
+                data-aos-duration="1000"
+              >
+                <h6>Industries</h6>
+                <h2 class="h2--WithLine">Industries WE served</h2>
+              </div>
+            </div>
+          </div>
+          <div className="row">
+            <div className="col-md-12">
+              <div
+                className="inner_industries_inner"
+                data-aos="fade-down"
+                data-aos-duration="1000"
+              >
+                <Swiper
+                  modules={[Navigation]}
+                  slidesPerView={4}
+                  spaceBetween={0}
+                  navigation
+                  autoplay={{ delay: 300000 }}
+                  className="mySwiper"
+                  breakpoints={{
+                    700: {
+                      spaceBetween: 0,
+                      slidesPerView: 4,
+                    },
+                    500: {
+                      spaceBetween: 100,
+                      slidesPerView: 2,
+                    },
+                    411: {
+                      spaceBetween: 100,
+                      slidesPerView: 2,
+                    },
+                    300: {
+                      spaceBetween: 0,
+                      slidesPerView: 1,
+                    },
+                  }}
+                >
+                  <SwiperSlide>
+                    {" "}
+                    <div className="inner_single_industries">
+                      <img
+                        src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/industries%2Fhealthcare.jpg?alt=media&token=d826e1e0-a94b-4941-80a8-3422d5bf6dde"
+                        alt=""
+                        className="img-fluid"
+                      />
+                      <div className="inner_single_industries_cont">
+                        <h4>Healthcare </h4>
+                        <p>
+                          Healthcare sector uses tailor-made content marketing
+                          services to spread awareness.
+                        </p>
+                      </div>
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    {" "}
+                    <div className="inner_single_industries">
+                      <img
+                        src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/industries%2Fmanufacture.jpg?alt=media&token=fdfca7c2-a9cb-4493-ba34-7e1936216675"
+                        alt=""
+                        className="img-fluid"
+                      />
+                      <div className="inner_single_industries_cont">
+                        <h4> Manufacture</h4>
+                        <p>
+                          manufacturing or the business sector needs content
+                          marketing services to build trust.
+                        </p>
+                      </div>
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    {" "}
+                    <div className="inner_single_industries">
+                      <img
+                        src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/industries%2Ftour.jpg?alt=media&token=24ef4900-5db4-44cd-a440-04d01cf5c797"
+                        alt=""
+                        className="img-fluid"
+                      />
+                      <div className="inner_single_industries_cont">
+                        <h4>Tour & Travel</h4>
+                        <p>
+                          The travel and tourism sector uses content marketing
+                          services to advertise and promote its services and
+                          brand.
+                        </p>
+                      </div>
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    {" "}
+                    <div className="inner_single_industries">
+                      <img
+                        src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/industries%2Fmedia-entertainment.jpg?alt=media&token=19ea18ed-c6e1-4027-b40b-77f1af783358"
+                        alt=""
+                        className="img-fluid"
+                      />
+                      <div className="inner_single_industries_cont">
+                        <h4>Education </h4>
+                        <p>
+                          The education sector depends on content marketing
+                          services to gain brand value as only rich content that
+                          is specific to their brand can provide you the same.
+                        </p>
+                      </div>
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    {" "}
+                    <div className="inner_single_industries">
+                      <img
+                        src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/industries%2Fmedia-entertainment.jpg?alt=media&token=19ea18ed-c6e1-4027-b40b-77f1af783358"
+                        alt=""
+                        className="img-fluid"
+                      />
+                      <div className="inner_single_industries_cont">
+                        <h4>Food & Restaurants </h4>
+                        <p>
+                          The food and Restaurant sector requires content
+                          marketing services to promote their new offerings as
+                          well as advertise their products.
+                        </p>
+                      </div>
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    {" "}
+                    <div className="inner_single_industries">
+                      <img
+                        src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/industries%2Fmedia-entertainment.jpg?alt=media&token=19ea18ed-c6e1-4027-b40b-77f1af783358"
+                        alt=""
+                        className="img-fluid"
+                      />
+                      <div className="inner_single_industries_cont">
+                        <h4>Real Estate </h4>
+                        <p>
+                          Having personally planned content marketing services
+                          helps the real estate to build relations.
+                        </p>
+                      </div>
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    {" "}
+                    <div className="inner_single_industries">
+                      <img
+                        src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/industries%2Fmedia-entertainment.jpg?alt=media&token=19ea18ed-c6e1-4027-b40b-77f1af783358"
+                        alt=""
+                        className="img-fluid"
+                      />
+                      <div className="inner_single_industries_cont">
+                        <h4>Entertainment </h4>
+                        <p>
+                          The world of entertainment is all about online
+                          presence these days. Thus, content marketing comes
+                          into play.
+                        </p>
+                      </div>
+                    </div>
+                  </SwiperSlide>
+                </Swiper>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> */}
+
+      <section class="process_sec">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4">
+              <div
+                class="main_heding_top"
+                data-aos="fade-down"
+                data-aos-duration="1000"
+              >
+                <h3>Our Process</h3>
+                <ul className="swiper-pagination"></ul>
+              </div>
+            </div>
+            <div class="col-lg-12">
+              <div
+                className="process_swiper_wrapper"
+                data-aos="fade-down"
+                data-aos-duration="1000"
+              >
+                <Swiper
+                  modules={[Navigation]}
+                  slidesPerView={4}
+                  spaceBetween={0}
+                  navigation
+                  autoplay={{ delay: 3000 }}
+                  className="processswiper"
+                  breakpoints={{
+                    700: {
+                      spaceBetween: 0,
+                      slidesPerView: 4,
+                    },
+                    500: {
+                      spaceBetween: 100,
+                      slidesPerView: 2,
+                    },
+                    411: {
+                      spaceBetween: 100,
+                      slidesPerView: 2,
+                    },
+                    300: {
+                      spaceBetween: 0,
+                      slidesPerView: 1,
+                    },
+                  }}
+                >
+                  <SwiperSlide>
+                    <div class="width_100">
+                      <div class="swiper_heding">
+                        <div className="step__count">1</div>
+                      </div>
+                      <div className="process__icon">
+                        <img
+                          src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/digital-marketing%2Finformation-gathering.png?alt=media&token=cd43e973-7247-4fc7-b96c-4f3cf687be05"
+                          alt="Requirement Gathering icon"
+                        />
+                      </div>
+                      <div class="prosses_text">
+                        <h3>Client Requirements</h3>
+                        <p>
+                          <Scrollbars
+                            style={{ height: 100 }}
+                            autoHide
+                            autoHideTimeout={1000}
+                            autoHideDuration={200}
+                          >
+                            We ask relevant and specific questions to clients to
+                            gain insights into their needs so that we may give
+                            them the best solution possible.
+                          </Scrollbars>
+                        </p>
+                      </div>
+                      <div class="procc_img">
+                        <img
+                          src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/digital-marketing%2Finformation-gathering-bg.jpg?alt=media&token=d366692e-a4ca-4d83-8352-9ae192543245"
+                          alt="Requirement Gathering image"
+                        />
+                      </div>
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <div class="width_100">
+                      <div class="swiper_heding">
+                        <div className="step__count">2</div>
+                      </div>
+                      <div className="process__icon">
+                        <img
+                          src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/digital-marketing%2Fplaning.png?alt=media&token=20f7c9aa-2a16-4509-8e99-53ff56371100"
+                          alt="Requirement Gathering icon"
+                        />
+                      </div>
+                      <div class="prosses_text">
+                        <h3>Strategizing Support Solutions for eCommerce</h3>
+                        <p>
+                          <Scrollbars
+                            style={{ height: 100 }}
+                            autoHide
+                            autoHideTimeout={1000}
+                            autoHideDuration={200}
+                          >
+                            After carefully studying your requirements and
+                            reviewing your responses, our project manager will
+                            recommend the best eCommerce Call Center customer
+                            service solution.
+                          </Scrollbars>
+                        </p>
+                      </div>
+                      <div class="procc_img">
+                        <img
+                          src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/digital-marketing%2Fplaning-bg.jpg?alt=media&token=33044ed0-34db-482c-b24e-f6ba2e16fd17"
+                          alt="Strategy image"
+                        />
+                      </div>
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <div class="width_100">
+                      <div class="swiper_heding">
+                        <div className="step__count">3</div>
+                      </div>
+                      <div className="process__icon">
+                        <img
+                          src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/digital-marketing%2Fkeyword-research.png?alt=media&token=e5b58c50-bdad-4ddb-a140-81028c31f61d"
+                          alt="Requirement Gathering icon"
+                        />
+                      </div>
+                      <div class="prosses_text">
+                        <h3>Appointing Teams to Implement</h3>
+                        <p>
+                          <Scrollbars
+                            style={{ height: 100 }}
+                            autoHide
+                            autoHideTimeout={1000}
+                            autoHideDuration={200}
+                          >
+                            After signing an NDA with the client, we assemble a
+                            project team with the necessary knowledge and
+                            credentials and assign them to their appropriate
+                            eCommerce customer care jobs.
+                          </Scrollbars>
+                        </p>
+                      </div>
+                      <div class="procc_img">
+                        <img src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/digital-marketing%2Fkeyword-research-bg.jpg?alt=media&token=3c8446ea-eb56-4b74-964c-5c65338d14c4" />
+                      </div>
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <div class="width_100">
+                      <div class="swiper_heding">
+                        <div className="step__count">4</div>
+                      </div>
+                      <div className="process__icon">
+                        <img
+                          src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/digital-marketing%2Famendments.png?alt=media&token=28aec408-64ce-41e4-9e7e-5c7b73e32b2e"
+                          alt="Requirement Gathering icon"
+                        />
+                      </div>
+                      <div class="prosses_text">
+                        <h3>eCommerce Customer Support</h3>
+                        <p>
+                          <Scrollbars
+                            style={{ height: 100 }}
+                            autoHide
+                            autoHideTimeout={1000}
+                            autoHideDuration={200}
+                          >
+                            The project team will begin the project according to
+                            the contract's specifications and allocate roles and
+                            responsibilities to various team members.
+                          </Scrollbars>
+                        </p>
+                      </div>
+                      <div class="procc_img">
+                        <img src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/digital-marketing%2Famendments-bg.jpg?alt=media&token=59192512-46c8-4601-9919-24557f75108a" />
+                      </div>
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <div class="width_100">
+                      <div class="swiper_heding">
+                        <div className="step__count">5</div>
+                      </div>
+                      <div className="process__icon">
+                        <img
+                          src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/digital-marketing%2Flink-building.png?alt=media&token=cc348496-202e-4771-b1f2-a3c9ff513d48"
+                          alt="Requirement Gathering icon"
+                        />
+                      </div>
+                      <div class="prosses_text">
+                        <h3>Delivering Reports</h3>
+                        <p>
+                          <Scrollbars
+                            style={{ height: 100 }}
+                            autoHide
+                            autoHideTimeout={1000}
+                            autoHideDuration={200}
+                          >
+                            Once the project gets underway, we will send the
+                            customers a detailed progress report so they can
+                            keep track of the project's development.
+                          </Scrollbars>
+                        </p>
+                      </div>
+                      <div class="procc_img">
+                        <img src="https://firebasestorage.googleapis.com/v0/b/excellisit2022.appspot.com/o/digital-marketing%2Flink-building-bg.jpg?alt=media&token=f2e9a022-4da3-49f1-a6c4-a380dce3e953" />
+                      </div>
+                    </div>
+                  </SwiperSlide>
+                </Swiper>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="iq-features">
+        <div class="container">
+          <div className="row mb-3">
+            <div className="col-md-12">
+              <div
+                class="main_heading white_text"
+                data-aos="fade-down"
+                data-aos-duration="1000"
+              >
+                <h6>Benefits</h6>
+                <h2 class="h2--WithLine">
+                  Benefits of Hiring Social Media Marketing Services
+                </h2>
+              </div>
+            </div>
+          </div>
+          <div class="row align-items-center">
+            <div class="col-lg-7 col-md-12">
+              <div class="holderCircle">
+                <div class="round"></div>
+                <div
+                  class="dotCircle"
+                  data-aos="fade-down"
+                  data-aos-duration="1500"
+                >
+                  <span class="itemDot active itemDot1" data-tab="1">
+                    <RiNumber1 />
+                    <span class="forActive"></span>
+                  </span>
+                  <span class="itemDot itemDot2" data-tab="2">
+                    <RiNumber2 />
+                    <span class="forActive"></span>
+                  </span>
+                  <span class="itemDot itemDot3" data-tab="3">
+                    <RiNumber3 />
+                    <span class="forActive"></span>
+                  </span>
+                </div>
+                <div className="benefit_title_sec">
+                  <h4 data-aos="zoom-in" data-aos-duration="2500">
+                    Benefits
+                  </h4>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-lg-5 col-md-12"
+              data-aos="fade-down"
+              data-aos-duration="1500"
+            >
+              <div class="contentCircle">
+                <div class="CirItem title-box active CirItem1">
+                  <h2 class="title">
+                    <span>Scalability</span>
+                  </h2>
+                  <p>
+                    Our services are scalable to meet your needs, whether your
+                    call traffic is modest or huge. If you choose to minimize
+                    services, we can add more agents as needed or scale back our
+                    workforce.
+                  </p>
+                  <i class="fa fa-clock-o"></i>
+                </div>
+
+                <div class="CirItem title-box CirItem2">
+                  <h2 class="title">
+                    <span>Cost Saving</span>
+                  </h2>
+                  <p>
+                    Your company is expanding quickly, and you do not have the
+                    staff to handle the present call load. You will not have to
+                    set up an eCommerce call center, hire more staff, or learn
+                    labor laws in numerous international locations if you
+                    collaborate with Excellis IT's professional team. You will
+                    also save money on the equipment and technology required to
+                    handle many calls.
+                  </p>
+                  <i class="fa fa-comments"></i>
+                </div>
+
+                <div class="CirItem title-box CirItem3">
+                  <h2 class="title">
+                    <span>Customer engagement</span>
+                  </h2>
+                  <p>
+                    Our omnichannel call center can provide uniformity across
+                    all modes of service. Our agents can give a consistent,
+                    unified, and personalized customer experience because of
+                    this.
+                  </p>
+                  <i class="fa fa-user"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="cta2_section cta_block_bg">
+        <div className="container">
+          <div className="row">
+            <div className="col-md-12">
+              <div
+                className="cta2_inner d-block d-sm-flex align-items-center"
+                style={{ backgroundImage: `url(${cta_bg2})` }}
+              >
+                <div className="cta2_content_sec text-left">
+                  <h4 className="mb-4">Want to get a high ROI?</h4>
+                  <Link className=" light-btn" to="/ContactUs">
+                    Contact Us
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="inner_testimonial_Sec">
+        <TestimonialSection />
+      </section>
+
+      <ClientSecInner />
+
+      <section className="cta2_section pb-0 pt-0">
+        <div className="container">
+          <div className="row">
+            <div className="col-md-12">
+              <div
+                className="cta2_inner d-block d-sm-flex align-items-center"
+                style={{ backgroundImage: `url(${cta_bg3})` }}
+              >
+                <div className="cta2_content_sec text-center w-100">
+                  <h4 className="mb-4">
+                    Grow your business with PPC campaign management
+                  </h4>
+                  <Link className=" light-btn" to="/ContactUs">
+                    Contact Us
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <TechnologyWeUse />
+      <OurBlogs />
+
+      <section className="common_faq_section">
+        <div className="container">
+          <div className="row mb-5">
+            <div className="col-md-6">
+              <div className="faq_title">
+                <h4>
+                  Frequently
+                  <br /> Asked Questions
+                </h4>
+              </div>
+            </div>
+          </div>
+          <div className="row">
+            <div className="col-md-12">
+              <div className="faq_inner">
+                <div class="accordion" id="faqaccordian">
+                  <div class="card">
+                    <div class="card-header" id="headingOne">
+                      <h5 class="mb-0">
+                        <button
+                          class="btn"
+                          type="button"
+                          data-toggle="collapse"
+                          data-target="#faq1"
+                          aria-expanded="true"
+                          aria-controls="faq1"
+                        >
+                          <span>1.</span> What types of e-commerce services are
+                          available for outsourcing?
+                        </button>
+                      </h5>
+                    </div>
+
+                    <div
+                      id="faq1"
+                      class="collapse show"
+                      aria-labelledby="heading1"
+                      data-parent="#faqaccordian"
+                    >
+                      <div class="card-body">
+                        ECommerce companies can hire an eCommerce call center to
+                        handle sales, inbound customer service, order tracking,
+                        complaint management, return, refund, and omnichannel
+                        client interaction.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header" id="headingTwo">
+                      <h5 class="mb-0">
+                        <button
+                          class="btn collapsed"
+                          type="button"
+                          data-toggle="collapse"
+                          data-target="#faq2"
+                          aria-expanded="false"
+                          aria-controls="faq2"
+                        >
+                          <span>2.</span> What are the most significant
+                          advantages of outsourcing an eCommerce call center?
+                        </button>
+                      </h5>
+                    </div>
+                    <div
+                      id="faq2"
+                      class="collapse"
+                      aria-labelledby="headingTwo"
+                      data-parent="#faqaccordian"
+                    >
+                      <div class="card-body">
+                        <p>
+                          Expert eCommerce call center outsourcing service
+                          providers provide 24-hour assistance, live customer
+                          care, and multi-channel communication management.
+                          Customers benefit from outsourcing because they get
+                          prompt and accurate responses to their questions,
+                          order tracking and the ability to seek returns or
+                          refunds.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header" id="headingThree">
+                      <h5 class="mb-0">
+                        <button
+                          class="btn collapsed"
+                          type="button"
+                          data-toggle="collapse"
+                          data-target="#faq3"
+                          aria-expanded="false"
+                          aria-controls="faq3"
+                        >
+                          <span>3.</span>What kind of services do eCommerce call
+                          center services provide?
+                        </button>
+                      </h5>
+                    </div>
+                    <div
+                      id="faq3"
+                      class="collapse"
+                      aria-labelledby="headingThree"
+                      data-parent="#faqaccordian"
+                    >
+                      <div class="card-body">
+                        Excellis IT offers a variety of call center services. It
+                        features eCommerce customer service, order processing
+                        assistance, a 24/7 phone answering service, and an
+                        eCommerce receptionist, among other things.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header" id="headingThree">
+                      <h5 class="mb-0">
+                        <button
+                          class="btn collapsed"
+                          type="button"
+                          data-toggle="collapse"
+                          data-target="#faq4"
+                          aria-expanded="false"
+                          aria-controls="faq4"
+                        >
+                          <span>4.</span> How can I be confident that my data
+                          will be safe when I outsource?
+                        </button>
+                      </h5>
+                    </div>
+                    <div
+                      id="faq4"
+                      class="collapse"
+                      aria-labelledby="headingThree"
+                      data-parent="#faqaccordian"
+                    >
+                      <div class="card-body">
+                        For many eCommerce entrepreneurs, data security is a top
+                        priority. Particularly when it comes to client
+                        information, to safeguard the security of your data,
+                        make sure your outsourcing partner adheres to tight
+                        rules and signs non-disclosure agreements.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <Footer />
     </div>
   );

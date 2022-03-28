@@ -69,10 +69,18 @@ const Portfolio = ({}) => {
   return (
     <div>
       <Helmet>
-        <meta charSet="utf-8" />
-        <title>Portfolio</title>
-        <meta name="description" content="aboutpage" />
-        <meta name="keywords" content="about page" />
+        <title>
+          Excellis IT: Digital Marketing, Web and Mobile App Development
+          Portfolio
+        </title>
+        <meta
+          name="description"
+          content="Find out some of our Digital Marketing, Web and Mobile App Development works which we have delivered to our clients. We always meet our clients’ expectations and ensure that they are getting the best service"
+        />
+        <meta name="robots" content="index, follow" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="language" content="English" />
+        <link rel="canonical" href="https://www.excellisit.com/portfolio/" />
       </Helmet>
       <Navbar activeStatus="partner" />
       <InnerBanner title={title} description={description} />
@@ -81,7 +89,7 @@ const Portfolio = ({}) => {
           <div className="container-fluid">
             <div className="row">
               <div className="col-md-12">
-                <div className="portfolio_inner pr-170 pl-5">
+                <div className="portfolio_inner pr-170 pl-2 pl-sm-5">
                   <div className="single_portfolio">
                     <div className="row align-items-center">
                       <div className="col-md-4 pr-0">

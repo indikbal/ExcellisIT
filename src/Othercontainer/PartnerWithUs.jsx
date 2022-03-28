@@ -25,10 +25,18 @@ const PartnerWithUs = ({ activeStatus }) => {
   return (
     <div>
       <Helmet>
-        <meta charSet="utf-8" />
-        <title>Partner With Us</title>
-        <meta name="description" content="aboutpage" />
-        <meta name="keywords" content="about page" />
+        <title>Excellis IT | Partner with Us</title>
+        <meta
+          name="description"
+          content="Partnering with Excellis IT will help to increase your digital footprint using advanced technology and innovative solutions.  "
+        />
+        <meta name="robots" content="index, follow" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="language" content="English" />
+        <link
+          rel="canonical"
+          href="https://www.excellisit.com/partner-with-us/"
+        />
       </Helmet>
       <Navbar activeStatus="partner" />
       <InnerBanner title={title} description={description} />

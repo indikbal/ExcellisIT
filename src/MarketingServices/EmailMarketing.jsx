@@ -110,9 +110,24 @@ const EmailMarketing = () => {
   return (
     <div>
       <Helmet>
-        <meta charSet="utf-8" />
-        <title>Pay Per Click</title>
-        <meta name="description" content="aboutpage" />
+        <title>
+          Email Marketing Company and Agency in Kolkata, India: Excellis IT
+        </title>
+        <meta
+          name="title"
+          content="Email Marketing Company and Agency in Kolkata, India: Excellis IT"
+        />
+        <meta
+          name="description"
+          content="Excellis IT is a leading email marketing company and agency in Kolkata, India. We promote your product and generate revenue, leads, and customers through bulk mailing."
+        />
+        <meta name="robots" content="index, follow" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="language" content="English" />
+        <link
+          rel="canonical"
+          href="https://www.excellisit.com/email-marketing"
+        />
       </Helmet>
       <Navbar />
       <InnerBanner title={title} description={description} />

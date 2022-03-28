@@ -111,9 +111,21 @@ const UiUxDesign = () => {
   return (
     <div>
       <Helmet>
-        <meta charSet="utf-8" />
-        <title>UI UX Design</title>
-        <meta name="description" content="mobile page" />
+        <title>
+          Best UI and UX Design Company in Kolkata, India: Excellis IT
+        </title>
+        <meta
+          name="title"
+          content="Best UI and UX Design Company in Kolkata, India: Excellis IT"
+        />
+        <meta
+          name="description"
+          content="Excellis IT is one of the best UI and UX Design companies in Kolkata, India. We offer UX research & design, UI development services for enterprises, and startups worldwide."
+        />
+        <meta name="robots" content="index, follow" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="language" content="English" />
+        <link rel="canonical" href="https://www.excellisit.com/ui-ux-design/" />
       </Helmet>
       <Navbar />
       <InnerBanner title={title} description={description} />

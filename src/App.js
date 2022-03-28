@@ -36,6 +36,10 @@ import GoogleMyBusiness from "./MarketingServices/GoogleMyBusiness";
 
 import CareerPage from "./CareerPage";
 import JobRole from "./JobRole";
+import CallCenterOutsourcing from "./BpoServices/CallCenterOutsourcing";
+import EcommerceOutsourcing from "./BpoServices/EcommerceOutsourcing";
+import PerformanceCompliancemanagement from "./BpoServices/PerformanceCompliancemanagement";
+import ProfessionalServices from "./BpoServices/ProfessionalServices";
 
 function App() {
   AOS.init({
@@ -56,6 +60,7 @@ function App() {
         <Route path="/process" component={Process} />
         <Route path="/Ourblogs" component={BlogPage} />
         <Route path="/blogDetail/:Title" exact component={BlogDetails} />
+        <Route path="/JobRole/:id" exact component={JobRole} />
         <Route path="/privacy-policy" component={PrivacyPolicy} />
         <Route path="/terms-and-condition" component={TermConditions} />
         <Route path="/contactus" component={ContactUs} />
@@ -67,6 +72,19 @@ function App() {
         <Route path="/partner-with-us" component={PartnerWithUs} />
         <Route path="/QA-testing" component={QaAndTesting} />
         <Route path="/Portfolio" component={Portfolio} />
+        <Route
+          path="/call-center-outsourcing-service"
+          component={CallCenterOutsourcing}
+        />
+        <Route
+          path="/ecommerce-outsourcing-services"
+          component={EcommerceOutsourcing}
+        />
+        <Route
+          path="/performance-compliance-management"
+          component={PerformanceCompliancemanagement}
+        />
+        <Route path="/professional-services" component={ProfessionalServices} />
         <Route
           path="/search-engine-optimization"
           component={SearchEngineOptimization}
@@ -87,7 +105,6 @@ function App() {
           path="/google-my-business-optimization"
           component={GoogleMyBusiness}
         />
-        <Route path="/JobRole" component={JobRole} />
         <Route component={Error} />
       </Switch>
     </div>

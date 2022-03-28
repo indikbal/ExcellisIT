@@ -109,9 +109,21 @@ const GoogleMyBusiness = () => {
   return (
     <div>
       <Helmet>
-        <meta charSet="utf-8" />
-        <title>GMB</title>
-        <meta name="description" content="gmb page" />
+        <title>
+          Google My Business & Local Listing Optimization Company in Kolkata,
+          India: Excellis IT
+        </title>
+        <meta
+          name="description"
+          content="Excellis IT is a leading Google My Business & Local Listing optimization company in Kolkata, India. We offer the best Google Local Optimization Services which help to get more calls, organic leads, and traffic. "
+        />
+        <meta name="robots" content="index, follow" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="language" content="English" />
+        <link
+          rel="canonical"
+          href="https://www.excellisit.com/google-my-business-optimization/"
+        />
       </Helmet>
       <Navbar />
       <InnerBanner title={title} description={description} />

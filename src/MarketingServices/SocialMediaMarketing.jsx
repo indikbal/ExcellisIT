@@ -110,9 +110,21 @@ const SocialMediaMarketing = () => {
   return (
     <div>
       <Helmet>
-        <meta charSet="utf-8" />
-        <title>Social Media Marketing</title>
-        <meta name="description" content="aboutpage" />
+        <title>
+          Social Media Marketing Company & Social Media Optimization Agency in
+          Kolkata, India: Excellis IT
+        </title>
+        <meta
+          name="description"
+          content="Excellis IT is one of the best advertising agencies providing creative SMO services at an affordable price to Corporate, SME’s, Startups, and Celebrities. Contact us now. "
+        />
+        <meta name="robots" content="index, follow" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="language" content="English" />
+        <link
+          rel="canonical"
+          href="https://www.excellisit.com/social-media-marketing/"
+        />
       </Helmet>
       <Navbar />
       <InnerBanner title={title} description={description} />

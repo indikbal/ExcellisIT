@@ -109,9 +109,22 @@ const PayPerClick = () => {
   return (
     <div>
       <Helmet>
-        <meta charSet="utf-8" />
-        <title>Pay Per Click</title>
-        <meta name="description" content="aboutpage" />
+        <title>
+          Best Search Engine Marketing, Pay Per Click, Google and Bing Ads
+          Agency and Company in Kolkata, India
+        </title>
+        <meta
+          name="title"
+          content="Best Search Engine Marketing, Pay Per Click, Google and Bing Ads Agency and Company in Kolkata, India"
+        />
+        <meta
+          name="description"
+          content="Excellis IT is the best PPC & SEM Agency and Company in Kolkata, India. Our Certified Google & Bing Ads Experts provide Search Engine Marketing services with optimized landing pages, lead capture & Increase engagement."
+        />
+        <meta name="robots" content="index, follow" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="language" content="English" />
+        <link rel="canonical" href="https://www.excellisit.com/ppc/" />
       </Helmet>
       <Navbar />
       <InnerBanner title={title} description={description} />

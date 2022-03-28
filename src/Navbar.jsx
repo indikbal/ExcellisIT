@@ -74,7 +74,7 @@ const Navbar = ({ activeStatus }) => {
           </li>
         </ul>
       </div>
-      <section className="top_header_section pl-170 pr-170">
+      <section className="top_header_section ">
         <div className="container-fluid">
           <div className="row">
             <div className="col-md-4 col-7">
@@ -113,10 +113,7 @@ const Navbar = ({ activeStatus }) => {
           </div>
         </div>
       </section>
-      <section
-        id={scroll ? "fixed" : "no-fixed"}
-        className="main_nav_sec pl-170 pr-170"
-      >
+      <section id={scroll ? "fixed" : "no-fixed"} className="main_nav_sec">
         <div className="container-fluid">
           <div className="row">
             <div className="col-md-12">

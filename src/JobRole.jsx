@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import Navbar from "./Navbar";
 import axios from "axios";
 import { useParams } from "react-router-dom";
-import BlogContent from "./BlogContent";
 
 const JobRole = (data) => {
   const { id } = useParams();
@@ -10,7 +9,7 @@ const JobRole = (data) => {
   const [careerData, setCareerData] = useState(null);
   useEffect(() => {
     axios
-      .get(`/admin/getCareerData/` + id, {})
+      .get(`/admin/getCareerDataByPostId/` + id, {})
       .then((res) => {
         const data = res.data;
         setCareerData(data);

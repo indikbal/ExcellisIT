@@ -13,10 +13,18 @@ const ContactUs = ({ activeStatus }) => {
   return (
     <div>
       <Helmet>
-        <meta charSet="utf-8" />
-        <title>Contact Us Page</title>
-        <meta name="description" content="aboutpage" />
-        <meta name="keywords" content="about page" />
+        <title>
+          Contact Us to Get Full Stack Development, Digital Marketing, and BPO
+          Services
+        </title>
+        <meta
+          name="description"
+          content="Contact us for Full Stack Development, Digital Marketing, and BPO Services requirements. You can also contact us to hire dedicated developers, designers, and digital marketing experts for your projects."
+        />
+        <meta name="robots" content="index, follow" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="language" content="English" />
+        <link rel="canonical" href="https://www.excellisit.com/contactus/" />
       </Helmet>
       <Navbar activeStatus="contact" />
       <InnerBanner title={title} description={description} />

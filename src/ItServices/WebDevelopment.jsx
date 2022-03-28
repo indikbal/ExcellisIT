@@ -111,9 +111,25 @@ const WebDevelopment = () => {
   return (
     <div>
       <Helmet>
-        <meta charSet="utf-8" />
-        <title>Mobile Application</title>
-        <meta name="description" content="mobile page" />
+        <title>
+          Best Website Design and Development Company Kolkata, India: Excellis
+          IT
+        </title>
+        <meta
+          name="title"
+          content="Best Website Design and Development Company Kolkata, India: Excellis IT"
+        />
+        <meta
+          name="description"
+          content="Excellis IT is one of the best website design and development company Kolkata, India. We provide creative e-commerce web design and development for a better user experience. Contact us now. "
+        />
+        <meta name="robots" content="index, follow" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="language" content="English" />
+        <link
+          rel="canonical"
+          href="https://www.excellisit.com/web-development/"
+        />
       </Helmet>
       <Navbar />
       <InnerBanner title={title} description={description} />

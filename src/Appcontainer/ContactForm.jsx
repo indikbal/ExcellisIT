@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import "./assets/Style.css";
-import { db, storage } from "../firebase";
+import { db, storage, ref as storageRef } from "../firebase";
 import ReCAPTCHA from "react-google-recaptcha";
 import { ref, uploadBytesResumable } from "firebase/storage";
 const SITE_KEY = "6LeHDpEeAAAAAJV8xlc3Ox1rznuH8zBp-USMGBeA";
@@ -14,6 +14,9 @@ function ContactForm() {
   const [interest, setInterest] = useState("");
   const [hereus, setHereus] = useState("");
   const [recaptchaValue, setrecaptchaValue] = useState("true");
+  const [file, setFile] = useState(null);
+  const [progress, setProgress] = useState("");
+  const [url, setUrl] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -36,6 +39,31 @@ function ContactForm() {
       .catch((error) => {
         alert("error.message");
       });
+    if (e.target.files[0]) {
+      setFile(e.target.files[0]);
+    }
+    const uploadTask = storage.ref(`files/${file.name}`).put(file);
+    uploadTask.on(
+      "state_changed",
+      (snapshot) => {
+        const progress = Math.round(
+          (snapshot.bytesTransferred / snapshot.totalBytes) * 100
+        );
+        setProgress(progress);
+      },
+      (error) => {
+        console.log(error);
+      },
+      () => {
+        storage
+          .ref("file")
+          .child(file.name)
+          .getDownloadURL()
+          .then((url) => {
+            setUrl(url);
+          });
+      }
+    );
 
     setName("");
     setEmail("");
@@ -47,17 +75,19 @@ function ContactForm() {
     setrecaptchaValue("");
   };
 
-  const onfilechange = (e) => {
-    console.log(e.target.files[0]);
-    const file = e.target.files[0];
-    uoloadFiles(file);
-  };
+  // const onfilechange = (e) => {
+  //   console.log(e.target.files[0]);
+  //   const file = e.target.files[0];
+  //   uoloadFiles(file);
+  // };
 
-  const uoloadFiles = (file) => {
-    if (!file) return;
-    const storageRef = ref(storage, `/files/${file.name}`);
-    const uploadTask = uploadBytesResumable(storageRef, file);
-  };
+  // const uoloadFiles = (file) => {
+  //   if (!file) return;
+
+  //   const storageRef = storageRef(storage, `files/${file.name}`).put(file);
+  //   //console.log(storageRef);
+  //   const uploadTask = uploadBytesResumable(storageRef, file);
+  // };
 
   const recaptchaReference = useRef(null);
 
@@ -175,14 +205,14 @@ function ContactForm() {
             </div>
           </div>
         </div>
-        <div class="row">
+        {/* <div class="row">
           <div class="col-md-12">
             <div class="con_foo_input_wrapper">
               <label>Attach files</label>
-              <input class="file_type" type="file" onChange={onfilechange} />
+              <input class="file_type" type="file" onChange={handleChange} />
             </div>
           </div>
-        </div>
+        </div> */}
         <label>
           <ReCAPTCHA
             sitekey={SITE_KEY}

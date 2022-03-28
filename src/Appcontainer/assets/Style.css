@@ -2489,19 +2489,14 @@ input[type="checkbox"]:checked::before {
   }
 }
 
-/* 
-
-@media (max-width: 767px) {
-  .top_right_content ul li {
-    display: none;
+@media (max-width: 1400px) {
+  .banner_content h1 {
+    font-size: 130px;
   }
-  .top_right_content ul li:last-child {
-    display: block;
+  .icon_logo_animated {
+    right: 130px;
   }
-  .pl-170 {
-    padding-left: 10px !important;
+  .arrow_div {
+    left: -130px;
   }
-  .pr-170 {
-    padding-right: 10px !important;
-  }
-} */
+}

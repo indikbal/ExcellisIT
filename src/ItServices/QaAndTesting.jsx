@@ -111,9 +111,22 @@ const QaAndTesting = () => {
   return (
     <div>
       <Helmet>
-        <meta charSet="utf-8" />
-        <title>QA and Testing</title>
-        <meta name="description" content="mobile page" />
+        <title>
+          Manual, Automated, Performance and Usability Testing Company in
+          Kolkata, India: Excellis IT
+        </title>
+        <meta
+          name="title"
+          content="Manual, Automated, Performance and Usability Testing Company in Kolkata, India: Excellis IT"
+        />
+        <meta
+          name="description"
+          content="Excellis IT is a leading Manual Testing, Automated Testing, Performance Testing, and Usability Testing Company in Kolkata, India. Hire QA Testing experts in India from Excellis IT. "
+        />
+        <meta name="robots" content="index, follow" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="language" content="English" />
+        <link rel="canonical" href="https://www.excellisit.com/qa-testing/" />
       </Helmet>
       <Navbar />
       <InnerBanner title={title} description={description} />

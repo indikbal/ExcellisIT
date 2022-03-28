@@ -109,10 +109,21 @@ const SearchEngineOptimization = () => {
   return (
     <div>
       <Helmet>
-        <meta charSet="utf-8" />
-        <title>Search Engine Optimization</title>
-        <meta name="description" content="aboutpage" />
-        <meta name="keywords" content="about page" />
+        <title>
+          Best Search Engine Optimization Company and SEO Agency in Kolkata,
+          India: Excellis IT
+        </title>
+        <meta
+          name="description"
+          content="Excellis IT is a leading SEO Company & agency in Kolkata, India. We offer the best Organic and Local SEO services which helps to get more traffic and organic lead. Contact us +91 861 772 4646"
+        />
+        <meta name="robots" content="index, follow" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="language" content="English" />
+        <link
+          rel="canonical"
+          href="https://www.excellisit.com/search-engine-marketing/"
+        />
       </Helmet>
       <Navbar />
       <InnerBanner title={title} description={description} />

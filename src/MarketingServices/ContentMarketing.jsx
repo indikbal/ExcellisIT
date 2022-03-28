@@ -110,9 +110,20 @@ const ContentMarketing = () => {
   return (
     <div>
       <Helmet>
-        <meta charSet="utf-8" />
-        <title>Content Marketing</title>
-        <meta name="description" content="aboutpage" />
+        <title>
+          Best Content Marketing Company and Agency in India: Excellis IT
+        </title>
+        <meta
+          name="description"
+          content="Excellis IT is a leading digital content marketing company and agency in Kolkata, India. We guarantee that our content reaches the accurate audience for the right impact. Contact us +91 861 772 4646."
+        />
+        <meta name="robots" content="index, follow" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="language" content="English" />
+        <link
+          rel="canonical"
+          href="https://www.excellisit.com/content-making/"
+        />
       </Helmet>
       <Navbar />
       <InnerBanner title={title} description={description} />

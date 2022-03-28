@@ -111,9 +111,24 @@ const SoftwareDevelopment = () => {
   return (
     <div>
       <Helmet>
-        <meta charSet="utf-8" />
-        <title>Mobile Application</title>
-        <meta name="description" content="mobile page" />
+        <title>
+          Top Software Development Company in Kolkata, India: Excellis IT
+        </title>
+        <meta
+          name="title"
+          content="Top Software Development Company in Kolkata, India: Excellis IT"
+        />
+        <meta
+          name="description"
+          content="Excellis IT is a well-known software development company in Kolkata, India. We deliver custom software application development services at the best price. Contact us for more info."
+        />
+        <meta name="robots" content="index, follow" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="language" content="English" />
+        <link
+          rel="canonical"
+          href="https://www.excellisit.com/software-development/"
+        />
       </Helmet>
       <Navbar />
       <InnerBanner title={title} description={description} />
