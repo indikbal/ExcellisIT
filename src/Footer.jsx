@@ -205,10 +205,12 @@ const Footer = () => {
                     <div class="copyright_menu">
                       <ul>
                         <li>
-                          <Link to="/PrivacyPolicy">Privacy Policy</Link>
+                          <Link to="/privacy-policy">Privacy Policy</Link>
                         </li>
                         <li>
-                          <Link to="/TermConditions">Term and Condition</Link>
+                          <Link to="/terms-and-condition">
+                            Term and Condition
+                          </Link>
                         </li>
                         <li>
                           <Link to="/about">About Excellis</Link>
